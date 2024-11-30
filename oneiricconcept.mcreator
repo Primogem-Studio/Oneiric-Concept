@@ -3611,6 +3611,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "Geomarrowradiatorprocess0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geomarrowradiatorprocess_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Geomarrowradiatorprocess0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "item",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
