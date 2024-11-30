@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "Geomarrow Radiator",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "用于加工香肠、小麦种子、异世界树苗和云。"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,

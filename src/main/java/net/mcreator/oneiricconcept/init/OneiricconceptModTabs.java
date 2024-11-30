@@ -47,7 +47,6 @@ public class OneiricconceptModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept")).icon(() -> new ItemStack(OneiricconceptModItems.ONEIRIC_SHARD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(OneiricconceptModItems.ONEIRIC_SHARD.get());
 				tabData.accept(OneiricconceptModBlocks.GEOMARROW_RADIATOR.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.BANANA_MUSHROOM.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.BANANA_MUSHROOM_BOCK.get().asItem());
 				tabData.accept(OneiricconceptModItems.CLOUD_BOTTLE.get());

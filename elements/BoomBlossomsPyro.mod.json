@@ -42,11 +42,7 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "hoe",
     "customDrop": {
       "value": ""
