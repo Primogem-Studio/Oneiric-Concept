@@ -1,0 +1,10 @@
+{
+  "_fv": 71,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/vayuda_turquoise_ore_1",
+    "namespace": "mod"
+  }
+}

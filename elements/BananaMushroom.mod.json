@@ -1,0 +1,109 @@
+{
+  "_fv": 71,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "bananafungus",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "bananafungus",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "LUCK",
+    "suspiciousStewDuration": 100,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Banana Mushroom",
+    "specialInformation": {
+      "fixedValue": [
+        "摆满香蕉的小岛",
+        "睡蕉小猴的爱巢",
+        "吃完香蕉就睡觉",
+        "快快乐乐没烦恼",
+        "睡蕉小猴真是好",
+        "幸福美满没烦恼"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 3,
+    "unbreakable": false,
+    "isSolid": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "YELLOW",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "isBonemealable": true,
+    "bonemealSuccessCondition": {
+      "name": "BananaMushroombone"
+    },
+    "onBonemealSuccess": {
+      "name": "BananaMushroomNagadus"
+    },
+    "frequencyOnChunks": 1,
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_forest"
+      }
+    ],
+    "generationType": "Flower",
+    "patchSize": 1,
+    "generateAtAnyHeight": false
+  }
+}

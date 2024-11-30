@@ -1,0 +1,22 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:BigStone"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:BigRock"
+    },
+    "name": "big_rock_r",
+    "namespace": "mod"
+  }
+}

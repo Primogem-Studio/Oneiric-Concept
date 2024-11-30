@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CloudBottle"
+    },
+    "name": "cloud_b_2",
+    "namespace": "mod"
+  }
+}

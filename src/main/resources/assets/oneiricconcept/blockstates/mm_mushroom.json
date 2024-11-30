@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "oneiricconcept:block/mm_mushroom"
+    },
+    "half=lower": {
+      "model": "oneiricconcept:block/mm_mushroom_bottom"
+    }
+  }
+}

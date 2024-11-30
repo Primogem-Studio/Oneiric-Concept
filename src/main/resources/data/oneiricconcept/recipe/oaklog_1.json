@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:xingchen"
+    }
+  },
+  "result": {
+    "id": "minecraft:oak_log",
+    "count": 1
+  }
+}

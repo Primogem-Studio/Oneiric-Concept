@@ -1,0 +1,28 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:XuanyuanSword"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:OyStuffing"
+    },
+    "smithingInputTemplateStack": {
+      "value": "CUSTOM:DreamdiveCan"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:SwordOfBrilliantValor"
+    },
+    "name": "swordof_brilliant_valor_1",
+    "namespace": "mod"
+  }
+}

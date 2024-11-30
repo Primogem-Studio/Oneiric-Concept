@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:the_another_world_wood"
+    },
+    "b": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:taw_wood_box",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_fv": 71,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/vajrada_amethyst_ore_2",
+    "namespace": "mod"
+  }
+}

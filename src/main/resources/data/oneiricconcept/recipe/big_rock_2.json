@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "oneiricconcept:mm_mushroom"
+  },
+  "result": {
+    "id": "oneiricconcept:big_rock"
+  }
+}

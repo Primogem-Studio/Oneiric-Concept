@@ -1,0 +1,22 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 10.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:S2ausage"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:S2mokeSausage"
+    },
+    "name": "s_2moke_sausage_2",
+    "namespace": "mod"
+  }
+}

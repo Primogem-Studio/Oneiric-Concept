@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "oneiricconcept:block/mactus_side",
+    "particle": "oneiricconcept:block/mactus_side"
+  },
+  "render_type": "cutout"
+}

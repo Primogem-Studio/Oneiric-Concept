@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "oneiricconcept:honkai_shard"
+  },
+  "base": {
+    "item": "primogemcraft:shenmiwanou"
+  },
+  "addition": {
+    "item": "primogemcraft:shenmiwanou"
+  },
+  "result": {
+    "id": "oneiricconcept:legion_pseudo_sliver"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:ractus"
+    },
+    {
+      "item": "oneiricconcept:gactus"
+    },
+    {
+      "item": "oneiricconcept:bactus"
+    }
+  ],
+  "result": {
+    "id": "minecraft:white_dye",
+    "count": 6
+  }
+}

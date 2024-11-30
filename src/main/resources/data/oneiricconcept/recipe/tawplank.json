@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "oneiricconcept:tawlog"
+    },
+    {
+      "tag": "oneiricconcept:tawlog"
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:yishijieyuanmumuban",
+    "count": 8
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:smoke_sausage"
+    },
+    "title": {
+      "translate": "advancements.the_seriousness_of_breakfast.title"
+    },
+    "description": {
+      "translate": "advancements.the_seriousness_of_breakfast.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_seriousness_of_breakfast_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oneiricconcept:smoke_sausage"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "oneiricconcept:oneiric_concept_advancement"
+}

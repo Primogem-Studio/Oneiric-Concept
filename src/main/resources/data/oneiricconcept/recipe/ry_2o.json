@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:ractus"
+    },
+    {
+      "item": "oneiricconcept:yactus"
+    }
+  ],
+  "result": {
+    "id": "minecraft:orange_dye",
+    "count": 4
+  }
+}

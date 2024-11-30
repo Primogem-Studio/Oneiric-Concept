@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.GUNPOWDER"
+    },
+    "name": "gunpowder_1",
+    "namespace": "mod"
+  }
+}

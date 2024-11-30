@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:gactus"
+    },
+    {
+      "item": "oneiricconcept:bactus"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:c_cactus",
+    "count": 4
+  }
+}

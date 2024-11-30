@@ -1,0 +1,71 @@
+{
+  "_fv": 71,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "xuanyuansword1",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Xuanyuan Sword",
+    "rarity": "EPIC",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 13,
+    "useDuration": 7200,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 13.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§6第十神之键，蕴含着强大的律者力量",
+        "§7虽然只有千分之一"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "HonkaiParticle"
+    },
+    "onDroppedByPlayer": {
+      "name": "XuanyuanLaunch"
+    },
+    "enableRanged": true,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:XuanyuanSwordQ"
+    },
+    "projectileDisableAmmoCheck": true,
+    "onRangedItemUsed": {
+      "name": "XuanyuanDel"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "spear",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
+  }
+}

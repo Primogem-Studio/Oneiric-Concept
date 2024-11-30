@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "oneiricconcept:block/mmmushroom2",
+    "particle": "oneiricconcept:block/mmmushroom2"
+  },
+  "render_type": "cutout"
+}

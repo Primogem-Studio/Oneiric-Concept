@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    {
+      "item": "oneiricconcept:legion_pseudo_sliver"
+    },
+    {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    {
+      "item": "oneiricconcept:honkai_shard"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:legion_pseudo_core",
+    "count": 1
+  }
+}

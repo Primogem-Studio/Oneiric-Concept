@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "xiutiejian_0",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Sword Of Brilliant Valor",
+    "specialInformation": {
+      "fixedValue": [
+        "当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
+        "并非母亲留下的宝藏"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 6.0,
+    "enchantability": 30,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:MemoryBubble"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "BrilliantValor"
+    },
+    "onItemInUseTick": {
+      "name": "BrilliantValorBuff"
+    }
+  }
+}

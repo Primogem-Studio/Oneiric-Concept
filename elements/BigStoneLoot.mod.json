@@ -1,0 +1,10 @@
+{
+  "_fv": 71,
+  "_type": "loottable",
+  "definition": {
+    "type": "Chest",
+    "pools": [],
+    "name": "chests/big_stone_loot",
+    "namespace": "mod"
+  }
+}

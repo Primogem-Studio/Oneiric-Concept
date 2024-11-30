@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "oneiricconcept:block/bananafungus",
+    "particle": "oneiricconcept:block/bananafungus"
+  },
+  "render_type": "cutout"
+}

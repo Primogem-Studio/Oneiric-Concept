@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oneiricconcept:honkai_shard"
+  },
+  "result": {
+    "id": "oneiricconcept:honkai_sliver",
+    "count": 9
+  }
+}

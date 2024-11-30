@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "oneiricconcept:blocks/mm_mushroom",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oneiricconcept:mm_mushroom",
+          "conditions": [
+            {
+              "block": "oneiricconcept:mm_mushroom",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

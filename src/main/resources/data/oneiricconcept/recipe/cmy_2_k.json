@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:mactus"
+    },
+    {
+      "item": "oneiricconcept:c_cactus"
+    },
+    {
+      "item": "oneiricconcept:yactus"
+    }
+  ],
+  "result": {
+    "id": "minecraft:black_dye",
+    "count": 6
+  }
+}

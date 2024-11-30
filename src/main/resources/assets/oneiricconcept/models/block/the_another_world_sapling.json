@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "oneiricconcept:block/theanotherworldsapling",
+    "particle": "oneiricconcept:block/theanotherworldlogleavetop"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,34 @@
+{
+  "feature": "oneiricconcept:memry_cloud",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1600
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 160
+        },
+        "max_inclusive": {
+          "absolute": 280
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "uniform",
+        "min_inclusive": -6,
+        "max_inclusive": 6
+      },
+      "y_spread": {
+        "type": "uniform",
+        "min_inclusive": -3,
+        "max_inclusive": 3
+      }
+    }
+  ]
+}

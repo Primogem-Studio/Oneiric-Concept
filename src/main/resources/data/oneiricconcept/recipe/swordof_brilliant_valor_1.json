@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:lajitongsuipian"
+  },
+  "base": {
+    "item": "primogemcraft:wufengjian"
+  },
+  "addition": {
+    "item": "primogemcraft:disui"
+  },
+  "result": {
+    "id": "oneiricconcept:sword_of_brilliant_valor"
+  }
+}

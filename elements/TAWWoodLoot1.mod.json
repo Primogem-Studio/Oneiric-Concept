@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "TAG:c:glass_blocks"
+      },
+      {
+        "value": "CUSTOM:TAWWoodBox"
+      },
+      {
+        "value": "TAG:c:glass_blocks"
+      },
+      {
+        "value": "CUSTOM:TAWWoodBox"
+      },
+      {
+        "value": "TAG:c:glass_blocks"
+      },
+      {
+        "value": "CUSTOM:TAWWoodBox"
+      },
+      {
+        "value": "TAG:c:glass_blocks"
+      },
+      {
+        "value": "CUSTOM:TAWWoodBox"
+      },
+      {
+        "value": "TAG:c:glass_blocks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TAWWoodLoot"
+    },
+    "name": "taw_wood_loot_1",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:the_another_world_sapling"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:yishijiemugun",
+    "count": 2
+  }
+}

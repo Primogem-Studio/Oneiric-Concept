@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:stuffing"
+    },
+    {
+      "tag": "c:healthmeat"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:sausage",
+    "count": 1
+  }
+}

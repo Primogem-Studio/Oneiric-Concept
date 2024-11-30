@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 8,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SkyWaffle"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PrimogemWaffle"
+      },
+      {
+        "value": "Blocks.HONEY_BLOCK"
+      },
+      {
+        "value": "CUSTOM:PrimogemWaffle"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SkyWaffle"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ResurrectionPellet"
+    },
+    "name": "resurrection_pellet_2",
+    "namespace": "mod"
+  }
+}

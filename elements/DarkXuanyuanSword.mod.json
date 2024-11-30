@@ -1,0 +1,77 @@
+{
+  "_fv": 71,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "xuanyuansword2",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Xuanyuan Sword",
+    "rarity": "EPIC",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 13,
+    "useDuration": 7200,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 28.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§6第十神之键，蕴含着强大的律者力量",
+        "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": true
+    },
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onItemInUseTick": {
+      "name": "HonkaiParticle"
+    },
+    "onEntitySwing": {
+      "name": "XuanyuanLaunch"
+    },
+    "onDroppedByPlayer": {
+      "name": "XuanyuanLaunch"
+    },
+    "enableRanged": true,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:XuanyuanSwordQ"
+    },
+    "projectileDisableAmmoCheck": true,
+    "onRangedItemUsed": {
+      "name": "CoreDel"
+    },
+    "rangedUseCondition": {
+      "name": "XuanyuanOnline"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "spear",
+    "isMusicDisc": false,
+    "musicDiscLengthInTicks": 0,
+    "musicDiscAnalogOutput": 0
+  }
+}

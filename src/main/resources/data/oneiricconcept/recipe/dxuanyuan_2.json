@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "oneiricconcept:memoria_piece"
+  },
+  "base": {
+    "item": "oneiricconcept:d_xuanyuan"
+  },
+  "addition": {
+    "item": "oneiricconcept:honkai_sliver"
+  },
+  "result": {
+    "id": "oneiricconcept:dark_xuanyuan_sword"
+  }
+}

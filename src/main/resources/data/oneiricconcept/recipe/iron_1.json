@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " a ",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:xingchen"
+    }
+  },
+  "result": {
+    "id": "minecraft:iron_ore",
+    "count": 2
+  }
+}

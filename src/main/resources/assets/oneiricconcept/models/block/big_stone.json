@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/bigstone",
+  "textures": {
+    "all": "minecraft:block/stone",
+    "particle": "minecraft:block/stone",
+    "missing": "minecraft:block/stone"
+  },
+  "render_type": "solid"
+}

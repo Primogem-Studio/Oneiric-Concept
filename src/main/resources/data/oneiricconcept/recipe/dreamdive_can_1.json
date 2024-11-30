@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_nugget"
+    },
+    "b": {
+      "item": "minecraft:iron_trapdoor"
+    },
+    "c": {
+      "item": "oneiricconcept:memory_bubble"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:dreamdive_can",
+    "count": 1
+  }
+}

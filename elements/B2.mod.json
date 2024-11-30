@@ -1,0 +1,12 @@
+{
+  "_fv": 71,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.2,
+    "scaling": "always",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s Feeling uncomfortable after eating smoked sausage",
+    "itemDeathMessage": "%1$s was killed by %2$s using %3$s",
+    "playerDeathMessage": "%1$s was unable to escape the %2$s's fumigation"
+  }
+}

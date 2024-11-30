@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oneiricconcept:condensed_memoria_piece"
+  },
+  "result": {
+    "id": "oneiricconcept:memoria_piece",
+    "count": 9
+  }
+}

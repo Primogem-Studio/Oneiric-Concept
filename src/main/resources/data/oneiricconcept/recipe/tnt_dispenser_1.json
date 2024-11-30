@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:obsidian"
+    },
+    "b": {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    "c": {
+      "item": "primogemcraft:chuangzaoxiaodengfasheqi"
+    },
+    "d": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:tnt_dispenser",
+    "count": 1
+  }
+}

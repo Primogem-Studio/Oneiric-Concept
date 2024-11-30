@@ -1,0 +1,4068 @@
+{
+  "mod_elements": [
+    {
+      "name": "Sausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sausage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/SausageItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/sausage.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "SmokeSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/smoke_sausage.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SmokeSausageItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "BelobogSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "belobog_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/belobog_sausage.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/BelobogSausageItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "OneiricConcept",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneiric_concept",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ZiRan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zi_ran",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ZiRanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "S2ausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2ausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/s_2ausage.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/S2ausageItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "S2mokeSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2moke_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/s_2moke_sausage.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/S2mokeSausageItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "ZiRanLose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zi_ran_lose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ZiRanLoseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "B2elobogSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2elobog_sausage",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/b_2elobog_sausage.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/B2elobogSausageItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Stuffing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/stuffing.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/StuffingItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "S2tuffing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2tuffing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/S2tuffingItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/s_2tuffing.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "SausageRecipes1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sausage_recipes_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sausage_recipes_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SausageRecipes2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sausage_recipes_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sausage_recipes_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmokeSausageRecipes1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_sausage_recipes_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/smoke_sausage_recipes_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmokeSausageRecipes2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_sausage_recipes_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/smoke_sausage_recipes_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "S2mokeSausage2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2moke_sausage_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/s_2moke_sausage_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "S2mokeSausage1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2moke_sausage_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/s_2moke_sausage_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "S2ausageRecipes1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2ausage_recipes_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/s_2ausage_recipes_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "S2ausageRecipes2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2ausage_recipes_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/s_2ausage_recipes_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "GeomarrowRadiator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geomarrow_radiator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/GeomarrowRadiatorBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/geomarrow_radiator.json",
+          "src/main/resources/assets/oneiricconcept/models/item/geomarrow_radiator.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geomarrow_radiator.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/geomarrow_radiator.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "NormalStuffing",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "normal_stuffing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/NormalStuffingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GeomarrowRadiatorProcess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geomarrow_radiator_process",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GeomarrowRadiatorProcessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "OneiricShardBuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneiric_shard_buff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/OneiricShardBuffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BlbgBuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blbg_buff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BlbgBuffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "OneiricShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneiric_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/OneiricShardItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/oneiric_shard.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "MoraSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mora_sausage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/MoraSausageItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_sausage.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "PrimogemsSausage",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogems_sausage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/PrimogemsSausageItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/primogems_sausage.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Stuffing1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stuffing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/stuffing_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "S2tuffing1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "s_2tuffing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/s_2tuffing_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BoomBlossomsPyroBoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_blossoms_pyro_boom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BoomBlossomsPyroBoomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BoomBlossomsPyro",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_blossoms_pyro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_pyro.json",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_pyro.json",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BananaMushroom",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banana_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/banana_mushroom.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/banana_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/models/item/banana_mushroom.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BananaMushroomBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/banana_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/banana_mushroom.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/banana_mushroom_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/banana_mushroom.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BananaMushroomBock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banana_mushroom_bock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/banana_mushroom_bock.json",
+          "src/main/resources/assets/oneiricconcept/models/item/banana_mushroom_bock.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BananaMushroomBockBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/banana_mushroom_bock.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/banana_mushroom_bock.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "B2ananaMushroom",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2anana_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2anana_mushroom.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2anana_mushroom_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/b_2anana_mushroom.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "BananaMushroomNagadus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banana_mushroom_nagadus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BananaMushroomNagadusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GeomarrowRadiator1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "geomarrow_radiator_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/geomarrow_radiator_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MoraSausage1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mora_sausage_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/mora_sausage_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PrimogemsSausage1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "primogems_sausage_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogems_sausage_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OneiricShard1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oneiric_shard_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/oneiric_shard_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Chuangshijiejing1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "chuangshijiejing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/chuangshijiejing_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BananaMushroombone",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banana_mushroombone",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BananaMushroomboneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ElementsCrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elements_crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/ElementsCrystalOreBlock.java",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/elements_crystal_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/elements_crystal_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/elements_crystal_ore_biome_modifier.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/elements_crystal_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/block/elements_crystal_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/elements_crystal_ore.json"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "NagadusEmeraldOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nagadus_emerald_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/nagadus_emerald_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/NagadusEmeraldOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/nagadus_emerald_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/nagadus_emerald_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/nagadus_emerald_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/block/nagadus_emerald_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/nagadus_emerald_ore.json"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "ShivadaJadeOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shivada_jade_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/shivada_jade_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/shivada_jade_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/shivada_jade_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ShivadaJadeOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/shivada_jade_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/shivada_jade_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/shivada_jade_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "VajradaAmethystOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vajrada_amethyst_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/vajrada_amethyst_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/VajradaAmethystOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/vajrada_amethyst_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/vajrada_amethyst_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/vajrada_amethyst_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/vajrada_amethyst_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/vajrada_amethyst_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "VarunadaLazuriteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "varunada_lazurite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/varunada_lazurite_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/varunada_lazurite_ore_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/varunada_lazurite_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/varunada_lazurite_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/varunada_lazurite_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/varunada_lazurite_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/VarunadaLazuriteOreBlock.java"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "ElementsCrystalOre1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "elements_crystal_ore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/elements_crystal_ore.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "Cloud",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/cloud.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/cloud.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CloudBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/cloud.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cloud.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "PrithivaTopazOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prithiva_topaz_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/prithiva_topaz_ore_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/prithiva_topaz_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/prithiva_topaz_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/PrithivaTopazOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/prithiva_topaz_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/prithiva_topaz_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/prithiva_topaz_ore.json"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "VayudaTurquoiseOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vayuda_turquoise_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/vayuda_turquoise_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/block/vayuda_turquoise_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/VayudaTurquoiseOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/vayuda_turquoise_ore.json"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "AgnidusAgateOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnidus_agate_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/agnidus_agate_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnidus_agate_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/agnidus_agate_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/agnidus_agate_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/AgnidusAgateOreBlock.java",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/agnidus_agate_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/agnidus_agate_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/block/ore"
+    },
+    {
+      "name": "NagadusEmeraldOre1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "nagadus_emerald_ore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/nagadus_emerald_ore.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "PrithivaTopazOre1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "prithiva_topaz_ore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/prithiva_topaz_ore.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "ShivadaJadeOre1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "shivada_jade_ore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/shivada_jade_ore.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "VayudaTurquoiseOre1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vayuda_turquoise_ore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/vayuda_turquoise_ore_1.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "VajradaAmethystOre2",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "vajrada_amethyst_ore_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/vajrada_amethyst_ore_2.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "AgnidusAgateOre1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "agnidus_agate_ore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnidus_agate_ore_1.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "VarunadaLazuriteOre1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "varunada_lazurite_ore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/varunada_lazurite_ore_1.json"
+        ]
+      },
+      "path": "~/block/ore/OreLoot"
+    },
+    {
+      "name": "CloudFeature",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/cloud_feature_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/cloud_feature.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/cloud_feature.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "Cloudput",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloudput",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CloudputProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "CloudBottle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_bottle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/CloudBottleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/cloud_bottle.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "CloudB2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_b_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cloud_b_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CloudB21",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cloud_b_21",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cloud_b_21.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "B2HeT",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2_he_t",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/B2HeTProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "DreamdiveCan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dreamdive_can",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/DreamdiveCanItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/dreamdive_can.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "SunStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SunStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Dreamdive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dreamdive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/DreamdiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "SunStartCan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_start_can",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/SunStartCanItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/sun_start_can.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Memoria",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memoria",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/memoria_bucket.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/memoria.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MemoriaItem.java",
+          "src/main/java/net/mcreator/oneiricconcept/fluid/types/MemoriaFluidType.java",
+          "src/main/java/net/mcreator/oneiricconcept/fluid/MemoriaFluid.java",
+          "src/main/resources/assets/oneiricconcept/models/block/memoria.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/MemoriaBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "MemoryBubble",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memory_bubble",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/memory_bubble.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MemoryBubbleItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Sleep",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sleep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SleepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PlayerSleep",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_sleep",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlayerSleepProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "DreamdiveCan1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dreamdive_can_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dreamdive_can_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SunStartCan1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_start_can_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sun_start_can_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MemoriaPiece",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memoria_piece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/MemoriaPieceItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/memoria_piece.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "MemoriaPiece1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memoria_piece_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memoria_piece_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MemoriaPiece2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memoria_piece_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memoria_piece_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MemoryBubble1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memory_bubble_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memory_bubble_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MemryCloud",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memry_cloud",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/memry_cloud_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/memry_cloud.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/memry_cloud.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "XuanyuanSword",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/XuanyuanSwordItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/xuanyuan_sword.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "XuanyuanSwordQ",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_sword_q",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/entity/XuanyuanSwordQEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "XuanyuanBoom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_boom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanBoomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "XuanyuanLaunch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_launch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanLaunchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "XuanyuanDel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_del",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanDelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "XuanyuanQ2",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_q_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/entity/XuanyuanQ2Entity.java"
+        ]
+      }
+    },
+    {
+      "name": "AdeptusGun",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adeptus_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/AdeptusGunItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "BigStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/big_stone.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BigStoneBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/big_stone.json",
+          "src/main/resources/assets/oneiricconcept/models/block/big_stone.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BigRock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/big_rock.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BigRockBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/big_rock.json",
+          "src/main/resources/assets/oneiricconcept/models/block/big_rock.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BigRock1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_rock_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/big_rock.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BigRockR",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_rock_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/big_rock_r.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BigStone1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_stone_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/big_stone.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "HonkaiParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HonkaiParticleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "HonkaiShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/honkai_shard.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HonkaiShardItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "LegionPseudoCore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "legion_pseudo_core",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/LegionPseudoCoreItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/legion_pseudo_core.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "LegionPseudoSliver",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "legion_pseudo_sliver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/LegionPseudoSliverItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/legion_pseudo_sliver.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "LegionPseudoCore1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "legion_pseudo_core_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/legion_pseudo_core_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HonkaiSliver",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai_sliver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/HonkaiSliverItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/honkai_sliver.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "HonkaiSliver1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai_sliver_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/honkai_sliver_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HonkaiShard1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai_shard_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/honkai_shard_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "XuanYuanSword1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "xuan_yuan_sword_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/xuan_yuan_sword_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BigStoneLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "big_stone_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/chests/big_stone_loot.json"
+        ]
+      }
+    },
+    {
+      "name": "B2igStone",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2ig_stone",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/b_2ig_stone.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2ig_stone.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2ig_stone_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "B2gStoneChest",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2g_stone_chest",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/b_2g_stone_chest.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2g_stone_chest.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2g_stone_chest_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "OyDumpling",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oy_dumpling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/OyDumplingItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/oy_dumpling.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Dumpling",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dumpling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/DumplingItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/dumpling.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "OyStuffing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oy_stuffing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/oy_stuffing.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/OyStuffingItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "OyDumpling1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oy_dumpling_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/oy_dumpling_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Dumpling1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dumpling_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dumpling_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TheAnotherWorldLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_another_world_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/the_another_world_log.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_log.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldLogBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_log.json",
+          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_log.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "StrippedTheAnotherWorldLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_the_another_world_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/StrippedTheAnotherWorldLogBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/stripped_the_another_world_log.json",
+          "src/main/resources/assets/oneiricconcept/models/block/stripped_the_another_world_log.json",
+          "src/main/resources/assets/oneiricconcept/models/item/stripped_the_another_world_log.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/stripped_the_another_world_log.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Stripped",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/StrippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TheAnotherWorldSapling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_another_world_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/the_another_world_sapling.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldSaplingBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_sapling.json",
+          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_sapling.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_sapling.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "XSaplingNagadus",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "x_sapling_nagadus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XSaplingNagadusProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TheAnotherWorldTree",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_another_world_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/the_another_world_tree_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/the_another_world_tree.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/the_another_world_tree.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "DarkXuanyuanSword",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_xuanyuan_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/dark_xuanyuan_sword.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/DarkXuanyuanSwordItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "XuanyuanOnline",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_online",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanOnlineProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "DXuanYuanSword",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "d_xuan_yuan_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/d_xuan_yuan_sword.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SpBox",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sp_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sp_box.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BoneMeal1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bone_meal_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/bone_meal_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OneiricShard2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneiric_shard_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/oneiric_shard_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TheAnotherWorldWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_another_world_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldWoodBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/the_another_world_wood.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_wood.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_wood.json",
+          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_wood.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "CondensedMemoriaPiece",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "condensed_memoria_piece",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/CondensedMemoriaPieceItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/condensed_memoria_piece.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "CoreDel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "core_del",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CoreDelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TAWWoodBox",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_wood_box",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/taw_wood_box.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/TAWWoodBoxItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "TAWWoodLoot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_wood_loot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/TAWWoodLootItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/taw_wood_loot.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "TAWWoodLooto",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_wood_looto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TAWWoodLootoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "MemoriaLoot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memoria_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/memoria_loot.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MemoriaLootItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "MemoriaLoot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memoria_loot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memoria_loot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CondensedMemoriaPiece1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "condensed_memoria_piece_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/condensed_memoria_piece_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TAWWood",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/taw_wood.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TAWWoodBox1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_wood_box_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/taw_wood_box_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TAWWoodLoot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_wood_loot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/taw_wood_loot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OneiricConceptfood",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneiric_conceptfood",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MmMushroom",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mm_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/mm_mushroom.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/mm_mushroom_biome_modifier.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/MmMushroomBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/mm_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/models/block/mm_mushroom.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/mm_mushroom.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/mm_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mm_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/models/block/mm_mushroom_bottom.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "MemoryBubble2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memory_bubble_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memory_bubble_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BananaMushroomBock1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banana_mushroom_bock_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/banana_mushroom_bock.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BigRock2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_rock_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/big_rock_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Mmmhit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mmmhit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/mmmhit.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MmmhitItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Mmhit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mmhit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MmhitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "B2",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/damage_type/b_2.json"
+        ]
+      }
+    },
+    {
+      "name": "B2sausage",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2sausage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/potion/B2sausageMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "CactusHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactus_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CactusHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Bactusgrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bactusgrow",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BactusgrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Cactusout",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cactusout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CactusoutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Bactus",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bactus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/bactus.json",
+          "src/main/resources/assets/oneiricconcept/models/block/bactus.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/bactus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BactusBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/bactus.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "CCactus",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_cactus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/c_cactus.json",
+          "src/main/resources/assets/oneiricconcept/models/item/c_cactus.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/c_cactus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CCactusBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/c_cactus.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Gactus",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gactus",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/GactusBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/gactus.json",
+          "src/main/resources/assets/oneiricconcept/models/item/gactus.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/gactus.json",
+          "src/main/resources/assets/oneiricconcept/models/block/gactus.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Mactus",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mactus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/mactus.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/mactus.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mactus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/MactusBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/mactus.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Ractus",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ractus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/ractus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/RactusBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ractus.json",
+          "src/main/resources/assets/oneiricconcept/models/block/ractus.json",
+          "src/main/resources/assets/oneiricconcept/models/item/ractus.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Yactus",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yactus",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/yactus.json",
+          "src/main/resources/assets/oneiricconcept/models/block/yactus.json",
+          "src/main/resources/assets/oneiricconcept/models/item/yactus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/YactusBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/yactus.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "R2R",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "r_2_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/r_2_r.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "G2G",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "g_2_g",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/g_2_g.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "B2B",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "b_2_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/b_2_b.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "C2c",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "c_2c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/c_2c.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "M2m",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "m_2m",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/m_2m.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Y2y",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "y_2y",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/y_2y.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Rg2y",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rg_2y",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/rg_2y.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Rb2p",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rb_2p",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/rb_2p.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Gb2c",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gb_2c",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/gb_2c.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Ry2o",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ry_2o",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ry_2o.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "By2g",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "by_2g",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/by_2g.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Cy2g",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cy_2g",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cy_2g.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "My2r",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_2r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/my_2r.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Cm2b",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cm_2b",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cm_2b.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Rgb2w",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rgb_2w",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/rgb_2w.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Bonemeeal",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonemeeal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/bonemeeal.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CMY2K",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmy_2_k",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cmy_2_k.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Tawsapling",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tawsapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/tawsapling.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Tawplank",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tawplank",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/tawplank.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Tawstick",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tawstick",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/tawstick.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SwordOfBrilliantValor",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_brilliant_valor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/sword_of_brilliant_valor.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SwordOfBrilliantValorItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "BrilliantValor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brilliant_valor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BrilliantValorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BrilliantValorBuff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brilliant_valor_buff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BrilliantValorBuffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Theanotherworldleave1",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "theanotherworldleave_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_leave.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "TheAnotherWorldLeave",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_another_world_leave",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/the_another_world_leave.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_leave.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldLeaveBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_leave.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "SliverWolf",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sliver_wolf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/painting_variant/sliver_wolf.json"
+        ]
+      }
+    },
+    {
+      "name": "CrystalTurtle",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_turtle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/CrystalTurtleRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/CrystalTurtleEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/item/crystal_turtle_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "TNTDispenser",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_dispenser",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/tnt_dispenser.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/tnt_dispenser.json",
+          "src/main/resources/assets/oneiricconcept/models/item/tnt_dispenser.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/TNTDispenserBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/tnt_dispenser.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "TNTlaunch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tn_tlaunch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TNTlaunchProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TNTDispenser1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tnt_dispenser_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/tnt_dispenser_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Health100",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health_100",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Health100Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "health",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "H10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "h_10",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/H10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Waffle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waffle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/waffle.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/WaffleItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "PrimogemWaffle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogem_waffle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/PrimogemWaffleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/primogem_waffle.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Leather1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "leather_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/leather_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Oaklog1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oaklog_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/oaklog_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Gunpowder1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gunpowder_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/gunpowder_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "OneiricConceptAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oneiric_concept_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/oneiric_concept_advancement.json"
+        ]
+      },
+      "path": "~/Advancement"
+    },
+    {
+      "name": "TheSeriousnessOfBreakfast",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_seriousness_of_breakfast",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/the_seriousness_of_breakfast.json"
+        ]
+      },
+      "path": "~/Advancement"
+    },
+    {
+      "name": "Gold1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/gold_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Iron1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/iron_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Diamond1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/diamond_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DXuanyuan",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_xuanyuan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/DXuanyuanItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/d_xuanyuan.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "DXuanyuan1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "d_xuanyuan_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/d_xuanyuan_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Dxuanyuan2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dxuanyuan_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dxuanyuan_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MemoriaPiece3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "memoria_piece_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memoria_piece_3.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HonkaiSliver2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai_sliver_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/honkai_sliver_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HonkaiShard2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai_shard_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/honkai_shard_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Restoreblock1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "restoreblock_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/restoreblock_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmallHertaCore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_herta_core",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/SmallHertaCoreItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/small_herta_core.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "SkyWaffle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_waffle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/sky_waffle.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SkyWaffleItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "EndermiteSum",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "endermite_sum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EndermiteSumProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Hertacore1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hertacore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hertacore_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmallHertacore1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "small_hertacore_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/small_hertacore_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SmallHertacore2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "small_hertacore_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/small_hertacore_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SwordofBrilliantValor1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swordof_brilliant_valor_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/swordof_brilliant_valor_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "LegionPseudoSliver1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "legion_pseudo_sliver_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/legion_pseudo_sliver_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Resurrection",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resurrection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ResurrectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ResurrectionPellet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resurrection_pellet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/ResurrectionPelletItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/resurrection_pellet.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "ResurrectionPellet1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resurrection_pellet_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/resurrection_pellet_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ResurrectionPellet2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "resurrection_pellet_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/resurrection_pellet_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Asda",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "asda",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AsdaProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Cc1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cc_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cc_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Mca1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mca_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/mca_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Yca1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yca_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/yca_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Rca1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rca_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/rca_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Gca1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gca_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/gca_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Bca1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bca_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/bca_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Surpriseboxforgoodorbad",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surpriseboxforgoodorbad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/SurpriseboxforgoodorbadItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/surpriseboxforgoodorbad.json",
+          "src/main/resources/data/oneiricconcept/jukebox_song/surpriseboxforgoodorbad.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "surprise_box_for_good_or_bad",
+      "files": [
+        "surprise_box_for_good_or_bad"
+      ],
+      "category": "record",
+      "subtitle": "开盒有惊__"
+    },
+    {
+      "name": "mmm",
+      "files": [
+        "mmm"
+      ],
+      "category": "block",
+      "subtitle": "bump"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BigStone",
+      "~CUSTOM:AgnidusAgateOre",
+      "~CUSTOM:VayudaTurquoiseOre",
+      "~CUSTOM:PrithivaTopazOre",
+      "~CUSTOM:ElementsCrystalOre",
+      "~CUSTOM:GeomarrowRadiator"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:BigStone"
+    ],
+    "ITEMS:mod:lootb": [
+      "CUSTOM:S2mokeSausage",
+      "CUSTOM:S2tuffing",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MemoryBubble",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:OyStuffing",
+      "CUSTOM:TheAnotherWorldSapling",
+      "CUSTOM:Surpriseboxforgoodorbad"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:AgnidusAgateOre",
+      "~CUSTOM:VayudaTurquoiseOre",
+      "~CUSTOM:PrithivaTopazOre",
+      "~CUSTOM:VarunadaLazuriteOre",
+      "~CUSTOM:VajradaAmethystOre",
+      "~CUSTOM:ShivadaJadeOre",
+      "~CUSTOM:NagadusEmeraldOre",
+      "~CUSTOM:ElementsCrystalOre"
+    ],
+    "BLOCKS:minecraft:flowers": [
+      "CUSTOM:TheAnotherWorldLogLeave"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:NagadusEmeraldOre",
+      "~CUSTOM:BananaMushroomBock",
+      "~CUSTOM:BoomBlossomsPyro"
+    ],
+    "ITEMS:mod:loots": [
+      "CUSTOM:OneiricShard",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:LegionPseudoSliver"
+    ],
+    "BLOCKS:minecraft:logs": [
+      "CUSTOM:TheAnotherWorldLog",
+      "CUSTOM:StrippedTheAnotherWorldLog"
+    ],
+    "ITEMS:mod:tawlog": [
+      "CUSTOM:TheAnotherWorldLog",
+      "CUSTOM:StrippedTheAnotherWorldLog"
+    ],
+    "ENTITIES:minecraft:aquatic": [
+      "~CUSTOM:CrystalTurtle"
+    ],
+    "ITEMS:c:healthmeat": [
+      "Items.FISH#0",
+      "Items.FISH#1",
+      "Items.FISH#2",
+      "Items.COOKED_FISH#0",
+      "Items.COOKED_FISH#1",
+      "Items.PORKCHOP",
+      "Items.COOKED_PORKCHOP",
+      "Items.BEEF",
+      "Items.COOKED_BEEF",
+      "Items.CHICKEN",
+      "Items.COOKED_CHICKEN",
+      "Items.RABBIT",
+      "Items.COOKED_RABBIT",
+      "Items.MUTTON",
+      "Items.COOKED_MUTTON"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:VarunadaLazuriteOre",
+      "~CUSTOM:VajradaAmethystOre",
+      "~CUSTOM:ShivadaJadeOre"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Memoria"
+    ],
+    "ITEMS:c:b2sausage": [
+      "CUSTOM:BelobogSausage",
+      "CUSTOM:B2elobogSausage"
+    ],
+    "ITEMS:c:sausage": [
+      "CUSTOM:Sausage",
+      "CUSTOM:S2ausage"
+    ],
+    "ITEMS:c:smokesausage": [
+      "CUSTOM:SmokeSausage",
+      "CUSTOM:S2mokeSausage"
+    ],
+    "ITEMS:mod:loota": [
+      "CUSTOM:OneiricShard",
+      "CUSTOM:PrimogemsSausage",
+      "CUSTOM:SunStartCan",
+      "CUSTOM:MemoriaPiece",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:Surpriseboxforgoodorbad"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:DXuanyuan",
+      "~CUSTOM:SwordOfBrilliantValor",
+      "CUSTOM:XuanyuanSword",
+      "CUSTOM:DarkXuanyuanSword"
+    ],
+    "ITEMS:minecraft:logs_that_burn": [
+      "CUSTOM:TheAnotherWorldLog",
+      "CUSTOM:StrippedTheAnotherWorldLog"
+    ],
+    "ITEMS:pgc:qyhx_hc": [
+      "CUSTOM:Stuffing",
+      "CUSTOM:S2tuffing",
+      "CUSTOM:MemoryBubble",
+      "CUSTOM:OyStuffing",
+      "CUSTOM:TheAnotherWorldLog",
+      "CUSTOM:StrippedTheAnotherWorldLog",
+      "CUSTOM:TheAnotherWorldSapling",
+      "CUSTOM:Waffle",
+      "CUSTOM:PrimogemWaffle"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:OyStuffing",
+      "~CUSTOM:Dumpling",
+      "~CUSTOM:OyDumpling",
+      "~CUSTOM:S2tuffing",
+      "~CUSTOM:Stuffing",
+      "~CUSTOM:B2elobogSausage",
+      "~CUSTOM:S2mokeSausage",
+      "~CUSTOM:S2ausage",
+      "~CUSTOM:BelobogSausage",
+      "~CUSTOM:SmokeSausage",
+      "~CUSTOM:Sausage"
+    ],
+    "ITEMS:minecraft:music_discs": [
+      "~CUSTOM:Surpriseboxforgoodorbad"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:Food": [],
+    "CUSTOM:OneiricConceptfood": [
+      "Stuffing",
+      "S2tuffing",
+      "OyStuffing",
+      "Sausage",
+      "SmokeSausage",
+      "BelobogSausage",
+      "S2ausage",
+      "S2mokeSausage",
+      "B2elobogSausage",
+      "MoraSausage",
+      "PrimogemsSausage",
+      "Dumpling",
+      "OyDumpling",
+      "Waffle",
+      "PrimogemWaffle",
+      "SkyWaffle",
+      "ResurrectionPellet"
+    ],
+    "CUSTOM:OneiricConcept": [
+      "OneiricShard",
+      "GeomarrowRadiator",
+      "BoomBlossomsPyro",
+      "BananaMushroom",
+      "BananaMushroomBock",
+      "CloudBottle",
+      "Cloud",
+      "AgnidusAgateOre",
+      "VarunadaLazuriteOre",
+      "VayudaTurquoiseOre",
+      "VajradaAmethystOre",
+      "NagadusEmeraldOre",
+      "ShivadaJadeOre",
+      "PrithivaTopazOre",
+      "ElementsCrystalOre",
+      "DreamdiveCan",
+      "SunStartCan",
+      "MemoryBubble",
+      "MemoriaPiece",
+      "CondensedMemoriaPiece",
+      "MemoriaLoot",
+      "Memoria",
+      "XuanyuanSword",
+      "DarkXuanyuanSword",
+      "HonkaiShard",
+      "HonkaiSliver",
+      "LegionPseudoCore",
+      "LegionPseudoSliver",
+      "TheAnotherWorldSapling",
+      "TheAnotherWorldLog",
+      "TheAnotherWorldWood",
+      "StrippedTheAnotherWorldLog",
+      "TAWWoodBox",
+      "TAWWoodLoot",
+      "BigStone",
+      "BigRock",
+      "Surpriseboxforgoodorbad",
+      "MmMushroom",
+      "SwordOfBrilliantValor",
+      "TheAnotherWorldLeave",
+      "TNTDispenser",
+      "DXuanyuan",
+      "SmallHertaCore"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
+      "item.oneiricconcept.smoke_sausage": "Smoke Sausage",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
+      "effect.oneiricconcept.b_2sausage": "sausage",
+      "item.oneiricconcept.oy_stuffing": "stuffing",
+      "item.oneiricconcept.oy_dumpling": "Dumpling",
+      "item.oneiricconcept.mmmhit": "Mmmhit",
+      "item.oneiricconcept.waffle": "Waffle",
+      "item.oneiricconcept.sword_of_brilliant_valor.description_1": "并非母亲留下的宝藏",
+      "item.oneiricconcept.sword_of_brilliant_valor.description_0": "当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
+      "item.oneiricconcept.primogem_waffle.description_0": "敬传说中的画饼仙人",
+      "death.attack.b_2.player": "%1$s was unable to escape the %2$s\u0027s fumigation",
+      "item.oneiricconcept.dreamdive_can.description_0": "可以代替床来跳过夜晚",
+      "item.oneiricconcept.memoria_loot.description_0": "让眠眠给你送回来",
+      "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
+      "item.oneiricconcept.honkai_sliver": "Honkai Sliver",
+      "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
+      "item.oneiricconcept.d_xuanyuan": "XuanyuanSword",
+      "item.oneiricconcept.condensed_memoria_piece.description_0": "更加浓缩的忆质块",
+      "fluid.oneiricconcept.memoria": "Memoria",
+      "block.oneiricconcept.cloud.description_0": "百川源",
+      "item.oneiricconcept.memoria_piece": "Memoria Piece",
+      "block.oneiricconcept.vayuda_turquoise_ore": "Vayuda Turquoise Ore",
+      "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
+      "block.oneiricconcept.ractus": "Ractus",
+      "item.oneiricconcept.mora_sausage": "Mora Sausage",
+      "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
+      "entity.oneiricconcept.crystal_turtle": "Crystal Turtle",
+      "block.oneiricconcept.the_another_world_sapling": "The Another World Sapling",
+      "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
+      "advancements.oneiric_concept_advancement.descr": "The past turns into candles that light the darkness ahead.",
+      "item.oneiricconcept.primogem_waffle": "Primogem Waffle",
+      "item.oneiricconcept.b_2elobog_sausage.description_0": "有股怪味……孜然的味道吗？",
+      "block.oneiricconcept.nagadus_emerald_ore": "Nagadus Emerald Ore",
+      "item.oneiricconcept.xuanyuan_sword": "Xuanyuan Sword",
+      "advancements.the_seriousness_of_breakfast.title": "The Seriousness Of Breakfast",
+      "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
+      "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
+      "item.oneiricconcept.surpriseboxforgoodorbad": "Surprise Box,for Good or Bad",
+      "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
+      "item.oneiricconcept.oneiric_shard": "Oneiric Shard",
+      "block.oneiricconcept.cloud": "Cloud",
+      "block.oneiricconcept.elements_crystal_ore": "Elements Crystal Ore",
+      "block.oneiricconcept.big_stone": "Big Stone",
+      "item.oneiricconcept.memoria_loot": "Memoria Loot",
+      "block.oneiricconcept.shivada_jade_ore": "Shivada Jade Ore",
+      "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
+      "subtitles.mmm": "bump",
+      "block.oneiricconcept.mm_mushroom": "Mm Mushroom",
+      "item.oneiricconcept.memoria_piece.description_0": "虽然看起来像纹饰板，但这确实只是浓缩的忆质",
+      "block.oneiricconcept.banana_mushroom": "Banana Mushroom",
+      "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
+      "block.oneiricconcept.bactus": "Bactus",
+      "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
+      "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "敬传说中的画饼仙人",
+      "block.oneiricconcept.banana_mushroom.description_2": "吃完香蕉就睡觉",
+      "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
+      "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
+      "item.oneiricconcept.sausage": "Sausage",
+      "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
+      "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
+      "item.oneiricconcept.honkai_shard.description_0": "稀有的崩坏能量聚合体",
+      "block.oneiricconcept.big_rock": "Big Rock",
+      "item.oneiricconcept.crystal_turtle_spawn_egg": "Crystal Turtle Spawn Egg",
+      "item.oneiricconcept.small_herta_core.description_0": "模拟宇宙·寰宇蝗灾",
+      "item.oneiricconcept.sword_of_brilliant_valor": "Sword Of Brilliant Valor",
+      "item.oneiricconcept.stuffing": "stuffing",
+      "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
+      "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
+      "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
+      "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
+      "block.oneiricconcept.the_another_world_wood": "The Another World Wood",
+      "item.oneiricconcept.adeptus_gun": "Adeptus Gun",
+      "death.attack.b_2": "%1$s Feeling uncomfortable after eating smoked sausage",
+      "block.oneiricconcept.tnt_dispenser": "TNT Dispenser",
+      "item.oneiricconcept.memory_bubble": "Memory Bubble",
+      "block.oneiricconcept.memoria": "Memoria",
+      "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
+      "item.oneiricconcept.small_herta_core": "Small-Her Ta Core",
+      "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
+      "item.oneiricconcept.s_2moke_sausage.description_0": "有股怪味……孜然的味道吗？",
+      "item.oneiricconcept.taw_wood_loot": "TAW Wood Loot",
+      "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
+      "block.oneiricconcept.boom_blossoms_pyro": "Boom Blossoms Pyro",
+      "item.oneiricconcept.s_2ausage.description_0": "有股怪味……孜然的味道吗？",
+      "item.oneiricconcept.xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
+      "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
+      "item.oneiricconcept.waffle.description_0": "敬传说中的画饼仙人",
+      "item.oneiricconcept.b_2elobog_sausage": "German style cumin smoked sausage",
+      "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
+      "item.oneiricconcept.s_2tuffing.description_0": "夹杂着碎骨头渣子，有股孜然味",
+      "block.oneiricconcept.the_another_world_log": "The Another World Log",
+      "item.oneiricconcept.sky_waffle": "Sky Waffle",
+      "item.oneiricconcept.s_2ausage": "Sausage",
+      "block.oneiricconcept.mactus": "Mactus",
+      "item.oneiricconcept.resurrection_pellet": "Resurrection Pellet",
+      "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
+      "block.oneiricconcept.yactus": "Yactus",
+      "item.oneiricconcept.honkai_shard": "Honkai Shard",
+      "item.oneiricconcept.s_2tuffing": "stuffing",
+      "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
+      "block.oneiricconcept.gactus": "Gactus",
+      "item.oneiricconcept.dumpling": "Dumpling",
+      "death.attack.b_2.item": "%1$s was killed by %2$s using %3$s",
+      "item.oneiricconcept.resurrection_pellet.description_0": "依律禁止宣传保健品的药物功效。",
+      "item.oneiricconcept.sun_start_can.description_0": "§6直接使下一日的太阳升起",
+      "item.oneiricconcept.oneiric_shard.description_0": "§d泛浮在星辰大海中的结晶微光，律动着古老巨兽的遗梦。旧日的一切最终成了照亮黑暗前路的烛火。",
+      "item.oneiricconcept.primogems_sausage": "Primogems Sausage",
+      "painting.oneiricconcept.sliver_wolf.title": "Sliver Wolf",
+      "block.oneiricconcept.big_rock.description_0": "蕴含丰富粗矿的石块",
+      "item.oneiricconcept.dreamdive_can": "§9Dreamdive Can",
+      "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "关注我，教你开基因锁！",
+      "painting.oneiricconcept.sliver_wolf.author": "HoYoverse",
+      "block.oneiricconcept.c_cactus": "Cactus",
+      "block.oneiricconcept.the_another_world_leave": "The Another World Leave",
+      "item.oneiricconcept.oy_stuffing.description_0": "对……对吗？",
+      "block.oneiricconcept.mm_mushroom.description_0": "萌萌的蘑菇，但有一颗坚硬的心",
+      "block.oneiricconcept.vajrada_amethyst_ore": "Vajrada Amethyst Ore",
+      "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
+      "advancements.oneiric_concept_advancement.title": "Oneiric Concept",
+      "item.oneiricconcept.dark_xuanyuan_sword": "Xuanyuan Sword",
+      "item.oneiricconcept.sun_start_can": "Sun Start Can",
+      "block.oneiricconcept.varunada_lazurite_ore": "Varunada Lazurite Ore"
+    },
+    "zh_cn": {
+      "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想：食物",
+      "item.oneiricconcept.smoke_sausage": "熏肠",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
+      "effect.oneiricconcept.b_2sausage": "熏肠",
+      "item.oneiricconcept.oy_stuffing": "肉馅",
+      "item.oneiricconcept.oy_dumpling": "饺子",
+      "item.oneiricconcept.mmmhit": "Mmmhit",
+      "item.oneiricconcept.waffle": "华夫饼",
+      "item.oneiricconcept.sword_of_brilliant_valor.description_1": "并非母亲留下的宝藏",
+      "item.oneiricconcept.sword_of_brilliant_valor.description_0": "当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
+      "item.oneiricconcept.primogem_waffle.description_0": "敬传说中的画饼仙人",
+      "death.attack.b_2.player": "%1$s 没能逃离 %2$s的熏肠",
+      "item.oneiricconcept.dreamdive_can.description_0": "可以代替床来跳过夜晚",
+      "item.oneiricconcept.memoria_loot.description_0": "让眠眠给你送回来",
+      "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
+      "item.oneiricconcept.honkai_sliver": "崩坏碎片",
+      "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
+      "item.oneiricconcept.d_xuanyuan": "黑轩辕剑",
+      "item.oneiricconcept.condensed_memoria_piece.description_0": "更加浓缩的忆质块",
+      "fluid.oneiricconcept.memoria": "§9忆质",
+      "block.oneiricconcept.cloud.description_0": "百川源",
+      "item.oneiricconcept.memoria_piece": "§9忆质凝块",
+      "block.oneiricconcept.vayuda_turquoise_ore": "自在松石矿石",
+      "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
+      "block.oneiricconcept.ractus": "仙术掌",
+      "item.oneiricconcept.mora_sausage": "摩拉香肠",
+      "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
+      "entity.oneiricconcept.crystal_turtle": "水晶龟",
+      "block.oneiricconcept.the_another_world_sapling": "异世界树苗",
+      "block.oneiricconcept.stripped_the_another_world_log": "去皮异世界木",
+      "advancements.oneiric_concept_advancement.descr": "旧日的一切最终成了照亮黑暗前路的烛火。",
+      "item.oneiricconcept.primogem_waffle": "原石华夫饼",
+      "item.oneiricconcept.b_2elobog_sausage.description_0": "有股怪味……孜然的味道吗？",
+      "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
+      "item.oneiricconcept.xuanyuan_sword": "轩辕剑",
+      "advancements.the_seriousness_of_breakfast.title": "早餐的仪式感",
+      "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
+      "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
+      "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
+      "item.oneiricconcept.s_2moke_sausage": "熏肠",
+      "item.oneiricconcept.oneiric_shard": "古老梦华",
+      "block.oneiricconcept.cloud": "云",
+      "block.oneiricconcept.elements_crystal_ore": "元素晶体矿石",
+      "block.oneiricconcept.big_stone": "大石头",
+      "item.oneiricconcept.memoria_loot": "忆质礼盒",
+      "block.oneiricconcept.shivada_jade_ore": "哀叙冰玉矿石",
+      "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
+      "subtitles.mmm": "碰撞",
+      "block.oneiricconcept.mm_mushroom": "萌萌菌",
+      "item.oneiricconcept.memoria_piece.description_0": "虽然看起来像纹饰板，但这确实只是浓缩的忆质",
+      "block.oneiricconcept.banana_mushroom": "香蕉菌",
+      "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
+      "block.oneiricconcept.bactus": "仙帝掌",
+      "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
+      "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "敬传说中的画饼仙人",
+      "block.oneiricconcept.banana_mushroom.description_2": "吃完香蕉就睡觉",
+      "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
+      "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
+      "item.oneiricconcept.sausage": "香肠",
+      "item.oneiricconcept.taw_wood_box": "异世界木盒",
+      "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
+      "item.oneiricconcept.honkai_shard.description_0": "稀有的崩坏能量聚合体",
+      "block.oneiricconcept.big_rock": "大石块",
+      "item.oneiricconcept.crystal_turtle_spawn_egg": "Crystal Turtle Spawn Egg",
+      "item.oneiricconcept.small_herta_core.description_0": "模拟宇宙·寰宇蝗灾",
+      "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
+      "item.oneiricconcept.stuffing": "肉馅",
+      "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
+      "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
+      "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
+      "item.oneiricconcept.cloud_bottle": "云朵瓶",
+      "block.oneiricconcept.the_another_world_wood": "异世界木头",
+      "item.oneiricconcept.adeptus_gun": "仙力之枪",
+      "death.attack.b_2": "%1$s 吃熏肠后感到不适",
+      "block.oneiricconcept.tnt_dispenser": "TNT发射器",
+      "item.oneiricconcept.memory_bubble": "§9忆泡",
+      "block.oneiricconcept.memoria": "忆质",
+      "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
+      "item.oneiricconcept.small_herta_core": "小黑塔核心",
+      "item_group.oneiricconcept.oneiric_concept": "梦华构想",
+      "item.oneiricconcept.s_2moke_sausage.description_0": "有股怪味……孜然的味道吗？",
+      "item.oneiricconcept.taw_wood_loot": "异世界礼盒",
+      "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",
+      "block.oneiricconcept.boom_blossoms_pyro": "火焰爆爆瓜",
+      "item.oneiricconcept.s_2ausage.description_0": "有股怪味……孜然的味道吗？",
+      "item.oneiricconcept.xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
+      "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
+      "item.oneiricconcept.waffle.description_0": "敬传说中的画饼仙人",
+      "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
+      "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
+      "item.oneiricconcept.s_2tuffing.description_0": "夹杂着碎骨头渣子，有股孜然味",
+      "block.oneiricconcept.the_another_world_log": "异世界原木",
+      "item.oneiricconcept.sky_waffle": "天华夫饼",
+      "item.oneiricconcept.s_2ausage": "香肠",
+      "block.oneiricconcept.mactus": "仙女掌",
+      "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
+      "item.oneiricconcept.memoria_bucket": "§9忆质桶",
+      "block.oneiricconcept.yactus": "仙力掌",
+      "item.oneiricconcept.honkai_shard": "三分结晶",
+      "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
+      "item.oneiricconcept.s_2tuffing": "肉馅",
+      "block.oneiricconcept.gactus": "仙士掌",
+      "item.oneiricconcept.dumpling": "饺子",
+      "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
+      "item.oneiricconcept.resurrection_pellet.description_0": "依律禁止宣传保健品的药物功效。",
+      "item.oneiricconcept.sun_start_can.description_0": "§6直接使下一日的太阳升起",
+      "item.oneiricconcept.oneiric_shard.description_0": "§d泛浮在星辰大海中的结晶微光，律动着古老巨兽的遗梦。旧日的一切最终成了照亮黑暗前路的烛火。",
+      "item.oneiricconcept.primogems_sausage": "原石香肠",
+      "painting.oneiricconcept.sliver_wolf.title": "银狼",
+      "block.oneiricconcept.big_rock.description_0": "蕴含丰富粗矿的石块",
+      "item.oneiricconcept.dreamdive_can": "§9入梦罐",
+      "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "关注我，教你开基因锁！",
+      "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
+      "block.oneiricconcept.c_cactus": "仙灵掌",
+      "block.oneiricconcept.the_another_world_leave": "异世界树叶",
+      "item.oneiricconcept.oy_stuffing.description_0": "对……对吗？",
+      "block.oneiricconcept.mm_mushroom.description_0": "萌萌的蘑菇，但有一颗坚硬的心",
+      "block.oneiricconcept.vajrada_amethyst_ore": "最胜紫晶矿石",
+      "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
+      "advancements.oneiric_concept_advancement.title": "梦华构想",
+      "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
+      "item.oneiricconcept.sun_start_can": "启阳罐",
+      "block.oneiricconcept.varunada_lazurite_ore": "涤净青金矿石"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "process",
+        "children": []
+      },
+      {
+        "name": "block",
+        "children": [
+          {
+            "name": "ore",
+            "children": [
+              {
+                "name": "OreLoot",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "item",
+        "children": [
+          {
+            "name": "item_food",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Feature",
+        "children": []
+      },
+      {
+        "name": "Advancement",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "oneiricconcept",
+    "modName": "梦华构想OneiricConcept",
+    "version": "1.3.5",
+    "description": "原石工艺的附属模组",
+    "author": "GlowStar, Pepper某人，MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "modPicture": "oneiricshard",
+    "requiredMods": [
+      "primogemcraft"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.oneiricconcept"
+  },
+  "mcreatorVersion": 202400445618
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "experience": 10,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "oneiricconcept:s_2ausage"
+  },
+  "result": {
+    "id": "oneiricconcept:s_2moke_sausage"
+  }
+}

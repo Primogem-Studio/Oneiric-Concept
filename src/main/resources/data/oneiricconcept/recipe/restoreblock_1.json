@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oneiricconcept:honkai_sliver"
+  },
+  "result": {
+    "id": "minecraft:redstone_block",
+    "count": 8
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ender_pearl"
+    },
+    "b": {
+      "item": "minecraft:ender_eye"
+    },
+    "c": {
+      "item": "oneiricconcept:honkai_sliver"
+    },
+    "d": {
+      "item": "primogemcraft:shenshenghuaban"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:small_herta_core",
+    "count": 1
+  }
+}

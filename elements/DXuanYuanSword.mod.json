@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:OneiricShard"
+      },
+      {
+        "value": "CUSTOM:B2elobogSausage"
+      },
+      {
+        "value": "CUSTOM:OneiricShard"
+      },
+      {
+        "value": "CUSTOM:MemoriaPiece"
+      },
+      {
+        "value": "CUSTOM:XuanyuanSword"
+      },
+      {
+        "value": "CUSTOM:MemoriaPiece"
+      },
+      {
+        "value": "CUSTOM:MemoriaPiece"
+      },
+      {
+        "value": "CUSTOM:MemoriaPiece"
+      },
+      {
+        "value": "CUSTOM:MemoriaPiece"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkXuanyuanSword"
+    },
+    "name": "d_xuan_yuan_sword",
+    "namespace": "mod"
+  }
+}

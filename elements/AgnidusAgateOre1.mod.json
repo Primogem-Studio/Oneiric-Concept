@@ -1,0 +1,10 @@
+{
+  "_fv": 71,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/agnidus_agate_ore_1",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 5,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CondensedMemoriaPiece"
+      },
+      {
+        "value": "TAG:c:glass_panes"
+      },
+      {
+        "value": "CUSTOM:CondensedMemoriaPiece"
+      },
+      {
+        "value": "TAG:c:glass_panes"
+      },
+      {
+        "value": "Blocks.EMERALD_BLOCK"
+      },
+      {
+        "value": "TAG:c:glass_panes"
+      },
+      {
+        "value": "CUSTOM:CondensedMemoriaPiece"
+      },
+      {
+        "value": "TAG:c:glass_panes"
+      },
+      {
+        "value": "CUSTOM:CondensedMemoriaPiece"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MemoriaLoot"
+    },
+    "name": "memoria_loot_1",
+    "namespace": "mod"
+  }
+}

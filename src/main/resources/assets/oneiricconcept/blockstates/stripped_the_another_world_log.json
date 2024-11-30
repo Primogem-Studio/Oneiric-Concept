@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "oneiricconcept:block/stripped_the_another_world_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "oneiricconcept:block/stripped_the_another_world_log"
+    },
+    "axis=z": {
+      "model": "oneiricconcept:block/stripped_the_another_world_log",
+      "x": 90
+    }
+  }
+}

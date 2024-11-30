@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oneiricconcept:memoria_piece"
+  },
+  "result": {
+    "id": "oneiricconcept:memory_bubble",
+    "count": 9
+  }
+}

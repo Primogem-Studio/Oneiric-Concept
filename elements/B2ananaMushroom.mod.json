@@ -1,0 +1,14 @@
+{
+  "_fv": 71,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "FLUID_SPRINGS",
+    "restrictionBiomes": [
+      {
+        "value": "mushroom_fields"
+      }
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"345\" y=\"126\"><value name=\"feature\"><block type=\"feature_huge_red_mushroom\"><field name=\"radius\">7</field><value name=\"cap\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:BananaMushroomBock</field></block></value><value name=\"stem\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.MUSHROOM_STEM</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">130</field><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">WORLD_SURFACE_WG</field></block></next></block></next></block></next></block></xml>"
+  }
+}

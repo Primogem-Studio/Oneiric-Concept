@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:condensed_memoria_piece"
+    },
+    "b": {
+      "tag": "c:glass_panes"
+    },
+    "c": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:memoria_loot",
+    "count": 5
+  }
+}

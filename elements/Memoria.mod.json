@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "fluid",
+  "definition": {
+    "name": "Memoria",
+    "bucketName": "Memoria Bucket",
+    "textureStill": "memoria_still",
+    "textureFlowing": "memoriaflow",
+    "hasFog": false,
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 1,
+    "levelDecrease": 1,
+    "slopeFindDistance": 3,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "flowStrength": 0.0,
+    "luminosity": 15,
+    "density": 1,
+    "viscosity": 1,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
+    "emptySound": {
+      "value": "ambient.underwater.exit"
+    },
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 100.0,
+    "luminance": 15,
+    "lightOpacity": 0,
+    "emissiveRendering": false,
+    "tickRate": 0,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DIAMOND"
+  }
+}

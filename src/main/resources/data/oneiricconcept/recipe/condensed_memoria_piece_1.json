@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:memoria_piece"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:condensed_memoria_piece",
+    "count": 1
+  }
+}

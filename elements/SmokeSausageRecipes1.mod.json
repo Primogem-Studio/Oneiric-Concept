@@ -1,0 +1,22 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:Sausage"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:SmokeSausage"
+    },
+    "name": "smoke_sausage_recipes_1",
+    "namespace": "mod"
+  }
+}

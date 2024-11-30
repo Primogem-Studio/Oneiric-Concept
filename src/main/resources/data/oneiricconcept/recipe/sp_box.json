@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "oneiricconcept:memoria_piece"
+  },
+  "base": {
+    "item": "oneiricconcept:cloud"
+  },
+  "addition": {
+    "item": "oneiricconcept:honkai_sliver"
+  },
+  "result": {
+    "id": "oneiricconcept:surpriseboxforgoodorbad"
+  }
+}

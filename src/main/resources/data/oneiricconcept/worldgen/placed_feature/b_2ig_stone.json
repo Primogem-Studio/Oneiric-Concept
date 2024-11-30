@@ -1,0 +1,33 @@
+{
+  "feature": "oneiricconcept:b_2ig_stone",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 70
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "uniform",
+        "min_inclusive": 1,
+        "max_inclusive": 3
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 4,
+      "y_spread": {
+        "type": "uniform",
+        "min_inclusive": -4,
+        "max_inclusive": 4
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
+    }
+  ]
+}

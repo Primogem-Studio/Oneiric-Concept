@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cde",
+    "fc "
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:oneiric_shard"
+    },
+    "b": {
+      "item": "primogemcraft:jianshijingban"
+    },
+    "c": {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    "d": {
+      "item": "oneiricconcept:legion_pseudo_core"
+    },
+    "e": {
+      "item": "primogemcraft:yuansujingti"
+    },
+    "f": {
+      "item": "primogemcraft:wufengjian"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:xuanyuan_sword",
+    "count": 1
+  }
+}

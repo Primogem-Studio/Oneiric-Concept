@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:qiwuchongwang"
+    },
+    {
+      "item": "primogemcraft:shenshenghuaban"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:small_herta_core",
+    "count": 1
+  }
+}

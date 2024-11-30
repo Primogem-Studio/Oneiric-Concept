@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "oneiricconcept:tawlog"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:the_another_world_wood",
+    "count": 1
+  }
+}

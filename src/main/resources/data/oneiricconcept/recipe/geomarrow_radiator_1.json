@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "fff"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:repeater"
+    },
+    "b": {
+      "item": "minecraft:iron_trapdoor"
+    },
+    "c": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "d": {
+      "item": "minecraft:iron_bars"
+    },
+    "e": {
+      "item": "primogemcraft:disuikuai_1"
+    },
+    "f": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:geomarrow_radiator",
+    "count": 1
+  }
+}

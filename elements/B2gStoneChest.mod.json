@@ -1,0 +1,10 @@
+{
+  "_fv": 71,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionBiomes": [],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"617\" y=\"85\"><value name=\"feature\"><block type=\"feature_custom_structure\"><field name=\"structure\">bigstonecest</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">TRUE</field><field name=\"random_mirror\">TRUE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.BEDROCK</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">1000</field><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field></block></next></block></next></block></next></block></xml>"
+  }
+}

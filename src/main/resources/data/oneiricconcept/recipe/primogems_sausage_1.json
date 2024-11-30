@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:b2sausage"
+    },
+    {
+      "item": "primogemcraft:yuanshi"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:primogems_sausage",
+    "count": 1
+  }
+}

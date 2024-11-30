@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:yuanshi"
+    },
+    "b": {
+      "tag": "minecraft:saplings"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:the_another_world_sapling",
+    "count": 1
+  }
+}

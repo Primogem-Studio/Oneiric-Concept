@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:cloud"
+    },
+    {
+      "item": "oneiricconcept:cloud"
+    },
+    {
+      "item": "oneiricconcept:cloud"
+    },
+    {
+      "item": "oneiricconcept:cloud"
+    },
+    {
+      "item": "primogemcraft:zziyousongshikuai"
+    },
+    {
+      "item": "oneiricconcept:cloud"
+    },
+    {
+      "item": "oneiricconcept:cloud"
+    },
+    {
+      "item": "oneiricconcept:cloud"
+    },
+    {
+      "item": "oneiricconcept:cloud"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:cloud_bottle",
+    "count": 64
+  }
+}

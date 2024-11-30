@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "oneiricconcept:block/floatato",
+    "particle": "oneiricconcept:block/floatato"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:oneiric_shard"
+    },
+    "b": {
+      "item": "primogemcraft:tezhidieyingqi"
+    },
+    "c": {
+      "item": "oneiricconcept:memoria_piece"
+    },
+    "d": {
+      "item": "oneiricconcept:xuanyuan_sword"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:dark_xuanyuan_sword",
+    "count": 1
+  }
+}
