@@ -45,6 +45,7 @@ import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
 import net.mcreator.oneiricconcept.item.HonkaiShardItem;
+import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
 import net.mcreator.oneiricconcept.item.DarkXuanyuanSwordItem;
@@ -127,6 +128,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SKY_WAFFLE = REGISTRY.register("sky_waffle", SkyWaffleItem::new);
 	public static final DeferredItem<Item> RESURRECTION_PELLET = REGISTRY.register("resurrection_pellet", ResurrectionPelletItem::new);
 	public static final DeferredItem<Item> SURPRISEBOXFORGOODORBAD = REGISTRY.register("surpriseboxforgoodorbad", SurpriseboxforgoodorbadItem::new);
+	public static final DeferredItem<Item> EXAMPLE = REGISTRY.register("example", ExampleItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -98,6 +98,10 @@ public class OneiricconceptModTabs {
 
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());
 
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+
+			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
+
 		}
 	}
 }

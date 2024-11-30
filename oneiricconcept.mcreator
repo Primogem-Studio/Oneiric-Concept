@@ -3510,6 +3510,107 @@
           "src/main/resources/data/oneiricconcept/jukebox_song/surpriseboxforgoodorbad.json"
         ]
       }
+    },
+    {
+      "name": "Diaoyongshift0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diaoyongshift_0",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Diaoyongshift0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "shift",
+            "type": "string"
+          },
+          {
+            "name": "shift0",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hsctrl",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hsctrl",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HsctrlProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "ctrl",
+            "type": "string"
+          },
+          {
+            "name": "ctrl0",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pgcwuqi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pgcwuqi",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PgcwuqiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "miaoshu",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Example",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/example.json"
+        ]
+      }
+    },
+    {
+      "name": "Exampledescribe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exampledescribe",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExampledescribeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3532,6 +3633,9 @@
     }
   ],
   "tag_elements": {
+    "ITEMS:pgc:wuqi": [
+      "CUSTOM:Example"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:BigStone",
       "~CUSTOM:AgnidusAgateOre",
@@ -3560,6 +3664,7 @@
     "BLOCKS:minecraft:leaves": [
       "~CUSTOM:TheAnotherWorldLeave"
     ],
+    "ITEMS:pgc:wuqi/5": [],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:AgnidusAgateOre",
       "~CUSTOM:VayudaTurquoiseOre",
@@ -3779,6 +3884,7 @@
       "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
       "advancements.oneiric_concept_advancement.descr": "The past turns into candles that light the darkness ahead.",
       "item.oneiricconcept.primogem_waffle": "Primogem Waffle",
+      "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "有股怪味……孜然的味道吗？",
       "block.oneiricconcept.nagadus_emerald_ore": "Nagadus Emerald Ore",
       "item.oneiricconcept.xuanyuan_sword": "Xuanyuan Sword",
@@ -3906,6 +4012,7 @@
       "block.oneiricconcept.stripped_the_another_world_log": "去皮异世界木",
       "advancements.oneiric_concept_advancement.descr": "旧日的一切最终成了照亮黑暗前路的烛火。",
       "item.oneiricconcept.primogem_waffle": "原石华夫饼",
+      "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "有股怪味……孜然的味道吗？",
       "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
       "item.oneiricconcept.xuanyuan_sword": "轩辕剑",
