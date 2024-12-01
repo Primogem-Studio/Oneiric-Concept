@@ -3404,7 +3404,8 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/AsdaProcedure.java"
         ],
         "dependencies": []
-      }
+      },
+      "path": "~/PER"
     },
     {
       "name": "Cc1",
@@ -3654,6 +3655,32 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "FeedOnIllusions",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feed_on_illusions",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/feed_on_illusions.json"
+        ]
+      },
+      "path": "~/Advancement"
+    },
+    {
+      "name": "PowerOfHerrschers",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "power_of_herrschers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/power_of_herrschers.json"
+        ]
+      },
+      "path": "~/Advancement"
     }
   ],
   "variable_elements": [],
@@ -3903,8 +3930,8 @@
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "It\u0027s not a treasure left by my mother",
-      "item.oneiricconcept.sword_of_brilliant_valor.description_0": "But when you\u0027re in dire straits, valor is the thing that gets you fired up and fighting back. It\u0027s the brilliant ray of light that guides you out from the darkness.",
       "item.oneiricconcept.primogem_waffle.description_0": "To the legendary pancake fairy",
+      "item.oneiricconcept.sword_of_brilliant_valor.description_0": "But when you\u0027re in dire straits, valor is the thing that gets you fired up and fighting back. It\u0027s the brilliant ray of light that guides you out from the darkness.",
       "item.oneiricconcept.memoria_loot.description_0": "Ask Dormancy to escort you back",
       "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "death.attack.b_2.player": "%1$s was unable to escape the %2$s\u0027s fumigation",
@@ -3921,8 +3948,8 @@
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
       "block.oneiricconcept.ractus": "Ractus",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
-      "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
       "entity.oneiricconcept.crystal_turtle": "Crystal Turtle",
+      "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
       "block.oneiricconcept.the_another_world_sapling": "The Another World Sapling",
       "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
       "advancements.oneiric_concept_advancement.descr": "The past turns into candles that light the darkness ahead.",
@@ -3935,6 +3962,7 @@
       "item.oneiricconcept.legion_pseudo_core.description_0": "§dOne of the cores of Herrscher of Legion, which can be used to create Divine Keys",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.surpriseboxforgoodorbad": "Surprise Box,for Good or Bad",
+      "advancements.power_of_herrschers.title": "Power Of Herrschers",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "item.oneiricconcept.oneiric_shard": "Oneiric Shard",
       "block.oneiricconcept.cloud": "Cloud",
@@ -3993,12 +4021,15 @@
       "item.oneiricconcept.s_2ausage": "Sausage",
       "block.oneiricconcept.mactus": "Mactus",
       "item.oneiricconcept.resurrection_pellet": "Resurrection Pellet",
+      "advancements.feed_on_illusions.title": "Feed On Illusions",
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
+      "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.yactus": "Yactus",
       "item.oneiricconcept.honkai_shard": "Honkai Shard",
       "item.oneiricconcept.s_2tuffing": "stuffing",
       "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
       "block.oneiricconcept.gactus": "Gactus",
+      "advancements.feed_on_illusions.descr": "Gaseous purified water, it seems like I\u0027ve eaten it, but it also seems like I haven\u0027t eaten anything.",
       "item.oneiricconcept.dumpling": "Dumpling",
       "death.attack.b_2.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.resurrection_pellet.description_0": "Promotion of the medicinal propertiesof health products is prohibited by thelaw.",
@@ -4012,7 +4043,7 @@
       "painting.oneiricconcept.sliver_wolf.author": "HoYoverse",
       "block.oneiricconcept.c_cactus": "Cactus",
       "block.oneiricconcept.the_another_world_leave": "The Another World Leave",
-      "item.oneiricconcept.oy_stuffing.description_0": "Right... right?",
+      "item.oneiricconcept.oy_stuffing.description_0": "对……对吗？",
       "block.oneiricconcept.mm_mushroom.description_0": "Cute mushrooms, but with a resilient heart",
       "block.oneiricconcept.vajrada_amethyst_ore": "Vajrada Amethyst Ore",
       "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
@@ -4064,6 +4095,7 @@
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
+      "advancements.power_of_herrschers.title": "律者之力",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "item.oneiricconcept.oneiric_shard": "古老梦华",
       "block.oneiricconcept.cloud": "云",
@@ -4122,12 +4154,15 @@
       "item.oneiricconcept.s_2ausage": "香肠",
       "block.oneiricconcept.mactus": "仙女掌",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
+      "advancements.feed_on_illusions.title": "画饼充饥",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
+      "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.yactus": "仙力掌",
       "item.oneiricconcept.honkai_shard": "三分结晶",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
       "item.oneiricconcept.s_2tuffing": "肉馅",
       "block.oneiricconcept.gactus": "仙士掌",
+      "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
       "item.oneiricconcept.dumpling": "饺子",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.resurrection_pellet.description_0": "依律禁止宣传保健品的药物功效。",

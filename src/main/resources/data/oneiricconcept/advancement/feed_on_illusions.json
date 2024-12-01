@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:sky_waffle"
+    },
+    "title": {
+      "translate": "advancements.feed_on_illusions.title"
+    },
+    "description": {
+      "translate": "advancements.feed_on_illusions.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "feed_on_illusions_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "oneiricconcept:sky_waffle"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "oneiricconcept:oneiric_concept_advancement"
+}
