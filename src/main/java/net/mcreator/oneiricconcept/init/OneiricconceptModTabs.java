@@ -87,6 +87,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.TNT_DISPENSER.get().asItem());
 				tabData.accept(OneiricconceptModItems.D_XUANYUAN.get());
 				tabData.accept(OneiricconceptModItems.SMALL_HERTA_CORE.get());
+				tabData.accept(OneiricconceptModItems.TOTEMLOOT.get());
+				tabData.accept(OneiricconceptModItems.COMPRESS_TOTEMLOOT.get());
 			})
 
 					.build());

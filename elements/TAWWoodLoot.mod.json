@@ -54,8 +54,12 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "drink",
+    "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

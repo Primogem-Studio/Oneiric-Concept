@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.oneiricconcept.item.XuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.WaffleItem;
+import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
 import net.mcreator.oneiricconcept.item.SwordOfBrilliantValorItem;
@@ -51,6 +52,7 @@ import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
 import net.mcreator.oneiricconcept.item.DarkXuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.DXuanyuanItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
+import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
 import net.mcreator.oneiricconcept.item.CloudBottleItem;
 import net.mcreator.oneiricconcept.item.BelobogSausageItem;
 import net.mcreator.oneiricconcept.item.B2elobogSausageItem;
@@ -129,6 +131,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> RESURRECTION_PELLET = REGISTRY.register("resurrection_pellet", ResurrectionPelletItem::new);
 	public static final DeferredItem<Item> SURPRISEBOXFORGOODORBAD = REGISTRY.register("surpriseboxforgoodorbad", SurpriseboxforgoodorbadItem::new);
 	public static final DeferredItem<Item> EXAMPLE = REGISTRY.register("example", ExampleItem::new);
+	public static final DeferredItem<Item> TOTEMLOOT = REGISTRY.register("totemloot", TotemlootItem::new);
+	public static final DeferredItem<Item> COMPRESS_TOTEMLOOT = REGISTRY.register("compress_totemloot", CompressTotemlootItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

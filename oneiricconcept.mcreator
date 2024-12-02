@@ -3681,6 +3681,99 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "Totemloot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totemloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/totemloot.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/TotemlootItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "CompressTotemloot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compress_totemloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/compress_totemloot.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/CompressTotemlootItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "CompressTotemloot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compress_totemloot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/compress_totemloot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CompressTotemloot2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compress_totemloot_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/compress_totemloot_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Totemloot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totemloot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/totemloot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Totem1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/totem_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Totem2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totem_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/totem_2.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -3915,7 +4008,9 @@
       "TheAnotherWorldLeave",
       "TNTDispenser",
       "DXuanyuan",
-      "SmallHertaCore"
+      "SmallHertaCore",
+      "Totemloot",
+      "CompressTotemloot"
     ]
   },
   "language_map": {
@@ -3930,9 +4025,9 @@
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "It\u0027s not a treasure left by my mother",
-      "item.oneiricconcept.sword_of_brilliant_valor.description_0": "But when you\u0027re in dire straits, valor is the thing that gets you fired up and fighting back. It\u0027s the brilliant ray of light that guides you out from the darkness.",
       "item.oneiricconcept.primogem_waffle.description_0": "To the legendary pancake fairy",
-      "item.oneiricconcept.memoria_loot.description_0": "Ask Dormancy to escort you back",
+      "item.oneiricconcept.sword_of_brilliant_valor.description_0": "But when you\u0027re in dire straits, valor is the thing that gets you fired up and fighting back. It\u0027s the brilliant ray of light that guides you out from the darkness.",
+      "item.oneiricconcept.memoria_loot.description_0": "让眠眠给你送回来",
       "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "death.attack.b_2.player": "%1$s was unable to escape the %2$s\u0027s fumigation",
       "item.oneiricconcept.dreamdive_can.description_2": " The §9Dreamdive Can §fwas originally a toy in the Cosmos\u0027s middle-class family bedroom, but became the only way for people to sleep on some planets deep in the mires of §cCatastrophe. ",
@@ -3948,8 +4043,8 @@
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
       "block.oneiricconcept.ractus": "Ractus",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
-      "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
       "entity.oneiricconcept.crystal_turtle": "Crystal Turtle",
+      "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
       "block.oneiricconcept.the_another_world_sapling": "The Another World Sapling",
       "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
       "advancements.oneiric_concept_advancement.descr": "The past turns into candles that light the darkness ahead.",
@@ -3961,6 +4056,7 @@
       "advancements.the_seriousness_of_breakfast.title": "The Seriousness Of Breakfast",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§dOne of the cores of Herrscher of Legion, which can be used to create Divine Keys",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
+      "item.oneiricconcept.totemloot": "Totemloot",
       "item.oneiricconcept.surpriseboxforgoodorbad": "Surprise Box,for Good or Bad",
       "advancements.power_of_herrschers.title": "Power Of Herrschers",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
@@ -3985,6 +4081,7 @@
       "block.oneiricconcept.banana_mushroom.description_0": "an island full of bananas",
       "item.oneiricconcept.sausage": "Sausage",
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
+      "item.oneiricconcept.compress_totemloot": "Totemloot",
       "block.oneiricconcept.banana_mushroom.description_5": "He\u0027s the monkey living life without stress",
       "item.oneiricconcept.honkai_shard.description_0": "A very rare aggregate of Honkai Energy.",
       "block.oneiricconcept.big_rock": "Big Rock",
@@ -4094,6 +4191,7 @@
       "advancements.the_seriousness_of_breakfast.title": "早餐的仪式感",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
+      "item.oneiricconcept.totemloot": "图腾礼盒",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
       "advancements.power_of_herrschers.title": "律者之力",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
@@ -4118,6 +4216,7 @@
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
       "item.oneiricconcept.sausage": "香肠",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
+      "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
       "item.oneiricconcept.honkai_shard.description_0": "稀有的崩坏能量聚合体",
       "block.oneiricconcept.big_rock": "大石块",

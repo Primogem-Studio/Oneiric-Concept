@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "memorialoot",
+    "texture": "compresstotemloot",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Memoria Loot",
-    "rarity": "UNCOMMON",
+    "name": "Totemloot",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:OneiricConcept"
@@ -16,7 +16,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 1,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -29,18 +29,13 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "让眠眠给你送回来"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "TAWWoodLooto"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -62,7 +57,7 @@
       "value": ""
     },
     "musicDiscDescription": "",
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0
   }
 }

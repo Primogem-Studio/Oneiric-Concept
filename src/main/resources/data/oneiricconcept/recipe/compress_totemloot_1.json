@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:compress_totemloot",
+    "count": 1
+  }
+}
