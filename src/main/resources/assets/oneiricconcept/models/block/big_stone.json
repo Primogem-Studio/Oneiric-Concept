@@ -3,7 +3,7 @@
   "textures": {
     "all": "minecraft:block/stone",
     "particle": "minecraft:block/stone",
-    "missing": "minecraft:block/stone"
+    "2": "minecraft:block/stone"
   },
   "render_type": "solid"
 }

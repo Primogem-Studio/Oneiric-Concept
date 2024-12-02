@@ -26,7 +26,7 @@
       {
         "mx": 0.0,
         "my": -4.0,
-        "mz": -0.0,
+        "mz": 0.0,
         "Mx": 16.0,
         "My": 12.0,
         "Mz": 16.0,
@@ -42,75 +42,39 @@
         "subtract": false
       },
       {
-        "mx": 15.0,
-        "my": -16.0,
-        "mz": 16.0,
-        "Mx": 20.0,
-        "My": -11.0,
-        "Mz": 25.0,
-        "subtract": false
-      },
-      {
-        "mx": -14.0,
-        "my": -16.0,
-        "mz": 4.0,
-        "Mx": -9.0,
-        "My": -14.0,
-        "Mz": 7.0,
-        "subtract": false
-      },
-      {
         "mx": 0.0,
-        "my": -7.0,
-        "mz": 6.0,
+        "my": -13.0,
+        "mz": 10.0,
         "Mx": 16.0,
-        "My": 3.0,
-        "Mz": 22.0,
-        "subtract": false
-      },
-      {
-        "mx": 11.0,
-        "my": -3.0,
-        "mz": 4.0,
-        "Mx": 18.0,
-        "My": 7.0,
-        "Mz": 14.0,
+        "My": -3.0,
+        "Mz": 26.0,
         "subtract": false
       },
       {
         "mx": 6.0,
         "my": -16.0,
-        "mz": 0.0,
+        "mz": -12.0,
         "Mx": 22.0,
         "My": 0.0,
-        "Mz": 13.0,
-        "subtract": false
-      },
-      {
-        "mx": -16.0,
-        "my": -16.0,
-        "mz": -16.0,
-        "Mx": -3.0,
-        "My": -9.0,
-        "Mz": 0.0,
-        "subtract": false
-      },
-      {
-        "mx": -16.0,
-        "my": -16.0,
-        "mz": 0.0,
-        "Mx": 0.0,
-        "My": 0.0,
-        "Mz": 16.0,
+        "Mz": 1.0,
         "subtract": false
       },
       {
         "mx": -10.0,
         "my": -16.0,
-        "mz": -16.0,
-        "Mx": 6.0,
+        "mz": -13.0,
+        "Mx": 3.0,
+        "My": -9.0,
+        "Mz": 3.0,
+        "subtract": false
+      },
+      {
+        "mx": -8.0,
+        "my": -16.0,
+        "mz": 3.0,
+        "Mx": 8.0,
         "My": 0.0,
-        "Mz": 0.0,
+        "Mz": 19.0,
         "subtract": false
       }
     ],
@@ -161,7 +125,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {

@@ -4,6 +4,7 @@ package net.mcreator.oneiricconcept.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
@@ -30,7 +31,7 @@ public class BigStoneBlock extends Block implements SimpleWaterloggedBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public BigStoneBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(32f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(32f, 10f).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -52,14 +53,10 @@ public class BigStoneBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(0, -4, 0, 16, 12, 16), box(-9, -16, 1, 7, -6, 15), box(-4, -16, -9, 1, -11, 0), box(25, -16, 9, 30, -14, 12), box(0, -7, -6, 16, 3, 10), box(-2, -3, 2, 5, 7, 12), box(-6, -16, 3, 10, 0, 16),
-					box(19, -16, 16, 32, -9, 32), box(16, -16, 0, 32, 0, 16), box(10, -16, 16, 26, 0, 32));
-			case NORTH -> Shapes.or(box(0, -4, -0, 16, 12, 16), box(9, -16, 1, 25, -6, 15), box(15, -16, 16, 20, -11, 25), box(-14, -16, 4, -9, -14, 7), box(0, -7, 6, 16, 3, 22), box(11, -3, 4, 18, 7, 14), box(6, -16, 0, 22, 0, 13),
-					box(-16, -16, -16, -3, -9, 0), box(-16, -16, 0, 0, 0, 16), box(-10, -16, -16, 6, 0, 0));
-			case EAST -> Shapes.or(box(0, -4, 0, 16, 12, 16), box(1, -16, 9, 15, -6, 25), box(-9, -16, 15, 0, -11, 20), box(9, -16, -14, 12, -14, -9), box(-6, -7, 0, 10, 3, 16), box(2, -3, 11, 12, 7, 18), box(3, -16, 6, 16, 0, 22),
-					box(16, -16, -16, 32, -9, -3), box(0, -16, -16, 16, 0, 0), box(16, -16, -10, 32, 0, 6));
-			case WEST -> Shapes.or(box(-0, -4, 0, 16, 12, 16), box(1, -16, -9, 15, -6, 7), box(16, -16, -4, 25, -11, 1), box(4, -16, 25, 7, -14, 30), box(6, -7, 0, 22, 3, 16), box(4, -3, -2, 14, 7, 5), box(0, -16, -6, 13, 0, 10),
-					box(-16, -16, 19, 0, -9, 32), box(0, -16, 16, 16, 0, 32), box(-16, -16, 10, 0, 0, 26));
+			default -> Shapes.or(box(0, -4, 0, 16, 12, 16), box(-9, -16, 1, 7, -6, 15), box(0, -13, -10, 16, -3, 6), box(-6, -16, 15, 10, 0, 28), box(13, -16, 13, 26, -9, 29), box(8, -16, -3, 24, 0, 13));
+			case NORTH -> Shapes.or(box(0, -4, 0, 16, 12, 16), box(9, -16, 1, 25, -6, 15), box(0, -13, 10, 16, -3, 26), box(6, -16, -12, 22, 0, 1), box(-10, -16, -13, 3, -9, 3), box(-8, -16, 3, 8, 0, 19));
+			case EAST -> Shapes.or(box(0, -4, 0, 16, 12, 16), box(1, -16, 9, 15, -6, 25), box(-10, -13, 0, 6, -3, 16), box(15, -16, 6, 28, 0, 22), box(13, -16, -10, 29, -9, 3), box(-3, -16, -8, 13, 0, 8));
+			case WEST -> Shapes.or(box(0, -4, 0, 16, 12, 16), box(1, -16, -9, 15, -6, 7), box(10, -13, 0, 26, -3, 16), box(-12, -16, -6, 1, 0, 10), box(-13, -16, 13, 3, -9, 26), box(3, -16, 8, 19, 0, 24));
 		};
 	}
 

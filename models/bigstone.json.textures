@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "missing": "minecraft:stone"
+        "2": "minecraft:stone"
       },
       "name": "default"
     }

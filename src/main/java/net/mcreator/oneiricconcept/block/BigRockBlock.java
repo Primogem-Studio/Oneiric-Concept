@@ -4,6 +4,7 @@ package net.mcreator.oneiricconcept.block;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -20,7 +21,7 @@ import java.util.List;
 
 public class BigRockBlock extends Block {
 	public BigRockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.STONE).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.STONE).strength(1f, 10f).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
