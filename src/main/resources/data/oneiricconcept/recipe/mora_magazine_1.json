@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "oneiricconcept:mora_sausage"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:mora_magazine",
+    "count": 1
+  }
+}

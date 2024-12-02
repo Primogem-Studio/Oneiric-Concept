@@ -3579,8 +3579,8 @@
       "registry_name": "example",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/example.json"
+          "src/main/resources/assets/oneiricconcept/models/item/example.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java"
         ]
       },
       "path": "~/PER"
@@ -3800,6 +3800,72 @@
           "src/main/java/net/mcreator/oneiricconcept/entity/MoraCoinEntity.java"
         ]
       }
+    },
+    {
+      "name": "MoraMagazine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mora_magazine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "MoraOnline",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mora_online",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MoraOnlineProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "MoraDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mora_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MoraDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "MoraMagazine1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mora_magazine_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/mora_magazine_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -3921,6 +3987,9 @@
       "CUSTOM:Sausage",
       "CUSTOM:S2ausage"
     ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:MoraMagazine"
+    ],
     "ITEMS:c:smokesausage": [
       "CUSTOM:SmokeSausage",
       "CUSTOM:S2mokeSausage"
@@ -4037,7 +4106,8 @@
       "SmallHertaCore",
       "Totemloot",
       "CompressTotemloot",
-      "BossStoneCoinGun"
+      "BossStoneCoinGun",
+      "MoraMagazine"
     ]
   },
   "language_map": {
@@ -4113,7 +4183,7 @@
       "item.oneiricconcept.honkai_shard.description_0": "A very rare aggregate of Honkai Energy.",
       "block.oneiricconcept.big_rock": "Big Rock",
       "item.oneiricconcept.crystal_turtle_spawn_egg": "Crystal Turtle Spawn Egg",
-      "item.oneiricconcept.small_herta_core.description_0": "Simulated Universe: Swarm Disaster",
+      "item.oneiricconcept.small_herta_core.description_0": "模拟宇宙·寰宇蝗灾",
       "item.oneiricconcept.sword_of_brilliant_valor": "Sword Of Brilliant Valor",
       "item.oneiricconcept.stuffing": "stuffing",
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
@@ -4160,6 +4230,7 @@
       "item.oneiricconcept.sun_start_can.description_0": "§6Directly raise the sun of the next day",
       "item.oneiricconcept.oneiric_shard.description_0": "§dLights flicking in a sea of stars, stirring the dream of a Leviathan. The past turns into candles that light the darkness ahead.",
       "item.oneiricconcept.primogems_sausage": "Primogems Sausage",
+      "item.oneiricconcept.mora_magazine": "Mora Magazine",
       "painting.oneiricconcept.sliver_wolf.title": "Sliver Wolf",
       "block.oneiricconcept.big_rock.description_0": "蕴含丰富粗矿的石块",
       "item.oneiricconcept.dreamdive_can": "§9Dreamdive Can",
@@ -4296,6 +4367,7 @@
       "item.oneiricconcept.sun_start_can.description_0": "§6直接使下一日的太阳升起",
       "item.oneiricconcept.oneiric_shard.description_0": "§d泛浮在星辰大海中的结晶微光，律动着古老巨兽的遗梦。旧日的一切最终成了照亮黑暗前路的烛火。",
       "item.oneiricconcept.primogems_sausage": "原石香肠",
+      "item.oneiricconcept.mora_magazine": "Mora Magazine",
       "painting.oneiricconcept.sliver_wolf.title": "银狼",
       "block.oneiricconcept.big_rock.description_0": "蕴含丰富粗矿的石块",
       "item.oneiricconcept.dreamdive_can": "§9入梦罐",

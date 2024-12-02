@@ -3,22 +3,22 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "smallher_tacore",
+    "texture": "moramagazine",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Small-Her Ta Core",
+    "name": "Mora Magazine",
     "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:OneiricConcept"
       }
     ],
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 36,
     "recipeRemainder": {
       "value": ""
     },
@@ -29,18 +29,13 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "模拟宇宙·寰宇蝗灾"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "EndermiteSum"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -56,13 +51,13 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "bow",
+    "animation": "none",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""
     },
     "musicDiscDescription": "",
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0
   }
 }

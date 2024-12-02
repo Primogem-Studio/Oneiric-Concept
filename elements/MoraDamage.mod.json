@@ -1,0 +1,7 @@
+{
+  "_fv": 71,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"489\" y=\"229\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"item_damage\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:MoraMagazine</field></block></value><value name=\"amount\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></next></block></xml>"
+  }
+}

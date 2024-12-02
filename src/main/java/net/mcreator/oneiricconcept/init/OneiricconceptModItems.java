@@ -37,6 +37,7 @@ import net.mcreator.oneiricconcept.item.OyStuffingItem;
 import net.mcreator.oneiricconcept.item.OyDumplingItem;
 import net.mcreator.oneiricconcept.item.OneiricShardItem;
 import net.mcreator.oneiricconcept.item.MoraSausageItem;
+import net.mcreator.oneiricconcept.item.MoraMagazineItem;
 import net.mcreator.oneiricconcept.item.MmmhitItem;
 import net.mcreator.oneiricconcept.item.MemoryBubbleItem;
 import net.mcreator.oneiricconcept.item.MemoriaPieceItem;
@@ -135,6 +136,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> TOTEMLOOT = REGISTRY.register("totemloot", TotemlootItem::new);
 	public static final DeferredItem<Item> COMPRESS_TOTEMLOOT = REGISTRY.register("compress_totemloot", CompressTotemlootItem::new);
 	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN = REGISTRY.register("boss_stone_coin_gun", BossStoneCoinGunItem::new);
+	public static final DeferredItem<Item> MORA_MAGAZINE = REGISTRY.register("mora_magazine", MoraMagazineItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

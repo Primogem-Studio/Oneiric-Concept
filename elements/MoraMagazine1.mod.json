@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MoraMagazine"
+    },
+    "name": "mora_magazine_1",
+    "namespace": "mod"
+  }
+}
