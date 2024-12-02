@@ -89,6 +89,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SMALL_HERTA_CORE.get());
 				tabData.accept(OneiricconceptModItems.TOTEMLOOT.get());
 				tabData.accept(OneiricconceptModItems.COMPRESS_TOTEMLOOT.get());
+				tabData.accept(OneiricconceptModItems.BOSS_STONE_COIN_GUN.get());
 			})
 
 					.build());

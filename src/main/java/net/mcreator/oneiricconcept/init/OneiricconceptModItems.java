@@ -54,6 +54,7 @@ import net.mcreator.oneiricconcept.item.DXuanyuanItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
 import net.mcreator.oneiricconcept.item.CloudBottleItem;
+import net.mcreator.oneiricconcept.item.BossStoneCoinGunItem;
 import net.mcreator.oneiricconcept.item.BelobogSausageItem;
 import net.mcreator.oneiricconcept.item.B2elobogSausageItem;
 import net.mcreator.oneiricconcept.item.AdeptusGunItem;
@@ -133,6 +134,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> EXAMPLE = REGISTRY.register("example", ExampleItem::new);
 	public static final DeferredItem<Item> TOTEMLOOT = REGISTRY.register("totemloot", TotemlootItem::new);
 	public static final DeferredItem<Item> COMPRESS_TOTEMLOOT = REGISTRY.register("compress_totemloot", CompressTotemlootItem::new);
+	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN = REGISTRY.register("boss_stone_coin_gun", BossStoneCoinGunItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
