@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.TOTEM_OF_UNDYING"
+      "value": "CUSTOM:Totemloot"
     },
     "name": "totem_2",
     "namespace": "mod"
