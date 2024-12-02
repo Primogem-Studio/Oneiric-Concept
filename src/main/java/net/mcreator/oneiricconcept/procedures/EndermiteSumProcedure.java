@@ -43,6 +43,6 @@ public class EndermiteSumProcedure {
 		}
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					"/summon minecraft:endermite ~ ~ ~ {CustomName:\"\u5047\u86F0\u866B\",CustomNameVisible:1b,NoAI:1b}");
+					"/summon minecraft:endermite ~ ~ ~ {CustomName:\"\u5047\u86F0\u866B\",CustomNameVisible:1b,NoAI:1b,PersistenceRequired:1b}");
 	}
 }
