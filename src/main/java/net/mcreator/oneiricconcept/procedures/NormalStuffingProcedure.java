@@ -24,23 +24,24 @@ public class NormalStuffingProcedure {
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		return execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static boolean execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
-			return;
+			return false;
 		double n1 = 0;
 		Entity e1 = null;
 		e1 = entity;
 		n1 = 0.05;
-		if (e1.getType().is(EntityTypeTags.UNDEAD)) {
-			RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.S_2TUFFING.get()), n1);
-		} else if (e1 instanceof Player) {
-			RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()), n1);
-		} else if (!e1.getType().is(EntityTypeTags.UNDEAD)) {
-			RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.STUFFING.get()), n1);
+		if (RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.S_2TUFFING.get()), e1.getType().is(EntityTypeTags.UNDEAD), n1)) {
+			return true;
+		} else if (RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()), e1 instanceof Player, n1)) {
+			return true;
+		} else if (RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.STUFFING.get()), e1.getType().is(EntityTypeTags.UNDEAD), n1)) {
+			return true;
 		}
+		return false;
 	}
 }
