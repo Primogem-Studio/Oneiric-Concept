@@ -3866,6 +3866,45 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Rouxiandiaoluo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rouxiandiaoluo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/RouxiandiaoluoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "item",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PER"
     }
   ],
   "variable_elements": [],

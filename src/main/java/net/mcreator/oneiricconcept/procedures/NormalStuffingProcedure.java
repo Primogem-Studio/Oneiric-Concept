@@ -8,10 +8,8 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.EntityTypeTags;
-import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
@@ -33,27 +31,16 @@ public class NormalStuffingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getType().is(EntityTypeTags.UNDEAD)) {
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.S_2TUFFING.get()));
-				entityToSpawn.setPickUpDelay(10);
-				_level.addFreshEntity(entityToSpawn);
-			}
-		}
-		if (entity instanceof Player) {
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()));
-				entityToSpawn.setPickUpDelay(10);
-				_level.addFreshEntity(entityToSpawn);
-			}
-		} else {
-			if (!entity.getType().is(EntityTypeTags.UNDEAD)) {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.STUFFING.get()));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-			}
+		double n1 = 0;
+		Entity e1 = null;
+		e1 = entity;
+		n1 = 0.05;
+		if (e1.getType().is(EntityTypeTags.UNDEAD)) {
+			RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.S_2TUFFING.get()), n1);
+		} else if (e1 instanceof Player) {
+			RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()), n1);
+		} else if (!e1.getType().is(EntityTypeTags.UNDEAD)) {
+			RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.STUFFING.get()), n1);
 		}
 	}
 }
