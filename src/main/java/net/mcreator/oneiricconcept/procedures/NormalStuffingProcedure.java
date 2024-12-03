@@ -8,8 +8,10 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.server.level.ServerLevel;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
@@ -24,24 +26,31 @@ public class NormalStuffingProcedure {
 		}
 	}
 
-	public static boolean execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		return execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static boolean execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
-			return false;
-		double n1 = 0;
+			return;
 		Entity e1 = null;
-		e1 = entity;
-		n1 = 0.05;
-		if (RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.S_2TUFFING.get()), e1.getType().is(EntityTypeTags.UNDEAD), n1)) {
-			return true;
-		} else if (RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()), e1 instanceof Player, n1)) {
-			return true;
-		} else if (RouxiandiaoluoProcedure.execute(world, x, y, z, new ItemStack(OneiricconceptModItems.STUFFING.get()), e1.getType().is(EntityTypeTags.UNDEAD), n1)) {
-			return true;
+		ItemStack i1 = ItemStack.EMPTY;
+		if (!world.isClientSide()) {
+			e1 = entity;
+			if (Math.random() < 0.05) {
+				if (e1.getType().is(EntityTypeTags.UNDEAD)) {
+					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
+				} else if (e1 instanceof Player) {
+					i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
+				} else {
+					i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
+				}
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
 		}
-		return false;
 	}
 }
