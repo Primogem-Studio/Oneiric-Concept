@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    {
+      "item": "primogemcraft:mljnb"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:mora_magazine_n_3",
+    "count": 1
+  }
+}

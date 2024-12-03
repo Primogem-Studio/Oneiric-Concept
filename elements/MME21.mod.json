@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:OyStuffing"
+      },
+      {
+        "value": "CUSTOM:OyStuffing"
+      },
+      {
+        "value": "CUSTOM:OyStuffing"
+      },
+      {
+        "value": "CUSTOM:OyStuffing"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:OyStuffing"
+      },
+      {
+        "value": "CUSTOM:OyStuffing"
+      },
+      {
+        "value": "CUSTOM:OyStuffing"
+      },
+      {
+        "value": "CUSTOM:OyStuffing"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MoraMagazineE2"
+    },
+    "name": "mme_21",
+    "namespace": "mod"
+  }
+}

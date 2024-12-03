@@ -10,8 +10,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.TagKey;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
@@ -35,12 +38,19 @@ public class NormalStuffingProcedure {
 			return;
 		Entity e1 = null;
 		ItemStack i1 = ItemStack.EMPTY;
+		if (entity instanceof Player) {
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
+		}
 		if (!world.isClientSide()) {
 			e1 = entity;
 			if (Math.random() < 0.1) {
 				if (e1.getType().is(EntityTypeTags.UNDEAD)) {
 					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
-				} else if (e1 instanceof Player) {
+				} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:human")))) {
 					i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
 				} else {
 					i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());

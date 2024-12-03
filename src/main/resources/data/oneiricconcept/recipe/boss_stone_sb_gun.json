@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "  a"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:oy_stuffing"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:boss_stone_coin_gun",
+    "count": 1
+  }
+}

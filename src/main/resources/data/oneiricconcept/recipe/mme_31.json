@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:mljnb"
+    },
+    "b": {
+      "item": "oneiricconcept:mora_magazine_n_3"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:mora_magazine_e_3",
+    "count": 1
+  }
+}

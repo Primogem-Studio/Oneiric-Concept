@@ -25,13 +25,13 @@ public class MoraLaunchProcedure {
 		double nu = 0;
 		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 		if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine1")))) {
-			MoraDamageProcedure.execute(world, entity, 4, 5);
+			MoraDamageProcedure.execute(world, entity, 1, 5);
 			nu = 20;
 		} else if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine2")))) {
-			MoraDamageProcedure.execute(world, entity, 6, 5);
+			MoraDamageProcedure.execute(world, entity, 2, 5);
 			nu = 20;
 		} else if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine3")))) {
-			MoraDamageProcedure.execute(world, entity, 64, 7);
+			MoraDamageProcedure.execute(world, entity, 4, 16);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.thunder")), SoundSource.PLAYERS, 2, 1);
@@ -41,15 +41,15 @@ public class MoraLaunchProcedure {
 			}
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
+				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y + 2, z)));
 				entityToSpawn.setVisualOnly(true);
 				_level.addFreshEntity(entityToSpawn);
 			}
-			nu = 280;
+			nu = 0;
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.ASH, x, y, z, 10, 1.3, 1.3, 1.3, 0.3);
+			_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, (y + 1.3), z, 10, 1.3, 1.3, 1.3, 0.3);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.TRIAL_SPAWNER_DETECTED_PLAYER, x, y, z, (int) nu, 1, 1, 1, 0.1);
+			_level.sendParticles(ParticleTypes.TRIAL_SPAWNER_DETECTED_PLAYER, x, (y + 1.3), z, (int) nu, 0.1, 0.1, 0.1, 0.1);
 	}
 }

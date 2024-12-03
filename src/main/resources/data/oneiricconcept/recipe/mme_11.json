@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:mora_sausage"
+    },
+    "b": {
+      "item": "oneiricconcept:mora_magazine"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:mora_magazine_e_1",
+    "count": 1
+  }
+}
