@@ -37,7 +37,7 @@ public class NormalStuffingProcedure {
 		ItemStack i1 = ItemStack.EMPTY;
 		if (!world.isClientSide()) {
 			e1 = entity;
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				if (e1.getType().is(EntityTypeTags.UNDEAD)) {
 					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
 				} else if (e1 instanceof Player) {

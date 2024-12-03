@@ -61,7 +61,7 @@ public class BossStoneCoinGunItem extends Item {
 						stack.shrink(1);
 					}
 				}
-				MoraDamageProcedure.execute(world);
+				MoraDamageProcedure.execute(world, entity);
 			}
 			entity.releaseUsingItem();
 		}
