@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bossstonecoingun",
+    "texture": "bossstonecoingunplus",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Boss Stone Coin Gun",
+    "name": "Boss Stone Coin Gun Plus",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -16,7 +16,7 @@
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 7200,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -37,7 +37,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": true,
-    "shootConstantly": true,
+    "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
       "value": "CUSTOM:Invalid"

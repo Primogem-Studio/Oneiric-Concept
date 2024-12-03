@@ -1,0 +1,21 @@
+{
+  "_fv": 71,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Mmmhit"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.chain.hit"
+    },
+    "igniteFire": false,
+    "power": 0.0,
+    "damage": 0.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.0,
+    "modelHeight": 0.0
+  }
+}

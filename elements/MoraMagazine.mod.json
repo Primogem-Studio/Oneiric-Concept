@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "moramagazine",
+    "texture": "moramagazinen1",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Mora Magazine",
+    "name": "Mora Magazine♦",
     "rarity": "COMMON",
     "creativeTabs": [
       {

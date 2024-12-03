@@ -91,6 +91,12 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.COMPRESS_TOTEMLOOT.get());
 				tabData.accept(OneiricconceptModItems.BOSS_STONE_COIN_GUN.get());
 				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_2.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_3.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_1.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_2.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_3.get());
+				tabData.accept(OneiricconceptModItems.BOSS_STONE_COIN_GUN_PLUS.get());
 			})
 
 					.build());

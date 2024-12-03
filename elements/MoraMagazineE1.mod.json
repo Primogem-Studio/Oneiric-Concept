@@ -3,22 +3,22 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "bossstonecoingun",
+    "texture": "moramagazinee1",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Boss Stone Coin Gun",
+    "name": "Extended Mora Magazine♦",
     "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:OneiricConcept"
       }
     ],
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 44,
     "recipeRemainder": {
       "value": ""
     },
@@ -36,19 +36,13 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": true,
-    "shootConstantly": true,
+    "enableRanged": false,
+    "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
-      "value": "CUSTOM:Invalid"
+      "value": "CUSTOM:XuanyuanSwordQ"
     },
-    "projectileDisableAmmoCheck": true,
-    "onRangedItemUsed": {
-      "name": "MoraLaunch"
-    },
-    "rangedUseCondition": {
-      "name": "MoraOnline"
-    },
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

@@ -17,14 +17,14 @@ import net.mcreator.oneiricconcept.procedures.MoraOnlineProcedure;
 import net.mcreator.oneiricconcept.procedures.MoraLaunchProcedure;
 import net.mcreator.oneiricconcept.entity.InvalidEntity;
 
-public class BossStoneCoinGunItem extends Item {
-	public BossStoneCoinGunItem() {
+public class BossStoneCoinGunPlusItem extends Item {
+	public BossStoneCoinGunPlusItem() {
 		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 32;
+		return 7200;
 	}
 
 	@Override
@@ -39,7 +39,7 @@ public class BossStoneCoinGunItem extends Item {
 	}
 
 	@Override
-	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int count) {
+	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
@@ -57,7 +57,6 @@ public class BossStoneCoinGunItem extends Item {
 				}
 				MoraLaunchProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 			}
-			entity.releaseUsingItem();
 		}
 	}
 

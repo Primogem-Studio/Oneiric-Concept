@@ -21,5 +21,6 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.XUANYUAN_Q_2.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.CRYSTAL_TURTLE.get(), CrystalTurtleRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.MORA_COIN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.INVALID.get(), ThrownItemRenderer::new);
 	}
 }

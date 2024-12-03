@@ -37,7 +37,12 @@ import net.mcreator.oneiricconcept.item.OyStuffingItem;
 import net.mcreator.oneiricconcept.item.OyDumplingItem;
 import net.mcreator.oneiricconcept.item.OneiricShardItem;
 import net.mcreator.oneiricconcept.item.MoraSausageItem;
+import net.mcreator.oneiricconcept.item.MoraMagazineN3Item;
+import net.mcreator.oneiricconcept.item.MoraMagazineN2Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineItem;
+import net.mcreator.oneiricconcept.item.MoraMagazineE3Item;
+import net.mcreator.oneiricconcept.item.MoraMagazineE2Item;
+import net.mcreator.oneiricconcept.item.MoraMagazineE1Item;
 import net.mcreator.oneiricconcept.item.MmmhitItem;
 import net.mcreator.oneiricconcept.item.MemoryBubbleItem;
 import net.mcreator.oneiricconcept.item.MemoriaPieceItem;
@@ -55,6 +60,7 @@ import net.mcreator.oneiricconcept.item.DXuanyuanItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
 import net.mcreator.oneiricconcept.item.CloudBottleItem;
+import net.mcreator.oneiricconcept.item.BossStoneCoinGunPlusItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunItem;
 import net.mcreator.oneiricconcept.item.BelobogSausageItem;
 import net.mcreator.oneiricconcept.item.B2elobogSausageItem;
@@ -137,6 +143,12 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> COMPRESS_TOTEMLOOT = REGISTRY.register("compress_totemloot", CompressTotemlootItem::new);
 	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN = REGISTRY.register("boss_stone_coin_gun", BossStoneCoinGunItem::new);
 	public static final DeferredItem<Item> MORA_MAGAZINE = REGISTRY.register("mora_magazine", MoraMagazineItem::new);
+	public static final DeferredItem<Item> MORA_MAGAZINE_N_2 = REGISTRY.register("mora_magazine_n_2", MoraMagazineN2Item::new);
+	public static final DeferredItem<Item> MORA_MAGAZINE_N_3 = REGISTRY.register("mora_magazine_n_3", MoraMagazineN3Item::new);
+	public static final DeferredItem<Item> MORA_MAGAZINE_E_1 = REGISTRY.register("mora_magazine_e_1", MoraMagazineE1Item::new);
+	public static final DeferredItem<Item> MORA_MAGAZINE_E_2 = REGISTRY.register("mora_magazine_e_2", MoraMagazineE2Item::new);
+	public static final DeferredItem<Item> MORA_MAGAZINE_E_3 = REGISTRY.register("mora_magazine_e_3", MoraMagazineE3Item::new);
+	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN_PLUS = REGISTRY.register("boss_stone_coin_gun_plus", BossStoneCoinGunPlusItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

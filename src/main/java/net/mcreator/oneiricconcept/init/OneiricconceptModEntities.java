@@ -19,6 +19,7 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.oneiricconcept.entity.XuanyuanSwordQEntity;
 import net.mcreator.oneiricconcept.entity.XuanyuanQ2Entity;
 import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
+import net.mcreator.oneiricconcept.entity.InvalidEntity;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
@@ -35,6 +36,8 @@ public class OneiricconceptModEntities {
 					.sized(0.6f, 1.7f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MoraCoinEntity>> MORA_COIN = register("mora_coin",
 			EntityType.Builder.<MoraCoinEntity>of(MoraCoinEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<InvalidEntity>> INVALID = register("invalid",
+			EntityType.Builder.<InvalidEntity>of(InvalidEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0f, 0f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
