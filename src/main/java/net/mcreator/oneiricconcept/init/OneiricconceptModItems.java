@@ -31,6 +31,7 @@ import net.mcreator.oneiricconcept.item.S2tuffingItem;
 import net.mcreator.oneiricconcept.item.S2mokeSausageItem;
 import net.mcreator.oneiricconcept.item.S2ausageItem;
 import net.mcreator.oneiricconcept.item.ResurrectionPelletItem;
+import net.mcreator.oneiricconcept.item.PublicClamorItem;
 import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
 import net.mcreator.oneiricconcept.item.PrimogemWaffleItem;
 import net.mcreator.oneiricconcept.item.OyStuffingItem;
@@ -149,6 +150,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> MORA_MAGAZINE_E_2 = REGISTRY.register("mora_magazine_e_2", MoraMagazineE2Item::new);
 	public static final DeferredItem<Item> MORA_MAGAZINE_E_3 = REGISTRY.register("mora_magazine_e_3", MoraMagazineE3Item::new);
 	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN_PLUS = REGISTRY.register("boss_stone_coin_gun_plus", BossStoneCoinGunPlusItem::new);
+	public static final DeferredItem<Item> PUBLIC_CLAMOR = REGISTRY.register("public_clamor", PublicClamorItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -97,6 +97,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_2.get());
 				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_3.get());
 				tabData.accept(OneiricconceptModItems.BOSS_STONE_COIN_GUN_PLUS.get());
+				tabData.accept(OneiricconceptModItems.PUBLIC_CLAMOR.get());
 			})
 
 					.build());
