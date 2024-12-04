@@ -32,6 +32,7 @@ import net.mcreator.oneiricconcept.item.S2mokeSausageItem;
 import net.mcreator.oneiricconcept.item.S2ausageItem;
 import net.mcreator.oneiricconcept.item.ResurrectionPelletItem;
 import net.mcreator.oneiricconcept.item.PublicClamorItem;
+import net.mcreator.oneiricconcept.item.PropagandaArmyItem;
 import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
 import net.mcreator.oneiricconcept.item.PrimogemWaffleItem;
 import net.mcreator.oneiricconcept.item.OyStuffingItem;
@@ -66,6 +67,7 @@ import net.mcreator.oneiricconcept.item.BossStoneCoinGunItem;
 import net.mcreator.oneiricconcept.item.BelobogSausageItem;
 import net.mcreator.oneiricconcept.item.B2elobogSausageItem;
 import net.mcreator.oneiricconcept.item.AdeptusGunItem;
+import net.mcreator.oneiricconcept.item.APropagandaArmyItem;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModItems {
@@ -151,6 +153,9 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> MORA_MAGAZINE_E_3 = REGISTRY.register("mora_magazine_e_3", MoraMagazineE3Item::new);
 	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN_PLUS = REGISTRY.register("boss_stone_coin_gun_plus", BossStoneCoinGunPlusItem::new);
 	public static final DeferredItem<Item> PUBLIC_CLAMOR = REGISTRY.register("public_clamor", PublicClamorItem::new);
+	public static final DeferredItem<Item> PROPAGANDA_ARMY = REGISTRY.register("propaganda_army", PropagandaArmyItem::new);
+	public static final DeferredItem<Item> PROPAGANDA_ARMY_BLOCK = block(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK);
+	public static final DeferredItem<Item> A_PROPAGANDA_ARMY = REGISTRY.register("a_propaganda_army", APropagandaArmyItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

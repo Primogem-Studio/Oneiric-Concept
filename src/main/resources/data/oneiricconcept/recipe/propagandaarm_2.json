@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:a_propaganda_army"
+    },
+    "b": {
+      "item": "oneiricconcept:oy_stuffing"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:propaganda_army",
+    "count": 1
+  }
+}

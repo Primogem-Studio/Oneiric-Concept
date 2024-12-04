@@ -1,0 +1,48 @@
+{
+  "_fv": 71,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CondensedMemoriaPiece"
+      },
+      {
+        "value": "Blocks.IRON_TRAPDOOR"
+      },
+      {
+        "value": "CUSTOM:CondensedMemoriaPiece"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:PropagandaArmy"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:CondensedMemoriaPiece"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "CUSTOM:HonkaiShard"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PropagandaArmyBlock"
+    },
+    "name": "propagandaarmyblock_1",
+    "namespace": "mod"
+  }
+}

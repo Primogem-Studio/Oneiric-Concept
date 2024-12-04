@@ -21,6 +21,7 @@ import net.mcreator.oneiricconcept.block.TNTDispenserBlock;
 import net.mcreator.oneiricconcept.block.StrippedTheAnotherWorldLogBlock;
 import net.mcreator.oneiricconcept.block.ShivadaJadeOreBlock;
 import net.mcreator.oneiricconcept.block.RactusBlock;
+import net.mcreator.oneiricconcept.block.PropagandaArmyBlockBlock;
 import net.mcreator.oneiricconcept.block.PrithivaTopazOreBlock;
 import net.mcreator.oneiricconcept.block.NagadusEmeraldOreBlock;
 import net.mcreator.oneiricconcept.block.MmMushroomBlock;
@@ -71,6 +72,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> YACTUS = REGISTRY.register("yactus", YactusBlock::new);
 	public static final DeferredBlock<Block> THE_ANOTHER_WORLD_LEAVE = REGISTRY.register("the_another_world_leave", TheAnotherWorldLeaveBlock::new);
 	public static final DeferredBlock<Block> TNT_DISPENSER = REGISTRY.register("tnt_dispenser", TNTDispenserBlock::new);
+	public static final DeferredBlock<Block> PROPAGANDA_ARMY_BLOCK = REGISTRY.register("propaganda_army_block", PropagandaArmyBlockBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

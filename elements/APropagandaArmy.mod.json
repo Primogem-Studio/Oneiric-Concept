@@ -2,12 +2,12 @@
   "_fv": 71,
   "_type": "item",
   "definition": {
-    "renderType": 1,
-    "texture": "propagandaarmy",
-    "customModelName": "propagandaarmy:default",
+    "renderType": 0,
+    "texture": "apropagandaarmy",
+    "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Propaganda Army",
+    "name": "A Propaganda Army",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -16,7 +16,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 20,
+    "useDuration": 100,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -36,16 +36,16 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": true,
-    "shootConstantly": true,
-    "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:Invalid"
-    },
-    "projectileDisableAmmoCheck": true,
-    "onRangedItemUsed": {
+    "onFinishUsingItem": {
       "name": "Propagandaarmy1"
     },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "CUSTOM:XuanyuanSwordQ"
+    },
+    "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/propagandaarmyblock",
+  "textures": {
+    "all": "oneiricconcept:block/propagandaarmy",
+    "particle": "oneiricconcept:block/propagandaarmy",
+    "0": "oneiricconcept:block/propagandaarmy"
+  },
+  "render_type": "cutout"
+}

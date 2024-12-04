@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " b ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:cchonggaodaodedezanxu"
+    },
+    "b": {
+      "item": "oneiricconcept:mm_mushroom"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:a_propaganda_army",
+    "count": 1
+  }
+}

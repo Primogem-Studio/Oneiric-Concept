@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:public_clamor"
+    },
+    "title": {
+      "translate": "advancements.public_clamor_can_melt_metals.title"
+    },
+    "description": {
+      "translate": "advancements.public_clamor_can_melt_metals.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "public_clamor_can_melt_metals_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oneiricconcept:propaganda_army"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "oneiricconcept:oneiric_concept_advancement"
+}

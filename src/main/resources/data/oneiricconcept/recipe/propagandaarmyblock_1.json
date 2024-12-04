@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aef"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:condensed_memoria_piece"
+    },
+    "b": {
+      "item": "minecraft:iron_trapdoor"
+    },
+    "c": {
+      "item": "minecraft:glass_pane"
+    },
+    "d": {
+      "item": "oneiricconcept:propaganda_army"
+    },
+    "e": {
+      "item": "minecraft:iron_block"
+    },
+    "f": {
+      "item": "oneiricconcept:honkai_shard"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:propaganda_army_block",
+    "count": 1
+  }
+}

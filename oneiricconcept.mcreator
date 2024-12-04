@@ -4207,13 +4207,93 @@
     },
     {
       "name": "PropagandaArmy",
-      "type": "procedure",
+      "type": "item",
       "compiles": true,
       "locked_code": false,
       "registry_name": "propaganda_army",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/PropagandaArmyProcedure.java"
+          "src/main/resources/assets/oneiricconcept/models/item/propaganda_army.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/PropagandaArmyItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PropagandaArmyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propaganda_army_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/propaganda_army_block.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/propaganda_army_block.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/propaganda_army_block.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/PropagandaArmyBlockBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/propaganda_army_block.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "APropagandaArmy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "a_propaganda_army",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/a_propaganda_army.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/APropagandaArmyItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Propagandaarmytake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propagandaarmytake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PropagandaarmytakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "nu",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Propagandaarmy1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propagandaarmy_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Propagandaarmy1Procedure.java"
         ],
         "dependencies": [
           {
@@ -4235,6 +4315,115 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Propagandaarmy7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propagandaarmy_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Propagandaarmy7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PublicClamorCanMeltMetals",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "public_clamor_can_melt_metals",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/public_clamor_can_melt_metals.json"
+        ]
+      },
+      "path": "~/Advancement"
+    },
+    {
+      "name": "APropagandaArmy1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "a_propaganda_army_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/a_propaganda_army_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Propagandaarm2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propagandaarm_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/propagandaarm_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Propagandaarmyblock1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propagandaarmyblock_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/propagandaarmyblock_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Redstone2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/redstone_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Publiccc",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "publiccc",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/entities/publiccc.json"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [],
@@ -4261,6 +4450,7 @@
       "CUSTOM:Example"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:PropagandaArmyBlock",
       "~CUSTOM:BigStone",
       "~CUSTOM:AgnidusAgateOre",
       "~CUSTOM:VayudaTurquoiseOre",
@@ -4524,7 +4714,10 @@
       "MoraMagazineE2",
       "MoraMagazineE3",
       "BossStoneCoinGunPlus",
-      "PublicClamor"
+      "PublicClamor",
+      "PropagandaArmyBlock",
+      "PropagandaArmy",
+      "APropagandaArmy"
     ]
   },
   "language_map": {
@@ -4533,9 +4726,11 @@
       "item.oneiricconcept.smoke_sausage": "Smoke Sausage",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
+      "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
       "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_stuffing": "stuffing",
       "advancements.railgun.title": "Railgun！",
+      "advancements.public_clamor_can_melt_metals.title": "Public Clamor Can Melt Metals",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
@@ -4600,6 +4795,7 @@
       "block.oneiricconcept.banana_mushroom.description_1": "a lovely nest for slumbernanas",
       "block.oneiricconcept.banana_mushroom.description_0": "an island full of bananas",
       "item.oneiricconcept.sausage": "Sausage",
+      "item.oneiricconcept.propaganda_army": "Propaganda Army",
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "block.oneiricconcept.banana_mushroom.description_5": "He\u0027s the monkey living life without stress",
@@ -4623,6 +4819,7 @@
       "block.oneiricconcept.memoria": "Memoria",
       "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
       "item.oneiricconcept.small_herta_core": "Small-Her Ta Core",
+      "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
       "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
       "item.oneiricconcept.s_2moke_sausage.description_0": "Do you have a strange smell... the scent of cumin?",
       "item.oneiricconcept.taw_wood_loot": "TAW Wood Loot",
@@ -4659,6 +4856,7 @@
       "item.oneiricconcept.mora_magazine": "Mora Magazine♦",
       "painting.oneiricconcept.sliver_wolf.title": "Sliver Wolf",
       "block.oneiricconcept.big_rock.description_0": "蕴含丰富粗矿的石块",
+      "block.oneiricconcept.propaganda_army_block": "Propaganda Army Server",
       "item.oneiricconcept.dreamdive_can": "§9Dreamdive Can",
       "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "Follow me and teach you how to unlock the gene lock!",
       "painting.oneiricconcept.sliver_wolf.author": "HoYoverse",
@@ -4679,9 +4877,11 @@
       "item.oneiricconcept.smoke_sausage": "熏肠",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
+      "item.oneiricconcept.a_propaganda_army": "一个水军",
       "effect.oneiricconcept.b_2sausage": "熏肠",
       "item.oneiricconcept.oy_stuffing": "肉馅",
       "advancements.railgun.title": "超电磁炮！",
+      "advancements.public_clamor_can_melt_metals.title": "众口铄金",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "华夫饼",
@@ -4701,7 +4901,7 @@
       "block.oneiricconcept.cloud.description_0": "百川源",
       "item.oneiricconcept.memoria_piece": "§9忆质凝块",
       "block.oneiricconcept.vayuda_turquoise_ore": "自在松石矿石",
-      "item.oneiricconcept.public_clamor": "Public Clamor",
+      "item.oneiricconcept.public_clamor": "众口",
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
       "block.oneiricconcept.ractus": "仙术掌",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
@@ -4746,6 +4946,7 @@
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
       "item.oneiricconcept.sausage": "香肠",
+      "item.oneiricconcept.propaganda_army": "水军",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
@@ -4769,6 +4970,7 @@
       "block.oneiricconcept.memoria": "忆质",
       "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
+      "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
       "item.oneiricconcept.s_2moke_sausage.description_0": "有股怪味……孜然的味道吗？",
       "item.oneiricconcept.taw_wood_loot": "异世界礼盒",
@@ -4805,6 +5007,7 @@
       "item.oneiricconcept.mora_magazine": "摩拉弹匣♦",
       "painting.oneiricconcept.sliver_wolf.title": "银狼",
       "block.oneiricconcept.big_rock.description_0": "蕴含丰富粗矿的石块",
+      "block.oneiricconcept.propaganda_army_block": "水军服务器",
       "item.oneiricconcept.dreamdive_can": "§9入梦罐",
       "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "关注我，教你开基因锁！",
       "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
