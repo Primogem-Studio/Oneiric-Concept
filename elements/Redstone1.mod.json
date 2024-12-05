@@ -6,17 +6,17 @@
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
-    "xpReward": 1.0,
+    "xpReward": 20.0,
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "blastingInputStack": {
-      "value": "CUSTOM:PublicClamor"
+      "value": "CUSTOM:OyStuffing"
     },
     "blastingReturnStack": {
       "value": "Items.REDSTONE"
     },
-    "name": "redstone_2",
+    "name": "redstone_1",
     "namespace": "mod"
   }
 }

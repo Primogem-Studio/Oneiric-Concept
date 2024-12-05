@@ -4400,19 +4400,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "Redstone2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redstone_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/redstone_2.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "Publiccc",
       "type": "loottable",
       "compiles": true,
@@ -4424,6 +4411,19 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "Redstone1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstone_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/redstone_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
