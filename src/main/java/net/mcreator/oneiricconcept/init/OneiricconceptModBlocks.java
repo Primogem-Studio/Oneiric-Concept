@@ -13,6 +13,7 @@ import net.mcreator.oneiricconcept.block.YactusBlock;
 import net.mcreator.oneiricconcept.block.VayudaTurquoiseOreBlock;
 import net.mcreator.oneiricconcept.block.VarunadaLazuriteOreBlock;
 import net.mcreator.oneiricconcept.block.VajradaAmethystOreBlock;
+import net.mcreator.oneiricconcept.block.ThunderSwordBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldWoodBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldSaplingBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldLogBlock;
@@ -73,6 +74,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> THE_ANOTHER_WORLD_LEAVE = REGISTRY.register("the_another_world_leave", TheAnotherWorldLeaveBlock::new);
 	public static final DeferredBlock<Block> TNT_DISPENSER = REGISTRY.register("tnt_dispenser", TNTDispenserBlock::new);
 	public static final DeferredBlock<Block> PROPAGANDA_ARMY_BLOCK = REGISTRY.register("propaganda_army_block", PropagandaArmyBlockBlock::new);
+	public static final DeferredBlock<Block> THUNDER_SWORD = REGISTRY.register("thunder_sword", ThunderSwordBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

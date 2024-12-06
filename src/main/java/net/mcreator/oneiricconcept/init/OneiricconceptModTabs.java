@@ -102,6 +102,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.A_PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.LESS_REDSTONE_POWDER.get());
+				tabData.accept(OneiricconceptModBlocks.THUNDER_SWORD.get().asItem());
 			})
 
 					.build());

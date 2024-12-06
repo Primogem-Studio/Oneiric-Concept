@@ -4464,6 +4464,67 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "ThunderSummon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_summon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ThunderSummonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ThunderSword",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/thunder_sword.json",
+          "src/main/resources/assets/oneiricconcept/models/item/thunder_sword.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ThunderSwordBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/thunder_sword.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/thunder_sword.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "ThunderSword1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "thunder_sword_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/thunder_sword_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -4758,7 +4819,8 @@
       "PropagandaArmyBlock",
       "PropagandaArmy",
       "APropagandaArmy",
-      "LessRedstonePowder"
+      "LessRedstonePowder",
+      "ThunderSword"
     ]
   },
   "language_map": {
@@ -4769,6 +4831,7 @@
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
       "effect.oneiricconcept.b_2sausage": "sausage",
+      "block.oneiricconcept.thunder_sword": "Thunder Sword",
       "item.oneiricconcept.oy_stuffing": "stuffing",
       "advancements.railgun.title": "Railgun！",
       "advancements.public_clamor_can_melt_metals.title": "Public Clamor Can Melt Metals",
@@ -4924,6 +4987,7 @@
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "item.oneiricconcept.a_propaganda_army": "一个水军",
       "effect.oneiricconcept.b_2sausage": "熏肠",
+      "block.oneiricconcept.thunder_sword": "雷霆旧剑",
       "item.oneiricconcept.oy_stuffing": "肉馅",
       "advancements.railgun.title": "超电磁炮！",
       "advancements.public_clamor_can_melt_metals.title": "众口铄金",
@@ -4999,7 +5063,7 @@
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
-      "block.oneiricconcept.big_rock": "大石块",
+      "block.oneiricconcept.big_rock": "大石头块",
       "item.oneiricconcept.crystal_turtle_spawn_egg": "Crystal Turtle Spawn Egg",
       "item.oneiricconcept.small_herta_core.description_0": "§7模拟宇宙·寰宇蝗灾",
       "item.oneiricconcept.mora_magazine_n_2": "摩拉弹匣♦♦",
@@ -5124,7 +5188,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.3.6",
+    "version": "1.4.0",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "primogemcraft:yhjsl"
+  },
+  "base": {
+    "tag": "c:stones"
+  },
+  "addition": {
+    "item": "oneiricconcept:sword_of_brilliant_valor"
+  },
+  "result": {
+    "id": "oneiricconcept:thunder_sword"
+  }
+}

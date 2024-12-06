@@ -158,6 +158,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PROPAGANDA_ARMY_BLOCK = block(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK);
 	public static final DeferredItem<Item> A_PROPAGANDA_ARMY = REGISTRY.register("a_propaganda_army", APropagandaArmyItem::new);
 	public static final DeferredItem<Item> LESS_REDSTONE_POWDER = REGISTRY.register("less_redstone_powder", LessRedstonePowderItem::new);
+	public static final DeferredItem<Item> THUNDER_SWORD = block(OneiricconceptModBlocks.THUNDER_SWORD);
 
 	// Start of user code block custom items
 	// End of user code block custom items
