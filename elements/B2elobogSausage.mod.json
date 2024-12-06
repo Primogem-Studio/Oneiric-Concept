@@ -30,7 +30,7 @@
     "damageVsEntity": 8.0,
     "specialInformation": {
       "fixedValue": [
-        "有股怪味……孜然的味道吗？"
+        "§7Do you have a strange smell... the scent of cumin?"
       ]
     },
     "glowCondition": {
@@ -61,6 +61,10 @@
     "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

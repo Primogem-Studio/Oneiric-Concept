@@ -84,10 +84,4 @@ public class SwordOfBrilliantValorItem extends SwordItem {
 		if (selected)
 			BrilliantValorBuffProcedure.execute(world, entity);
 	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
-	}
 }

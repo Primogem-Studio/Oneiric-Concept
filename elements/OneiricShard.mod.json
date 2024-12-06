@@ -30,7 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§d泛浮在星辰大海中的结晶微光，律动着古老巨兽的遗梦。旧日的一切最终成了照亮黑暗前路的烛火。"
+        "§dLights flicking in a sea of stars, stirring the dream of a Leviathan. The past turns into candles that light the darkness ahead."
       ]
     },
     "glowCondition": {
@@ -58,6 +58,10 @@
     "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

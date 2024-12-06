@@ -23,7 +23,7 @@
     "damageVsEntity": 28.0,
     "usageCount": 2800,
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "repairItems": [
       {

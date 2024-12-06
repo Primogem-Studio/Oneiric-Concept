@@ -29,7 +29,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7An account seems to be a bit too slow"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

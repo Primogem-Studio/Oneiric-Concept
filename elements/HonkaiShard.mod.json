@@ -30,11 +30,11 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "稀有的崩坏能量聚合体"
+        "§7A very rare aggregate of Honkai Energy."
       ]
     },
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -58,6 +58,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

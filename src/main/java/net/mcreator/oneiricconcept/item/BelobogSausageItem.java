@@ -1,9 +1,6 @@
 
 package net.mcreator.oneiricconcept.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.Rarity;
@@ -27,12 +24,6 @@ public class BelobogSausageItem extends Item {
 	@Override
 	public int getEnchantmentValue() {
 		return 1;
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
 	}
 
 	@Override

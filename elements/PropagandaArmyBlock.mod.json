@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "Propaganda Army Server",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7Fully automatic!"
+      ]
     },
     "hardness": 2.0,
     "resistance": 10.0,
@@ -101,7 +103,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 15,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,

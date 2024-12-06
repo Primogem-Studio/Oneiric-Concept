@@ -30,12 +30,12 @@
     "damageVsEntity": 13.0,
     "specialInformation": {
       "fixedValue": [
-        "§6第十神之键，蕴含着强大的律者力量",
+        "§6The tenth Divine Keys contains the powerful power of Herrschers",
         "§7虽然只有千分之一"
       ]
     },
     "glowCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -65,6 +65,10 @@
     "isAlwaysEdible": false,
     "animation": "spear",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }
