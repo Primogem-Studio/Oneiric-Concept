@@ -50,6 +50,7 @@ import net.mcreator.oneiricconcept.item.MemoryBubbleItem;
 import net.mcreator.oneiricconcept.item.MemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.MemoriaLootItem;
 import net.mcreator.oneiricconcept.item.MemoriaItem;
+import net.mcreator.oneiricconcept.item.LessRedstonePowderItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
@@ -156,6 +157,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PROPAGANDA_ARMY = REGISTRY.register("propaganda_army", PropagandaArmyItem::new);
 	public static final DeferredItem<Item> PROPAGANDA_ARMY_BLOCK = block(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK);
 	public static final DeferredItem<Item> A_PROPAGANDA_ARMY = REGISTRY.register("a_propaganda_army", APropagandaArmyItem::new);
+	public static final DeferredItem<Item> LESS_REDSTONE_POWDER = REGISTRY.register("less_redstone_powder", LessRedstonePowderItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

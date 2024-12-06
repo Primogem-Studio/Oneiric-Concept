@@ -33,7 +33,7 @@ public class GeomarrowRadiatorProcessProcedure {
 			i1.shrink(1);
 		} else if (i1.getItem() == OneiricconceptModItems.PUBLIC_CLAMOR.get()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()), 1, 1, 20);
-			i1.shrink(9);
+			i1.shrink(7);
 		}
 	}
 }
