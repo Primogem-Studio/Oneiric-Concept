@@ -3,27 +3,24 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cdc",
-    "aef"
+    "bcb",
+    "ded"
   ],
   "key": {
     "a": {
       "item": "oneiricconcept:condensed_memoria_piece"
     },
     "b": {
-      "item": "minecraft:iron_trapdoor"
+      "item": "minecraft:beacon"
     },
     "c": {
-      "item": "minecraft:glass_pane"
-    },
-    "d": {
       "item": "oneiricconcept:propaganda_army"
     },
-    "e": {
-      "item": "minecraft:iron_block"
-    },
-    "f": {
+    "d": {
       "item": "oneiricconcept:honkai_shard"
+    },
+    "e": {
+      "item": "minecraft:enchanting_table"
     }
   },
   "result": {

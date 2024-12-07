@@ -126,9 +126,6 @@
     "onRedstoneOn": {
       "name": "Propagandaarmy7"
     },
-    "onRedstoneOff": {
-      "name": "Propagandaarmy7"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

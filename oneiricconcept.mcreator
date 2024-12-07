@@ -4551,6 +4551,7 @@
       "CUSTOM:Example"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ThunderSword",
       "~CUSTOM:PropagandaArmyBlock",
       "~CUSTOM:BigStone",
       "~CUSTOM:AgnidusAgateOre",

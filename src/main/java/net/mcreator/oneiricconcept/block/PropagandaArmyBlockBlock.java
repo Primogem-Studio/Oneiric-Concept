@@ -91,8 +91,6 @@ public class PropagandaArmyBlockBlock extends Block {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		if (world.getBestNeighborSignal(pos) > 0) {
 			Propagandaarmy7Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		} else {
-			Propagandaarmy7Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
 	}
 }
