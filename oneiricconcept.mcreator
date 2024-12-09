@@ -4525,6 +4525,18 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Mimo",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/painting_variant/mimo.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4834,6 +4846,7 @@
       "effect.oneiricconcept.b_2sausage": "sausage",
       "block.oneiricconcept.thunder_sword": "Thunder Sword",
       "item.oneiricconcept.oy_stuffing": "stuffing",
+      "painting.oneiricconcept.mimo.title": "Mimo",
       "advancements.railgun.title": "Railgun！",
       "advancements.public_clamor_can_melt_metals.title": "Public Clamor Can Melt Metals",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
@@ -4891,6 +4904,7 @@
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "subtitles.mmm": "bump",
       "block.oneiricconcept.mm_mushroom": "Mm Mushroom",
+      "painting.oneiricconcept.mimo.author": "xyz",
       "item.oneiricconcept.memoria_piece.description_0": "Although it looks like an Armor Trim Smithing Template, it is indeed just a Condensed Memoria",
       "block.oneiricconcept.banana_mushroom": "Banana Mushroom",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
@@ -4990,6 +5004,7 @@
       "effect.oneiricconcept.b_2sausage": "熏肠",
       "block.oneiricconcept.thunder_sword": "雷霆旧剑",
       "item.oneiricconcept.oy_stuffing": "肉馅",
+      "painting.oneiricconcept.mimo.title": "Mimo",
       "advancements.railgun.title": "超电磁炮！",
       "advancements.public_clamor_can_melt_metals.title": "众口铄金",
       "item.oneiricconcept.oy_dumpling": "饺子",
@@ -5047,6 +5062,7 @@
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "subtitles.mmm": "碰撞",
       "block.oneiricconcept.mm_mushroom": "萌萌菌",
+      "painting.oneiricconcept.mimo.author": "xyz",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
       "block.oneiricconcept.banana_mushroom": "香蕉菌",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
