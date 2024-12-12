@@ -4821,6 +4821,50 @@
         ]
       },
       "path": "~/PgcCopyDecoration/pgcprocess"
+    },
+    {
+      "name": "Liheshuxhs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liheshuxhs",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LiheshuxhsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "ss1",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PER"
+    },
+    {
+      "name": "Liheshuxhs2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liheshuxhs_2",
+      "metadata": {
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Liheshuxhs2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "si1",
+            "type": "string"
+          }
+        ]
+      },
+      "path": "~/PER"
     }
   ],
   "variable_elements": [],
