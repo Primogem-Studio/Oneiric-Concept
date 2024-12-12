@@ -3405,7 +3405,7 @@
         ],
         "dependencies": []
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Cc1",
@@ -3521,7 +3521,7 @@
           }
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Hsctrl",
@@ -3545,7 +3545,7 @@
           }
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Pgcwuqi",
@@ -3569,7 +3569,7 @@
           }
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Example",
@@ -3583,7 +3583,7 @@
           "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java"
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Exampledescribe",
@@ -3603,7 +3603,7 @@
           }
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Geomarrowradiatorprocess0",
@@ -4546,12 +4546,12 @@
       "registry_name": "pgc_present",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/pgc_present.json",
+          "src/main/resources/assets/oneiricconcept/models/item/pgc_present.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/PgcPresentBlockEntity.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/pgc_present.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/pgc_present.json",
           "src/main/java/net/mcreator/oneiricconcept/block/PgcPresentBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/pgc_present.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/pgc_present.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pgc_present.json"
         ]
       },
       "path": "~/PgcCopyDecoration"
@@ -4845,7 +4845,7 @@
           }
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Liheshuxhs2",
@@ -4865,7 +4865,7 @@
           }
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     },
     {
       "name": "Lihefangkuaisx",
@@ -4896,7 +4896,7 @@
           }
         ]
       },
-      "path": "~/PER"
+      "path": "~/PgcCopyDecoration/PER"
     }
   ],
   "variable_elements": [],
@@ -5583,14 +5583,14 @@
         "children": []
       },
       {
-        "name": "PER",
-        "children": []
-      },
-      {
         "name": "PgcCopyDecoration",
         "children": [
           {
             "name": "pgcprocess",
+            "children": []
+          },
+          {
+            "name": "PER",
             "children": []
           }
         ]

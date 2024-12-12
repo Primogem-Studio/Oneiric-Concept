@@ -18,9 +18,6 @@ public class BoxitemprocessProcedure {
 		if (entity == null)
 			return;
 		ItemStack i1 = ItemStack.EMPTY;
-		String s3 = "";
-		String s1 = "";
-		String s2 = "";
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity.isShiftKeyDown()) {
 				if (world instanceof ServerLevel _level) {
@@ -36,7 +33,11 @@ public class BoxitemprocessProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
-				ItempgcboxProcedure.execute(world, x, y, z);
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), ItempgcboxProcedure.execute(world, x, y, z));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
 			}
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
