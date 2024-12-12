@@ -4546,12 +4546,12 @@
       "registry_name": "pgc_present",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/pgc_present.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pgc_present.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/PgcPresentBlockEntity.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/pgc_present.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/PgcPresentBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/pgc_present.json",
-          "src/main/resources/assets/oneiricconcept/models/block/pgc_present.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/PgcPresentBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/pgc_present.json"
         ]
       },
       "path": "~/PgcCopyDecoration"
@@ -4818,7 +4818,8 @@
             "name": "world",
             "type": "world"
           }
-        ]
+        ],
+        "return_type": "itemstack"
       },
       "path": "~/PgcCopyDecoration/pgcprocess"
     },
@@ -4861,6 +4862,37 @@
           {
             "name": "si1",
             "type": "string"
+          }
+        ]
+      },
+      "path": "~/PER"
+    },
+    {
+      "name": "Lihefangkuaisx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lihefangkuaisx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LihefangkuaisxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },

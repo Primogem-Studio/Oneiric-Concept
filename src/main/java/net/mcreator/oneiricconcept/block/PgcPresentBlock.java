@@ -21,7 +21,7 @@ import net.minecraft.world.Containers;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.procedures.ItempgcboxProcedure;
+import net.mcreator.oneiricconcept.procedures.LihefangkuaisxProcedure;
 import net.mcreator.oneiricconcept.procedures.BoxprocessProcedure;
 import net.mcreator.oneiricconcept.procedures.BoxitemprocessProcedure;
 import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
@@ -55,7 +55,7 @@ public class PgcPresentBlock extends Block implements EntityBlock {
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		if (world.getBestNeighborSignal(pos) > 0) {
-			ItempgcboxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+			LihefangkuaisxProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
 	}
 
