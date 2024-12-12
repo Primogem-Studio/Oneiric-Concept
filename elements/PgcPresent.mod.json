@@ -51,7 +51,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConceptDecoration"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""

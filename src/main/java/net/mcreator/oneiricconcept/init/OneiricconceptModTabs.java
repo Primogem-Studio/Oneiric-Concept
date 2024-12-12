@@ -103,7 +103,13 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.A_PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.LESS_REDSTONE_POWDER.get());
 				tabData.accept(OneiricconceptModBlocks.THUNDER_SWORD.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.PGC_PG.get().asItem());
+			})
+
+					.build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModItems.EXAMPLE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
 			})
 
 					.build());

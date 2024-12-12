@@ -1,16 +1,16 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "oneiricconcept:blocks/pgc_pgd",
+  "random_sequence": "oneiricconcept:blocks/pgc_pg7",
   "pools": [
     {
       "rolls": 1.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:pgc_pg",
+          "name": "oneiricconcept:pgc_pg1",
           "functions": [
             {
-              "count": 5,
+              "count": 7,
               "function": "minecraft:set_count"
             },
             {

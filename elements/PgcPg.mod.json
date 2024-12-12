@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "pgc_pg:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -40,11 +40,11 @@
     },
     "hardness": 1.0,
     "resistance": 10.0,
-    "hasGravity": true,
-    "isWaterloggable": false,
+    "hasGravity": false,
+    "isWaterloggable": true,
     "creativeTabs": [
       {
-        "value": "CUSTOM:OneiricConcept"
+        "value": "CUSTOM:OneiricConceptDecoration"
       }
     ],
     "destroyTool": "pickaxe",
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Pgprocess"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

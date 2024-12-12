@@ -160,13 +160,13 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> LESS_REDSTONE_POWDER = REGISTRY.register("less_redstone_powder", LessRedstonePowderItem::new);
 	public static final DeferredItem<Item> THUNDER_SWORD = block(OneiricconceptModBlocks.THUNDER_SWORD);
 	public static final DeferredItem<Item> PGC_PRESENT = block(OneiricconceptModBlocks.PGC_PRESENT);
-	public static final DeferredItem<Item> PGC_PG = block(OneiricconceptModBlocks.PGC_PG);
-	public static final DeferredItem<Item> PGC_PGA = block(OneiricconceptModBlocks.PGC_PGA);
-	public static final DeferredItem<Item> PGC_PGB = block(OneiricconceptModBlocks.PGC_PGB);
-	public static final DeferredItem<Item> PGC_PGC = block(OneiricconceptModBlocks.PGC_PGC);
-	public static final DeferredItem<Item> PGC_PGD = block(OneiricconceptModBlocks.PGC_PGD);
-	public static final DeferredItem<Item> PGC_PGE = block(OneiricconceptModBlocks.PGC_PGE);
-	public static final DeferredItem<Item> PGC_PGF = block(OneiricconceptModBlocks.PGC_PGF);
+	public static final DeferredItem<Item> PGC_PG1 = block(OneiricconceptModBlocks.PGC_PG1);
+	public static final DeferredItem<Item> PGC_PG2 = block(OneiricconceptModBlocks.PGC_PG2);
+	public static final DeferredItem<Item> PGC_PG3 = block(OneiricconceptModBlocks.PGC_PG3);
+	public static final DeferredItem<Item> PGC_PG4 = block(OneiricconceptModBlocks.PGC_PG4);
+	public static final DeferredItem<Item> PGC_PG5 = block(OneiricconceptModBlocks.PGC_PG5);
+	public static final DeferredItem<Item> PGC_PG6 = block(OneiricconceptModBlocks.PGC_PG6);
+	public static final DeferredItem<Item> PGC_PG7 = block(OneiricconceptModBlocks.PGC_PG7);
 
 	// Start of user code block custom items
 	// End of user code block custom items
