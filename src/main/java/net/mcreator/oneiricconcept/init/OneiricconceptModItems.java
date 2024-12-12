@@ -159,6 +159,14 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> A_PROPAGANDA_ARMY = REGISTRY.register("a_propaganda_army", APropagandaArmyItem::new);
 	public static final DeferredItem<Item> LESS_REDSTONE_POWDER = REGISTRY.register("less_redstone_powder", LessRedstonePowderItem::new);
 	public static final DeferredItem<Item> THUNDER_SWORD = block(OneiricconceptModBlocks.THUNDER_SWORD);
+	public static final DeferredItem<Item> PGC_PRESENT = block(OneiricconceptModBlocks.PGC_PRESENT);
+	public static final DeferredItem<Item> PGC_PG = block(OneiricconceptModBlocks.PGC_PG);
+	public static final DeferredItem<Item> PGC_PGA = block(OneiricconceptModBlocks.PGC_PGA);
+	public static final DeferredItem<Item> PGC_PGB = block(OneiricconceptModBlocks.PGC_PGB);
+	public static final DeferredItem<Item> PGC_PGC = block(OneiricconceptModBlocks.PGC_PGC);
+	public static final DeferredItem<Item> PGC_PGD = block(OneiricconceptModBlocks.PGC_PGD);
+	public static final DeferredItem<Item> PGC_PGE = block(OneiricconceptModBlocks.PGC_PGE);
+	public static final DeferredItem<Item> PGC_PGF = block(OneiricconceptModBlocks.PGC_PGF);
 
 	// Start of user code block custom items
 	// End of user code block custom items

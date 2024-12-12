@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:pgc_pgf",
+    "oneiricconcept:pgc_pge",
+    "oneiricconcept:pgc_pgd",
+    "oneiricconcept:pgc_pgc",
+    "oneiricconcept:pgc_pga",
+    "oneiricconcept:pgc_pg",
+    "oneiricconcept:pgc_pgb",
     "oneiricconcept:thunder_sword",
     "oneiricconcept:propaganda_army_block",
     "oneiricconcept:big_stone",

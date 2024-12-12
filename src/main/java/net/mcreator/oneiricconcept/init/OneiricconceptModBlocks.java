@@ -24,6 +24,14 @@ import net.mcreator.oneiricconcept.block.ShivadaJadeOreBlock;
 import net.mcreator.oneiricconcept.block.RactusBlock;
 import net.mcreator.oneiricconcept.block.PropagandaArmyBlockBlock;
 import net.mcreator.oneiricconcept.block.PrithivaTopazOreBlock;
+import net.mcreator.oneiricconcept.block.PgcPresentBlock;
+import net.mcreator.oneiricconcept.block.PgcPgfBlock;
+import net.mcreator.oneiricconcept.block.PgcPgeBlock;
+import net.mcreator.oneiricconcept.block.PgcPgdBlock;
+import net.mcreator.oneiricconcept.block.PgcPgcBlock;
+import net.mcreator.oneiricconcept.block.PgcPgbBlock;
+import net.mcreator.oneiricconcept.block.PgcPgaBlock;
+import net.mcreator.oneiricconcept.block.PgcPgBlock;
 import net.mcreator.oneiricconcept.block.NagadusEmeraldOreBlock;
 import net.mcreator.oneiricconcept.block.MmMushroomBlock;
 import net.mcreator.oneiricconcept.block.MemoriaBlock;
@@ -75,6 +83,14 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> TNT_DISPENSER = REGISTRY.register("tnt_dispenser", TNTDispenserBlock::new);
 	public static final DeferredBlock<Block> PROPAGANDA_ARMY_BLOCK = REGISTRY.register("propaganda_army_block", PropagandaArmyBlockBlock::new);
 	public static final DeferredBlock<Block> THUNDER_SWORD = REGISTRY.register("thunder_sword", ThunderSwordBlock::new);
+	public static final DeferredBlock<Block> PGC_PRESENT = REGISTRY.register("pgc_present", PgcPresentBlock::new);
+	public static final DeferredBlock<Block> PGC_PG = REGISTRY.register("pgc_pg", PgcPgBlock::new);
+	public static final DeferredBlock<Block> PGC_PGA = REGISTRY.register("pgc_pga", PgcPgaBlock::new);
+	public static final DeferredBlock<Block> PGC_PGB = REGISTRY.register("pgc_pgb", PgcPgbBlock::new);
+	public static final DeferredBlock<Block> PGC_PGC = REGISTRY.register("pgc_pgc", PgcPgcBlock::new);
+	public static final DeferredBlock<Block> PGC_PGD = REGISTRY.register("pgc_pgd", PgcPgdBlock::new);
+	public static final DeferredBlock<Block> PGC_PGE = REGISTRY.register("pgc_pge", PgcPgeBlock::new);
+	public static final DeferredBlock<Block> PGC_PGF = REGISTRY.register("pgc_pgf", PgcPgfBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

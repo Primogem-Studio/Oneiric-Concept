@@ -1,0 +1,11 @@
+{
+  "_fv": 71,
+  "_type": "tab",
+  "definition": {
+    "name": "Oneiric Concept Decoration",
+    "icon": {
+      "value": "CUSTOM:Example"
+    },
+    "showSearch": false
+  }
+}
