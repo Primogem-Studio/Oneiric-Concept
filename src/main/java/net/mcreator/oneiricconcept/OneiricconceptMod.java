@@ -27,6 +27,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModFluids;
 import net.mcreator.oneiricconcept.init.OneiricconceptModFluidTypes;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
+import net.mcreator.oneiricconcept.init.OneiricconceptModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -47,7 +48,7 @@ public class OneiricconceptMod {
 		modEventBus.addListener(this::registerNetworking);
 		OneiricconceptModSounds.REGISTRY.register(modEventBus);
 		OneiricconceptModBlocks.REGISTRY.register(modEventBus);
-
+		OneiricconceptModBlockEntities.REGISTRY.register(modEventBus);
 		OneiricconceptModItems.REGISTRY.register(modEventBus);
 		OneiricconceptModEntities.REGISTRY.register(modEventBus);
 		OneiricconceptModTabs.REGISTRY.register(modEventBus);

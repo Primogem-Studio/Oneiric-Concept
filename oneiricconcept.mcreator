@@ -4547,6 +4547,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/pgc_present.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PgcPresentBlockEntity.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/pgc_present.json",
           "src/main/java/net/mcreator/oneiricconcept/block/PgcPresentBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/pgc_present.json",
@@ -4764,6 +4765,41 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/BoxitemprocessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcprocess"
+    },
+    {
+      "name": "Itempgcbox",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "itempgcbox",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ItempgcboxProcedure.java"
         ],
         "dependencies": [
           {

@@ -114,7 +114,7 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -130,6 +130,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Boxprocess"
+    },
+    "onStartToDestroy": {
+      "name": "Boxitemprocess"
+    },
+    "onRedstoneOn": {
+      "name": "Itempgcbox"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
