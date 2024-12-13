@@ -167,6 +167,16 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PGC_PG5 = block(OneiricconceptModBlocks.PGC_PG5);
 	public static final DeferredItem<Item> PGC_PG6 = block(OneiricconceptModBlocks.PGC_PG6);
 	public static final DeferredItem<Item> PGC_PG7 = block(OneiricconceptModBlocks.PGC_PG7);
+	public static final DeferredItem<Item> AGNID_1 = block(OneiricconceptModBlocks.AGNID_1);
+	public static final DeferredItem<Item> AGNID_2 = block(OneiricconceptModBlocks.AGNID_2);
+	public static final DeferredItem<Item> AGNID_3 = block(OneiricconceptModBlocks.AGNID_3);
+	public static final DeferredItem<Item> AGNID_4 = block(OneiricconceptModBlocks.AGNID_4);
+	public static final DeferredItem<Item> AGNID_5 = block(OneiricconceptModBlocks.AGNID_5);
+	public static final DeferredItem<Item> AGNID_6 = block(OneiricconceptModBlocks.AGNID_6);
+	public static final DeferredItem<Item> AGNID_7 = block(OneiricconceptModBlocks.AGNID_7);
+	public static final DeferredItem<Item> AGNID_8 = block(OneiricconceptModBlocks.AGNID_8);
+	public static final DeferredItem<Item> AGNID_9 = block(OneiricconceptModBlocks.AGNID_9);
+	public static final DeferredItem<Item> AGNID_10 = block(OneiricconceptModBlocks.AGNID_10);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -110,6 +110,7 @@ public class OneiricconceptModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModItems.EXAMPLE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
 			})
 
 					.build());
