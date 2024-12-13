@@ -4,15 +4,19 @@
   "pools": [
     {
       "rolls": 1.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:agnid_8"
+          "name": "oneiricconcept:agnid_1",
+          "functions": [
+            {
+              "count": 8,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
         }
       ]
     }

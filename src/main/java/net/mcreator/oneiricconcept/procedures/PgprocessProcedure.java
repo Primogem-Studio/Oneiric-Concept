@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -50,11 +51,21 @@ public class PgprocessProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1, false);
+			if (item.is(ItemTags.create(ResourceLocation.parse("c:gem")))) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1, false);
+					}
+				}
+			} else if (item.is(ItemTags.create(ResourceLocation.parse("c:metal")))) {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.metal.place")), SoundSource.BLOCKS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.metal.place")), SoundSource.BLOCKS, 1, 1, false);
+					}
 				}
 			}
 			item.shrink(1);

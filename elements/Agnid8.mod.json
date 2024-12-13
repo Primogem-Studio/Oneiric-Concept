@@ -45,9 +45,9 @@
     "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Agnid1"
     },
-    "dropAmount": 1,
+    "dropAmount": 8,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
