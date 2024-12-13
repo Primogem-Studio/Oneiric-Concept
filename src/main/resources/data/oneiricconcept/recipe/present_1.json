@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "b b",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:pink_carpet"
+    },
+    "b": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:pgc_present",
+    "count": 1
+  }
+}

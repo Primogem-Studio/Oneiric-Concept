@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Feed On Illusions",
-    "achievementDescription": "气态净水，好像吃下去了，又好像啥也没吃。",
+    "achievementDescription": "Gaseous purified water, it seems like I've eaten it, but it also seems like I haven't eaten anything.",
     "achievementIcon": {
       "value": "CUSTOM:SkyWaffle"
     },

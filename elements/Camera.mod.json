@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "Camera",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7The meaning of '相机 is to see through the key points"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,
