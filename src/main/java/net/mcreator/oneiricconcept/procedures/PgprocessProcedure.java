@@ -7,10 +7,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -20,14 +18,16 @@ public class PgprocessProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double name = 0;
 		ItemStack item = ItemStack.EMPTY;
 		String block = "";
+		String block21 = "";
 		block = BuiltInRegistries.BLOCK.getKey((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()).toString();
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:primogem")))) {
+		block21 = block.substring(0, 21);
+		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		if ((block21).equals((BuiltInRegistries.ITEM.getKey(item.getItem()).toString()).substring(0, 21))) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((block.substring(0, 21) + "" + (new java.text.DecimalFormat("#").format(new Object() {
+				BlockState _bs = BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((block21 + "" + (new java.text.DecimalFormat("#").format(new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -54,10 +54,7 @@ public class PgprocessProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
-			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-			}
+			item.shrink(1);
 		}
 	}
 }
