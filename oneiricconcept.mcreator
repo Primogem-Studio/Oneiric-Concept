@@ -4696,28 +4696,7 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/PgprocessProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/PgcCopyDecoration/pgcprocess"
     },
@@ -4897,6 +4876,176 @@
         ]
       },
       "path": "~/PgcCopyDecoration/PER"
+    },
+    {
+      "name": "Agnid1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid1Block.java",
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_1.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_1.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid2",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_2.json",
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_2.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid2Block.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid3",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_3.json",
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_3.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid3Block.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_3.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_3.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid4",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_4.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_4.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid4Block.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_4.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid5",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_5.json",
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_5.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_5.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid5Block.java",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_5.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid6",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid6Block.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_6.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_6.json",
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_6.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid7",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_7.json",
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_7.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid7Block.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_7.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_7.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid8",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_8.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid8Block.java",
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_8.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_8.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid9",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_9",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_9.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_9.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid9Block.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_9.json",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_9.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Agnid10",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "agnid_10",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/agnid_10.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Agnid10Block.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnid_10.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_10.json",
+          "src/main/resources/assets/oneiricconcept/models/block/agnid_10.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
     }
   ],
   "variable_elements": [],
@@ -4923,6 +5072,16 @@
       "CUSTOM:Example"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Agnid10",
+      "~CUSTOM:Agnid9",
+      "~CUSTOM:Agnid8",
+      "~CUSTOM:Agnid7",
+      "~CUSTOM:Agnid6",
+      "~CUSTOM:Agnid5",
+      "~CUSTOM:Agnid4",
+      "~CUSTOM:Agnid3",
+      "~CUSTOM:Agnid2",
+      "~CUSTOM:Agnid1",
       "~CUSTOM:PgcPgf",
       "~CUSTOM:PgcPge",
       "~CUSTOM:PgcPgd",
@@ -5336,17 +5495,26 @@
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
       "item.oneiricconcept.sky_waffle": "Sky Waffle",
       "item.oneiricconcept.s_2ausage": "Sausage",
+      "block.oneiricconcept.agnid_1": "Agnidus metal ingot",
       "block.oneiricconcept.mactus": "Mactus",
       "item.oneiricconcept.resurrection_pellet": "Resurrection Pellet",
       "advancements.feed_on_illusions.title": "Feed On Illusions",
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
       "advancements.power_of_herrschers.descr": "1‰",
+      "block.oneiricconcept.agnid_7": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_6": "Agnidus metal ingot",
       "block.oneiricconcept.yactus": "Yactus",
+      "block.oneiricconcept.agnid_9": "Agnidus metal ingot",
       "item.oneiricconcept.honkai_shard": "Honkai Shard",
+      "block.oneiricconcept.agnid_8": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_3": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_2": "Agnidus metal ingot",
       "item.oneiricconcept.s_2tuffing": "stuffing",
       "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
+      "block.oneiricconcept.agnid_5": "Agnidus metal ingot",
       "block.oneiricconcept.gactus": "Gactus",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
+      "block.oneiricconcept.agnid_4": "Agnidus metal ingot",
       "item.oneiricconcept.dumpling": "Dumpling",
       "death.attack.b_2.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7romotion of the medicinal propertiesof health products is prohibited by thelaw.",
@@ -5358,6 +5526,7 @@
       "block.oneiricconcept.big_rock.description_0": "蕴含丰富粗矿的石块",
       "block.oneiricconcept.propaganda_army_block": "Propaganda Army Server",
       "item.oneiricconcept.dreamdive_can": "§9Dreamdive Can",
+      "block.oneiricconcept.agnid_10": "Agnidus metal ingot",
       "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "§7Follow me and teach you how to unlock the gene lock!",
       "painting.oneiricconcept.sliver_wolf.author": "HoYoverse",
       "item.oneiricconcept.boss_stone_coin_gun": "Boss Stone Coin Gun",
@@ -5503,17 +5672,26 @@
       "block.oneiricconcept.the_another_world_log": "异世界原木",
       "item.oneiricconcept.sky_waffle": "天华夫饼",
       "item.oneiricconcept.s_2ausage": "香肠",
+      "block.oneiricconcept.agnid_1": "Agnid 1",
       "block.oneiricconcept.mactus": "仙女掌",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
       "advancements.power_of_herrschers.descr": "1‰",
+      "block.oneiricconcept.agnid_7": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_6": "Agnidus metal ingot",
       "block.oneiricconcept.yactus": "仙力掌",
+      "block.oneiricconcept.agnid_9": "Agnidus metal ingot",
       "item.oneiricconcept.honkai_shard": "三分结晶",
+      "block.oneiricconcept.agnid_8": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_3": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_2": "Agnidus metal ingot",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
       "item.oneiricconcept.s_2tuffing": "肉馅",
+      "block.oneiricconcept.agnid_5": "Agnidus metal ingot",
       "block.oneiricconcept.gactus": "仙士掌",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
+      "block.oneiricconcept.agnid_4": "Agnidus metal ingot",
       "item.oneiricconcept.dumpling": "饺子",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7依律禁止宣传保健品的药物功效。",
@@ -5525,6 +5703,7 @@
       "block.oneiricconcept.big_rock.description_0": "§7蕴含丰富粗矿的石块",
       "block.oneiricconcept.propaganda_army_block": "水军服务器",
       "item.oneiricconcept.dreamdive_can": "§9入梦罐",
+      "block.oneiricconcept.agnid_10": "Agnidus metal ingot",
       "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "§7关注我，教你开基因锁！",
       "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
       "item.oneiricconcept.boss_stone_coin_gun": "石头老板撒币枪",

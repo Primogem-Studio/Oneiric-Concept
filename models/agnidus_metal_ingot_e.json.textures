@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "agnidus_metal_ingot"
+      },
+      "name": "default"
+    }
+  }
+}

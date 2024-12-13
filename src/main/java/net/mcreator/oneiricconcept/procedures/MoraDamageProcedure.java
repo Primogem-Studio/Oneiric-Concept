@@ -54,7 +54,7 @@ public class MoraDamageProcedure {
 							entityToSpawn.setSilent(true);
 							return entityToSpawn;
 						}
-					}.getArrow(projectileLevel, entity, (float) (dmg * 32), 1, (byte) 0);
+					}.getArrow(projectileLevel, entity, (float) (dmg * 3.2), 1, (byte) 0);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) spd, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);

@@ -48,6 +48,16 @@ import net.mcreator.oneiricconcept.block.BananaMushroomBockBlock;
 import net.mcreator.oneiricconcept.block.BananaMushroomBlock;
 import net.mcreator.oneiricconcept.block.BactusBlock;
 import net.mcreator.oneiricconcept.block.AgnidusAgateOreBlock;
+import net.mcreator.oneiricconcept.block.Agnid9Block;
+import net.mcreator.oneiricconcept.block.Agnid8Block;
+import net.mcreator.oneiricconcept.block.Agnid7Block;
+import net.mcreator.oneiricconcept.block.Agnid6Block;
+import net.mcreator.oneiricconcept.block.Agnid5Block;
+import net.mcreator.oneiricconcept.block.Agnid4Block;
+import net.mcreator.oneiricconcept.block.Agnid3Block;
+import net.mcreator.oneiricconcept.block.Agnid2Block;
+import net.mcreator.oneiricconcept.block.Agnid1Block;
+import net.mcreator.oneiricconcept.block.Agnid10Block;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModBlocks {
@@ -91,6 +101,16 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> PGC_PG5 = REGISTRY.register("pgc_pg5", PgcPgdBlock::new);
 	public static final DeferredBlock<Block> PGC_PG6 = REGISTRY.register("pgc_pg6", PgcPgeBlock::new);
 	public static final DeferredBlock<Block> PGC_PG7 = REGISTRY.register("pgc_pg7", PgcPgfBlock::new);
+	public static final DeferredBlock<Block> AGNID_1 = REGISTRY.register("agnid_1", Agnid1Block::new);
+	public static final DeferredBlock<Block> AGNID_2 = REGISTRY.register("agnid_2", Agnid2Block::new);
+	public static final DeferredBlock<Block> AGNID_3 = REGISTRY.register("agnid_3", Agnid3Block::new);
+	public static final DeferredBlock<Block> AGNID_4 = REGISTRY.register("agnid_4", Agnid4Block::new);
+	public static final DeferredBlock<Block> AGNID_5 = REGISTRY.register("agnid_5", Agnid5Block::new);
+	public static final DeferredBlock<Block> AGNID_6 = REGISTRY.register("agnid_6", Agnid6Block::new);
+	public static final DeferredBlock<Block> AGNID_7 = REGISTRY.register("agnid_7", Agnid7Block::new);
+	public static final DeferredBlock<Block> AGNID_8 = REGISTRY.register("agnid_8", Agnid8Block::new);
+	public static final DeferredBlock<Block> AGNID_9 = REGISTRY.register("agnid_9", Agnid9Block::new);
+	public static final DeferredBlock<Block> AGNID_10 = REGISTRY.register("agnid_10", Agnid10Block::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
