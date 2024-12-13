@@ -5067,6 +5067,23 @@
         ]
       },
       "path": "~/PgcCopyDecoration"
+    },
+    {
+      "name": "Camera",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camera",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/camera.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/camera.json",
+          "src/main/resources/assets/oneiricconcept/models/block/camera.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/camera.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CameraBlock.java"
+        ]
+      },
+      "path": "~/PgcCopyDecoration"
     }
   ],
   "variable_elements": [],
@@ -5384,7 +5401,8 @@
       "PropagandaArmy",
       "APropagandaArmy",
       "LessRedstonePowder",
-      "ThunderSword"
+      "ThunderSword",
+      "Camera"
     ]
   },
   "language_map": {
@@ -5402,6 +5420,7 @@
       "advancements.public_clamor_can_melt_metals.title": "Public Clamor Can Melt Metals",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "translation.key.fail": "Don\u0027t confuse it",
+      "block.oneiricconcept.camera": "Camera",
       "block.oneiricconcept.propaganda_army_block.description_0": "§7Fully automatic!",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
@@ -5580,6 +5599,7 @@
       "advancements.public_clamor_can_melt_metals.title": "众口铄金",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "translation.key.fail": "别搞混了",
+      "block.oneiricconcept.camera": "Camera",
       "block.oneiricconcept.propaganda_army_block.description_0": "§7全自动！",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "华夫饼",

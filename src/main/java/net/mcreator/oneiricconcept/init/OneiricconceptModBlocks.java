@@ -40,6 +40,7 @@ import net.mcreator.oneiricconcept.block.GeomarrowRadiatorBlock;
 import net.mcreator.oneiricconcept.block.GactusBlock;
 import net.mcreator.oneiricconcept.block.ElementsCrystalOreBlock;
 import net.mcreator.oneiricconcept.block.CloudBlock;
+import net.mcreator.oneiricconcept.block.CameraBlock;
 import net.mcreator.oneiricconcept.block.CCactusBlock;
 import net.mcreator.oneiricconcept.block.BoomBlossomsPyroBlock;
 import net.mcreator.oneiricconcept.block.BigStoneBlock;
@@ -111,6 +112,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> AGNID_8 = REGISTRY.register("agnid_8", Agnid8Block::new);
 	public static final DeferredBlock<Block> AGNID_9 = REGISTRY.register("agnid_9", Agnid9Block::new);
 	public static final DeferredBlock<Block> AGNID_10 = REGISTRY.register("agnid_10", Agnid10Block::new);
+	public static final DeferredBlock<Block> CAMERA = REGISTRY.register("camera", CameraBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

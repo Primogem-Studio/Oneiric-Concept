@@ -177,6 +177,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> AGNID_8 = block(OneiricconceptModBlocks.AGNID_8);
 	public static final DeferredItem<Item> AGNID_9 = block(OneiricconceptModBlocks.AGNID_9);
 	public static final DeferredItem<Item> AGNID_10 = block(OneiricconceptModBlocks.AGNID_10);
+	public static final DeferredItem<Item> CAMERA = block(OneiricconceptModBlocks.CAMERA);
 
 	// Start of user code block custom items
 	// End of user code block custom items
