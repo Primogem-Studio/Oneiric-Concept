@@ -1,10 +1,19 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import org.checkerframework.checker.units.qual.s;
+
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
@@ -49,6 +58,9 @@ public class PgprocessProcedure {
 				}
 			}
 			item.shrink(1);
+		} else if (!(Blocks.AIR.asItem() == item.getItem())) {
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal((Component.translatable("translation.key.fail").getString())), true);
 		}
 	}
 }
