@@ -104,6 +104,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.LESS_REDSTONE_POWDER.get());
 				tabData.accept(OneiricconceptModBlocks.THUNDER_SWORD.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
+				tabData.accept(OneiricconceptModItems.SUSTENANCEANCHORITEM.get());
 			})
 
 					.build());

@@ -19,6 +19,8 @@ import net.mcreator.oneiricconcept.block.TheAnotherWorldSaplingBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldLogBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldLeaveBlock;
 import net.mcreator.oneiricconcept.block.TNTDispenserBlock;
+import net.mcreator.oneiricconcept.block.SustenanceanchoroffBlock;
+import net.mcreator.oneiricconcept.block.SustenanceanchorBlock;
 import net.mcreator.oneiricconcept.block.StrippedTheAnotherWorldLogBlock;
 import net.mcreator.oneiricconcept.block.ShivadaJadeOreBlock;
 import net.mcreator.oneiricconcept.block.RactusBlock;
@@ -113,6 +115,8 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> AGNID_9 = REGISTRY.register("agnid_9", Agnid9Block::new);
 	public static final DeferredBlock<Block> AGNID_10 = REGISTRY.register("agnid_10", Agnid10Block::new);
 	public static final DeferredBlock<Block> CAMERA = REGISTRY.register("camera", CameraBlock::new);
+	public static final DeferredBlock<Block> SUSTENANCEANCHOROFF = REGISTRY.register("sustenanceanchoroff", SustenanceanchoroffBlock::new);
+	public static final DeferredBlock<Block> SUSTENANCEANCHOR = REGISTRY.register("sustenanceanchor", SustenanceanchorBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

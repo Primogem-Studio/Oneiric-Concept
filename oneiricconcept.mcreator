@@ -5137,6 +5137,247 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "SustenanceanchorPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchor_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SustenanceanchorPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Sustenanceanchoroff",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchoroff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchoroffBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchoroff.json",
+          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchoroff.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchoroffBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/sustenanceanchoroff.json",
+          "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchoroff.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "SustenanceanchorOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchor_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SustenanceanchorOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Sustenanceanchor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchorBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchor.json",
+          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchor.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/sustenanceanchor.json",
+          "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchor.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "SustenanceanchorHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchor_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SustenanceanchorHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "SustenanceanchorParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchor_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SustenanceanchorParticleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Wens",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wens",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WensProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Wesn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wesn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WesnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -5163,6 +5404,8 @@
       "CUSTOM:Example"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Sustenanceanchoroff",
+      "~CUSTOM:Sustenanceanchor",
       "~CUSTOM:Agnid10",
       "~CUSTOM:Agnid9",
       "~CUSTOM:Agnid8",
@@ -5576,6 +5819,7 @@
       "block.oneiricconcept.tnt_dispenser": "TNT Dispenser",
       "item.oneiricconcept.memory_bubble": "Memory Bubble",
       "block.oneiricconcept.memoria": "Memoria",
+      "block.oneiricconcept.sustenanceanchor": "Sustenanceanchor",
       "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
       "item.oneiricconcept.small_herta_core": "Small-Her Ta Core",
       "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
@@ -5585,6 +5829,7 @@
       "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
       "advancements.railgun.descr": "Although but,_ _,_ _ _ _ _ _ _ _?",
       "block.oneiricconcept.boom_blossoms_pyro": "Boom Blossoms Pyro",
+      "translation.key.load": "speed of progress:",
       "item.oneiricconcept.s_2ausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6The tenth Divine Keys contains the powerful power of Herrschers",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
@@ -5607,6 +5852,7 @@
       "block.oneiricconcept.agnid_9": "9Agnidus metal ingot",
       "item.oneiricconcept.honkai_shard": "Honkai Shard",
       "block.oneiricconcept.agnid_8": "8Agnidus metal ingot",
+      "block.oneiricconcept.sustenanceanchoroff": "Sustenanceanchor",
       "block.oneiricconcept.agnid_3": "3Agnidus metal ingot",
       "block.oneiricconcept.agnid_2": "2Agnidus metal ingot",
       "item.oneiricconcept.s_2tuffing": "stuffing",
@@ -5682,7 +5928,7 @@
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
       "block.oneiricconcept.ractus": "仙术掌",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
-      "item.oneiricconcept.sustenanceanchoritem": "Sustenanceanchoritem",
+      "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
       "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
       "entity.oneiricconcept.crystal_turtle": "水晶龟",
       "block.oneiricconcept.pgc_pg3": "3原石水晶",
@@ -5757,6 +6003,7 @@
       "block.oneiricconcept.tnt_dispenser": "TNT发射器",
       "item.oneiricconcept.memory_bubble": "§9忆泡",
       "block.oneiricconcept.memoria": "忆质",
+      "block.oneiricconcept.sustenanceanchor": "维生定锚",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
@@ -5766,6 +6013,7 @@
       "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",
       "advancements.railgun.descr": "虽然但是，_ _，_ _ _ _ _ _ _ _？",
       "block.oneiricconcept.boom_blossoms_pyro": "火焰爆爆瓜",
+      "translation.key.load": "进度：",
       "item.oneiricconcept.s_2ausage.description_0": "§7有股怪味……孜然的味道吗？",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
@@ -5788,6 +6036,7 @@
       "block.oneiricconcept.agnid_9": "9燃愿金属锭",
       "item.oneiricconcept.honkai_shard": "三分结晶",
       "block.oneiricconcept.agnid_8": "8燃愿金属锭",
+      "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",
       "block.oneiricconcept.agnid_3": "3燃愿金属锭",
       "block.oneiricconcept.agnid_2": "2燃愿金属锭",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",

@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.oneiricconcept.block.entity.SustenanceanchoroffBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
@@ -22,6 +23,7 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 public class OneiricconceptModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, OneiricconceptMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PGC_PRESENT = register("pgc_present", OneiricconceptModBlocks.PGC_PRESENT, PgcPresentBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SUSTENANCEANCHOROFF = register("sustenanceanchoroff", OneiricconceptModBlocks.SUSTENANCEANCHOROFF, SustenanceanchoroffBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -32,5 +34,6 @@ public class OneiricconceptModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PGC_PRESENT.get(), (blockEntity, side) -> ((PgcPresentBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUSTENANCEANCHOROFF.get(), (blockEntity, side) -> ((SustenanceanchoroffBlockEntity) blockEntity).getItemHandler());
 	}
 }

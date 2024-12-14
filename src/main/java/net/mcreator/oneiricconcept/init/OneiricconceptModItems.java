@@ -180,6 +180,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> AGNID_10 = block(OneiricconceptModBlocks.AGNID_10);
 	public static final DeferredItem<Item> CAMERA = block(OneiricconceptModBlocks.CAMERA);
 	public static final DeferredItem<Item> SUSTENANCEANCHORITEM = REGISTRY.register("sustenanceanchoritem", SustenanceanchoritemItem::new);
+	public static final DeferredItem<Item> SUSTENANCEANCHOROFF = block(OneiricconceptModBlocks.SUSTENANCEANCHOROFF);
+	public static final DeferredItem<Item> SUSTENANCEANCHOR = block(OneiricconceptModBlocks.SUSTENANCEANCHOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

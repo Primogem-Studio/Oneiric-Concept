@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:sustenanceanchoroff",
+    "oneiricconcept:sustenanceanchor",
     "oneiricconcept:agnid_10",
     "oneiricconcept:agnid_9",
     "oneiricconcept:agnid_8",
