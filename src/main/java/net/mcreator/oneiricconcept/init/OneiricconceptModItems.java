@@ -20,6 +20,7 @@ import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
 import net.mcreator.oneiricconcept.item.SwordOfBrilliantValorItem;
+import net.mcreator.oneiricconcept.item.SustenanceanchoritemItem;
 import net.mcreator.oneiricconcept.item.SurpriseboxforgoodorbadItem;
 import net.mcreator.oneiricconcept.item.SunStartCanItem;
 import net.mcreator.oneiricconcept.item.StuffingItem;
@@ -178,6 +179,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> AGNID_9 = block(OneiricconceptModBlocks.AGNID_9);
 	public static final DeferredItem<Item> AGNID_10 = block(OneiricconceptModBlocks.AGNID_10);
 	public static final DeferredItem<Item> CAMERA = block(OneiricconceptModBlocks.CAMERA);
+	public static final DeferredItem<Item> SUSTENANCEANCHORITEM = REGISTRY.register("sustenanceanchoritem", SustenanceanchoritemItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

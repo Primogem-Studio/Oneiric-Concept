@@ -1,0 +1,7 @@
+{
+  "parent": "oneiricconcept:custom/sustenance_anchor_off_item",
+  "textures": {
+    "1": "oneiricconcept:block/sustenance_anchor",
+    "particle": "oneiricconcept:item/sustenance_anchor"
+  }
+}
