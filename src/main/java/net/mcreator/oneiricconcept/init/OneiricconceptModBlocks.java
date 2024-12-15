@@ -34,6 +34,8 @@ import net.mcreator.oneiricconcept.block.PgcPgcBlock;
 import net.mcreator.oneiricconcept.block.PgcPgbBlock;
 import net.mcreator.oneiricconcept.block.PgcPgaBlock;
 import net.mcreator.oneiricconcept.block.PgcPgBlock;
+import net.mcreator.oneiricconcept.block.Newmo2Block;
+import net.mcreator.oneiricconcept.block.Newmo1Block;
 import net.mcreator.oneiricconcept.block.NagadusEmeraldOreBlock;
 import net.mcreator.oneiricconcept.block.MmMushroomBlock;
 import net.mcreator.oneiricconcept.block.MemoriaBlock;
@@ -117,6 +119,8 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> CAMERA = REGISTRY.register("camera", CameraBlock::new);
 	public static final DeferredBlock<Block> SUSTENANCEANCHOROFF = REGISTRY.register("sustenanceanchoroff", SustenanceanchoroffBlock::new);
 	public static final DeferredBlock<Block> SUSTENANCEANCHOR = REGISTRY.register("sustenanceanchor", SustenanceanchorBlock::new);
+	public static final DeferredBlock<Block> NEWMO_1 = REGISTRY.register("newmo_1", Newmo1Block::new);
+	public static final DeferredBlock<Block> NEWMO_2 = REGISTRY.register("newmo_2", Newmo2Block::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

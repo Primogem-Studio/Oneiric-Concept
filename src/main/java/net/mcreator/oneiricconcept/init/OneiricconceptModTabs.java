@@ -113,6 +113,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
 			})
 
 					.build());

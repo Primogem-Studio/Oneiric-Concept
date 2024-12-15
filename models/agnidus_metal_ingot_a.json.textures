@@ -5,6 +5,12 @@
         "1": "agnidus_metal_ingot"
       },
       "name": "default"
+    },
+    "new_moon_ingot": {
+      "map": {
+        "1": "new_moon_ingot"
+      },
+      "name": "new_moon_ingot"
     }
   }
 }

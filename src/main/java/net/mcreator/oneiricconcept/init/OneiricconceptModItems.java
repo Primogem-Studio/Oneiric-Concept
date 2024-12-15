@@ -182,6 +182,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SUSTENANCEANCHORITEM = REGISTRY.register("sustenanceanchoritem", SustenanceanchoritemItem::new);
 	public static final DeferredItem<Item> SUSTENANCEANCHOROFF = block(OneiricconceptModBlocks.SUSTENANCEANCHOROFF);
 	public static final DeferredItem<Item> SUSTENANCEANCHOR = block(OneiricconceptModBlocks.SUSTENANCEANCHOR);
+	public static final DeferredItem<Item> NEWMO_1 = block(OneiricconceptModBlocks.NEWMO_1);
+	public static final DeferredItem<Item> NEWMO_2 = block(OneiricconceptModBlocks.NEWMO_2);
 
 	// Start of user code block custom items
 	// End of user code block custom items
