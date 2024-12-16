@@ -5,6 +5,66 @@
         "1": "agnidus_metal_ingot"
       },
       "name": "default"
+    },
+    "hydro_shui": {
+      "map": {
+        "1": "varunada_metal_ingot"
+      },
+      "name": "hydro_shui"
+    },
+    "electro_lei": {
+      "map": {
+        "1": "vajrada_metal_ingot"
+      },
+      "name": "electro_lei"
+    },
+    "cryo_bing": {
+      "map": {
+        "1": "shivada_metal_ingot"
+      },
+      "name": "cryo_bing"
+    },
+    "dendro_cao": {
+      "map": {
+        "1": "nagadus_metal_ingot"
+      },
+      "name": "dendro_cao"
+    },
+    "anemo_feng": {
+      "map": {
+        "1": "vayuda_metal_ingot"
+      },
+      "name": "anemo_feng"
+    },
+    "geo_yan": {
+      "map": {
+        "1": "prithiva_metal_ingot"
+      },
+      "name": "geo_yan"
+    },
+    "fullmoon": {
+      "map": {
+        "1": "full_moon_ingot"
+      },
+      "name": "fullmoon"
+    },
+    "redmoon": {
+      "map": {
+        "1": "red_moon_ingot"
+      },
+      "name": "redmoon"
+    },
+    "ironlaji": {
+      "map": {
+        "1": "stinky_iron_ingot"
+      },
+      "name": "ironlaji"
+    },
+    "newmoon": {
+      "map": {
+        "1": "new_moon_ingot"
+      },
+      "name": "newmoon"
     }
   }
 }
