@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "sustenance_anchor"
+        "1": "sustenance_anchor_dynamic"
       },
       "name": "default"
     }

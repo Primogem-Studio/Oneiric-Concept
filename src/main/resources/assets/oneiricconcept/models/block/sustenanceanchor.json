@@ -1,9 +1,9 @@
 {
   "parent": "oneiricconcept:custom/sustenance_anchor",
   "textures": {
-    "all": "oneiricconcept:block/sustenance_anchor",
-    "particle": "oneiricconcept:block/sustenance_anchor",
-    "1": "oneiricconcept:block/sustenance_anchor"
+    "all": "oneiricconcept:block/sustenance_anchor_dynamic",
+    "particle": "oneiricconcept:block/sustenance_anchor_dynamic",
+    "1": "oneiricconcept:block/sustenance_anchor_dynamic"
   },
-  "render_type": "cutout"
+  "render_type": "translucent"
 }
