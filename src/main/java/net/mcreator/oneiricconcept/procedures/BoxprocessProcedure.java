@@ -33,7 +33,7 @@ public class BoxprocessProcedure {
 		}.getValue(world, BlockPos.containing(x, y, z), "item")).isEmpty() && item.getItem() == Blocks.AIR.asItem()) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), ItempgcboxProcedure.execute(world, x, y, z));
-				entityToSpawn.setPickUpDelay(10);
+				entityToSpawn.setPickUpDelay(0);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else if (!(item.getItem() == Blocks.AIR.asItem()) && (new Object() {

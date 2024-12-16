@@ -2,19 +2,19 @@
   "_fv": 71,
   "_type": "block",
   "definition": {
-    "texture": "new_moon_ingot",
+    "texture": "shivada_metal_ingot",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "agnidus_metal_ingot_c:newmoon",
+    "customModelName": "agnidus_metal_ingot_c:cryo_bing",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "xinyue_jinshu",
+    "itemTexture": "lian_ai_jin_shu_",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "crescent ingot",
+    "name": "Shivada_metal_ingot",
     "specialInformation": {
       "fixedValue": []
     },
@@ -45,7 +45,7 @@
     "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Newmo1"
+      "value": "CUSTOM:Cryoo1"
     },
     "dropAmount": 3,
     "useLootTableForDrops": false,
@@ -64,7 +64,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "BLUE_TERRACOTTA",
+    "colorOnMap": "ICE",
     "creativePickItem": {
       "value": ""
     },

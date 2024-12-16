@@ -2,19 +2,19 @@
   "_fv": 71,
   "_type": "block",
   "definition": {
-    "texture": "new_moon_ingot",
+    "texture": "red_moon_ingot",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "agnidus_metal_ingot_g:newmoon",
+    "customModelName": "agnidus_metal_ingot_g:redmoon",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "xinyue_jinshu",
+    "itemTexture": "kongyuejinshu",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "crescent ingot",
+    "name": "red moon ingot",
     "specialInformation": {
       "fixedValue": []
     },
@@ -45,7 +45,7 @@
     "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Newmo1"
+      "value": "CUSTOM:Redmo1"
     },
     "dropAmount": 7,
     "useLootTableForDrops": false,

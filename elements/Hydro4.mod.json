@@ -2,21 +2,21 @@
   "_fv": 71,
   "_type": "block",
   "definition": {
-    "texture": "new_moon_ingot",
+    "texture": "varunada_metal_ingot",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "agnidus_metal_ingot_d:newmoon",
+    "customModelName": "agnidus_metal_ingot_d:hydro_shui",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "xinyue_jinshu",
+    "itemTexture": "zheng_yi_jin_shu_",
     "particleTexture": "",
-    "tintType": "No tint",
+    "tintType": "Water",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "crescent ingot",
+    "name": "Varunada_metal_ingot",
     "specialInformation": {
       "fixedValue": []
     },
@@ -45,7 +45,7 @@
     "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Newmo1"
+      "value": "CUSTOM:Hydro1"
     },
     "dropAmount": 4,
     "useLootTableForDrops": false,
@@ -64,7 +64,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "BLUE_TERRACOTTA",
+    "colorOnMap": "WATER",
     "creativePickItem": {
       "value": ""
     },

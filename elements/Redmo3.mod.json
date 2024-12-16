@@ -2,7 +2,7 @@
   "_fv": 71,
   "_type": "block",
   "definition": {
-    "texture": "new_moon_ingot",
+    "texture": "red_moon_ingot",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "crescent ingot",
+    "name": "red moon ingot",
     "specialInformation": {
       "fixedValue": []
     },
@@ -45,7 +45,7 @@
     "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Newmo1"
+      "value": "CUSTOM:Redmo1"
     },
     "dropAmount": 3,
     "useLootTableForDrops": false,

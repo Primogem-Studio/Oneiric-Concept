@@ -1,9 +1,9 @@
 {
   "parent": "oneiricconcept:custom/agnidus_metal_ingot_b",
   "textures": {
-    "all": "oneiricconcept:block/new_moon_ingot",
-    "particle": "oneiricconcept:block/new_moon_ingot",
-    "1": "oneiricconcept:block/new_moon_ingot"
+    "all": "oneiricconcept:block/nagadus_metal_ingot",
+    "particle": "oneiricconcept:block/nagadus_metal_ingot",
+    "1": "oneiricconcept:block/nagadus_metal_ingot"
   },
   "render_type": "cutout"
 }

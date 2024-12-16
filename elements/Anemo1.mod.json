@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "crescent ingot",
+    "name": "Vayuda_metal_ingot",
     "specialInformation": {
       "fixedValue": []
     },
@@ -68,7 +68,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "CYAN",
+    "colorOnMap": "EMERALD",
     "creativePickItem": {
       "value": ""
     },

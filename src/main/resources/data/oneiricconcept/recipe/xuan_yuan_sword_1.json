@@ -3,15 +3,15 @@
   "category": "misc",
   "pattern": [
     " ab",
-    "cde",
-    "fc "
+    "cda",
+    "ec "
   ],
   "key": {
     "a": {
-      "item": "oneiricconcept:oneiric_shard"
+      "item": "oneiricconcept:condensed_memoria_piece"
     },
     "b": {
-      "item": "primogemcraft:jianshijingban"
+      "item": "minecraft:gold_block"
     },
     "c": {
       "item": "oneiricconcept:honkai_shard"
@@ -20,10 +20,7 @@
       "item": "oneiricconcept:legion_pseudo_core"
     },
     "e": {
-      "item": "primogemcraft:yuansujingti"
-    },
-    "f": {
-      "item": "primogemcraft:wufengjian"
+      "item": "minecraft:diamond_sword"
     }
   },
   "result": {

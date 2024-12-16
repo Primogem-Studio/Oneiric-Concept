@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/dendr_8"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/dendr_8",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/dendr_8",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/dendr_8",
+      "y": 270
+    }
+  }
+}

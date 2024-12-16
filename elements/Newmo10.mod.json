@@ -64,7 +64,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "RED",
+    "colorOnMap": "BLUE_TERRACOTTA",
     "creativePickItem": {
       "value": ""
     },
@@ -117,6 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Dechitaudio"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

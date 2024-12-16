@@ -2,19 +2,19 @@
   "_fv": 71,
   "_type": "block",
   "definition": {
-    "texture": "new_moon_ingot",
+    "texture": "prithiva_metal_ingot",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "agnidus_metal_ingot_c:newmoon",
+    "customModelName": "agnidus_metal_ingot_c:geo_yan",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "xinyue_jinshu",
+    "itemTexture": "jian_lao_jin_shu_",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "crescent ingot",
+    "name": "Prithiva_metal_ingot",
     "specialInformation": {
       "fixedValue": []
     },
@@ -45,7 +45,7 @@
     "creativeTabs": [],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Newmo1"
+      "value": "CUSTOM:Geooo1"
     },
     "dropAmount": 3,
     "useLootTableForDrops": false,
@@ -64,7 +64,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "BLUE_TERRACOTTA",
+    "colorOnMap": "GOLD",
     "creativePickItem": {
       "value": ""
     },

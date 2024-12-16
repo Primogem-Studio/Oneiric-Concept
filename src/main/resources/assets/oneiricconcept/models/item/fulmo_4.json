@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "oneiricconcept:item/xinyue_jinshu"
+    "layer0": "oneiricconcept:item/manyue_jinshu"
   },
   "render_type": "translucent"
 }

@@ -25,33 +25,59 @@ public class PgprocessProcedure {
 		ItemStack item = ItemStack.EMPTY;
 		String block = "";
 		String block21 = "";
-		block = BuiltInRegistries.BLOCK.getKey((world.getBlockState(BlockPos.containing(x, y, z))).getBlock()).toString();
+		BlockState blockeman = Blocks.AIR.defaultBlockState();
+		blockeman = (world.getBlockState(BlockPos.containing(x, y, z)));
+		block = BuiltInRegistries.BLOCK.getKey(blockeman.getBlock()).toString();
 		block21 = block.substring(0, 21);
 		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		if ((block21).equals((BuiltInRegistries.ITEM.getKey(item.getItem()).toString()).substring(0, 21))) {
-			{
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((block21 + "" + (new java.text.DecimalFormat("#").format(new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
+		if (item.is(ItemTags.create(ResourceLocation.parse("c:metal"))) || item.is(ItemTags.create(ResourceLocation.parse("c:gem")))) {
+			if ((block21).equals((BuiltInRegistries.ITEM.getKey(item.getItem()).toString()).substring(0, 21))) {
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((block21 + "" + (new java.text.DecimalFormat("#").format(new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
 						}
-						return 0;
+					}.convert(block.substring(21)) + 1)).substring(0))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Property<?> _propertyOld : _bso.getProperties()) {
+						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+						if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+							try {
+								_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+							} catch (Exception e) {
+							}
 					}
-				}.convert(block.substring(21)) + 1)).substring(0))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Property<?> _propertyOld : _bso.getProperties()) {
-					Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
-					if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
-						try {
-							_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
-						} catch (Exception e) {
-						}
+					world.setBlock(_bp, _bs, 3);
 				}
-				world.setBlock(_bp, _bs, 3);
+				if (item.is(ItemTags.create(ResourceLocation.parse("c:gem")))) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1, false);
+						}
+					}
+				} else if (item.is(ItemTags.create(ResourceLocation.parse("c:metal")))) {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.hit")), SoundSource.BLOCKS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.hit")), SoundSource.BLOCKS, 1, 1, false);
+						}
+					}
+				}
+				item.shrink(1);
+			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("translation.key.fail").getString())), true);
 			}
-			if (item.is(ItemTags.create(ResourceLocation.parse("c:gem")))) {
+		} else {
+			if ((new ItemStack(blockeman.getBlock())).is(ItemTags.create(ResourceLocation.parse("c:gem")))) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1);
@@ -59,19 +85,15 @@ public class PgprocessProcedure {
 						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.amethyst_cluster.place")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
-			} else if (item.is(ItemTags.create(ResourceLocation.parse("c:metal")))) {
+			} else if ((new ItemStack(blockeman.getBlock())).is(ItemTags.create(ResourceLocation.parse("c:metal")))) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.metal.place")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.hit")), SoundSource.BLOCKS, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.metal.place")), SoundSource.BLOCKS, 1, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chain.hit")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
 			}
-			item.shrink(1);
-		} else if (!(Blocks.AIR.asItem() == item.getItem())) {
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((Component.translatable("translation.key.fail").getString())), true);
 		}
 	}
 }

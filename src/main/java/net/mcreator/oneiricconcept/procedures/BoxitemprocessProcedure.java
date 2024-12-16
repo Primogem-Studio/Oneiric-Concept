@@ -29,13 +29,13 @@ public class BoxitemprocessProcedure {
 							return "";
 						}
 					}.getValue(world, BlockPos.containing(x, y, z), "item"))).toLowerCase(java.util.Locale.ENGLISH)))));
-					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setPickUpDelay(0);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), ItempgcboxProcedure.execute(world, x, y, z));
-					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setPickUpDelay(0);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}

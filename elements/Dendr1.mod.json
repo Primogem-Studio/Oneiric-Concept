@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "xinyue_jinshu",
+    "itemTexture": "zhi_hui_jin_shu_",
     "particleTexture": "",
     "tintType": "Grass",
     "isItemTinted": false,
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "crescent ingot",
+    "name": "Nagadus_metal_ingot",
     "specialInformation": {
       "fixedValue": []
     },
