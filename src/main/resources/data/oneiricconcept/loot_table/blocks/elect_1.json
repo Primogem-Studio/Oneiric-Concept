@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "oneiricconcept:blocks/elect_1",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oneiricconcept:elect_1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/liron_7"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/liron_7",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/liron_7",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/liron_7",
+      "y": 270
+    }
+  }
+}

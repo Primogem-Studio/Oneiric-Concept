@@ -114,6 +114,15 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.REDMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FULMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ELECT_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.HYDRO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CRYOO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.DENDR_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ANEMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.GEOOO_1.get().asItem());
 			})
 
 					.build());

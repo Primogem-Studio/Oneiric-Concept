@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Agnidus metal ingot",
+    "name": "crescent ingot",
     "specialInformation": {
       "fixedValue": []
     },
@@ -68,7 +68,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "RED",
+    "colorOnMap": "BLUE_TERRACOTTA",
     "creativePickItem": {
       "value": ""
     },

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/newmo_6"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/newmo_6",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/newmo_6",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/newmo_6",
+      "y": 270
+    }
+  }
+}
