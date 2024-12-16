@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:hydro_1"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:zyjs",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:yhjs"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:elect_1",
+    "count": 1
+  }
+}

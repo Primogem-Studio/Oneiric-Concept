@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:agnid_1"
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:ryjs",
+    "count": 1
+  }
+}

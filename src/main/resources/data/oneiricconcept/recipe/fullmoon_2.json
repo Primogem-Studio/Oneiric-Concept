@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:fulmo_1"
+    }
+  },
+  "result": {
+    "id": "primogemcraft:manyuejinshu",
+    "count": 1
+  }
+}

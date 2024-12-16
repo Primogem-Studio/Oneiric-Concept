@@ -7109,6 +7109,292 @@
         ]
       },
       "path": "~/PgcCopyDecoration/pgcprocess"
+    },
+    {
+      "name": "Pg2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pg_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/pg_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Pyro1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pyro_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/pyro_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "ElectroLei1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "electro_lei_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/electro_lei_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "ElectroLei2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "electro_lei_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/electro_lei_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Hydroshui1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hydroshui_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hydroshui_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Hydroshui2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hydroshui_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hydroshui_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "CryoBing1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cryo_bing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cryo_bing_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "CryoBing2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cryo_bing_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cryo_bing_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "DendroCao2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dendro_cao_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dendro_cao_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "DendroCao1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dendro_cao_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dendro_cao_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "AnemoFeng1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "anemo_feng_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/anemo_feng_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "AnemoFeng2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "anemo_feng_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/anemo_feng_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "GeoYan1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "geo_yan_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/geo_yan_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "GeoYan2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "geo_yan_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/geo_yan_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Fullmoon1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fullmoon_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fullmoon_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Fullmoon2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fullmoon_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fullmoon_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Newmoon1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "newmoon_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/newmoon_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Newmoon2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "newmoon_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/newmoon_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Redmoon1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "redmoon_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/redmoon_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Redmoon2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "redmoon_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/redmoon_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "IronLaji1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_laji_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/iron_laji_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "IronLaji2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_laji_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/iron_laji_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
     }
   ],
   "variable_elements": [],

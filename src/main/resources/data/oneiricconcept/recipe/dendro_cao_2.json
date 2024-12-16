@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:zhjs"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:dendr_1",
+    "count": 1
+  }
+}
