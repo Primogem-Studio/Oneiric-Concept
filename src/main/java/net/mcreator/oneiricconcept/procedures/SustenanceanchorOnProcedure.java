@@ -5,7 +5,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
@@ -31,23 +34,14 @@ public class SustenanceanchorOnProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "on");
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("on", (on + 1));
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-		}
 		if (20 <= on) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, (x + 0.5), y, (z + 0.5), 100, 0.2, 0.6, 0.2, 0.1);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.BLOCKS, (float) (on / 10), (float) (on / 10));
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.BLOCKS, 1, 2);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.BLOCKS, (float) (on / 10), (float) (on / 10), false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.BLOCKS, 1, 2, false);
 				}
 			}
 			{
@@ -64,7 +58,17 @@ public class SustenanceanchorOnProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-		} else {
+		} else if (Items.GOLD_INGOT == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("on", (on + 1));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.experience_orb.pickup")), SoundSource.BLOCKS, (float) (on / 10), (float) (on / 10));
