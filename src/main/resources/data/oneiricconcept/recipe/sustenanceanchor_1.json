@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa ",
+    "aba",
+    " aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:sustenanceanchoritem",
+    "count": 1
+  }
+}

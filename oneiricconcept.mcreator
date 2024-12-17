@@ -7395,6 +7395,19 @@
         ]
       },
       "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Sustenanceanchor1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchor_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sustenanceanchor_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -7895,6 +7908,7 @@
       "Memoria",
       "XuanyuanSword",
       "DarkXuanyuanSword",
+      "DXuanyuan",
       "HonkaiShard",
       "HonkaiSliver",
       "LegionPseudoCore",
@@ -7912,18 +7926,17 @@
       "SwordOfBrilliantValor",
       "TheAnotherWorldLeave",
       "TNTDispenser",
-      "DXuanyuan",
       "SmallHertaCore",
       "Totemloot",
       "CompressTotemloot",
       "BossStoneCoinGun",
-      "MoraMagazine",
-      "MoraMagazineN2",
-      "MoraMagazineN3",
-      "MoraMagazineE1",
-      "MoraMagazineE2",
-      "MoraMagazineE3",
       "BossStoneCoinGunPlus",
+      "MoraMagazine",
+      "MoraMagazineE1",
+      "MoraMagazineN2",
+      "MoraMagazineE2",
+      "MoraMagazineN3",
+      "MoraMagazineE3",
       "PublicClamor",
       "PropagandaArmyBlock",
       "PropagandaArmy",
@@ -7932,6 +7945,21 @@
       "ThunderSword",
       "Camera",
       "Sustenanceanchoritem"
+    ],
+    "CUSTOM:OneiricConceptDecoration": [
+      "PgcPg",
+      "Newmo1",
+      "Redmo1",
+      "Fulmo1",
+      "Agnid1",
+      "Elect1",
+      "Hydro1",
+      "Cryoo1",
+      "Dendr1",
+      "Anemo1",
+      "Geooo1",
+      "Liron1",
+      "PgcPresent"
     ]
   },
   "language_map": {

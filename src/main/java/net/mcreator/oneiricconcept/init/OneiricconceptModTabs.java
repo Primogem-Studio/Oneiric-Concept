@@ -68,6 +68,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.MEMORIA_BUCKET.get());
 				tabData.accept(OneiricconceptModItems.XUANYUAN_SWORD.get());
 				tabData.accept(OneiricconceptModItems.DARK_XUANYUAN_SWORD.get());
+				tabData.accept(OneiricconceptModItems.D_XUANYUAN.get());
 				tabData.accept(OneiricconceptModItems.HONKAI_SHARD.get());
 				tabData.accept(OneiricconceptModItems.HONKAI_SLIVER.get());
 				tabData.accept(OneiricconceptModItems.LEGION_PSEUDO_CORE.get());
@@ -85,18 +86,17 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SWORD_OF_BRILLIANT_VALOR.get());
 				tabData.accept(OneiricconceptModBlocks.THE_ANOTHER_WORLD_LEAVE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.TNT_DISPENSER.get().asItem());
-				tabData.accept(OneiricconceptModItems.D_XUANYUAN.get());
 				tabData.accept(OneiricconceptModItems.SMALL_HERTA_CORE.get());
 				tabData.accept(OneiricconceptModItems.TOTEMLOOT.get());
 				tabData.accept(OneiricconceptModItems.COMPRESS_TOTEMLOOT.get());
 				tabData.accept(OneiricconceptModItems.BOSS_STONE_COIN_GUN.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_2.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_3.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_1.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_2.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_3.get());
 				tabData.accept(OneiricconceptModItems.BOSS_STONE_COIN_GUN_PLUS.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_1.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_2.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_2.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_3.get());
+				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_3.get());
 				tabData.accept(OneiricconceptModItems.PUBLIC_CLAMOR.get());
 				tabData.accept(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK.get().asItem());
 				tabData.accept(OneiricconceptModItems.PROPAGANDA_ARMY.get());
@@ -110,19 +110,19 @@ public class OneiricconceptModTabs {
 					.build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModItems.EXAMPLE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.REDMO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.FULMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ELECT_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HYDRO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CRYOO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.DENDR_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ANEMO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.GEOOO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 			})
 
 					.build());
