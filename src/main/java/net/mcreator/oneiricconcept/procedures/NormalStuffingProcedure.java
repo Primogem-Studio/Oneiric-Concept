@@ -49,11 +49,11 @@ public class NormalStuffingProcedure {
 			e1 = entity;
 			if (Math.random() < 0.1) {
 				if (e1.getType().is(EntityTypeTags.UNDEAD)) {
-					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
+					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get()).copy();
 				} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:human")))) {
-					i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
+					i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get()).copy();
 				} else {
-					i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
+					i1 = new ItemStack(OneiricconceptModItems.STUFFING.get()).copy();
 				}
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);

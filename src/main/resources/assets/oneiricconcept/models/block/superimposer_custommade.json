@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/superimposer",
+  "textures": {
+    "all": "oneiricconcept:block/superimposercustommade",
+    "particle": "oneiricconcept:block/superimposercustommade",
+    "1": "oneiricconcept:block/superimposercustommade"
+  },
+  "render_type": "translucent"
+}

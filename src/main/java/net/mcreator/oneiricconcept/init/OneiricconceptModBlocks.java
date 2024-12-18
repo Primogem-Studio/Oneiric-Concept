@@ -25,6 +25,7 @@ import net.mcreator.oneiricconcept.block.TheAnotherWorldLeaveBlock;
 import net.mcreator.oneiricconcept.block.TNTDispenserBlock;
 import net.mcreator.oneiricconcept.block.SustenanceanchoroffBlock;
 import net.mcreator.oneiricconcept.block.SustenanceanchorBlock;
+import net.mcreator.oneiricconcept.block.SuperimposerCustommadeBlock;
 import net.mcreator.oneiricconcept.block.StrippedTheAnotherWorldLogBlock;
 import net.mcreator.oneiricconcept.block.ShivadaJadeOreBlock;
 import net.mcreator.oneiricconcept.block.Redmo9Block;
@@ -321,6 +322,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> GEOOO_8 = REGISTRY.register("geooo_8", Geooo8Block::new);
 	public static final DeferredBlock<Block> GEOOO_9 = REGISTRY.register("geooo_9", Geooo9Block::new);
 	public static final DeferredBlock<Block> GEOOO_10 = REGISTRY.register("geooo_10", Geooo10Block::new);
+	public static final DeferredBlock<Block> SUPERIMPOSER_CUSTOMMADE = REGISTRY.register("superimposer_custommade", SuperimposerCustommadeBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

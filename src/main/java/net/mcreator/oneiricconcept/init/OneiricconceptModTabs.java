@@ -40,9 +40,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PRIMOGEM_WAFFLE.get());
 				tabData.accept(OneiricconceptModItems.SKY_WAFFLE.get());
 				tabData.accept(OneiricconceptModItems.RESURRECTION_PELLET.get());
-			})
-
-					.build());
+			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT = REGISTRY.register("oneiric_concept",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept")).icon(() -> new ItemStack(OneiricconceptModItems.ONEIRIC_SHARD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(OneiricconceptModItems.ONEIRIC_SHARD.get());
@@ -105,11 +103,9 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.THUNDER_SWORD.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
 				tabData.accept(OneiricconceptModItems.SUSTENANCEANCHORITEM.get());
-			})
-
-					.build());
+			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModItems.EXAMPLE.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.PGC_PG1.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.REDMO_1.get().asItem());
@@ -123,20 +119,15 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.GEOOO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
-			})
-
-					.build());
+				tabData.accept(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE.get().asItem());
+			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());
-
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-
 			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
-
 		}
 	}
 }

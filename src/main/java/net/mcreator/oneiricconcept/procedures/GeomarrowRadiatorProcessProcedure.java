@@ -15,7 +15,7 @@ public class GeomarrowRadiatorProcessProcedure {
 			return;
 		double repeat = 0;
 		ItemStack i1 = ItemStack.EMPTY;
-		i1 = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		i1 = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (i1.getItem() == OneiricconceptModItems.SAUSAGE.get()) {
 			i1.shrink(1);
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get()), 0, 1, 2);

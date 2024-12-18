@@ -29,24 +29,24 @@ public class ItempgcboxProcedure {
 		s3 = "primogemcraft:";
 		if ((s3 + "shenmilihe").equals(s1)) {
 			if (!world.isClientSide()) {
-				i1 = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("pgc:lihe_1"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()));
+				i1 = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("pgc:lihe_1"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
 			}
 		} else if ((s3 + "qhzlh").equals(s1)) {
-			i1 = LiheshuxhsProcedure.execute(world, s3 + "blocks/zllh_01");
+			i1 = LiheshuxhsProcedure.execute(world, s3 + "blocks/zllh_01").copy();
 		} else if ((s3 + "qhzllh_2").equals(s1)) {
-			i1 = LiheshuxhsProcedure.execute(world, s3 + "blocks/zllh_02");
+			i1 = LiheshuxhsProcedure.execute(world, s3 + "blocks/zllh_02").copy();
 		} else if ((s3 + "q_qu_hang_zhoullh").equals(s1)) {
-			i1 = LiheshuxhsProcedure.execute(world, s3 + "blocks/zllh_03");
+			i1 = LiheshuxhsProcedure.execute(world, s3 + "blocks/zllh_03").copy();
 		} else if ((s3 + "qhzllh_4").equals(s1)) {
-			i1 = LiheshuxhsProcedure.execute(world, s3 + "entities/zllh_4zlp");
+			i1 = LiheshuxhsProcedure.execute(world, s3 + "entities/zllh_4zlp").copy();
 		} else if ((s3 + "qwlhs").equals(s1)) {
-			i1 = Liheshuxhs2Procedure.execute(s2 + "s");
+			i1 = Liheshuxhs2Procedure.execute(s2 + "s").copy();
 		} else if ((s3 + "qwlha").equals(s1)) {
-			i1 = Liheshuxhs2Procedure.execute(s2 + "a");
+			i1 = Liheshuxhs2Procedure.execute(s2 + "a").copy();
 		} else if ((s3 + "qwlhb").equals(s1)) {
-			i1 = Liheshuxhs2Procedure.execute(s2 + "b");
+			i1 = Liheshuxhs2Procedure.execute(s2 + "b").copy();
 		} else {
-			i1 = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse((s1).toLowerCase(java.util.Locale.ENGLISH))));
+			i1 = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse((s1).toLowerCase(java.util.Locale.ENGLISH)))).copy();
 		}
 		{
 			BlockPos _pos = BlockPos.containing(x, y, z);

@@ -17,7 +17,7 @@ public class LiheshuxhsProcedure {
 		if (!world.isClientSide() && world.getServer() != null) {
 			for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse((ss1).toLowerCase(java.util.Locale.ENGLISH))))
 					.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-				i1 = itemstackiterator;
+				i1 = itemstackiterator.copy();
 			}
 		}
 		return i1;

@@ -23,7 +23,7 @@ public class MoraLaunchProcedure {
 		ItemStack MainHand = ItemStack.EMPTY;
 		ItemStack SecondaryHand = ItemStack.EMPTY;
 		double nu = 0;
-		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine1")))) {
 			MoraDamageProcedure.execute(world, entity, 1, 5);
 			nu = 20;

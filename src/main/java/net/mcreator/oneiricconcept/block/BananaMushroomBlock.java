@@ -13,7 +13,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
@@ -22,7 +21,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.util.RandomSource;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
@@ -58,19 +56,6 @@ public class BananaMushroomBlock extends FlowerBlock implements BonemealableBloc
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
-	}
-
-	private boolean canPlantTypeSurvive(BlockState state, LevelReader world, BlockPos pos) {
-		return state.is(BlockTags.DIRT) || state.getBlock() == Blocks.FARMLAND;
-	}
-
-	@Override
-	public boolean canSurvive(BlockState blockstate, LevelReader world, BlockPos pos) {
-		BlockPos posbelow = pos.below();
-		BlockState statebelow = world.getBlockState(posbelow);
-		if (blockstate.getBlock() == this)
-			return this.canPlantTypeSurvive(statebelow, world, posbelow);
-		return this.mayPlaceOn(statebelow, world, posbelow);
 	}
 
 	@Override

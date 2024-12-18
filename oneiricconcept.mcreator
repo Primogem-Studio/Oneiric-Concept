@@ -7409,6 +7409,49 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "SuperimposerCustommade",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superimposer_custommade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/superimposer_custommade.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/superimposer_custommade.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/superimposer_custommade.json",
+          "src/main/resources/assets/oneiricconcept/models/item/superimposer_custommade.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/SuperimposerCustommadeBlock.java"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block"
+    },
+    {
+      "name": "Superimposer1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "superimposer_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/superimposer_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Superimposer2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "superimposer_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/superimposer_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
     }
   ],
   "variable_elements": [],
@@ -7535,8 +7578,8 @@
       "~CUSTOM:Newmo3",
       "~CUSTOM:Newmo2",
       "~CUSTOM:Newmo1",
-      "~CUSTOM:Sustenanceanchoroff",
       "~CUSTOM:Sustenanceanchor",
+      "~CUSTOM:Sustenanceanchoroff",
       "~CUSTOM:Agnid10",
       "~CUSTOM:Agnid9",
       "~CUSTOM:Agnid8",
@@ -7960,7 +8003,8 @@
       "Anemo1",
       "Geooo1",
       "Liron1",
-      "PgcPresent"
+      "PgcPresent",
+      "SuperimposerCustommade"
     ]
   },
   "language_map": {
@@ -7987,16 +8031,16 @@
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
       "block.oneiricconcept.dendr_1": "Nagadus_metal_ingot",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
-      "block.oneiricconcept.pgc_pg3": "3Primogem",
-      "block.oneiricconcept.pgc_pg2": "2Primogem",
+      "block.oneiricconcept.pgc_pg3": "Primogem",
+      "block.oneiricconcept.pgc_pg2": "Primogem",
       "block.oneiricconcept.the_another_world_sapling": "The Another World Sapling",
       "block.oneiricconcept.pgc_pg1": "Primogem",
       "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
       "block.oneiricconcept.pgc_pg7": "Primogem",
-      "block.oneiricconcept.pgc_pg6": "6Primogem",
-      "block.oneiricconcept.pgc_pg5": "5Primogem",
+      "block.oneiricconcept.pgc_pg6": "Primogem",
+      "block.oneiricconcept.pgc_pg5": "Primogem",
       "advancements.oneiric_concept_advancement.descr": "The past turns into candles that light the darkness ahead.",
-      "block.oneiricconcept.pgc_pg4": "4Primogem",
+      "block.oneiricconcept.pgc_pg4": "Primogem",
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "block.oneiricconcept.nagadus_emerald_ore": "Nagadus Emerald Ore",
@@ -8019,6 +8063,7 @@
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "subtitles.mmm": "bump",
+      "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
       "block.oneiricconcept.bactus": "Bactus",
@@ -8089,17 +8134,17 @@
       "advancements.feed_on_illusions.title": "Feed On Illusions",
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
       "advancements.power_of_herrschers.descr": "1‰",
-      "block.oneiricconcept.agnid_7": "7Agnidus metal ingot",
-      "block.oneiricconcept.agnid_6": "6Agnidus metal ingot",
+      "block.oneiricconcept.agnid_7": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_6": "Agnidus metal ingot",
       "block.oneiricconcept.yactus": "Yactus",
-      "block.oneiricconcept.agnid_9": "9Agnidus metal ingot",
-      "block.oneiricconcept.agnid_8": "8Agnidus metal ingot",
-      "block.oneiricconcept.agnid_3": "3Agnidus metal ingot",
-      "block.oneiricconcept.agnid_2": "2Agnidus metal ingot",
+      "block.oneiricconcept.agnid_9": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_8": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_3": "Agnidus metal ingot",
+      "block.oneiricconcept.agnid_2": "Agnidus metal ingot",
       "item.oneiricconcept.s_2tuffing": "stuffing",
-      "block.oneiricconcept.agnid_5": "5Agnidus metal ingot",
+      "block.oneiricconcept.agnid_5": "Agnidus metal ingot",
       "block.oneiricconcept.gactus": "Gactus",
-      "block.oneiricconcept.agnid_4": "4Agnidus metal ingot",
+      "block.oneiricconcept.agnid_4": "Agnidus metal ingot",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7romotion of the medicinal propertiesof health products is prohibited by thelaw.",
       "item.oneiricconcept.sun_start_can.description_0": "§6直接使下一日的太阳升起",
       "item.oneiricconcept.oneiric_shard.description_0": "§dLights flicking in a sea of stars, stirring the dream of a Leviathan. The past turns into candles that light the darkness ahead.",
@@ -8114,7 +8159,7 @@
       "block.oneiricconcept.newmo_6": "crescent ingot",
       "block.oneiricconcept.newmo_5": "crescent ingot",
       "item.oneiricconcept.dreamdive_can": "§9Dreamdive Can",
-      "block.oneiricconcept.agnid_10": "10Agnidus metal ingot",
+      "block.oneiricconcept.agnid_10": "Agnidus metal ingot",
       "block.oneiricconcept.newmo_2": "crescent ingot",
       "block.oneiricconcept.newmo_1": "crescent ingot",
       "block.oneiricconcept.the_another_world_leave": "The Another World Leave",
@@ -8263,8 +8308,8 @@
       "block.oneiricconcept.propaganda_army_block.description_0": "§7全自动！",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "华夫饼",
-      "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
+      "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
       "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
@@ -8306,6 +8351,7 @@
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "subtitles.mmm": "碰撞",
+      "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "block.oneiricconcept.bactus": "仙帝掌",
@@ -8673,5 +8719,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.oneiricconcept"
   },
-  "mcreatorVersion": 202400445618
+  "mcreatorVersion": 202400451119
 }
