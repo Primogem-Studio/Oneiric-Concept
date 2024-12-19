@@ -7,10 +7,10 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:hbond_4",
+          "name": "oneiricconcept:hbond_0",
           "functions": [
             {
-              "count": 4,
+              "count": 5,
               "function": "minecraft:set_count"
             },
             {

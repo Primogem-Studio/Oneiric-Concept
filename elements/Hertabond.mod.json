@@ -42,7 +42,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConceptDecoration"
+      }
+    ],
     "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""

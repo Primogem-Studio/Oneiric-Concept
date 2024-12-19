@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/herta_bond_g",
+  "textures": {
+    "all": "oneiricconcept:block/herta_bond",
+    "particle": "oneiricconcept:block/herta_bond",
+    "0": "oneiricconcept:block/herta_bond"
+  },
+  "render_type": "cutout"
+}

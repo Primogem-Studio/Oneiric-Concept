@@ -120,6 +120,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.HBOND_0.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 
 	@SubscribeEvent

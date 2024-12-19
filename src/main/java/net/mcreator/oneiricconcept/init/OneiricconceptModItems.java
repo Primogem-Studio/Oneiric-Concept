@@ -288,6 +288,12 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> HBOND_2 = block(OneiricconceptModBlocks.HBOND_2);
 	public static final DeferredItem<Item> HBOND_3 = block(OneiricconceptModBlocks.HBOND_3);
 	public static final DeferredItem<Item> HBOND_4 = block(OneiricconceptModBlocks.HBOND_4);
+	public static final DeferredItem<Item> HBOND_5 = block(OneiricconceptModBlocks.HBOND_5);
+	public static final DeferredItem<Item> HBOND_6 = block(OneiricconceptModBlocks.HBOND_6);
+	public static final DeferredItem<Item> HBOND_7 = block(OneiricconceptModBlocks.HBOND_7);
+	public static final DeferredItem<Item> HBOND_8 = block(OneiricconceptModBlocks.HBOND_8);
+	public static final DeferredItem<Item> HBOND_9 = block(OneiricconceptModBlocks.HBOND_9);
+	public static final DeferredItem<Item> HBOND_10 = block(OneiricconceptModBlocks.HBOND_10);
 
 	// Start of user code block custom items
 	// End of user code block custom items

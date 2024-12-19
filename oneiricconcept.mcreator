@@ -7537,6 +7537,134 @@
         ]
       },
       "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Hbond5",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hbond_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/hbond_5.json",
+          "src/main/resources/assets/oneiricconcept/models/item/hbond_5.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hbond_5.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hbond_5.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Hbond5Block.java"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Hbond6",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hbond_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hbond_6.json",
+          "src/main/resources/assets/oneiricconcept/models/item/hbond_6.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hbond_6.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Hbond6Block.java",
+          "src/main/resources/assets/oneiricconcept/models/block/hbond_6.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Hbond7",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hbond_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/Hbond7Block.java",
+          "src/main/resources/assets/oneiricconcept/models/item/hbond_7.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hbond_7.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hbond_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hbond_7.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Hbond8",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hbond_8",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/Hbond8Block.java",
+          "src/main/resources/assets/oneiricconcept/models/block/hbond_8.json",
+          "src/main/resources/assets/oneiricconcept/models/item/hbond_8.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hbond_8.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hbond_8.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Hbond9",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hbond_9",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hbond_9.json",
+          "src/main/resources/assets/oneiricconcept/models/item/hbond_9.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hbond_9.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hbond_9.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Hbond9Block.java"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Hbond10",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hbond_10",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/hbond_10.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Hbond10Block.java",
+          "src/main/resources/assets/oneiricconcept/models/item/hbond_10.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hbond_10.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hbond_10.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Hertabond1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hertabond_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hertabond_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "Hertabond2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hertabond_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hertabond_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
     }
   ],
   "variable_elements": [],
@@ -7563,6 +7691,12 @@
       "CUSTOM:Example"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Hbond10",
+      "~CUSTOM:Hbond9",
+      "~CUSTOM:Hbond8",
+      "~CUSTOM:Hbond7",
+      "~CUSTOM:Hbond6",
+      "~CUSTOM:Hbond5",
       "~CUSTOM:Hbond4",
       "~CUSTOM:Hbond3",
       "~CUSTOM:Hbond2",
@@ -7847,7 +7981,18 @@
       "CUSTOM:Geooo6",
       "CUSTOM:Geooo8",
       "CUSTOM:Geooo9",
-      "CUSTOM:Geooo10"
+      "CUSTOM:Geooo10",
+      "CUSTOM:Hertabond",
+      "CUSTOM:Herta1",
+      "CUSTOM:Hbond2",
+      "CUSTOM:Hbond3",
+      "CUSTOM:Hbond4",
+      "CUSTOM:Hbond5",
+      "CUSTOM:Hbond6",
+      "CUSTOM:Hbond7",
+      "CUSTOM:Hbond8",
+      "CUSTOM:Hbond9",
+      "CUSTOM:Hbond10"
     ],
     "ITEMS:mod:magazine1": [
       "CUSTOM:MoraMagazine",
@@ -8109,7 +8254,8 @@
       "Geooo1",
       "Liron1",
       "PgcPresent",
-      "SuperimposerCustommade"
+      "SuperimposerCustommade",
+      "Hertabond"
     ]
   },
   "language_map": {
@@ -8325,6 +8471,7 @@
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "block.oneiricconcept.geooo_1": "Prithiva_metal_ingot",
+      "block.oneiricconcept.hbond_10": "Herta bond",
       "block.oneiricconcept.geooo_3": "Prithiva_metal_ingot",
       "block.oneiricconcept.big_rock": "Big Rock",
       "block.oneiricconcept.geooo_2": "Prithiva_metal_ingot",
@@ -8336,10 +8483,15 @@
       "block.oneiricconcept.geooo_7": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_4": "Herta bond",
       "block.oneiricconcept.geooo_6": "Prithiva_metal_ingot",
+      "block.oneiricconcept.hbond_5": "Herta bond",
       "block.oneiricconcept.geooo_9": "Prithiva_metal_ingot",
+      "block.oneiricconcept.hbond_6": "Herta bond",
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
       "item.oneiricconcept.stuffing": "stuffing",
       "block.oneiricconcept.geooo_8": "Prithiva_metal_ingot",
+      "block.oneiricconcept.hbond_7": "Herta bond",
+      "block.oneiricconcept.hbond_8": "Herta bond",
+      "block.oneiricconcept.hbond_9": "Herta bond",
       "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
       "death.attack.b_2": "%1$s Feeling uncomfortable after eating smoked sausage",
       "block.oneiricconcept.newmo_10": "crescent ingot",
@@ -8618,26 +8770,32 @@
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "block.oneiricconcept.geooo_1": "繁荣金属锭",
+      "block.oneiricconcept.hbond_10": "黑塔债券",
       "block.oneiricconcept.geooo_3": "繁荣金属锭",
       "block.oneiricconcept.big_rock": "大石头块",
       "block.oneiricconcept.geooo_2": "繁荣金属锭",
       "block.oneiricconcept.geooo_5": "繁荣金属锭",
-      "block.oneiricconcept.hbond_2": "Herta bond",
+      "block.oneiricconcept.hbond_2": "黑塔债券",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
       "block.oneiricconcept.geooo_4": "繁荣金属锭",
-      "block.oneiricconcept.hbond_3": "Herta bond",
+      "block.oneiricconcept.hbond_3": "黑塔债券",
       "block.oneiricconcept.geooo_7": "繁荣金属锭",
-      "block.oneiricconcept.hbond_4": "Herta bond",
+      "block.oneiricconcept.hbond_4": "黑塔债券",
       "block.oneiricconcept.geooo_6": "繁荣金属锭",
+      "block.oneiricconcept.hbond_5": "黑塔债券",
       "block.oneiricconcept.geooo_9": "繁荣金属锭",
+      "block.oneiricconcept.hbond_6": "黑塔债券",
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
       "item.oneiricconcept.stuffing": "肉馅",
       "block.oneiricconcept.geooo_8": "繁荣金属锭",
+      "block.oneiricconcept.hbond_7": "黑塔债券",
+      "block.oneiricconcept.hbond_8": "黑塔债券",
+      "block.oneiricconcept.hbond_9": "黑塔债券",
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
       "block.oneiricconcept.newmo_10": "新月锭",
-      "block.oneiricconcept.hbond_0": "Herta bond",
-      "block.oneiricconcept.hbond_1": "Herta bond",
+      "block.oneiricconcept.hbond_0": "黑塔债券",
+      "block.oneiricconcept.hbond_1": "黑塔债券",
       "block.oneiricconcept.anemo_5": "自在金属锭",
       "block.oneiricconcept.anemo_6": "自在金属锭",
       "block.oneiricconcept.anemo_3": "自在金属锭",
