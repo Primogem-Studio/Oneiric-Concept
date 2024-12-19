@@ -83,6 +83,11 @@ import net.mcreator.oneiricconcept.block.Hydro3Block;
 import net.mcreator.oneiricconcept.block.Hydro2Block;
 import net.mcreator.oneiricconcept.block.Hydro1Block;
 import net.mcreator.oneiricconcept.block.Hydro10Block;
+import net.mcreator.oneiricconcept.block.HertabondBlock;
+import net.mcreator.oneiricconcept.block.Herta1Block;
+import net.mcreator.oneiricconcept.block.Hbond4Block;
+import net.mcreator.oneiricconcept.block.Hbond3Block;
+import net.mcreator.oneiricconcept.block.Hbond2Block;
 import net.mcreator.oneiricconcept.block.Geooo9Block;
 import net.mcreator.oneiricconcept.block.Geooo8Block;
 import net.mcreator.oneiricconcept.block.Geooo7Block;
@@ -323,6 +328,11 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> GEOOO_9 = REGISTRY.register("geooo_9", Geooo9Block::new);
 	public static final DeferredBlock<Block> GEOOO_10 = REGISTRY.register("geooo_10", Geooo10Block::new);
 	public static final DeferredBlock<Block> SUPERIMPOSER_CUSTOMMADE = REGISTRY.register("superimposer_custommade", SuperimposerCustommadeBlock::new);
+	public static final DeferredBlock<Block> HBOND_0 = REGISTRY.register("hbond_0", HertabondBlock::new);
+	public static final DeferredBlock<Block> HBOND_1 = REGISTRY.register("hbond_1", Herta1Block::new);
+	public static final DeferredBlock<Block> HBOND_2 = REGISTRY.register("hbond_2", Hbond2Block::new);
+	public static final DeferredBlock<Block> HBOND_3 = REGISTRY.register("hbond_3", Hbond3Block::new);
+	public static final DeferredBlock<Block> HBOND_4 = REGISTRY.register("hbond_4", Hbond4Block::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

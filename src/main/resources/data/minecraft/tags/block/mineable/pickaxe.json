@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:hbond_4",
+    "oneiricconcept:hbond_3",
+    "oneiricconcept:hbond_2",
+    "oneiricconcept:hbond_1",
+    "oneiricconcept:hbond_0",
     "oneiricconcept:geooo_10",
     "oneiricconcept:geooo_9",
     "oneiricconcept:geooo_8",

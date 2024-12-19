@@ -283,6 +283,11 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> GEOOO_9 = block(OneiricconceptModBlocks.GEOOO_9);
 	public static final DeferredItem<Item> GEOOO_10 = block(OneiricconceptModBlocks.GEOOO_10);
 	public static final DeferredItem<Item> SUPERIMPOSER_CUSTOMMADE = block(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE);
+	public static final DeferredItem<Item> HBOND_0 = block(OneiricconceptModBlocks.HBOND_0);
+	public static final DeferredItem<Item> HBOND_1 = block(OneiricconceptModBlocks.HBOND_1);
+	public static final DeferredItem<Item> HBOND_2 = block(OneiricconceptModBlocks.HBOND_2);
+	public static final DeferredItem<Item> HBOND_3 = block(OneiricconceptModBlocks.HBOND_3);
+	public static final DeferredItem<Item> HBOND_4 = block(OneiricconceptModBlocks.HBOND_4);
 
 	// Start of user code block custom items
 	// End of user code block custom items
