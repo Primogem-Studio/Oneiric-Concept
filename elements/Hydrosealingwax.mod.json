@@ -36,7 +36,8 @@
     "customProperties": [],
     "name": "Hydro sealing wax",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "Textdec"
     },
     "hardness": 1.0,
     "resistance": 10.0,

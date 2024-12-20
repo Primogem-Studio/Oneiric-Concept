@@ -10,13 +10,17 @@
     "particleTexture": "theanotherworldlogleavetop",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "normal",
+    "plantType": "sapling",
     "suspiciousStewEffect": "HASTE",
     "suspiciousStewDuration": 1600,
-    "secondaryTreeChance": 0.1,
+    "secondaryTreeChance": 0.05,
     "trees": [
-      null,
-      null
+      {
+        "value": "CUSTOM:TheAnotherWorldTree"
+      },
+      {
+        "value": "CUSTOM:Taw2"
+      }
     ],
     "flowerTrees": [
       null,
@@ -84,7 +88,7 @@
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "YELLOW",
+    "colorOnMap": "DIAMOND",
     "creativePickItem": {
       "value": ""
     },

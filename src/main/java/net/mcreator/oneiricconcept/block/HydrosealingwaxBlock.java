@@ -29,12 +29,21 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.util.FastColor;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.Minecraft;
 
+import net.mcreator.oneiricconcept.procedures.TextdecProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
+
+import java.util.List;
 
 public class HydrosealingwaxBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -43,6 +52,19 @@ public class HydrosealingwaxBlock extends Block implements SimpleWaterloggedBloc
 	public HydrosealingwaxBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.WATER).sound(SoundType.CANDLE).strength(1f, 10f).lightLevel(s -> 7).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
+		String hoverText = TextdecProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 
 	@Override

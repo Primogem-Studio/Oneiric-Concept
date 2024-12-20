@@ -9,10 +9,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.util.FastColor;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.oneiricconcept.procedures.TawleaveProcedure;
 
 public class TheAnotherWorldLeaveBlock extends LeavesBlock {
 	public TheAnotherWorldLeaveBlock() {
@@ -47,5 +51,11 @@ public class TheAnotherWorldLeaveBlock extends LeavesBlock {
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 3;
+	}
+
+	@Override
+	public void wasExploded(Level world, BlockPos pos, Explosion e) {
+		super.wasExploded(world, pos, e);
+		TawleaveProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

@@ -36,7 +36,8 @@
     "customProperties": [],
     "name": "Anemo sealing wax",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "Textdec"
     },
     "hardness": 0.5,
     "resistance": 10.0,

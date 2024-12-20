@@ -126,6 +126,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByExplosion": {
+      "name": "Tawleave"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

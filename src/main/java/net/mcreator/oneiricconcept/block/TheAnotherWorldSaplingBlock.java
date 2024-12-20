@@ -5,29 +5,31 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.procedures.XSaplingNagadusProcedure;
-import net.mcreator.oneiricconcept.procedures.BananaMushroomboneProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
-public class TheAnotherWorldSaplingBlock extends FlowerBlock implements BonemealableBlock {
+import java.util.Optional;
+
+public class TheAnotherWorldSaplingBlock extends SaplingBlock {
+	public static final TreeGrower TREE_GROWER = new TreeGrower("the_another_world_sapling", 0.05f, Optional.empty(), Optional.empty(), Optional.of(getFeatureKey("oneiricconcept:the_another_world_tree")),
+			Optional.of(getFeatureKey("oneiricconcept:taw_2")), Optional.empty(), Optional.empty());
+
 	public TheAnotherWorldSaplingBlock() {
-		super(MobEffects.DIG_SPEED, 1600,
-				BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).instabreak().lightLevel(s -> 3).noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 3).noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -54,18 +56,7 @@ public class TheAnotherWorldSaplingBlock extends FlowerBlock implements Bonemeal
 		return this.mayPlaceOn(groundState, worldIn, blockpos);
 	}
 
-	@Override
-	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate) {
-		return true;
-	}
-
-	@Override
-	public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		return BananaMushroomboneProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		XSaplingNagadusProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	private static ResourceKey<ConfiguredFeature<?, ?>> getFeatureKey(String feature) {
+		return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse(feature));
 	}
 }
