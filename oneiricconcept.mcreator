@@ -7665,6 +7665,45 @@
         ]
       },
       "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "MaraStruckClear",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mara_struck_clear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MaraStruckClearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "ent",
+            "type": "entity"
+          },
+          {
+            "name": "model",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
