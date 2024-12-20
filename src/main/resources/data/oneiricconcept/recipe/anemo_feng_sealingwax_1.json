@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "primogemcraft:hqfeng"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:anemo_sealingwax",
+    "count": 1
+  }
+}

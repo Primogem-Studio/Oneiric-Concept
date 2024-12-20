@@ -294,6 +294,13 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> HBOND_8 = block(OneiricconceptModBlocks.HBOND_8);
 	public static final DeferredItem<Item> HBOND_9 = block(OneiricconceptModBlocks.HBOND_9);
 	public static final DeferredItem<Item> HBOND_10 = block(OneiricconceptModBlocks.HBOND_10);
+	public static final DeferredItem<Item> PYROSEALINGWAX = block(OneiricconceptModBlocks.PYROSEALINGWAX);
+	public static final DeferredItem<Item> ELECTROSEALINGWAX = block(OneiricconceptModBlocks.ELECTROSEALINGWAX);
+	public static final DeferredItem<Item> HYDROSEALINGWAX = block(OneiricconceptModBlocks.HYDROSEALINGWAX);
+	public static final DeferredItem<Item> CRYOSEALINGWAX = block(OneiricconceptModBlocks.CRYOSEALINGWAX);
+	public static final DeferredItem<Item> DENDROSEALINGWAX = block(OneiricconceptModBlocks.DENDROSEALINGWAX);
+	public static final DeferredItem<Item> ANEMO_SEALINGWAX = block(OneiricconceptModBlocks.ANEMO_SEALINGWAX);
+	public static final DeferredItem<Item> GEOSEALINGWAX = block(OneiricconceptModBlocks.GEOSEALINGWAX);
 
 	// Start of user code block custom items
 	// End of user code block custom items

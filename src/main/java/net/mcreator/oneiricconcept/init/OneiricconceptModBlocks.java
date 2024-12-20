@@ -39,6 +39,7 @@ import net.mcreator.oneiricconcept.block.Redmo2Block;
 import net.mcreator.oneiricconcept.block.Redmo1Block;
 import net.mcreator.oneiricconcept.block.Redmo10Block;
 import net.mcreator.oneiricconcept.block.RactusBlock;
+import net.mcreator.oneiricconcept.block.PyrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.PropagandaArmyBlockBlock;
 import net.mcreator.oneiricconcept.block.PrithivaTopazOreBlock;
 import net.mcreator.oneiricconcept.block.PgcPresentBlock;
@@ -73,6 +74,7 @@ import net.mcreator.oneiricconcept.block.Liron3Block;
 import net.mcreator.oneiricconcept.block.Liron2Block;
 import net.mcreator.oneiricconcept.block.Liron1Block;
 import net.mcreator.oneiricconcept.block.Liron10Block;
+import net.mcreator.oneiricconcept.block.HydrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Hydro9Block;
 import net.mcreator.oneiricconcept.block.Hydro8Block;
 import net.mcreator.oneiricconcept.block.Hydro7Block;
@@ -94,6 +96,7 @@ import net.mcreator.oneiricconcept.block.Hbond4Block;
 import net.mcreator.oneiricconcept.block.Hbond3Block;
 import net.mcreator.oneiricconcept.block.Hbond2Block;
 import net.mcreator.oneiricconcept.block.Hbond10Block;
+import net.mcreator.oneiricconcept.block.GeosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Geooo9Block;
 import net.mcreator.oneiricconcept.block.Geooo8Block;
 import net.mcreator.oneiricconcept.block.Geooo7Block;
@@ -117,6 +120,7 @@ import net.mcreator.oneiricconcept.block.Fulmo2Block;
 import net.mcreator.oneiricconcept.block.Fulmo1Block;
 import net.mcreator.oneiricconcept.block.Fulmo10Block;
 import net.mcreator.oneiricconcept.block.ElementsCrystalOreBlock;
+import net.mcreator.oneiricconcept.block.ElectrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Elect9Block;
 import net.mcreator.oneiricconcept.block.Elect8Block;
 import net.mcreator.oneiricconcept.block.Elect7Block;
@@ -127,6 +131,7 @@ import net.mcreator.oneiricconcept.block.Elect3Block;
 import net.mcreator.oneiricconcept.block.Elect2Block;
 import net.mcreator.oneiricconcept.block.Elect1Block;
 import net.mcreator.oneiricconcept.block.Elect10Block;
+import net.mcreator.oneiricconcept.block.DendrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Dendr9Block;
 import net.mcreator.oneiricconcept.block.Dendr8Block;
 import net.mcreator.oneiricconcept.block.Dendr7Block;
@@ -137,6 +142,7 @@ import net.mcreator.oneiricconcept.block.Dendr3Block;
 import net.mcreator.oneiricconcept.block.Dendr2Block;
 import net.mcreator.oneiricconcept.block.Dendr1Block;
 import net.mcreator.oneiricconcept.block.Dendr10Block;
+import net.mcreator.oneiricconcept.block.CryosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Cryoo9Block;
 import net.mcreator.oneiricconcept.block.Cryoo8Block;
 import net.mcreator.oneiricconcept.block.Cryoo7Block;
@@ -156,6 +162,7 @@ import net.mcreator.oneiricconcept.block.BigRockBlock;
 import net.mcreator.oneiricconcept.block.BananaMushroomBockBlock;
 import net.mcreator.oneiricconcept.block.BananaMushroomBlock;
 import net.mcreator.oneiricconcept.block.BactusBlock;
+import net.mcreator.oneiricconcept.block.AnemoSealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Anemo9Block;
 import net.mcreator.oneiricconcept.block.Anemo8Block;
 import net.mcreator.oneiricconcept.block.Anemo7Block;
@@ -345,6 +352,13 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> HBOND_8 = REGISTRY.register("hbond_8", Hbond8Block::new);
 	public static final DeferredBlock<Block> HBOND_9 = REGISTRY.register("hbond_9", Hbond9Block::new);
 	public static final DeferredBlock<Block> HBOND_10 = REGISTRY.register("hbond_10", Hbond10Block::new);
+	public static final DeferredBlock<Block> PYROSEALINGWAX = REGISTRY.register("pyrosealingwax", PyrosealingwaxBlock::new);
+	public static final DeferredBlock<Block> ELECTROSEALINGWAX = REGISTRY.register("electrosealingwax", ElectrosealingwaxBlock::new);
+	public static final DeferredBlock<Block> HYDROSEALINGWAX = REGISTRY.register("hydrosealingwax", HydrosealingwaxBlock::new);
+	public static final DeferredBlock<Block> CRYOSEALINGWAX = REGISTRY.register("cryosealingwax", CryosealingwaxBlock::new);
+	public static final DeferredBlock<Block> DENDROSEALINGWAX = REGISTRY.register("dendrosealingwax", DendrosealingwaxBlock::new);
+	public static final DeferredBlock<Block> ANEMO_SEALINGWAX = REGISTRY.register("anemo_sealingwax", AnemoSealingwaxBlock::new);
+	public static final DeferredBlock<Block> GEOSEALINGWAX = REGISTRY.register("geosealingwax", GeosealingwaxBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
@@ -382,6 +396,8 @@ public class OneiricconceptModBlocks {
 			Anemo8Block.blockColorLoad(event);
 			Anemo9Block.blockColorLoad(event);
 			Anemo10Block.blockColorLoad(event);
+			HydrosealingwaxBlock.blockColorLoad(event);
+			DendrosealingwaxBlock.blockColorLoad(event);
 		}
 	}
 }

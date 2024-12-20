@@ -21,26 +21,6 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class OneiricconceptModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, OneiricconceptMod.MODID);
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(OneiricconceptModItems.STUFFING.get());
-				tabData.accept(OneiricconceptModItems.S_2TUFFING.get());
-				tabData.accept(OneiricconceptModItems.OY_STUFFING.get());
-				tabData.accept(OneiricconceptModItems.SAUSAGE.get());
-				tabData.accept(OneiricconceptModItems.SMOKE_SAUSAGE.get());
-				tabData.accept(OneiricconceptModItems.BELOBOG_SAUSAGE.get());
-				tabData.accept(OneiricconceptModItems.S_2AUSAGE.get());
-				tabData.accept(OneiricconceptModItems.S_2MOKE_SAUSAGE.get());
-				tabData.accept(OneiricconceptModItems.B_2ELOBOG_SAUSAGE.get());
-				tabData.accept(OneiricconceptModItems.MORA_SAUSAGE.get());
-				tabData.accept(OneiricconceptModItems.PRIMOGEMS_SAUSAGE.get());
-				tabData.accept(OneiricconceptModItems.DUMPLING.get());
-				tabData.accept(OneiricconceptModItems.OY_DUMPLING.get());
-				tabData.accept(OneiricconceptModItems.WAFFLE.get());
-				tabData.accept(OneiricconceptModItems.PRIMOGEM_WAFFLE.get());
-				tabData.accept(OneiricconceptModItems.SKY_WAFFLE.get());
-				tabData.accept(OneiricconceptModItems.RESURRECTION_PELLET.get());
-			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT = REGISTRY.register("oneiric_concept",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept")).icon(() -> new ItemStack(OneiricconceptModItems.ONEIRIC_SHARD.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(OneiricconceptModItems.ONEIRIC_SHARD.get());
@@ -82,6 +62,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SURPRISEBOXFORGOODORBAD.get());
 				tabData.accept(OneiricconceptModBlocks.MM_MUSHROOM.get().asItem());
 				tabData.accept(OneiricconceptModItems.SWORD_OF_BRILLIANT_VALOR.get());
+				tabData.accept(OneiricconceptModBlocks.THUNDER_SWORD.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.THE_ANOTHER_WORLD_LEAVE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.TNT_DISPENSER.get().asItem());
 				tabData.accept(OneiricconceptModItems.SMALL_HERTA_CORE.get());
@@ -100,28 +81,54 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.A_PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.LESS_REDSTONE_POWDER.get());
-				tabData.accept(OneiricconceptModBlocks.THUNDER_SWORD.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
 				tabData.accept(OneiricconceptModItems.SUSTENANCEANCHORITEM.get());
-			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
+			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(OneiricconceptModItems.STUFFING.get());
+				tabData.accept(OneiricconceptModItems.S_2TUFFING.get());
+				tabData.accept(OneiricconceptModItems.OY_STUFFING.get());
+				tabData.accept(OneiricconceptModItems.SAUSAGE.get());
+				tabData.accept(OneiricconceptModItems.SMOKE_SAUSAGE.get());
+				tabData.accept(OneiricconceptModItems.BELOBOG_SAUSAGE.get());
+				tabData.accept(OneiricconceptModItems.S_2AUSAGE.get());
+				tabData.accept(OneiricconceptModItems.S_2MOKE_SAUSAGE.get());
+				tabData.accept(OneiricconceptModItems.B_2ELOBOG_SAUSAGE.get());
+				tabData.accept(OneiricconceptModItems.MORA_SAUSAGE.get());
+				tabData.accept(OneiricconceptModItems.PRIMOGEMS_SAUSAGE.get());
+				tabData.accept(OneiricconceptModItems.DUMPLING.get());
+				tabData.accept(OneiricconceptModItems.OY_DUMPLING.get());
+				tabData.accept(OneiricconceptModItems.WAFFLE.get());
+				tabData.accept(OneiricconceptModItems.PRIMOGEM_WAFFLE.get());
+				tabData.accept(OneiricconceptModItems.SKY_WAFFLE.get());
+				tabData.accept(OneiricconceptModItems.RESURRECTION_PELLET.get());
+			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.PGC_PG1.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.REDMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.FULMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.ELECT_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.HYDRO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.CRYOO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.DENDR_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.ANEMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.GEOOO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HBOND_0.get().asItem());
-			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
+				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.REDMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FULMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.HYDRO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ANEMO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ELECT_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.DENDR_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CRYOO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.GEOOO_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PYROSEALINGWAX.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.HYDROSEALINGWAX.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ANEMO_SEALINGWAX.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ELECTROSEALINGWAX.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.DENDROSEALINGWAX.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CRYOSEALINGWAX.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.GEOSEALINGWAX.get().asItem());
+			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

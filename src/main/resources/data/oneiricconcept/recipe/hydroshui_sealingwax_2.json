@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:hydrosealingwax"
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:hqshui",
+    "count": 1
+  }
+}

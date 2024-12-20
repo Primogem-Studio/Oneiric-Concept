@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:pyrosealingwax"
+    }
+  ],
+  "result": {
+    "id": "primogemcraft:hqhuo",
+    "count": 1
+  }
+}

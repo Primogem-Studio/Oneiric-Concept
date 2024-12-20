@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "zz_hq"
+      },
+      "name": "default"
+    },
+    "electro_lei": {
+      "map": {
+        "0": "yh_hq"
+      },
+      "name": "electro_lei"
+    },
+    "anemo_feng": {
+      "map": {
+        "0": "zyhq_01"
+      },
+      "name": "anemo_feng"
+    },
+    "dendro_cao": {
+      "map": {
+        "0": "zh_hq"
+      },
+      "name": "dendro_cao"
+    },
+    "cryo_bing": {
+      "map": {
+        "0": "la_hq"
+      },
+      "name": "cryo_bing"
+    },
+    "hydro_shui": {
+      "map": {
+        "0": "zy_hq"
+      },
+      "name": "hydro_shui"
+    },
+    "geo_yan": {
+      "map": {
+        "0": "qy_hq"
+      },
+      "name": "geo_yan"
+    }
+  }
+}

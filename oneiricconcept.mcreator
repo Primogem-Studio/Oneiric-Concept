@@ -7704,6 +7704,307 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Pyrosealingwax",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyrosealingwax",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/pyrosealingwax.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/PyrosealingwaxBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrosealingwax.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/pyrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/pyrosealingwax.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/sealing wax"
+    },
+    {
+      "name": "Electrosealingwax",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrosealingwax",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/electrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/electrosealingwax.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/electrosealingwax.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ElectrosealingwaxBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/electrosealingwax.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/sealing wax"
+    },
+    {
+      "name": "Hydrosealingwax",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrosealingwax",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/HydrosealingwaxBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/hydrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hydrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrosealingwax.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/sealing wax"
+    },
+    {
+      "name": "Cryosealingwax",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryosealingwax",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/CryosealingwaxBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/cryosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/cryosealingwax.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/sealing wax"
+    },
+    {
+      "name": "Dendrosealingwax",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dendrosealingwax",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/dendrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrosealingwax.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/DendrosealingwaxBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/dendrosealingwax.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendrosealingwax.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/sealing wax"
+    },
+    {
+      "name": "AnemoSealingwax",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anemo_sealingwax",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/AnemoSealingwaxBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_sealingwax.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/anemo_sealingwax.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_sealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/anemo_sealingwax.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/sealing wax"
+    },
+    {
+      "name": "Geosealingwax",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geosealingwax",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/geosealingwax.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/GeosealingwaxBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/geosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/geosealingwax.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/geosealingwax.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/sealing wax"
+    },
+    {
+      "name": "PyroHuoSealingwax1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pyro_huo_sealingwax_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/pyro_huo_sealingwax_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "ElectroLeiSealingwax1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "electro_lei_sealingwax_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/electro_lei_sealingwax_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "HydroshuiSealingwax1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hydroshui_sealingwax_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hydroshui_sealingwax_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "CryoBingSealingwax1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cryo_bing_sealingwax_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cryo_bing_sealingwax_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "DendroCaoSealingwax1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dendro_cao_sealingwax_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dendro_cao_sealingwax_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "AnemoFengSealingwax1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "anemo_feng_sealingwax_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/anemo_feng_sealingwax_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "GeoYanSealingwax1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "geo_yan_sealingwax_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/geo_yan_sealingwax_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "PyroHuoSealingwax2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pyro_huo_sealingwax_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/pyro_huo_sealingwax_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "ElectroLeiSealingwax2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "electro_lei_sealingwax_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/electro_lei_sealingwax_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "HydroshuiSealingwax2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hydroshui_sealingwax_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hydroshui_sealingwax_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "CryoBingSealingwax2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cryo_bing_sealingwax_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cryo_bing_sealingwax_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "DendroCaoSealingwax2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dendro_cao_sealingwax_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dendro_cao_sealingwax_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "AnemoFengSealingwax2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "anemo_feng_sealingwax_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/anemo_feng_sealingwax_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
+    },
+    {
+      "name": "GeoYanSealingwax2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "geo_yan_sealingwax_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/geo_yan_sealingwax_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcFeature"
     }
   ],
   "variable_elements": [],
@@ -8198,25 +8499,6 @@
   },
   "tab_element_order": {
     "CUSTOM:Food": [],
-    "CUSTOM:OneiricConceptfood": [
-      "Stuffing",
-      "S2tuffing",
-      "OyStuffing",
-      "Sausage",
-      "SmokeSausage",
-      "BelobogSausage",
-      "S2ausage",
-      "S2mokeSausage",
-      "B2elobogSausage",
-      "MoraSausage",
-      "PrimogemsSausage",
-      "Dumpling",
-      "OyDumpling",
-      "Waffle",
-      "PrimogemWaffle",
-      "SkyWaffle",
-      "ResurrectionPellet"
-    ],
     "CUSTOM:OneiricConcept": [
       "OneiricShard",
       "GeomarrowRadiator",
@@ -8257,6 +8539,7 @@
       "Surpriseboxforgoodorbad",
       "MmMushroom",
       "SwordOfBrilliantValor",
+      "ThunderSword",
       "TheAnotherWorldLeave",
       "TNTDispenser",
       "SmallHertaCore",
@@ -8275,26 +8558,51 @@
       "PropagandaArmy",
       "APropagandaArmy",
       "LessRedstonePowder",
-      "ThunderSword",
       "Camera",
       "Sustenanceanchoritem"
     ],
+    "CUSTOM:OneiricConceptfood": [
+      "Stuffing",
+      "S2tuffing",
+      "OyStuffing",
+      "Sausage",
+      "SmokeSausage",
+      "BelobogSausage",
+      "S2ausage",
+      "S2mokeSausage",
+      "B2elobogSausage",
+      "MoraSausage",
+      "PrimogemsSausage",
+      "Dumpling",
+      "OyDumpling",
+      "Waffle",
+      "PrimogemWaffle",
+      "SkyWaffle",
+      "ResurrectionPellet"
+    ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
+      "PgcPresent",
+      "SuperimposerCustommade",
+      "Hertabond",
       "Newmo1",
       "Redmo1",
       "Fulmo1",
-      "Agnid1",
-      "Elect1",
-      "Hydro1",
-      "Cryoo1",
-      "Dendr1",
-      "Anemo1",
-      "Geooo1",
       "Liron1",
-      "PgcPresent",
-      "SuperimposerCustommade",
-      "Hertabond"
+      "Agnid1",
+      "Hydro1",
+      "Anemo1",
+      "Elect1",
+      "Dendr1",
+      "Cryoo1",
+      "Geooo1",
+      "Pyrosealingwax",
+      "Hydrosealingwax",
+      "AnemoSealingwax",
+      "Electrosealingwax",
+      "Dendrosealingwax",
+      "Cryosealingwax",
+      "Geosealingwax"
     ]
   },
   "language_map": {
@@ -8308,10 +8616,12 @@
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
       "block.oneiricconcept.propaganda_army_block.description_0": "§7Fully automatic!",
+      "block.oneiricconcept.anemo_sealingwax": "Anemo sealing wax",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
-      "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
+      "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
+      "block.oneiricconcept.pyrosealingwax": "Pyro sealing wax",
       "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "item.oneiricconcept.dreamdive_can.description_2": "The §9Dreamdive Can §fwas originally a toy in the Cosmos\u0027s middle-class family bedroom, but became the only way for people to sleep on some planets deep in the mires of §cCatastrophe. ",
       "item.oneiricconcept.dreamdive_can.description_1": "§6A sweet dream food can from Penacony, Planet of Festivities. It is full of highly compact gaseous memoria. The user will fall into dreams within five minutes after opening the can.",
@@ -8331,6 +8641,7 @@
       "block.oneiricconcept.pgc_pg5": "Primogem",
       "advancements.oneiric_concept_advancement.descr": "The past turns into candles that light the darkness ahead.",
       "block.oneiricconcept.pgc_pg4": "Primogem",
+      "block.oneiricconcept.geosealingwax": "Geo sealing wax",
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "block.oneiricconcept.nagadus_emerald_ore": "Nagadus Emerald Ore",
@@ -8369,6 +8680,7 @@
       "item.oneiricconcept.sausage": "Sausage",
       "item.oneiricconcept.propaganda_army": "Propaganda Army",
       "block.oneiricconcept.fulmo_10": "full moon ingot",
+      "block.oneiricconcept.dendrosealingwax": "Dendro sealing wax",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "Shivada_metal_ingot",
       "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
@@ -8469,6 +8781,7 @@
       "block.oneiricconcept.elect_4": "vajrada_metal_ingot",
       "translation.key.fail": "Don\u0027t confuse it",
       "block.oneiricconcept.elect_1": "vajrada metal ingot",
+      "block.oneiricconcept.cryosealingwax": "Cryo sealing wax",
       "block.oneiricconcept.elect_7": "vajrada_metal_ingot",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "并非母亲留下的宝藏",
       "block.oneiricconcept.elect_6": "vajrada_metal_ingot",
@@ -8493,6 +8806,7 @@
       "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
       "block.oneiricconcept.camera.description_0": "§7The meaning of \u0027相机 is to see through the key points",
       "item.oneiricconcept.primogem_waffle": "Primogem Waffle",
+      "block.oneiricconcept.electrosealingwax": "Electro sealing wax",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§dOne of the cores of Herrscher of Legion, which can be used to create Divine Keys",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.mora_magazine_e_3": "Extended Mora Magazine♦♦♦",
@@ -8514,6 +8828,7 @@
       "block.oneiricconcept.geooo_3": "Prithiva_metal_ingot",
       "block.oneiricconcept.big_rock": "Big Rock",
       "block.oneiricconcept.geooo_2": "Prithiva_metal_ingot",
+      "block.oneiricconcept.hydrosealingwax": "Hydro sealing wax",
       "block.oneiricconcept.geooo_5": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_2": "Herta bond",
       "item.oneiricconcept.sword_of_brilliant_valor": "Sword Of Brilliant Valor",
@@ -8607,10 +8922,12 @@
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
       "block.oneiricconcept.propaganda_army_block.description_0": "§7全自动！",
+      "block.oneiricconcept.anemo_sealingwax": "风之印",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "华夫饼",
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
+      "block.oneiricconcept.pyrosealingwax": "火之印",
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
       "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
@@ -8630,6 +8947,7 @@
       "block.oneiricconcept.pgc_pg5": "原石水晶",
       "advancements.oneiric_concept_advancement.descr": "旧日的一切最终成了照亮黑暗前路的烛火。",
       "block.oneiricconcept.pgc_pg4": "原石水晶",
+      "block.oneiricconcept.geosealingwax": "岩之印",
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7有股怪味……孜然的味道吗？",
       "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
@@ -8668,6 +8986,7 @@
       "item.oneiricconcept.sausage": "香肠",
       "item.oneiricconcept.propaganda_army": "水军",
       "block.oneiricconcept.fulmo_10": "满月锭",
+      "block.oneiricconcept.dendrosealingwax": "草之印",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "§k怜爱§r金属锭",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
@@ -8768,6 +9087,7 @@
       "block.oneiricconcept.elect_4": "永恒金属锭",
       "translation.key.fail": "别搞混了",
       "block.oneiricconcept.elect_1": "永恒金属锭",
+      "block.oneiricconcept.cryosealingwax": "冰之印",
       "block.oneiricconcept.elect_7": "永恒金属锭",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "§0并非母亲留下的宝藏",
       "block.oneiricconcept.elect_6": "永恒金属锭",
@@ -8792,6 +9112,7 @@
       "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.primogem_waffle": "原石华夫饼",
+      "block.oneiricconcept.electrosealingwax": "雷之印",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.mora_magazine_e_3": "摩拉扩容弹匣♦♦♦",
@@ -8813,6 +9134,7 @@
       "block.oneiricconcept.geooo_3": "繁荣金属锭",
       "block.oneiricconcept.big_rock": "大石头块",
       "block.oneiricconcept.geooo_2": "繁荣金属锭",
+      "block.oneiricconcept.hydrosealingwax": "水之印",
       "block.oneiricconcept.geooo_5": "繁荣金属锭",
       "block.oneiricconcept.hbond_2": "黑塔债券",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
@@ -9007,6 +9329,10 @@
               },
               {
                 "name": "herta_bond",
+                "children": []
+              },
+              {
+                "name": "sealing wax",
                 "children": []
               }
             ]
