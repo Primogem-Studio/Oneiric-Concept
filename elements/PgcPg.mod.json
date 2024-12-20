@@ -124,6 +124,9 @@
     "onRightClicked": {
       "name": "Pgprocess"
     },
+    "onNeighbourBlockChanges": {
+      "name": "Supportdown"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

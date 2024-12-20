@@ -18,13 +18,15 @@
       {
         "value": "CUSTOM:TheAnotherWorldTree"
       },
+      null
+    ],
+    "flowerTrees": [
+      {
+        "value": "CUSTOM:TheAnotherWorldTree"
+      },
       {
         "value": "CUSTOM:Taw2"
       }
-    ],
-    "flowerTrees": [
-      null,
-      null
     ],
     "megaTrees": [
       null,

@@ -25,8 +25,8 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 import java.util.Optional;
 
 public class TheAnotherWorldSaplingBlock extends SaplingBlock {
-	public static final TreeGrower TREE_GROWER = new TreeGrower("the_another_world_sapling", 0.05f, Optional.empty(), Optional.empty(), Optional.of(getFeatureKey("oneiricconcept:the_another_world_tree")),
-			Optional.of(getFeatureKey("oneiricconcept:taw_2")), Optional.empty(), Optional.empty());
+	public static final TreeGrower TREE_GROWER = new TreeGrower("the_another_world_sapling", 0.05f, Optional.empty(), Optional.empty(), Optional.of(getFeatureKey("oneiricconcept:the_another_world_tree")), Optional.empty(),
+			Optional.of(getFeatureKey("oneiricconcept:the_another_world_tree")), Optional.of(getFeatureKey("oneiricconcept:taw_2")));
 
 	public TheAnotherWorldSaplingBlock() {
 		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 3).noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));

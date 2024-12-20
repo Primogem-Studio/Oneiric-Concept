@@ -32,6 +32,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.SupportdownProcedure;
 import net.mcreator.oneiricconcept.procedures.PgprocessProcedure;
 
 public class PgcPgBlock extends Block implements SimpleWaterloggedBlock {
@@ -99,6 +100,12 @@ public class PgcPgBlock extends Block implements SimpleWaterloggedBlock {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		SupportdownProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
