@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "Supportdown"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

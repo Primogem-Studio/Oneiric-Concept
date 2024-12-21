@@ -109,6 +109,9 @@
     "luminance": 7,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
+    "placingCondition": {
+      "name": "Supportdown"
+    },
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
@@ -126,6 +129,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "Supportdown"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

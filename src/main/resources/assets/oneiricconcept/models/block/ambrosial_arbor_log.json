@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/dark_oak_log_top",
+    "up": "minecraft:block/dark_oak_log_top",
+    "north": "oneiricconcept:block/ambrosialarborlog",
+    "east": "oneiricconcept:block/ambrosialarborlog",
+    "south": "oneiricconcept:block/ambrosialarborlog",
+    "west": "oneiricconcept:block/ambrosialarborlog",
+    "particle": "minecraft:block/dark_oak_log_top"
+  },
+  "render_type": "solid"
+}

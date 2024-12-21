@@ -2,54 +2,54 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "pgc_pg",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 2,
-    "customModelName": "pgc_pg:default",
-    "rotationMode": 1,
+    "texture": "minecraft:dark_oak_log_top",
+    "textureTop": "minecraft:dark_oak_log_top",
+    "textureLeft": "ambrosialarborlog",
+    "textureFront": "ambrosialarborlog",
+    "textureRight": "ambrosialarborlog",
+    "textureBack": "ambrosialarborlog",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 5,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "pg",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 4.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 4.0,
-        "Mx": 12.0,
-        "My": 0.7,
-        "Mz": 12.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Primogem",
+    "name": "Ambrosial Arbor Log",
     "specialInformation": {
       "fixedValue": []
     },
     "hardness": 1.0,
-    "resistance": 10.0,
+    "resistance": 0.0,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:OneiricConceptDecoration"
+        "value": "CUSTOM:OneiricConcept"
       }
     ],
-    "destroyTool": "pickaxe",
+    "destroyTool": "axe",
     "customDrop": {
-      "value": "CUSTOM:PgcPg"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -57,7 +57,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
       "value": "NONE"
     },
@@ -68,7 +68,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DIAMOND",
+    "colorOnMap": "WOOD",
     "creativePickItem": {
       "value": ""
     },
@@ -80,11 +80,11 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "DESTROY",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "AMETHYST_CLUSTER"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -104,9 +104,6 @@
     "luminance": 3,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
-    "placingCondition": {
-      "name": "Supportdown"
-    },
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
@@ -124,12 +121,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "Pgprocess"
-    },
-    "onNeighbourBlockChanges": {
-      "name": "Supportdown"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
