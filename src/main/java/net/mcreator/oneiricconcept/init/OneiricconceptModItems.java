@@ -303,6 +303,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> GEOSEALINGWAX = block(OneiricconceptModBlocks.GEOSEALINGWAX);
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_LOG = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG);
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_LEAVE = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE);
+	public static final DeferredItem<Item> IGNIS_AURELIAE = REGISTRY.register("ignis_aureliae", IgnisAureliaeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
