@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:molten_metal_block",
     "oneiricconcept:agnidus_agate_ore",
     "oneiricconcept:vayuda_turquoise_ore",
     "oneiricconcept:prithiva_topaz_ore",

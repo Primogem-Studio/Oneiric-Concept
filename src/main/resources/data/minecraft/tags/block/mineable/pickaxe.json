@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:molten_metal_block",
     "oneiricconcept:hbond_10",
     "oneiricconcept:hbond_9",
     "oneiricconcept:hbond_8",

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:public_clamor"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:molten_metal",
+    "count": 1
+  }
+}

@@ -46,6 +46,7 @@ import net.mcreator.oneiricconcept.item.MoraMagazineItem;
 import net.mcreator.oneiricconcept.item.MoraMagazineE3Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineE2Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineE1Item;
+import net.mcreator.oneiricconcept.item.MoltenMetalItem;
 import net.mcreator.oneiricconcept.item.MmmhitItem;
 import net.mcreator.oneiricconcept.item.MemoryBubbleItem;
 import net.mcreator.oneiricconcept.item.MemoriaPieceItem;
@@ -54,6 +55,7 @@ import net.mcreator.oneiricconcept.item.MemoriaItem;
 import net.mcreator.oneiricconcept.item.LessRedstonePowderItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
+import net.mcreator.oneiricconcept.item.IgnisAureliaeItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
 import net.mcreator.oneiricconcept.item.HonkaiShardItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
@@ -68,6 +70,11 @@ import net.mcreator.oneiricconcept.item.BossStoneCoinGunPlusItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunItem;
 import net.mcreator.oneiricconcept.item.BelobogSausageItem;
 import net.mcreator.oneiricconcept.item.B2elobogSausageItem;
+import net.mcreator.oneiricconcept.item.AureliaeSwordItem;
+import net.mcreator.oneiricconcept.item.AureliaeShovelItem;
+import net.mcreator.oneiricconcept.item.AureliaePickaxeItem;
+import net.mcreator.oneiricconcept.item.AureliaeHoeItem;
+import net.mcreator.oneiricconcept.item.AureliaeAxeItem;
 import net.mcreator.oneiricconcept.item.AdeptusGunItem;
 import net.mcreator.oneiricconcept.item.APropagandaArmyItem;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
@@ -304,6 +311,13 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_LOG = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG);
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_LEAVE = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE);
 	public static final DeferredItem<Item> IGNIS_AURELIAE = REGISTRY.register("ignis_aureliae", IgnisAureliaeItem::new);
+	public static final DeferredItem<Item> AURELIAE_PICKAXE = REGISTRY.register("aureliae_pickaxe", AureliaePickaxeItem::new);
+	public static final DeferredItem<Item> AURELIAE_AXE = REGISTRY.register("aureliae_axe", AureliaeAxeItem::new);
+	public static final DeferredItem<Item> AURELIAE_SWORD = REGISTRY.register("aureliae_sword", AureliaeSwordItem::new);
+	public static final DeferredItem<Item> AURELIAE_SHOVEL = REGISTRY.register("aureliae_shovel", AureliaeShovelItem::new);
+	public static final DeferredItem<Item> AURELIAE_HOE = REGISTRY.register("aureliae_hoe", AureliaeHoeItem::new);
+	public static final DeferredItem<Item> MOLTEN_METAL = REGISTRY.register("molten_metal", MoltenMetalItem::new);
+	public static final DeferredItem<Item> MOLTEN_METAL_BLOCK = block(OneiricconceptModBlocks.MOLTEN_METAL_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

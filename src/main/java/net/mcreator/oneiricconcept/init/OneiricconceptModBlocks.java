@@ -61,6 +61,7 @@ import net.mcreator.oneiricconcept.block.Newmo2Block;
 import net.mcreator.oneiricconcept.block.Newmo1Block;
 import net.mcreator.oneiricconcept.block.Newmo10Block;
 import net.mcreator.oneiricconcept.block.NagadusEmeraldOreBlock;
+import net.mcreator.oneiricconcept.block.MoltenMetalBlockBlock;
 import net.mcreator.oneiricconcept.block.MmMushroomBlock;
 import net.mcreator.oneiricconcept.block.MemoriaBlock;
 import net.mcreator.oneiricconcept.block.MactusBlock;
@@ -363,6 +364,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> GEOSEALINGWAX = REGISTRY.register("geosealingwax", GeosealingwaxBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_LOG = REGISTRY.register("ambrosial_arbor_log", AmbrosialArborLogBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_LEAVE = REGISTRY.register("ambrosial_arbor_leave", AmbrosialArborLeaveBlock::new);
+	public static final DeferredBlock<Block> MOLTEN_METAL_BLOCK = REGISTRY.register("molten_metal_block", MoltenMetalBlockBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

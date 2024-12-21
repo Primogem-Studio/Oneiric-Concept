@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:molten_metal_block"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:molten_metal",
+    "count": 9
+  }
+}

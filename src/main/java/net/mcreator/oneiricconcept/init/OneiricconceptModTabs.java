@@ -85,6 +85,13 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SUSTENANCEANCHORITEM.get());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.MOLTEN_METAL_BLOCK.get().asItem());
+				tabData.accept(OneiricconceptModItems.AURELIAE_PICKAXE.get());
+				tabData.accept(OneiricconceptModItems.AURELIAE_AXE.get());
+				tabData.accept(OneiricconceptModItems.AURELIAE_SWORD.get());
+				tabData.accept(OneiricconceptModItems.AURELIAE_SHOVEL.get());
+				tabData.accept(OneiricconceptModItems.AURELIAE_HOE.get());
+				tabData.accept(OneiricconceptModItems.MOLTEN_METAL.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {

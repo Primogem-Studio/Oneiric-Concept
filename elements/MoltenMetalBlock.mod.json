@@ -2,49 +2,49 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "prithiva_metal_ingot",
+    "texture": "moltenmetal_ore_block",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "agnidus_metal_ingot_a:geo_yan",
-    "rotationMode": 1,
+    "renderType": 11,
+    "customModelName": "Single texture",
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "jian_lao_jin_shu_",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 6.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": 4.5,
-        "Mx": 10.0,
-        "My": 2.0,
-        "Mz": 11.5,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
     "customProperties": [],
-    "name": "Prithiva_metal_ingot",
+    "name": "Block of MoltenMetal",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
+    "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:OneiricConceptDecoration"
+        "value": "CUSTOM:OneiricConcept"
       }
     ],
     "destroyTool": "pickaxe",
@@ -53,22 +53,22 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "GOLD",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
@@ -80,7 +80,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "DESTROY",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
@@ -103,9 +103,9 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
-    "hasInventory": true,
+    "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -121,8 +121,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "Pgprocess"
+    "onNeighbourBlockChanges": {
+      "name": "Makemetalmelt"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
