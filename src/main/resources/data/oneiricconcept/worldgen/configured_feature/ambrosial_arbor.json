@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:air"
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "oneiricconcept:ambrosial_arbor_leave"
+      }
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "oneiricconcept:ambrosial_arbor_log"
+      }
+    },
+    "root_placer": {
+      "type": "minecraft:mangrove_root_placer",
+      "root_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "oneiricconcept:ambrosial_arbor_log"
+        }
+      },
+      "trunk_offset_y": {
+        "type": "uniform",
+        "min_inclusive": 8,
+        "max_inclusive": 9
+      },
+      "mangrove_root_placement": {
+        "can_grow_through": "#mangrove_roots_can_grow_through",
+        "muddy_roots_in": "#dirt",
+        "muddy_roots_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "oneiricconcept:ambrosial_arbor_log"
+          }
+        },
+        "max_root_length": 24,
+        "max_root_width": 12,
+        "random_skew_chance": 0.7
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "foliage_placer": {
+      "type": "minecraft:fancy_foliage_placer",
+      "radius": 2,
+      "offset": 4,
+      "height": 4
+    },
+    "trunk_placer": {
+      "type": "minecraft:fancy_trunk_placer",
+      "base_height": 32,
+      "height_rand_a": 24,
+      "height_rand_b": 24
+    },
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 0,
+      "lower_size": 0,
+      "upper_size": 0,
+      "min_clipped_height": 4
+    },
+    "decorators": [
+      {
+        "type": "minecraft:attached_to_leaves",
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "minecraft:air"
+          }
+        },
+        "probability": 1,
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 1,
+        "required_empty_blocks": 4,
+        "directions": [
+          "up"
+        ]
+      }
+    ]
+  }
+}

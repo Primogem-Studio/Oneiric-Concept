@@ -174,6 +174,7 @@ import net.mcreator.oneiricconcept.block.Anemo2Block;
 import net.mcreator.oneiricconcept.block.Anemo1Block;
 import net.mcreator.oneiricconcept.block.Anemo10Block;
 import net.mcreator.oneiricconcept.block.AmbrosialArborLogBlock;
+import net.mcreator.oneiricconcept.block.AmbrosialArborLeaveBlock;
 import net.mcreator.oneiricconcept.block.AgnidusAgateOreBlock;
 import net.mcreator.oneiricconcept.block.Agnid9Block;
 import net.mcreator.oneiricconcept.block.Agnid8Block;
@@ -361,6 +362,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> ANEMO_SEALINGWAX = REGISTRY.register("anemo_sealingwax", AnemoSealingwaxBlock::new);
 	public static final DeferredBlock<Block> GEOSEALINGWAX = REGISTRY.register("geosealingwax", GeosealingwaxBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_LOG = REGISTRY.register("ambrosial_arbor_log", AmbrosialArborLogBlock::new);
+	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_LEAVE = REGISTRY.register("ambrosial_arbor_leave", AmbrosialArborLeaveBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

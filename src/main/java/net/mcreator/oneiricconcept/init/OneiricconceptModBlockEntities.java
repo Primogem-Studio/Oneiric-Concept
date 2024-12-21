@@ -18,6 +18,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchoroffBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchorBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.AmbrosialArborLogBlockEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -26,6 +27,7 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PGC_PRESENT = register("pgc_present", OneiricconceptModBlocks.PGC_PRESENT, PgcPresentBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SUSTENANCEANCHOROFF = register("sustenanceanchoroff", OneiricconceptModBlocks.SUSTENANCEANCHOROFF, SustenanceanchoroffBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SUSTENANCEANCHOR = register("sustenanceanchor", OneiricconceptModBlocks.SUSTENANCEANCHOR, SustenanceanchorBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> AMBROSIAL_ARBOR_LOG = register("ambrosial_arbor_log", OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG, AmbrosialArborLogBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -38,5 +40,6 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PGC_PRESENT.get(), (blockEntity, side) -> ((PgcPresentBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUSTENANCEANCHOROFF.get(), (blockEntity, side) -> ((SustenanceanchoroffBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUSTENANCEANCHOR.get(), (blockEntity, side) -> ((SustenanceanchorBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, AMBROSIAL_ARBOR_LOG.get(), (blockEntity, side) -> ((AmbrosialArborLogBlockEntity) blockEntity).getItemHandler());
 	}
 }

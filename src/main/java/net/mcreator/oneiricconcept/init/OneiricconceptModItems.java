@@ -302,6 +302,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> ANEMO_SEALINGWAX = block(OneiricconceptModBlocks.ANEMO_SEALINGWAX);
 	public static final DeferredItem<Item> GEOSEALINGWAX = block(OneiricconceptModBlocks.GEOSEALINGWAX);
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_LOG = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG);
+	public static final DeferredItem<Item> AMBROSIAL_ARBOR_LEAVE = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE);
 
 	// Start of user code block custom items
 	// End of user code block custom items
