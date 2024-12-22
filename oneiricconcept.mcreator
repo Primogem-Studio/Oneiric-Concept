@@ -9002,6 +9002,58 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "AmbrosialArborsapling1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ambrosial_arborsapling_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambrosial_arborsapling_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Aureliae",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aureliae",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AureliaeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -10439,7 +10491,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.6.1",
+    "version": "1.7.0",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",

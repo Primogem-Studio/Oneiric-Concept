@@ -52,7 +52,7 @@
         "probability": 1,
         "exclusion_radius_xz": 1,
         "exclusion_radius_y": 1,
-        "required_empty_blocks": 4,
+        "required_empty_blocks": 10,
         "directions": [
           "up"
         ]
@@ -65,10 +65,10 @@
             "Name": "oneiricconcept:primogemfruitblock"
           }
         },
-        "probability": 1,
+        "probability": 0.05,
         "exclusion_radius_xz": 1,
         "exclusion_radius_y": 1,
-        "required_empty_blocks": 4,
+        "required_empty_blocks": 10,
         "directions": [
           "down"
         ]
