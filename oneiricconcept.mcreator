@@ -8237,7 +8237,9 @@
       "registry_name": "ambrosial_arbor",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/ambrosial_arbor.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/ambrosial_arbor.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/ambrosial_arbor.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/ambrosial_arbor_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -8797,6 +8799,209 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Primogemfruitblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogemfruitblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/PrimogemfruitblockBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogemfruitblock.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogemfruitblock.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/primogemfruitblock.json",
+          "src/main/resources/assets/oneiricconcept/models/item/primogemfruitblock.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Primogemfruit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogemfruit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/PrimogemfruitItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/primogemfruit.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Supportup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supportup",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SupportupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "AmbrosialArborSapling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambrosial_arbor_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_sapling.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_sapling.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborSaplingBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_sapling.json",
+          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_sapling.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "IgnisAureliaeSword",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ignis_aureliae_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IgnisAureliaeSwordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "AmbrosialArborPlank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambrosial_arbor_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_plank.json",
+          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_plank.json",
+          "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_plank.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborPlankBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_plank.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "AmbrosialArborPlank1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambrosial_arbor_plank_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambrosial_arbor_plank_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "HiltwoodFromTheArbor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hiltwood_from_the_arbor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/HiltwoodFromTheArborItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/hiltwood_from_the_arbor.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Arbor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arbor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ArborProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "HiltwoodFromTheArbor1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hiltwood_from_the_arbor_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/hiltwood_from_the_arbor_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -8979,6 +9184,7 @@
       "CUSTOM:MmMushroom"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
       "~CUSTOM:AmbrosialArborLog",
       "~CUSTOM:TheAnotherWorldWood",
       "~CUSTOM:StrippedTheAnotherWorldLog",
@@ -9132,6 +9338,7 @@
       "CUSTOM:Hbond10"
     ],
     "BLOCKS:minecraft:saplings": [
+      "~CUSTOM:AmbrosialArborSapling",
       "~CUSTOM:TheAnotherWorldSapling"
     ],
     "BLOCKS:c:ambrosialarbor": [
@@ -9196,6 +9403,9 @@
       "EntityIllusionIllager",
       "EntityGiantZombie"
     ],
+    "BLOCKS:minecraft:wither_immune": [
+      "CUSTOM:AmbrosialArborLog"
+    ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
       "CUSTOM:StrippedTheAnotherWorldLog"
@@ -9206,6 +9416,7 @@
     "ENTITIES:minecraft:aquatic": [
       "~CUSTOM:CrystalTurtle"
     ],
+    "BIOMES:minecraft:is_overworld": [],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:AureliaeHoe"
     ],
@@ -9245,6 +9456,13 @@
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:AureliaeShovel"
     ],
+    "ITEMS:mod:ignisaureliae": [
+      "CUSTOM:AureliaePickaxe",
+      "CUSTOM:AureliaeAxe",
+      "CUSTOM:AureliaeSword",
+      "CUSTOM:AureliaeShovel",
+      "CUSTOM:AureliaeHoe"
+    ],
     "ITEMS:minecraft:axes": [
       "~CUSTOM:AureliaeAxe"
     ],
@@ -9264,6 +9482,7 @@
       "~CUSTOM:MoraMagazineN2",
       "~CUSTOM:MoraMagazine"
     ],
+    "BLOCKS:minecraft:dirt": [],
     "ITEMS:c:smokesausage": [
       "CUSTOM:SmokeSausage",
       "CUSTOM:S2mokeSausage"
@@ -9276,6 +9495,9 @@
       "CUSTOM:HonkaiSliver",
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BigStone"
+    ],
+    "BLOCKS:minecraft:dragon_immune": [
+      "CUSTOM:AmbrosialArborLog"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
@@ -9316,6 +9538,12 @@
     ],
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:Surpriseboxforgoodorbad"
+    ],
+    "ITEMS:minecraft:planks": [
+      "CUSTOM:AmbrosialArborPlank"
+    ],
+    "BLOCKS:minecraft:planks": [
+      "CUSTOM:AmbrosialArborPlank"
     ]
   },
   "tab_element_order": {
@@ -9389,7 +9617,11 @@
       "AureliaeSword",
       "AureliaeShovel",
       "AureliaeHoe",
-      "MoltenMetal"
+      "MoltenMetal",
+      "AmbrosialArborSapling",
+      "AmbrosialArborPlank",
+      "IgnisAureliae",
+      "HiltwoodFromTheArbor"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -9408,7 +9640,8 @@
       "Waffle",
       "PrimogemWaffle",
       "SkyWaffle",
-      "ResurrectionPellet"
+      "ResurrectionPellet",
+      "Primogemfruit"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -9449,11 +9682,11 @@
       "block.oneiricconcept.anemo_sealingwax": "Anemo sealing wax",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
-      "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
       "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
+      "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
       "block.oneiricconcept.pyrosealingwax": "Pyro sealing wax",
-      "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
       "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
+      "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
       "item.oneiricconcept.dreamdive_can.description_2": "The §9Dreamdive Can §fwas originally a toy in the Cosmos\u0027s middle-class family bedroom, but became the only way for people to sleep on some planets deep in the mires of §cCatastrophe. ",
       "item.oneiricconcept.dreamdive_can.description_1": "§6A sweet dream food can from Penacony, Planet of Festivities. It is full of highly compact gaseous memoria. The user will fall into dreams within five minutes after opening the can.",
       "block.oneiricconcept.cloud.description_0": "百川源",
@@ -9525,6 +9758,7 @@
       "item.oneiricconcept.small_herta_core.description_0": "模拟宇宙·寰宇蝗灾",
       "item.oneiricconcept.mora_magazine_n_2": "Mora Magazine♦♦",
       "item.oneiricconcept.mora_magazine_n_3": "Mora Magazine♦♦♦",
+      "item.oneiricconcept.primogemfruit": "Primogemfruit",
       "item.oneiricconcept.propaganda_army.description_0": "§7An account seems to be a bit too slow",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
@@ -9538,6 +9772,7 @@
       "item.oneiricconcept.adeptus_gun": "Adeptus Gun",
       "block.oneiricconcept.liron_1": "stinky iron ingot",
       "block.oneiricconcept.tnt_dispenser": "TNT Dispenser",
+      "block.oneiricconcept.primogemfruitblock": "Primogemfruit",
       "block.oneiricconcept.liron_2": "stinky iron ingot",
       "item.oneiricconcept.memory_bubble": "Memory Bubble",
       "block.oneiricconcept.memoria": "Memoria",
@@ -9666,6 +9901,7 @@
       "block.oneiricconcept.big_rock": "Big Rock",
       "block.oneiricconcept.geooo_2": "Prithiva_metal_ingot",
       "block.oneiricconcept.hydrosealingwax": "Hydro sealing wax",
+      "item.oneiricconcept.hiltwood_from_the_arbor": "Hilt-wood From The Arbor",
       "block.oneiricconcept.geooo_5": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_2": "Herta bond",
       "item.oneiricconcept.sword_of_brilliant_valor": "Sword Of Brilliant Valor",
@@ -9675,6 +9911,7 @@
       "block.oneiricconcept.hbond_4": "Herta bond",
       "block.oneiricconcept.geooo_6": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_5": "Herta bond",
+      "block.oneiricconcept.ambrosial_arbor_plank": "Ambrosial Arbor Plank",
       "block.oneiricconcept.geooo_9": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_6": "Herta bond",
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
@@ -9751,7 +9988,8 @@
       "block.oneiricconcept.vajrada_amethyst_ore": "Vajrada Amethyst Ore",
       "advancements.oneiric_concept_advancement.title": "Oneiric Concept",
       "item.oneiricconcept.dark_xuanyuan_sword": "Xuanyuan Sword",
-      "item.oneiricconcept.sun_start_can": "Sun Start Can"
+      "item.oneiricconcept.sun_start_can": "Sun Start Can",
+      "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling"
     },
     "zh_cn": {
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
@@ -9769,7 +10007,7 @@
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
       "block.oneiricconcept.pyrosealingwax": "火之印",
-      "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
+      "block.oneiricconcept.ambrosial_arbor_log": "建木原木",
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
       "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
@@ -9842,6 +10080,7 @@
       "item.oneiricconcept.small_herta_core.description_0": "§7模拟宇宙·寰宇蝗灾",
       "item.oneiricconcept.mora_magazine_n_2": "摩拉弹匣♦♦",
       "item.oneiricconcept.mora_magazine_n_3": "摩拉弹匣♦♦♦",
+      "item.oneiricconcept.primogemfruit": "原石果",
       "item.oneiricconcept.propaganda_army.description_0": "§7一个账号手磨疑似有些太慢了",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
@@ -9855,6 +10094,7 @@
       "item.oneiricconcept.adeptus_gun": "仙力之枪",
       "block.oneiricconcept.liron_1": "重口味铁锭",
       "block.oneiricconcept.tnt_dispenser": "TNT发射器",
+      "block.oneiricconcept.primogemfruitblock": "原石果",
       "block.oneiricconcept.liron_2": "重口味铁锭",
       "item.oneiricconcept.memory_bubble": "§9忆泡",
       "block.oneiricconcept.memoria": "忆质",
@@ -9917,7 +10157,7 @@
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
       "block.oneiricconcept.varunada_lazurite_ore": "涤净青金矿石",
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
-      "item.oneiricconcept.aureliae_axe": "Aureliae Axe",
+      "item.oneiricconcept.aureliae_axe": "铄金斧",
       "item.oneiricconcept.smoke_sausage": "熏肠",
       "item.oneiricconcept.a_propaganda_army": "一个水军",
       "block.oneiricconcept.thunder_sword": "雷霆旧剑",
@@ -9944,7 +10184,7 @@
       "item.oneiricconcept.honkai_sliver": "崩坏碎片",
       "item.oneiricconcept.d_xuanyuan": "黑轩辕剑",
       "block.oneiricconcept.elect_10": "永恒金属锭",
-      "item.oneiricconcept.aureliae_shovel": "Aureliae Shovel",
+      "item.oneiricconcept.aureliae_shovel": "铄金锹",
       "block.oneiricconcept.geomarrow_radiator.description_0": "§7用于加工香肠、小麦种子、异世界树苗和云。",
       "item.oneiricconcept.condensed_memoria_piece.description_0": "§7更加浓缩的忆质块",
       "item.oneiricconcept.less_redstone_powder": "小堆红石粉",
@@ -9956,9 +10196,9 @@
       "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.primogem_waffle": "原石华夫饼",
-      "item.oneiricconcept.aureliae_sword": "Aureliae Sword",
+      "item.oneiricconcept.aureliae_sword": "铄金剑",
       "block.oneiricconcept.electrosealingwax": "雷之印",
-      "item.oneiricconcept.aureliae_pickaxe": "Aureliae Pickaxe",
+      "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.mora_magazine_e_3": "摩拉扩容弹匣♦♦♦",
@@ -9968,13 +10208,13 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣♦",
       "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
-      "item.oneiricconcept.molten_metal": "MoltenMetal",
+      "item.oneiricconcept.molten_metal": "铄金",
       "block.oneiricconcept.shivada_jade_ore": "哀叙冰玉矿石",
       "block.oneiricconcept.mm_mushroom": "萌萌菌",
       "painting.oneiricconcept.mimo.author": "xyz",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
       "block.oneiricconcept.banana_mushroom": "香蕉菌",
-      "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
+      "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "block.oneiricconcept.geooo_1": "繁荣金属锭",
@@ -9983,6 +10223,7 @@
       "block.oneiricconcept.big_rock": "大石头块",
       "block.oneiricconcept.geooo_2": "繁荣金属锭",
       "block.oneiricconcept.hydrosealingwax": "水之印",
+      "item.oneiricconcept.hiltwood_from_the_arbor": "建木柄材",
       "block.oneiricconcept.geooo_5": "繁荣金属锭",
       "block.oneiricconcept.hbond_2": "黑塔债券",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
@@ -9992,6 +10233,7 @@
       "block.oneiricconcept.hbond_4": "黑塔债券",
       "block.oneiricconcept.geooo_6": "繁荣金属锭",
       "block.oneiricconcept.hbond_5": "黑塔债券",
+      "block.oneiricconcept.ambrosial_arbor_plank": "建木木板",
       "block.oneiricconcept.geooo_9": "繁荣金属锭",
       "block.oneiricconcept.hbond_6": "黑塔债券",
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
@@ -10037,7 +10279,7 @@
       "block.oneiricconcept.redmo_8": "赤月锭",
       "block.oneiricconcept.fulmo_6": "满月锭",
       "block.oneiricconcept.redmo_9": "赤月锭",
-      "item.oneiricconcept.ignis_aureliae": "Ignis Aureliae",
+      "item.oneiricconcept.ignis_aureliae": "天火熔金",
       "block.oneiricconcept.fulmo_9": "满月锭",
       "block.oneiricconcept.redmo_6": "赤月锭",
       "block.oneiricconcept.redmo_7": "赤月锭",
@@ -10062,13 +10304,14 @@
       "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
       "block.oneiricconcept.c_cactus": "仙灵掌",
       "block.oneiricconcept.mm_mushroom.description_0": "§7萌萌的蘑菇，但有一颗坚硬的心",
-      "block.oneiricconcept.molten_metal_block": "Block of MoltenMetal",
+      "block.oneiricconcept.molten_metal_block": "铄金块",
       "translation.oneiricconcept.textdec": "可放置在世界",
-      "item.oneiricconcept.aureliae_hoe": "Aureliae Hoe",
+      "item.oneiricconcept.aureliae_hoe": "铄金锄",
       "block.oneiricconcept.vajrada_amethyst_ore": "最胜紫晶矿石",
       "advancements.oneiric_concept_advancement.title": "梦华构想",
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
-      "item.oneiricconcept.sun_start_can": "启阳罐"
+      "item.oneiricconcept.sun_start_can": "启阳罐",
+      "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗"
     }
   },
   "foldersRoot": {

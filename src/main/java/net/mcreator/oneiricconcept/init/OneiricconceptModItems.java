@@ -35,6 +35,7 @@ import net.mcreator.oneiricconcept.item.ResurrectionPelletItem;
 import net.mcreator.oneiricconcept.item.PublicClamorItem;
 import net.mcreator.oneiricconcept.item.PropagandaArmyItem;
 import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
+import net.mcreator.oneiricconcept.item.PrimogemfruitItem;
 import net.mcreator.oneiricconcept.item.PrimogemWaffleItem;
 import net.mcreator.oneiricconcept.item.OyStuffingItem;
 import net.mcreator.oneiricconcept.item.OyDumplingItem;
@@ -58,6 +59,7 @@ import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
 import net.mcreator.oneiricconcept.item.IgnisAureliaeItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
 import net.mcreator.oneiricconcept.item.HonkaiShardItem;
+import net.mcreator.oneiricconcept.item.HiltwoodFromTheArborItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
@@ -318,6 +320,11 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> AURELIAE_HOE = REGISTRY.register("aureliae_hoe", AureliaeHoeItem::new);
 	public static final DeferredItem<Item> MOLTEN_METAL = REGISTRY.register("molten_metal", MoltenMetalItem::new);
 	public static final DeferredItem<Item> MOLTEN_METAL_BLOCK = block(OneiricconceptModBlocks.MOLTEN_METAL_BLOCK);
+	public static final DeferredItem<Item> PRIMOGEMFRUITBLOCK = block(OneiricconceptModBlocks.PRIMOGEMFRUITBLOCK);
+	public static final DeferredItem<Item> PRIMOGEMFRUIT = REGISTRY.register("primogemfruit", PrimogemfruitItem::new);
+	public static final DeferredItem<Item> AMBROSIAL_ARBOR_SAPLING = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_SAPLING);
+	public static final DeferredItem<Item> AMBROSIAL_ARBOR_PLANK = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_PLANK);
+	public static final DeferredItem<Item> HILTWOOD_FROM_THE_ARBOR = REGISTRY.register("hiltwood_from_the_arbor", HiltwoodFromTheArborItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

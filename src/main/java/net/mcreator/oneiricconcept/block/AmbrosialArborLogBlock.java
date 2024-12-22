@@ -29,7 +29,7 @@ public class AmbrosialArborLogBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public AmbrosialArborLogBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.WOOD).strength(3f, 7f).lightLevel(s -> 3));
+		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.TERRACOTTA_BROWN).sound(SoundType.WOOD).strength(3f, 7f).lightLevel(s -> 3));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 

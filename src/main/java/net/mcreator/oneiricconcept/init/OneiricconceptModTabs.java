@@ -92,6 +92,10 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.AURELIAE_SHOVEL.get());
 				tabData.accept(OneiricconceptModItems.AURELIAE_HOE.get());
 				tabData.accept(OneiricconceptModItems.MOLTEN_METAL.get());
+				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_SAPLING.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_PLANK.get().asItem());
+				tabData.accept(OneiricconceptModItems.IGNIS_AURELIAE.get());
+				tabData.accept(OneiricconceptModItems.HILTWOOD_FROM_THE_ARBOR.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -112,6 +116,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PRIMOGEM_WAFFLE.get());
 				tabData.accept(OneiricconceptModItems.SKY_WAFFLE.get());
 				tabData.accept(OneiricconceptModItems.RESURRECTION_PELLET.get());
+				tabData.accept(OneiricconceptModItems.PRIMOGEMFRUIT.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {

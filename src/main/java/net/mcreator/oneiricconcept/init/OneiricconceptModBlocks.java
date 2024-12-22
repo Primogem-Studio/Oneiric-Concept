@@ -42,6 +42,7 @@ import net.mcreator.oneiricconcept.block.RactusBlock;
 import net.mcreator.oneiricconcept.block.PyrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.PropagandaArmyBlockBlock;
 import net.mcreator.oneiricconcept.block.PrithivaTopazOreBlock;
+import net.mcreator.oneiricconcept.block.PrimogemfruitblockBlock;
 import net.mcreator.oneiricconcept.block.PgcPresentBlock;
 import net.mcreator.oneiricconcept.block.PgcPgfBlock;
 import net.mcreator.oneiricconcept.block.PgcPgeBlock;
@@ -174,6 +175,8 @@ import net.mcreator.oneiricconcept.block.Anemo3Block;
 import net.mcreator.oneiricconcept.block.Anemo2Block;
 import net.mcreator.oneiricconcept.block.Anemo1Block;
 import net.mcreator.oneiricconcept.block.Anemo10Block;
+import net.mcreator.oneiricconcept.block.AmbrosialArborSaplingBlock;
+import net.mcreator.oneiricconcept.block.AmbrosialArborPlankBlock;
 import net.mcreator.oneiricconcept.block.AmbrosialArborLogBlock;
 import net.mcreator.oneiricconcept.block.AmbrosialArborLeaveBlock;
 import net.mcreator.oneiricconcept.block.AgnidusAgateOreBlock;
@@ -365,6 +368,9 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_LOG = REGISTRY.register("ambrosial_arbor_log", AmbrosialArborLogBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_LEAVE = REGISTRY.register("ambrosial_arbor_leave", AmbrosialArborLeaveBlock::new);
 	public static final DeferredBlock<Block> MOLTEN_METAL_BLOCK = REGISTRY.register("molten_metal_block", MoltenMetalBlockBlock::new);
+	public static final DeferredBlock<Block> PRIMOGEMFRUITBLOCK = REGISTRY.register("primogemfruitblock", PrimogemfruitblockBlock::new);
+	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_SAPLING = REGISTRY.register("ambrosial_arbor_sapling", AmbrosialArborSaplingBlock::new);
+	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_PLANK = REGISTRY.register("ambrosial_arbor_plank", AmbrosialArborPlankBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

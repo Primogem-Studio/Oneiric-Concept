@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:ambrosial_arbor_log"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:hiltwood_from_the_arbor",
+    "count": 1
+  }
+}

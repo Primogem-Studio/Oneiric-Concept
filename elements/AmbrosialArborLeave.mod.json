@@ -60,7 +60,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 1,
     "material": {
-      "value": "NONE"
+      "value": "LEAVES"
     },
     "tickRate": 80,
     "tickRandomly": false,
