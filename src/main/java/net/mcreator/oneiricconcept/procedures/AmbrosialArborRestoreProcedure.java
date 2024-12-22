@@ -16,14 +16,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
-
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -43,7 +43,7 @@ public class AmbrosialArborRestoreProcedure {
 			return;
 		double restore = 0;
 		BlockState block = Blocks.AIR.defaultBlockState();
-		if (blockstate.getBlock() == OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get() && !(new Object() {
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor"))) && !(new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayer _serverPlayer) {
 					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
@@ -58,7 +58,7 @@ public class AmbrosialArborRestoreProcedure {
 					_cancellable.setCanceled(true);
 				}
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, (new ItemStack(blockstate.getBlock())));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

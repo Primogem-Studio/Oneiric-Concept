@@ -8220,7 +8220,6 @@
       "registry_name": "ambrosial_arbor_log",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/AmbrosialArborLogBlockEntity.java",
           "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_log.json",
           "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_log.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_log.json",
@@ -8469,7 +8468,7 @@
           "src/main/resources/data/oneiricconcept/recipe/aureliae_pickaxe_recipe.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "AureliaeAxeRecipe",
@@ -8482,7 +8481,7 @@
           "src/main/resources/data/oneiricconcept/recipe/aureliae_axe_recipe.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "AureliaeSwordRecipe",
@@ -8495,7 +8494,7 @@
           "src/main/resources/data/oneiricconcept/recipe/aureliae_sword_recipe.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "AureliaeShovelRecipe",
@@ -8508,7 +8507,7 @@
           "src/main/resources/data/oneiricconcept/recipe/aureliae_shovel_recipe.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "AureliaeHoeRecipe",
@@ -8521,7 +8520,7 @@
           "src/main/resources/data/oneiricconcept/recipe/aureliae_hoe_recipe.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "MoltenMetal",
@@ -8565,7 +8564,7 @@
           "src/main/resources/data/oneiricconcept/recipe/molten_metal_ore_block_recipe.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "MoltenMetalBlockOreRecipe",
@@ -8578,7 +8577,7 @@
           "src/main/resources/data/oneiricconcept/recipe/molten_metal_block_ore_recipe.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "MoltenMetalOreSmelting",
@@ -8591,7 +8590,7 @@
           "src/main/resources/data/oneiricconcept/recipe/molten_metal_ore_smelting.json"
         ]
       },
-      "path": "~/Feature"
+      "path": "~/Recipes"
     },
     {
       "name": "Makemetalmelt",
@@ -8602,6 +8601,181 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/MakemetalmeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Outfire",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "outfire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/OutfireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Offfire",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "offfire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/OfffireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "x2",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "z2",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Explosionplasse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosionplasse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExplosionplasseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "block",
+            "type": "blockstate"
+          },
+          {
+            "name": "nu",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Aalog",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aalog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AalogProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Aaleave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aaleave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AaleaveProcedure.java"
         ],
         "dependencies": [
           {
@@ -8960,6 +9134,10 @@
     "BLOCKS:minecraft:saplings": [
       "~CUSTOM:TheAnotherWorldSapling"
     ],
+    "BLOCKS:c:ambrosialarbor": [
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLeave"
+    ],
     "ITEMS:mod:magazine1": [
       "CUSTOM:MoraMagazine",
       "CUSTOM:MoraMagazineE1"
@@ -9271,11 +9449,11 @@
       "block.oneiricconcept.anemo_sealingwax": "Anemo sealing wax",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
-      "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
+      "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "block.oneiricconcept.pyrosealingwax": "Pyro sealing wax",
-      "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
+      "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "item.oneiricconcept.dreamdive_can.description_2": "The §9Dreamdive Can §fwas originally a toy in the Cosmos\u0027s middle-class family bedroom, but became the only way for people to sleep on some planets deep in the mires of §cCatastrophe. ",
       "item.oneiricconcept.dreamdive_can.description_1": "§6A sweet dream food can from Penacony, Planet of Festivities. It is full of highly compact gaseous memoria. The user will fall into dreams within five minutes after opening the can.",
       "block.oneiricconcept.cloud.description_0": "百川源",
@@ -9588,11 +9766,11 @@
       "block.oneiricconcept.anemo_sealingwax": "风之印",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "华夫饼",
-      "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
+      "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
       "block.oneiricconcept.pyrosealingwax": "火之印",
-      "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
       "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
+      "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
       "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
       "block.oneiricconcept.cloud.description_0": "§7百川源",

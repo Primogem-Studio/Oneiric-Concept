@@ -40,7 +40,7 @@
       "fixedValue": []
     },
     "hardness": 0.5,
-    "resistance": 0.0,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -75,8 +75,8 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "flammability": 40,
+    "fireSpreadSpeed": 1000,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
@@ -122,11 +122,17 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "Outfire"
+    },
     "onTickUpdate": {
       "name": "AmbrosialArborFireParticle"
     },
     "onDestroyedByPlayer": {
-      "name": "AmbrosialArborLogplace"
+      "name": "AmbrosialArborRestore"
+    },
+    "onDestroyedByExplosion": {
+      "name": "Aaleave"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

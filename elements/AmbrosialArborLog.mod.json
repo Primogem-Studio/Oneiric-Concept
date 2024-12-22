@@ -39,7 +39,7 @@
       "fixedValue": []
     },
     "hardness": 3.0,
-    "resistance": 5.0,
+    "resistance": 7.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -74,8 +74,8 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "flammability": 20,
+    "fireSpreadSpeed": 500,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
@@ -105,7 +105,7 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
-    "hasInventory": true,
+    "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -121,11 +121,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "AmbrosialArborLogplace"
+    "onNeighbourBlockChanges": {
+      "name": "Outfire"
     },
     "onDestroyedByPlayer": {
       "name": "AmbrosialArborRestore"
+    },
+    "onDestroyedByExplosion": {
+      "name": "Aalog"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
