@@ -50,6 +50,7 @@ public class MakemetalmeltProcedure {
 				}
 			});
 		} else if (world instanceof Level _level16 && _level16.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(blkitm), _level16).isPresent()) {
+			world.destroyBlock(BlockPos.containing(x, y + 1, z), false);
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z,
 						(world instanceof Level _lvlSmeltResult
