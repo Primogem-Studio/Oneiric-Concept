@@ -90,6 +90,7 @@ import net.mcreator.oneiricconcept.block.Hydro1Block;
 import net.mcreator.oneiricconcept.block.Hydro10Block;
 import net.mcreator.oneiricconcept.block.HertabondBlock;
 import net.mcreator.oneiricconcept.block.Herta1Block;
+import net.mcreator.oneiricconcept.block.HeartofthevastseaBlock;
 import net.mcreator.oneiricconcept.block.Hbond9Block;
 import net.mcreator.oneiricconcept.block.Hbond8Block;
 import net.mcreator.oneiricconcept.block.Hbond7Block;
@@ -373,6 +374,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_SAPLING = REGISTRY.register("ambrosial_arbor_sapling", AmbrosialArborSaplingBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_PLANK = REGISTRY.register("ambrosial_arbor_plank", AmbrosialArborPlankBlock::new);
 	public static final DeferredBlock<Block> WAYFAREBLESSING = REGISTRY.register("wayfareblessing", TexturewayfareblessingBlock::new);
+	public static final DeferredBlock<Block> HEARTOFTHEVASTSEA = REGISTRY.register("heartofthevastsea", HeartofthevastseaBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

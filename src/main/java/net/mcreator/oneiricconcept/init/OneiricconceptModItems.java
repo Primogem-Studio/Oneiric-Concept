@@ -326,6 +326,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_PLANK = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_PLANK);
 	public static final DeferredItem<Item> HILTWOOD_FROM_THE_ARBOR = REGISTRY.register("hiltwood_from_the_arbor", HiltwoodFromTheArborItem::new);
 	public static final DeferredItem<Item> WAYFAREBLESSING = block(OneiricconceptModBlocks.WAYFAREBLESSING);
+	public static final DeferredItem<Item> HEARTOFTHEVASTSEA = block(OneiricconceptModBlocks.HEARTOFTHEVASTSEA);
 
 	// Start of user code block custom items
 	// End of user code block custom items
