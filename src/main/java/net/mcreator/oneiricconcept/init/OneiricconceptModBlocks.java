@@ -22,6 +22,7 @@ import net.mcreator.oneiricconcept.block.TheAnotherWorldWoodBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldSaplingBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldLogBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldLeaveBlock;
+import net.mcreator.oneiricconcept.block.TexturewayfareblessingBlock;
 import net.mcreator.oneiricconcept.block.TNTDispenserBlock;
 import net.mcreator.oneiricconcept.block.SustenanceanchoroffBlock;
 import net.mcreator.oneiricconcept.block.SustenanceanchorBlock;
@@ -371,6 +372,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> PRIMOGEMFRUITBLOCK = REGISTRY.register("primogemfruitblock", PrimogemfruitblockBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_SAPLING = REGISTRY.register("ambrosial_arbor_sapling", AmbrosialArborSaplingBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_PLANK = REGISTRY.register("ambrosial_arbor_plank", AmbrosialArborPlankBlock::new);
+	public static final DeferredBlock<Block> WAYFAREBLESSING = REGISTRY.register("wayfareblessing", TexturewayfareblessingBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

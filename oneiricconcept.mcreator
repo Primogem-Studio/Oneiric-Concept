@@ -9054,6 +9054,23 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Texturewayfareblessing",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wayfareblessing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/wayfareblessing.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/wayfareblessing.json",
+          "src/main/resources/assets/oneiricconcept/models/block/wayfareblessing.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/TexturewayfareblessingBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/wayfareblessing.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [],
@@ -9402,6 +9419,7 @@
       "CUSTOM:MoraMagazineE1"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Texturewayfareblessing",
       "~CUSTOM:NagadusEmeraldOre",
       "~CUSTOM:BananaMushroomBock",
       "~CUSTOM:BoomBlossomsPyro"
@@ -9671,7 +9689,8 @@
       "AmbrosialArborSapling",
       "AmbrosialArborPlank",
       "IgnisAureliae",
-      "HiltwoodFromTheArbor"
+      "HiltwoodFromTheArbor",
+      "Texturewayfareblessing"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -9870,6 +9889,7 @@
       "painting.oneiricconcept.sliver_wolf.title": "Sliver Wolf",
       "block.oneiricconcept.newmo_8": "crescent ingot",
       "block.oneiricconcept.newmo_7": "crescent ingot",
+      "block.oneiricconcept.wayfareblessing": "Wayfare blessing",
       "block.oneiricconcept.propaganda_army_block": "Propaganda Army Server",
       "block.oneiricconcept.newmo_9": "crescent ingot",
       "block.oneiricconcept.newmo_4": "crescent ingot",
@@ -10192,6 +10212,7 @@
       "painting.oneiricconcept.sliver_wolf.title": "银狼",
       "block.oneiricconcept.newmo_8": "新月锭",
       "block.oneiricconcept.newmo_7": "新月锭",
+      "block.oneiricconcept.wayfareblessing": "Wayfare blessing",
       "block.oneiricconcept.propaganda_army_block": "水军服务器",
       "block.oneiricconcept.newmo_9": "新月锭",
       "block.oneiricconcept.newmo_4": "新月锭",
