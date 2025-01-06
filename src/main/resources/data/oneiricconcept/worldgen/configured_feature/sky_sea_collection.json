@@ -1,9 +1,9 @@
 {
   "type": "oneiricconcept:structure_feature",
   "config": {
-    "structure": "oneiricconcept:cloudmemry",
+    "structure": "oneiricconcept:sky_sea_treasure",
     "random_rotation": true,
     "random_mirror": true,
-    "ignored_blocks": "minecraft:bedrock"
+    "ignored_blocks": "minecraft:air"
   }
 }
