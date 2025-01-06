@@ -30,10 +30,10 @@ public class GCWProcedure {
 		if (entity == null)
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCINITIALLOAD) && ModList.get().isLoaded("genshincraft")) {
-			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER).set(3, world.getServer());
+			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER).set((int) 3.2, world.getServer());
 			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER).set(32, world.getServer());
 		} else if (!world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCINITIALLOAD)
-				&& ((world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)) < 3 || (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) < 32)
+				&& ((world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)) < 3.2 || (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) < 32)
 				&& ModList.get().isLoaded("genshincraft")) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.Configurationreminder").getString())), false);

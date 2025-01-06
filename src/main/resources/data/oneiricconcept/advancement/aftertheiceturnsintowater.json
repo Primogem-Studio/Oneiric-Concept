@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:heartofthefrozensea"
+    },
+    "title": {
+      "translate": "advancements.aftertheiceturnsintowater.title"
+    },
+    "description": {
+      "translate": "advancements.aftertheiceturnsintowater.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "aftertheiceturnsintowater_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oneiricconcept:heartofthefrozensea"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "oneiricconcept:oneiric_concept_advancement"
+}
