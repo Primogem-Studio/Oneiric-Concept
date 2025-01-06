@@ -9073,58 +9073,6 @@
       "path": "~/block"
     },
     {
-      "name": "Setwater",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "setwater",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/SetwaterProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "Heartofthevastsea",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heartofthevastsea",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/heartofthevastsea.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/HeartofthevastseaBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/heartofthevastsea.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/heartofthevastsea.json"
-        ]
-      },
-      "path": "~/block"
-    },
-    {
       "name": "Ocinitialload",
       "type": "gamerule",
       "compiles": true,
@@ -9218,6 +9166,94 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/item/HeartofthewarmseaItem.java",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthewarmsea.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Waterplace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waterplace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WaterplaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Blockplace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blockplace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BlockplaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "placeblock",
+            "type": "blockstate"
+          },
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Heartofthevastsea",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartofthevastsea",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java"
         ]
       },
       "path": "~/item"
@@ -9582,6 +9618,12 @@
       "CUSTOM:MemoriaLoot",
       "CUSTOM:SmallHertaCore"
     ],
+    "ITEMS:c:heart_of_the_sea": [
+      "CUSTOM:Heartofthefrozensea",
+      "CUSTOM:Heartoftheskysea",
+      "CUSTOM:Heartofthewarmsea",
+      "CUSTOM:Heartofthevastsea"
+    ],
     "ITEMS:mod:magazine3": [
       "CUSTOM:MoraMagazineN3",
       "CUSTOM:MoraMagazineE3"
@@ -9841,10 +9883,10 @@
       "IgnisAureliae",
       "HiltwoodFromTheArbor",
       "Texturewayfareblessing",
-      "Heartofthevastsea",
       "Heartofthefrozensea",
       "Heartoftheskysea",
-      "Heartofthewarmsea"
+      "Heartofthewarmsea",
+      "Heartofthevastsea"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -10060,6 +10102,7 @@
       "block.oneiricconcept.newmo_1": "crescent ingot",
       "block.oneiricconcept.the_another_world_leave": "The Another World Leave",
       "item.oneiricconcept.oy_stuffing.description_0": "§7Right... right?",
+      "item.oneiricconcept.heartofthevastsea": "Heart of the vast sea",
       "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
       "item.oneiricconcept.heartofthewarmsea": "Heart of the warm sea",
       "block.oneiricconcept.varunada_lazurite_ore": "Varunada Lazurite Ore",
@@ -10178,7 +10221,6 @@
       "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
       "advancements.railgun.descr": "Although but,_ _,_ _ _ _ _ _ _ _?",
       "block.oneiricconcept.hydro_10": "Varunada_metal_ingot",
-      "block.oneiricconcept.heartofthevastsea": "Heart of the vast sea",
       "block.oneiricconcept.boom_blossoms_pyro": "Boom Blossoms Pyro",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
@@ -10394,6 +10436,7 @@
       "block.oneiricconcept.newmo_1": "新月锭",
       "block.oneiricconcept.the_another_world_leave": "异世界树叶",
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
+      "item.oneiricconcept.heartofthevastsea": "Heart of the vast sea",
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
       "item.oneiricconcept.heartofthewarmsea": "Heart of the warm sea",
       "block.oneiricconcept.varunada_lazurite_ore": "涤净青金矿石",
@@ -10512,7 +10555,6 @@
       "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",
       "advancements.railgun.descr": "虽然但是，_ _，_ _ _ _ _ _ _ _？",
       "block.oneiricconcept.hydro_10": "正义金属锭",
-      "block.oneiricconcept.heartofthevastsea": "博洋之心",
       "block.oneiricconcept.boom_blossoms_pyro": "火焰爆爆瓜",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "block.oneiricconcept.the_another_world_log": "异世界原木",

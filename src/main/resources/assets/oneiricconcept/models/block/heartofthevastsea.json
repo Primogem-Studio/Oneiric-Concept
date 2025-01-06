@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/memoria_still",
-    "particle": "oneiricconcept:block/memoria_still"
-  },
-  "render_type": "solid"
-}

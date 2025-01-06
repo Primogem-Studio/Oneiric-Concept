@@ -2,6 +2,5 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "oneiricconcept:item/heart_of_the_vast_sea"
-  },
-  "render_type": "translucent"
+  }
 }
