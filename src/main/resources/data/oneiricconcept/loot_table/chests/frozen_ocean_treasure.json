@@ -177,7 +177,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:snowball",
           "weight": 188,
           "functions": [
             {

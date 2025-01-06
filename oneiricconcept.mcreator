@@ -9342,6 +9342,54 @@
         ]
       },
       "path": "~/chestloot"
+    },
+    {
+      "name": "FrozenSeaCollection",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_sea_collection",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/frozen_sea_collection.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/frozen_sea_collection.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/frozen_sea_collection_biome_modifier.json"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "WarmSeaCollection",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warm_sea_collection",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/warm_sea_collection.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/warm_sea_collection_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/warm_sea_collection.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "SkySeaCollection",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_sea_collection",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/sky_sea_collection_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sky_sea_collection.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/sky_sea_collection.json"
+        ]
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [],

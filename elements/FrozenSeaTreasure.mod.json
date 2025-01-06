@@ -176,7 +176,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.PACKED_ICE"
+              "value": "Items.SNOWBALL"
             },
             "weight": 188,
             "minCount": 1,

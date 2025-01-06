@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "deep_frozen_ocean",
+    "frozen_ocean"
+  ],
+  "features": "oneiricconcept:frozen_sea_collection",
+  "step": "fluid_springs"
+}
