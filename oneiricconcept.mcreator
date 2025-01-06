@@ -1689,7 +1689,8 @@
         "files": [
           "src/main/resources/data/oneiricconcept/loot_table/chests/big_stone_loot.json"
         ]
-      }
+      },
+      "path": "~/chestloot"
     },
     {
       "name": "B2igStone",
@@ -9302,6 +9303,45 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "WarmSeaTreasure",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warm_sea_treasure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/chests/warm_sea_treasure.json"
+        ]
+      },
+      "path": "~/chestloot"
+    },
+    {
+      "name": "Frozensealoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "frozensealoot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/frozensealoot.json"
+        ]
+      },
+      "path": "~/chestloot"
+    },
+    {
+      "name": "Skysealoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skysealoot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/skysealoot.json"
+        ]
+      },
+      "path": "~/chestloot"
     }
   ],
   "variable_elements": [],
@@ -10770,6 +10810,10 @@
             ]
           }
         ]
+      },
+      {
+        "name": "chestloot",
+        "children": []
       }
     ]
   },
