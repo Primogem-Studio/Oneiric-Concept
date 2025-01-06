@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "initial load",
+    "description": "Set game rules as default when entering the world",
+    "category": "MISC",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

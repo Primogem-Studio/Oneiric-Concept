@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.neoforged.fml.ModList;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -16,6 +14,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
 public class SustenanceanchorHealthProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -39,11 +39,7 @@ public class SustenanceanchorHealthProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "healthreserve");
-		if (ModList.get().isLoaded("genshincraft")) {
-			Magnification = 32;
-		} else {
-			Magnification = 1;
-		}
+		Magnification = (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER));
 		if (health / maxhealth < 0.35) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth((float) (0.35 * maxhealth));

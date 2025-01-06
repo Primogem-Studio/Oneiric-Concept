@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Damage multiplier",
+    "description": "Control the multiplier of partial damage",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 1
+  }
+}
