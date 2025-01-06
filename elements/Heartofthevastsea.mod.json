@@ -39,6 +39,9 @@
     "onRightClickedOnBlock": {
       "name": "Waterplace"
     },
+    "onItemInInventoryTick": {
+      "name": "Curiovastsea"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

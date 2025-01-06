@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a b",
+    " c ",
+    "d e"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:heartoftheskysea"
+    },
+    "b": {
+      "item": "oneiricconcept:heartofthefrozensea"
+    },
+    "c": {
+      "item": "oneiricconcept:honkai_sliver"
+    },
+    "d": {
+      "item": "oneiricconcept:heartofthewarmsea"
+    },
+    "e": {
+      "item": "minecraft:heart_of_the_sea"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:heartofthevastsea",
+    "count": 1
+  }
+}

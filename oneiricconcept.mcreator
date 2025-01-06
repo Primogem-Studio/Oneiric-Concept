@@ -9257,6 +9257,38 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "Curiovastsea",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curiovastsea",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CuriovastseaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Vastsea1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vastsea_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/vastsea_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -9426,6 +9458,17 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -9437,17 +9480,6 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
@@ -9796,6 +9828,9 @@
       "~CUSTOM:SmokeSausage",
       "~CUSTOM:Sausage"
     ],
+    "ITEMS:c:curio": [
+      "CUSTOM:Heartofthevastsea"
+    ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:AmbrosialArborPlank"
     ],
@@ -9947,8 +9982,8 @@
       "block.oneiricconcept.anemo_sealingwax": "Anemo sealing wax",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "Waffle",
-      "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
+      "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "block.oneiricconcept.pyrosealingwax": "Pyro sealing wax",
       "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
@@ -10281,8 +10316,8 @@
       "block.oneiricconcept.anemo_sealingwax": "风之印",
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.waffle": "华夫饼",
-      "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
+      "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.pyrosealingwax": "火之印",
       "block.oneiricconcept.ambrosial_arbor_log": "建木原木",
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",

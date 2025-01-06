@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Heartoftheskysea"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Heartofthefrozensea"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Heartofthewarmsea"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.HEART_OF_THE_SEA"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Heartofthevastsea"
+    },
+    "name": "vastsea_1",
+    "namespace": "mod"
+  }
+}
