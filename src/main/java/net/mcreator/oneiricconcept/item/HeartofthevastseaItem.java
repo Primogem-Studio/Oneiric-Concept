@@ -14,7 +14,7 @@ import net.mcreator.oneiricconcept.procedures.CuriovastseaProcedure;
 
 public class HeartofthevastseaItem extends Item {
 	public HeartofthevastseaItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

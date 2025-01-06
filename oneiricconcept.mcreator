@@ -9289,6 +9289,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Heartsea1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartsea_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/heartsea_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
