@@ -36,6 +36,12 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Heartice"
+    },
+    "onItemInInventoryTick": {
+      "name": "Frozenheart"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
