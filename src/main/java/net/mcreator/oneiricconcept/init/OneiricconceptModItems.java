@@ -60,6 +60,8 @@ import net.mcreator.oneiricconcept.item.IgnisAureliaeItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
 import net.mcreator.oneiricconcept.item.HonkaiShardItem;
 import net.mcreator.oneiricconcept.item.HiltwoodFromTheArborItem;
+import net.mcreator.oneiricconcept.item.HeartoftheskyseaItem;
+import net.mcreator.oneiricconcept.item.HeartofthefrozenseaItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
@@ -327,6 +329,9 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> HILTWOOD_FROM_THE_ARBOR = REGISTRY.register("hiltwood_from_the_arbor", HiltwoodFromTheArborItem::new);
 	public static final DeferredItem<Item> WAYFAREBLESSING = block(OneiricconceptModBlocks.WAYFAREBLESSING);
 	public static final DeferredItem<Item> HEARTOFTHEVASTSEA = block(OneiricconceptModBlocks.HEARTOFTHEVASTSEA);
+	public static final DeferredItem<Item> HEARTOFTHEFROZENSEA = REGISTRY.register("heartofthefrozensea", HeartofthefrozenseaItem::new);
+	public static final DeferredItem<Item> HEARTOFTHESKYSEA = REGISTRY.register("heartoftheskysea", HeartoftheskyseaItem::new);
+	public static final DeferredItem<Item> HEARTOFTHEWARMSEA = REGISTRY.register("heartofthewarmsea", HeartofthewarmseaItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

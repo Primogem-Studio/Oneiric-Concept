@@ -98,6 +98,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.HILTWOOD_FROM_THE_ARBOR.get());
 				tabData.accept(OneiricconceptModBlocks.WAYFAREBLESSING.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HEARTOFTHEVASTSEA.get().asItem());
+				tabData.accept(OneiricconceptModItems.HEARTOFTHEFROZENSEA.get());
+				tabData.accept(OneiricconceptModItems.HEARTOFTHESKYSEA.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
