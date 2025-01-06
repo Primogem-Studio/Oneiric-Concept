@@ -9318,27 +9318,27 @@
       "path": "~/chestloot"
     },
     {
-      "name": "Frozensealoot",
+      "name": "FrozenSeaTreasure",
       "type": "loottable",
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "frozensealoot",
+      "locked_code": false,
+      "registry_name": "frozen_sea_treasure",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/frozensealoot.json"
+          "src/main/resources/data/oneiricconcept/loot_table/chests/frozen_ocean_treasure.json"
         ]
       },
       "path": "~/chestloot"
     },
     {
-      "name": "Skysealoot",
+      "name": "SkySeaTreasure",
       "type": "loottable",
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "skysealoot",
+      "locked_code": false,
+      "registry_name": "sky_sea_treasure",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/skysealoot.json"
+          "src/main/resources/data/oneiricconcept/loot_table/chests/sky_sea_treasure.json"
         ]
       },
       "path": "~/chestloot"

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:heartoftheskysea",
+          "name": "oneiricconcept:heartofthefrozensea",
           "weight": 1,
           "functions": [
             {
@@ -81,7 +81,7 @@
       },
       "bonus_rolls": {
         "min": 1,
-        "max": 3
+        "max": 5
       },
       "entries": [
         {
@@ -130,8 +130,25 @@
     },
     {
       "rolls": 2,
-      "bonus_rolls": 2,
+      "bonus_rolls": {
+        "min": 1,
+        "max": 5
+      },
       "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_cod",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
         {
           "type": "minecraft:item",
           "name": "minecraft:cooked_salmon",
@@ -140,21 +157,7 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "oneiricconcept:sky_waffle",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
+                "min": 1,
                 "max": 4
               }
             }
@@ -174,8 +177,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:packed_ice",
           "weight": 188,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "oneiricconcept:honkai_shard",
+          "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -202,8 +219,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:honkai_shard",
-          "weight": 1,
+          "name": "oneiricconcept:memory_bubble",
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -213,23 +230,9 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "oneiricconcept:memory_bubble",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
         }
       ]
     }
   ],
-  "random_sequence": "oneiricconcept:chests/skysealoot"
+  "random_sequence": "oneiricconcept:chests/frozen_ocean_treasure"
 }

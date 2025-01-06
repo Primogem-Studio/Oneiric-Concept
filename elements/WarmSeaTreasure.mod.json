@@ -176,7 +176,7 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.AIR"
+              "value": "Blocks.BRAIN_CORAL"
             },
             "weight": 188,
             "minCount": 1,

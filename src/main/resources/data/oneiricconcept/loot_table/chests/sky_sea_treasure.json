@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:heartofthefrozensea",
+          "name": "oneiricconcept:heartoftheskysea",
           "weight": 1,
           "functions": [
             {
@@ -27,7 +27,7 @@
       },
       "bonus_rolls": {
         "min": 5,
-        "max": 8
+        "max": 7
       },
       "entries": [
         {
@@ -93,7 +93,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 1
               }
             }
           ]
@@ -106,8 +106,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
-                "max": 8
+                "min": 1,
+                "max": 1
               }
             }
           ]
@@ -121,7 +121,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 5
+                "max": 1
               }
             }
           ]
@@ -129,18 +129,21 @@
       ]
     },
     {
-      "rolls": 2,
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
       "bonus_rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cooked_salmon",
+          "name": "oneiricconcept:sky_waffle",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
+                "min": 1,
                 "max": 4
               }
             }
@@ -148,13 +151,13 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:cooked_cod",
+          "name": "oneiricconcept:cloud_bottle",
           "weight": 1,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
+                "min": 1,
                 "max": 4
               }
             }
@@ -167,14 +170,11 @@
         "min": 1,
         "max": 5
       },
-      "bonus_rolls": {
-        "min": 1,
-        "max": 5
-      },
+      "bonus_rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "oneiricconcept:cloud",
           "weight": 188,
           "functions": [
             {
@@ -223,7 +223,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 8
+                "max": 1
               }
             }
           ]
@@ -231,5 +231,5 @@
       ]
     }
   ],
-  "random_sequence": "oneiricconcept:chests/frozensealoot"
+  "random_sequence": "oneiricconcept:chests/sky_sea_treasure"
 }

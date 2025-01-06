@@ -174,7 +174,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:brain_coral",
           "weight": 188,
           "functions": [
             {
