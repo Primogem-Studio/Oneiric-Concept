@@ -17,7 +17,7 @@ public class AureliaeShovelItem extends ShovelItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 1164;
+			return 2800;
 		}
 
 		@Override
@@ -47,6 +47,6 @@ public class AureliaeShovelItem extends ShovelItem {
 	};
 
 	public AureliaeShovelItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 13f, -1f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 13f, -1f)).fireResistant());
 	}
 }

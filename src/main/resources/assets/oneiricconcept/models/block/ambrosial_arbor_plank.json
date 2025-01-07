@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "oneiricconcept:block/ambrosialarborplank",
-    "particle": "oneiricconcept:block/ambrosialarborplank"
+    "all": "oneiricconcept:block/jianmu_muban",
+    "particle": "oneiricconcept:block/jianmu_muban"
   },
   "render_type": "solid"
 }

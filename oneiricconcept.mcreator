@@ -9865,17 +9865,6 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -9887,6 +9876,17 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
@@ -10387,6 +10387,7 @@
       "advancements.railgun.title": "Railgun！",
       "advancements.public_clamor_can_melt_metals.title": "Public Clamor Can Melt Metals",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
+      "translation.oneiricconcept.tip": "Visit MCMOD.cn for detailed product introduction and usage instructions",
       "block.oneiricconcept.camera": "Camera",
       "block.oneiricconcept.propaganda_army_block.description_0": "§7Fully automatic!",
       "block.oneiricconcept.anemo_sealingwax": "Anemo sealing wax",
@@ -10609,7 +10610,7 @@
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "After the ice turns into water……",
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine♦",
       "item.oneiricconcept.mora_magazine_e_2": "Extended Mora Magazine♦♦",
-      "item.oneiricconcept.molten_metal": "MoltenMetal",
+      "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "block.oneiricconcept.shivada_jade_ore": "Shivada Jade Ore",
       "block.oneiricconcept.mm_mushroom": "Mm Mushroom",
       "painting.oneiricconcept.mimo.author": "xyz",
@@ -10727,6 +10728,7 @@
       "advancements.railgun.title": "超电磁炮！",
       "advancements.public_clamor_can_melt_metals.title": "众口铄金",
       "item.oneiricconcept.oy_dumpling": "饺子",
+      "translation.oneiricconcept.tip": "访问mcmod.cn获得详细物品介绍和使用方法",
       "block.oneiricconcept.camera": "照相机",
       "block.oneiricconcept.propaganda_army_block.description_0": "§7全自动！",
       "block.oneiricconcept.anemo_sealingwax": "风之印",

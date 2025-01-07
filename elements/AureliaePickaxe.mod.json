@@ -5,7 +5,7 @@
     "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "shuojingao",
+    "texture": "aureliaepickaxe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Aureliae Pickaxe",
@@ -21,7 +21,7 @@
     "attackSpeed": 4.0,
     "enchantability": 42,
     "damageVsEntity": 12.0,
-    "usageCount": 1164,
+    "usageCount": 2800,
     "glowCondition": {
       "fixedValue": false
     },
@@ -30,7 +30,7 @@
         "value": "CUSTOM:IgnisAureliae"
       }
     ],
-    "immuneToFire": false,
+    "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,

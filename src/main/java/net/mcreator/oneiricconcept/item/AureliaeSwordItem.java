@@ -18,7 +18,7 @@ public class AureliaeSwordItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 1164;
+			return 2800;
 		}
 
 		@Override
@@ -48,7 +48,7 @@ public class AureliaeSwordItem extends SwordItem {
 	};
 
 	public AureliaeSwordItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 17f, 1f)));
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 17f, 1f)).fireResistant());
 	}
 
 	@Override

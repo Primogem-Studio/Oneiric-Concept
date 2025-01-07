@@ -5,7 +5,7 @@
     "toolType": "Hoe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "aureliae_hoe",
+    "texture": "aureliaehoe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Aureliae Hoe",
@@ -21,7 +21,7 @@
     "attackSpeed": 9.0,
     "enchantability": 42,
     "damageVsEntity": 3.0,
-    "usageCount": 1164,
+    "usageCount": 2800,
     "glowCondition": {
       "fixedValue": false
     },
@@ -30,7 +30,7 @@
         "value": "CUSTOM:IgnisAureliae"
       }
     ],
-    "immuneToFire": false,
+    "immuneToFire": true,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,

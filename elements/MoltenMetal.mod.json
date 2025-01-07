@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "moltenmetal_gem",
+    "texture": "molten_metal",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "MoltenMetal",
+    "name": "Molten Metal Gem",
     "rarity": "COMMON",
     "creativeTabs": [
       {

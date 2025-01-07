@@ -17,7 +17,7 @@ public class AureliaePickaxeItem extends PickaxeItem {
 	private static final Tier TOOL_TIER = new Tier() {
 		@Override
 		public int getUses() {
-			return 1164;
+			return 2800;
 		}
 
 		@Override
@@ -47,6 +47,6 @@ public class AureliaePickaxeItem extends PickaxeItem {
 	};
 
 	public AureliaePickaxeItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 11f, 0f)));
+		super(TOOL_TIER, new Item.Properties().attributes(DiggerItem.createAttributes(TOOL_TIER, 11f, 0f)).fireResistant());
 	}
 }
