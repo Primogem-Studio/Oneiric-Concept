@@ -16,11 +16,11 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 1,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": ""
+      "value": "Items.HEART_OF_THE_SEA"
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
@@ -36,6 +36,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "Warmheart"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
