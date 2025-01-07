@@ -4,6 +4,7 @@ package net.mcreator.oneiricconcept.item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -17,6 +18,16 @@ import net.mcreator.oneiricconcept.procedures.WarmheartProcedure;
 public class HeartofthewarmseaItem extends Item {
 	public HeartofthewarmseaItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON));
+	}
+
+	@Override
+	public boolean hasCraftingRemainingItem(ItemStack stack) {
+		return true;
+	}
+
+	@Override
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+		return new ItemStack(Items.HEART_OF_THE_SEA);
 	}
 
 	@Override

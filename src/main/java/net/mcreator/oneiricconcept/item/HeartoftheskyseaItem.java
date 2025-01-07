@@ -3,6 +3,7 @@ package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -17,6 +18,16 @@ import net.mcreator.oneiricconcept.procedures.CloudHeartProcedure;
 public class HeartoftheskyseaItem extends Item {
 	public HeartoftheskyseaItem() {
 		super(new Item.Properties().durability(1200).rarity(Rarity.UNCOMMON));
+	}
+
+	@Override
+	public boolean hasCraftingRemainingItem(ItemStack stack) {
+		return true;
+	}
+
+	@Override
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+		return new ItemStack(Items.HEART_OF_THE_SEA);
 	}
 
 	@Override
