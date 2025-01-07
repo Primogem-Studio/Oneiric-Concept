@@ -17,7 +17,7 @@ import net.mcreator.oneiricconcept.procedures.FloatingcloudsdelProcedure;
 
 public class FloatingCloudBlock extends Block {
 	public FloatingCloudBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOL).instabreak().friction(1.3f).speedFactor(2f).jumpFactor(1.5f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOL).instabreak().friction(0.9f).speedFactor(2f).jumpFactor(1.5f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
