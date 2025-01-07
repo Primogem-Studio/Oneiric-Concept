@@ -11,7 +11,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.oneiricconcept.procedures.CloudputProcedure;
 import net.mcreator.oneiricconcept.procedures.CloudheartmodeProcedure;
 import net.mcreator.oneiricconcept.procedures.CloudHeartProcedure;
 
@@ -21,17 +20,16 @@ public class HeartoftheskyseaItem extends Item {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		CloudheartmodeProcedure.execute(world, ar.getObject());
-		return ar;
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
+		return 1;
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		CloudputProcedure.execute(entity.level(), entity);
-		return retval;
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		entity.startUsingItem(hand);
+		CloudheartmodeProcedure.execute(world, ar.getObject());
+		return ar;
 	}
 
 	@Override
