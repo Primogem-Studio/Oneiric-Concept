@@ -77,9 +77,9 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 0.9,
-    "speedFactor": 2.0,
-    "jumpFactor": 1.5,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 2.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -123,6 +123,9 @@
     "fluidRestrictions": [],
     "onTickUpdate": {
       "name": "Floatingcloudsdel"
+    },
+    "onEntityWalksOn": {
+      "name": "FloatingShiftDel"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

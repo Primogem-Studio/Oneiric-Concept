@@ -9,15 +9,17 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.FloatingcloudsdelProcedure;
+import net.mcreator.oneiricconcept.procedures.FloatingShiftDelProcedure;
 
 public class FloatingCloudBlock extends Block {
 	public FloatingCloudBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOL).instabreak().friction(0.9f).speedFactor(2f).jumpFactor(1.5f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOL).instabreak().jumpFactor(2f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
@@ -46,5 +48,11 @@ public class FloatingCloudBlock extends Block {
 		super.tick(blockstate, world, pos, random);
 		FloatingcloudsdelProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 200);
+	}
+
+	@Override
+	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
+		super.stepOn(world, pos, blockstate, entity);
+		FloatingShiftDelProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 }

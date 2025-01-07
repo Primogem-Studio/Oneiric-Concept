@@ -36,14 +36,14 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Cloudheartmode"
+    },
     "onEntityHitWith": {
       "name": "Cloudput"
     },
     "onItemInInventoryTick": {
       "name": "CloudHeart"
-    },
-    "onEntitySwing": {
-      "name": "Cloudheartmode"
     },
     "enableRanged": false,
     "shootConstantly": false,
