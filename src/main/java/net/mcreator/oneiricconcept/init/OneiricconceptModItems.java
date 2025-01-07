@@ -334,6 +334,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> HEARTOFTHESKYSEA = REGISTRY.register("heartoftheskysea", HeartoftheskyseaItem::new);
 	public static final DeferredItem<Item> HEARTOFTHEWARMSEA = REGISTRY.register("heartofthewarmsea", HeartofthewarmseaItem::new);
 	public static final DeferredItem<Item> HEARTOFTHEVASTSEA = REGISTRY.register("heartofthevastsea", HeartofthevastseaItem::new);
+	public static final DeferredItem<Item> FLOATING_CLOUD = block(OneiricconceptModBlocks.FLOATING_CLOUD);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -15,10 +15,10 @@ public class HearticeProcedure {
 		if ((itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("ice")).equals("minecraft:frosted_ice")) {
 			{
 				final String _tagName = "ice";
-				final String _tagValue = "minecraft:ice";
+				final String _tagValue = "minecraft:blue_ice";
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putString(_tagName, _tagValue));
 			}
-			name = Component.translatable("item.oneiricconcept.heartofthefrozensea").getString() + "\uFF08" + Component.translatable("block.minecraft.ice").getString() + "\uFF09";
+			name = Component.translatable("item.oneiricconcept.heartofthefrozensea").getString() + "\uFF08" + Component.translatable("block.minecraft.blue_ice").getString() + "\uFF09";
 		} else {
 			{
 				final String _tagName = "ice";

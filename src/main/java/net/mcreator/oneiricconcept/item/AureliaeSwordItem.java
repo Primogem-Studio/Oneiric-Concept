@@ -54,7 +54,7 @@ public class AureliaeSwordItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		IgnisAureliaeSwordProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		IgnisAureliaeSwordProcedure.execute(entity);
 		return retval;
 	}
 }

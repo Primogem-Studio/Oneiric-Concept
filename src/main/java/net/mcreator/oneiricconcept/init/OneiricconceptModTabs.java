@@ -101,6 +101,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.HEARTOFTHESKYSEA.get());
 				tabData.accept(OneiricconceptModItems.HEARTOFTHEWARMSEA.get());
 				tabData.accept(OneiricconceptModItems.HEARTOFTHEVASTSEA.get());
+				tabData.accept(OneiricconceptModBlocks.FLOATING_CLOUD.get().asItem());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {

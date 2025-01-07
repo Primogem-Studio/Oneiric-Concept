@@ -18,7 +18,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 1200,
     "recipeRemainder": {
       "value": ""
     },
@@ -36,6 +36,15 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "Cloudput"
+    },
+    "onItemInInventoryTick": {
+      "name": "CloudHeart"
+    },
+    "onEntitySwing": {
+      "name": "Cloudheartmode"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

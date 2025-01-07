@@ -26,11 +26,12 @@ public class FrozenheartProcedure {
 			y1 = ent.getY();
 			z1 = ent.getZ();
 		} else {
+			ent = entity;
 			x1 = x;
 			y1 = y;
 			z1 = z;
 		}
-		if (!entity.isInWaterOrBubble() && entity.onGround()) {
+		if (!ent.isInWaterOrBubble() && ent.onGround()) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x1, y1, z1), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						("fill ~-3 ~-1 ~-3 ~3 ~-1 ~3 " + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("ice") + " replace minecraft:water"));
