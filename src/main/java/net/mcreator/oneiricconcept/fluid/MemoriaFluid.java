@@ -6,8 +6,12 @@ import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.MemoriaAndwaterProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModFluids;
 import net.mcreator.oneiricconcept.init.OneiricconceptModFluidTypes;
@@ -19,6 +23,11 @@ public abstract class MemoriaFluid extends BaseFlowingFluid {
 
 	private MemoriaFluid() {
 		super(PROPERTIES);
+	}
+
+	@Override
+	protected void beforeDestroyingBlock(LevelAccessor world, BlockPos pos, BlockState blockstate) {
+		MemoriaAndwaterProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	public static class Source extends MemoriaFluid {
