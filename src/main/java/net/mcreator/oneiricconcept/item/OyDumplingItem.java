@@ -17,13 +17,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.oneiricconcept.procedures.ZiRanLoseProcedure;
+import net.mcreator.oneiricconcept.procedures.OyProcedure;
 
 import java.util.List;
 
 public class OyDumplingItem extends Item {
 	public OyDumplingItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationModifier(0.5f).alwaysEdible().build())
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.5f).alwaysEdible().build())
 				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
 	}
@@ -41,7 +41,7 @@ public class OyDumplingItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		ZiRanLoseProcedure.execute(entity);
+		OyProcedure.execute(entity, itemstack);
 		return retval;
 	}
 }

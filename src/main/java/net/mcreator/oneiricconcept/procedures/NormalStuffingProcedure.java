@@ -6,6 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -15,6 +16,7 @@ import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
@@ -39,8 +41,13 @@ public class NormalStuffingProcedure {
 		Entity e1 = null;
 		ItemStack i1 = ItemStack.EMPTY;
 		if (entity instanceof Player) {
+			{
+				final String _tagName = "tagName";
+				final String _tagValue = (entity.getDisplayName().getString());
+				CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putString(_tagName, _tagValue));
+			}
 			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sweetsesamefillingyuanxiao",
+    "texture": "grilleddumpling",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Sweet Sesame Filling Yuan Xiao",
+    "name": "GrilledDumpling",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -29,9 +29,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [
-        "§7Big sugar meatballs"
-      ]
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
@@ -46,13 +44,13 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 10,
-    "saturation": 0.6,
+    "nutritionalValue": 12,
+    "saturation": 0.7,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
-    "isAlwaysEdible": false,
+    "isMeat": true,
+    "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
     "musicDiscMusic": {

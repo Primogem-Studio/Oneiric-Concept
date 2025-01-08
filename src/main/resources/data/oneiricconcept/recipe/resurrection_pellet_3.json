@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:sky_waffle"
+    },
+    "b": {
+      "item": "oneiricconcept:primogem_waffle"
+    },
+    "c": {
+      "item": "oneiricconcept:grilled_oy_dumpling"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:resurrection_pellet",
+    "count": 1
+  }
+}

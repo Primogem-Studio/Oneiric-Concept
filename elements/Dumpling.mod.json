@@ -44,15 +44,19 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 12,
+    "nutritionalValue": 6,
     "saturation": 0.6,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": true,
-    "isAlwaysEdible": true,
+    "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

@@ -1,19 +1,15 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    {
-      "item": "minecraft:wheat"
-    },
-    {
-      "item": "oneiricconcept:oy_stuffing"
-    },
-    {
-      "item": "minecraft:wheat"
-    }
-  ],
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:wheat"
+  },
+  "base": {
+    "item": "oneiricconcept:oy_stuffing"
+  },
+  "addition": {
+    "item": "minecraft:wheat"
+  },
   "result": {
-    "id": "oneiricconcept:oy_dumpling",
-    "count": 4
+    "id": "oneiricconcept:oy_dumpling"
   }
 }

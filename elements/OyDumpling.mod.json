@@ -39,7 +39,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
-      "name": "ZiRanLose"
+      "name": "Oy"
     },
     "enableRanged": false,
     "shootConstantly": false,
@@ -49,7 +49,7 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 8,
+    "nutritionalValue": 4,
     "saturation": 0.5,
     "eatResultItem": {
       "value": ""

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:grilled_dumpling",
+    "oneiricconcept:grilled_oy_dumpling",
     "oneiricconcept:oy_stuffing",
     "oneiricconcept:dumpling",
     "oneiricconcept:oy_dumpling",

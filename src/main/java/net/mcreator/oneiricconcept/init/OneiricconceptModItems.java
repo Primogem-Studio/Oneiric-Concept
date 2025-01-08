@@ -68,6 +68,8 @@ import net.mcreator.oneiricconcept.item.HeartofthewarmseaItem;
 import net.mcreator.oneiricconcept.item.HeartofthevastseaItem;
 import net.mcreator.oneiricconcept.item.HeartoftheskyseaItem;
 import net.mcreator.oneiricconcept.item.HeartofthefrozenseaItem;
+import net.mcreator.oneiricconcept.item.GrilledOyDumplingItem;
+import net.mcreator.oneiricconcept.item.GrilledDumplingItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
@@ -343,6 +345,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> MILK = REGISTRY.register("milk", MilkItem::new);
 	public static final DeferredItem<Item> RED_BEAN_SOUP_FILLING_YUAN_XIAO = REGISTRY.register("red_bean_soup_filling_yuan_xiao", RedBeanSoupFillingYuanXiaoItem::new);
 	public static final DeferredItem<Item> SWEET_SESAME_FILLING_YUAN_XIAO = REGISTRY.register("sweet_sesame_filling_yuan_xiao", SweetSesameFillingYuanXiaoItem::new);
+	public static final DeferredItem<Item> GRILLED_OY_DUMPLING = REGISTRY.register("grilled_oy_dumpling", GrilledOyDumplingItem::new);
+	public static final DeferredItem<Item> GRILLED_DUMPLING = REGISTRY.register("grilled_dumpling", GrilledDumplingItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
