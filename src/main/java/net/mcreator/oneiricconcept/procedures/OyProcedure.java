@@ -21,7 +21,7 @@ public class OyProcedure {
 				ZiRanLoseProcedure.execute(entity);
 			}
 		}
-		name = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("tagName");
+		name = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("die");
 		if (!(name).isEmpty()) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((name + "" + Component.translatable("translation.oneiricconcept.tastes").getString())), true);

@@ -31,7 +31,8 @@
     "specialInformation": {
       "fixedValue": [
         "§7Right... right?"
-      ]
+      ],
+      "name": "Oyname"
     },
     "glowCondition": {
       "fixedValue": false

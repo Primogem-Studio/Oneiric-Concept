@@ -27,8 +27,8 @@ public class GeomarrowRadiatorProcessProcedure {
 		if (i1.getItem() == OneiricconceptModItems.OY_DUMPLING.get()) {
 			i2 = new ItemStack(OneiricconceptModItems.GRILLED_OY_DUMPLING.get()).copy();
 			{
-				final String _tagName = "tagName";
-				final String _tagValue = (i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("tagName"));
+				final String _tagName = "die";
+				final String _tagValue = (i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("die"));
 				CustomData.update(DataComponents.CUSTOM_DATA, i2, tag -> tag.putString(_tagName, _tagValue));
 			}
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, i2, 1, 1, 2);

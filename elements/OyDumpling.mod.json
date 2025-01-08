@@ -31,7 +31,8 @@
     "specialInformation": {
       "fixedValue": [
         "这啥馅儿啊"
-      ]
+      ],
+      "name": "Oyname"
     },
     "glowCondition": {
       "fixedValue": false

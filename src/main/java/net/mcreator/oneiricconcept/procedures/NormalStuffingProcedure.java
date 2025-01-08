@@ -15,6 +15,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
 
@@ -41,8 +42,11 @@ public class NormalStuffingProcedure {
 		Entity e1 = null;
 		ItemStack i1 = ItemStack.EMPTY;
 		if (entity instanceof Player) {
+			i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get()).copy();
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((entity.getDisplayName().getString())), false);
 			{
-				final String _tagName = "tagName";
+				final String _tagName = "die";
 				final String _tagValue = (entity.getDisplayName().getString());
 				CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putString(_tagName, _tagValue));
 			}

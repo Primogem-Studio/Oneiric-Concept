@@ -9893,6 +9893,26 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Oyname",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oyname",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/OynameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
