@@ -3,10 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "c:b2sausage"
+      "tag": "c:smokesausage"
     },
     {
-      "item": "primogemcraft:yuanshi"
+      "item": "oneiricconcept:pgc_pg1"
+    },
+    {
+      "item": "oneiricconcept:salt_dust"
     }
   ],
   "result": {

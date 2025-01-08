@@ -9,13 +9,16 @@
     "xpReward": 0.0,
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:c:smokesausage"
+        "value": ""
       },
       {
-        "value": "CUSTOM:PgcPg"
+        "value": "CUSTOM:SaltDust"
+      },
+      {
+        "value": ""
       },
       {
         "value": ""
@@ -30,19 +33,16 @@
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.GLASS_BOTTLE"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:PrimogemsSausage"
+      "value": "CUSTOM:Salt"
     },
-    "name": "primogems_sausage_1",
+    "name": "salt_2",
     "namespace": "mod"
   }
 }

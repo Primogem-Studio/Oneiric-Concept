@@ -7,7 +7,7 @@
     "item": "oneiricconcept:oy_stuffing"
   },
   "addition": {
-    "item": "minecraft:wheat"
+    "item": "oneiricconcept:salt"
   },
   "result": {
     "id": "oneiricconcept:oy_dumpling"

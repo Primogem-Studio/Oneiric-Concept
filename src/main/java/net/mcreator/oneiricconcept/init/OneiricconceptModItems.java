@@ -30,6 +30,7 @@ import net.mcreator.oneiricconcept.item.SmallHertaCoreItem;
 import net.mcreator.oneiricconcept.item.SkyWaffleItem;
 import net.mcreator.oneiricconcept.item.SausageItem;
 import net.mcreator.oneiricconcept.item.SaltItem;
+import net.mcreator.oneiricconcept.item.SaltDustItem;
 import net.mcreator.oneiricconcept.item.S2tuffingItem;
 import net.mcreator.oneiricconcept.item.S2mokeSausageItem;
 import net.mcreator.oneiricconcept.item.S2ausageItem;
@@ -347,6 +348,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SWEET_SESAME_FILLING_YUAN_XIAO = REGISTRY.register("sweet_sesame_filling_yuan_xiao", SweetSesameFillingYuanXiaoItem::new);
 	public static final DeferredItem<Item> GRILLED_OY_DUMPLING = REGISTRY.register("grilled_oy_dumpling", GrilledOyDumplingItem::new);
 	public static final DeferredItem<Item> GRILLED_DUMPLING = REGISTRY.register("grilled_dumpling", GrilledDumplingItem::new);
+	public static final DeferredItem<Item> SALT_DUST = REGISTRY.register("salt_dust", SaltDustItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

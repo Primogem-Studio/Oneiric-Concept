@@ -622,7 +622,7 @@
       "name": "PrimogemsSausage1",
       "type": "recipe",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "primogems_sausage_1",
       "metadata": {
         "files": [
@@ -9952,6 +9952,46 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Salt1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/recipe/brewing/Salt1BrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SaltDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/SaltDustItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/salt_dust.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Salt2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/salt_2.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -10121,6 +10161,17 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -10132,17 +10183,6 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
@@ -10615,7 +10655,8 @@
       "RedBeanSoupFillingYuanXiao",
       "SweetSesameFillingYuanXiao",
       "GrilledOyDumpling",
-      "GrilledDumpling"
+      "GrilledDumpling",
+      "SaltDust"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -10713,6 +10754,7 @@
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
+      "item.oneiricconcept.salt_dust": "Salt Dust",
       "block.oneiricconcept.bactus": "Bactus",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Boss Stone Coin Gun Plus",
@@ -11062,6 +11104,7 @@
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
+      "item.oneiricconcept.salt_dust": "Salt Dust",
       "block.oneiricconcept.bactus": "仙帝掌",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "石头老板撒币枪Plus",
@@ -11220,7 +11263,7 @@
       "translation.oneiricconcept.Configurationreminder": "§6[梦华构想]§r生命值和伤害值倍率较低，与原的世界一同加载时可能无法达到预期效果",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.mora_magazine_e_3": "摩拉扩容弹匣♦♦♦",
-      "item.oneiricconcept.salt": "Salt",
+      "item.oneiricconcept.salt": "盐",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
       "advancements.power_of_herrschers.title": "律者之力",
       "item.oneiricconcept.oneiric_shard": "古老梦华",
