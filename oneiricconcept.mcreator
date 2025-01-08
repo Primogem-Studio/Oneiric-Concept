@@ -9696,6 +9696,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "EventHandler",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "event_handler",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/EventHandler.java"
+        ]
+      },
+      "path": "~/custom"
     }
   ],
   "variable_elements": [],
@@ -11184,6 +11197,10 @@
       },
       {
         "name": "chestloot",
+        "children": []
+      },
+      {
+        "name": "custom",
         "children": []
       }
     ]

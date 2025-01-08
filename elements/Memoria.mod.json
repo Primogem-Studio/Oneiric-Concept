@@ -50,9 +50,6 @@
     "tickRate": 0,
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "colorOnMap": "DIAMOND",
-    "beforeReplacingBlock": {
-      "name": "MemoriaAndwater"
-    }
+    "colorOnMap": "DIAMOND"
   }
 }
