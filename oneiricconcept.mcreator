@@ -9709,6 +9709,62 @@
         ]
       },
       "path": "~/custom"
+    },
+    {
+      "name": "Salt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/SaltItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/salt.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Milk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "milk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/MilkItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/milk.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "RedBeanSoupFillingYuanXiao",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_bean_soup_filling_yuan_xiao",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/RedBeanSoupFillingYuanXiaoItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/red_bean_soup_filling_yuan_xiao.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "SweetSesameFillingYuanXiao",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_sesame_filling_yuan_xiao",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/sweet_sesame_filling_yuan_xiao.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SweetSesameFillingYuanXiaoItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
     }
   ],
   "variable_elements": [],
@@ -9878,17 +9934,6 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -9900,6 +9945,17 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
@@ -10344,7 +10400,9 @@
       "Heartoftheskysea",
       "Heartofthewarmsea",
       "Heartofthevastsea",
-      "FloatingCloud"
+      "FloatingCloud",
+      "Salt",
+      "Milk"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -10364,7 +10422,9 @@
       "PrimogemWaffle",
       "SkyWaffle",
       "ResurrectionPellet",
-      "Primogemfruit"
+      "Primogemfruit",
+      "RedBeanSoupFillingYuanXiao",
+      "SweetSesameFillingYuanXiao"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -10450,6 +10510,7 @@
       "gamerule.ocinitialload": "initial load",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "translation.oneiricconcept.sustenance": "§aEmergency treatment has been carried out|§r|",
+      "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "Sweet Sesame Filling Yuan Xiao",
       "block.oneiricconcept.elements_crystal_ore": "Elements Crystal Ore",
       "block.oneiricconcept.anemo_10": "Vayuda_metal_ingot",
       "block.oneiricconcept.big_stone": "Big Stone",
@@ -10604,6 +10665,7 @@
       "block.oneiricconcept.vayuda_turquoise_ore": "Vayuda Turquoise Ore",
       "item.oneiricconcept.public_clamor": "Public Clamor",
       "block.oneiricconcept.ractus": "Ractus",
+      "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
       "item.oneiricconcept.sustenanceanchoritem": "Sustenanceanchor",
       "entity.oneiricconcept.crystal_turtle": "Crystal Turtle",
       "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
@@ -10616,6 +10678,7 @@
       "translation.oneiricconcept.Configurationreminder": "§6[oneiricconcept]§rThe multiplier of health and damage values is low, and it may not achieve the expected effect when loaded together with Genshin Craft",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.mora_magazine_e_3": "Extended Mora Magazine♦♦♦",
+      "item.oneiricconcept.salt": "Salt",
       "item.oneiricconcept.surpriseboxforgoodorbad": "Surprise Box,for Good or Bad",
       "advancements.power_of_herrschers.title": "Power Of Herrschers",
       "item.oneiricconcept.oneiric_shard": "Oneiric Shard",
@@ -10668,6 +10731,7 @@
       "block.oneiricconcept.anemo_5": "Vayuda_metal_ingot",
       "block.oneiricconcept.anemo_6": "Vayuda_metal_ingot",
       "block.oneiricconcept.anemo_3": "Vayuda_metal_ingot",
+      "item.oneiricconcept.milk": "Milk",
       "block.oneiricconcept.anemo_4": "Vayuda_metal_ingot",
       "block.oneiricconcept.anemo_9": "Vayuda_metal_ingot",
       "block.oneiricconcept.anemo_7": "Vayuda_metal_ingot",
@@ -10791,6 +10855,7 @@
       "gamerule.ocinitialload": "初次加载",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "translation.oneiricconcept.sustenance": "§a已进行应急治疗|§r|",
+      "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
       "block.oneiricconcept.elements_crystal_ore": "元素晶体矿石",
       "block.oneiricconcept.anemo_10": "自在金属锭",
       "block.oneiricconcept.big_stone": "大石头",
@@ -10945,6 +11010,7 @@
       "block.oneiricconcept.vayuda_turquoise_ore": "自在松石矿石",
       "item.oneiricconcept.public_clamor": "众口",
       "block.oneiricconcept.ractus": "仙术掌",
+      "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
       "entity.oneiricconcept.crystal_turtle": "水晶龟",
       "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
@@ -10957,6 +11023,7 @@
       "translation.oneiricconcept.Configurationreminder": "§6[梦华构想]§r生命值和伤害值倍率较低，与原的世界一同加载时可能无法达到预期效果",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.mora_magazine_e_3": "摩拉扩容弹匣♦♦♦",
+      "item.oneiricconcept.salt": "Salt",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
       "advancements.power_of_herrschers.title": "律者之力",
       "item.oneiricconcept.oneiric_shard": "古老梦华",
@@ -11009,6 +11076,7 @@
       "block.oneiricconcept.anemo_5": "自在金属锭",
       "block.oneiricconcept.anemo_6": "自在金属锭",
       "block.oneiricconcept.anemo_3": "自在金属锭",
+      "item.oneiricconcept.milk": "Salt",
       "block.oneiricconcept.anemo_4": "自在金属锭",
       "block.oneiricconcept.anemo_9": "自在金属锭",
       "block.oneiricconcept.anemo_7": "自在金属锭",

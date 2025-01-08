@@ -20,6 +20,7 @@ import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
 import net.mcreator.oneiricconcept.item.SwordOfBrilliantValorItem;
+import net.mcreator.oneiricconcept.item.SweetSesameFillingYuanXiaoItem;
 import net.mcreator.oneiricconcept.item.SustenanceanchoritemItem;
 import net.mcreator.oneiricconcept.item.SurpriseboxforgoodorbadItem;
 import net.mcreator.oneiricconcept.item.SunStartCanItem;
@@ -28,10 +29,12 @@ import net.mcreator.oneiricconcept.item.SmokeSausageItem;
 import net.mcreator.oneiricconcept.item.SmallHertaCoreItem;
 import net.mcreator.oneiricconcept.item.SkyWaffleItem;
 import net.mcreator.oneiricconcept.item.SausageItem;
+import net.mcreator.oneiricconcept.item.SaltItem;
 import net.mcreator.oneiricconcept.item.S2tuffingItem;
 import net.mcreator.oneiricconcept.item.S2mokeSausageItem;
 import net.mcreator.oneiricconcept.item.S2ausageItem;
 import net.mcreator.oneiricconcept.item.ResurrectionPelletItem;
+import net.mcreator.oneiricconcept.item.RedBeanSoupFillingYuanXiaoItem;
 import net.mcreator.oneiricconcept.item.PublicClamorItem;
 import net.mcreator.oneiricconcept.item.PropagandaArmyItem;
 import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
@@ -49,6 +52,7 @@ import net.mcreator.oneiricconcept.item.MoraMagazineE2Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineE1Item;
 import net.mcreator.oneiricconcept.item.MoltenMetalItem;
 import net.mcreator.oneiricconcept.item.MmmhitItem;
+import net.mcreator.oneiricconcept.item.MilkItem;
 import net.mcreator.oneiricconcept.item.MemoryBubbleItem;
 import net.mcreator.oneiricconcept.item.MemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.MemoriaLootItem;
@@ -335,6 +339,10 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> HEARTOFTHEWARMSEA = REGISTRY.register("heartofthewarmsea", HeartofthewarmseaItem::new);
 	public static final DeferredItem<Item> HEARTOFTHEVASTSEA = REGISTRY.register("heartofthevastsea", HeartofthevastseaItem::new);
 	public static final DeferredItem<Item> FLOATING_CLOUD = block(OneiricconceptModBlocks.FLOATING_CLOUD);
+	public static final DeferredItem<Item> SALT = REGISTRY.register("salt", SaltItem::new);
+	public static final DeferredItem<Item> MILK = REGISTRY.register("milk", MilkItem::new);
+	public static final DeferredItem<Item> RED_BEAN_SOUP_FILLING_YUAN_XIAO = REGISTRY.register("red_bean_soup_filling_yuan_xiao", RedBeanSoupFillingYuanXiaoItem::new);
+	public static final DeferredItem<Item> SWEET_SESAME_FILLING_YUAN_XIAO = REGISTRY.register("sweet_sesame_filling_yuan_xiao", SweetSesameFillingYuanXiaoItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
