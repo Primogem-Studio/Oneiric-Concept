@@ -9913,6 +9913,45 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "GrilledDumpling1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grilled_dumpling_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/grilled_dumpling_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "GrilledDumpling2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grilled_dumpling_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/grilled_dumpling_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "GrilledDumpling3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grilled_dumpling_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/grilled_dumpling_3.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -10955,7 +10994,7 @@
     },
     "zh_cn": {
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤OY饺子",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "熏肠",

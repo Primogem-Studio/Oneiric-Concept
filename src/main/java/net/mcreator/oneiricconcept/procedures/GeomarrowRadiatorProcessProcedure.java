@@ -32,40 +32,32 @@ public class GeomarrowRadiatorProcessProcedure {
 				CustomData.update(DataComponents.CUSTOM_DATA, i2, tag -> tag.putString(_tagName, _tagValue));
 			}
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, i2, 1, 1, 2);
-			i1.shrink(1);
 		} else if (i1.getItem() == Items.ROTTEN_FLESH) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(Items.LEATHER), 1, 1, 2);
-			i1.shrink(1);
 		}
 		if (i1.getItem() == OneiricconceptModItems.SAUSAGE.get()) {
-			i1.shrink(1);
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get()), 0, 1, 2);
 		} else if (i1.getItem() == Items.WHEAT_SEEDS && i1.getCount() >= 8) {
-			i1.shrink(8);
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.WAFFLE.get()), 0, 1, 2);
+			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(7);
 		} else if (i1.getItem() == OneiricconceptModBlocks.THE_ANOTHER_WORLD_SAPLING.get().asItem()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.PRIMOGEM_WAFFLE.get()), 0, 1, 5);
-			i1.shrink(1);
 		} else if (i1.getItem() == OneiricconceptModBlocks.CLOUD.get().asItem()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.SKY_WAFFLE.get()), 0, 1, 5);
-			i1.shrink(1);
 		} else if (i1.getItem() == OneiricconceptModItems.S_2AUSAGE.get()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.B_2ELOBOG_SAUSAGE.get()), 1, 1, 1);
-			i1.shrink(1);
-		} else if (i1.getItem() == OneiricconceptModItems.PUBLIC_CLAMOR.get()) {
+		} else if (i1.getItem() == OneiricconceptModItems.PUBLIC_CLAMOR.get() && i1.getCount() >= 7) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.OY_STUFFING.get()), 1, 1, 20);
-			i1.shrink(7);
+			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(6);
 		} else if (i1.getItem() == (PotionContents.createItemStack(Items.POTION, Potions.WATER)).getItem()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.SALT.get()), 0, 1, 1);
-			i1.shrink(1);
-		} else if (world instanceof Level _level23 && _level23.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(i1), _level23).isPresent()) {
+		} else if (world instanceof Level _level19 && _level19.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(i1), _level19).isPresent()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity,
 					(world instanceof Level _lvlSmeltResult
 							? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(i1), _lvlSmeltResult).map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy())
 									.orElse(ItemStack.EMPTY)
 							: ItemStack.EMPTY),
 					0, 1, 1);
-			i1.shrink(1);
 		}
 	}
 }
