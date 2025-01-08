@@ -1,0 +1,9 @@
+package net.mcreator.oneiricconcept.procedures;
+
+public class DyzxmsProcedure {
+	public static String execute() {
+		return Diaoyongshift0Procedure
+				.execute("\u00A76\u6301\u7EED\u63D0\u4F9B\u7C7B\u4F3C\u4E8E\u51B0\u971C\u884C\u8005\u7684\u6548\u679C\uFF0C\u5728" + "\n" + "\u00A76\u8F7D\u5177\u6216\u8005\u5750\u9A91\u4E0A\u7684\u65F6\u5019\uFF0C\u51B0\u971C\u884C\u8005\u6548"
+						+ "\n" + "\u00A76\u679C\u5728\u9A91\u4E58\u7684\u5B9E\u4F53\u4E0A\u751F\u6548\uFF0C\u53F3\u952E\u5207\u6362\u51B0" + "\n" + "\u00A76\u5757\u79CD\u7C7B\u3002", "\u8BE6\u60C5");
+	}
+}
