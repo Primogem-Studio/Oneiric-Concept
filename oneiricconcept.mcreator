@@ -9878,6 +9878,17 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -9889,17 +9900,6 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
