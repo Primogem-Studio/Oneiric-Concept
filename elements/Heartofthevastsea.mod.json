@@ -5,8 +5,77 @@
     "renderType": 0,
     "texture": "heart_of_the_vast_sea",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "itemmode": {
+        "name": "Vastmode"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "heart_of_the_vast_sea",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:itemmode",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "heart_of_the_frozen_sea",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:itemmode",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "heart_of_the_sky_sea",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:itemmode",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "heart_of_the_warm_sea",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:itemmode",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      }
+    ],
     "name": "Heart of the vast sea",
     "rarity": "RARE",
     "creativeTabs": [
@@ -37,11 +106,17 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Vastheart2"
+    },
     "onRightClickedOnBlock": {
-      "name": "Waterplace"
+      "name": "Vastheart"
     },
     "onItemInInventoryTick": {
       "name": "Curiovastsea"
+    },
+    "onEntitySwing": {
+      "name": "Modevast"
     },
     "enableRanged": false,
     "shootConstantly": false,

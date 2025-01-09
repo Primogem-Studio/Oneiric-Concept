@@ -9217,7 +9217,11 @@
       "registry_name": "heartofthevastsea",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
           "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java"
         ]
       },
@@ -9237,6 +9241,26 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -10036,6 +10060,119 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Vastheart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vastheart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/VastheartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Vastmode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vastmode",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/VastmodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Modevast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modevast",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ModevastProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Vastheart2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vastheart_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Vastheart2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -10205,6 +10342,17 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -10216,17 +10364,6 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",

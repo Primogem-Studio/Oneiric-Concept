@@ -8,12 +8,20 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.mcreator.oneiricconcept.procedures.VastmodeProcedure;
 import net.mcreator.oneiricconcept.item.XuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.WaffleItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
@@ -358,5 +366,16 @@ public class OneiricconceptModItems {
 
 	private static DeferredItem<Item> doubleBlock(DeferredHolder<Block, Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties()));
+	}
+
+	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ItemsClientSideHandler {
+		@SubscribeEvent
+		@OnlyIn(Dist.CLIENT)
+		public static void clientLoad(FMLClientSetupEvent event) {
+			event.enqueueWork(() -> {
+				ItemProperties.register(HEARTOFTHEVASTSEA.get(), ResourceLocation.parse("oneiricconcept:heartofthevastsea_itemmode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
+			});
+		}
 	}
 }
