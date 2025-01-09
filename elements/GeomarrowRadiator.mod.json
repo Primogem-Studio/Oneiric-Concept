@@ -130,6 +130,12 @@
     "onRightClicked": {
       "name": "GeomarrowRadiatorProcess"
     },
+    "onBlockAdded": {
+      "name": "Waterradiator"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "Waterradiator"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

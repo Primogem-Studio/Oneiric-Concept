@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:salt_dust"
+    },
+    "b": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:salt",
+    "count": 3
+  }
+}

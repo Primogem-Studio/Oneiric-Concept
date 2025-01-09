@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 3,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:SaltDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:SaltDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:SaltDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:SaltDust"
       },
       {
-        "value": "CUSTOM:Salt"
+        "value": "CUSTOM:SaltDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:SaltDust"
       },
       {
-        "value": "Items.WHEAT"
+        "value": "TAG:c:glass_blocks"
       },
       {
-        "value": "CUSTOM:OyStuffing"
+        "value": "TAG:c:glass_blocks"
       },
       {
-        "value": "Items.WHEAT"
+        "value": "TAG:c:glass_blocks"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:OyDumpling"
+      "value": "CUSTOM:Salt"
     },
-    "name": "oy_dumpling_1",
+    "name": "salt_3",
     "namespace": "mod"
   }
 }

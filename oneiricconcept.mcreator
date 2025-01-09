@@ -1770,7 +1770,7 @@
       "name": "OyDumpling1",
       "type": "recipe",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "oy_dumpling_1",
       "metadata": {
         "files": [
@@ -9992,6 +9992,50 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Waterradiator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waterradiator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WaterradiatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Salt3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/salt_3.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -10161,17 +10205,6 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -10183,6 +10216,17 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",

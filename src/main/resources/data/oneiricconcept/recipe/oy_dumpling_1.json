@@ -1,15 +1,24 @@
 {
-  "type": "minecraft:smithing_transform",
-  "template": {
-    "item": "minecraft:wheat"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:salt"
+    },
+    "b": {
+      "item": "minecraft:wheat"
+    },
+    "c": {
+      "item": "oneiricconcept:oy_stuffing"
+    }
   },
-  "base": {
-    "item": "oneiricconcept:oy_stuffing"
-  },
-  "addition": {
-    "item": "oneiricconcept:salt"
-  },
+  "source": "oneiricconcept:oy_stuffing",
   "result": {
-    "id": "oneiricconcept:oy_dumpling"
+    "id": "oneiricconcept:oy_dumpling",
+    "count": 1
   }
 }
