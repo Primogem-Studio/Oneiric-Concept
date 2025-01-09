@@ -22,7 +22,7 @@ public class CloudHeartProcedure {
 		double x1 = 0;
 		double y1 = 0;
 		double z1 = 0;
-		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("mode")) {
+		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("cloudmode")) {
 			if (!(entity.isShiftKeyDown() && entity.onGround())) {
 				if (1 < itemstack.getMaxDamage() - itemstack.getDamageValue()) {
 					if (entity.isPassenger()) {
@@ -45,7 +45,7 @@ public class CloudHeartProcedure {
 					}
 				} else {
 					{
-						final String _tagName = "mode";
+						final String _tagName = "cloudmode";
 						final boolean _tagValue = false;
 						CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 					}
@@ -53,11 +53,8 @@ public class CloudHeartProcedure {
 							mutableEnchantments -> mutableEnchantments.removeIf(enchantment -> enchantment.is(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FEATHER_FALLING))));
 				}
 			}
-		} else if (0 < itemstack.getDamageValue()) {
-			if (world instanceof ServerLevel _level) {
-				itemstack.hurtAndBreak(-1, _level, null, _stkprov -> {
-				});
-			}
+		} else {
+			RestoreUnbreakingProcedure.execute(world, itemstack);
 		}
 	}
 }

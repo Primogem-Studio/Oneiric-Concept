@@ -29,7 +29,7 @@ import java.util.List;
 
 public class HeartofthevastseaItem extends Item {
 	public HeartofthevastseaItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
+		super(new Item.Properties().durability(12000).rarity(Rarity.RARE));
 	}
 
 	@Override
@@ -63,7 +63,7 @@ public class HeartofthevastseaItem extends Item {
 	@Override
 	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
 		boolean retval = super.onEntitySwing(itemstack, entity, hand);
-		ModevastProcedure.execute(itemstack);
+		ModevastProcedure.execute(entity, itemstack);
 		return retval;
 	}
 

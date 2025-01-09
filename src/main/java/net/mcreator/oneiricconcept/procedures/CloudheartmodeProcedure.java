@@ -10,16 +10,16 @@ import net.minecraft.core.component.DataComponents;
 
 public class CloudheartmodeProcedure {
 	public static void execute(LevelAccessor world, ItemStack itemstack) {
-		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("mode")) {
+		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("cloudmode")) {
 			{
-				final String _tagName = "mode";
+				final String _tagName = "cloudmode";
 				final boolean _tagValue = false;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 			}
 			EnchantmentHelper.updateEnchantments(itemstack, mutableEnchantments -> mutableEnchantments.removeIf(enchantment -> enchantment.is(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FEATHER_FALLING))));
 		} else {
 			{
-				final String _tagName = "mode";
+				final String _tagName = "cloudmode";
 				final boolean _tagValue = true;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 			}

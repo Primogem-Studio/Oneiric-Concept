@@ -25,5 +25,8 @@ public class CuriovastseaProcedure {
 		} else if (itemmode == 2) {
 			CloudHeartProcedure.execute(world, x, y, z, entity, itemstack);
 		}
+		if (!(itemmode == 2)) {
+			RestoreUnbreakingProcedure.execute(world, itemstack);
+		}
 	}
 }
