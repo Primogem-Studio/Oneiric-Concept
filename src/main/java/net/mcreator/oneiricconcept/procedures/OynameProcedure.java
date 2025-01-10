@@ -6,6 +6,6 @@ import net.minecraft.core.component.DataComponents;
 
 public class OynameProcedure {
 	public static String execute(ItemStack itemstack) {
-		return itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("die");
+		return itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("entitysname");
 	}
 }

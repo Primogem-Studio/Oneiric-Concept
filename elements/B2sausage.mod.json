@@ -15,6 +15,9 @@
     "isCuredByMilk": true,
     "isProtectedByTotem": true,
     "isCuredbyHoney": true,
-    "modifiers": []
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "B2effect"
+    }
   }
 }

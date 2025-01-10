@@ -31,12 +31,6 @@ public class B2elobogSausageItem extends Item {
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("item.oneiricconcept.b_2elobog_sausage.description_0"));
@@ -55,7 +49,7 @@ public class B2elobogSausageItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		B2HeTProcedure.execute(entity.level(), entity);
+		B2HeTProcedure.execute(entity);
 		return retval;
 	}
 }

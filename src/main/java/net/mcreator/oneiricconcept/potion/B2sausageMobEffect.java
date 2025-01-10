@@ -4,9 +4,12 @@ package net.mcreator.oneiricconcept.potion;
 import net.neoforged.neoforge.common.EffectCures;
 import net.neoforged.neoforge.common.EffectCure;
 
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
+
+import net.mcreator.oneiricconcept.procedures.B2effectProcedure;
 
 import java.util.Set;
 
@@ -20,5 +23,16 @@ public class B2sausageMobEffect extends MobEffect {
 		cures.add(EffectCures.MILK);
 		cures.add(EffectCures.PROTECTED_BY_TOTEM);
 		cures.add(EffectCures.HONEY);
+	}
+
+	@Override
+	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
+		return true;
+	}
+
+	@Override
+	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
+		B2effectProcedure.execute(entity.level(), entity);
+		return super.applyEffectTick(entity, amplifier);
 	}
 }
