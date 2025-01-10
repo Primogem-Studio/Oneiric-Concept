@@ -9097,8 +9097,8 @@
       "registry_name": "heartofthefrozensea",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefrozenseaItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthefrozensea.json"
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthefrozensea.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefrozenseaItem.java"
         ]
       },
       "path": "~/item"
@@ -10301,6 +10301,70 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Hunger",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/hunger.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HungerItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "OcHunger",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oc_hunger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/potion/OcHungerMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Hungereffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hungereffect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HungereffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "EatHunger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eat_hunger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EatHungerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -10966,7 +11030,8 @@
       "SweetSesameFillingYuanXiao",
       "GrilledOyDumpling",
       "GrilledDumpling",
-      "SaltDust"
+      "SaltDust",
+      "Hunger"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -11140,6 +11205,7 @@
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.agnid_7": "Agnidus metal ingot",
+      "item.oneiricconcept.hunger": "「Hunger」",
       "block.oneiricconcept.agnid_6": "Agnidus metal ingot",
       "block.oneiricconcept.yactus": "Yactus",
       "block.oneiricconcept.agnid_9": "Agnidus metal ingot",
@@ -11215,6 +11281,7 @@
       "entity.oneiricconcept.crystal_turtle": "Crystal Turtle",
       "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
       "block.oneiricconcept.camera.description_0": "§7The meaning of \u0027相机 is to see through the key points",
+      "effect.oneiricconcept.oc_hunger": "「Hunger」",
       "item.oneiricconcept.primogem_waffle": "Primogem Waffle",
       "item.oneiricconcept.aureliae_sword": "Aureliae Sword",
       "block.oneiricconcept.electrosealingwax": "Electro sealing wax",
@@ -11337,7 +11404,7 @@
       "block.oneiricconcept.molten_metal_block": "Block of MoltenMetal",
       "translation.oneiricconcept.textdec": "Can be placed in the world",
       "item.oneiricconcept.aureliae_hoe": "Aureliae Hoe",
-      "item.oneiricconcept.heartofthefrozensea": "Heartofthefrozensea",
+      "item.oneiricconcept.heartofthefrozensea": "Heart of the frozen sea",
       "block.oneiricconcept.vajrada_amethyst_ore": "Vajrada Amethyst Ore",
       "advancements.oneiric_concept_advancement.title": "Oneiric Concept",
       "item.oneiricconcept.dark_xuanyuan_sword": "Xuanyuan Sword",
@@ -11414,7 +11481,7 @@
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
-      "item.oneiricconcept.salt_dust": "Salt Dust",
+      "item.oneiricconcept.salt_dust": "粗盐",
       "block.oneiricconcept.bactus": "仙帝掌",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "石头老板撒币枪Plus",
@@ -11490,6 +11557,7 @@
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.agnid_7": "燃愿金属锭",
+      "item.oneiricconcept.hunger": "「饥饿」",
       "block.oneiricconcept.agnid_6": "燃愿金属锭",
       "block.oneiricconcept.yactus": "仙力掌",
       "block.oneiricconcept.agnid_9": "燃愿金属锭",
@@ -11565,6 +11633,7 @@
       "entity.oneiricconcept.crystal_turtle": "水晶龟",
       "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
+      "effect.oneiricconcept.oc_hunger": "「饥饿」",
       "item.oneiricconcept.primogem_waffle": "原石华夫饼",
       "item.oneiricconcept.aureliae_sword": "铄金剑",
       "block.oneiricconcept.electrosealingwax": "雷之印",
@@ -11573,7 +11642,7 @@
       "translation.oneiricconcept.Configurationreminder": "§6[梦华构想]§r生命值和伤害值倍率较低，与原的世界一同加载时可能无法达到预期效果",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "item.oneiricconcept.mora_magazine_e_3": "摩拉扩容弹匣♦♦♦",
-      "item.oneiricconcept.salt": "盐",
+      "item.oneiricconcept.salt": "食盐",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
       "advancements.power_of_herrschers.title": "律者之力",
       "item.oneiricconcept.oneiric_shard": "古老梦华",

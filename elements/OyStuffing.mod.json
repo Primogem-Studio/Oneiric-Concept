@@ -39,9 +39,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntitySwing": {
-      "name": "Oy"
-    },
     "onFinishUsingItem": {
       "name": "Oy"
     },

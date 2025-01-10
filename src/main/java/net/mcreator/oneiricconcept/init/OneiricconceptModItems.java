@@ -70,6 +70,7 @@ import net.mcreator.oneiricconcept.item.LessRedstonePowderItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
 import net.mcreator.oneiricconcept.item.IgnisAureliaeItem;
+import net.mcreator.oneiricconcept.item.HungerItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
 import net.mcreator.oneiricconcept.item.HonkaiShardItem;
 import net.mcreator.oneiricconcept.item.HiltwoodFromTheArborItem;
@@ -357,6 +358,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> GRILLED_OY_DUMPLING = REGISTRY.register("grilled_oy_dumpling", GrilledOyDumplingItem::new);
 	public static final DeferredItem<Item> GRILLED_DUMPLING = REGISTRY.register("grilled_dumpling", GrilledDumplingItem::new);
 	public static final DeferredItem<Item> SALT_DUST = REGISTRY.register("salt_dust", SaltDustItem::new);
+	public static final DeferredItem<Item> HUNGER = REGISTRY.register("hunger", HungerItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
