@@ -31,9 +31,9 @@ public class OneiricconceptModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<XuanyuanQ2Entity>> XUANYUAN_Q_2 = register("xuanyuan_q_2",
 			EntityType.Builder.<XuanyuanQ2Entity>of(XuanyuanQ2Entity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CrystalTurtleEntity>> CRYSTAL_TURTLE = register("crystal_turtle",
-			EntityType.Builder.<CrystalTurtleEntity>of(CrystalTurtleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<CrystalTurtleEntity>of(CrystalTurtleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.7f));
+					.sized(1f, 0.6f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MoraCoinEntity>> MORA_COIN = register("mora_coin",
 			EntityType.Builder.<MoraCoinEntity>of(MoraCoinEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InvalidEntity>> INVALID = register("invalid",

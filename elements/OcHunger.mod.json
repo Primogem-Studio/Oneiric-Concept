@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Oc Hunger",
+    "effectName": "「Hunger」",
     "icon": "hunger",
     "color": {
       "value": -256,

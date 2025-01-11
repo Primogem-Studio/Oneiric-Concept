@@ -10365,6 +10365,142 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "ShrinkingShellSuoKe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shrinking_shell_suo_ke",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ShrinkingShellSuoKeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TurtleDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turtle_damage",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TurtleDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "UnShrinkingShell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "un_shrinking_shell",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/UnShrinkingShellProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TurtleCrystal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turtle_crystal",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TurtleCrystalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Uncrystal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uncrystal",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/UncrystalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "CrystalHead",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_head",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CrystalHeadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],

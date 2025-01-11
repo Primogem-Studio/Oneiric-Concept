@@ -4,13 +4,14 @@
   "definition": {
     "mobName": "Crystal Turtle",
     "mobLabel": "",
-    "mobModelName": "Creeper",
-    "mobModelTexture": "big_sea_turtle.png",
+    "mobModelName": "Modelbig_sea_turtle",
+    "mobModelTexture": "crystal_turtle.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
     "isShakingCondition": {
-      "fixedValue": false
+      "fixedValue": false,
+      "name": "ShrinkingShellSuoKe"
     },
     "solidBoundingBox": {
       "fixedValue": false
@@ -22,18 +23,90 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
-    "animations": [],
-    "modelWidth": 0.6,
-    "modelHeight": 1.7,
-    "modelShadowSize": 0.5,
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:big_sea_turtleAnimation.walk_XingZou"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Uncrystal"
+        },
+        "walking": true,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:big_sea_turtleAnimation.walk_XingZou_crystal"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "TurtleCrystal"
+        },
+        "walking": true,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:big_sea_turtleAnimation.ShrinkingShell_SuoKe"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "ShrinkingShellSuoKe"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:big_sea_turtleAnimation.ExtendHead_Shentou"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "UnShrinkingShell"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:big_sea_turtleAnimation.ExtendHead_Shentou_crystal"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "CrystalHead"
+        },
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:big_sea_turtleAnimation.ShrinkingShell_Suokeing"
+        },
+        "speed": 1.0,
+        "walking": false,
+        "amplitude": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:big_sea_turtleAnimation.ShrinkingShell_Suokeing_crystal"
+        },
+        "speed": 1.0,
+        "walking": false,
+        "amplitude": 1.0
+      }
+    ],
+    "modelWidth": 1.0,
+    "modelHeight": 0.6,
+    "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -3342337,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -16737844,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -64,12 +137,12 @@
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "WATER",
-    "attackStrength": 1,
-    "attackKnockback": 1.0,
-    "knockbackResistance": 10.0,
-    "movementSpeed": 0.3,
+    "attackStrength": 3,
+    "attackKnockback": 3.0,
+    "knockbackResistance": 0.9,
+    "movementSpeed": 0.2,
     "stepHeight": 0.6,
-    "armorBaseValue": 10.0,
+    "armorBaseValue": 20.0,
     "trackingRange": 64,
     "followRange": 16,
     "health": 100,
@@ -90,7 +163,7 @@
     "canControlStrafe": false,
     "immuneToFire": false,
     "immuneToArrows": false,
-    "immuneToFallDamage": false,
+    "immuneToFallDamage": true,
     "immuneToCactus": false,
     "immuneToDrowning": true,
     "immuneToLightning": false,
@@ -119,13 +192,41 @@
     "raidCelebrationSound": {
       "value": ""
     },
-    "entityDataEntries": [],
+    "entityDataEntries": [
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "ShrinkingShellTime",
+        "type": "integer",
+        "value": 0
+      },
+      {
+        "min": -2147483648,
+        "max": 2147483647,
+        "name": "crystal",
+        "type": "integer",
+        "value": 0
+      }
+    ],
+    "whenMobDies": {
+      "name": "TurtleDamage"
+    },
+    "whenMobIsHurt": {
+      "name": "TurtleDamage"
+    },
+    "onMobTickUpdate": {
+      "name": "ShrinkingShellSuoKe"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_parent\"><field name=\"speed\">0.8</field><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field><next><block type=\"look_around\"><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field><next><block type=\"try_and_find_water\"><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
     "tameable": false,
-    "breedTriggerItems": [],
+    "breedTriggerItems": [
+      {
+        "value": "CUSTOM:PgcPg"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""
@@ -136,8 +237,8 @@
     "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
-    "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
+    "mobSpawningType": "creature",
+    "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
       {

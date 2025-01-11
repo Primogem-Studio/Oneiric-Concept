@@ -163,7 +163,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> YACTUS = block(OneiricconceptModBlocks.YACTUS);
 	public static final DeferredItem<Item> SWORD_OF_BRILLIANT_VALOR = REGISTRY.register("sword_of_brilliant_valor", SwordOfBrilliantValorItem::new);
 	public static final DeferredItem<Item> THE_ANOTHER_WORLD_LEAVE = block(OneiricconceptModBlocks.THE_ANOTHER_WORLD_LEAVE);
-	public static final DeferredItem<Item> CRYSTAL_TURTLE_SPAWN_EGG = REGISTRY.register("crystal_turtle_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.CRYSTAL_TURTLE, -1, -1, new Item.Properties()));
+	public static final DeferredItem<Item> CRYSTAL_TURTLE_SPAWN_EGG = REGISTRY.register("crystal_turtle_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.CRYSTAL_TURTLE, -3342337, -16737844, new Item.Properties()));
 	public static final DeferredItem<Item> TNT_DISPENSER = block(OneiricconceptModBlocks.TNT_DISPENSER);
 	public static final DeferredItem<Item> WAFFLE = REGISTRY.register("waffle", WaffleItem::new);
 	public static final DeferredItem<Item> PRIMOGEM_WAFFLE = REGISTRY.register("primogem_waffle", PrimogemWaffleItem::new);
