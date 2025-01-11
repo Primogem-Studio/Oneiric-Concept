@@ -103,7 +103,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.HEARTOFTHEVASTSEA.get());
 				tabData.accept(OneiricconceptModBlocks.FLOATING_CLOUD.get().asItem());
 				tabData.accept(OneiricconceptModItems.SALT.get());
-				tabData.accept(OneiricconceptModItems.MILK.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -131,6 +130,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.GRILLED_DUMPLING.get());
 				tabData.accept(OneiricconceptModItems.SALT_DUST.get());
 				tabData.accept(OneiricconceptModItems.HUNGER.get());
+				tabData.accept(OneiricconceptModItems.MILK.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {
