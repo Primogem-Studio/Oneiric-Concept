@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.neoforged.fml.ModList;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -10,6 +8,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class SustenanceanchorParticleProcedure {
@@ -18,11 +17,7 @@ public class SustenanceanchorParticleProcedure {
 		double b = 0;
 		double Magnification = 0;
 		double healthre = 0;
-		if (ModList.get().isLoaded("genshincraft")) {
-			Magnification = 32;
-		} else {
-			Magnification = 1;
-		}
+		Magnification = (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER));
 		healthre = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
