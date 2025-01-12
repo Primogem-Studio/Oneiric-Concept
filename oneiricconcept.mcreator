@@ -10562,6 +10562,45 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Explosionplasexyz",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosionplasexyz",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExplosionplasexyzProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "block",
+            "type": "blockstate"
+          },
+          {
+            "name": "nu",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],

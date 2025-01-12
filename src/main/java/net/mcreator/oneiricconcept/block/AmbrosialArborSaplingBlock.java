@@ -35,7 +35,7 @@ public class AmbrosialArborSaplingBlock extends SaplingBlock {
 				|| groundState.is(Blocks.DIRT_PATH) || groundState.is(Blocks.MYCELIUM) || groundState.is(Blocks.DIRT) || groundState.is(Blocks.COARSE_DIRT) || groundState.is(Blocks.PODZOL) || groundState.is(Blocks.ROOTED_DIRT)
 				|| groundState.is(Blocks.MUD) || groundState.is(Blocks.PACKED_MUD) || groundState.is(Blocks.COBBLESTONE) || groundState.is(Blocks.MOSSY_COBBLESTONE) || groundState.is(Blocks.MOSS_BLOCK) || groundState.is(Blocks.BLACKSTONE)
 				|| groundState.is(Blocks.SANDSTONE) || groundState.is(Blocks.RED_SANDSTONE) || groundState.is(Blocks.ICE) || groundState.is(Blocks.PACKED_ICE) || groundState.is(Blocks.FROSTED_ICE) || groundState.is(Blocks.BLUE_ICE)
-				|| groundState.is(Blocks.NETHERRACK) || groundState.is(Blocks.WARPED_NYLIUM) || groundState.is(Blocks.CRIMSON_NYLIUM) || groundState.is(Blocks.END_STONE) || groundState.is(Blocks.BASALT);
+				|| groundState.is(Blocks.NETHERRACK) || groundState.is(Blocks.WARPED_NYLIUM) || groundState.is(Blocks.CRIMSON_NYLIUM) || groundState.is(Blocks.END_STONE) || groundState.is(Blocks.BASALT) || groundState.is(Blocks.BEDROCK);
 	}
 
 	@Override

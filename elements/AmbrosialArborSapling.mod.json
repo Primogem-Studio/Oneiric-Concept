@@ -198,6 +198,9 @@
       },
       {
         "value": "Blocks.BASALT"
+      },
+      {
+        "value": "Blocks.BEDROCK"
       }
     ],
     "isBonemealable": false,

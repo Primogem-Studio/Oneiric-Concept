@@ -40,7 +40,7 @@
       "fixedValue": []
     },
     "hardness": 0.5,
-    "resistance": 7.0,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -133,6 +133,9 @@
     },
     "onDestroyedByExplosion": {
       "name": "Aaleave"
+    },
+    "onEntityCollides": {
+      "name": "Rtpinblock"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

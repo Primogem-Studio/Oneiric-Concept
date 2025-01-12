@@ -12,7 +12,7 @@ public class SummonzombieProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		String summons = "";
 		if (RandomProcedure.execute(0.01)) {
-			if (RandomProcedure.execute(0.2)) {
+			if (RandomProcedure.execute(0.35)) {
 				summons = "summon primogemcraft:s_wfengraojiangshi";
 			} else {
 				summons = "summon zombie";

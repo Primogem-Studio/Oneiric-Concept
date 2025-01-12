@@ -14,11 +14,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.RtpinblockProcedure;
 import net.mcreator.oneiricconcept.procedures.OutfireProcedure;
 import net.mcreator.oneiricconcept.procedures.AmbrosialArborRestoreProcedure;
 import net.mcreator.oneiricconcept.procedures.AmbrosialArborFireParticleProcedure;
@@ -26,7 +28,7 @@ import net.mcreator.oneiricconcept.procedures.AaleaveProcedure;
 
 public class AmbrosialArborLeaveBlock extends LeavesBlock {
 	public AmbrosialArborLeaveBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).strength(0.5f, 7f).lightLevel(s -> 3).noOcclusion());
+		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).strength(0.5f, 0f).lightLevel(s -> 3).noOcclusion());
 	}
 
 	@Override
@@ -74,5 +76,11 @@ public class AmbrosialArborLeaveBlock extends LeavesBlock {
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
 		AaleaveProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		RtpinblockProcedure.execute(entity);
 	}
 }
