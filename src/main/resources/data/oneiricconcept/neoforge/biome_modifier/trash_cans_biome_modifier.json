@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "oneiricconcept:trash_cans",
+  "step": "surface_structures"
+}

@@ -10725,6 +10725,35 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Trashcan",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trashcan",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/chests/trashcan.json"
+        ]
+      },
+      "path": "~/chestloot"
+    },
+    {
+      "name": "TrashCans",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trash_cans",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/trash_cans.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/trash_cans_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/trash_cans.json"
+        ]
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [],
@@ -10894,6 +10923,18 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:AmbrosialArborWood",
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -10905,18 +10946,6 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:AmbrosialArborWood",
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
