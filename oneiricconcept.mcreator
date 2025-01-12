@@ -10754,6 +10754,33 @@
         ]
       },
       "path": "~/Feature"
+    },
+    {
+      "name": "AmbergrisCheeseSliver",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambergris_cheese_sliver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/ambergris_cheese_sliver.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/AmbergrisCheeseSliverItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "AmbergrisCheeseSliver1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ambergris_cheese_sliver_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambergris_cheese_sliver_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -11426,7 +11453,8 @@
       "Hunger",
       "Milk",
       "Salt",
-      "SaltDust"
+      "SaltDust",
+      "AmbergrisCheeseSliver"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -11697,6 +11725,7 @@
       "item.oneiricconcept.mora_magazine_e_2": "Extended Mora Magazine♦♦",
       "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "block.oneiricconcept.shivada_jade_ore": "Shivada Jade Ore",
+      "item.oneiricconcept.ambergris_cheese_sliver": "Ambergris Cheese Sliver",
       "block.oneiricconcept.mm_mushroom": "Mm Mushroom",
       "painting.oneiricconcept.mimo.author": "xyz",
       "item.oneiricconcept.memoria_piece.description_0": "虽然看起来像纹饰板，但这确实只是浓缩的忆质",
@@ -12053,6 +12082,7 @@
       "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
       "item.oneiricconcept.molten_metal": "铄金",
       "block.oneiricconcept.shivada_jade_ore": "哀叙冰玉矿石",
+      "item.oneiricconcept.ambergris_cheese_sliver": "小片香涎干酪",
       "block.oneiricconcept.mm_mushroom": "萌萌菌",
       "painting.oneiricconcept.mimo.author": "xyz",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",

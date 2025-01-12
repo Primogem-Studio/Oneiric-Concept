@@ -97,6 +97,7 @@ import net.mcreator.oneiricconcept.item.AureliaeShovelItem;
 import net.mcreator.oneiricconcept.item.AureliaePickaxeItem;
 import net.mcreator.oneiricconcept.item.AureliaeHoeItem;
 import net.mcreator.oneiricconcept.item.AureliaeAxeItem;
+import net.mcreator.oneiricconcept.item.AmbergrisCheeseSliverItem;
 import net.mcreator.oneiricconcept.item.AdeptusGunItem;
 import net.mcreator.oneiricconcept.item.APropagandaArmyItem;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
@@ -360,6 +361,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SALT_DUST = REGISTRY.register("salt_dust", SaltDustItem::new);
 	public static final DeferredItem<Item> HUNGER = REGISTRY.register("hunger", HungerItem::new);
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_WOOD = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_WOOD);
+	public static final DeferredItem<Item> AMBERGRIS_CHEESE_SLIVER = REGISTRY.register("ambergris_cheese_sliver", AmbergrisCheeseSliverItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
