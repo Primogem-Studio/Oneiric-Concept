@@ -28,7 +28,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class CCactusBlock extends SugarCaneBlock {
 	public CCactusBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_CYAN).randomTicks().sound(SoundType.GRASS).strength(2f, 10f).noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_CYAN).randomTicks().sound(SoundType.GRASS).strength(2f, 10f).noOcclusion().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

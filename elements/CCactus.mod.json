@@ -50,7 +50,7 @@
     "resistance": 10.0,
     "luminance": 0,
     "unbreakable": false,
-    "isSolid": false,
+    "isSolid": true,
     "isWaterloggable": false,
     "isCustomSoundType": false,
     "soundOnStep": {

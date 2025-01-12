@@ -28,7 +28,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class BactusBlock extends SugarCaneBlock {
 	public BactusBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).randomTicks().sound(SoundType.GRASS).strength(2f, 10f).noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).randomTicks().sound(SoundType.GRASS).strength(2f, 10f).noOcclusion().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
