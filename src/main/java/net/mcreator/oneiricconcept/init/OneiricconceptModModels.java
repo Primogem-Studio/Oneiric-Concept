@@ -9,12 +9,12 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.oneiricconcept.client.model.Modelbig_sea_turtle;
+import net.mcreator.oneiricconcept.client.model.Modelcrystal_turtle;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class OneiricconceptModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(Modelbig_sea_turtle.LAYER_LOCATION, Modelbig_sea_turtle::createBodyLayer);
+		event.registerLayerDefinition(Modelcrystal_turtle.LAYER_LOCATION, Modelcrystal_turtle::createBodyLayer);
 	}
 }

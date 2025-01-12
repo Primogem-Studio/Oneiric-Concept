@@ -14,6 +14,7 @@ public class OfffireProcedure {
 		z1 = z2;
 		if ((world.getBlockState(BlockPos.containing(x1, y1, z1))).getBlock() == Blocks.FIRE) {
 			world.setBlock(BlockPos.containing(x1, y1, z1), (world.getBlockState(BlockPos.containing(x, y, z))), 3);
+			SummonzombieProcedure.execute(world, x1, y1, z1);
 		}
 	}
 }

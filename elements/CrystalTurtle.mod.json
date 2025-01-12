@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Crystal Turtle",
     "mobLabel": "",
-    "mobModelName": "Modelbig_sea_turtle",
+    "mobModelName": "Modelcrystal_turtle",
     "mobModelTexture": "crystal_turtle.png",
     "transparentModelCondition": {
       "fixedValue": false
@@ -26,7 +26,7 @@
     "animations": [
       {
         "animation": {
-          "value": "CUSTOM:big_sea_turtleAnimation.walk_XingZou"
+          "value": "CUSTOM:crystal_turtleAnimation.walk_XingZou"
         },
         "speed": 1.0,
         "condition": {
@@ -37,7 +37,7 @@
       },
       {
         "animation": {
-          "value": "CUSTOM:big_sea_turtleAnimation.walk_XingZou_crystal"
+          "value": "CUSTOM:crystal_turtleAnimation.walk_XingZou_crystal"
         },
         "speed": 1.0,
         "condition": {
@@ -48,7 +48,7 @@
       },
       {
         "animation": {
-          "value": "CUSTOM:big_sea_turtleAnimation.ShrinkingShell_SuoKe"
+          "value": "CUSTOM:crystal_turtleAnimation.ShrinkingShell_SuoKe"
         },
         "speed": 1.0,
         "condition": {
@@ -59,7 +59,7 @@
       },
       {
         "animation": {
-          "value": "CUSTOM:big_sea_turtleAnimation.ExtendHead_Shentou"
+          "value": "CUSTOM:crystal_turtleAnimation.ExtendHead_Shentou"
         },
         "speed": 1.0,
         "condition": {
@@ -70,7 +70,7 @@
       },
       {
         "animation": {
-          "value": "CUSTOM:big_sea_turtleAnimation.ExtendHead_Shentou_crystal"
+          "value": "CUSTOM:crystal_turtleAnimation.ExtendHead_Shentou_crystal"
         },
         "speed": 1.0,
         "condition": {
@@ -81,7 +81,7 @@
       },
       {
         "animation": {
-          "value": "CUSTOM:big_sea_turtleAnimation.ShrinkingShell_Suokeing"
+          "value": "CUSTOM:crystal_turtleAnimation.ShrinkingShell_Suokeing"
         },
         "speed": 1.0,
         "walking": false,
@@ -89,15 +89,15 @@
       },
       {
         "animation": {
-          "value": "CUSTOM:big_sea_turtleAnimation.ShrinkingShell_Suokeing_crystal"
+          "value": "CUSTOM:crystal_turtleAnimation.ShrinkingShell_Suokeing_crystal"
         },
         "speed": 1.0,
         "walking": false,
         "amplitude": 1.0
       }
     ],
-    "modelWidth": 1.0,
-    "modelHeight": 0.6,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,

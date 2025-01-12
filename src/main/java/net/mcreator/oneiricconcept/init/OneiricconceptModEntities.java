@@ -33,7 +33,7 @@ public class OneiricconceptModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<CrystalTurtleEntity>> CRYSTAL_TURTLE = register("crystal_turtle",
 			EntityType.Builder.<CrystalTurtleEntity>of(CrystalTurtleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(1f, 0.6f));
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<MoraCoinEntity>> MORA_COIN = register("mora_coin",
 			EntityType.Builder.<MoraCoinEntity>of(MoraCoinEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<InvalidEntity>> INVALID = register("invalid",

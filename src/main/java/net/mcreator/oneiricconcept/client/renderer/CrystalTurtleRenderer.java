@@ -12,12 +12,12 @@ import net.mcreator.oneiricconcept.procedures.UncrystalProcedure;
 import net.mcreator.oneiricconcept.procedures.TurtleCrystalProcedure;
 import net.mcreator.oneiricconcept.procedures.ShrinkingShellSuoKeProcedure;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
-import net.mcreator.oneiricconcept.client.model.animations.big_sea_turtleAnimation;
-import net.mcreator.oneiricconcept.client.model.Modelbig_sea_turtle;
+import net.mcreator.oneiricconcept.client.model.animations.crystal_turtleAnimation;
+import net.mcreator.oneiricconcept.client.model.Modelcrystal_turtle;
 
-public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Modelbig_sea_turtle<CrystalTurtleEntity>> {
+public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Modelcrystal_turtle<CrystalTurtleEntity>> {
 	public CrystalTurtleRenderer(EntityRendererProvider.Context context) {
-		super(context, new AnimatedModel(context.bakeLayer(Modelbig_sea_turtle.LAYER_LOCATION)), 1f);
+		super(context, new AnimatedModel(context.bakeLayer(Modelcrystal_turtle.LAYER_LOCATION)), 1f);
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Mode
 		return ShrinkingShellSuoKeProcedure.execute(entity);
 	}
 
-	private static final class AnimatedModel extends Modelbig_sea_turtle<CrystalTurtleEntity> {
+	private static final class AnimatedModel extends Modelcrystal_turtle<CrystalTurtleEntity> {
 		private final ModelPart root;
 		private final HierarchicalModel animator = new HierarchicalModel<CrystalTurtleEntity>() {
 			@Override
@@ -46,14 +46,14 @@ public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Mode
 			public void setupAnim(CrystalTurtleEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 				this.root().getAllParts().forEach(ModelPart::resetPose);
 				if (UncrystalProcedure.execute(entity))
-					this.animateWalk(big_sea_turtleAnimation.walk_XingZou, limbSwing, limbSwingAmount, 1f, 1f);
+					this.animateWalk(crystal_turtleAnimation.walk_XingZou, limbSwing, limbSwingAmount, 1f, 1f);
 				if (TurtleCrystalProcedure.execute(entity))
-					this.animateWalk(big_sea_turtleAnimation.walk_XingZou_crystal, limbSwing, limbSwingAmount, 1f, 1f);
-				this.animate(entity.animationState2, big_sea_turtleAnimation.ShrinkingShell_SuoKe, ageInTicks, 1f);
-				this.animate(entity.animationState3, big_sea_turtleAnimation.ExtendHead_Shentou, ageInTicks, 1f);
-				this.animate(entity.animationState4, big_sea_turtleAnimation.ExtendHead_Shentou_crystal, ageInTicks, 1f);
-				this.animate(entity.animationState5, big_sea_turtleAnimation.ShrinkingShell_Suokeing, ageInTicks, 1f);
-				this.animate(entity.animationState6, big_sea_turtleAnimation.ShrinkingShell_Suokeing_crystal, ageInTicks, 1f);
+					this.animateWalk(crystal_turtleAnimation.walk_XingZou_crystal, limbSwing, limbSwingAmount, 1f, 1f);
+				this.animate(entity.animationState2, crystal_turtleAnimation.ShrinkingShell_SuoKe, ageInTicks, 1f);
+				this.animate(entity.animationState3, crystal_turtleAnimation.ExtendHead_Shentou, ageInTicks, 1f);
+				this.animate(entity.animationState4, crystal_turtleAnimation.ExtendHead_Shentou_crystal, ageInTicks, 1f);
+				this.animate(entity.animationState5, crystal_turtleAnimation.ShrinkingShell_Suokeing, ageInTicks, 1f);
+				this.animate(entity.animationState6, crystal_turtleAnimation.ShrinkingShell_Suokeing_crystal, ageInTicks, 1f);
 			}
 		};
 

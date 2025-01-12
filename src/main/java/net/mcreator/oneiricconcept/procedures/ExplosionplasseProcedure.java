@@ -13,6 +13,7 @@ public class ExplosionplasseProcedure {
 		double x1 = 0;
 		double y1 = 0;
 		double z1 = 0;
+		SummonzombieProcedure.execute(world, x, y, z);
 		if (RandomProcedure.execute(nu)) {
 			OneiricconceptMod.queueServerWork((int) Mth.nextDouble(RandomSource.create(), 20, 80), () -> {
 				world.setBlock(BlockPos.containing(x, y, z), block, 3);

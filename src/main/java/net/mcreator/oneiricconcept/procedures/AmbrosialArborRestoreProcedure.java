@@ -6,8 +6,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -22,9 +20,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
@@ -68,16 +63,7 @@ public class AmbrosialArborRestoreProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-			if (RandomProcedure.execute(0.01)) {
-				if (RandomProcedure.execute(0.2)) {
-					summons = "summon primogemcraft:s_wfengraojiangshi";
-				} else {
-					summons = "summon zombie";
-				}
-			}
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(
-						new CommandSourceStack(CommandSource.NULL, new Vec3((ent.getX()), (ent.getY() + 3), (ent.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), summons);
+			SummonzombieProcedure.execute(world, ent.getX(), ent.getY() + 3, ent.getZ());
 		}
 	}
 }

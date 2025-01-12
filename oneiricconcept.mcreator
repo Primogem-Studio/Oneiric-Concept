@@ -10512,6 +10512,56 @@
         "files": [],
         "type": "logic"
       }
+    },
+    {
+      "name": "Summonzombie",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summonzombie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SummonzombieProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Rtpinblock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtpinblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/RtpinblockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],

@@ -12,7 +12,7 @@ import net.minecraft.client.animation.AnimationChannel;
  * 
  * @author Author
  */
-public class big_sea_turtleAnimation {
+public class crystal_turtleAnimation {
 	public static final AnimationDefinition walk_XingZou = AnimationDefinition.Builder.withLength(0.75F).looping()
 			.addAnimation("crystal", new AnimationChannel(AnimationChannel.Targets.SCALE, new Keyframe(0.0F, KeyframeAnimations.scaleVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR)))
 			.addAnimation("R",
@@ -31,9 +31,6 @@ public class big_sea_turtleAnimation {
 					new Keyframe(0.75F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR)))
 			.build();
 	public static final AnimationDefinition walk_XingZou_crystal = AnimationDefinition.Builder.withLength(0.75F).looping()
-			.addAnimation("crystal",
-					new AnimationChannel(AnimationChannel.Targets.ROTATION, new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
-							new Keyframe(0.75F, KeyframeAnimations.degreeVec(0.0F, 90.0F, 0.0F), AnimationChannel.Interpolations.LINEAR)))
 			.addAnimation("R",
 					new AnimationChannel(AnimationChannel.Targets.ROTATION, new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
 							new Keyframe(0.3333F, KeyframeAnimations.degreeVec(0.0F, -20.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),

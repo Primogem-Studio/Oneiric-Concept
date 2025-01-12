@@ -18,9 +18,11 @@ import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.RtpinblockProcedure;
 import net.mcreator.oneiricconcept.procedures.OutfireProcedure;
 import net.mcreator.oneiricconcept.procedures.AmbrosialArborRestoreProcedure;
 import net.mcreator.oneiricconcept.procedures.AalogProcedure;
@@ -88,5 +90,11 @@ public class AmbrosialArborLogBlock extends Block {
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
 		AalogProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		RtpinblockProcedure.execute(entity);
 	}
 }

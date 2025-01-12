@@ -130,6 +130,9 @@
     "onDestroyedByExplosion": {
       "name": "Aalog"
     },
+    "onEntityCollides": {
+      "name": "Rtpinblock"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -2,11 +2,11 @@
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
-public class Modelbig_sea_turtle<T extends Entity> extends EntityModel<T> {
+public class Modelcrystal_turtle<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("modid", "big_sea_turtle"), "main");
+			new ResourceLocation("modid", "crystal_turtle"), "main");
 	private final ModelPart head;
 	private final ModelPart foot;
 	private final ModelPart L;
@@ -17,7 +17,7 @@ public class Modelbig_sea_turtle<T extends Entity> extends EntityModel<T> {
 	private final ModelPart L2;
 	private final ModelPart crystal;
 
-	public Modelbig_sea_turtle(ModelPart root) {
+	public Modelcrystal_turtle(ModelPart root) {
 		this.head = root.getChild("head");
 		this.foot = root.getChild("foot");
 		this.L = this.foot.getChild("L");
@@ -48,11 +48,10 @@ public class Modelbig_sea_turtle<T extends Entity> extends EntityModel<T> {
 		PartDefinition shell = partdefinition.addOrReplaceChild("shell", CubeListBuilder.create(),
 				PartPose.offset(4.5F, 23.0F, 8.0F));
 
-		PartDefinition cube_r1 = shell
-				.addOrReplaceChild("cube_r1",
-						CubeListBuilder.create().texOffs(31, 1).addBox(-10.0F, -18.0F, -1.0F, 11.0F, 18.0F, 3.0F,
-								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition cube_r1 = shell.addOrReplaceChild("cube_r1",
+				CubeListBuilder.create().texOffs(31, 1).addBox(-5.5F, -9.0F, -1.5F, 11.0F, 18.0F, 3.0F,
+						new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(-4.5F, -0.5F, -9.0F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition cube_r2 = shell
 				.addOrReplaceChild("cube_r2",
