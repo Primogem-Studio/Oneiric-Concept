@@ -10,9 +10,17 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class ExplosionplasseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState block, double nu) {
-		if (Math.random() < nu) {
+		double x1 = 0;
+		double y1 = 0;
+		double z1 = 0;
+		if (RandomProcedure.execute(nu)) {
 			OneiricconceptMod.queueServerWork((int) Mth.nextDouble(RandomSource.create(), 20, 80), () -> {
 				world.setBlock(BlockPos.containing(x, y, z), block, 3);
+			});
+			OneiricconceptMod.queueServerWork((int) Mth.nextDouble(RandomSource.create(), 20, 80), () -> {
+				if (RandomProcedure.execute(nu * 0.5)) {
+					world.setBlock(BlockPos.containing(x + Mth.nextInt(RandomSource.create(), -1, 1), y + Mth.nextInt(RandomSource.create(), -1, 1), z + Mth.nextInt(RandomSource.create(), -1, 1)), block, 3);
+				}
 			});
 		}
 	}

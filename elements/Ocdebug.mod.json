@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "ocdebug",
+    "description": "debug",
+    "category": "CHAT",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}
