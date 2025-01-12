@@ -10781,6 +10781,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "AdeptusTemptation1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "adeptus_temptation_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/adeptus_temptation_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
