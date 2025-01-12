@@ -39,6 +39,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "IgnisAureliaeSword"
+    },
     "onItemInUseTick": {
       "name": "HonkaiParticle"
     },
@@ -71,6 +74,10 @@
     "isAlwaysEdible": false,
     "animation": "spear",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

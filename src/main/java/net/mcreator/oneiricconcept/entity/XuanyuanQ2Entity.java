@@ -5,6 +5,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -15,6 +16,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 
+import net.mcreator.oneiricconcept.procedures.IgnisAureliaeSwordProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 
@@ -67,6 +69,12 @@ public class XuanyuanQ2Entity extends AbstractArrow implements ItemSupplier {
 				livingEntity.push(vec3.x, 0.1, vec3.z);
 			}
 		}
+	}
+
+	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		IgnisAureliaeSwordProcedure.execute(entityHitResult.getEntity());
 	}
 
 	@Override

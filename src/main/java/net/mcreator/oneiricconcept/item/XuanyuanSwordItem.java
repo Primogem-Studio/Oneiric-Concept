@@ -26,6 +26,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.procedures.XuanyuanLaunchProcedure;
 import net.mcreator.oneiricconcept.procedures.XuanyuanDelProcedure;
+import net.mcreator.oneiricconcept.procedures.IgnisAureliaeSwordProcedure;
 import net.mcreator.oneiricconcept.procedures.HonkaiParticleProcedure;
 import net.mcreator.oneiricconcept.entity.XuanyuanSwordQEntity;
 
@@ -69,6 +70,13 @@ public class XuanyuanSwordItem extends Item {
 			entity.startUsingItem(hand);
 		}
 		return ar;
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		IgnisAureliaeSwordProcedure.execute(entity);
+		return retval;
 	}
 
 	@Override

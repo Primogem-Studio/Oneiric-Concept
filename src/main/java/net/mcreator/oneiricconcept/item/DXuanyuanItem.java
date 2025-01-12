@@ -15,6 +15,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 
 import net.mcreator.oneiricconcept.procedures.XuanyuanLaunchProcedure;
+import net.mcreator.oneiricconcept.procedures.IgnisAureliaeSwordProcedure;
 import net.mcreator.oneiricconcept.procedures.HonkaiParticleProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
@@ -53,6 +54,13 @@ public class DXuanyuanItem extends SwordItem {
 
 	public DXuanyuanItem() {
 		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 27f, -1f)).fireResistant());
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		IgnisAureliaeSwordProcedure.execute(entity);
+		return retval;
 	}
 
 	@Override

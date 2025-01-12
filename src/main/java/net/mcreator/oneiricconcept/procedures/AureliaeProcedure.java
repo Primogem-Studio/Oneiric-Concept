@@ -56,11 +56,7 @@ public class AureliaeProcedure {
 					item = new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()).copy();
 				}
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-							(world instanceof Level _lvlSmeltResult
-									? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _lvlSmeltResult).map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy())
-											.orElse(ItemStack.EMPTY)
-									: ItemStack.EMPTY));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, item);
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

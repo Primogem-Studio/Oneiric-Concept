@@ -39,6 +39,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "IgnisAureliaeSword"
+    },
     "onItemInUseTick": {
       "name": "HonkaiParticle"
     },
