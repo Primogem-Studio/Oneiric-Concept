@@ -21,6 +21,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
+
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
@@ -45,6 +47,14 @@ public class AureliaeProcedure {
 					_cancellable.setCanceled(true);
 				}
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				if (!(item.getItem() == OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get().asItem())) {
+					item = (world instanceof Level _lvlSmeltResult
+							? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _lvlSmeltResult).map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy())
+									.orElse(ItemStack.EMPTY)
+							: ItemStack.EMPTY).copy();
+				} else {
+					item = new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()).copy();
+				}
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
 							(world instanceof Level _lvlSmeltResult

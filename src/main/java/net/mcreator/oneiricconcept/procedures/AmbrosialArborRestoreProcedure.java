@@ -46,6 +46,7 @@ public class AmbrosialArborRestoreProcedure {
 		double restore = 0;
 		BlockState block = Blocks.AIR.defaultBlockState();
 		Entity ent = null;
+		String summons = "";
 		ent = entity;
 		if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor"))) && !(new Object() {
 			public boolean checkGamemode(Entity _ent) {
@@ -67,11 +68,16 @@ public class AmbrosialArborRestoreProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
-			if (Math.random() < 0.01) {
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3((ent.getX()), (ent.getY() + 3), (ent.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "summon zombie");
+			if (RandomProcedure.execute(0.01)) {
+				if (RandomProcedure.execute(0.2)) {
+					summons = "summon primogemcraft:s_wfengraojiangshi";
+				} else {
+					summons = "summon zombie";
+				}
 			}
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(
+						new CommandSourceStack(CommandSource.NULL, new Vec3((ent.getX()), (ent.getY() + 3), (ent.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), summons);
 		}
 	}
 }
