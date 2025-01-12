@@ -10794,6 +10794,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "SugarFrostedSlime1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sugar_frosted_slime_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sugar_frosted_slime_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -10963,18 +10976,6 @@
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
     ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:AmbrosialArborWood",
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -10986,6 +10987,18 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:AmbrosialArborWood",
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
