@@ -177,6 +177,7 @@ import net.mcreator.oneiricconcept.block.Anemo3Block;
 import net.mcreator.oneiricconcept.block.Anemo2Block;
 import net.mcreator.oneiricconcept.block.Anemo1Block;
 import net.mcreator.oneiricconcept.block.Anemo10Block;
+import net.mcreator.oneiricconcept.block.AmbrosialArborWoodBlock;
 import net.mcreator.oneiricconcept.block.AmbrosialArborSaplingBlock;
 import net.mcreator.oneiricconcept.block.AmbrosialArborPlankBlock;
 import net.mcreator.oneiricconcept.block.AmbrosialArborLogBlock;
@@ -375,6 +376,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_PLANK = REGISTRY.register("ambrosial_arbor_plank", AmbrosialArborPlankBlock::new);
 	public static final DeferredBlock<Block> WAYFAREBLESSING = REGISTRY.register("wayfareblessing", TexturewayfareblessingBlock::new);
 	public static final DeferredBlock<Block> FLOATING_CLOUD = REGISTRY.register("floating_cloud", FloatingCloudBlock::new);
+	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_WOOD = REGISTRY.register("ambrosial_arbor_wood", AmbrosialArborWoodBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

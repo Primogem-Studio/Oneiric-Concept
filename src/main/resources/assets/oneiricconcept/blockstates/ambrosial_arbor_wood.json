@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "oneiricconcept:block/ambrosial_arbor_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "oneiricconcept:block/ambrosial_arbor_wood"
+    },
+    "axis=z": {
+      "model": "oneiricconcept:block/ambrosial_arbor_wood",
+      "x": 90
+    }
+  }
+}

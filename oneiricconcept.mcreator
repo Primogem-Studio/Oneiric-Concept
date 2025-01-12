@@ -10601,6 +10601,23 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "AmbrosialArborWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambrosial_arbor_wood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborWoodBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_wood.json",
+          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_wood.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_wood.json",
+          "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_wood.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [],
@@ -10783,6 +10800,7 @@
       "CUSTOM:MmMushroom"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:AmbrosialArborWood",
       "~CUSTOM:Primogemfruitblock",
       "~CUSTOM:AmbrosialArborLog",
       "~CUSTOM:TheAnotherWorldWood",
@@ -10942,7 +10960,8 @@
     ],
     "BLOCKS:c:ambrosialarbor": [
       "CUSTOM:AmbrosialArborLog",
-      "CUSTOM:AmbrosialArborLeave"
+      "CUSTOM:AmbrosialArborLeave",
+      "CUSTOM:AmbrosialArborWood"
     ],
     "ITEMS:mod:magazine1": [
       "CUSTOM:MoraMagazine",
@@ -10995,7 +11014,8 @@
       "CUSTOM:TheAnotherWorldLog",
       "CUSTOM:StrippedTheAnotherWorldLog",
       "CUSTOM:TheAnotherWorldWood",
-      "CUSTOM:AmbrosialArborLog"
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborWood"
     ],
     "ENTITIES:c:human": [
       "EntityWitch",
@@ -11010,7 +11030,7 @@
       "EntityGiantZombie"
     ],
     "BLOCKS:minecraft:wither_immune": [
-      "CUSTOM:AmbrosialArborLog"
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11104,7 +11124,8 @@
       "CUSTOM:BigStone"
     ],
     "BLOCKS:minecraft:dragon_immune": [
-      "CUSTOM:AmbrosialArborLog"
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborWood"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
@@ -11117,7 +11138,8 @@
       "CUSTOM:TheAnotherWorldLog",
       "CUSTOM:StrippedTheAnotherWorldLog",
       "CUSTOM:TheAnotherWorldWood",
-      "CUSTOM:AmbrosialArborLog"
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborWood"
     ],
     "ITEMS:pgc:qyhx_hc": [
       "CUSTOM:Stuffing",
@@ -11222,19 +11244,20 @@
       "LessRedstonePowder",
       "Camera",
       "Sustenanceanchoritem",
-      "AmbrosialArborLog",
+      "AmbrosialArborSapling",
       "AmbrosialArborLeave",
-      "MoltenMetalBlock",
+      "AmbrosialArborPlank",
+      "AmbrosialArborLog",
+      "AmbrosialArborWood",
+      "HiltwoodFromTheArbor",
+      "IgnisAureliae",
       "AureliaePickaxe",
       "AureliaeAxe",
       "AureliaeSword",
       "AureliaeShovel",
       "AureliaeHoe",
       "MoltenMetal",
-      "AmbrosialArborSapling",
-      "AmbrosialArborPlank",
-      "IgnisAureliae",
-      "HiltwoodFromTheArbor",
+      "MoltenMetalBlock",
       "Texturewayfareblessing",
       "Heartofthefrozensea",
       "Heartoftheskysea",
@@ -11477,6 +11500,7 @@
       "item.oneiricconcept.heartofthewarmsea": "Heart of the warm sea",
       "block.oneiricconcept.varunada_lazurite_ore": "Varunada Lazurite Ore",
       "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
+      "block.oneiricconcept.ambrosial_arbor_wood": "Ambrosial Arbor Wood",
       "item.oneiricconcept.aureliae_axe": "Aureliae Axe",
       "item.oneiricconcept.smoke_sausage": "Smoke Sausage",
       "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
@@ -11831,6 +11855,7 @@
       "item.oneiricconcept.heartofthewarmsea": "暖洋之心",
       "block.oneiricconcept.varunada_lazurite_ore": "涤净青金矿石",
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
+      "block.oneiricconcept.ambrosial_arbor_wood": "建木",
       "item.oneiricconcept.aureliae_axe": "铄金斧",
       "item.oneiricconcept.smoke_sausage": "熏肠",
       "item.oneiricconcept.a_propaganda_army": "一个水军",

@@ -11,7 +11,7 @@ public class BoomBlossomsPyroBoomProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 7, Level.ExplosionInteraction.TNT);
+			_level.explode(null, x, y, z, 7, Level.ExplosionInteraction.BLOCK);
 		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		entity.igniteForSeconds(15);
 	}

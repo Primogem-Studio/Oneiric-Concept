@@ -359,6 +359,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> GRILLED_DUMPLING = REGISTRY.register("grilled_dumpling", GrilledDumplingItem::new);
 	public static final DeferredItem<Item> SALT_DUST = REGISTRY.register("salt_dust", SaltDustItem::new);
 	public static final DeferredItem<Item> HUNGER = REGISTRY.register("hunger", HungerItem::new);
+	public static final DeferredItem<Item> AMBROSIAL_ARBOR_WOOD = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_WOOD);
 
 	// Start of user code block custom items
 	// End of user code block custom items
