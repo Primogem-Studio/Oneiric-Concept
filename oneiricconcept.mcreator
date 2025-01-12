@@ -10618,6 +10618,19 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "AmbrosialArborWood1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambrosial_arbor_wood_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambrosial_arbor_wood_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],

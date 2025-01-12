@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bbb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:dendr_1"
+    },
+    "b": {
+      "item": "oneiricconcept:ambrosial_arbor_log"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:ambrosial_arbor_wood",
+    "count": 5
+  }
+}
