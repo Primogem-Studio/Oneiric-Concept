@@ -33,7 +33,7 @@ public class GCWProcedure {
 			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER).set(4, world.getServer());
 			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER).set(32, world.getServer());
 		} else if (!world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCINITIALLOAD)
-				&& ((world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)) < 4 || (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) < 32)
+				&& ((world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) < 4 || (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)) < 32)
 				&& ModList.get().isLoaded("genshincraft")) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.Configurationreminder").getString())), false);
