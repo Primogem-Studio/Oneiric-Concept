@@ -122,7 +122,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRedstoneOn": {
-      "name": "MaraRangeClear"
+      "name": "Range13"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

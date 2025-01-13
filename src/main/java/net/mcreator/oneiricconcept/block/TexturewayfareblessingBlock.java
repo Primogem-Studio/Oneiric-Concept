@@ -23,7 +23,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.procedures.MaraRangeClearProcedure;
+import net.mcreator.oneiricconcept.procedures.Range13Procedure;
 
 public class TexturewayfareblessingBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -76,7 +76,7 @@ public class TexturewayfareblessingBlock extends Block {
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		if (world.getBestNeighborSignal(pos) > 0) {
-			MaraRangeClearProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+			Range13Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
 	}
 }

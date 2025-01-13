@@ -10,8 +10,8 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 public class XuanyuanBoomProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, double range) {
-		MaraRangeClearProcedure.execute(world, x, y, z, range);
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		MaraRangeClearProcedure.execute(world, x, y, z, 13);
 		if (world instanceof Level _level && !_level.isClientSide())
 			_level.explode(null, x, y, z, 50, Level.ExplosionInteraction.BLOCK);
 		if (world instanceof ServerLevel _level)
