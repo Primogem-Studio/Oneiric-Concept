@@ -38,9 +38,9 @@ public class DreamdiveProcedure {
 					}
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 100, 1, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 1, false, false));
 				OneiricconceptMod.queueServerWork(60, () -> {
 					if (world instanceof ServerLevel _level)
 						_level.setDayTime((int) (24000 * (Math.ceil(world.dayTime() / 24000) + 1)));

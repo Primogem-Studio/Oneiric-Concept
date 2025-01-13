@@ -19,17 +19,9 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class EndermiteSumProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (world instanceof Level _level) {
-			if (!_level.isClientSide()) {
-				_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.endermite.ambient")), SoundSource.HOSTILE, (float) Mth.nextDouble(RandomSource.create(), 0.5, 1.5),
-						(float) Mth.nextDouble(RandomSource.create(), 0.5, 1.5));
-			} else {
-				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.endermite.ambient")), SoundSource.HOSTILE, (float) Mth.nextDouble(RandomSource.create(), 0.5, 1.5),
-						(float) Mth.nextDouble(RandomSource.create(), 0.5, 1.5), false);
-			}
-		}
-		for (int index0 = 0; index0 < 100; index0++) {
-			OneiricconceptMod.queueServerWork((int) Mth.nextDouble(RandomSource.create(), 9, 20), () -> {
+		double tic = 0;
+		for (int index0 = 0; index0 < 30; index0++) {
+			OneiricconceptMod.queueServerWork((int) tic, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.endermite.ambient")), SoundSource.HOSTILE, (float) Mth.nextDouble(RandomSource.create(), 0.5, 1.5),
@@ -40,6 +32,7 @@ public class EndermiteSumProcedure {
 					}
 				}
 			});
+			tic = tic + 1;
 		}
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
