@@ -10838,6 +10838,37 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Aleavegetlog",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aleavegetlog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AleavegetlogProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -11164,9 +11195,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11178,6 +11206,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11219,15 +11250,15 @@
     "ITEMS:c:salt_dust": [
       "TAG:c:salt"
     ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
-    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",

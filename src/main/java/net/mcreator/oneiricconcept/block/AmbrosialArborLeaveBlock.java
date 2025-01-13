@@ -21,9 +21,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.RtpinblockProcedure;
-import net.mcreator.oneiricconcept.procedures.OutfireProcedure;
 import net.mcreator.oneiricconcept.procedures.AmbrosialArborRestoreProcedure;
 import net.mcreator.oneiricconcept.procedures.AmbrosialArborFireParticleProcedure;
+import net.mcreator.oneiricconcept.procedures.AleavegetlogProcedure;
 import net.mcreator.oneiricconcept.procedures.AaleaveProcedure;
 
 public class AmbrosialArborLeaveBlock extends LeavesBlock {
@@ -55,7 +55,7 @@ public class AmbrosialArborLeaveBlock extends LeavesBlock {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		OutfireProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		AleavegetlogProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
