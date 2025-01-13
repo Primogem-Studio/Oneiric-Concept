@@ -10904,6 +10904,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "PleasantLookingTrash1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pleasant_looking_trash_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/pleasant_looking_trash_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],

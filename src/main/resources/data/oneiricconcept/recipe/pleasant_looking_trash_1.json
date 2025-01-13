@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "primogemcraft:laji"
+  },
+  "cookingtime": 400,
+  "experience": 7.0,
+  "ingredients": [
+    {
+      "item": "oneiricconcept:ambergris_cheese_sliver"
+    },
+    {
+      "item": "primogemcraft:cchonggaodaodedezanxu"
+    },
+    {
+      "item": "primogemcraft:cchonggaodaodedezanxu"
+    },
+    {
+      "item": "primogemcraft:wmoladai"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "primogemcraft:hhaokandelaji"
+  }
+}
