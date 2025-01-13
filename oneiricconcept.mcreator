@@ -10807,6 +10807,45 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "AmbergrisCheeseSliver2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambergris_cheese_sliver_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambergris_cheese_sliver_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AmbergrisCheeseSliver3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambergris_cheese_sliver_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambergris_cheese_sliver_3.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AmbergrisCheeseSliver4",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ambergris_cheese_sliver_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambergris_cheese_sliver_4.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],

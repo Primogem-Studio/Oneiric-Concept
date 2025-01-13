@@ -23,8 +23,8 @@
     "oneiricconcept:sweet_sesame_filling_yuan_xiao",
     "oneiricconcept:grilled_oy_dumpling",
     "oneiricconcept:grilled_dumpling",
-    "oneiricconcept:salt_dust",
     "oneiricconcept:hunger",
-    "#c:foods/milk"
+    "#c:foods/milk",
+    "#c:foods/cheese"
   ]
 }
