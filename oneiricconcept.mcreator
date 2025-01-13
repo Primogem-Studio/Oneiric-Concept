@@ -10829,9 +10829,6 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:pgc:wuqi": [
-      "CUSTOM:Example"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
       "~CUSTOM:Hbond10",
@@ -10973,52 +10970,11 @@
       "~CUSTOM:ElementsCrystalOre",
       "~CUSTOM:GeomarrowRadiator"
     ],
+    "ITEMS:c:foods/cheese": [
+      "CUSTOM:AmbergrisCheeseSliver"
+    ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
-    ],
-    "ITEMS:mod:lootb": [
-      "CUSTOM:S2mokeSausage",
-      "CUSTOM:S2tuffing",
-      "CUSTOM:MoraSausage",
-      "CUSTOM:MemoryBubble",
-      "CUSTOM:HonkaiSliver",
-      "CUSTOM:OyStuffing",
-      "CUSTOM:TheAnotherWorldSapling",
-      "CUSTOM:Surpriseboxforgoodorbad",
-      "CUSTOM:BananaMushroom",
-      "CUSTOM:MmMushroom"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:AmbrosialArborWood",
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
-    ],
-    "ITEMS:c:gem": [
-      "CUSTOM:PgcPg",
-      "CUSTOM:PgcPga",
-      "CUSTOM:PgcPgb",
-      "CUSTOM:PgcPgc",
-      "CUSTOM:PgcPgd",
-      "CUSTOM:PgcPge",
-      "CUSTOM:PgcPgf"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:MoltenMetalBlock",
-      "~CUSTOM:AgnidusAgateOre",
-      "~CUSTOM:VayudaTurquoiseOre",
-      "~CUSTOM:PrithivaTopazOre",
-      "~CUSTOM:VarunadaLazuriteOre",
-      "~CUSTOM:VajradaAmethystOre",
-      "~CUSTOM:ShivadaJadeOre",
-      "~CUSTOM:NagadusEmeraldOre",
-      "~CUSTOM:ElementsCrystalOre"
     ],
     "ITEMS:c:metal": [
       "CUSTOM:Agnid1",
@@ -11143,46 +11099,17 @@
       "CUSTOM:Hbond9",
       "CUSTOM:Hbond10"
     ],
-    "BLOCKS:minecraft:saplings": [
-      "~CUSTOM:AmbrosialArborSapling",
-      "~CUSTOM:TheAnotherWorldSapling"
-    ],
-    "BLOCKS:c:ambrosialarbor": [
-      "CUSTOM:AmbrosialArborLog",
-      "CUSTOM:AmbrosialArborLeave",
-      "CUSTOM:AmbrosialArborWood"
-    ],
-    "ITEMS:mod:magazine1": [
-      "CUSTOM:MoraMagazine",
-      "CUSTOM:MoraMagazineE1"
-    ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:Texturewayfareblessing",
       "~CUSTOM:NagadusEmeraldOre",
       "~CUSTOM:BananaMushroomBock",
       "~CUSTOM:BoomBlossomsPyro"
     ],
-    "ITEMS:mod:loots": [
-      "CUSTOM:OneiricShard",
-      "CUSTOM:HonkaiShard",
-      "CUSTOM:LegionPseudoSliver",
-      "CUSTOM:TAWWoodLoot",
-      "CUSTOM:MemoriaLoot",
-      "CUSTOM:SmallHertaCore"
-    ],
     "ITEMS:c:heart_of_the_sea": [
       "CUSTOM:Heartofthefrozensea",
       "CUSTOM:Heartoftheskysea",
       "CUSTOM:Heartofthewarmsea",
       "CUSTOM:Heartofthevastsea"
-    ],
-    "ITEMS:mod:magazine3": [
-      "CUSTOM:MoraMagazineN3",
-      "CUSTOM:MoraMagazineE3"
-    ],
-    "ITEMS:mod:magazine2": [
-      "CUSTOM:MoraMagazineN2",
-      "CUSTOM:MoraMagazineE2"
     ],
     "ITEMS:mod:dec": [
       "CUSTOM:PgcPg",
@@ -11225,39 +11152,41 @@
       "CUSTOM:TheAnotherWorldLog",
       "CUSTOM:StrippedTheAnotherWorldLog"
     ],
-    "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:AureliaePickaxe"
-    ],
     "ENTITIES:minecraft:aquatic": [
       "~CUSTOM:CrystalTurtle"
     ],
-    "ITEMS:minecraft:hoes": [
-      "~CUSTOM:AureliaeHoe"
+    "ITEMS:c:foods": [
+      "CUSTOM:Sausage",
+      "CUSTOM:SmokeSausage",
+      "CUSTOM:BelobogSausage",
+      "CUSTOM:S2ausage",
+      "CUSTOM:S2mokeSausage",
+      "CUSTOM:B2elobogSausage",
+      "CUSTOM:Stuffing",
+      "CUSTOM:S2tuffing",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:PrimogemsSausage",
+      "CUSTOM:OyDumpling",
+      "CUSTOM:Dumpling",
+      "CUSTOM:OyStuffing",
+      "CUSTOM:Waffle",
+      "CUSTOM:PrimogemWaffle",
+      "CUSTOM:ResurrectionPellet",
+      "CUSTOM:Primogemfruit",
+      "CUSTOM:Salt",
+      "CUSTOM:RedBeanSoupFillingYuanXiao",
+      "CUSTOM:SweetSesameFillingYuanXiao",
+      "CUSTOM:GrilledOyDumpling",
+      "CUSTOM:GrilledDumpling",
+      "CUSTOM:Hunger",
+      "TAG:c:foods/milk",
+      "TAG:c:foods/cheese"
     ],
-    "ITEMS:c:healthmeat": [
-      "Items.FISH#0",
-      "Items.FISH#1",
-      "Items.FISH#2",
-      "Items.COOKED_FISH#0",
-      "Items.COOKED_FISH#1",
-      "Items.PORKCHOP",
-      "Items.COOKED_PORKCHOP",
-      "Items.BEEF",
-      "Items.COOKED_BEEF",
-      "Items.CHICKEN",
-      "Items.COOKED_CHICKEN",
-      "Items.RABBIT",
-      "Items.COOKED_RABBIT",
-      "Items.MUTTON",
-      "Items.COOKED_MUTTON"
+    "ITEMS:c:foods/milk": [
+      "CUSTOM:Milk"
     ],
-    "ITEMS:oneiricconcept:magazine": [
-      "CUSTOM:MoraMagazine",
-      "CUSTOM:MoraMagazineN2",
-      "CUSTOM:MoraMagazineN3",
-      "CUSTOM:MoraMagazineE1",
-      "CUSTOM:MoraMagazineE2",
-      "CUSTOM:MoraMagazineE3"
+    "ITEMS:c:salt_dust": [
+      "TAG:c:salt"
     ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
@@ -11266,38 +11195,15 @@
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
     ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:VarunadaLazuriteOre",
-      "~CUSTOM:VajradaAmethystOre",
-      "~CUSTOM:ShivadaJadeOre"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:FloatingCloud",
-      "~CUSTOM:Memoria"
-    ],
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:AureliaeShovel"
-    ],
-    "ITEMS:minecraft:axes": [
-      "~CUSTOM:AureliaeAxe"
-    ],
-    "ITEMS:c:b2sausage": [
-      "CUSTOM:BelobogSausage",
-      "CUSTOM:B2elobogSausage"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
       "CUSTOM:S2ausage"
     ],
-    "ITEMS:minecraft:enchantable/durability": [
-      "~CUSTOM:Heartofthevastsea",
-      "~CUSTOM:Heartoftheskysea",
-      "~CUSTOM:MoraMagazineE3",
-      "~CUSTOM:MoraMagazineE2",
-      "~CUSTOM:MoraMagazineE1",
-      "~CUSTOM:MoraMagazineN3",
-      "~CUSTOM:MoraMagazineN2",
-      "~CUSTOM:MoraMagazine"
+    "ITEMS:c:salt": [
+      "CUSTOM:SaltDust"
     ],
     "ITEMS:c:smokesausage": [
       "CUSTOM:SmokeSausage",
@@ -11311,10 +11217,6 @@
       "CUSTOM:HonkaiSliver",
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BigStone"
-    ],
-    "BLOCKS:minecraft:dragon_immune": [
-      "CUSTOM:AmbrosialArborLog",
-      "CUSTOM:AmbrosialArborWood"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
@@ -11367,6 +11269,149 @@
     ],
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:Surpriseboxforgoodorbad"
+    ],
+    "ITEMS:pgc:wuqi": [
+      "CUSTOM:Example"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:AmbrosialArborWood",
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
+    "ITEMS:mod:lootb": [
+      "CUSTOM:S2mokeSausage",
+      "CUSTOM:S2tuffing",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MemoryBubble",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:OyStuffing",
+      "CUSTOM:TheAnotherWorldSapling",
+      "CUSTOM:Surpriseboxforgoodorbad",
+      "CUSTOM:BananaMushroom",
+      "CUSTOM:MmMushroom"
+    ],
+    "ITEMS:c:gem": [
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPga",
+      "CUSTOM:PgcPgb",
+      "CUSTOM:PgcPgc",
+      "CUSTOM:PgcPgd",
+      "CUSTOM:PgcPge",
+      "CUSTOM:PgcPgf"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:MoltenMetalBlock",
+      "~CUSTOM:AgnidusAgateOre",
+      "~CUSTOM:VayudaTurquoiseOre",
+      "~CUSTOM:PrithivaTopazOre",
+      "~CUSTOM:VarunadaLazuriteOre",
+      "~CUSTOM:VajradaAmethystOre",
+      "~CUSTOM:ShivadaJadeOre",
+      "~CUSTOM:NagadusEmeraldOre",
+      "~CUSTOM:ElementsCrystalOre"
+    ],
+    "BLOCKS:minecraft:saplings": [
+      "~CUSTOM:AmbrosialArborSapling",
+      "~CUSTOM:TheAnotherWorldSapling"
+    ],
+    "BLOCKS:c:ambrosialarbor": [
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLeave",
+      "CUSTOM:AmbrosialArborWood"
+    ],
+    "ITEMS:mod:magazine1": [
+      "CUSTOM:MoraMagazine",
+      "CUSTOM:MoraMagazineE1"
+    ],
+    "ITEMS:mod:loots": [
+      "CUSTOM:OneiricShard",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:LegionPseudoSliver",
+      "CUSTOM:TAWWoodLoot",
+      "CUSTOM:MemoriaLoot",
+      "CUSTOM:SmallHertaCore"
+    ],
+    "ITEMS:mod:magazine3": [
+      "CUSTOM:MoraMagazineN3",
+      "CUSTOM:MoraMagazineE3"
+    ],
+    "ITEMS:mod:magazine2": [
+      "CUSTOM:MoraMagazineN2",
+      "CUSTOM:MoraMagazineE2"
+    ],
+    "ITEMS:c:salt_dusts": [
+      "TAG:c:salt"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:AureliaePickaxe"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~CUSTOM:AureliaeHoe"
+    ],
+    "ITEMS:c:healthmeat": [
+      "Items.FISH#0",
+      "Items.FISH#1",
+      "Items.FISH#2",
+      "Items.COOKED_FISH#0",
+      "Items.COOKED_FISH#1",
+      "Items.PORKCHOP",
+      "Items.COOKED_PORKCHOP",
+      "Items.BEEF",
+      "Items.COOKED_BEEF",
+      "Items.CHICKEN",
+      "Items.COOKED_CHICKEN",
+      "Items.RABBIT",
+      "Items.COOKED_RABBIT",
+      "Items.MUTTON",
+      "Items.COOKED_MUTTON"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:FloatingCloud",
+      "~CUSTOM:Memoria"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:VarunadaLazuriteOre",
+      "~CUSTOM:VajradaAmethystOre",
+      "~CUSTOM:ShivadaJadeOre"
+    ],
+    "ITEMS:oneiricconcept:magazine": [
+      "CUSTOM:MoraMagazine",
+      "CUSTOM:MoraMagazineN2",
+      "CUSTOM:MoraMagazineN3",
+      "CUSTOM:MoraMagazineE1",
+      "CUSTOM:MoraMagazineE2",
+      "CUSTOM:MoraMagazineE3"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:AureliaeAxe"
+    ],
+    "ITEMS:c:cheese": [
+      "TAG:c:foods/cheese"
+    ],
+    "ITEMS:c:b2sausage": [
+      "CUSTOM:BelobogSausage",
+      "CUSTOM:B2elobogSausage"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Heartofthevastsea",
+      "~CUSTOM:Heartoftheskysea",
+      "~CUSTOM:MoraMagazineE3",
+      "~CUSTOM:MoraMagazineE2",
+      "~CUSTOM:MoraMagazineE1",
+      "~CUSTOM:MoraMagazineN3",
+      "~CUSTOM:MoraMagazineN2",
+      "~CUSTOM:MoraMagazine"
+    ],
+    "BLOCKS:minecraft:dragon_immune": [
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborWood"
     ]
   },
   "tab_element_order": {

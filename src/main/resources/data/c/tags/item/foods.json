@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "oneiricconcept:sausage",
+    "oneiricconcept:smoke_sausage",
+    "oneiricconcept:belobog_sausage",
+    "oneiricconcept:s_2ausage",
+    "oneiricconcept:s_2moke_sausage",
+    "oneiricconcept:b_2elobog_sausage",
+    "oneiricconcept:stuffing",
+    "oneiricconcept:s_2tuffing",
+    "oneiricconcept:mora_sausage",
+    "oneiricconcept:primogems_sausage",
+    "oneiricconcept:oy_dumpling",
+    "oneiricconcept:dumpling",
+    "oneiricconcept:oy_stuffing",
+    "oneiricconcept:waffle",
+    "oneiricconcept:primogem_waffle",
+    "oneiricconcept:resurrection_pellet",
+    "oneiricconcept:primogemfruit",
+    "oneiricconcept:salt",
+    "oneiricconcept:red_bean_soup_filling_yuan_xiao",
+    "oneiricconcept:sweet_sesame_filling_yuan_xiao",
+    "oneiricconcept:grilled_oy_dumpling",
+    "oneiricconcept:grilled_dumpling",
+    "oneiricconcept:salt_dust",
+    "oneiricconcept:hunger",
+    "#c:foods/milk"
+  ]
+}
