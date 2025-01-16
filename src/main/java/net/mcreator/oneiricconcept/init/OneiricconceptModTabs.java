@@ -53,6 +53,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.LEGION_PSEUDO_CORE.get());
 				tabData.accept(OneiricconceptModItems.LEGION_PSEUDO_SLIVER.get());
 				tabData.accept(OneiricconceptModBlocks.THE_ANOTHER_WORLD_SAPLING.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.THE_ANOTHER_WORLD_LEAVE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.THE_ANOTHER_WORLD_LOG.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.THE_ANOTHER_WORLD_WOOD.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.STRIPPED_THE_ANOTHER_WORLD_LOG.get().asItem());
@@ -64,7 +65,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.MM_MUSHROOM.get().asItem());
 				tabData.accept(OneiricconceptModItems.SWORD_OF_BRILLIANT_VALOR.get());
 				tabData.accept(OneiricconceptModBlocks.THUNDER_SWORD.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.THE_ANOTHER_WORLD_LEAVE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.TNT_DISPENSER.get().asItem());
 				tabData.accept(OneiricconceptModItems.SMALL_HERTA_CORE.get());
 				tabData.accept(OneiricconceptModItems.TOTEMLOOT.get());

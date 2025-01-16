@@ -11570,6 +11570,7 @@
       "LegionPseudoCore",
       "LegionPseudoSliver",
       "TheAnotherWorldSapling",
+      "TheAnotherWorldLeave",
       "TheAnotherWorldLog",
       "TheAnotherWorldWood",
       "StrippedTheAnotherWorldLog",
@@ -11581,7 +11582,6 @@
       "MmMushroom",
       "SwordOfBrilliantValor",
       "ThunderSword",
-      "TheAnotherWorldLeave",
       "TNTDispenser",
       "SmallHertaCore",
       "Totemloot",
@@ -11615,7 +11615,6 @@
       "AureliaeHoe",
       "MoltenMetal",
       "MoltenMetalBlock",
-      "Texturewayfareblessing",
       "Heartofthefrozensea",
       "Heartoftheskysea",
       "Heartofthewarmsea",
@@ -11648,7 +11647,8 @@
       "Milk",
       "Salt",
       "SaltDust",
-      "AmbergrisCheeseSliver"
+      "AmbergrisCheeseSliver",
+      "Texturewayfareblessing"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
