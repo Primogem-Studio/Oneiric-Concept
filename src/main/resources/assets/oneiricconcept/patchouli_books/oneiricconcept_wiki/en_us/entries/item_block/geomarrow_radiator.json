@@ -1,0 +1,15 @@
+{
+    "name": "地髓加热器",
+    "icon": "oneiricconcept:geomarrow_radiator",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "地髓加热器会蒸干附近的水，并将其转换为粗盐。$(br)地髓加热器可以加工物品。手持物品右击时，如果物品有模组内添加的合成目标，会优先合成模组物品，否则会加工成物品的熔炼结果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "OY饺子->烤OY饺子$(br)香肠->贝洛伯格红肠$(br)孜然香肠->德式孜然熏肠$(br)小麦种子*8->华夫饼$(br)原石树苗->原石华夫饼$(br)云->天华夫饼$(br)腐肉->皮革$(br)众口*7->小堆红石粉$(br)水瓶->食盐"
+        }
+    ]
+}

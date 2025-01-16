@@ -1,0 +1,11 @@
+{
+    "name": "创世结晶",
+    "icon": "primogemcraft:yuanshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成，也可以食用，恢复5点饥饿值和15点饱和度。给予5秒饥饿VI；10秒伤害吸收II；90秒虚弱III、生命提升II；160秒防火II。食用后进入约80秒的冷却。$(br)$(l:https://https://www.mcmod.cn/item/700417.html)"
+        }
+    ]
+}
