@@ -30,7 +30,7 @@ public class WarmheartProcedure {
 			final double _tagValue = (fis + 0.01);
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 		}
-		if (entity.isInWater() && Math.random() < fis) {
+		if (entity.isInWater() && RandomProcedure.execute(world, fis)) {
 			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, 3); index0++) {
 				{
 					final String _tagName = "fish";
@@ -63,7 +63,7 @@ public class WarmheartProcedure {
 				world.setBlock(_bp, _bs, 3);
 			}
 			if (block.contains("block") && (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.WATER) {
-				if (Math.random() < 0.2) {
+				if (RandomProcedure.execute(world, 0.2)) {
 					{
 						BlockPos _bp = BlockPos.containing(x, y + 1, z);
 						BlockState _bs = BuiltInRegistries.BLOCK.get(ResourceLocation.parse(((block.replace("_block", ""))).toLowerCase(java.util.Locale.ENGLISH))).defaultBlockState();

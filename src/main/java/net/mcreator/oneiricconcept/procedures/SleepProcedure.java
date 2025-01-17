@@ -37,7 +37,7 @@ public class SleepProcedure {
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(300 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof LivingEntity _livEnt1 && _livEnt1.isSleeping()) {
-						if (RandomProcedure.execute(0.5)) {
+						if (RandomProcedure.execute(world, 0.5)) {
 							OneiricconceptMod.queueServerWork(20, () -> {
 								if (world instanceof Level _lvl2 && _lvl2.isDay()) {
 									DoSleepProcedure.execute(world, x, y, z);

@@ -35,7 +35,7 @@ public class S2tuffingItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		ZiRanProcedure.execute(entity);
+		ZiRanProcedure.execute(world, entity);
 		return retval;
 	}
 }

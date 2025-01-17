@@ -26,7 +26,7 @@ public class ArborProcedure {
 					_level.levelEvent(2005, _bp, 0);
 			}
 		}
-		if ((blocks.is(BlockTags.create(ResourceLocation.parse("c:sugar_canes"))) || blocks.is(BlockTags.create(ResourceLocation.parse("c:cactus")))) && RandomProcedure.execute(0.3)) {
+		if ((blocks.is(BlockTags.create(ResourceLocation.parse("c:sugar_canes"))) || blocks.is(BlockTags.create(ResourceLocation.parse("c:cactus")))) && RandomProcedure.execute(world, 0.3)) {
 			world.setBlock(BlockPos.containing(x, y + 1, z), blocks, 3);
 		}
 	}

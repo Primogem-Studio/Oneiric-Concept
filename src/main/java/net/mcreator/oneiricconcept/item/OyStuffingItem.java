@@ -44,7 +44,7 @@ public class OyStuffingItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		OyProcedure.execute(entity, itemstack);
+		OyProcedure.execute(world, entity, itemstack);
 		return retval;
 	}
 }

@@ -17,7 +17,7 @@ public class ExplosionplasseProcedure {
 		y1 = y + Mth.nextInt(RandomSource.create(), -1, 1);
 		z1 = z + Mth.nextInt(RandomSource.create(), -1, 1);
 		SummonzombieProcedure.execute(world, x, y, z);
-		if (RandomProcedure.execute(nu)) {
+		if (RandomProcedure.execute(world, nu)) {
 			OneiricconceptMod.queueServerWork((int) Mth.nextDouble(RandomSource.create(), 20, 80), () -> {
 				world.setBlock(BlockPos.containing(x, y, z), block, 3);
 				ExplosionplasexyzProcedure.execute(world, x, y, z, block, nu);

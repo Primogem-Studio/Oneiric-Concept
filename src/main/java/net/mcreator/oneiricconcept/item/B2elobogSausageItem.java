@@ -49,7 +49,7 @@ public class B2elobogSausageItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		B2HeTProcedure.execute(entity);
+		B2HeTProcedure.execute(entity.level(), entity);
 		return retval;
 	}
 }

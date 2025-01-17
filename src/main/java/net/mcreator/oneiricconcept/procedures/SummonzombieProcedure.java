@@ -11,8 +11,8 @@ import net.minecraft.commands.CommandSource;
 public class SummonzombieProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		String summons = "";
-		if (RandomProcedure.execute(0.01)) {
-			if (RandomProcedure.execute(0.35)) {
+		if (RandomProcedure.execute(world, 0.01)) {
+			if (RandomProcedure.execute(world, 0.35)) {
 				summons = "summon primogemcraft:s_wfengraojiangshi";
 			} else {
 				summons = "summon zombie";

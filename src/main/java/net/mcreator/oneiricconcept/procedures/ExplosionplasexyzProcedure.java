@@ -16,7 +16,7 @@ public class ExplosionplasexyzProcedure {
 		x1 = x + Mth.nextInt(RandomSource.create(), -1, 1);
 		y1 = y + Mth.nextInt(RandomSource.create(), -1, 1);
 		z1 = z + Mth.nextInt(RandomSource.create(), -1, 1);
-		if (!(world.getBlockState(BlockPos.containing(x1, y1, z1))).is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor"))) && RandomProcedure.execute(nu * 0.5)) {
+		if (!(world.getBlockState(BlockPos.containing(x1, y1, z1))).is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor"))) && RandomProcedure.execute(world, nu * 0.5)) {
 			world.setBlock(BlockPos.containing(x1, y1, z1), block, 3);
 		}
 	}
