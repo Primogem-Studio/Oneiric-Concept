@@ -11256,9 +11256,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11270,6 +11267,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11311,15 +11311,15 @@
     "ITEMS:c:salt_dust": [
       "TAG:c:salt"
     ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
-    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
@@ -11677,8 +11677,8 @@
   },
   "language_map": {
     "en_us": {
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "translation.oneiricconcept.tastes": " tastes good",
       "effect.oneiricconcept.b_2sausage": "sausage",
@@ -12038,8 +12038,8 @@
       "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling"
     },
     "zh_cn": {
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "熏肠",
