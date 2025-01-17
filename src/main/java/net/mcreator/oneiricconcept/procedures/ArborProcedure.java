@@ -18,7 +18,7 @@ public class ArborProcedure {
 		BlockState blocks = Blocks.AIR.defaultBlockState();
 		blocks = (world.getBlockState(BlockPos.containing(x, y, z)));
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, x, y, z, 10, 1, 1, 1, 1);
+			_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.5), (z + 0.5), 10, 0.3, 0.3, 0.3, 1);
 		if (world instanceof Level _level) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {

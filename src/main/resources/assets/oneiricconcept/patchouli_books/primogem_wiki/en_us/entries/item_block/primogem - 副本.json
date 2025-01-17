@@ -1,0 +1,11 @@
+{
+    "name": "原石",
+    "icon": "primogemcraft:yuanshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "挖掘原石矿石或深层原石矿石可以获得，有概率在遗迹的宝箱中找到，草原核有概率掉落，也可以通过空月祝福、纠缠之缘镐等物品获得。$(br)重要的合成材料，也可以食用，恢复9点饥饿值和81点饱和度。$(br)$(l:https://https://www.mcmod.cn/item/700412.html)"
+        }
+    ]
+}
