@@ -98,7 +98,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.AURELIAE_HOE.get());
 				tabData.accept(OneiricconceptModItems.MOLTEN_METAL.get());
 				tabData.accept(OneiricconceptModBlocks.MOLTEN_METAL_BLOCK.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.WAYFAREBLESSING.get().asItem());
 				tabData.accept(OneiricconceptModItems.HEARTOFTHEFROZENSEA.get());
 				tabData.accept(OneiricconceptModItems.HEARTOFTHESKYSEA.get());
 				tabData.accept(OneiricconceptModItems.HEARTOFTHEWARMSEA.get());
@@ -133,6 +132,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SALT.get());
 				tabData.accept(OneiricconceptModItems.SALT_DUST.get());
 				tabData.accept(OneiricconceptModItems.AMBERGRIS_CHEESE_SLIVER.get());
+				tabData.accept(OneiricconceptModBlocks.WAYFAREBLESSING.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {
