@@ -10950,6 +10950,21 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "MagazineTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magazine_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MagazineTipProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -11288,9 +11303,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11302,6 +11314,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11712,6 +11727,7 @@
   },
   "language_map": {
     "en_us": {
+      "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
@@ -12073,6 +12089,7 @@
       "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling"
     },
     "zh_cn": {
+      "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
