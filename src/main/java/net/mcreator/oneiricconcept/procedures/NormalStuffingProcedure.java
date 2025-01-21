@@ -41,7 +41,7 @@ public class NormalStuffingProcedure {
 		Entity e1 = null;
 		ItemStack i1 = ItemStack.EMPTY;
 		if (entity instanceof Player) {
-			i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get()).copy();
+			i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
 			{
 				final String _tagName = "entitysname";
 				final String _tagValue = (entity.getDisplayName().getString());
@@ -57,16 +57,16 @@ public class NormalStuffingProcedure {
 			e1 = entity;
 			if (Math.random() < 0.1) {
 				if (e1.getType().is(EntityTypeTags.UNDEAD)) {
-					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get()).copy();
+					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
 				} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:human")))) {
-					i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get()).copy();
+					i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
 					{
 						final String _tagName = "entitysname";
 						final String _tagValue = (entity.getDisplayName().getString());
 						CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putString(_tagName, _tagValue));
 					}
 				} else {
-					i1 = new ItemStack(OneiricconceptModItems.STUFFING.get()).copy();
+					i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
 				}
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);

@@ -21,7 +21,7 @@ public class MoraLaunchProcedure {
 			return;
 		ItemStack MainHand = ItemStack.EMPTY;
 		ItemStack SecondaryHand = ItemStack.EMPTY;
-		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
+		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 		if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine1")))) {
 			MoraDamageProcedure.execute(world, entity, 1, 5);
 		} else if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine2")))) {

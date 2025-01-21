@@ -41,7 +41,7 @@ public class AureliaeProcedure {
 			return;
 		ItemStack item = ItemStack.EMPTY;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("oneiricconcept:ignisaureliae")))) {
-			item = (new ItemStack(blockstate.getBlock())).copy();
+			item = (new ItemStack(blockstate.getBlock()));
 			if (world instanceof Level _level4 && _level4.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _level4).isPresent()) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
@@ -51,9 +51,9 @@ public class AureliaeProcedure {
 					item = (world instanceof Level _lvlSmeltResult
 							? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _lvlSmeltResult).map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy())
 									.orElse(ItemStack.EMPTY)
-							: ItemStack.EMPTY).copy();
+							: ItemStack.EMPTY);
 				} else {
-					item = new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()).copy();
+					item = new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get());
 				}
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, item);

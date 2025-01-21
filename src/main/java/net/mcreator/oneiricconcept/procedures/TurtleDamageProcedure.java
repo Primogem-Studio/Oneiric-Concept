@@ -18,7 +18,7 @@ public class TurtleDamageProcedure {
 		double Times = 0;
 		Times = entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0;
 		if ((entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0) <= 0) {
-			items = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ysjsj"))).copy();
+			items = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ysjsj")));
 			items.setCount((int) RandomintProcedure.execute(5, 1));
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, items);

@@ -9119,8 +9119,8 @@
       "registry_name": "heartoftheskysea",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartoftheskyseaItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/heartoftheskysea.json"
+          "src/main/resources/assets/oneiricconcept/models/item/heartoftheskysea.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartoftheskyseaItem.java"
         ]
       },
       "path": "~/item"
@@ -9133,8 +9133,8 @@
       "registry_name": "heartofthewarmsea",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthewarmsea.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthewarmseaItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthewarmseaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthewarmsea.json"
         ]
       },
       "path": "~/item"
@@ -9221,12 +9221,12 @@
       "registry_name": "heartofthevastsea",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json"
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java"
         ]
       },
       "path": "~/item"
@@ -11443,15 +11443,15 @@
     "ITEMS:c:salt_dust": [
       "TAG:c:salt"
     ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
-    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
@@ -11498,6 +11498,9 @@
       "CUSTOM:Waffle",
       "CUSTOM:PrimogemWaffle"
     ],
+    "ITEMS:c:curio": [
+      "CUSTOM:Heartofthevastsea"
+    ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:GrilledDumpling",
       "~CUSTOM:GrilledOyDumpling",
@@ -11513,9 +11516,6 @@
       "~CUSTOM:SmokeSausage",
       "~CUSTOM:Sausage"
     ],
-    "ITEMS:c:curio": [
-      "CUSTOM:Heartofthevastsea"
-    ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:AmbrosialArborPlank"
     ],
@@ -11528,18 +11528,6 @@
     "ITEMS:pgc:wuqi": [
       "CUSTOM:Example"
     ],
-    "BLOCKS:minecraft:leaves": [
-      "~CUSTOM:AmbrosialArborLeave",
-      "~CUSTOM:TheAnotherWorldLeave"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:AmbrosialArborWood",
-      "~CUSTOM:Primogemfruitblock",
-      "~CUSTOM:AmbrosialArborLog",
-      "~CUSTOM:TheAnotherWorldWood",
-      "~CUSTOM:StrippedTheAnotherWorldLog",
-      "~CUSTOM:TheAnotherWorldLog"
-    ],
     "ITEMS:mod:lootb": [
       "CUSTOM:S2mokeSausage",
       "CUSTOM:S2tuffing",
@@ -11551,6 +11539,18 @@
       "CUSTOM:Surpriseboxforgoodorbad",
       "CUSTOM:BananaMushroom",
       "CUSTOM:MmMushroom"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:AmbrosialArborWood",
+      "~CUSTOM:Primogemfruitblock",
+      "~CUSTOM:AmbrosialArborLog",
+      "~CUSTOM:TheAnotherWorldWood",
+      "~CUSTOM:StrippedTheAnotherWorldLog",
+      "~CUSTOM:TheAnotherWorldLog"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:AmbrosialArborLeave",
+      "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
@@ -11630,15 +11630,6 @@
       "Items.MUTTON",
       "Items.COOKED_MUTTON"
     ],
-    "BLOCKS:minecraft:replaceable": [
-      "~CUSTOM:FloatingCloud",
-      "~CUSTOM:Memoria"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:VarunadaLazuriteOre",
-      "~CUSTOM:VajradaAmethystOre",
-      "~CUSTOM:ShivadaJadeOre"
-    ],
     "ITEMS:oneiricconcept:magazine": [
       "CUSTOM:MoraMagazine",
       "CUSTOM:MoraMagazineN2",
@@ -11647,11 +11638,20 @@
       "CUSTOM:MoraMagazineE2",
       "CUSTOM:MoraMagazineE3"
     ],
-    "ITEMS:minecraft:axes": [
-      "~CUSTOM:AureliaeAxe"
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:VarunadaLazuriteOre",
+      "~CUSTOM:VajradaAmethystOre",
+      "~CUSTOM:ShivadaJadeOre"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:FloatingCloud",
+      "~CUSTOM:Memoria"
     ],
     "ITEMS:c:cheese": [
       "TAG:c:foods/cheese"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:AureliaeAxe"
     ],
     "ITEMS:c:b2sausage": [
       "CUSTOM:BelobogSausage",

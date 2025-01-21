@@ -29,7 +29,7 @@ public class PgprocessProcedure {
 		blockeman = (world.getBlockState(BlockPos.containing(x, y, z)));
 		block = BuiltInRegistries.BLOCK.getKey(blockeman.getBlock()).toString();
 		block21 = block.substring(0, 21);
-		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
+		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		if (item.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:dec")))) {
 			if ((block21).equals((BuiltInRegistries.ITEM.getKey(item.getItem()).toString()).substring(0, 21))) {
 				{

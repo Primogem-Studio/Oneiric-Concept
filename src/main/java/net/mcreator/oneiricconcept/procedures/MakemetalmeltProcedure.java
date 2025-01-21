@@ -25,7 +25,7 @@ public class MakemetalmeltProcedure {
 		BlockState block = Blocks.AIR.defaultBlockState();
 		ItemStack blkitm = ItemStack.EMPTY;
 		block = (world.getBlockState(BlockPos.containing(x, y + 1, z)));
-		blkitm = (new ItemStack(block.getBlock())).copy();
+		blkitm = (new ItemStack(block.getBlock()));
 		if (block.getBlock() == OneiricconceptModBlocks.GEOOO_1.get()) {
 			for (int index0 = 0; index0 < 200; index0++) {
 				a = a + 1;
