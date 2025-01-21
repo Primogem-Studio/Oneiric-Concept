@@ -10970,6 +10970,54 @@
         "dependencies": []
       },
       "path": "~/process"
+    },
+    {
+      "name": "BigStoneCrushChest",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_stone_crush_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/big_stone_crush_chest.json"
+        ]
+      },
+      "path": "~/Advancement"
+    },
+    {
+      "name": "BigStoneCrushChests",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_stone_crush_chests",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BigStoneCrushChestsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -10989,6 +11037,14 @@
       ],
       "category": "block",
       "subtitle": "bump"
+    },
+    {
+      "name": "bigstonecrushchest",
+      "files": [
+        "bigstonecrushchest"
+      ],
+      "category": "block",
+      "subtitle": "BigStoneCrushChest"
     }
   ],
   "tag_elements": {
@@ -11308,9 +11364,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11322,6 +11375,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11733,8 +11789,8 @@
   "language_map": {
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "translation.oneiricconcept.tastes": " tastes good",
       "effect.oneiricconcept.b_2sausage": "sausage",
@@ -11800,6 +11856,7 @@
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "subtitles.mmm": "bump",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
+      "advancements.big_stone_crush_chest.title": "Big Stone Crush Chest",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
       "item.oneiricconcept.salt_dust": "Salt Dust",
@@ -11838,6 +11895,7 @@
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
       "block.oneiricconcept.liron_7": "stinky iron ingot",
       "block.oneiricconcept.liron_8": "stinky iron ingot",
+      "subtitles.bigstonecrushchest": "BigStoneCrushChest",
       "block.oneiricconcept.liron_5": "stinky iron ingot",
       "block.oneiricconcept.liron_6": "stinky iron ingot",
       "block.oneiricconcept.the_another_world_wood": "The Another World Wood",
@@ -11864,6 +11922,7 @@
       "block.oneiricconcept.hydro_2": "Varunada_metal_ingot",
       "block.oneiricconcept.hydro_1": "Varunada metal ingot",
       "translation.oneiricconcept.patchouli_name_oc": "oneiricconcept wiki",
+      "advancements.big_stone_crush_chest.descr": "The darkness is like a boulder pressing down upon the breast",
       "block.oneiricconcept.liron_9": "stinky iron ingot",
       "translation.key.load": "speed of progress:",
       "item.oneiricconcept.s_2ausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
@@ -12162,6 +12221,7 @@
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "subtitles.mmm": "碰撞",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
+      "advancements.big_stone_crush_chest.title": "大石碎胸口",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "item.oneiricconcept.salt_dust": "粗盐",
@@ -12200,6 +12260,7 @@
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
       "block.oneiricconcept.liron_7": "重口味铁锭",
       "block.oneiricconcept.liron_8": "重口味铁锭",
+      "subtitles.bigstonecrushchest": "大石碎胸口",
       "block.oneiricconcept.liron_5": "重口味铁锭",
       "block.oneiricconcept.liron_6": "重口味铁锭",
       "block.oneiricconcept.the_another_world_wood": "异世界木头",
@@ -12226,6 +12287,7 @@
       "block.oneiricconcept.hydro_2": "正义金属锭",
       "block.oneiricconcept.hydro_1": "正义金属锭",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
+      "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "block.oneiricconcept.liron_9": "重口味铁锭",
       "translation.key.load": "进度：",
       "item.oneiricconcept.s_2ausage.description_0": "§7有股怪味……孜然的味道吗？",

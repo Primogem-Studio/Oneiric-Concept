@@ -18,4 +18,5 @@ public class OneiricconceptModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> SURPRISE_BOX_FOR_GOOD_OR_BAD = REGISTRY.register("surprise_box_for_good_or_bad",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "surprise_box_for_good_or_bad")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> MMM = REGISTRY.register("mmm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "mmm")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BIGSTONECRUSHCHEST = REGISTRY.register("bigstonecrushchest", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "bigstonecrushchest")));
 }

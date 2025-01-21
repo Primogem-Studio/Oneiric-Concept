@@ -17,10 +17,7 @@
   },
   "criteria": {
     "oneiric_concept_advancement_0": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {
-        "to": "minecraft:overworld"
-      }
+      "trigger": "minecraft:tick"
     }
   }
 }

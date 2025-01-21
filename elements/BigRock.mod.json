@@ -123,8 +123,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "BigStoneCrushChests"
+    },
     "onDestroyedByPlayer": {
       "name": "Orexp"
+    },
+    "onEntityWalksOn": {
+      "name": "BigStoneCrushChests"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

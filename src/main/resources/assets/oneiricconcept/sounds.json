@@ -16,5 +16,14 @@
         "stream": false
       }
     ]
+  },
+  "bigstonecrushchest": {
+    "subtitle": "subtitles.bigstonecrushchest",
+    "sounds": [
+      {
+        "name": "oneiricconcept:bigstonecrushchest",
+        "stream": false
+      }
+    ]
   }
 }
