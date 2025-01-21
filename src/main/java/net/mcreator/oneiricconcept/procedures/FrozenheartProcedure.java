@@ -20,6 +20,7 @@ public class FrozenheartProcedure {
 		double x1 = 0;
 		double y1 = 0;
 		double z1 = 0;
+		String itmtag = "";
 		if (entity.isPassenger()) {
 			ent = entity.getVehicle();
 			x1 = ent.getX();
@@ -31,10 +32,11 @@ public class FrozenheartProcedure {
 			y1 = y;
 			z1 = z;
 		}
-		if (!ent.isInWaterOrBubble() && ent.onGround()) {
+		itmtag = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("ice");
+		if (!(itmtag).equals("off") && !ent.isInWaterOrBubble() && ent.onGround()) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x1, y1, z1), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						("fill ~-10 ~-1 ~-10 ~10 ~-1 ~10 " + itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("ice") + " replace minecraft:water"));
+						("fill ~-10 ~-1 ~-10 ~10 ~-1 ~10 " + itmtag + " replace minecraft:water"));
 		}
 	}
 }

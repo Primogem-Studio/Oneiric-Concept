@@ -13,7 +13,7 @@ public class Vastheart2Procedure {
 		double itemmode = 0;
 		itemmode = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mode");
 		if (itemmode == 1) {
-			HearticeProcedure.execute(entity, itemstack);
+			HearticeProcedure.execute(world, entity, itemstack);
 		} else if (itemmode == 2) {
 			CloudheartmodeProcedure.execute(world, itemstack);
 		}

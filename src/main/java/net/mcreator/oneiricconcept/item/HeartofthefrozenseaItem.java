@@ -61,7 +61,7 @@ public class HeartofthefrozenseaItem extends Item {
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		entity.startUsingItem(hand);
-		HearticeProcedure.execute(entity, ar.getObject());
+		HearticeProcedure.execute(world, entity, ar.getObject());
 		return ar;
 	}
 
