@@ -20,9 +20,6 @@
     "onHitsBlock": {
       "name": "XuanyuanBoom"
     },
-    "onHitsPlayer": {
-      "name": "XuanyuanBoom"
-    },
     "onHitsEntity": {
       "name": "XuanyuanBoom"
     }

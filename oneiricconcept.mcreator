@@ -1390,6 +1390,10 @@
         ],
         "dependencies": [
           {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -11046,6 +11050,53 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "ExplosionIgnites",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion_ignites",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExplosionIgnitesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "rang",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Honkai",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "honkai",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/damage_type/honkai.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -11392,9 +11443,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11406,6 +11454,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11837,6 +11888,7 @@
       "item.oneiricconcept.waffle": "Waffle",
       "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
+      "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
       "block.oneiricconcept.pyrosealingwax": "Pyro sealing wax",
       "item.minecraft.splash_potion.effect.hunger_potion": "Splash Potion of Hunger",
       "advancements.thesea_ihangupsidedownwillbeyoursky.title": "The sea I hang upside down will be your sky.",
@@ -11902,6 +11954,7 @@
       "block.oneiricconcept.pgc_present": "Present",
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
+      "death.attack.honkai.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.sausage": "Sausage",
       "block.oneiricconcept.floating_cloud": "Floating cloud",
       "item.oneiricconcept.propaganda_army": "Propaganda Army",
@@ -12081,6 +12134,7 @@
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
       "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
+      "death.attack.honkai": "%1$s Reduced to ashes by Honkai energy",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "gamerule.ocHealthmultiplier.description": "Control the multiplier of partial life changes",
       "block.oneiricconcept.geooo_1": "Prithiva_metal_ingot",
@@ -12206,6 +12260,7 @@
       "item.oneiricconcept.waffle": "华夫饼",
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
+      "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
       "block.oneiricconcept.pyrosealingwax": "火之印",
       "item.minecraft.splash_potion.effect.hunger_potion": "喷溅型饥饿药水",
       "advancements.thesea_ihangupsidedownwillbeyoursky.title": "我倒悬过来的海会成为你的天",
@@ -12271,6 +12326,7 @@
       "block.oneiricconcept.pgc_present": "礼盒",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
+      "death.attack.honkai.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.sausage": "香肠",
       "block.oneiricconcept.floating_cloud": "浮云",
       "item.oneiricconcept.propaganda_army": "水军",
@@ -12450,6 +12506,7 @@
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
       "item.minecraft.lingering_potion.effect.hunger_potion": "滞留型饥饿药水",
+      "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
       "block.oneiricconcept.geooo_1": "繁荣金属锭",
