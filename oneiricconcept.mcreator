@@ -11097,6 +11097,95 @@
           "src/main/resources/data/oneiricconcept/damage_type/honkai.json"
         ]
       }
+    },
+    {
+      "name": "ShatteringCutAatree",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shattering_cut_aatree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ShatteringCutAatreeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "SkyShatteringLuxArrow",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_shattering_lux_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/SkyShatteringLuxArrowRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/SkyShatteringLuxArrowEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "DivineArrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/DivineArrowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "DivineArrowEmbers",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_arrow_embers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/DivineArrowEmbersItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/divine_arrow_embers.json"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [],
@@ -11127,6 +11216,9 @@
     }
   ],
   "tag_elements": {
+    "ENTITIES:mod:divinearrow": [
+      "CUSTOM:SkyShatteringLuxArrow"
+    ],
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt"
     ],
@@ -11716,6 +11808,7 @@
       "CUSTOM:B2elobogSausage"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:DivineArrowEmbers",
       "~CUSTOM:Heartofthevastsea",
       "~CUSTOM:Heartoftheskysea",
       "~CUSTOM:MoraMagazineE3",
@@ -11811,7 +11904,8 @@
       "Heartofthefrozensea",
       "Heartoftheskysea",
       "Heartofthewarmsea",
-      "Heartofthevastsea"
+      "Heartofthevastsea",
+      "DivineArrowEmbers"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -12063,6 +12157,7 @@
       "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
       "item.oneiricconcept.heartofthewarmsea": "Heart of the warm sea",
       "block.oneiricconcept.varunada_lazurite_ore": "Varunada Lazurite Ore",
+      "item.oneiricconcept.divine_arrow_embers": "Divine Arrow Embers",
       "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
       "block.oneiricconcept.ambrosial_arbor_wood": "Ambrosial Arbor Wood",
       "item.oneiricconcept.aureliae_axe": "Aureliae Axe",
@@ -12435,6 +12530,7 @@
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
       "item.oneiricconcept.heartofthewarmsea": "暖洋之心",
       "block.oneiricconcept.varunada_lazurite_ore": "涤净青金矿石",
+      "item.oneiricconcept.divine_arrow_embers": "Divine Arrow Embers",
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
       "block.oneiricconcept.ambrosial_arbor_wood": "建木",
       "item.oneiricconcept.aureliae_axe": "铄金斧",

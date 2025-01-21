@@ -9,12 +9,14 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.oneiricconcept.client.model.Modelsky_shattering_lux_arrow;
 import net.mcreator.oneiricconcept.client.model.Modelcrystal_turtle;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class OneiricconceptModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelsky_shattering_lux_arrow.LAYER_LOCATION, Modelsky_shattering_lux_arrow::createBodyLayer);
 		event.registerLayerDefinition(Modelcrystal_turtle.LAYER_LOCATION, Modelcrystal_turtle::createBodyLayer);
 	}
 }

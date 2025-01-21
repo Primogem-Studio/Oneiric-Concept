@@ -11,6 +11,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.oneiricconcept.client.renderer.SkyShatteringLuxArrowRenderer;
 import net.mcreator.oneiricconcept.client.renderer.CrystalTurtleRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -22,5 +23,6 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.CRYSTAL_TURTLE.get(), CrystalTurtleRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.MORA_COIN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.INVALID.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), SkyShatteringLuxArrowRenderer::new);
 	}
 }
