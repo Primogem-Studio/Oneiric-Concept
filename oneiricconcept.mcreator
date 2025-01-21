@@ -8286,7 +8286,6 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_leave.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_leave.json",
           "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_leave.json",
           "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborLeaveBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_leave.json"
@@ -11186,6 +11185,19 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "Ambrosialarborleaveloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambrosialarborleaveloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_leave.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [],
