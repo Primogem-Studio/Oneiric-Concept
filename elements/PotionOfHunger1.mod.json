@@ -1,0 +1,25 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "CUSTOM:Milk"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:Hunger"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:HungerPotion"
+    },
+    "name": "potion_of_hunger_1",
+    "namespace": "mod"
+  }
+}

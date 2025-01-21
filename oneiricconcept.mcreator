@@ -11018,6 +11018,30 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "HungerPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunger_potion",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PotionOfHunger1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_of_hunger_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/recipe/brewing/PotionOfHunger1BrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -11807,6 +11831,7 @@
       "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
       "block.oneiricconcept.pyrosealingwax": "Pyro sealing wax",
+      "item.minecraft.splash_potion.effect.hunger_potion": "Splash Potion of Hunger",
       "advancements.thesea_ihangupsidedownwillbeyoursky.title": "The sea I hang upside down will be your sky.",
       "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
@@ -11911,6 +11936,7 @@
       "block.oneiricconcept.cryoo_1": "crescent ingot",
       "block.oneiricconcept.cryoo_2": "Shivada_metal_ingot",
       "item.oneiricconcept.heartoftheskysea": "Heart of the sky sea",
+      "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
       "block.oneiricconcept.hydro_9": "Varunada_metal_ingot",
       "block.oneiricconcept.hydro_8": "Varunada_metal_ingot",
       "block.oneiricconcept.hydro_7": "Varunada_metal_ingot",
@@ -12047,6 +12073,7 @@
       "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
+      "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "gamerule.ocHealthmultiplier.description": "Control the multiplier of partial life changes",
       "block.oneiricconcept.geooo_1": "Prithiva_metal_ingot",
@@ -12104,6 +12131,7 @@
       "advancements.aftertheiceturnsintowater.title": "After the ice turns into water",
       "block.oneiricconcept.hydro_10": "Varunada_metal_ingot",
       "block.oneiricconcept.boom_blossoms_pyro": "Boom Blossoms Pyro",
+      "item.minecraft.tipped_arrow.effect.hunger_potion": "Arrow of Hunger",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7Big sugar meatballs",
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
@@ -12154,8 +12182,8 @@
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "熏肠",
@@ -12172,6 +12200,7 @@
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
       "block.oneiricconcept.pyrosealingwax": "火之印",
+      "item.minecraft.splash_potion.effect.hunger_potion": "喷溅型饥饿药水",
       "advancements.thesea_ihangupsidedownwillbeyoursky.title": "我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_log": "建木原木",
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
@@ -12276,6 +12305,7 @@
       "block.oneiricconcept.cryoo_1": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_2": "§k怜爱§r金属锭",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
+      "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "block.oneiricconcept.hydro_9": "正义金属锭",
       "block.oneiricconcept.hydro_8": "正义金属锭",
       "block.oneiricconcept.hydro_7": "正义金属锭",
@@ -12412,6 +12442,7 @@
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
+      "item.minecraft.lingering_potion.effect.hunger_potion": "滞留型饥饿药水",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
       "block.oneiricconcept.geooo_1": "繁荣金属锭",
@@ -12469,6 +12500,7 @@
       "advancements.aftertheiceturnsintowater.title": "在冰化成水之后",
       "block.oneiricconcept.hydro_10": "正义金属锭",
       "block.oneiricconcept.boom_blossoms_pyro": "火焰爆爆瓜",
+      "item.minecraft.tipped_arrow.effect.hunger_potion": "饥饿之箭",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7大糖丸子",
       "block.oneiricconcept.the_another_world_log": "异世界原木",

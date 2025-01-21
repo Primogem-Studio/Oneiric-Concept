@@ -21,6 +21,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.oneiricconcept.world.features.StructureFeature;
 import net.mcreator.oneiricconcept.init.OneiricconceptModTabs;
 import net.mcreator.oneiricconcept.init.OneiricconceptModSounds;
+import net.mcreator.oneiricconcept.init.OneiricconceptModPotions;
 import net.mcreator.oneiricconcept.init.OneiricconceptModParticleTypes;
 import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
@@ -55,7 +56,7 @@ public class OneiricconceptMod {
 		OneiricconceptModTabs.REGISTRY.register(modEventBus);
 
 		StructureFeature.REGISTRY.register(modEventBus);
-
+		OneiricconceptModPotions.REGISTRY.register(modEventBus);
 		OneiricconceptModMobEffects.REGISTRY.register(modEventBus);
 
 		OneiricconceptModParticleTypes.REGISTRY.register(modEventBus);
