@@ -1,5 +1,5 @@
 {
-  "parent": "block/cross",
+  "parent": "block/tinted_cross",
   "textures": {
     "cross": "oneiricconcept:block/block_fresh_seed_of_dawn",
     "particle": "oneiricconcept:block/block_fresh_seed_of_dawn"

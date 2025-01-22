@@ -2,13 +2,13 @@
   "_fv": 73,
   "_type": "plant",
   "definition": {
-    "renderType": 12,
+    "renderType": 120,
     "texture": "block_fresh_seed_of_dawn",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "fresh_seed_of_dawn",
     "particleTexture": "",
-    "tintType": "No tint",
+    "tintType": "Grass",
     "isItemTinted": false,
     "plantType": "sapling",
     "suspiciousStewEffect": "SPEED",
@@ -16,7 +16,7 @@
     "secondaryTreeChance": 0.1,
     "trees": [
       {
-        "value": "fancy_oak"
+        "value": "CUSTOM:Dawntree"
       },
       null
     ],

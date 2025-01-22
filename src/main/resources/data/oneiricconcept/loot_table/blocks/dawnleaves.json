@@ -11,7 +11,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 100,
+          "weight": 1000,
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -71,7 +71,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 1
+                "max": 16
               }
             }
           ]

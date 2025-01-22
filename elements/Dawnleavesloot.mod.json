@@ -16,7 +16,7 @@
             "item": {
               "value": "Blocks.AIR"
             },
-            "weight": 100,
+            "weight": 1000,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -32,7 +32,7 @@
             },
             "weight": 10,
             "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 16,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,

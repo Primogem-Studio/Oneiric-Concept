@@ -11298,6 +11298,60 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "Dawntree",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dawntree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/dawntree.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/dawntree.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/dawntree_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "LeaveShears",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_shears",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LeaveShearsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -11647,9 +11701,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11661,6 +11712,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11702,15 +11756,15 @@
     "ITEMS:c:salt_dust": [
       "CUSTOM:SaltDust"
     ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
+    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
-    ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
@@ -12735,7 +12789,7 @@
       "item.oneiricconcept.milk": "牛奶",
       "block.oneiricconcept.anemo_4": "自在金属锭",
       "block.oneiricconcept.anemo_9": "自在金属锭",
-      "block.oneiricconcept.fresh_seedof_dawn": "Fresh Seedof Dawn",
+      "block.oneiricconcept.fresh_seedof_dawn": "黎明新籽",
       "block.oneiricconcept.anemo_7": "自在金属锭",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
       "block.oneiricconcept.anemo_8": "自在金属锭",
@@ -12794,7 +12848,7 @@
       "block.oneiricconcept.mm_mushroom.description_0": "§7萌萌的蘑菇，但有一颗坚硬的心",
       "block.oneiricconcept.molten_metal_block": "铄金块",
       "item.oneiricconcept.deep_marrow_rock_salt": "深髓岩盐",
-      "block.oneiricconcept.dawnleaves": "Dawnleaves",
+      "block.oneiricconcept.dawnleaves": "黎明树叶",
       "translation.oneiricconcept.textdec": "可放置在世界",
       "item.oneiricconcept.aureliae_hoe": "铄金锄",
       "item.oneiricconcept.heartofthefrozensea": "冻洋之心",

@@ -420,6 +420,7 @@ public class OneiricconceptModBlocks {
 			Anemo10Block.blockColorLoad(event);
 			HydrosealingwaxBlock.blockColorLoad(event);
 			DendrosealingwaxBlock.blockColorLoad(event);
+			FreshSeedofDawnBlock.blockColorLoad(event);
 		}
 	}
 }
