@@ -713,7 +713,14 @@
       ]
     },
     {
-      "rolls": 1,
+      "rolls": {
+        "min": 1,
+        "max": 7
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 7
+      },
       "entries": [
         {
           "type": "minecraft:item",
@@ -780,6 +787,11 @@
                 "min": 1,
                 "max": 1
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         }
@@ -790,11 +802,35 @@
         "min": 1,
         "max": 3
       },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 4
+      },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:salt_dust",
-          "weight": 1,
+          "name": "oneiricconcept:deep_marrow_rock_salt",
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -802,6 +838,11 @@
                 "min": 1,
                 "max": 4
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         },
@@ -809,6 +850,26 @@
           "type": "minecraft:item",
           "name": "minecraft:redstone",
           "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "predicates": {
+                    "minecraft:enchantments": [
+                      {
+                        "enchantments": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -816,6 +877,11 @@
                 "min": 1,
                 "max": 4
               }
+            },
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
             }
           ]
         }

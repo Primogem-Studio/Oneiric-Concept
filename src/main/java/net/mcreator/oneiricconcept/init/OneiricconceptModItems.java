@@ -84,6 +84,7 @@ import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
 import net.mcreator.oneiricconcept.item.DivineArrowEmbersItem;
+import net.mcreator.oneiricconcept.item.DeepMarrowRockSaltItem;
 import net.mcreator.oneiricconcept.item.DarkXuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.DXuanyuanItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
@@ -364,6 +365,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> AMBROSIAL_ARBOR_WOOD = block(OneiricconceptModBlocks.AMBROSIAL_ARBOR_WOOD);
 	public static final DeferredItem<Item> AMBERGRIS_CHEESE_SLIVER = REGISTRY.register("ambergris_cheese_sliver", AmbergrisCheeseSliverItem::new);
 	public static final DeferredItem<Item> DIVINE_ARROW_EMBERS = REGISTRY.register("divine_arrow_embers", DivineArrowEmbersItem::new);
+	public static final DeferredItem<Item> DEEP_MARROW_ROCK_SALT = REGISTRY.register("deep_marrow_rock_salt", DeepMarrowRockSaltItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
