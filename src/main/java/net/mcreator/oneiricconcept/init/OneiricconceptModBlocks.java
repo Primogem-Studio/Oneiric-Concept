@@ -14,6 +14,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.oneiricconcept.block.YactusBlock;
+import net.mcreator.oneiricconcept.block.XiaoLanternRecyclerBlock;
 import net.mcreator.oneiricconcept.block.VayudaTurquoiseOreBlock;
 import net.mcreator.oneiricconcept.block.VarunadaLazuriteOreBlock;
 import net.mcreator.oneiricconcept.block.VajradaAmethystOreBlock;
@@ -381,6 +382,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_WOOD = REGISTRY.register("ambrosial_arbor_wood", AmbrosialArborWoodBlock::new);
 	public static final DeferredBlock<Block> FRESH_SEEDOF_DAWN = REGISTRY.register("fresh_seedof_dawn", FreshSeedofDawnBlock::new);
 	public static final DeferredBlock<Block> DAWNLEAVES = REGISTRY.register("dawnleaves", DawnleavesBlock::new);
+	public static final DeferredBlock<Block> XIAO_LANTERN_RECYCLER = REGISTRY.register("xiao_lantern_recycler", XiaoLanternRecyclerBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
