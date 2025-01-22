@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:salt_dust"
+    "#c:salt_dust",
+    "oneiricconcept:salt",
+    "oneiricconcept:deep_marrow_rock_salt"
   ]
 }

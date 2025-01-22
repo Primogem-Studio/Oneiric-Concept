@@ -11225,6 +11225,50 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "GoldenAppleSeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_apple_seed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GoldenAppleSeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "FreshSeedofDawn",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fresh_seedof_dawn",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/fresh_seedof_dawn.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/FreshSeedofDawnBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/fresh_seedof_dawn.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/fresh_seedof_dawn.json",
+          "src/main/resources/assets/oneiricconcept/models/item/fresh_seedof_dawn.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [],
@@ -11746,6 +11790,7 @@
       "Blocks.REEDS"
     ],
     "BLOCKS:minecraft:saplings": [
+      "~CUSTOM:FreshSeedofDawn",
       "~CUSTOM:AmbrosialArborSapling",
       "~CUSTOM:TheAnotherWorldSapling"
     ],
@@ -11917,7 +11962,8 @@
       "Heartoftheskysea",
       "Heartofthewarmsea",
       "Heartofthevastsea",
-      "DivineArrowEmbers"
+      "DivineArrowEmbers",
+      "FreshSeedofDawn"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -12282,6 +12328,7 @@
       "item.oneiricconcept.milk": "Milk",
       "block.oneiricconcept.anemo_4": "Vayuda_metal_ingot",
       "block.oneiricconcept.anemo_9": "Vayuda_metal_ingot",
+      "block.oneiricconcept.fresh_seedof_dawn": "Fresh Seedof Dawn",
       "block.oneiricconcept.anemo_7": "Vayuda_metal_ingot",
       "block.oneiricconcept.sustenanceanchor": "Sustenanceanchor",
       "block.oneiricconcept.anemo_8": "Vayuda_metal_ingot",
@@ -12656,6 +12703,7 @@
       "item.oneiricconcept.milk": "牛奶",
       "block.oneiricconcept.anemo_4": "自在金属锭",
       "block.oneiricconcept.anemo_9": "自在金属锭",
+      "block.oneiricconcept.fresh_seedof_dawn": "Fresh Seedof Dawn",
       "block.oneiricconcept.anemo_7": "自在金属锭",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
       "block.oneiricconcept.anemo_8": "自在金属锭",

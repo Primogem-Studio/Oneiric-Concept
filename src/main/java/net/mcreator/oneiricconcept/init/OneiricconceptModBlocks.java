@@ -122,6 +122,7 @@ import net.mcreator.oneiricconcept.block.Fulmo3Block;
 import net.mcreator.oneiricconcept.block.Fulmo2Block;
 import net.mcreator.oneiricconcept.block.Fulmo1Block;
 import net.mcreator.oneiricconcept.block.Fulmo10Block;
+import net.mcreator.oneiricconcept.block.FreshSeedofDawnBlock;
 import net.mcreator.oneiricconcept.block.FloatingCloudBlock;
 import net.mcreator.oneiricconcept.block.ElementsCrystalOreBlock;
 import net.mcreator.oneiricconcept.block.ElectrosealingwaxBlock;
@@ -377,6 +378,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> WAYFAREBLESSING = REGISTRY.register("wayfareblessing", TexturewayfareblessingBlock::new);
 	public static final DeferredBlock<Block> FLOATING_CLOUD = REGISTRY.register("floating_cloud", FloatingCloudBlock::new);
 	public static final DeferredBlock<Block> AMBROSIAL_ARBOR_WOOD = REGISTRY.register("ambrosial_arbor_wood", AmbrosialArborWoodBlock::new);
+	public static final DeferredBlock<Block> FRESH_SEEDOF_DAWN = REGISTRY.register("fresh_seedof_dawn", FreshSeedofDawnBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
