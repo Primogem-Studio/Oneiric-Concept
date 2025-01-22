@@ -2,15 +2,15 @@
   "_fv": 73,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Oneiric Concept",
-    "achievementDescription": "The past turns into candles that light the darkness ahead.",
+    "achievementName": "Genshin Impact Speed Edition",
+    "achievementDescription": "1.6GB Genshin installation package",
     "achievementIcon": {
       "value": "CUSTOM:OneiricShard"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": false,
-    "announceToChat": false,
+    "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
