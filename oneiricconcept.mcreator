@@ -11269,6 +11269,35 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "Dawnleaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dawnleaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/DawnleavesBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/dawnleaves.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/dawnleaves.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dawnleaves.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Dawnleavesloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dawnleavesloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/dawnleaves.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [],
@@ -11763,6 +11792,7 @@
       "~CUSTOM:TheAnotherWorldLog"
     ],
     "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:Dawnleaves",
       "~CUSTOM:AmbrosialArborLeave",
       "~CUSTOM:TheAnotherWorldLeave"
     ],
@@ -11963,7 +11993,8 @@
       "Heartofthewarmsea",
       "Heartofthevastsea",
       "DivineArrowEmbers",
-      "FreshSeedofDawn"
+      "FreshSeedofDawn",
+      "Dawnleaves"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -12387,6 +12418,7 @@
       "block.oneiricconcept.mm_mushroom.description_0": "Cute mushrooms, but with a strong heart",
       "block.oneiricconcept.molten_metal_block": "Block of MoltenMetal",
       "item.oneiricconcept.deep_marrow_rock_salt": "Deep Marrow Rock Salt",
+      "block.oneiricconcept.dawnleaves": "Dawnleaves",
       "translation.oneiricconcept.textdec": "Can be placed in the world",
       "item.oneiricconcept.aureliae_hoe": "Aureliae Hoe",
       "item.oneiricconcept.heartofthefrozensea": "Heart of the frozen sea",
@@ -12762,6 +12794,7 @@
       "block.oneiricconcept.mm_mushroom.description_0": "§7萌萌的蘑菇，但有一颗坚硬的心",
       "block.oneiricconcept.molten_metal_block": "铄金块",
       "item.oneiricconcept.deep_marrow_rock_salt": "深髓岩盐",
+      "block.oneiricconcept.dawnleaves": "Dawnleaves",
       "translation.oneiricconcept.textdec": "可放置在世界",
       "item.oneiricconcept.aureliae_hoe": "铄金锄",
       "item.oneiricconcept.heartofthefrozensea": "冻洋之心",

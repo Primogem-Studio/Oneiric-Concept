@@ -367,6 +367,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> DIVINE_ARROW_EMBERS = REGISTRY.register("divine_arrow_embers", DivineArrowEmbersItem::new);
 	public static final DeferredItem<Item> DEEP_MARROW_ROCK_SALT = REGISTRY.register("deep_marrow_rock_salt", DeepMarrowRockSaltItem::new);
 	public static final DeferredItem<Item> FRESH_SEEDOF_DAWN = block(OneiricconceptModBlocks.FRESH_SEEDOF_DAWN);
+	public static final DeferredItem<Item> DAWNLEAVES = block(OneiricconceptModBlocks.DAWNLEAVES);
 
 	// Start of user code block custom items
 	// End of user code block custom items
