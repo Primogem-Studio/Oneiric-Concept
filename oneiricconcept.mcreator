@@ -11259,7 +11259,7 @@
       "CUSTOM:SkyShatteringLuxArrow"
     ],
     "ITEMS:c:dusts/salt": [
-      "TAG:c:salt"
+      "TAG:c:salt_dust"
     ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
@@ -11627,7 +11627,7 @@
       "CUSTOM:Milk"
     ],
     "ITEMS:c:salt_dust": [
-      "TAG:c:salt"
+      "CUSTOM:SaltDust"
     ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
@@ -11644,20 +11644,13 @@
       "CUSTOM:S2ausage"
     ],
     "ITEMS:c:salt": [
-      "CUSTOM:SaltDust"
+      "TAG:c:salt_dust",
+      "CUSTOM:Salt",
+      "CUSTOM:DeepMarrowRockSalt"
     ],
     "ITEMS:c:smokesausage": [
       "CUSTOM:SmokeSausage",
       "CUSTOM:S2mokeSausage"
-    ],
-    "ITEMS:mod:loota": [
-      "CUSTOM:OneiricShard",
-      "CUSTOM:PrimogemsSausage",
-      "CUSTOM:SunStartCan",
-      "CUSTOM:MemoriaPiece",
-      "CUSTOM:HonkaiSliver",
-      "CUSTOM:Surpriseboxforgoodorbad",
-      "CUSTOM:BigStone"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
@@ -11717,18 +11710,6 @@
     "ITEMS:pgc:wuqi": [
       "CUSTOM:Example"
     ],
-    "ITEMS:mod:lootb": [
-      "CUSTOM:S2mokeSausage",
-      "CUSTOM:S2tuffing",
-      "CUSTOM:MoraSausage",
-      "CUSTOM:MemoryBubble",
-      "CUSTOM:HonkaiSliver",
-      "CUSTOM:OyStuffing",
-      "CUSTOM:TheAnotherWorldSapling",
-      "CUSTOM:Surpriseboxforgoodorbad",
-      "CUSTOM:BananaMushroom",
-      "CUSTOM:MmMushroom"
-    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:AmbrosialArborWood",
       "~CUSTOM:Primogemfruitblock",
@@ -11777,14 +11758,6 @@
       "CUSTOM:MoraMagazine",
       "CUSTOM:MoraMagazineE1"
     ],
-    "ITEMS:mod:loots": [
-      "CUSTOM:OneiricShard",
-      "CUSTOM:HonkaiShard",
-      "CUSTOM:LegionPseudoSliver",
-      "CUSTOM:TAWWoodLoot",
-      "CUSTOM:MemoriaLoot",
-      "CUSTOM:SmallHertaCore"
-    ],
     "ITEMS:mod:magazine3": [
       "CUSTOM:MoraMagazineN3",
       "CUSTOM:MoraMagazineE3"
@@ -11794,7 +11767,7 @@
       "CUSTOM:MoraMagazineE2"
     ],
     "ITEMS:c:salt_dusts": [
-      "TAG:c:salt"
+      "TAG:c:salt_dust"
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:AureliaePickaxe"
