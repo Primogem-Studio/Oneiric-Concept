@@ -10136,6 +10136,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -11765,7 +11769,8 @@
       "CUSTOM:Heartofthefrozensea",
       "CUSTOM:Heartoftheskysea",
       "CUSTOM:Heartofthewarmsea",
-      "CUSTOM:Heartofthevastsea"
+      "CUSTOM:Heartofthevastsea",
+      "CUSTOM:Heartofthefish"
     ],
     "ITEMS:mod:dec": [
       "CUSTOM:PgcPg",
@@ -11789,9 +11794,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11803,6 +11805,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11844,15 +11849,15 @@
     "ITEMS:c:salt_dust": [
       "CUSTOM:SaltDust"
     ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
+    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
-    ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
@@ -11895,8 +11900,7 @@
     "ITEMS:c:curio": [
       "CUSTOM:Heartofthevastsea",
       "CUSTOM:Heartofthefrozensea",
-      "CUSTOM:Heartoftheskysea",
-      "CUSTOM:Heartofthewarmsea"
+      "CUSTOM:Heartoftheskysea"
     ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:GrilledDumpling",

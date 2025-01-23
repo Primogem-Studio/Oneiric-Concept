@@ -14,13 +14,13 @@
       "item": "oneiricconcept:heartofthefrozensea"
     },
     "c": {
-      "item": "oneiricconcept:honkai_sliver"
+      "item": "minecraft:heart_of_the_sea"
     },
     "d": {
       "item": "oneiricconcept:heartofthewarmsea"
     },
     "e": {
-      "item": "minecraft:heart_of_the_sea"
+      "item": "oneiricconcept:heartofthefish"
     }
   },
   "result": {

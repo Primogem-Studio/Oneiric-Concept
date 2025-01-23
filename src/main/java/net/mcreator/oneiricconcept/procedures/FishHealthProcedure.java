@@ -41,7 +41,7 @@ public class FishHealthProcedure {
 							if (!entityiterator.level().isClientSide())
 								entityiterator.discard();
 						}
-						entityiterator.push((Mth.nextDouble(RandomSource.create(), -1, 1)), (Mth.nextDouble(RandomSource.create(), 1, 3)), (Mth.nextDouble(RandomSource.create(), -1, 1)));
+						entityiterator.push((Mth.nextDouble(RandomSource.create(), -3, 3)), (Mth.nextDouble(RandomSource.create(), 0, 1)), (Mth.nextDouble(RandomSource.create(), -3, 3)));
 					}
 				}
 			}

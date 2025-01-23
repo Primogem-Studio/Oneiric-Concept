@@ -64,7 +64,7 @@ public class EntityDeadProcedure {
 					final String _tagValue = (entity.getDisplayName().getString());
 					CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putString(_tagName, _tagValue));
 				}
-			} else if (!entity.getPersistentData().getBoolean("fishheart") && entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:aquatic")))) {
+			} else if (entity.getType().is(EntityTypeTags.AQUATIC) && !entity.getPersistentData().getBoolean("fishheart")) {
 				if (RandomProcedure.execute(world, 0.1)) {
 					i1 = new ItemStack(OneiricconceptModItems.HEARTOFTHEFISH.get());
 				}
