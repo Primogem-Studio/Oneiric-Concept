@@ -24,7 +24,7 @@ public class ModevastProcedure {
 								ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
 						.getType() == HitResult.Type.BLOCK)) {
 			itemmode = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mode");
-			if (itemmode < 3) {
+			if (itemmode < 4) {
 				itemmode = itemmode + 1;
 				itemstack.set(DataComponents.CUSTOM_NAME,
 						Component.literal((new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((BuiltInRegistries.ITEM.getKey(itemstack.getItem()).toString())).toLowerCase(java.util.Locale.ENGLISH)))).getDisplayName().getString())));

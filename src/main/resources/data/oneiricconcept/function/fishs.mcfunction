@@ -1,0 +1,12 @@
+summon minecraft:squid ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:glow_squid ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:axolotl ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:tadpole ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:salmon ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:tropical_fish ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:cod ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:pufferfish ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:turtle ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:dolphin ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:guardian ~ ~3 ~ {NeoForgeData: {fishheart:1b}}
+summon minecraft:elder_guardian ~ ~3 ~ {NeoForgeData: {fishheart:1b}}

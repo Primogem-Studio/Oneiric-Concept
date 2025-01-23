@@ -6,6 +6,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
@@ -28,6 +29,11 @@ import java.util.List;
 public class HeartofthewarmseaItem extends Item {
 	public HeartofthewarmseaItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.BOW;
 	}
 
 	@Override

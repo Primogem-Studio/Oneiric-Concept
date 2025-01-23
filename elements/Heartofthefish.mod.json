@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "heart_of_the_frozen_sea",
+    "texture": "heart_of_the_fish",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Heart of the frozen sea",
+    "name": "Heart of the fish",
     "rarity": "UNCOMMON",
     "creativeTabs": [
       {
@@ -29,19 +29,15 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [],
-      "name": "Dyzxms"
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "Heartice"
-    },
-    "onItemInInventoryTick": {
-      "name": "Frozenheart"
+    "onFinishUsingItem": {
+      "name": "FishHealth"
     },
     "enableRanged": false,
     "shootConstantly": false,

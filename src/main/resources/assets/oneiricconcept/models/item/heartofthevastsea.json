@@ -27,6 +27,12 @@
         "oneiricconcept:heartofthevastsea_itemmode": 3
       },
       "model": "oneiricconcept:item/heartofthevastsea_3"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:heartofthevastsea_itemmode": 4
+      },
+      "model": "oneiricconcept:item/heartofthevastsea_4"
     }
   ]
 }

@@ -23,7 +23,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class NormalStuffingProcedure {
+public class EntityDeadProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
 		if (event.getEntity() != null) {
@@ -40,7 +40,8 @@ public class NormalStuffingProcedure {
 			return;
 		Entity e1 = null;
 		ItemStack i1 = ItemStack.EMPTY;
-		if (entity instanceof Player) {
+		e1 = entity;
+		if (e1 instanceof Player) {
 			i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
 			{
 				final String _tagName = "entitysname";
@@ -53,26 +54,27 @@ public class NormalStuffingProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
-		if (!world.isClientSide()) {
-			e1 = entity;
-			if (Math.random() < 0.1) {
-				if (e1.getType().is(EntityTypeTags.UNDEAD)) {
-					i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
-				} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:human")))) {
-					i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
-					{
-						final String _tagName = "entitysname";
-						final String _tagValue = (entity.getDisplayName().getString());
-						CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putString(_tagName, _tagValue));
-					}
-				} else {
-					i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
+		if (RandomProcedure.execute(world, 0.1)) {
+			if (e1.getType().is(EntityTypeTags.UNDEAD)) {
+				i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
+			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:human")))) {
+				i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
+				{
+					final String _tagName = "entitysname";
+					final String _tagValue = (entity.getDisplayName().getString());
+					CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putString(_tagName, _tagValue));
 				}
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
+			} else if (!entity.getPersistentData().getBoolean("fishheart") && entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:aquatic")))) {
+				if (RandomProcedure.execute(world, 0.1)) {
+					i1 = new ItemStack(OneiricconceptModItems.HEARTOFTHEFISH.get());
 				}
+			} else {
+				i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
+			}
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
 			}
 		}
 	}

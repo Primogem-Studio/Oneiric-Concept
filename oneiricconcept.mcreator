@@ -286,41 +286,6 @@
       "path": "~/block"
     },
     {
-      "name": "NormalStuffing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "normal_stuffing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/NormalStuffingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
       "name": "GeomarrowRadiatorProcess",
       "type": "procedure",
       "compiles": true,
@@ -9226,6 +9191,7 @@
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_4.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
@@ -10193,6 +10159,18 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
           },
           {
             "name": "world",
@@ -11365,6 +11343,103 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "Fishs",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/function/fishs.mcfunction"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "FishHealth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FishHealthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "EntityDead",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_dead",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EntityDeadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Heartofthefish",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heartofthefish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefishItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthefish.json"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [],
@@ -12062,7 +12137,8 @@
       "DivineArrowEmbers",
       "FreshSeedofDawn",
       "Dawnleaves",
-      "XiaoLanternRecycler"
+      "XiaoLanternRecycler",
+      "Heartofthefish"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -12219,6 +12295,7 @@
       "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
       "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_9": "Shivada_metal_ingot",
+      "item.oneiricconcept.heartofthefish": "Heart of the fish",
       "block.oneiricconcept.cryoo_3": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_4": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_5": "Shivada_metal_ingot",
@@ -12597,6 +12674,7 @@
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "block.oneiricconcept.cryoo_8": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_9": "§k怜爱§r金属锭",
+      "item.oneiricconcept.heartofthefish": "鱼心",
       "block.oneiricconcept.cryoo_3": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_4": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_5": "§k怜爱§r金属锭",

@@ -6,8 +6,10 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -33,6 +35,26 @@ public class HeartofthevastseaItem extends Item {
 	}
 
 	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.BOW;
+	}
+
+	@Override
+	public boolean hasCraftingRemainingItem(ItemStack stack) {
+		return true;
+	}
+
+	@Override
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
+		return new ItemStack(Items.HEART_OF_THE_SEA);
+	}
+
+	@Override
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
+		return 1;
+	}
+
+	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
@@ -48,7 +70,8 @@ public class HeartofthevastseaItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		Vastheart2Procedure.execute(world, entity, ar.getObject());
+		entity.startUsingItem(hand);
+		Vastheart2Procedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 

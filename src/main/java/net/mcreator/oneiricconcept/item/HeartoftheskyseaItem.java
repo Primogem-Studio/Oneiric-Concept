@@ -5,6 +5,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
@@ -27,6 +28,11 @@ import java.util.List;
 public class HeartoftheskyseaItem extends Item {
 	public HeartoftheskyseaItem() {
 		super(new Item.Properties().durability(1200).rarity(Rarity.UNCOMMON));
+	}
+
+	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.BOW;
 	}
 
 	@Override

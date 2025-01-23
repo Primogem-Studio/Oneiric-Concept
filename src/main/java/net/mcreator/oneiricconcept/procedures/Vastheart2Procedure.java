@@ -7,7 +7,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.core.component.DataComponents;
 
 public class Vastheart2Procedure {
-	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double itemmode = 0;
@@ -16,6 +16,8 @@ public class Vastheart2Procedure {
 			HearticeProcedure.execute(world, entity, itemstack);
 		} else if (itemmode == 2) {
 			CloudheartmodeProcedure.execute(world, itemstack);
+		} else if (itemmode == 4) {
+			FishHealthProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

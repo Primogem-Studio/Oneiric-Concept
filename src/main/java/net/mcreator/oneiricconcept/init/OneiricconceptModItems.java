@@ -78,6 +78,7 @@ import net.mcreator.oneiricconcept.item.HeartofthewarmseaItem;
 import net.mcreator.oneiricconcept.item.HeartofthevastseaItem;
 import net.mcreator.oneiricconcept.item.HeartoftheskyseaItem;
 import net.mcreator.oneiricconcept.item.HeartofthefrozenseaItem;
+import net.mcreator.oneiricconcept.item.HeartofthefishItem;
 import net.mcreator.oneiricconcept.item.GrilledOyDumplingItem;
 import net.mcreator.oneiricconcept.item.GrilledDumplingItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
@@ -369,6 +370,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> FRESH_SEEDOF_DAWN = block(OneiricconceptModBlocks.FRESH_SEEDOF_DAWN);
 	public static final DeferredItem<Item> DAWNLEAVES = block(OneiricconceptModBlocks.DAWNLEAVES);
 	public static final DeferredItem<Item> XIAO_LANTERN_RECYCLER = block(OneiricconceptModBlocks.XIAO_LANTERN_RECYCLER);
+	public static final DeferredItem<Item> HEARTOFTHEFISH = REGISTRY.register("heartofthefish", HeartofthefishItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
