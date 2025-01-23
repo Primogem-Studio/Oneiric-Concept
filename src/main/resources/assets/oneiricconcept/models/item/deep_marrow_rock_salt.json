@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "oneiricconcept:item/deep_marrow_rock_salt"
+    "layer0": "oneiricconcept:item/01"
   }
 }

@@ -3,13 +3,17 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "deep_marrow_rock_salt",
+    "texture": "01",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Deep Marrow Rock Salt",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConceptfood"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
