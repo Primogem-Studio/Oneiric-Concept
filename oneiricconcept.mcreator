@@ -11872,6 +11872,11 @@
       "CUSTOM:SmokeSausage",
       "CUSTOM:S2mokeSausage"
     ],
+    "ITEMS:curios:curio": [
+      "CUSTOM:Heartofthefrozensea",
+      "CUSTOM:Heartoftheskysea",
+      "CUSTOM:Heartofthevastsea"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
       "~CUSTOM:DXuanyuan",
@@ -11897,11 +11902,6 @@
       "CUSTOM:Waffle",
       "CUSTOM:PrimogemWaffle"
     ],
-    "ITEMS:c:curio": [
-      "CUSTOM:Heartofthevastsea",
-      "CUSTOM:Heartofthefrozensea",
-      "CUSTOM:Heartoftheskysea"
-    ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:GrilledDumpling",
       "~CUSTOM:GrilledOyDumpling",
@@ -11916,6 +11916,9 @@
       "~CUSTOM:BelobogSausage",
       "~CUSTOM:SmokeSausage",
       "~CUSTOM:Sausage"
+    ],
+    "ITEMS:c:curio": [
+      "CUSTOM:SunStartCan"
     ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:AmbrosialArborPlank"
@@ -12102,6 +12105,7 @@
       "SwordOfBrilliantValor",
       "ThunderSword",
       "TNTDispenser",
+      "XiaoLanternRecycler",
       "SmallHertaCore",
       "Totemloot",
       "CompressTotemloot",
@@ -12132,17 +12136,16 @@
       "AureliaeSword",
       "AureliaeShovel",
       "AureliaeHoe",
+      "DivineArrowEmbers",
       "MoltenMetal",
       "MoltenMetalBlock",
       "Heartofthefrozensea",
       "Heartoftheskysea",
       "Heartofthewarmsea",
+      "Heartofthefish",
       "Heartofthevastsea",
-      "DivineArrowEmbers",
       "FreshSeedofDawn",
-      "Dawnleaves",
-      "XiaoLanternRecycler",
-      "Heartofthefish"
+      "Dawnleaves"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -12164,16 +12167,16 @@
       "PrimogemWaffle",
       "SkyWaffle",
       "ResurrectionPellet",
+      "Texturewayfareblessing",
       "Primogemfruit",
       "RedBeanSoupFillingYuanXiao",
       "SweetSesameFillingYuanXiao",
       "Hunger",
       "Milk",
       "Salt",
+      "DeepMarrowRockSalt",
       "SaltDust",
-      "AmbergrisCheeseSliver",
-      "Texturewayfareblessing",
-      "DeepMarrowRockSalt"
+      "AmbergrisCheeseSliver"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
