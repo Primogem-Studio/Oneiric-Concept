@@ -49,13 +49,13 @@ public class TankExplosionProcedure {
 			Inventorynu = Inventorynu + 1;
 		}
 		Inventorynu = lvl / 5;
+		if (world instanceof Level _level && !_level.isClientSide())
+			_level.explode(null, x, y, z, (float) lvl, Level.ExplosionInteraction.BLOCK);
 		for (int index1 = 0; index1 < (int) (Math.ceil(lvl) / 5); index1++) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, (float) lvl, Level.ExplosionInteraction.BLOCK);
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, (x + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (y + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)),
 						(z + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (float) lvl, Level.ExplosionInteraction.BLOCK);
 		}
-		ExplosionIgnitesProcedure.execute(world, x, y, z, lvl / 1.8);
+		ExplosionIgnitesProcedure.execute(world, x, y, z, 5 + lvl / 1.6);
 	}
 }

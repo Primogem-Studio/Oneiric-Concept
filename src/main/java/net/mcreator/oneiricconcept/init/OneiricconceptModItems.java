@@ -50,6 +50,7 @@ import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
 import net.mcreator.oneiricconcept.item.PrimogemfruitItem;
 import net.mcreator.oneiricconcept.item.PrimogemWaffleItem;
 import net.mcreator.oneiricconcept.item.PhlogistonCrystalItem;
+import net.mcreator.oneiricconcept.item.PhlogistonCoreItem;
 import net.mcreator.oneiricconcept.item.OyStuffingItem;
 import net.mcreator.oneiricconcept.item.OyDumplingItem;
 import net.mcreator.oneiricconcept.item.OneiricShardItem;
@@ -374,6 +375,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> HEARTOFTHEFISH = REGISTRY.register("heartofthefish", HeartofthefishItem::new);
 	public static final DeferredItem<Item> PHLOGISTONTANK = block(OneiricconceptModBlocks.PHLOGISTONTANK);
 	public static final DeferredItem<Item> PHLOGISTON_CRYSTAL = REGISTRY.register("phlogiston_crystal", PhlogistonCrystalItem::new);
+	public static final DeferredItem<Item> PHLOGISTON_CORE = REGISTRY.register("phlogiston_core", PhlogistonCoreItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

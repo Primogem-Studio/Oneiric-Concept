@@ -174,6 +174,8 @@ public class OneiricconceptModTabs {
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
 		}
 	}
 }
