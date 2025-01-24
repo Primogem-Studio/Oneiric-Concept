@@ -11652,6 +11652,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Phlogistontank1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogistontank_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/phlogistontank_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -12002,9 +12015,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -12016,6 +12026,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -12057,15 +12070,15 @@
     "ITEMS:c:salt_dust": [
       "CUSTOM:SaltDust"
     ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
+    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
-    ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",

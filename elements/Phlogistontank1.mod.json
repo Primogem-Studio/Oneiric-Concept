@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Agnid1"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:IgnisAureliae"
+      },
+      {
+        "value": "CUSTOM:Heartofthefish"
+      },
+      {
+        "value": "CUSTOM:IgnisAureliae"
+      },
+      {
+        "value": "CUSTOM:IgnisAureliae"
+      },
+      {
+        "value": "CUSTOM:IgnisAureliae"
+      },
+      {
+        "value": "CUSTOM:IgnisAureliae"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Phlogistontank"
+    },
+    "name": "phlogistontank_1",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:agnid_1"
+    },
+    "b": {
+      "item": "oneiricconcept:ignis_aureliae"
+    },
+    "c": {
+      "item": "oneiricconcept:heartofthefish"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:phlogistontank",
+    "count": 1
+  }
+}
