@@ -11444,6 +11444,214 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "Phlogistontank",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogistontank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PhlogistontankBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/PhlogistontankBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/phlogistontank.json",
+          "src/main/resources/assets/oneiricconcept/models/item/phlogistontank.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/phlogistontank.json",
+          "src/main/resources/assets/oneiricconcept/models/block/phlogistontank.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "PhlogistontankGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogistontank_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/PhlogistontankGuiMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/network/PhlogistontankGuiSlotMessage.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/PhlogistontankGuiScreen.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "TankGetLava",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_get_lava",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TankGetLavaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TankAddLvaTag",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_add_lva_tag",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TankAddLvaTagProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TankGetphlogiston",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_getphlogiston",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TankGetphlogistonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PhlogistonTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PhlogistonTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PhlogistonCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonCrystalItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_crystal.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "TankExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TankExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -11794,6 +12002,9 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
+    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -11805,9 +12016,6 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
-    ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -11849,15 +12057,15 @@
     "ITEMS:c:salt_dust": [
       "CUSTOM:SaltDust"
     ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
-    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
@@ -12145,7 +12353,9 @@
       "Heartofthefish",
       "Heartofthevastsea",
       "FreshSeedofDawn",
-      "Dawnleaves"
+      "Dawnleaves",
+      "Phlogistontank",
+      "PhlogistonCrystal"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -12235,6 +12445,7 @@
       "fluid.oneiricconcept.memoria": "Memoria",
       "item.oneiricconcept.memoria_piece": "Memoria Piece",
       "gamerule.ocinitialload.description": "Set game rules as default when entering the world",
+      "gui.oneiricconcept.phlogistontank_gui.label_proc_tank_getphlogiston": "123",
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
       "block.oneiricconcept.dendr_1": "Nagadus_metal_ingot",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
@@ -12419,6 +12630,7 @@
       "translation.key.fail": "Don\u0027t confuse it",
       "block.oneiricconcept.elect_1": "vajrada metal ingot",
       "block.oneiricconcept.cryosealingwax": "Cryo sealing wax",
+      "block.oneiricconcept.phlogistontank": "Phlogiston tank",
       "block.oneiricconcept.elect_7": "vajrada_metal_ingot",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "并非母亲留下的宝藏",
       "block.oneiricconcept.elect_6": "vajrada_metal_ingot",
@@ -12475,6 +12687,7 @@
       "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
       "death.attack.honkai": "%1$s Reduced to ashes by Honkai energy",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
+      "item.oneiricconcept.phlogiston_crystal": "Phlogiston Crystal",
       "gamerule.ocHealthmultiplier.description": "Control the multiplier of partial life changes",
       "block.oneiricconcept.geooo_1": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_10": "Herta bond",
@@ -12531,7 +12744,9 @@
       "advancements.railgun.descr": "Although but,_ _,_ _ _ _ _ _ _ _?",
       "advancements.aftertheiceturnsintowater.title": "After the ice turns into water",
       "block.oneiricconcept.hydro_10": "Varunada_metal_ingot",
+      "block.oneiricconcept.phlogistontank.description_1": "When inputting the redstone signal, it will produce explosions of varying power based on the flammable and explosive materials stored in it",
       "block.oneiricconcept.boom_blossoms_pyro": "Boom Blossoms Pyro",
+      "block.oneiricconcept.phlogistontank.description_0": "Convert the input lava into phlogiston",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "Arrow of Hunger",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7Big sugar meatballs",
@@ -12614,6 +12829,7 @@
       "fluid.oneiricconcept.memoria": "§9忆质",
       "item.oneiricconcept.memoria_piece": "§9忆质凝块",
       "gamerule.ocinitialload.description": "进入世界时将游戏规则设为默认",
+      "gui.oneiricconcept.phlogistontank_gui.label_proc_tank_getphlogiston": "123",
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
       "block.oneiricconcept.dendr_1": "智慧金属锭",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
@@ -12666,7 +12882,7 @@
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.pgc_present": "礼盒",
-      "block.oneiricconcept.xiao_lantern_recycler": "Xiao Lantern Recycler",
+      "block.oneiricconcept.xiao_lantern_recycler": "霄灯回收机",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
       "death.attack.honkai.item": "%1$s was killed by %2$s using %3$s",
@@ -12798,6 +13014,7 @@
       "translation.key.fail": "别搞混了",
       "block.oneiricconcept.elect_1": "永恒金属锭",
       "block.oneiricconcept.cryosealingwax": "冰之印",
+      "block.oneiricconcept.phlogistontank": "燃素储气罐",
       "block.oneiricconcept.elect_7": "永恒金属锭",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "§0并非母亲留下的宝藏",
       "block.oneiricconcept.elect_6": "永恒金属锭",
@@ -12854,6 +13071,7 @@
       "item.minecraft.lingering_potion.effect.hunger_potion": "滞留型饥饿药水",
       "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
+      "item.oneiricconcept.phlogiston_crystal": "Phlogiston Crystal",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
       "block.oneiricconcept.geooo_1": "繁荣金属锭",
       "block.oneiricconcept.hbond_10": "黑塔债券",
@@ -12910,7 +13128,9 @@
       "advancements.railgun.descr": "虽然但是，_ _，_ _ _ _ _ _ _ _？",
       "advancements.aftertheiceturnsintowater.title": "在冰化成水之后",
       "block.oneiricconcept.hydro_10": "正义金属锭",
+      "block.oneiricconcept.phlogistontank.description_1": "输入红石信号时，会根据其中存储的易燃易爆物品产生威力不一的爆炸。",
       "block.oneiricconcept.boom_blossoms_pyro": "火焰爆爆瓜",
+      "block.oneiricconcept.phlogistontank.description_0": "将输入的熔岩转化为燃素；",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "饥饿之箭",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7大糖丸子",
