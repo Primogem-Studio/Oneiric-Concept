@@ -34,7 +34,7 @@ public class TankExplosionProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu")) / 80;
-		lvl = 3;
+		Inventorynu = 2;
 		for (int index0 = 0; index0 < 9; index0++) {
 			lvl = lvl + new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -49,13 +49,15 @@ public class TankExplosionProcedure {
 			Inventorynu = Inventorynu + 1;
 		}
 		Inventorynu = lvl / 5;
-		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, (float) lvl, Level.ExplosionInteraction.BLOCK);
-		for (int index1 = 0; index1 < (int) (Math.ceil(lvl) / 5); index1++) {
+		if (0 < lvl) {
 			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, (x + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (y + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)),
-						(z + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (float) lvl, Level.ExplosionInteraction.BLOCK);
+				_level.explode(null, x, y, z, (float) lvl, Level.ExplosionInteraction.BLOCK);
+			for (int index1 = 0; index1 < (int) (Math.ceil(lvl) / 5); index1++) {
+				if (world instanceof Level _level && !_level.isClientSide())
+					_level.explode(null, (x + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (y + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)),
+							(z + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (float) lvl, Level.ExplosionInteraction.BLOCK);
+			}
+			ExplosionIgnitesProcedure.execute(world, x, y, z, 15 + lvl / 1.6);
 		}
-		ExplosionIgnitesProcedure.execute(world, x, y, z, 5 + lvl / 1.6);
 	}
 }
