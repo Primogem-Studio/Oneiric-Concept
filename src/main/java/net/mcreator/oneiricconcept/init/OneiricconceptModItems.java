@@ -399,6 +399,7 @@ public class OneiricconceptModItems {
 		@OnlyIn(Dist.CLIENT)
 		public static void clientLoad(FMLClientSetupEvent event) {
 			event.enqueueWork(() -> {
+				ItemProperties.register(ADEPTUS_GUN.get(), ResourceLocation.parse("oneiricconcept:adeptus_gun_mode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
 				ItemProperties.register(HEARTOFTHEVASTSEA.get(), ResourceLocation.parse("oneiricconcept:heartofthevastsea_itemmode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
 			});
 		}

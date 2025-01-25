@@ -3,6 +3,38 @@
   "textures": {
     "layer0": "oneiricconcept:item/adeptusgun"
   },
+  "overrides": [
+    {
+      "predicate": {
+        "oneiricconcept:adeptus_gun_mode": 0
+      },
+      "model": "oneiricconcept:item/adeptus_gun_0"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:adeptus_gun_mode": 1
+      },
+      "model": "oneiricconcept:item/adeptus_gun_1"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:adeptus_gun_mode": 2
+      },
+      "model": "oneiricconcept:item/adeptus_gun_2"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:adeptus_gun_mode": 3
+      },
+      "model": "oneiricconcept:item/adeptus_gun_3"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:adeptus_gun_mode": 4
+      },
+      "model": "oneiricconcept:item/adeptus_gun_4"
+    }
+  ],
   "display": {
     "thirdperson_righthand": {
       "rotation": [

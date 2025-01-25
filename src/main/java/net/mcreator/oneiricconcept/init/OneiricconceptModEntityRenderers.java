@@ -24,5 +24,6 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.MORA_COIN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.INVALID.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), SkyShatteringLuxArrowRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.EXPLOSIVE.get(), ThrownItemRenderer::new);
 	}
 }

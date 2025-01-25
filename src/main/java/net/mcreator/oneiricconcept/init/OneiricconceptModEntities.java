@@ -21,6 +21,7 @@ import net.mcreator.oneiricconcept.entity.XuanyuanQ2Entity;
 import net.mcreator.oneiricconcept.entity.SkyShatteringLuxArrowEntity;
 import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
 import net.mcreator.oneiricconcept.entity.InvalidEntity;
+import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
@@ -41,6 +42,8 @@ public class OneiricconceptModEntities {
 			EntityType.Builder.<InvalidEntity>of(InvalidEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0f, 0f));
 	public static final DeferredHolder<EntityType<?>, EntityType<SkyShatteringLuxArrowEntity>> SKY_SHATTERING_LUX_ARROW = register("sky_shattering_lux_arrow",
 			EntityType.Builder.<SkyShatteringLuxArrowEntity>of(SkyShatteringLuxArrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ExplosiveEntity>> EXPLOSIVE = register("explosive",
+			EntityType.Builder.<ExplosiveEntity>of(ExplosiveEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

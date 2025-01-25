@@ -7,11 +7,11 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -20,13 +20,12 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.oneiricconcept.procedures.ModevastProcedure;
 import net.mcreator.oneiricconcept.procedures.AsdaProcedure;
-import net.mcreator.oneiricconcept.entity.XuanyuanSwordQEntity;
+import net.mcreator.oneiricconcept.procedures.AdeptusfireProcedure;
 
 import java.util.List;
 
@@ -38,8 +37,13 @@ public class AdeptusGunItem extends Item {
 	}
 
 	@Override
+	public UseAnim getUseAnimation(ItemStack itemstack) {
+		return UseAnim.BOW;
+	}
+
+	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 77;
+		return 1;
 	}
 
 	@Override
@@ -62,37 +66,25 @@ public class AdeptusGunItem extends Item {
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
-		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
-			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
-			entity.startUsingItem(hand);
-		}
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		entity.startUsingItem(hand);
 		return ar;
 	}
 
 	@Override
-	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int count) {
-		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
-			ItemStack stack = findAmmo(player);
-			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-				XuanyuanSwordQEntity projectile = XuanyuanSwordQEntity.shoot(world, entity, world.getRandom());
-				if (player.getAbilities().instabuild) {
-					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
-				} else {
-					if (stack.isDamageableItem()) {
-						if (world instanceof ServerLevel serverLevel)
-							stack.hurtAndBreak(1, serverLevel, player, _stkprov -> {
-							});
-					} else {
-						stack.shrink(1);
-					}
-				}
-			}
-			entity.releaseUsingItem();
-		}
+	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
+		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		AdeptusfireProcedure.execute(entity, itemstack);
+		return retval;
 	}
 
-	private ItemStack findAmmo(Player player) {
-		return new ItemStack(XuanyuanSwordQEntity.PROJECTILE_ITEM.getItem());
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
+		boolean retval = super.onEntitySwing(itemstack, entity, hand);
+		ModevastProcedure.execute(entity.level(), entity, itemstack);
+		return retval;
 	}
 }

@@ -1436,8 +1436,13 @@
       "registry_name": "adeptus_gun",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_3.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_1.json",
           "src/main/java/net/mcreator/oneiricconcept/item/AdeptusGunItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun.json"
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_4.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_2.json"
         ]
       },
       "path": "~/item"
@@ -11944,6 +11949,72 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Adeptusfire",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adeptusfire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AdeptusfireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Setexplosive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setexplosive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SetexplosiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Explosive",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/entity/ExplosiveEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

@@ -8,6 +8,7 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -20,10 +21,16 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
 public class PhlogistonTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		boolean itmgiv = false;
 		ItemStack itm0 = ItemStack.EMPTY;
+		boolean itmgiv = false;
+		boolean found = false;
 		double inventory = 0;
 		double snu = 0;
+		double sx = 0;
+		double sy = 0;
+		double sz = 0;
+		double xyz = 0;
+		double range = 0;
 		snu = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -141,6 +148,29 @@ public class PhlogistonTickProcedure {
 				ItemStack _setstack = itm0.copy();
 				_setstack.setCount(itm0.getCount());
 				_itemHandlerModifiable.setStackInSlot(0, _setstack);
+			}
+		}
+		if (RandomProcedure.execute(world, 0.01)) {
+			range = 3;
+			xyz = Math.round(0 - (range - 1) / 2);
+			sx = xyz;
+			found = false;
+			for (int index1 = 0; index1 < (int) range; index1++) {
+				sy = xyz;
+				for (int index2 = 0; index2 < (int) range; index2++) {
+					sz = xyz;
+					for (int index3 = 0; index3 < (int) range; index3++) {
+						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.FIRE) {
+							found = true;
+						}
+						sz = sz + 1;
+					}
+					sy = sy + 1;
+				}
+				sx = sx + 1;
+			}
+			if (found) {
+				InduceddetonationProcedure.execute(world, x, y, z);
 			}
 		}
 	}
