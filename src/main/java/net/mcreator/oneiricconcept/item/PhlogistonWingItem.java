@@ -41,8 +41,8 @@ public abstract class PhlogistonWingItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(new ItemStack(OneiricconceptModItems.PHLOGISTON_CRYSTAL.get())),
-					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("oneiricconcept:phlogistonwing"))), 2f, 0.1f);
+			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(new ItemStack(OneiricconceptModItems.PHLOGISTON.get())), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("oneiricconcept:phlogistonwing"))),
+					2f, 0.1f);
 			registerHelper.register(ResourceLocation.parse("oneiricconcept:phlogiston_wing"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});

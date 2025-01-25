@@ -20,9 +20,18 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
 public class PhlogistonTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		double inventory = 0;
 		boolean itmgiv = false;
 		ItemStack itm0 = ItemStack.EMPTY;
+		double inventory = 0;
+		double snu = 0;
+		snu = new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu");
 		if (1 <= new Object() {
 			public int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank) {
 				if (level instanceof ILevelExtension _ext) {
@@ -32,14 +41,7 @@ public class PhlogistonTickProcedure {
 				}
 				return 0;
 			}
-		}.getFluidTankLevel(world, BlockPos.containing(x, y, z), 1) && new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu") < 1000) {
+		}.getFluidTankLevel(world, BlockPos.containing(x, y, z), 1) && snu < 1000) {
 			if (world instanceof ILevelExtension _ext) {
 				IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, BlockPos.containing(x, y, z), null);
 				if (_fluidHandler != null)
@@ -50,25 +52,11 @@ public class PhlogistonTickProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("lavasnu", (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "lavasnu") + 1));
+					_blockEntity.getPersistentData().putDouble("lavasnu", (snu + 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-		} else if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu") >= 1000) {
+		} else if (snu >= 1000) {
 			inventory = 2;
 			while (!itmgiv && inventory <= 10) {
 				if (new Object() {
@@ -117,6 +105,14 @@ public class PhlogistonTickProcedure {
 				}
 			}
 		}
+		snu = new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu");
 		itm0 = (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				if (world instanceof ILevelExtension _ext) {
@@ -127,25 +123,27 @@ public class PhlogistonTickProcedure {
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack(world, BlockPos.containing(x, y, z), 0));
-		if ((BuiltInRegistries.ITEM.getKey(itm0.getItem()).toString()).contains("phlogiston") && itm0.isDamaged()) {
+		if ((BuiltInRegistries.ITEM.getKey(itm0.getItem()).toString()).contains("phlogiston") && itm0.isDamaged() && snu > 0) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("lavasnu", ((new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "lavasnu")) - 1));
+					_blockEntity.getPersistentData().putDouble("lavasnu", (snu - 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 			if (world instanceof ServerLevel _level) {
-				itm0.hurtAndBreak(-1, _level, null, _stkprov -> {
+				(new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).hurtAndBreak(-20, _level, null, _stkprov -> {
 				});
 			}
 		}

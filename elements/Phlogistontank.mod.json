@@ -133,7 +133,7 @@
       "name": "PhlogistonTick"
     },
     "onDestroyedByExplosion": {
-      "name": "TankExplosion"
+      "name": "Induceddetonation"
     },
     "onRedstoneOn": {
       "name": "TankExplosion"

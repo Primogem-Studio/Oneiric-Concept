@@ -7,9 +7,6 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
 import net.minecraft.core.BlockPos;
 
 public class TankExplosionProcedure {
@@ -48,16 +45,6 @@ public class TankExplosionProcedure {
 			}.getAmount(world, BlockPos.containing(x, y, z), (int) Inventorynu);
 			Inventorynu = Inventorynu + 1;
 		}
-		Inventorynu = lvl / 5;
-		if (0 < lvl) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, (float) lvl, Level.ExplosionInteraction.BLOCK);
-			for (int index1 = 0; index1 < (int) (Math.ceil(lvl) / 5); index1++) {
-				if (world instanceof Level _level && !_level.isClientSide())
-					_level.explode(null, (x + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (y + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)),
-							(z + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (float) lvl, Level.ExplosionInteraction.BLOCK);
-			}
-			ExplosionIgnitesProcedure.execute(world, x, y, z, 15 + lvl / 1.6);
-		}
+		OverlimitExplosionProcedure.execute(world, x, y, z, lvl);
 	}
 }

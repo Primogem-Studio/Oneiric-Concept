@@ -44,6 +44,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.oneiricconcept.world.inventory.PhlogistontankGuiMenu;
 import net.mcreator.oneiricconcept.procedures.TankExplosionProcedure;
 import net.mcreator.oneiricconcept.procedures.PhlogistonTickProcedure;
+import net.mcreator.oneiricconcept.procedures.InduceddetonationProcedure;
 import net.mcreator.oneiricconcept.block.entity.PhlogistontankBlockEntity;
 
 import java.util.List;
@@ -134,7 +135,7 @@ public class PhlogistontankBlock extends Block implements EntityBlock {
 	@Override
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
-		TankExplosionProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		InduceddetonationProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

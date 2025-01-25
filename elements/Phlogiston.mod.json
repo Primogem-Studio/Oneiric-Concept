@@ -9,7 +9,11 @@
     "states": [],
     "name": "Phlogiston",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
