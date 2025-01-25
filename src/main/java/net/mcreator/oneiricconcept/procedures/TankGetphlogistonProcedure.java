@@ -2,6 +2,7 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 public class TankGetphlogistonProcedure {
@@ -37,7 +38,7 @@ public class TankGetphlogistonProcedure {
 		for (int index1 = 0; index1 < (int) (100 - nulav); index1++) {
 			txtstr = txtstr + "|";
 		}
-		txtstr = "\u71C3\u7D20\u6676\u4F53" + "\uFF1A" + txtstr;
+		txtstr = Component.translatable("item.oneiricconcept.phlogiston").getString() + "\uFF1A" + txtstr;
 		return txtstr;
 	}
 }

@@ -17,5 +17,9 @@ public class OneiricconceptModFuels {
 		ItemStack itemstack = event.getItemStack();
 		if (itemstack.getItem() == OneiricconceptModItems.PUBLIC_CLAMOR.get())
 			event.setBurnTime(1600);
+		else if (itemstack.getItem() == OneiricconceptModItems.PHLOGISTON.get())
+			event.setBurnTime(20000);
+		else if (itemstack.getItem() == OneiricconceptModItems.PHLOGISTON_CRYSTAL.get())
+			event.setBurnTime(180000);
 	}
 }

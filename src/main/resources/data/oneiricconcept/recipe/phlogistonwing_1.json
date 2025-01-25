@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:ignis_aureliae"
+    },
+    "b": {
+      "item": "oneiricconcept:phlogiston_crystal"
+    },
+    "c": {
+      "item": "minecraft:firework_rocket"
+    },
+    "d": {
+      "item": "oneiricconcept:honkai_shard"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:phlogiston_wing_chestplate",
+    "count": 1
+  }
+}

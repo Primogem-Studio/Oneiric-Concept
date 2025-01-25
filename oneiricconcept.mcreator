@@ -11710,6 +11710,174 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "PhlogistonWing",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_wing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonWingItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_wing_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "PhlogistonWingFly",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_wing_fly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PhlogistonWingFlyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ChestplateFly",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chestplate_fly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ChestplateFlyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic"
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PhlogistonController",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_controller",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonControllerItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_controller.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Phlogistoncontrolle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogistoncontrolle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PhlogistoncontrolleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Phlogiston",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/phlogiston.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Phlogistonfuel",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogistonfuel",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PhlogistonFuelCrystal",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_fuel_crystal",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "PhlogistonCrystal1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_crystal_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/phlogiston_crystal_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Phlogistonwing1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogistonwing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/phlogistonwing_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Phlogistoncontroller1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogistoncontroller_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/phlogistoncontroller_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -11740,6 +11908,9 @@
     }
   ],
   "tag_elements": {
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:PhlogistonWing.body"
+    ],
     "ENTITIES:mod:divinearrow": [
       "CUSTOM:SkyShatteringLuxArrow"
     ],
@@ -12060,6 +12231,9 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
+    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -12071,9 +12245,6 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
-    ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -12115,15 +12286,15 @@
     "ITEMS:c:salt_dust": [
       "CUSTOM:SaltDust"
     ],
-    "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
-    ],
     "ITEMS:mod:ignisaureliae": [
       "CUSTOM:AureliaePickaxe",
       "CUSTOM:AureliaeAxe",
       "CUSTOM:AureliaeSword",
       "CUSTOM:AureliaeShovel",
       "CUSTOM:AureliaeHoe"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:AureliaeShovel"
     ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
@@ -12168,6 +12339,9 @@
       "CUSTOM:Waffle",
       "CUSTOM:PrimogemWaffle"
     ],
+    "ITEMS:c:curio": [
+      "CUSTOM:SunStartCan"
+    ],
     "ITEMS:minecraft:meat": [
       "~CUSTOM:GrilledDumpling",
       "~CUSTOM:GrilledOyDumpling",
@@ -12182,9 +12356,6 @@
       "~CUSTOM:BelobogSausage",
       "~CUSTOM:SmokeSausage",
       "~CUSTOM:Sausage"
-    ],
-    "ITEMS:c:curio": [
-      "CUSTOM:SunStartCan"
     ],
     "ITEMS:minecraft:planks": [
       "CUSTOM:AmbrosialArborPlank"
@@ -12413,7 +12584,9 @@
       "FreshSeedofDawn",
       "Dawnleaves",
       "Phlogistontank",
-      "PhlogistonCrystal"
+      "PhlogistonCrystal",
+      "PhlogistonController",
+      "PhlogistonWing"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -12511,10 +12684,10 @@
       "block.oneiricconcept.fulmo_10": "full moon ingot",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "Shivada_metal_ingot",
-      "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
       "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
-      "item.oneiricconcept.heartofthefish": "Heart of the fish",
+      "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_9": "Shivada_metal_ingot",
+      "item.oneiricconcept.heartofthefish": "Heart of the fish",
       "block.oneiricconcept.cryoo_3": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_4": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_5": "Shivada_metal_ingot",
@@ -12547,6 +12720,7 @@
       "item.oneiricconcept.s_2ausage": "Sausage",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "Gactus",
+      "item.oneiricconcept.phlogiston_wing_chestplate": "phlogiston wing",
       "item.oneiricconcept.mora_magazine": "Mora Magazine♦",
       "block.oneiricconcept.newmo_8": "crescent ingot",
       "block.oneiricconcept.newmo_7": "crescent ingot",
@@ -12574,8 +12748,8 @@
       "block.oneiricconcept.elect_1": "vajrada metal ingot",
       "block.oneiricconcept.phlogistontank": "Phlogiston tank",
       "block.oneiricconcept.elect_7": "vajrada_metal_ingot",
-      "block.oneiricconcept.elect_6": "vajrada_metal_ingot",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "并非母亲留下的宝藏",
+      "block.oneiricconcept.elect_6": "vajrada_metal_ingot",
       "block.oneiricconcept.elect_9": "vajrada_metal_ingot",
       "item.oneiricconcept.sword_of_brilliant_valor.description_0": "当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
       "item_group.oneiricconcept.oneiric_concept_decoration": "Oneiric Concept Decoration",
@@ -12612,8 +12786,8 @@
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
       "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
       "block.oneiricconcept.newmo_10": "crescent ingot",
-      "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
       "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
+      "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
       "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
       "item.oneiricconcept.taw_wood_loot": "TAW Wood Loot",
       "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
@@ -12639,14 +12813,15 @@
       "block.oneiricconcept.fulmo_3": "full moon ingot",
       "block.oneiricconcept.fulmo_2": "full moon ingot",
       "block.oneiricconcept.fulmo_5": "full moon ingot",
-      "block.oneiricconcept.fulmo_4": "full moon ingot",
       "block.oneiricconcept.sustenanceanchoroff": "Sustenanceanchor",
+      "block.oneiricconcept.fulmo_4": "full moon ingot",
       "block.oneiricconcept.redmo_1": "red moon ingot",
       "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
       "block.oneiricconcept.fulmo_1": "full moon ingot",
       "advancements.feed_on_illusions.descr": "Gaseous purified water, it seems like I\u0027ve eaten it, but it also seems like I haven\u0027t eaten anything.",
       "death.attack.b_2.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.primogems_sausage": "Primogems Sausage",
+      "item.oneiricconcept.phlogiston_controller": "Phlogiston Controller",
       "block.oneiricconcept.big_rock.description_0": "§7Stones rich in coarse minerals",
       "item.oneiricconcept.boss_stone_coin_gun": "Coin Gun",
       "block.oneiricconcept.c_cactus": "Cactus",
@@ -12717,6 +12892,7 @@
       "item.oneiricconcept.small_herta_core.description_0": "模拟宇宙·寰宇蝗灾",
       "item.oneiricconcept.primogemfruit": "Primogemfruit",
       "item.oneiricconcept.propaganda_army.description_0": "§7An account seems to be a bit too slow",
+      "item.oneiricconcept.phlogiston": "Phlogiston",
       "subtitles.bigstonecrushchest": "BigStoneCrushChest",
       "block.oneiricconcept.tnt_dispenser": "TNT Dispenser",
       "block.oneiricconcept.primogemfruitblock": "Primogemfruit",
@@ -12934,6 +13110,7 @@
       "item.oneiricconcept.s_2ausage": "香肠",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "仙士掌",
+      "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
       "item.oneiricconcept.mora_magazine": "摩拉弹匣♦",
       "block.oneiricconcept.newmo_8": "新月锭",
       "block.oneiricconcept.newmo_7": "新月锭",
@@ -12961,8 +13138,8 @@
       "block.oneiricconcept.elect_1": "永恒金属锭",
       "block.oneiricconcept.phlogistontank": "燃素储气罐",
       "block.oneiricconcept.elect_7": "永恒金属锭",
-      "item.oneiricconcept.sword_of_brilliant_valor.description_1": "§0并非母亲留下的宝藏",
       "block.oneiricconcept.elect_6": "永恒金属锭",
+      "item.oneiricconcept.sword_of_brilliant_valor.description_1": "§0并非母亲留下的宝藏",
       "item.oneiricconcept.sword_of_brilliant_valor.description_0": "§7当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
       "block.oneiricconcept.elect_9": "永恒金属锭",
       "block.oneiricconcept.elect_8": "永恒金属锭",
@@ -13034,6 +13211,7 @@
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.primogems_sausage": "原石香肠",
+      "item.oneiricconcept.phlogiston_controller": "燃素控制器",
       "block.oneiricconcept.big_rock.description_0": "§7蕴含丰富粗矿的石块",
       "item.oneiricconcept.boss_stone_coin_gun": "撒币枪",
       "block.oneiricconcept.c_cactus": "仙灵掌",
@@ -13104,6 +13282,7 @@
       "item.oneiricconcept.small_herta_core.description_0": "§7模拟宇宙·寰宇蝗灾",
       "item.oneiricconcept.primogemfruit": "原石果",
       "item.oneiricconcept.propaganda_army.description_0": "§7一个账号手磨疑似有些太慢了",
+      "item.oneiricconcept.phlogiston": "燃素",
       "subtitles.bigstonecrushchest": "大石碎胸口",
       "block.oneiricconcept.tnt_dispenser": "TNT发射器",
       "block.oneiricconcept.primogemfruitblock": "原石果",

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MoltenMetal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MoltenMetal"
+      },
+      {
+        "value": "CUSTOM:PhlogistonCrystal"
+      },
+      {
+        "value": "CUSTOM:MoltenMetal"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MoltenMetal"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PhlogistonController"
+    },
+    "name": "phlogistoncontroller_1",
+    "namespace": "mod"
+  }
+}

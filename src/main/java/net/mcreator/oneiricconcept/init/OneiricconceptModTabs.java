@@ -109,6 +109,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.DAWNLEAVES.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PHLOGISTONTANK.get().asItem());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON_CRYSTAL.get());
+				tabData.accept(OneiricconceptModItems.PHLOGISTON_CONTROLLER.get());
+				tabData.accept(OneiricconceptModItems.PHLOGISTON_WING_CHESTPLATE.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {

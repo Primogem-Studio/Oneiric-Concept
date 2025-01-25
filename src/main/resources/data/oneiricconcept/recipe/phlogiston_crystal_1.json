@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:phlogiston"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:phlogiston_crystal",
+    "count": 1
+  }
+}

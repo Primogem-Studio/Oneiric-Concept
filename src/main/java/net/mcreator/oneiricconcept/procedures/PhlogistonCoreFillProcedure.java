@@ -19,7 +19,7 @@ public class PhlogistonCoreFillProcedure {
 		fil = 2;
 		for (int index0 = 0; index0 < 9; index0++) {
 			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-				ItemStack _setstack = new ItemStack(OneiricconceptModItems.PHLOGISTON_CRYSTAL.get()).copy();
+				ItemStack _setstack = new ItemStack(OneiricconceptModItems.PHLOGISTON.get()).copy();
 				_setstack.setCount(64);
 				_itemHandlerModifiable.setStackInSlot((int) fil, _setstack);
 			}
