@@ -10,13 +10,17 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "plantType": "normal",
+    "plantType": "sapling",
     "suspiciousStewEffect": "LUCK",
     "suspiciousStewDuration": 100,
-    "secondaryTreeChance": 0.1,
+    "secondaryTreeChance": 0.2,
     "trees": [
-      null,
-      null
+      {
+        "value": "CUSTOM:B2ananaMushroom"
+      },
+      {
+        "value": "CUSTOM:MmMushroom"
+      }
     ],
     "flowerTrees": [
       null,

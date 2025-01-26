@@ -12588,6 +12588,7 @@
       "Blocks.REEDS"
     ],
     "BLOCKS:minecraft:saplings": [
+      "~CUSTOM:BananaMushroom",
       "~CUSTOM:FreshSeedofDawn",
       "~CUSTOM:AmbrosialArborSapling",
       "~CUSTOM:TheAnotherWorldSapling"
