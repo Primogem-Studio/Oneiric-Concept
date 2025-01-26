@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 5,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,13 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Dendr1"
-      },
-      {
         "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:Dendr1"
       },
       {
         "value": "CUSTOM:AmbrosialArborLog"
@@ -30,13 +24,19 @@
         "value": "CUSTOM:AmbrosialArborLog"
       },
       {
-        "value": "CUSTOM:Dendr1"
+        "value": "CUSTOM:Phlogiston"
       },
       {
         "value": "CUSTOM:AmbrosialArborLog"
       },
       {
-        "value": "CUSTOM:Dendr1"
+        "value": "CUSTOM:AmbrosialArborLog"
+      },
+      {
+        "value": "CUSTOM:AmbrosialArborLog"
+      },
+      {
+        "value": "CUSTOM:AmbrosialArborLog"
       }
     ],
     "recipeReturnStack": {

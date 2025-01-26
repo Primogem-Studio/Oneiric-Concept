@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
+    "aaa",
     "aba",
-    "bbb",
-    "aba"
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "oneiricconcept:dendr_1"
+      "item": "oneiricconcept:ambrosial_arbor_log"
     },
     "b": {
-      "item": "oneiricconcept:ambrosial_arbor_log"
+      "item": "oneiricconcept:phlogiston"
     }
   },
   "result": {
     "id": "oneiricconcept:ambrosial_arbor_wood",
-    "count": 5
+    "count": 1
   }
 }

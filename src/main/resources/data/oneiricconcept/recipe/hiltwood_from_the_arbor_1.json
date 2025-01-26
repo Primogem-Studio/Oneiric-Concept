@@ -2,12 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "a",
-    "a"
+    "aaa",
+    "aaa",
+    "aaa"
   ],
   "key": {
     "a": {
-      "item": "oneiricconcept:ambrosial_arbor_log"
+      "item": "oneiricconcept:ambrosial_arbor_wood"
     }
   },
   "result": {

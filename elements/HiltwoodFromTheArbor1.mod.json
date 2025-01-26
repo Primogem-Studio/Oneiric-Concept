@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": "CUSTOM:AmbrosialArborLog"
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": ""
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": ""
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": "CUSTOM:AmbrosialArborLog"
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": ""
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": ""
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": ""
+        "value": "CUSTOM:AmbrosialArborWood"
       },
       {
-        "value": ""
+        "value": "CUSTOM:AmbrosialArborWood"
       }
     ],
     "recipeReturnStack": {
