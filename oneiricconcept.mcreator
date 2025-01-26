@@ -1648,7 +1648,7 @@
       "name": "XuanYuanSword1",
       "type": "recipe",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "xuan_yuan_sword_1",
       "metadata": {
         "files": [
@@ -12002,6 +12002,59 @@
           "src/main/java/net/mcreator/oneiricconcept/entity/ExplosiveEntity.java"
         ]
       }
+    },
+    {
+      "name": "Fishcake",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishcake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/FishcakeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/fishcake.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Ambergrischeesesliver2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ambergrischeesesliver_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ambergrischeesesliver_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Fishcake1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishcake_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fishcake_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Fishcake2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fishcake_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fishcake_2.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -12192,7 +12245,8 @@
       "~CUSTOM:GeomarrowRadiator"
     ],
     "ITEMS:c:foods/cheese": [
-      "CUSTOM:AmbergrisCheeseSliver"
+      "CUSTOM:AmbergrisCheeseSliver",
+      "EXTERNAL:primogemcraft:xiangdanganlao"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
@@ -12438,6 +12492,9 @@
       "CUSTOM:Heartoftheskysea",
       "CUSTOM:Heartofthevastsea"
     ],
+    "ITEMS:minecraft:fishes": [
+      "CUSTOM:Heartofthefish"
+    ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
       "~CUSTOM:DXuanyuan",
@@ -12467,6 +12524,7 @@
       "CUSTOM:SunStartCan"
     ],
     "ITEMS:minecraft:meat": [
+      "~CUSTOM:Fishcake",
       "~CUSTOM:GrilledDumpling",
       "~CUSTOM:GrilledOyDumpling",
       "~CUSTOM:OyStuffing",
@@ -12575,7 +12633,8 @@
       "Items.RABBIT",
       "Items.COOKED_RABBIT",
       "Items.MUTTON",
-      "Items.COOKED_MUTTON"
+      "Items.COOKED_MUTTON",
+      "TAG:c:foods/raw_fishes"
     ],
     "ITEMS:oneiricconcept:magazine": [
       "CUSTOM:MoraMagazine",
@@ -12742,7 +12801,8 @@
       "Salt",
       "DeepMarrowRockSalt",
       "SaltDust",
-      "AmbergrisCheeseSliver"
+      "AmbergrisCheeseSliver",
+      "Fishcake"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -12989,6 +13049,7 @@
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "block.oneiricconcept.dendr_6": "Nagadus_metal_ingot",
+      "item.oneiricconcept.fishcake": "Fishcake",
       "block.oneiricconcept.dendr_7": "Nagadus_metal_ingot",
       "block.oneiricconcept.dendr_8": "Nagadus_metal_ingot",
       "advancements.the_seriousness_of_breakfast.title": "The Seriousness Of Breakfast",
@@ -13379,6 +13440,7 @@
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7有股怪味……孜然的味道吗？",
       "block.oneiricconcept.dendr_6": "智慧金属锭",
+      "item.oneiricconcept.fishcake": "Fishcake",
       "block.oneiricconcept.dendr_7": "智慧金属锭",
       "block.oneiricconcept.dendr_8": "智慧金属锭",
       "advancements.the_seriousness_of_breakfast.title": "早餐的仪式感",

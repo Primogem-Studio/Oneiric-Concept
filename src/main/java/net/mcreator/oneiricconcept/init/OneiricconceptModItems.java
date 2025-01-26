@@ -86,6 +86,7 @@ import net.mcreator.oneiricconcept.item.HeartofthefrozenseaItem;
 import net.mcreator.oneiricconcept.item.HeartofthefishItem;
 import net.mcreator.oneiricconcept.item.GrilledOyDumplingItem;
 import net.mcreator.oneiricconcept.item.GrilledDumplingItem;
+import net.mcreator.oneiricconcept.item.FishcakeItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
@@ -382,6 +383,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PHLOGISTON_WING_CHESTPLATE = REGISTRY.register("phlogiston_wing_chestplate", PhlogistonWingItem.Chestplate::new);
 	public static final DeferredItem<Item> PHLOGISTON_CONTROLLER = REGISTRY.register("phlogiston_controller", PhlogistonControllerItem::new);
 	public static final DeferredItem<Item> PHLOGISTON = REGISTRY.register("phlogiston", PhlogistonItem::new);
+	public static final DeferredItem<Item> FISHCAKE = REGISTRY.register("fishcake", FishcakeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
