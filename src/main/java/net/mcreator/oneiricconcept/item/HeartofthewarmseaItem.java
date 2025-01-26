@@ -9,7 +9,6 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -43,7 +42,7 @@ public class HeartofthewarmseaItem extends Item {
 
 	@Override
 	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(Items.HEART_OF_THE_SEA);
+		return new ItemStack(this);
 	}
 
 	@Override

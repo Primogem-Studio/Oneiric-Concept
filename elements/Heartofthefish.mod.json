@@ -20,7 +20,7 @@
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": "Items.HEART_OF_THE_SEA"
+      "value": ""
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,

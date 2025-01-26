@@ -11,6 +11,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
@@ -34,6 +36,8 @@ public class GeomarrowRadiatorProcessProcedure {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, i2, 1, 1, 2);
 		} else if (i1.getItem() == Items.ROTTEN_FLESH) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(Items.LEATHER), 1, 1, 2);
+		} else if (i1.is(ItemTags.create(ResourceLocation.parse("c:heart_of_the_sea")))) {
+			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(Items.HEART_OF_THE_SEA), 0, 1, 20);
 		}
 		if (i1.getItem() == OneiricconceptModItems.SAUSAGE.get()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get()), 0, 1, 2);
@@ -51,7 +55,7 @@ public class GeomarrowRadiatorProcessProcedure {
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(6);
 		} else if (i1.getItem() == (PotionContents.createItemStack(Items.POTION, Potions.WATER)).getItem()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity, new ItemStack(OneiricconceptModItems.SALT.get()), 0, 1, 1);
-		} else if (world instanceof Level _level19 && _level19.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(i1), _level19).isPresent()) {
+		} else if (world instanceof Level _level20 && _level20.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(i1), _level20).isPresent()) {
 			Geomarrowradiatorprocess0Procedure.execute(world, x, y, z, entity,
 					(world instanceof Level _lvlSmeltResult
 							? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(i1), _lvlSmeltResult).map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy())
