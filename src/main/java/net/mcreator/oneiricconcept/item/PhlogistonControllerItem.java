@@ -26,7 +26,7 @@ public class PhlogistonControllerItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
 		Entity entity = Minecraft.getInstance().player;
-		return ChestplateFlyProcedure.execute(entity);
+		return ChestplateFlyProcedure.execute(entity.level(), entity);
 	}
 
 	@Override
