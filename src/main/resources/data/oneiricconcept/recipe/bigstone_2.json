@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:stone"
+  },
+  "cookingtime": 60,
+  "experience": 20.0,
+  "ingredients": [
+    {
+      "item": "oneiricconcept:mm_mushroom"
+    },
+    {
+      "item": "oneiricconcept:mm_mushroom"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "oneiricconcept:big_stone"
+  }
+}

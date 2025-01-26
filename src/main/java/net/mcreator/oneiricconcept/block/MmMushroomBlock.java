@@ -52,6 +52,7 @@ public class MmMushroomBlock extends DoublePlantBlock {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		list.add(Component.translatable("block.oneiricconcept.mm_mushroom.description_0"));
+		list.add(Component.translatable("block.oneiricconcept.mm_mushroom.description_1"));
 	}
 
 	@Override

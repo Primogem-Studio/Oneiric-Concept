@@ -44,7 +44,8 @@
     "name": "Mm Mushroom",
     "specialInformation": {
       "fixedValue": [
-        "Cute mushrooms, but with a strong heart"
+        "Cute mushrooms, but with a strong heart",
+        "The bow on the head is flat"
       ]
     },
     "creativeTabs": [
@@ -102,7 +103,7 @@
     "generateFeature": true,
     "restrictionBiomes": [],
     "generationType": "Flower",
-    "patchSize": 1,
+    "patchSize": 3,
     "generateAtAnyHeight": false,
     "onDestroyedByPlayer": {
       "name": "Mmhit"

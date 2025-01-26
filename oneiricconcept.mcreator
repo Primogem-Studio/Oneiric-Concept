@@ -12059,6 +12059,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Bigstone2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bigstone_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/bigstone_2.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -13016,6 +13029,7 @@
       "item.oneiricconcept.boss_stone_coin_gun": "Coin Gun",
       "block.oneiricconcept.c_cactus": "Cactus",
       "item.oneiricconcept.grilled_dumpling": "GrilledDumpling",
+      "block.oneiricconcept.mm_mushroom.description_1": "The bow on the head is flat",
       "block.oneiricconcept.mm_mushroom.description_0": "Cute mushrooms, but with a strong heart",
       "block.oneiricconcept.dawnleaves": "Dawnleaves",
       "item.oneiricconcept.aureliae_hoe": "Aureliae Hoe",
@@ -13265,10 +13279,10 @@
       "block.oneiricconcept.fulmo_10": "满月锭",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_8": "§k怜爱§r金属锭",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
-      "item.oneiricconcept.heartofthefish": "鱼心",
+      "block.oneiricconcept.cryoo_8": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_9": "§k怜爱§r金属锭",
+      "item.oneiricconcept.heartofthefish": "鱼心",
       "block.oneiricconcept.cryoo_3": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_4": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_5": "§k怜爱§r金属锭",
@@ -13367,8 +13381,8 @@
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "block.oneiricconcept.newmo_10": "新月锭",
-      "block.oneiricconcept.dendr_10": "智慧金属锭",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
+      "block.oneiricconcept.dendr_10": "智慧金属锭",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
       "item.oneiricconcept.taw_wood_loot": "异世界礼盒",
       "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",
@@ -13394,8 +13408,8 @@
       "block.oneiricconcept.fulmo_3": "满月锭",
       "block.oneiricconcept.fulmo_2": "满月锭",
       "block.oneiricconcept.fulmo_5": "满月锭",
-      "block.oneiricconcept.fulmo_4": "满月锭",
       "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",
+      "block.oneiricconcept.fulmo_4": "满月锭",
       "block.oneiricconcept.redmo_1": "赤月锭",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
       "block.oneiricconcept.fulmo_1": "满月锭",
@@ -13407,6 +13421,7 @@
       "item.oneiricconcept.boss_stone_coin_gun": "撒币枪",
       "block.oneiricconcept.c_cactus": "仙灵掌",
       "item.oneiricconcept.grilled_dumpling": "烤饺子",
+      "block.oneiricconcept.mm_mushroom.description_1": "头上的蝴蝶结平平的",
       "block.oneiricconcept.mm_mushroom.description_0": "§7萌萌的蘑菇，但有一颗坚硬的心",
       "block.oneiricconcept.dawnleaves": "黎明树叶",
       "item.oneiricconcept.aureliae_hoe": "铄金锄",
