@@ -7,6 +7,7 @@ import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -23,7 +24,19 @@ public class TankAddLvaTagProcedure {
 		if (entity == null)
 			return;
 		double tms = 0;
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET && new Object() {
+		double itms = 0;
+		double itms2 = 0;
+		itms2 = new Object() {
+			public int getAmount(int sltid) {
+				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+					if (stack != null)
+						return stack.getCount();
+				}
+				return 0;
+			}
+		}.getAmount(1);
+		if (new Object() {
 			public int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank) {
 				if (level instanceof ILevelExtension _ext) {
 					IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, pos, null);
@@ -33,29 +46,52 @@ public class TankAddLvaTagProcedure {
 				return 0;
 			}
 		}.getFluidTankLevel(world, BlockPos.containing(x, y, z), 1) <= 9000) {
-			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				((Slot) _slots.get(0)).remove(1);
-				_player.containerMenu.broadcastChanges();
-			}
-			if (16 <= new Object() {
-				public int getAmount(int sltid) {
-					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
-						if (stack != null)
-							return stack.getCount();
-					}
-					return 0;
-				}
-			}.getAmount(1)) {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
-					_setstack.setCount(1);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
-			} else {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Items.LAVA_BUCKET) {
 				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
-					_setstack.setCount((int) (new Object() {
+					((Slot) _slots.get(0)).remove(1);
+					_player.containerMenu.broadcastChanges();
+				}
+				if (16 <= itms2) {
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+				} else {
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
+						_setstack.setCount((int) (itms2 + 1));
+						((Slot) _slots.get(1)).set(_setstack);
+						_player.containerMenu.broadcastChanges();
+					}
+				}
+				if (world instanceof ILevelExtension _ext) {
+					IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, BlockPos.containing(x, y, z), null);
+					if (_fluidHandler != null)
+						_fluidHandler.fill(new FluidStack(Fluids.LAVA, 1000), IFluidHandler.FluidAction.EXECUTE);
+				}
+			} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Blocks.MAGMA_BLOCK.asItem()
+					|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Items.MAGMA_CREAM) {
+				for (int index0 = 0; index0 < (int) (new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(0) + 1); index0++) {
+					if (new Object() {
+						public int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank) {
+							if (level instanceof ILevelExtension _ext) {
+								IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, pos, null);
+								if (_fluidHandler != null)
+									return _fluidHandler.getFluidInTank(tank).getAmount();
+							}
+							return 0;
+						}
+					}.getFluidTankLevel(world, BlockPos.containing(x, y, z), 1) <= 9000 || 1 <= new Object() {
 						public int getAmount(int sltid) {
 							if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 								ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
@@ -64,15 +100,73 @@ public class TankAddLvaTagProcedure {
 							}
 							return 0;
 						}
-					}.getAmount(1) + 1));
-					((Slot) _slots.get(1)).set(_setstack);
-					_player.containerMenu.broadcastChanges();
+					}.getAmount(1)) {
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							((Slot) _slots.get(0)).remove(1);
+							_player.containerMenu.broadcastChanges();
+						}
+						if (world instanceof ILevelExtension _ext) {
+							IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, BlockPos.containing(x, y, z), null);
+							if (_fluidHandler != null)
+								_fluidHandler.fill(new FluidStack(Fluids.LAVA, 1000), IFluidHandler.FluidAction.EXECUTE);
+						}
+					} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
+							.getItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getItem()
+							&& new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+										if (stack != null)
+											return stack.getCount();
+									}
+									return 0;
+								}
+							}.getAmount(1) <= 64 || new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+										if (stack != null)
+											return stack.getCount();
+									}
+									return 0;
+								}
+							}.getAmount(1) <= 0) {
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack _setstack = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).copy();
+							_setstack.setCount(new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+										if (stack != null)
+											return stack.getCount();
+									}
+									return 0;
+								}
+							}.getAmount(0));
+							((Slot) _slots.get(1)).set(_setstack);
+							_player.containerMenu.broadcastChanges();
+						}
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							((Slot) _slots.get(0)).remove(new Object() {
+								public int getAmount(int sltid) {
+									if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+										ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+										if (stack != null)
+											return stack.getCount();
+									}
+									return 0;
+								}
+							}.getAmount(0));
+							_player.containerMenu.broadcastChanges();
+						}
+					} else {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+					}
 				}
-			}
-			if (world instanceof ILevelExtension _ext) {
-				IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, BlockPos.containing(x, y, z), null);
-				if (_fluidHandler != null)
-					_fluidHandler.fill(new FluidStack(Fluids.LAVA, 1000), IFluidHandler.FluidAction.EXECUTE);
 			}
 		}
 	}
