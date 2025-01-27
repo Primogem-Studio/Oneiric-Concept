@@ -1,0 +1,40 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:pumpkin"
+  },
+  "cookingtime": 400,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "oneiricconcept:oneiric_shard"
+    },
+    {
+      "item": "oneiricconcept:hiltwood_from_the_arbor"
+    },
+    {
+      "item": "primogemcraft:xiangdanganlao"
+    },
+    {
+       "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:foods/berry"
+    },
+    {
+      "type": "neoforge:difference",
+      "base": {
+        "tag": "c:foods/vegetable"
+      },
+      "subtracted": {
+        "item": "minecraft:melon_slice"
+      }
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "oneiricconcept:wayfareblessing"
+  }
+}

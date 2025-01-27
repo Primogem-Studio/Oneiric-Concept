@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:wayfareblessing"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "wayfare_cake_slices"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "oneiricconcept:wayfareblessing"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

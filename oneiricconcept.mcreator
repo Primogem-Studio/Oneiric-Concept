@@ -12072,6 +12072,69 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "WayfareCakeSlices",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wayfare_cake_slices",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/wayfare_cake_slices.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/WayfareCakeSlicesItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "WayfareCut",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wayfare_cut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WayfareCutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "WayfareCakeSlices1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wayfare_cake_slices_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/wayfare_cake_slices_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Wayfareblessing1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "wayfareblessing_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/wayfareblessing_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -12820,7 +12883,8 @@
       "DeepMarrowRockSalt",
       "SaltDust",
       "AmbergrisCheeseSliver",
-      "Fishcake"
+      "Fishcake",
+      "WayfareCakeSlices"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -12887,10 +12951,10 @@
       "block.oneiricconcept.fulmo_10": "full moon ingot",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "Shivada_metal_ingot",
-      "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
       "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
-      "item.oneiricconcept.heartofthefish": "Heart of the fish",
+      "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_9": "Shivada_metal_ingot",
+      "item.oneiricconcept.heartofthefish": "Heart of the fish",
       "block.oneiricconcept.cryoo_3": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_4": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_5": "Shivada_metal_ingot",
@@ -12989,8 +13053,8 @@
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
       "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
       "block.oneiricconcept.newmo_10": "crescent ingot",
-      "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
       "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
+      "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
       "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
       "item.oneiricconcept.taw_wood_loot": "TAW Wood Loot",
       "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
@@ -13016,8 +13080,8 @@
       "block.oneiricconcept.fulmo_3": "full moon ingot",
       "block.oneiricconcept.fulmo_2": "full moon ingot",
       "block.oneiricconcept.fulmo_5": "full moon ingot",
-      "block.oneiricconcept.fulmo_4": "full moon ingot",
       "block.oneiricconcept.sustenanceanchoroff": "Sustenanceanchor",
+      "block.oneiricconcept.fulmo_4": "full moon ingot",
       "block.oneiricconcept.redmo_1": "red moon ingot",
       "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
       "block.oneiricconcept.fulmo_1": "full moon ingot",
@@ -13052,6 +13116,7 @@
       "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
       "item.oneiricconcept.dreamdive_can.description_2": "The §9Dreamdive Can §fwas originally a toy in the Cosmos\u0027s middle-class family bedroom, but became the only way for people to sleep on some planets deep in the mires of §cCatastrophe. ",
       "item.oneiricconcept.dreamdive_can.description_1": "§6A sweet dream food can from Penacony, Planet of Festivities. It is full of highly compact gaseous memoria. The user will fall into dreams within five minutes after opening the can.",
+      "item.oneiricconcept.wayfare_cake_slices": "Wayfare Cake Slices",
       "block.oneiricconcept.dendr_1": "Nagadus_metal_ingot",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
       "block.oneiricconcept.pgc_pg3": "Primogem",
@@ -13444,6 +13509,7 @@
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
       "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
+      "item.oneiricconcept.wayfare_cake_slices": "Wayfare Cake Slices",
       "block.oneiricconcept.dendr_1": "智慧金属锭",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
       "block.oneiricconcept.pgc_pg3": "原石水晶",
