@@ -2,10 +2,10 @@
   "type": "farmersdelight:cooking",
   "container": {
     "count": 1,
-    "id": "minecraft:pumpkin"
+    "id": "oneiricconcept:primogem_waffle"
   },
   "cookingtime": 400,
-  "experience": 2.0,
+  "experience": 20,
   "ingredients": [
     {
       "item": "oneiricconcept:oneiric_shard"
@@ -14,22 +14,16 @@
       "item": "oneiricconcept:hiltwood_from_the_arbor"
     },
     {
-      "item": "primogemcraft:xiangdanganlao"
+      "item": "oneiricconcept:resurrection_pellet"
     },
     {
-       "tag": "c:foods/milk"
+       "item": "primogemcraft:xiangdanganlao"
     },
     {
-      "tag": "c:foods/berry"
+      "tag": "c:foods/milk"
     },
     {
-      "type": "neoforge:difference",
-      "base": {
-        "tag": "c:foods/vegetable"
-      },
-      "subtracted": {
-        "item": "minecraft:melon_slice"
-      }
+      "item": "primogemcraft:qwsklj"
     }
   ],
   "recipe_book_tab": "meals",
