@@ -11467,8 +11467,7 @@
           "src/main/java/net/mcreator/oneiricconcept/network/PhlogistontankGuiSlotMessage.java",
           "src/main/java/net/mcreator/oneiricconcept/client/gui/PhlogistontankGuiScreen.java"
         ]
-      },
-      "path": "~/block"
+      }
     },
     {
       "name": "TankGetLava",
@@ -12132,6 +12131,45 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/recipe/wayfareblessing_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CakeForTraveler2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cake_for_traveler_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/cake_for_traveler_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MemoriaPiece4",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "memoria_piece_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memoria_piece_4.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Dreamdivecan2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dreamdivecan_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dreamdivecan_2.json"
         ]
       },
       "path": "~/Recipes"

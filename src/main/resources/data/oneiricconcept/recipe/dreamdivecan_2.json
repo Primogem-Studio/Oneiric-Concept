@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bucket"
+    },
+  "cookingtime": 100,
+  "experience": 1,
+  "ingredients": [
+    {
+      "item": "oneiricconcept:memory_bubble"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "oneiricconcept:dreamdive_can"
+  }
+}

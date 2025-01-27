@@ -1,0 +1,34 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:cake"
+  },
+  "cookingtime": 400,
+  "experience": 20,
+  "ingredients": [
+    {
+      "item": "primogemcraft:jljsl"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "primogemcraft:jljsl"
+    },
+    {
+       "item": "minecraft:iron_nugget"
+    },
+    {
+      "item": "primogemcraft:molakuai_01"
+    },
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "primogemcraft:dangaoliyue"
+  }
+}

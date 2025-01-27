@@ -19,14 +19,14 @@ public class WayfareCutProcedure {
 			return;
 		ItemStack itmstk = ItemStack.EMPTY;
 		itmstk = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		if (itmstk.is(ItemTags.create(ResourceLocation.parse("minecraft:sword"))) || itmstk.is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))) {
+		if (itmstk.is(ItemTags.create(ResourceLocation.parse("minecraft:swords"))) || itmstk.is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(OneiricconceptModItems.WAYFARE_CAKE_SLICES.get()).copy();
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 			if (world instanceof ServerLevel _level) {
-				itmstk.hurtAndBreak(1, _level, null, _stkprov -> {
+				itmstk.hurtAndBreak(20, _level, null, _stkprov -> {
 				});
 			}
 		}
