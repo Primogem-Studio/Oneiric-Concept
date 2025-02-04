@@ -1,0 +1,11 @@
+{
+    "name": "摩拉原胚",
+    "icon": "primogemcraft:mmolapeiziwupin",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)摩拉 套装$(br)、$(br)『繁荣』的哲学$(br)、$(br)『勤劳』的哲学$(br)、$(br)『黄金』的哲学$(br)。$(br)$(l:https://www.mcmod.cn/item/706202.html)"
+        }
+    ]
+}

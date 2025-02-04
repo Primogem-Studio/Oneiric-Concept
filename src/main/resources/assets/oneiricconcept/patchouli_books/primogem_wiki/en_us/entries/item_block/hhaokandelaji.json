@@ -1,0 +1,11 @@
+{
+    "name": "好看的垃圾",
+    "icon": "primogemcraft:hhaokandelaji",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「一个人的垃圾...」$(br)可在野外生成的垃圾桶中和$(br)祈愿金光$(br)中获得。$(br)食用后恢复4点（$(br)）饥饿值和3点（$(br)）饱和度，获得一分钟生命恢复II和一次瞬间治疗II。解除$(br)『奇物』真·银河大乐透$(br)的惩罚效果。$(br)$(l:https://www.mcmod.cn/item/706217.html)"
+        }
+    ]
+}

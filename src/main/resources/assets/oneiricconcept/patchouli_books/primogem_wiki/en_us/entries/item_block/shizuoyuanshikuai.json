@@ -1,0 +1,11 @@
+{
+    "name": "原石块",
+    "icon": "primogemcraft:shizuoyuanshikuai",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "装饰方块，可用于储存大量原石。发出7级光照。$(br)$(l:https://www.mcmod.cn/item/714858.html)"
+        }
+    ]
+}

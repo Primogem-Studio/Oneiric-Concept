@@ -1,0 +1,11 @@
+{
+    "name": "异世界捕风瓶（空）",
+    "icon": "primogemcraft:ysjbfpk",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "潜行右击空气转化为$(br)异世界捕风瓶$(br)，有约2秒的冷却。$(br)$(l:https://www.mcmod.cn/item/780525.html)"
+        }
+    ]
+}

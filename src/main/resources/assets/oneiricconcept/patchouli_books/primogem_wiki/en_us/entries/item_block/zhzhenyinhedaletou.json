@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』真·银河大乐透",
+    "icon": "primogemcraft:zhzhenyinhedaletou",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「一生一次机会」$(br)副手持有时破坏罐子有小概率掉落奇物，大概率损毁并为玩家添加$(br)乐透的惩罚$(br)状态效果。$(br)$(l:https://www.mcmod.cn/item/706221.html)"
+        }
+    ]
+}

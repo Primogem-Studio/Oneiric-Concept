@@ -1,0 +1,11 @@
+{
+    "name": "共逐星华",
+    "icon": "primogemcraft:gongzhuxinghua",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "置入唱片机播放音乐：$(br)Chasing Starlight With You 共逐星华 - HOYO-MiX$(br)。$(br)播放时会额外附加播放烟花火箭发射的音效。$(br)潜行右击可对唱片添加/解除$(br)火矢$(br)附魔。$(br)$(l:https://www.mcmod.cn/item/735198.html)"
+        }
+    ]
+}

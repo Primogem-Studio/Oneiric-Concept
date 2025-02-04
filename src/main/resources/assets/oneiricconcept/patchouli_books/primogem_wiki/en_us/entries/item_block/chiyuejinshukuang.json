@@ -1,0 +1,11 @@
+{
+    "name": "赤月金属矿石",
+    "icon": "primogemcraft:chiyuejinshukuang",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "生成于下界基岩中，不会在最底层和最顶层生成。非破坏性采集需要挖掘等级4（下界合金）或更高的镐。$(br)$(l:https://www.mcmod.cn/item/711440.html)"
+        }
+    ]
+}

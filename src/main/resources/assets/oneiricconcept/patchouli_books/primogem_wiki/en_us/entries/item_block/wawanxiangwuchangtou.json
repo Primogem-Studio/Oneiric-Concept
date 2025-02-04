@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』万象无常骰",
+    "icon": "primogemcraft:wawanxiangwuchangtou",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右击使用后对副手中已附魔的工具类物品提供2条随机属性和随机等级的适配附魔效果。$(br)$(l:https://www.mcmod.cn/item/706206.html)"
+        }
+    ]
+}

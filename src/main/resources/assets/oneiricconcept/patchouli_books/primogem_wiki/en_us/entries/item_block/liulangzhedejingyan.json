@@ -1,0 +1,11 @@
+{
+    "name": "经验书",
+    "icon": "primogemcraft:liulangzhedejingyan",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可存储20/27/30经验等级，右击存入，潜行右击取出。经验值满时有附魔光效。$(br)合成升级不保留经验，使用有少量损耗。$(br)$(l:https://www.mcmod.cn/item/711465.html)"
+        }
+    ]
+}

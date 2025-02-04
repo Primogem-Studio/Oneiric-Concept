@@ -1,0 +1,11 @@
+{
+    "name": "异世界捕风瓶",
+    "icon": "primogemcraft:bufengping",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)希望的一天$(br)。也可合成为玻璃瓶。（$(br)特性$(br)：合成中容器不消耗，与玻璃瓶互相反复合成可刷取玻璃瓶）$(br)在24w01e版本重置，合成和获取方式改变，右击使用满的捕风瓶将自己向上弹飞10格，有约3秒冷却时间。$(br)使用$(br)异世界捕风瓶（空）$(br)右击空气转化得到。$(br)$(l:https://www.mcmod.cn/item/706228.html)"
+        }
+    ]
+}

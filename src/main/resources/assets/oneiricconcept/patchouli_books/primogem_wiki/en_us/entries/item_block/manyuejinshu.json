@@ -1,0 +1,11 @@
+{
+    "name": "满月金属",
+    "icon": "primogemcraft:manyuejinshu",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)三月祝福$(br)。由$(br)满月金属矿石$(br)烧炼得到。$(br)$(l:https://www.mcmod.cn/item/711433.html)"
+        }
+    ]
+}

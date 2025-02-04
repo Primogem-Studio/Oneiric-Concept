@@ -1,0 +1,11 @@
+{
+    "name": "破碎的梦樱",
+    "icon": "primogemcraft:posuimengying",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「好像还有机会」$(br)任意耐久度的$(br)梦樱$(br)合成获得，合成后清除附魔/魔咒。$(br)可与$(br)最胜紫晶 块$(br)修复为梦樱。$(br)$(l:https://www.mcmod.cn/item/706299.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "神狐的祝福",
+    "icon": "primogemcraft:sshenhudezhufu_013",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "置入唱片机播放音乐：$(br)Hakushin's Lullaby 神狐的祝福 - 陈致逸/HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700432.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』异木果实",
+    "icon": "primogemcraft:yiyimuguoshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "玩家死亡时，给予60秒的$(br)临终$(br)、虚弱X、速度III效果。$(br)$(l:https://www.mcmod.cn/item/711409.html)"
+        }
+    ]
+}

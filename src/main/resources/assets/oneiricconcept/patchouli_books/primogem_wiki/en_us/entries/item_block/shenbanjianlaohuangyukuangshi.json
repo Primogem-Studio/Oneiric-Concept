@@ -1,0 +1,11 @@
+{
+    "name": "深层坚牢黄玉矿石",
+    "icon": "primogemcraft:shenbanjianlaohuangyukuangshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在>1.16.5的版本中出现，生成于主世界-64＜y＜0格深板岩层，同$(br)坚牢黄玉矿石$(br)。$(br)$(l:https://www.mcmod.cn/item/735209.html)"
+        }
+    ]
+}

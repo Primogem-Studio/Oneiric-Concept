@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』空无烛剪",
+    "icon": "primogemcraft:qwkwzj",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在工作台中与「已损坏」的奇物：$(br)『奇物』银河大乐透$(br)、$(br)『奇物』星际大乐透$(br)、$(br)『奇物』测不准匣$(br)、$(br)『奇物』福灵胶$(br)等无序合成，消耗并修复损坏的奇物。修复会消耗一半的耐久度，耐久等附魔无效。$(br)$(l:https://www.mcmod.cn/item/772358.html)"
+        }
+    ]
+}

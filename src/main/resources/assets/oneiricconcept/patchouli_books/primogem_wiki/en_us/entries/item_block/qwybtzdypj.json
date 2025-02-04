@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』永不停嘴的羊皮卷",
+    "icon": "primogemcraft:qwybtzdypj",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "攻击目标会使目标小范围内血量大于80%的非玩家生物受到一次真实伤害，伤害范围不超过血量总值的20%。$(br)$(l:https://www.mcmod.cn/item/772361.html)"
+        }
+    ]
+}

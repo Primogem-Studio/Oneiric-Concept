@@ -1,0 +1,11 @@
+{
+    "name": "一切的开始",
+    "icon": "primogemcraft:mingwei_yiqiedekaishi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "手持右击给予使用者30秒的$(br)瞬间治疗$(br)IV。$(br)仅更新贴图$(br)$(l:https://www.mcmod.cn/item/780512.html)"
+        }
+    ]
+}

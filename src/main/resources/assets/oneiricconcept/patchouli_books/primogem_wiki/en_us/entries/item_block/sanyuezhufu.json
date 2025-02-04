@@ -1,0 +1,11 @@
+{
+    "name": "三月祝福",
+    "icon": "primogemcraft:sanyuezhufu",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在背包中时免疫摔落伤害（不免疫末影珍珠带来的伤害），游戏时间每天4：26时损失1点耐久。$(br)$(l:https://www.mcmod.cn/item/711435.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "附魔事件补偿券",
+    "icon": "primogemcraft:sjbcq",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "随机事件$(br)中未进行附魔时给予。$(br)分为低级品质（白色）、中级品质（蓝色）、高级品质（金色）、特级品质（红色），右击以进行相应等级的$(br)事件附魔$(br)。$(br)$(l:https://www.mcmod.cn/item/803153.html)"
+        }
+    ]
+}

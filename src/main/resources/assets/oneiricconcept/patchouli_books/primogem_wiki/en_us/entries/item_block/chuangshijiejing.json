@@ -1,0 +1,11 @@
+{
+    "name": "创世结晶",
+    "icon": "primogemcraft:chuangshijiejing",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "种豆得……瓜？$(br)用于合成，也可以食用，恢复5点（$(br)）饥饿值和15点（$(br)）饱和度。给予5秒$(br)饥饿$(br)VI；10秒$(br)伤害吸收$(br)II；90秒$(br)虚弱$(br)III、$(br)生命提升$(br)II；160秒$(br)防火$(br)II。食用后进入约80秒的冷却。$(br)$(l:https://www.mcmod.cn/item/700417.html)"
+        }
+    ]
+}

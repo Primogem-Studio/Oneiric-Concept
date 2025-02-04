@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』虫网",
+    "icon": "primogemcraft:qiwuchongwang",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "存在物品栏时持续给予玩家$(br)寄生$(br)效果。$(br)$(l:https://www.mcmod.cn/item/706185.html)"
+        }
+    ]
+}

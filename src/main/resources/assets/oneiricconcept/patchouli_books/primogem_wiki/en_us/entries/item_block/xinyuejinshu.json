@@ -1,0 +1,11 @@
+{
+    "name": "新月金属",
+    "icon": "primogemcraft:xinyuejinshu",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)三月祝福$(br)、$(br)空月祝福$(br)等道具。由$(br)新月金属矿石$(br)烧炼得到。$(br)$(l:https://www.mcmod.cn/item/711431.html)"
+        }
+    ]
+}

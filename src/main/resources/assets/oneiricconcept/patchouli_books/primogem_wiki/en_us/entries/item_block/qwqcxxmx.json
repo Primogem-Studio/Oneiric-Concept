@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』龋齿星系模型",
+    "icon": "primogemcraft:qwqcxxmx",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右键后消耗持有的所有$(br)宇宙碎片$(br)获得$(br)力量$(br)状态效果，每消耗16个宇宙碎片提升1力量等级。$(br)状态效果的「持续时间」初始为1分钟，每次使用扣除状态效果等级×5秒的「持续时间」。$(br)持有宇宙碎片潜行右击时扣除「持续时间」分钟数的宇宙碎片补充1秒持续时间，奇物生效后若「持续时间」≤0则销毁。$(br)持续时间会在改变后显示在奇物名称上。$(br)$(l:https://www.mcmod.cn/item/803147.html)"
+        }
+    ]
+}

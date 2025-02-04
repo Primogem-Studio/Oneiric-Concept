@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』塔拉毒火焰",
+    "icon": "primogemcraft:qwtldhy",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "持续提供速度I状态效果，每30秒扣除1点（$(br)）生命值。$(br)$(l:https://www.mcmod.cn/item/772360.html)"
+        }
+    ]
+}

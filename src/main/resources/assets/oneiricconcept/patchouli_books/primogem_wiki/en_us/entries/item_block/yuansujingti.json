@@ -1,0 +1,11 @@
+{
+    "name": "aha元素晶体aha",
+    "icon": "primogemcraft:yuansujingti",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于较高级的合成，可在$(br)祈愿金光$(br)中获得。$(br)$(l:https://www.mcmod.cn/item/706427.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "锻造模板",
+    "icon": "primogemcraft:qhmbmlys_02",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于元素晶体工具的锻造升级，由基础的$(br)锻造模板$(br)升级，可升级为更高级的$(br)锻造模板$(br)。$(br)$(l:https://www.mcmod.cn/item/777144.html)"
+        }
+    ]
+}

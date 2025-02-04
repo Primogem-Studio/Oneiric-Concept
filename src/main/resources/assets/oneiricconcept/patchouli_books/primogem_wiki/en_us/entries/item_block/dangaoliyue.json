@@ -1,0 +1,11 @@
+{
+    "name": "赠糕于你",
+    "icon": "primogemcraft:dangaoliyue",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右击消耗摩拉进食。每次消耗1摩拉，回复5点（$(br)）饥饿值，饥饿值回复满后，回复4点（$(br)）饱和度。$(br)$(l:https://www.mcmod.cn/item/780558.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "史诗 强化助力礼盒",
+    "icon": "primogemcraft:q_qu_hang_zhoullh",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "下界合金质的元素护甲和武器都可以通过切石机回收为此物品。$(br)获得时有20%概率转化为$(br)特殊产出 强化助力礼盒$(br)，未转化也会被标记，不再转化。$(br)右击使用，潜行时使用整组。$(br)使用后给予相当于造价30%~80%的物品。$(br)$(l:https://www.mcmod.cn/item/780530.html)"
+        }
+    ]
+}

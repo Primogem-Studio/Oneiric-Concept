@@ -1,0 +1,11 @@
+{
+    "name": "坚牢金属粒",
+    "icon": "primogemcraft:jljsl",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "此段资料引用于“$(br)元素金属粒$(br)”并与其保持同步更新。 $(br)编辑$(br)用于合成$(br)元素火漆$(br)等，可用于激活和更改信标效果。$(br)$(l:https://www.mcmod.cn/item/780539.html)"
+        }
+    ]
+}

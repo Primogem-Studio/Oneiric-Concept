@@ -1,0 +1,11 @@
+{
+    "name": "干净的垃圾桶",
+    "icon": "primogemcraft:ganjinglajitongxiangzi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由$(br)垃圾桶$(br)合成，可存放物品，比垃圾桶的空间更大，有45格储存空间。$(br)$(l:https://www.mcmod.cn/item/706219.html)"
+        }
+    ]
+}

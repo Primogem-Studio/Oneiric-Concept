@@ -1,0 +1,11 @@
+{
+    "name": "生长碧翡 矿石",
+    "icon": "primogemcraft:shengzhangkuangshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在-64＜y＜256范围任意位置的泥土中生成，非破坏性采集需要挖掘等级2（铁铲）及以上的工具。掉落$(br)生长碧翡$(br)，24w12a前精准采集不生效。$(br)$(l:https://www.mcmod.cn/item/706305.html)"
+        }
+    ]
+}

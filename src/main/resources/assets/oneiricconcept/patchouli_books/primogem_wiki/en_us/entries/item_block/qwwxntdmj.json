@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』「无效念头」代码机",
+    "icon": "primogemcraft:qwwxntdmj",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可以在$(br)神秘礼盒$(br)中开出。$(br)触发$(br)无效念头代码机$(br)状态效果并失效。$(br)失效奇物可以直接无序合成为有效奇物。$(br)$(l:https://www.mcmod.cn/item/803148.html)"
+        }
+    ]
+}

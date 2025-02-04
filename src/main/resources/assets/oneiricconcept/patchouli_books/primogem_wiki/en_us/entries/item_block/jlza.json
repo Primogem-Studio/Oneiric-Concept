@@ -1,0 +1,11 @@
+{
+    "name": "精锻用杂矿",
+    "icon": "primogemcraft:jlza",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)铁质升级$(br)或进一步合成为$(br)精锻用良矿$(br)。$(br)$(l:https://www.mcmod.cn/item/780522.html)"
+        }
+    ]
+}

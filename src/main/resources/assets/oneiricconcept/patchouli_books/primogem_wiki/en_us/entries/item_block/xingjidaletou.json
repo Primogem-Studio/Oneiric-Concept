@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』星际大乐透",
+    "icon": "primogemcraft:xingjidaletou",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在主手持有并破坏方块时，小概率为副手的可附魔物品添加1~20级的随机附魔，小概率损毁并清除玩家所有经验值。$(br)$(l:https://www.mcmod.cn/item/772354.html)"
+        }
+    ]
+}

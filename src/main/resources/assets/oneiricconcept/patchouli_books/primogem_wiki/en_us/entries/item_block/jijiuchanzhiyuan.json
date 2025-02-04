@@ -1,0 +1,11 @@
+{
+    "name": "纠缠之缘",
+    "icon": "primogemcraft:jijiuchanzhiyuan",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「十……保……歪」$(br)可由$(br)草原核$(br)掉落。$(br)可用于合成$(br)『小三月』$(br)、$(br)『奇物』银河大乐透$(br)、$(br)纠缠之稿$(br)、模组唱片等高级物品。$(br)在主/副手时，持续给予3秒$(br)幸运$(br)II、$(br)反胃$(br)III的状态效果。$(br)长按右键以祈愿，在上方十格处生成随机$(br)抽奖实体$(br)，使用后扣除1点（$(br)）饥饿值，回复2点（$(br)）饱和度。$(br)$(l:https://www.mcmod.cn/item/700414.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "摩拉块",
+    "icon": "primogemcraft:molakuai_01",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "装饰方块，可在世界中的$(br)黄金屋遗迹$(br)和$(br)黄金房间$(br)发现。$(br)$(l:https://www.mcmod.cn/item/700435.html)"
+        }
+    ]
+}

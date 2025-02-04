@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』无限递归的代码",
+    "icon": "primogemcraft:wuxiandiguidedaima",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "修复期间：$(br)玩家攻击目标时，概率减少自身经验值。$(br)代码修复后：$(br)击杀目标后概率额外获得经验值。$(br)此段资料引用于“$(br)错误代码$(br)”并与其保持同步更新。 $(br)编辑$(br)直接使用$(br)?$(br)，或在$(br)黑塔----异世界分塔$(br)处使用$(br)?$(br)选择获得。$(br)修复需要击杀30个生物，修复前产生负面效果，持有修复的代码时获得增益。$(br)$(l:https://www.mcmod.cn/item/711417.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "盐渍月亮！",
+    "icon": "primogemcraft:yyanziyueliangchangpian",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "置入唱片机播放音乐：$(br)盐渍月亮 Salty Moon  - HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700448.html)"
+        }
+    ]
+}

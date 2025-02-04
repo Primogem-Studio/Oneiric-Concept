@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』家族缘结",
+    "icon": "primogemcraft:qwjzyj",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "背包中每拥有一个已损坏奇物，攻击目标后会对其额外造成一次等同于自身最大生命0.5%的额外伤害，至多以这种方式造成额外30%自身最大生命值的额外伤害。$(br)该效果每秒至多触发一次$(br)$(l:https://www.mcmod.cn/item/780514.html)"
+        }
+    ]
+}

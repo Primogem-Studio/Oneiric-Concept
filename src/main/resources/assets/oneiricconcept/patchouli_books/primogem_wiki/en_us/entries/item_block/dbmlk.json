@@ -1,0 +1,11 @@
+{
+    "name": "打包摩拉堆",
+    "icon": "primogemcraft:dbmlk",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "摩拉堆$(br)填充$(br)摩拉$(br)而来，存储64摩拉，大于$(br)摩拉块$(br)的36个。$(br)$(l:https://www.mcmod.cn/item/772373.html)"
+        }
+    ]
+}

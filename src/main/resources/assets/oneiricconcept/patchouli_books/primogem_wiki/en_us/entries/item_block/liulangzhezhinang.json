@@ -1,0 +1,11 @@
+{
+    "name": "行囊",
+    "icon": "primogemcraft:liulangzhezhinang",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右击打开存储空间。$(br)1.21.1版本前升级时无法保留物品，在1.21.1后修复。$(br)forge加载的版本中存在刷物品的恶性BUG，但在升级到neoforge版本时修复了，此时进行类似操作可能会导致物品消失。$(br)使用/gamerule jinyongnang true或false 来禁用/启用系列物品。$(br)该物品在早期版本中不稳定，在跨越维度、一键整理背包、进出游戏等情况下有可能丢失物品，请勿在其中放置珍贵物品。$(br)善用创哥理赔吧$(br)等级$(br)存储空间（格）$(br)流浪者$(br)18$(br)冒险家$(br)27$(br)异邦人$(br)66$(br)应急存储$(br)143$(br)$(l:https://www.mcmod.cn/item/726574.html)"
+        }
+    ]
+}

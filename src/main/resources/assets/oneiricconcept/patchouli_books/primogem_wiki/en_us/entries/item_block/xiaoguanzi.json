@@ -1,0 +1,11 @@
+{
+    "name": "小罐子",
+    "icon": "primogemcraft:xiaoguanzi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "生成在野外，数个一起出现。受重力影响。$(br)击碎可掉落骨头、腐肉、粘液球、黏土球、羽毛、泥土、皮革、苹果等低价值物品，小概率掉落$(br)摩拉$(br)。$(br)$(l:https://www.mcmod.cn/item/706198.html)"
+        }
+    ]
+}

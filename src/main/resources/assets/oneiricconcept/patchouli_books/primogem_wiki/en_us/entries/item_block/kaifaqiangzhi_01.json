@@ -1,0 +1,11 @@
+{
+    "name": "需知",
+    "icon": "primogemcraft:kaifaqiangzhi_01",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在物品栏中时会清除自身并杀死玩家。$(br)耗子尾汁！$(br)$(l:https://www.mcmod.cn/item/734051.html)"
+        }
+    ]
+}

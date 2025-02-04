@@ -1,0 +1,11 @@
+{
+    "name": "无主的星辉",
+    "icon": "primogemcraft:xinghui",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "此段资料引用于“$(br)无主的星辉$(br)”并与其保持同步更新。 $(br)编辑$(br)合成$(br)纠缠之缘$(br)的材料，初次获取原石（达成成就/进度：你只管抽卡”）时获得8个。$(br)获取$(br)紫$(br)色品质的祈愿奖励时获得2个，获取$(br)金$(br)色品质的祈愿奖励时获得12个。$(br)$(l:https://www.mcmod.cn/item/735200.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "增强 反致精炼用魔矿",
+    "icon": "primogemcraft:mzsj_2",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "与元素晶石强化的钻石装备在锻造台合成以去除强化，得到原本的钻石装备（保留原有附魔）。$(br)$(l:https://www.mcmod.cn/item/739167.html)"
+        }
+    ]
+}

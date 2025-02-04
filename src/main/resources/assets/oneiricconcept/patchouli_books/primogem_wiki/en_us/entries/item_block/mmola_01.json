@@ -1,0 +1,11 @@
+{
+    "name": "摩拉",
+    "icon": "primogemcraft:mmola_01",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "重要的合成材料，用于合成$(br)精致摩拉$(br)、$(br)摩拉块$(br)等。$(br)$(l:https://www.mcmod.cn/item/700424.html)"
+        }
+    ]
+}

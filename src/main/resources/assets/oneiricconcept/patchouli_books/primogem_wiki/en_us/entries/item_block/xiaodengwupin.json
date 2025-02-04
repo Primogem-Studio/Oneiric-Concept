@@ -1,0 +1,11 @@
+{
+    "name": "霄灯",
+    "icon": "primogemcraft:xiaodengwupin",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右击方块使用，有约0.5秒的冷却。使用后释放$(br)霄灯$(br)。$(br)$(l:https://www.mcmod.cn/item/711420.html)"
+        }
+    ]
+}

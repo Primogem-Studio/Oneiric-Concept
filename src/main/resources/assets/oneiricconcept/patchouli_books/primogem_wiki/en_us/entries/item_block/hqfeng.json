@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』自由火漆",
+    "icon": "primogemcraft:hqfeng",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "此段资料引用于“$(br)元素火漆$(br)”并与其保持同步更新。 $(br)编辑$(br)为对应护甲提供增益：$(br)正面效果触发概率：+50%；$(br)正面效果冷却时间：-50%；$(br)每件护甲提供的套装数值：+0.5。$(br)$(l:https://www.mcmod.cn/item/780515.html)"
+        }
+    ]
+}

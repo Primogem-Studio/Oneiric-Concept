@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』虚构机兵",
+    "icon": "primogemcraft:quxgjibing",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "攻击满血生物时回复自身10%当前生命值。$(br)$(l:https://www.mcmod.cn/item/803146.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "异世界木装饰方块",
+    "icon": "primogemcraft:d_14",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由$(br)异世界木$(br)制成的建筑方块与装饰品，功能和原版一致。$(br)作为方块被放置在世界中时，可以被火引燃。也可作为熔炉燃料，燃烧速率与原版对应物品一致。$(br)模组版本 1.12：$(br)移除了异世界原木；$(br)移除了异世界原木木板的两种门；$(br)调整了异世界木板的贴图。$(br)$(l:https://www.mcmod.cn/item/700452.html)"
+        }
+    ]
+}

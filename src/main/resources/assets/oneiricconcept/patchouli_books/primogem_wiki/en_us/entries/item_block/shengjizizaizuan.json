@@ -1,0 +1,11 @@
+{
+    "name": "钻石升级",
+    "icon": "primogemcraft:shengjizizaizuan",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可在锻造台与$(br)精致摩拉$(br)升级钻石装备为对应元素前缀的钻石装备。$(br)$(l:https://www.mcmod.cn/item/739333.html)"
+        }
+    ]
+}

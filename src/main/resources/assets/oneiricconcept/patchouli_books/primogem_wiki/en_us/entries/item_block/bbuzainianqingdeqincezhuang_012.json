@@ -1,0 +1,11 @@
+{
+    "name": "不再年轻的村庄",
+    "icon": "primogemcraft:bbuzainianqingdeqincezhuang_012",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "置入唱片机播放音乐：$(br)The Fading Stories不再年轻的村庄- 陈致逸/HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700431.html)"
+        }
+    ]
+}

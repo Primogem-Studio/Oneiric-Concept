@@ -1,0 +1,11 @@
+{
+    "name": "嬗变之尘",
+    "icon": "primogemcraft:shanbianzhichen",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在任意$(br)抽卡$(br)中有概率获得，用于较高级的合成。$(br)$(l:https://www.mcmod.cn/item/706429.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』「神秘」磁力",
+    "icon": "primogemcraft:qwsmcl",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "攻击亡灵生物时有概率对其进行强化，击败强化后的亡灵生物时有概率掉落2~20个$(br)宇宙碎片$(br)。$(br)触发效果5次后奇物损毁。$(br)$(l:https://www.mcmod.cn/item/803151.html)"
+        }
+    ]
+}

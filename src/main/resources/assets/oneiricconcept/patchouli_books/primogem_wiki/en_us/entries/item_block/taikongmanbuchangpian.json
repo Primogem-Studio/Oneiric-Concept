@@ -1,0 +1,11 @@
+{
+    "name": "太空漫步",
+    "icon": "primogemcraft:taikongmanbuchangpian",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "置入唱片机播放音乐：$(br)太空漫步 Space Walk - HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700447.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "摩拉 套具",
+    "icon": "primogemcraft:mmolagao",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "摩拉镐：$(br)有铁镐的挖掘等级。$(br)4.5攻击伤害；$(br)1.2攻击速度。$(br)摩拉斧：$(br)9.2攻击伤害；$(br)1.2攻击速度。$(br)摩拉铲：$(br)5攻击伤害；$(br)1攻击速度。$(br)摩拉锄：$(br)0攻击伤害；$(br)3.5攻击速度。$(br)$(l:https://www.mcmod.cn/item/706456.html)"
+        }
+    ]
+}

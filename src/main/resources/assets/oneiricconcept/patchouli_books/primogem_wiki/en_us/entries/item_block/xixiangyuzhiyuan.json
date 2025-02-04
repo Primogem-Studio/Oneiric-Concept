@@ -1,0 +1,11 @@
+{
+    "name": "相遇之缘",
+    "icon": "primogemcraft:xixiangyuzhiyuan",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「10w预约达成……」$(br)可由草原核掉落。$(br)可用于合成$(br)纠缠之缘$(br)、$(br)『小三月』$(br)、$(br)『奇物』银河大乐透$(br)。$(br)在主/副手时，持续给予3秒$(br)幸运$(br)VI、$(br)反胃$(br)VI的状态效果。$(br)长按右键以祈愿，在上方十格处生成$(br)祈愿出蓝$(br)或$(br)祈愿出紫$(br)（不出金）。$(br)在24w33b保底机制更新后，有1%概率出金。$(br)$(l:https://www.mcmod.cn/item/700413.html)"
+        }
+    ]
+}

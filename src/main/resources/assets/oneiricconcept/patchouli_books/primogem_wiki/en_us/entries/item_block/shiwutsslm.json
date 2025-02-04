@@ -1,0 +1,11 @@
+{
+    "name": "糖霜史莱姆",
+    "icon": "primogemcraft:shiwutsslm",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "食用后回复10点（$(br)）饥饿值和100点（$(br) × 50$(br)）饱和度，短暂进入类似细雪的冰冻状态并减速，在约三秒内恢复，不损失生命值。$(br)$(l:https://www.mcmod.cn/item/793009.html)"
+        }
+    ]
+}

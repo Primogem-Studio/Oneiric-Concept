@@ -1,0 +1,11 @@
+{
+    "name": "葳蕤林野间",
+    "icon": "primogemcraft:ccangruimilinjian_014",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "置入唱片机播放音乐：$(br)Village Surrounded by Green 葳蕤林野间 - 陈致逸/HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700433.html)"
+        }
+    ]
+}

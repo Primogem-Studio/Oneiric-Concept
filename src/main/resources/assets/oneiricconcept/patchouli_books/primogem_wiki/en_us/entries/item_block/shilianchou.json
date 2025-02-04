@@ -1,0 +1,11 @@
+{
+    "name": "十枚纠缠之缘",
+    "icon": "primogemcraft:shilianchou",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "长按右键以祈愿，在上方十格处生成$(br)金...？$(br)，随后在上方六格处半径约三格的范围内（具体见下图）生成十个随机$(br)抽奖实体$(br)（无保底）$(br)「璃月粗口」真能全蓝啊？$(br)，中心生成的两个抽奖实体在Y轴上有一定距离。实体「金...？」被清除无影响。$(br)排列方式如图$(br)$(l:https://www.mcmod.cn/item/706204.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "精致摩拉",
+    "icon": "primogemcraft:jinzhimola",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「其铸造工艺使得本地生物也为之赞叹」$(br)可在祈愿（$(br)紫$(br)、$(br)蓝$(br)）中获得。$(br)可用于合成$(br)摩拉 套装$(br)、$(br)仙跳墙$(br)等高级物品。$(br)$(l:https://www.mcmod.cn/item/706200.html)"
+        }
+    ]
+}

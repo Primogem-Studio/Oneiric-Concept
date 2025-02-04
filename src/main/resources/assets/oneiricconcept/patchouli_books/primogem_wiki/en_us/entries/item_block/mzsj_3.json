@@ -1,0 +1,11 @@
+{
+    "name": "史诗 反致精炼用魔矿",
+    "icon": "primogemcraft:mzsj_3",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "与元素晶石强化的下界合金装备在锻造台合成以去除强化，得到原本的下界合金装备（保留原有附魔）。$(br)$(l:https://www.mcmod.cn/item/739168.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』混沌灵芝",
+    "icon": "primogemcraft:qwhdlz",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "杀死64只亡灵生物或节肢生物后，为副手物品添加一次随机1级附魔。不会显示进度且每件物品至多触发两次。$(br)$(l:https://www.mcmod.cn/item/772363.html)"
+        }
+    ]
+}

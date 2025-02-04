@@ -1,0 +1,11 @@
+{
+    "name": "经验书（战利品）",
+    "icon": "primogemcraft:jiangliliulangzhejingyan",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "除合成以外方式获得的经验书，功能与$(br)经验书$(br)一致。$(br)$(l:https://www.mcmod.cn/item/734207.html)"
+        }
+    ]
+}

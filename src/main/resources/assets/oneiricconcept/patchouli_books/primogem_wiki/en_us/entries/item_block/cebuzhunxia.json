@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』测不准匣",
+    "icon": "primogemcraft:cebuzhunxia",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右击使用，对副手未附魔物品进行1~30经验等级的附魔。$(br)$(l:https://www.mcmod.cn/item/706207.html)"
+        }
+    ]
+}

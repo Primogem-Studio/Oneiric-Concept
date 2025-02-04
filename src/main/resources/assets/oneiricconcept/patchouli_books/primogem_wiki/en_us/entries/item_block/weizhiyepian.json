@@ -1,0 +1,11 @@
+{
+    "name": "未知叶片",
+    "icon": "primogemcraft:weizhiyepian",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可用于制作丰饶琼浆或复活图腾。$(br)丰饶$(br)效果触发时有几率掉落。$(br)$(l:https://www.mcmod.cn/item/711423.html)"
+        }
+    ]
+}

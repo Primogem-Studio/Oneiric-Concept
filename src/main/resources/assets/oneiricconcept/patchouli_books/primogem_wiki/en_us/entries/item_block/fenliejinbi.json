@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』分裂金币",
+    "icon": "primogemcraft:fenliejinbi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在物品栏中时每分钟生成一个$(br)宇宙碎片$(br)，每次生效有50%概率累计损坏进度（「shouming」标签数据），进度达到10时损坏。$(br)$(l:https://www.mcmod.cn/item/711411.html)"
+        }
+    ]
+}

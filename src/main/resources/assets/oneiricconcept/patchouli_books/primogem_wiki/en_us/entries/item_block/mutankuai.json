@@ -1,0 +1,11 @@
+{
+    "name": "木炭块",
+    "icon": "primogemcraft:mutankuai",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由$(br)『燃愿玛瑙』锹$(br)右击转化原木而来，可分解为9个木炭。$(br)$(l:https://www.mcmod.cn/item/706179.html)"
+        }
+    ]
+}

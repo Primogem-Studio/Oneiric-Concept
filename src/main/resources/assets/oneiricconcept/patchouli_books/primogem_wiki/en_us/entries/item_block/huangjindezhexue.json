@@ -1,0 +1,11 @@
+{
+    "name": "『黄金』的哲学",
+    "icon": "primogemcraft:huangjindezhexue",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "耕作时小概率掉落$(br)摩拉$(br)。$(br)在主手时：$(br)8攻击伤害$(br)2攻击速度$(br)$(l:https://www.mcmod.cn/item/700441.html)"
+        }
+    ]
+}

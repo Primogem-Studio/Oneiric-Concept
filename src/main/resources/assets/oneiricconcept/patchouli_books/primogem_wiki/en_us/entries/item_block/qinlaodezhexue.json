@@ -1,0 +1,11 @@
+{
+    "name": "『勤劳』的哲学",
+    "icon": "primogemcraft:qinlaodezhexue",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可用于合成$(br)纠缠之缘镐$(br)，挖掘时小概率掉落摩拉。$(br)在主手时：$(br)6攻击伤害$(br)1攻击速度$(br)$(l:https://www.mcmod.cn/item/700440.html)"
+        }
+    ]
+}

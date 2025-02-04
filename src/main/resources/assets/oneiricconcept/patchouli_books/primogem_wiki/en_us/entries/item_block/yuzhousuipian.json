@@ -1,0 +1,11 @@
+{
+    "name": "宇宙碎片",
+    "icon": "primogemcraft:yuzhousuipian",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在各种野外遗迹中获得，亦可从$(br)祈愿$(br)中获得。$(br)用于合成或与黑塔----异世界分塔交易。$(br)$(l:https://www.mcmod.cn/item/711419.html)"
+        }
+    ]
+}

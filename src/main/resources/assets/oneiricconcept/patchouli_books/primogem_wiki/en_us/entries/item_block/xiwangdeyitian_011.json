@@ -1,0 +1,11 @@
+{
+    "name": "希望的一天",
+    "icon": "primogemcraft:xiwangdeyitian_011",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "置入唱片机播放音乐：$(br)A New Day with Hope 希望的新一天 - 陈致逸/HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700430.html)"
+        }
+    ]
+}

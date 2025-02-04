@@ -1,0 +1,11 @@
+{
+    "name": "铁质升级",
+    "icon": "primogemcraft:shengjizizaitie",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可在锻造台与$(br)摩拉$(br)升级铁质装备为对应元素前缀的铁质装备。$(br)$(l:https://www.mcmod.cn/item/739332.html)"
+        }
+    ]
+}

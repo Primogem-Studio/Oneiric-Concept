@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』分裂银币",
+    "icon": "primogemcraft:qwflyb",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右击消耗物品并获得8~24$(br)宇宙碎片$(br)。$(br)$(l:https://www.mcmod.cn/item/772359.html)"
+        }
+    ]
+}

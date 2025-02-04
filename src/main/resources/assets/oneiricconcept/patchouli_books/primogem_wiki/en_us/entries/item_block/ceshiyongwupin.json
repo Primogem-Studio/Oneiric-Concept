@@ -1,0 +1,11 @@
+{
+    "name": "开发者物品",
+    "icon": "primogemcraft:ceshiyongwupin",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「这是开发者用的$(br)你拿着除了能看原石的初版材质以外$(br)没有任何用途」$(br)实际上有极低概率在遗迹的宝箱中发现（宝箱有1‰概率生成此战利品），在不同版本有以下功能：$(br)删除副手的耐久。$(br)设置自己的已使用$(br)银河大乐透$(br)数量为99。$(br)打开$(br)黑塔----异世界分塔$(br)的交互界面。$(br)$(l:https://www.mcmod.cn/item/706218.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "星际和平银行--异世界分行",
+    "icon": "primogemcraft:xjhpyhfh",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可存入最多64个$(br)宇宙碎片$(br)，存入后给予一张记录数量的$(br)存取凭证$(br)，再次遇到时可以凭证提取双倍于存入数量的宇宙碎片。$(br)在$(br)星际和平银行--异世界分行$(br)结构中生成。$(br)此段资料引用于“$(br)星际和平银行$(br)”并与其保持同步更新。 $(br)编辑$(br)成功存入和取出时会损毁（或在GUI中点击「请你滚开」），可使用$(br)异世界存折$(br)保持不被损毁。$(br)$(l:https://www.mcmod.cn/item/780559.html)"
+        }
+    ]
+}

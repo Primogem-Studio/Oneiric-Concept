@@ -1,0 +1,11 @@
+{
+    "name": "粗满月矿石",
+    "icon": "primogemcraft:cukuangmanyue",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可以通过挖掘$(br)满月金属矿石$(br)获得。使用带有$(br)时运$(br)附魔的$(br)工具$(br)可以增加掉落数量。$(br)$(l:https://www.mcmod.cn/item/793012.html)"
+        }
+    ]
+}

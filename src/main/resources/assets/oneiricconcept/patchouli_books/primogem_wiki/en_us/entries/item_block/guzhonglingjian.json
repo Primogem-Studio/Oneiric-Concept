@@ -1,0 +1,11 @@
+{
+    "name": "咕钟零件",
+    "icon": "primogemcraft:guzhonglingjian",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "永动咕咕钟$(br)永生效期间击杀怪物概率掉落0-3个，用于停用$(br)永动咕咕钟$(br)，或制作$(br)咕钟三明治$(br)。$(br)$(l:https://www.mcmod.cn/item/793016.html)"
+        }
+    ]
+}

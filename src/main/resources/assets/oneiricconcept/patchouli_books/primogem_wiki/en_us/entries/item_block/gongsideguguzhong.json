@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』公司咕咕钟",
+    "icon": "primogemcraft:gongsideguguzhong",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「一个捡到就会被压榨的公司的咕咕钟」$(br)拾取到该物品后：$(br)经验等级大于1小于10时扣除所有经验等级；$(br)经验等级大于10小于20时，随机扣除5~8级经验等级；$(br)经验等级大于20小于30时,随机扣除3~6级经验等级；$(br)经验等级大于30级时重置经验等级至27级！$(br)$(l:https://www.mcmod.cn/item/706210.html)"
+        }
+    ]
+}

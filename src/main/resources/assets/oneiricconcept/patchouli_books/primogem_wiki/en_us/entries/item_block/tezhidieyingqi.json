@@ -1,0 +1,11 @@
+{
+    "name": "特制叠影器)",
+    "icon": "primogemcraft:tezhidieyingqi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于$(br)雾切之回光$(br)等高级武器的升级。$(br)$(l:https://www.mcmod.cn/item/714852.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』没有注释的代码",
+    "icon": "primogemcraft:meiyouzhushidaima",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "修复期间：$(br)玩家攻击目标时，概率使目标周围的非玩家生物获得力量等级加成。$(br)代码修复后：$(br)击杀目标后概率提升自身力量等级，若力量效果小于20秒，将继承持续时间，否则取持续时间的5%继承。$(br)此段资料引用于“$(br)错误代码$(br)”并与其保持同步更新。 $(br)编辑$(br)直接使用$(br)?$(br)，或在$(br)黑塔----异世界分塔$(br)处使用$(br)?$(br)选择获得。$(br)修复需要击杀30个生物，修复前产生负面效果，持有修复的代码时获得增益。$(br)$(l:https://www.mcmod.cn/item/711416.html)"
+        }
+    ]
+}

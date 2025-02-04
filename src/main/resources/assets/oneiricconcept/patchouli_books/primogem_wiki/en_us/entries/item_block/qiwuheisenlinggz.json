@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』黑森林咕咕钟",
+    "icon": "primogemcraft:qiwuheisenlinggz",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "神秘礼盒$(br)概率掉落。$(br)你将成为所有实体的攻击目标，但友好生不会攻击你，即使它仍然视你为攻击目标。$(br)攻击视你为攻击目标，且最大生命小于或等于你的最大生命值的实体时，将有10%概率生成三只不同的亡灵生物，召唤的亡灵生物会获得$(br)咕钟把戏$(br)BUFF。$(br)$(l:https://www.mcmod.cn/item/793013.html)"
+        }
+    ]
+}

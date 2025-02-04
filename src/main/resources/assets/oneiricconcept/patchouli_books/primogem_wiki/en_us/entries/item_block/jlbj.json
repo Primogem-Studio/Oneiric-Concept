@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』俱乐部券",
+    "icon": "primogemcraft:jlbj",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "杀死亡灵生物和节肢生物时，小概率掉落$(br)宇宙碎片$(br)。$(br)$(l:https://www.mcmod.cn/item/772355.html)"
+        }
+    ]
+}

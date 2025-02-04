@@ -1,0 +1,11 @@
+{
+    "name": "老石",
+    "icon": "primogemcraft:laoshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可在$(br)祈愿$(br)中获得。野外遗迹中可以找到，挖掘$(br)地髓水晶块$(br)、破坏$(br)垃圾桶$(br)也有小几率获得。$(br)用于较高级的元素晶石工具的制作。$(br)$(l:https://www.mcmod.cn/item/714863.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "『小三月』",
+    "icon": "primogemcraft:sanyueqidiaoxiang_01",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「超级高清版三月七雕像」$(br)放置、右击、破坏时会播放音效。实体站在上面时会获得极高的加速效果，玩家在单个的雕像上移动可能卡住和视角抖动，跳跃即可脱离。$(br)破坏时，掉落0-2个$(br)纠缠之缘$(br)或$(br)相遇之缘$(br)，首次额外掉落2个$(br)无主的星辉$(br)。$(br)可用于合成$(br)三月祝福$(br)。$(br)外观展示$(br)$(l:https://www.mcmod.cn/item/700443.html)"
+        }
+    ]
+}

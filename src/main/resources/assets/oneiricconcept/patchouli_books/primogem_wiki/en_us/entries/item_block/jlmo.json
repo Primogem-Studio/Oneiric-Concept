@@ -1,0 +1,11 @@
+{
+    "name": "精锻用魔矿",
+    "icon": "primogemcraft:jlmo",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)元素金属$(br)、$(br)下界合金升级$(br)、$(br)钻石合金升级$(br)，也可切石分解为$(br)精锻用杂矿$(br)，或进一步合成$(br)精锻矿融合块$(br)。$(br)$(l:https://www.mcmod.cn/item/780524.html)"
+        }
+    ]
+}

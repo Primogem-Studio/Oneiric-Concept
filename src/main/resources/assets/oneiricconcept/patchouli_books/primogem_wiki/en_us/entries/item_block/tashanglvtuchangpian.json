@@ -1,0 +1,11 @@
+{
+    "name": "踏上旅途",
+    "icon": "primogemcraft:tashanglvtuchangpian",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右击空气或置入唱片机播放音乐：$(br)踏上旅途 Take the Journey - HOYO-MiX/Anthony Lynch$(br)。$(br)“ps：唱片机音质更好”$(br)$(l:https://www.mcmod.cn/item/706197.html)"
+        }
+    ]
+}

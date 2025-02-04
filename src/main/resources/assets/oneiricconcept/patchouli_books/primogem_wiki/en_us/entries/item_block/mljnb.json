@@ -1,0 +1,11 @@
+{
+    "name": "摩拉纪念币",
+    "icon": "primogemcraft:mljnb",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于大量储存。$(br)$(l:https://www.mcmod.cn/item/780545.html)"
+        }
+    ]
+}

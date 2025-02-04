@@ -1,0 +1,11 @@
+{
+    "name": "下界合金块",
+    "icon": "primogemcraft:lianjiaxiajiehejinkuai",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可无序合成为原版$(br)下界合金锭$(br)。$(br)在世界中时，使用石镐或以上等级镐挖掘时有50%概率掉落模组中的$(br)下界合金锭$(br)（不受$(br)精准采集$(br)附魔/魔咒影响），使用木镐及以下等级工具挖掘将不会掉落。$(br)该方块由Lv2及以上等级$(br)坚牢黄玉 镐$(br)右键方块转化成功后若没有转化为$(br)金矿石$(br)则有基于坚牢黄玉等级*0.03/1的概率生成。$(br)硬度、爆炸抗性均低于原版$(br)下界合金块$(br)。$(br)$(l:https://www.mcmod.cn/item/706178.html)"
+        }
+    ]
+}

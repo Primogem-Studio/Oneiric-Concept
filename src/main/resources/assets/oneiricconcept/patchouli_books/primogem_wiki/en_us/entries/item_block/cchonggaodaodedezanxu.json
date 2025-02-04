@@ -1,0 +1,11 @@
+{
+    "name": "崇高道德的赞许",
+    "icon": "primogemcraft:cchonggaodaodedezanxu",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "击杀$(br)掠夺者$(br)、$(br)劫掠兽$(br)、$(br)唤魔者$(br)、$(br)卫道士$(br)有几率获得，击杀$(br)村民$(br)小概率获得。$(br)用于合成经验书等，食用后获得一分钟村庄英雄BUFF。$(br)$(l:https://www.mcmod.cn/item/711424.html)"
+        }
+    ]
+}

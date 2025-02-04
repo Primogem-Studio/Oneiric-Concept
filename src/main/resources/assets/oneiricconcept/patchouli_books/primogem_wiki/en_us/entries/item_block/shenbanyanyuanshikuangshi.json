@@ -1,0 +1,11 @@
+{
+    "name": "深层原石矿石",
+    "icon": "primogemcraft:shenbanyanyuanshikuangshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在>1.16.5的版本中出现，生成于-64＜y＜0的深板岩层，同$(br)原石矿石$(br)。$(br)$(l:https://www.mcmod.cn/item/735208.html)"
+        }
+    ]
+}

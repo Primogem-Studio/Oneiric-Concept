@@ -1,0 +1,11 @@
+{
+    "name": "建木生发器",
+    "icon": "primogemcraft:jianmushengfaqi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "改变魔阴身生成的概率，右击增加，潜行右击减少。$(br)$(l:https://www.mcmod.cn/item/735201.html)"
+        }
+    ]
+}

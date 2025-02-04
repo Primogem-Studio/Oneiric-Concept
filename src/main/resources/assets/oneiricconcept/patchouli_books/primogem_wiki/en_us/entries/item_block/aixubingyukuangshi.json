@@ -1,0 +1,11 @@
+{
+    "name": "哀叙冰玉 矿石",
+    "icon": "primogemcraft:aixubingyukuangshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在$(br)冻洋$(br)及其变种$(br)冰冻深海$(br)群系0＜y＜128的$(br)冰山$(br)中生成，替换蓝冰（24w12a后替换蓝冰和浮冰），同样打滑。非破坏性采集需要挖掘等级2（铁镐）及以上工具。精准采集不生效。$(br)$(l:https://www.mcmod.cn/item/706417.html)"
+        }
+    ]
+}

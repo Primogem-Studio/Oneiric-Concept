@@ -1,0 +1,11 @@
+{
+    "name": "精锻用良矿",
+    "icon": "primogemcraft:jlliang",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)铁质升级$(br)、$(br)钻石升级$(br)，可分解为$(br)精锻用杂矿$(br)或进一步合成$(br)精锻用魔矿$(br)。$(br)$(l:https://www.mcmod.cn/item/780523.html)"
+        }
+    ]
+}

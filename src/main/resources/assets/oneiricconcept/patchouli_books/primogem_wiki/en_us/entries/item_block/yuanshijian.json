@@ -1,0 +1,11 @@
+{
+    "name": "原石 剑",
+    "icon": "primogemcraft:yuanshijian",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "作为基材在锻造台中合成元素晶体武器。$(br)在主手时：$(br)7.5攻击伤害$(br)1.6攻击速度$(br)$(l:https://www.mcmod.cn/item/735203.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "精锻矿融合块",
+    "icon": "primogemcraft:jdyk",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于装饰和储存$(br)精锻用魔矿$(br)。$(br)$(l:https://www.mcmod.cn/item/780550.html)"
+        }
+    ]
+}

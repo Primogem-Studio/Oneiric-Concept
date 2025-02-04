@@ -1,0 +1,11 @@
+{
+    "name": "『奇物』天才俱乐部普通八卦",
+    "icon": "primogemcraft:qwtcjlbptbg",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "拾取$(br)经验球$(br)的收益提升100%，将获取的每个$(br)宇宙碎片$(br)转化为8经验值，转化256宇宙碎片后销毁，奇物被销毁后扣除50%当前经验值。$(br)$(l:https://www.mcmod.cn/item/803144.html)"
+        }
+    ]
+}

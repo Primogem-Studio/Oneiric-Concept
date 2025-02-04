@@ -1,0 +1,11 @@
+{
+    "name": "下界合金升级",
+    "icon": "primogemcraft:shengjizizaihej",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可在锻造台与$(br)锻造模板$(br)升级下界合金装备为对应元素前缀的下界合金装备。$(br)$(l:https://www.mcmod.cn/item/739334.html)"
+        }
+    ]
+}

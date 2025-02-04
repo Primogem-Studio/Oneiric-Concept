@@ -1,0 +1,11 @@
+{
+    "name": "异世界木 棍",
+    "icon": "primogemcraft:yishijiemugun",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "合成材料，用于制作工具和建筑方块。$(br)$(l:https://www.mcmod.cn/item/700418.html)"
+        }
+    ]
+}

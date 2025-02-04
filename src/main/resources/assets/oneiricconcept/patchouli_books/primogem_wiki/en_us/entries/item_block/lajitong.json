@@ -1,0 +1,11 @@
+{
+    "name": "垃圾桶",
+    "icon": "primogemcraft:lajitong",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "自然生成在野外、含有骨头、腐肉、粘液球、黏土球、羽毛、泥土、$(br)垃圾$(br)等低价值物品，小概率含有$(br)好看的垃圾$(br)。$(br)可存放物品，有27格存储空间。$(br)破坏掉落0-2个$(br)垃圾桶碎片$(br)，精准采集不生效。有小概率掉落老石、神秘势力的债券。$(br)可合成为$(br)干净的垃圾桶$(br)、$(br)装满垃圾的垃圾桶$(br)。$(br)$(l:https://www.mcmod.cn/item/706212.html)"
+        }
+    ]
+}

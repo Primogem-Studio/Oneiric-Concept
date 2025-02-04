@@ -1,0 +1,11 @@
+{
+    "name": "草原核 块",
+    "icon": "primogemcraft:caoyuanhekuai",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于合成$(br)草原核发射器$(br)，也可以在切石机中制作$(br)草原核化木$(br)板或回收为9个$(br)草原核$(br)/5个$(br)最胜紫晶$(br)碎屑。$(br)也可以由$(br)草原核$(br)在世界中被闪电击中时，将所处位置的方块（$(br)包括不完整方块（如箱子）$(br)）替换生成。$(br)替换箱子时，不会掉落其中物品。$(br)$(l:https://www.mcmod.cn/item/706317.html)"
+        }
+    ]
+}

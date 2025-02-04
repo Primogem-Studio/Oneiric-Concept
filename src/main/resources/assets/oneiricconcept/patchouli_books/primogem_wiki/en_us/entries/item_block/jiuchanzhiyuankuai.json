@@ -1,0 +1,11 @@
+{
+    "name": "纠缠之缘块",
+    "icon": "primogemcraft:jiuchanzhiyuankuai",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "装饰方块，可用于合成$(br)十枚纠缠之缘$(br)（成本原因不推荐此配方）。$(br)$(l:https://www.mcmod.cn/item/700421.html)"
+        }
+    ]
+}

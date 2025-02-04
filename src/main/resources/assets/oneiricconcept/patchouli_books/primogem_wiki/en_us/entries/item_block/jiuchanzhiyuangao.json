@@ -1,0 +1,11 @@
+{
+    "name": "纠缠之缘镐",
+    "icon": "primogemcraft:jiuchanzhiyuangao",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「抽卡哪有挖矿有意思」$(br)破坏方块时有概率掉落$(br)摩拉$(br)，小概率掉落$(br)原石$(br)。$(br)在主手时：$(br)4攻击伤害$(br)1攻击速度$(br)$(l:https://www.mcmod.cn/item/700419.html)"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "摩拉制垃圾桶",
+    "icon": "primogemcraft:mmolazhilajitong",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由$(br)干净的垃圾桶$(br)合成，可存放物品，比干净的垃圾桶的空间更大，有54格储存空间。$(br)$(l:https://www.mcmod.cn/item/706220.html)"
+        }
+    ]
+}

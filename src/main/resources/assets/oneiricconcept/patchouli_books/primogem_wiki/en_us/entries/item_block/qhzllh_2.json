@@ -1,0 +1,11 @@
+{
+    "name": "珍稀 强化助力礼盒",
+    "icon": "primogemcraft:qhzllh_2",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "钻石和下界合金质的元素护甲和武器都可以通过切石机回收为此物品。$(br)右击使用，潜行时使用整组。$(br)使用后给予相当于造价30%~80%的物品。$(br)$(l:https://www.mcmod.cn/item/780529.html)"
+        }
+    ]
+}

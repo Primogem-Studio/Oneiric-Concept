@@ -1,0 +1,11 @@
+{
+    "name": "咕钟三明治",
+    "icon": "primogemcraft:gzsmz",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "移除$(br)咕咕钟$(br)的负面效果。$(br)$(l:https://www.mcmod.cn/item/803149.html)"
+        }
+    ]
+}

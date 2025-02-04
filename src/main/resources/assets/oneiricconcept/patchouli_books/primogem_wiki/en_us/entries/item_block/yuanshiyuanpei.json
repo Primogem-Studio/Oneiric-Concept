@@ -1,0 +1,11 @@
+{
+    "name": "原石原胚",
+    "icon": "primogemcraft:yuanshiyuanpei",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于制作原石工具。$(br)$(l:https://www.mcmod.cn/item/735202.html)"
+        }
+    ]
+}

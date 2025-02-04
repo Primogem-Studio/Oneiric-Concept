@@ -1,0 +1,11 @@
+{
+    "name": "原石",
+    "icon": "primogemcraft:yuanshi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "给他20原石，他能帮你……$(br)挖掘$(br)原石矿石$(br)或$(br)深层原石矿石$(br)可以获得，有概率在遗迹的宝箱中找到，$(br)草原核$(br)有概率掉落，也可以通过$(br)空月祝福$(br)、$(br)纠缠之缘镐$(br)等物品获得。$(br)重要的合成材料，也可以食用，恢复9点（$(br)）饥饿值和81点（$(br) × 41$(br)）饱和度。$(br)$(l:https://www.mcmod.cn/item/700412.html)"
+        }
+    ]
+}

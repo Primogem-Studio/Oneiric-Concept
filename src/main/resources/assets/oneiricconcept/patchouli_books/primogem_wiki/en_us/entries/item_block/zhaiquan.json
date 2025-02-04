@@ -1,0 +1,11 @@
+{
+    "name": "神秘势力的债券",
+    "icon": "primogemcraft:zhaiquan",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "可在$(br)祈愿紫$(br)、$(br)金$(br)中获得，野外遗迹中可以找到，破坏$(br)垃圾桶$(br)也有小几率获得。$(br)用于高级合成。$(br)$(l:https://www.mcmod.cn/item/714851.html)"
+        }
+    ]
+}

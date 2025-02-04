@@ -1,0 +1,11 @@
+{
+    "name": "精致摩拉块",
+    "icon": "primogemcraft:jingzhimolakuai",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「或许能够用来作为屋顶的中心！」$(br)自然生成于$(br)黄金房间$(br)的顶部中心。$(br)用于合成$(br)摩拉 套装$(br)、摩拉工具等。$(br)$(l:https://www.mcmod.cn/item/706180.html)"
+        }
+    ]
+}

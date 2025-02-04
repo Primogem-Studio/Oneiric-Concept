@@ -1,0 +1,11 @@
+{
+    "name": "下界岩耕地",
+    "icon": "primogemcraft:xijaieyangengdi",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "使用$(br)燃愿玛瑙 锄$(br)右击下界岩转化而来，可以种植作物，无需水源，不会被践踏。$(br)$(l:https://www.mcmod.cn/item/706411.html)"
+        }
+    ]
+}

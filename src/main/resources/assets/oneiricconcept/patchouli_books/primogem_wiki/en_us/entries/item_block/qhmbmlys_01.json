@@ -1,0 +1,11 @@
+{
+    "name": "锻造模板",
+    "icon": "primogemcraft:qhmbmlys_01",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "用于模组中下界合金质装备的锻造升级，可祈愿得到。$(br)$(l:https://www.mcmod.cn/item/777140.html)"
+        }
+    ]
+}

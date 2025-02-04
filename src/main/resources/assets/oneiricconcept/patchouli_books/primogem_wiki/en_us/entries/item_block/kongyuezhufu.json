@@ -1,0 +1,11 @@
+{
+    "name": "空月祝福",
+    "icon": "primogemcraft:kongyuezhufu",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "长按右键使用，消耗一点耐久，给予1~9颗$(br)原石$(br)，冷却24000ticks。可附魔耐久或经验修补重复使用。$(br)$(l:https://www.mcmod.cn/item/711434.html)"
+        }
+    ]
+}

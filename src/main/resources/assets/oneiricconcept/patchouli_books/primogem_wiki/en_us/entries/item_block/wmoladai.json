@@ -1,0 +1,11 @@
+{
+    "name": "装满精致摩拉的摩拉袋",
+    "icon": "primogemcraft:wmoladai",
+    "category": "oneiricconcept:item_block",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "「满满一袋摩拉」$(br)可在$(br)祈愿$(br)中获得。$(br)可用于合成$(br)摩拉$(br)、$(br)小袋摩拉$(br)、$(br)精致摩拉块$(br)。$(br)$(l:https://www.mcmod.cn/item/706201.html)"
+        }
+    ]
+}
