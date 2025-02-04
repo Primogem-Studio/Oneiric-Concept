@@ -16,6 +16,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
+
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
@@ -40,29 +42,31 @@ public class ChestplateFlyProcedure {
 				entity.getPersistentData().putBoolean("ocfly", false);
 			}
 			flylgc = entity.getPersistentData().getBoolean("ocfly") && entity.getPersistentData().getBoolean("ocflyon");
-			if (entity instanceof Player _player) {
-				_player.getAbilities().mayfly = (flylgc || new Object() {
-					public boolean checkGamemode(Entity _ent) {
-						if (_ent instanceof ServerPlayer _serverPlayer) {
-							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-						} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCFLY)) {
+				if (entity instanceof Player _player) {
+					_player.getAbilities().mayfly = (flylgc || new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+							}
+							return false;
 						}
-						return false;
-					}
-				}.checkGamemode(entity) || new Object() {
-					public boolean checkGamemode(Entity _ent) {
-						if (_ent instanceof ServerPlayer _serverPlayer) {
-							return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
-						} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-							return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-									&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+					}.checkGamemode(entity) || new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayer _serverPlayer) {
+								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+							}
+							return false;
 						}
-						return false;
-					}
-				}.checkGamemode(entity));
-				_player.onUpdateAbilities();
+					}.checkGamemode(entity));
+					_player.onUpdateAbilities();
+				}
 			}
 		}
 		return flylgc;
