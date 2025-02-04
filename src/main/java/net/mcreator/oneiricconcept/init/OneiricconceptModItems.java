@@ -49,6 +49,7 @@ import net.mcreator.oneiricconcept.item.PublicClamorItem;
 import net.mcreator.oneiricconcept.item.PropagandaArmyItem;
 import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
 import net.mcreator.oneiricconcept.item.PrimogemfruitItem;
+import net.mcreator.oneiricconcept.item.PrimogemcraftwikiItem;
 import net.mcreator.oneiricconcept.item.PrimogemWaffleItem;
 import net.mcreator.oneiricconcept.item.PhlogistonWingItem;
 import net.mcreator.oneiricconcept.item.PhlogistonItem;
@@ -386,6 +387,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PHLOGISTON = REGISTRY.register("phlogiston", PhlogistonItem::new);
 	public static final DeferredItem<Item> FISHCAKE = REGISTRY.register("fishcake", FishcakeItem::new);
 	public static final DeferredItem<Item> WAYFARE_CAKE_SLICES = REGISTRY.register("wayfare_cake_slices", WayfareCakeSlicesItem::new);
+	public static final DeferredItem<Item> PRIMOGEMCRAFTWIKI = REGISTRY.register("primogemcraftwiki", PrimogemcraftwikiItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

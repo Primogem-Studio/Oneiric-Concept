@@ -6,5 +6,7 @@
     "use_resource_pack": true,
     "show_progress":false,
     "use_blocky_font":true,
-    "i18n":true
+    "i18n":true,
+    "custom_book_item":"oneiricconcept:primogemcraftwiki",
+    "model":"oneiricconcept:primogemcraftwiki"
 }
