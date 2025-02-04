@@ -1,6 +1,7 @@
 package net.mcreator.oneiricconcept.procedures;
 
 import net.neoforged.neoforge.items.ItemHandlerHelper;
+import net.neoforged.fml.ModList;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -18,8 +19,14 @@ public class WayfareCutProcedure {
 		if (entity == null)
 			return;
 		ItemStack itmstk = ItemStack.EMPTY;
+		boolean lgc = false;
 		itmstk = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		if (itmstk.is(ItemTags.create(ResourceLocation.parse("minecraft:swords"))) || itmstk.is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))) {
+		if (ModList.get().isLoaded("farmersdelight")) {
+			lgc = itmstk.is(ItemTags.create(ResourceLocation.parse("c:tools/knife"))) || itmstk.is(ItemTags.create(ResourceLocation.parse("minecraft:swords")));
+		} else {
+			lgc = itmstk.is(ItemTags.create(ResourceLocation.parse("minecraft:swords")));
+		}
+		if (lgc) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(OneiricconceptModItems.WAYFARE_CAKE_SLICES.get()).copy();
 				_setstack.setCount(1);
