@@ -41,6 +41,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.oneiricconcept.procedures.UnShrinkingShellProcedure;
 import net.mcreator.oneiricconcept.procedures.TurtleDamageProcedure;
 import net.mcreator.oneiricconcept.procedures.ShrinkingShellSuoKeProcedure;
+import net.mcreator.oneiricconcept.procedures.CrystalTurtleTickProcedure;
 import net.mcreator.oneiricconcept.procedures.CrystalHeadProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
@@ -48,11 +49,12 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 public class CrystalTurtleEntity extends Animal {
 	public static final EntityDataAccessor<Integer> DATA_ShrinkingShellTime = SynchedEntityData.defineId(CrystalTurtleEntity.class, EntityDataSerializers.INT);
 	public static final EntityDataAccessor<Integer> DATA_crystal = SynchedEntityData.defineId(CrystalTurtleEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<Boolean> DATA_IsShrinking = SynchedEntityData.defineId(CrystalTurtleEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Boolean> DATA_IsCrystallized = SynchedEntityData.defineId(CrystalTurtleEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Boolean> DATA_IsUnShrinking = SynchedEntityData.defineId(CrystalTurtleEntity.class, EntityDataSerializers.BOOLEAN);
 	public final AnimationState animationState2 = new AnimationState();
 	public final AnimationState animationState3 = new AnimationState();
 	public final AnimationState animationState4 = new AnimationState();
-	public final AnimationState animationState5 = new AnimationState();
-	public final AnimationState animationState6 = new AnimationState();
 
 	public CrystalTurtleEntity(EntityType<CrystalTurtleEntity> type, Level world) {
 		super(type, world);
@@ -98,6 +100,9 @@ public class CrystalTurtleEntity extends Animal {
 		super.defineSynchedData(builder);
 		builder.define(DATA_ShrinkingShellTime, 0);
 		builder.define(DATA_crystal, 0);
+		builder.define(DATA_IsShrinking, false);
+		builder.define(DATA_IsCrystallized, false);
+		builder.define(DATA_IsUnShrinking, false);
 	}
 
 	@Override
@@ -233,6 +238,9 @@ public class CrystalTurtleEntity extends Animal {
 		super.addAdditionalSaveData(compound);
 		compound.putInt("DataShrinkingShellTime", this.entityData.get(DATA_ShrinkingShellTime));
 		compound.putInt("Datacrystal", this.entityData.get(DATA_crystal));
+		compound.putBoolean("DataIsShrinking", this.entityData.get(DATA_IsShrinking));
+		compound.putBoolean("DataIsCrystallized", this.entityData.get(DATA_IsCrystallized));
+		compound.putBoolean("DataIsUnShrinking", this.entityData.get(DATA_IsUnShrinking));
 	}
 
 	@Override
@@ -242,6 +250,12 @@ public class CrystalTurtleEntity extends Animal {
 			this.entityData.set(DATA_ShrinkingShellTime, compound.getInt("DataShrinkingShellTime"));
 		if (compound.contains("Datacrystal"))
 			this.entityData.set(DATA_crystal, compound.getInt("Datacrystal"));
+		if (compound.contains("DataIsShrinking"))
+			this.entityData.set(DATA_IsShrinking, compound.getBoolean("DataIsShrinking"));
+		if (compound.contains("DataIsCrystallized"))
+			this.entityData.set(DATA_IsCrystallized, compound.getBoolean("DataIsCrystallized"));
+		if (compound.contains("DataIsUnShrinking"))
+			this.entityData.set(DATA_IsUnShrinking, compound.getBoolean("DataIsUnShrinking"));
 	}
 
 	@Override
@@ -251,15 +265,13 @@ public class CrystalTurtleEntity extends Animal {
 			this.animationState2.animateWhen(ShrinkingShellSuoKeProcedure.execute(this), this.tickCount);
 			this.animationState3.animateWhen(UnShrinkingShellProcedure.execute(this), this.tickCount);
 			this.animationState4.animateWhen(CrystalHeadProcedure.execute(this), this.tickCount);
-			this.animationState5.animateWhen(true, this.tickCount);
-			this.animationState6.animateWhen(true, this.tickCount);
 		}
 	}
 
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		ShrinkingShellSuoKeProcedure.execute(this);
+		CrystalTurtleTickProcedure.execute(this);
 	}
 
 	@Override

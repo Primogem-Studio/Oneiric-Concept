@@ -17,8 +17,8 @@ public class TurtleDamageProcedure {
 		ItemStack items = ItemStack.EMPTY;
 		double Times = 0;
 		Times = entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0;
-		if ((entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0) <= 0) {
-			items = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ysjsj")));
+		if (!(entity instanceof CrystalTurtleEntity _datEntL1 && _datEntL1.getEntityData().get(CrystalTurtleEntity.DATA_IsCrystallized))) {
+			items = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ysjsj"))).copy();
 			items.setCount((int) RandomintProcedure.execute(5, 1));
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, items);
@@ -27,10 +27,14 @@ public class TurtleDamageProcedure {
 			}
 			if (entity instanceof CrystalTurtleEntity _datEntSetI)
 				_datEntSetI.getEntityData().set(CrystalTurtleEntity.DATA_crystal, 1200);
+			if (entity instanceof CrystalTurtleEntity _datEntSetL)
+				_datEntSetL.getEntityData().set(CrystalTurtleEntity.DATA_IsCrystallized, true);
 		}
 		if (Times < 1200) {
 			if (entity instanceof CrystalTurtleEntity _datEntSetI)
 				_datEntSetI.getEntityData().set(CrystalTurtleEntity.DATA_ShrinkingShellTime, (int) (Times + 600));
+			if (entity instanceof CrystalTurtleEntity _datEntSetL)
+				_datEntSetL.getEntityData().set(CrystalTurtleEntity.DATA_IsShrinking, true);
 		}
 		return !ShrinkingShellSuoKeProcedure.execute(entity);
 	}

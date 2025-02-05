@@ -9,13 +9,16 @@ public class TurtleCrystalProcedure {
 		if (entity == null)
 			return false;
 		double Times = 0;
-		boolean logis = false;
 		Times = entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0;
-		logis = Times <= 0;
-		if (!logis) {
+		if (entity instanceof CrystalTurtleEntity _datEntL1 && _datEntL1.getEntityData().get(CrystalTurtleEntity.DATA_IsCrystallized) && Times > 0) {
+			Times = Times - 1;
 			if (entity instanceof CrystalTurtleEntity _datEntSetI)
-				_datEntSetI.getEntityData().set(CrystalTurtleEntity.DATA_crystal, (int) (Times - 1));
+				_datEntSetI.getEntityData().set(CrystalTurtleEntity.DATA_crystal, (int) Times);
+			if (Times <= 0) {
+				if (entity instanceof CrystalTurtleEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(CrystalTurtleEntity.DATA_IsCrystallized, false);
+			}
 		}
-		return logis;
+		return Times <= 0;
 	}
 }

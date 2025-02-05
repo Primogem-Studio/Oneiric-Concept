@@ -33,55 +33,31 @@ public class Modelcrystal_turtle<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(),
-				PartPose.offset(0.0F, 20.5F, -13.0F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(3, 0).addBox(-3.0F, -2.5F, -3.0F, 6.0F, 5.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 20.5F, -13.0F));
 
-		PartDefinition foot = partdefinition.addOrReplaceChild("foot", CubeListBuilder.create(),
-				PartPose.offset(3.5F, 22.5F, 8.0F));
+		PartDefinition foot = partdefinition.addOrReplaceChild("foot", CubeListBuilder.create(), PartPose.offset(3.5F, 22.5F, 8.0F));
 
-		PartDefinition L = foot.addOrReplaceChild("L", CubeListBuilder.create().texOffs(1, 12).addBox(-2.0F, -0.5F,
-				0.0F, 4.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition L = foot.addOrReplaceChild("L", CubeListBuilder.create().texOffs(1, 12).addBox(-2.0F, -0.5F, 0.0F, 4.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition R = foot.addOrReplaceChild("R", CubeListBuilder.create().texOffs(1, 23).addBox(-2.0F, -0.5F,
-				0.0F, 4.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(-7.0F, 0.0F, 0.0F));
+		PartDefinition R = foot.addOrReplaceChild("R", CubeListBuilder.create().texOffs(1, 23).addBox(-2.0F, -0.5F, 0.0F, 4.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(-7.0F, 0.0F, 0.0F));
 
-		PartDefinition shell = partdefinition.addOrReplaceChild("shell", CubeListBuilder.create(),
-				PartPose.offset(4.5F, 23.0F, 8.0F));
+		PartDefinition shell = partdefinition.addOrReplaceChild("shell", CubeListBuilder.create(), PartPose.offset(4.5F, 23.0F, 8.0F));
 
-		PartDefinition cube_r1 = shell.addOrReplaceChild("cube_r1",
-				CubeListBuilder.create().texOffs(31, 1).addBox(-5.5F, -9.0F, -1.5F, 11.0F, 18.0F, 3.0F,
-						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(-4.5F, -0.5F, -9.0F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition cube_r1 = shell.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(31, 1).addBox(-5.5F, -9.0F, -1.5F, 11.0F, 18.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-4.5F, -0.5F, -9.0F, 1.5708F, 0.0F, 0.0F));
 
-		PartDefinition cube_r2 = shell
-				.addOrReplaceChild("cube_r2",
-						CubeListBuilder.create().texOffs(7, 37).addBox(-18.0F, -20.0F, -1.0F, 19.0F, 20.0F, 6.0F,
-								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(4.0F, -3.0F, 2.0F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition cube_r2 = shell.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(7, 37).addBox(-18.0F, -20.0F, -1.0F, 19.0F, 20.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(4.0F, -3.0F, 2.0F, 1.5708F, 0.0F, 0.0F));
 
-		PartDefinition hand = partdefinition.addOrReplaceChild("hand", CubeListBuilder.create(),
-				PartPose.offset(5.0F, 21.5F, -6.5F));
+		PartDefinition hand = partdefinition.addOrReplaceChild("hand", CubeListBuilder.create(), PartPose.offset(5.0F, 21.5F, -6.5F));
 
-		PartDefinition R2 = hand.addOrReplaceChild("R2", CubeListBuilder.create().texOffs(27, 30).addBox(-13.5F, -0.5F,
-				-2.5F, 13.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(-10.0F, 0.0F, 0.0F));
+		PartDefinition R2 = hand.addOrReplaceChild("R2", CubeListBuilder.create().texOffs(27, 30).addBox(-13.5F, -0.5F, -2.5F, 13.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(-10.0F, 0.0F, 0.0F));
 
-		PartDefinition L2 = hand.addOrReplaceChild("L2", CubeListBuilder.create().texOffs(27, 24).addBox(0.5F, -0.5F,
-				-2.5F, 13.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition L2 = hand.addOrReplaceChild("L2", CubeListBuilder.create().texOffs(27, 24).addBox(0.5F, -0.5F, -2.5F, 13.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition crystal = partdefinition.addOrReplaceChild("crystal", CubeListBuilder.create(),
-				PartPose.offset(0.0F, 7.0F, 0.0F));
+		PartDefinition crystal = partdefinition.addOrReplaceChild("crystal", CubeListBuilder.create(), PartPose.offset(0.0F, 7.0F, 0.0F));
 
-		PartDefinition cube_r3 = crystal
-				.addOrReplaceChild("cube_r3",
-						CubeListBuilder.create().texOffs(72, 8).addBox(-8.0F, -8.0F, 0.0F, 16.0F, 16.0F, 0.0F,
-								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.7854F, 0.0F));
+		PartDefinition cube_r3 = crystal.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(72, 8).addBox(-8.0F, -8.0F, 0.0F, 16.0F, 16.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.7854F, 0.0F));
 
-		PartDefinition cube_r4 = crystal
-				.addOrReplaceChild("cube_r4",
-						CubeListBuilder.create().texOffs(72, 8).addBox(-8.0F, -8.0F, 0.0F, 16.0F, 16.0F, 0.0F,
-								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.7854F, 0.0F));
+		PartDefinition cube_r4 = crystal.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(72, 8).addBox(-8.0F, -8.0F, 0.0F, 16.0F, 16.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.7854F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}

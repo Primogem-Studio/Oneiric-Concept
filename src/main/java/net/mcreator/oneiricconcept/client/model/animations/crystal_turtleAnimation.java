@@ -109,21 +109,4 @@ public class crystal_turtleAnimation {
 			.addAnimation("R2", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(2.0F, 1.0F, 11.0F), AnimationChannel.Interpolations.LINEAR),
 					new Keyframe(0.25F, KeyframeAnimations.posVec(2.0F, 1.0F, -3.0F), AnimationChannel.Interpolations.LINEAR), new Keyframe(0.5F, KeyframeAnimations.posVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR)))
 			.build();
-	public static final AnimationDefinition ShrinkingShell_Suokeing = AnimationDefinition.Builder.withLength(0.0417F)
-			.addAnimation("foot", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, -10.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("foot", new AnimationChannel(AnimationChannel.Targets.SCALE, new Keyframe(0.0F, KeyframeAnimations.scaleVec(0.9F, 0.9F, 0.9F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("crystal", new AnimationChannel(AnimationChannel.Targets.SCALE, new Keyframe(0.0F, KeyframeAnimations.scaleVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("head", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 7.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("L2", new AnimationChannel(AnimationChannel.Targets.ROTATION, new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 90.0F, 90.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("L2", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(-2.0F, 1.0F, 11.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("R2", new AnimationChannel(AnimationChannel.Targets.ROTATION, new Keyframe(0.0F, KeyframeAnimations.degreeVec(-90.0F, -90.0F, 0.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("R2", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(2.0F, 1.0F, 11.0F), AnimationChannel.Interpolations.LINEAR))).build();
-	public static final AnimationDefinition ShrinkingShell_Suokeing_crystal = AnimationDefinition.Builder.withLength(0.0417F)
-			.addAnimation("foot", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, -10.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("foot", new AnimationChannel(AnimationChannel.Targets.SCALE, new Keyframe(0.0F, KeyframeAnimations.scaleVec(0.9F, 0.9F, 0.9F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("head", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(0.0F, 0.0F, 7.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("L2", new AnimationChannel(AnimationChannel.Targets.ROTATION, new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 90.0F, 90.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("L2", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(-2.0F, 1.0F, 11.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("R2", new AnimationChannel(AnimationChannel.Targets.ROTATION, new Keyframe(0.0F, KeyframeAnimations.degreeVec(-90.0F, -90.0F, 0.0F), AnimationChannel.Interpolations.LINEAR)))
-			.addAnimation("R2", new AnimationChannel(AnimationChannel.Targets.POSITION, new Keyframe(0.0F, KeyframeAnimations.posVec(2.0F, 1.0F, 11.0F), AnimationChannel.Interpolations.LINEAR))).build();
 }

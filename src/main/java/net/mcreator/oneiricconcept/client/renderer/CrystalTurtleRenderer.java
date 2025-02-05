@@ -52,8 +52,6 @@ public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Mode
 				this.animate(entity.animationState2, crystal_turtleAnimation.ShrinkingShell_SuoKe, ageInTicks, 1f);
 				this.animate(entity.animationState3, crystal_turtleAnimation.ExtendHead_Shentou, ageInTicks, 1f);
 				this.animate(entity.animationState4, crystal_turtleAnimation.ExtendHead_Shentou_crystal, ageInTicks, 1f);
-				this.animate(entity.animationState5, crystal_turtleAnimation.ShrinkingShell_Suokeing, ageInTicks, 1f);
-				this.animate(entity.animationState6, crystal_turtleAnimation.ShrinkingShell_Suokeing_crystal, ageInTicks, 1f);
 			}
 		};
 

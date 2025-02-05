@@ -78,22 +78,6 @@
         },
         "walking": false,
         "amplitude": 1.0
-      },
-      {
-        "animation": {
-          "value": "CUSTOM:crystal_turtleAnimation.ShrinkingShell_Suokeing"
-        },
-        "speed": 1.0,
-        "walking": false,
-        "amplitude": 1.0
-      },
-      {
-        "animation": {
-          "value": "CUSTOM:crystal_turtleAnimation.ShrinkingShell_Suokeing_crystal"
-        },
-        "speed": 1.0,
-        "walking": false,
-        "amplitude": 1.0
       }
     ],
     "modelWidth": 0.6,
@@ -206,6 +190,21 @@
         "name": "crystal",
         "type": "integer",
         "value": 0
+      },
+      {
+        "name": "IsShrinking",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "name": "IsCrystallized",
+        "type": "logic",
+        "value": false
+      },
+      {
+        "name": "IsUnShrinking",
+        "type": "logic",
+        "value": false
       }
     ],
     "whenMobDies": {
@@ -215,7 +214,7 @@
       "name": "TurtleDamage"
     },
     "onMobTickUpdate": {
-      "name": "ShrinkingShellSuoKe"
+      "name": "CrystalTurtleTick"
     },
     "hasAI": true,
     "aiBase": "(none)",
