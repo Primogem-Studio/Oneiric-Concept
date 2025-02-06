@@ -221,7 +221,7 @@ public class CrystalTurtleEntity extends Animal {
 		Entity entity = this;
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
-		if (!TurtleDamageProcedure.execute(world, x, y, z, damagesource, entity, sourceentity))
+		if (!TurtleDamageProcedure.execute(world, x, y, z, damagesource, entity))
 			return false;
 		if (damagesource.is(DamageTypes.FALL))
 			return false;
@@ -233,7 +233,7 @@ public class CrystalTurtleEntity extends Animal {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TurtleDamageProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), source, this, source.getEntity());
+		TurtleDamageProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), source, this);
 	}
 
 	@Override

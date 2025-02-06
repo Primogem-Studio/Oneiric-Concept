@@ -3,7 +3,6 @@ package net.mcreator.oneiricconcept.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -19,8 +18,8 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
 
 public class TurtleDamageProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity, Entity sourceentity) {
-		if (damagesource == null || entity == null || sourceentity == null)
+	public static boolean execute(LevelAccessor world, double x, double y, double z, DamageSource damagesource, Entity entity) {
+		if (damagesource == null || entity == null)
 			return false;
 		ItemStack items = ItemStack.EMPTY;
 		double Times = 0;
@@ -53,10 +52,11 @@ public class TurtleDamageProcedure {
 			if (entity instanceof CrystalTurtleEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(CrystalTurtleEntity.DATA_IsShrinking, true);
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-				if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal(("\u6C34\u6676\u65F6\u95F4\uFF1A\u00A7b" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0)
-							+ "\u00A7r\u7F29\u58F3\u65F6\u95F4\uFF1A\u00A79" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0)
-							+ "\u00A7r\u4F24\u5BB3\u903B\u8F91\uFF1A\u00A7a" + Damagetyplgc + "\u00A7r\u4F24\u5BB3\uFF1A\u00A74" + damagesource)), false);
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList()
+							.broadcastSystemMessage(Component.literal(("\u6C34\u6676\u65F6\u95F4\uFF1A\u00A7b" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0)
+									+ "\u00A7r\u7F29\u58F3\u65F6\u95F4\uFF1A\u00A79" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0)
+									+ "\u00A7r\u4F24\u5BB3\u903B\u8F91\uFF1A\u00A7a" + Damagetyplgc + "\u00A7r\u4F24\u5BB3\uFF1A\u00A74" + damagesource)), false);
 			}
 			return Times <= 0 || Damagetyplgc;
 		}
@@ -65,10 +65,11 @@ public class TurtleDamageProcedure {
 		if (entity instanceof CrystalTurtleEntity _datEntSetL)
 			_datEntSetL.getEntityData().set(CrystalTurtleEntity.DATA_IsShrinking, true);
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (sourceentity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(("\u6C34\u6676\u65F6\u95F4\uFF1A\u00A7b" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0)
-						+ "\u00A7r\u7F29\u58F3\u65F6\u95F4\uFF1A\u00A79" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0)
-						+ "\u00A7r\u4F24\u5BB3\u903B\u8F91\uFF1A\u00A7a" + Damagetyplgc + "\u00A7r\u4F24\u5BB3\uFF1A\u00A74" + damagesource)), false);
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList()
+						.broadcastSystemMessage(Component.literal(("\u6C34\u6676\u65F6\u95F4\uFF1A\u00A7b" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0)
+								+ "\u00A7r\u7F29\u58F3\u65F6\u95F4\uFF1A\u00A79" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0)
+								+ "\u00A7r\u4F24\u5BB3\u903B\u8F91\uFF1A\u00A7a" + Damagetyplgc + "\u00A7r\u4F24\u5BB3\uFF1A\u00A74" + damagesource)), false);
 		}
 		return Damagetyplgc || !ShrinkingShellSuoKeProcedure.execute(entity);
 	}
