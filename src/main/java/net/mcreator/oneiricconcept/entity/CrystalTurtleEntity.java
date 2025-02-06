@@ -6,6 +6,7 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.level.pathfinder.PathType;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -20,6 +21,7 @@ import net.minecraft.world.entity.ai.goal.FollowParentGoal;
 import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
@@ -29,6 +31,7 @@ import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.Mth;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -218,7 +221,7 @@ public class CrystalTurtleEntity extends Animal {
 		Entity entity = this;
 		Entity sourceentity = damagesource.getEntity();
 		Entity immediatesourceentity = damagesource.getDirectEntity();
-		if (!TurtleDamageProcedure.execute(world, x, y, z, entity))
+		if (!TurtleDamageProcedure.execute(world, x, y, z, damagesource, entity, sourceentity))
 			return false;
 		if (damagesource.is(DamageTypes.FALL))
 			return false;
@@ -230,7 +233,7 @@ public class CrystalTurtleEntity extends Animal {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		TurtleDamageProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		TurtleDamageProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), source, this, source.getEntity());
 	}
 
 	@Override
@@ -302,6 +305,8 @@ public class CrystalTurtleEntity extends Animal {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
+		event.register(OneiricconceptModEntities.CRYSTAL_TURTLE.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8), RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

@@ -80,8 +80,8 @@
         "amplitude": 1.0
       }
     ],
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelWidth": 1.4,
+    "modelHeight": 0.6,
     "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -233,7 +233,7 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "creature",
@@ -241,7 +241,13 @@
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
       {
-        "value": "#minecraft:is_beach"
+        "value": "stone_beach"
+      },
+      {
+        "value": "beaches"
+      },
+      {
+        "value": "cold_beach"
       }
     ],
     "spawnInDungeons": false,

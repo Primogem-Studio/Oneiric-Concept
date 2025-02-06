@@ -8,5 +8,6 @@ public class CrystalTurtleTickProcedure {
 			return;
 		ShrinkingShellSuoKeProcedure.execute(entity);
 		UnShrinkingShellProcedure.execute(entity);
+		TurtleCrystalProcedure.execute(entity);
 	}
 }
