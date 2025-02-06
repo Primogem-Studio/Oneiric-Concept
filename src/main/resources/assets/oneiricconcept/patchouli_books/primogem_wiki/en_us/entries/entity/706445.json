@@ -1,0 +1,15 @@
+{
+    "name": "草原核",
+    "icon": "",
+    "category": "oneiricconcept:entity",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "使用 $(l:https://www.mcmod.cn/item/707213.html)生长碧翡 镐$() 挖掘石头和矿物有概率生成于操作者脚下，一段时间后自动死亡。（如果添加连锁挖矿类模组，可能导致一次生成过多而对玩家造成实体挤压伤害。）死亡大概率掉落 $(l:https://www.mcmod.cn/item/706315.html)草原核$() ，概率掉落原版食物、 $(l:https://www.mcmod.cn/item/700424.html)摩拉$() ，小概率掉落奇物、 $(l:https://www.mcmod.cn/item/706480.html)生长碧翡$() 、 $(l:https://www.mcmod.cn/item/700412.html)原石$() 、 $(l:https://www.mcmod.cn/item/706200.html)精致摩拉$() 、 $(l:https://www.mcmod.cn/item/700417.html)创世结晶$() 、 $(l:https://www.mcmod.cn/item/700414.html)纠缠之缘$() 、 $(l:https://www.mcmod.cn/item/700413.html)相遇之缘$() 等。$(br)在世界中被闪电击中时，将所处位置的方块（ 包括不完整方块（如箱子） ）替换为 $(l:https://www.mcmod.cn/item/706317.html)草原核 块$() 。 替换箱子时，不会掉落其中物品。$(br)$(br)1.15以上由 $(l:https://www.mcmod.cn/item/739221.html)『生长碧翡』镐$() 或 $(l:https://www.mcmod.cn/item/780549.html)『涤净青金』绽放镐$() 产生，掉落产物大幅度减少。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706445.html)草原核"
+        }
+    ]
+}

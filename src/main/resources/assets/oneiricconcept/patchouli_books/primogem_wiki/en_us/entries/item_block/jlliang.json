@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于合成$(br)铁质升级$(br)、$(br)钻石升级$(br)，可分解为$(br)精锻用杂矿$(br)或进一步合成$(br)精锻用魔矿$(br)。$(br)$(l:https://www.mcmod.cn/item/780523.html)"
+            "text": "用于合成 $(l:https://www.mcmod.cn/item/739332.html)铁质升级$() 、 $(l:https://www.mcmod.cn/item/739333.html)钻石升级$() ，可分解为 $(l:https://www.mcmod.cn/item/780522.html)精锻用杂矿$() 或进一步合成 $(l:https://www.mcmod.cn/item/780524.html)精锻用魔矿$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780523.html)精锻用良矿"
         }
     ]
 }

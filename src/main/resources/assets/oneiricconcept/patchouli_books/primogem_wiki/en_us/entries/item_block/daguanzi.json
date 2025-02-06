@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "生成在野外，数个一起出现。受重力影响。$(br)击碎可掉落骨头、腐肉、粘液球、黏土球、羽毛、泥土、皮革、苹果等低价值物品。概率掉落$(br)摩拉$(br)，小概率掉落$(br)奇物$(br)。$(br)$(l:https://www.mcmod.cn/item/706199.html)"
+            "text": "生成在野外，数个一起出现。受重力影响。$(br)击碎可掉落骨头、腐肉、粘液球、黏土球、羽毛、泥土、皮革、苹果等低价值物品。概率掉落 $(l:https://www.mcmod.cn/item/700424.html)摩拉$() ，小概率掉落 $(l:https://www.mcmod.cn/item/list/10429-1-1019546.html)奇物$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706199.html)大罐子"
         }
     ]
 }

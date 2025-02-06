@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在0＜y＜128范围内的砂砾中生成，是重力方块。非破坏性采集需要挖掘等级2（铁铲）及以上的工具。掉落$(br)涤净青金$(br)，24w12a前精准采集不生效。$(br)$(l:https://www.mcmod.cn/item/706360.html)"
+            "text": "在0＜y＜128范围内的砂砾中生成，是重力方块。非破坏性采集需要挖掘等级2（铁铲）及以上的工具。掉落 $(l:https://www.mcmod.cn/item/706481.html)涤净青金$() ，24w12a前精准采集不生效。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706360.html)涤净青金 矿石"
         }
     ]
 }

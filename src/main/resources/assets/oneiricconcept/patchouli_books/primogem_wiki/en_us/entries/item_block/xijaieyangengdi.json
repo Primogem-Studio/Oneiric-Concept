@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "使用$(br)燃愿玛瑙 锄$(br)右击下界岩转化而来，可以种植作物，无需水源，不会被践踏。$(br)$(l:https://www.mcmod.cn/item/706411.html)"
+            "text": "使用 $(l:https://www.mcmod.cn/item/706412.html)燃愿玛瑙 锄$() 右击下界岩转化而来，可以种植作物，无需水源，不会被践踏。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706411.html)下界岩耕地"
         }
     ]
 }

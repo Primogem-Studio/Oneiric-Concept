@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "每拥有64宇宙碎片，攻击目标后会对其额外造成等同于攻击者最大生命1.6%的额外伤害。该效果每2秒至多触发一次。$(br)$(l:https://www.mcmod.cn/item/780513.html)"
+            "text": "每拥有64宇宙碎片，攻击目标后会对其额外造成等同于攻击者最大生命1.6%的额外伤害。该效果每2秒至多触发一次。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780513.html)『奇物』纯美之袍"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "打破$(br)小罐子$(br)、$(br)大罐子$(br)掉落，或在野外宝箱中找到。$(br)右击打开或在玩家背包一分钟后自动打开。$(br)大概率获得$(br)咕咕钟$(br)，小概率获得原版物资（$(br)红石粉$(br)；$(br)青金石$(br)；$(br)下界石英$(br)；$(br)铜锭$(br)；$(br)铁锭$(br)；$(br)金锭$(br)；$(br)绿宝石$(br)；$(br)紫水晶碎片$(br)；$(br)钻石$(br)；$(br)回响碎片$(br)）、$(br)『奇物』银河大乐透$(br)、$(br)咕钟零件$(br)、$(br)下界合金锭$(br)、$(br)垃圾桶碎片$(br)、$(br)宇宙碎片$(br)、$(br)?$(br)、$(br)摩拉$(br)、$(br)星轨专票$(br)、$(br)相遇之缘$(br)、$(br)原石$(br)、$(br)精锻用杂矿$(br)、$(br)精锻用良矿$(br)、$(br)流浪者的经验$(br)、$(br)冒险家的经验$(br)。$(br)推荐使用漏斗、漏斗矿车辅助，以免受负面奇物影响。$(br)$(l:https://www.mcmod.cn/item/793018.html)"
+            "text": "打破 $(l:https://www.mcmod.cn/item/706198.html)小罐子$() 、 $(l:https://www.mcmod.cn/item/706199.html)大罐子$() 掉落，或在野外宝箱中找到。$(br)右击打开或在玩家背包一分钟后自动打开。$(br)大概率获得 $(l:https://www.mcmod.cn/item/list/10429-1-1027026.html)咕咕钟$() ，小概率获得原版物资（ $(l:https://www.mcmod.cn/item/70.html)红石粉$() ； $(l:https://www.mcmod.cn/item/1026.html)青金石$() ； $(l:https://www.mcmod.cn/item/3091.html)下界石英$() ； $(l:https://www.mcmod.cn/item/463116.html)铜锭$() ； $(l:https://www.mcmod.cn/item/959.html)铁锭$() ； $(l:https://www.mcmod.cn/item/960.html)金锭$() ； $(l:https://www.mcmod.cn/item/963.html)绿宝石$() ； $(l:https://www.mcmod.cn/item/463183.html)紫水晶碎片$() ； $(l:https://www.mcmod.cn/item/962.html)钻石$() ； $(l:https://www.mcmod.cn/item/599832.html)回响碎片$() ）、 $(l:https://www.mcmod.cn/item/700423.html)『奇物』银河大乐透$() 、 $(l:https://www.mcmod.cn/item/793016.html)咕钟零件$() 、 $(l:https://www.mcmod.cn/item/706389.html)下界合金锭$() 、 $(l:https://www.mcmod.cn/item/711463.html)垃圾桶碎片$() 、 $(l:https://www.mcmod.cn/item/711419.html)宇宙碎片$() 、 $(l:https://www.mcmod.cn/item/711418.html)?$() 、 $(l:https://www.mcmod.cn/item/700424.html)摩拉$() 、 $(l:https://www.mcmod.cn/item/700429.html)星轨专票$() 、 $(l:https://www.mcmod.cn/item/700413.html)相遇之缘$() 、 $(l:https://www.mcmod.cn/item/700412.html)原石$() 、 $(l:https://www.mcmod.cn/item/780522.html)精锻用杂矿$() 、 $(l:https://www.mcmod.cn/item/780523.html)精锻用良矿$() 、 $(l:https://www.mcmod.cn/item/711426.html)流浪者的经验$() 、 $(l:https://www.mcmod.cn/item/711428.html)冒险家的经验$() 。$(br)推荐使用漏斗、漏斗矿车辅助，以免受负面奇物影响。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/793018.html)神秘礼盒"
         }
     ]
 }

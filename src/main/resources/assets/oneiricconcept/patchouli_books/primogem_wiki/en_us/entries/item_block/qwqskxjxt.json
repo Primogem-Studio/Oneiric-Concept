@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "触发$(br)奇思狂想机械团$(br)状态效果并失效。$(br)失效奇物可以直接无序合成为有效奇物。$(br)$(l:https://www.mcmod.cn/item/803150.html)"
+            "text": "触发 $(l:https://www.mcmod.cn/item/828651.html)奇思狂想机械团$() 状态效果并失效。$(br)失效奇物可以直接无序合成为有效奇物。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/803150.html)『奇物』「奇思狂想」机械团"
         }
     ]
 }

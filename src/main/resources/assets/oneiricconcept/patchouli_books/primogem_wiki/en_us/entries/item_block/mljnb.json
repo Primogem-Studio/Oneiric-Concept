@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于大量储存。$(br)$(l:https://www.mcmod.cn/item/780545.html)"
+            "text": "用于大量储存。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780545.html)摩拉纪念币"
         }
     ]
 }

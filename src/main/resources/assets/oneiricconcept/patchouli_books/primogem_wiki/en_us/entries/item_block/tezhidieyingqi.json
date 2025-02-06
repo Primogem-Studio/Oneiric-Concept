@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于$(br)雾切之回光$(br)等高级武器的升级。$(br)$(l:https://www.mcmod.cn/item/714852.html)"
+            "text": "用于 $(l:https://www.mcmod.cn/item/714864.html)雾切之回光$() 等高级武器的升级。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/714852.html)特制叠影器)"
         }
     ]
 }

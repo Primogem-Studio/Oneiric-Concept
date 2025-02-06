@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "存在物品栏时持续给予玩家$(br)寄生$(br)效果。$(br)$(l:https://www.mcmod.cn/item/706185.html)"
+            "text": "存在物品栏时持续给予玩家 $(l:https://www.mcmod.cn/item/745346.html)寄生$() 效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706185.html)『奇物』虫网"
         }
     ]
 }

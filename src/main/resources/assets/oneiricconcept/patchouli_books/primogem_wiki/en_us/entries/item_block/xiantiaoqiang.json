@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可从$(br)$(br)$(br)祈愿金光$(br) 中获得，或自己合成。$(br)食用后恢复8点（$(br)）和160点（$(br) × 80$(br)）无条件增加一级力量效果，若没有力量效果则赋予一级力量效果（5:00）。$(br)在增加力量效果时，若已有效果的持续时间小于5分钟，则延长其至5分钟。$(br)$(l:https://www.mcmod.cn/item/706208.html)"
+            "text": "可从 $(l:https://www.mcmod.cn/item/700451.html)$() $(l:https://www.mcmod.cn/item/700451.html)$() $(l:https://www.mcmod.cn/item/700451.html)祈愿金光$() 中获得，或自己合成。$(br)食用后恢复8点（ ）和160点（ × 80 ）无条件增加一级力量效果，若没有力量效果则赋予一级力量效果（5:00）。$(br)在增加力量效果时，若已有效果的持续时间小于5分钟，则延长其至5分钟。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706208.html)仙跳墙"
         }
     ]
 }

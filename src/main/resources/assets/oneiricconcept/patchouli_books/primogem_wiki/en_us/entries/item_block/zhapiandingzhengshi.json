@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "！$(br)-$(br)！$(br)-$(br)！$(br)-$(br)！$(br)--$(br)表面留有细纹，或许可以放进唱片机$(br)使用铁镐或钻石镐破坏$(br)下界合金块$(br)获得。$(br)置入唱片机播放音乐：$(br)Never Gonna Give You Up - Rick Astley$(br)。$(br)可以无序合成为$(br)下界合金碎片$(br)。$(br)1.13版本以后，使用该物品右键唱片机会对玩家施加一个$(br)fuli$(br)标签，存在该标签下的玩家将无法破坏和互动唱片机，持续1分钟。$(br)玩家进入世界时会删除该标签并停止播放。$(br)除持有标签实体以外的任意实体都可以互动或破坏使其停止播放，包括TNT。$(br)$(l:https://www.mcmod.cn/item/706389.html)"
+            "text": "！ - ！ - ！ - ！ --$(br)表面留有细纹，或许可以放进唱片机$(br)使用铁镐或钻石镐破坏 $(l:https://www.mcmod.cn/item/706178.html)下界合金块$() 获得。$(br)置入唱片机播放音乐： $(l:https:void(0);)Never Gonna Give You Up - Rick Astley$() 。$(br)可以无序合成为 $(l:https://www.mcmod.cn/item/206969.html)下界合金碎片$() 。$(br)1.13版本以后，使用该物品右键唱片机会对玩家施加一个 $(l:https:void(0);)fuli$() 标签，存在该标签下的玩家将无法破坏和互动唱片机，持续1分钟。$(br)玩家进入世界时会删除该标签并停止播放。$(br)除持有标签实体以外的任意实体都可以互动或破坏使其停止播放，包括TNT。$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706389.html)下界合金锭"
         }
     ]
 }

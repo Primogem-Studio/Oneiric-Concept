@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "使用$(br)银河大乐透$(br)时极小概率获得。提高使用银河大乐透得到优质奖励的概率，减免9点（$(br)）银河大乐透损坏时扣除的饥饿值。但是由于被给予饥饿DEBUFF，饥饿值持续流失仍需要及时应对，以免在困难难度等情况下饿死。$(br)$(l:https://www.mcmod.cn/item/714857.html)"
+            "text": "使用 $(l:https://www.mcmod.cn/item/700423.html)银河大乐透$() 时极小概率获得。提高使用银河大乐透得到优质奖励的概率，减免9点（ ）银河大乐透损坏时扣除的饥饿值。但是由于被给予饥饿DEBUFF，饥饿值持续流失仍需要及时应对，以免在困难难度等情况下饿死。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/714857.html)aha非酋凭证aha"
         }
     ]
 }

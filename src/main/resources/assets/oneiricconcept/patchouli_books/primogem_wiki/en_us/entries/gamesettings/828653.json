@@ -1,0 +1,15 @@
+{
+    "name": "均衡等级",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "通过使用相应等级的均衡石板获得，提升 $(l:https://www.mcmod.cn/item/828652.html)武器强化$() 时武器等级带来的伤害加成。$(br)可以直接使用高等级的均衡石板，高均衡等级不会被低等级的石板覆盖。$(br)在创造模式下手持任意均衡石板潜行右击可重置均衡等级。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828653.html)均衡等级"
+        }
+    ]
+}

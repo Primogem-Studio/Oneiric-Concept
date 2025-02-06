@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「一个人的垃圾...」$(br)可在野外生成的垃圾桶中和$(br)祈愿金光$(br)中获得。$(br)食用后恢复4点（$(br)）饥饿值和3点（$(br)）饱和度，获得一分钟生命恢复II和一次瞬间治疗II。解除$(br)『奇物』真·银河大乐透$(br)的惩罚效果。$(br)$(l:https://www.mcmod.cn/item/706217.html)"
+            "text": "「一个人的垃圾...」$(br)可在野外生成的垃圾桶中和 $(l:https://www.mcmod.cn/item/700451.html)祈愿金光$() 中获得。$(br)食用后恢复4点（ ）饥饿值和3点（ ）饱和度，获得一分钟生命恢复II和一次瞬间治疗II。解除 $(l:https://www.mcmod.cn/item/706221.html)『奇物』真·银河大乐透$() 的惩罚效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706217.html)好看的垃圾"
         }
     ]
 }

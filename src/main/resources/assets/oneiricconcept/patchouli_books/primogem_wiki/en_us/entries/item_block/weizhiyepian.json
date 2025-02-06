@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可用于制作丰饶琼浆或复活图腾。$(br)丰饶$(br)效果触发时有几率掉落。$(br)$(l:https://www.mcmod.cn/item/711423.html)"
+            "text": "可用于制作丰饶琼浆或复活图腾。$(br)$(l:https://www.mcmod.cn/item/711536.html)丰饶$() 效果触发时有几率掉落。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711423.html)未知叶片"
         }
     ]
 }

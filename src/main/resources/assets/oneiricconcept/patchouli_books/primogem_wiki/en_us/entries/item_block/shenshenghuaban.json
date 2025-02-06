@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "满耐久右击地面释放$(br)黑塔----异世界分塔$(br)并减少耐久，空耐久右击$(br)黑塔----异世界分塔$(br)收回并恢复耐久。$(br)$(l:https://www.mcmod.cn/item/734047.html)"
+            "text": "满耐久右击地面释放 $(l:https://www.mcmod.cn/item/734052.html)黑塔----异世界分塔$() 并减少耐久，空耐久右击 $(l:https://www.mcmod.cn/item/734052.html)黑塔----异世界分塔$() 收回并恢复耐久。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/734047.html)神秘花瓣"
         }
     ]
 }

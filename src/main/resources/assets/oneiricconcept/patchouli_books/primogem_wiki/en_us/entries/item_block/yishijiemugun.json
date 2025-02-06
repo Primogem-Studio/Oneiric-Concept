@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "合成材料，用于制作工具和建筑方块。$(br)$(l:https://www.mcmod.cn/item/700418.html)"
+            "text": "合成材料，用于制作工具和建筑方块。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700418.html)异世界木 棍"
         }
     ]
 }

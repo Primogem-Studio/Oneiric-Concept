@@ -1,0 +1,15 @@
+{
+    "name": "黄金屋遗迹",
+    "icon": "",
+    "category": "oneiricconcept:structure",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "有一个拱门状石砖结构的遗迹和一棵树，外侧有数个 $(l:https://www.mcmod.cn/item/706198.html)小罐子$() 、 $(l:https://www.mcmod.cn/item/706199.html)大罐子$() 。$(br)在拱门方向的正面和两个侧面，泥土内侧有一层黑曜石。$(br)在树根后没有黑曜石，但是有TNT陷阱，需要小心压力板。$(br)内部由 $(l:https://www.mcmod.cn/item/706453.html)廉价摩拉块装饰方块$() 构成。$(br)经过一段楼梯，到达下方宝藏 「爆葬」 室。宝箱内有一些摩拉，有概率含有 $(l:https://www.mcmod.cn/item/700412.html)原石$() 、 $(l:https://www.mcmod.cn/item/700417.html)创世结晶$() 、 $(l:https://www.mcmod.cn/item/700414.html)纠缠之缘$() 、 $(l:https://www.mcmod.cn/item/list/10429-1-1019546.html)奇物$() 、经验书等高价值物品。宝藏室屋顶上方藏有 $(l:https://www.mcmod.cn/item/700435.html)摩拉块$() 和 $(l:https://www.mcmod.cn/item/700411.html)原石矿石$() 各两个。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/707297.html)黄金屋遗迹"
+        }
+    ]
+}

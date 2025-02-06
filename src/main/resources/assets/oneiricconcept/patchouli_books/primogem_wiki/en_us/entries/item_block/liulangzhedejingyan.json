@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可存储20/27/30经验等级，右击存入，潜行右击取出。经验值满时有附魔光效。$(br)合成升级不保留经验，使用有少量损耗。$(br)$(l:https://www.mcmod.cn/item/711465.html)"
+            "text": "可存储20/27/30经验等级，右击存入，潜行右击取出。经验值满时有附魔光效。$(br)合成升级不保留经验，使用有少量损耗。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711465.html)经验书"
         }
     ]
 }

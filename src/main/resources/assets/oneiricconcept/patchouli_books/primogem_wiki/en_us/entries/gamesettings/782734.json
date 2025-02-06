@@ -1,0 +1,15 @@
+{
+    "name": "套装效果",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "元素护甲的 $(l:https://www.mcmod.cn/item/782733.html)套装数值$() 足够后提供的特殊效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/782734.html)套装效果"
+        }
+    ]
+}

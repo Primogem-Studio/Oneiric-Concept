@@ -1,0 +1,15 @@
+{
+    "name": "罐子堆",
+    "icon": "",
+    "category": "oneiricconcept:structure",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "野外的多个 $(l:https://www.mcmod.cn/item/706198.html)小罐子$() 、 $(l:https://www.mcmod.cn/item/706199.html)大罐子$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/707296.html)罐子堆"
+        }
+    ]
+}

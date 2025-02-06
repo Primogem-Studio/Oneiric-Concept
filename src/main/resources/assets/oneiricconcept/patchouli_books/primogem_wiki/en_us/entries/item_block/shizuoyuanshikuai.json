@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "装饰方块，可用于储存大量原石。发出7级光照。$(br)$(l:https://www.mcmod.cn/item/714858.html)"
+            "text": "装饰方块，可用于储存大量原石。发出7级光照。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/714858.html)原石块"
         }
     ]
 }

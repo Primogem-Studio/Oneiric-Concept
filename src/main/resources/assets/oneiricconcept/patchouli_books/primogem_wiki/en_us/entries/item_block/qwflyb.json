@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "右击消耗物品并获得8~24$(br)宇宙碎片$(br)。$(br)$(l:https://www.mcmod.cn/item/772359.html)"
+            "text": "右击消耗物品并获得8~24 $(l:https://www.mcmod.cn/item/711419.html)宇宙碎片$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772359.html)『奇物』分裂银币"
         }
     ]
 }

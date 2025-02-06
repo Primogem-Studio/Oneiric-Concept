@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "持续提供速度I状态效果，每30秒扣除1点（$(br)）生命值。$(br)$(l:https://www.mcmod.cn/item/772360.html)"
+            "text": "持续提供速度I状态效果，每30秒扣除1点（ ）生命值。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772360.html)『奇物』塔拉毒火焰"
         }
     ]
 }

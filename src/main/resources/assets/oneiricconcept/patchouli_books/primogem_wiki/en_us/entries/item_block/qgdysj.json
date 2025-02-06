@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "作为彩蛋武器出现。当$(br)原石剑$(br)被合成时有1%的概率为其添加一个记录标签，获取时会被移除并替换为奇怪的原石剑。$(br)仅在合成时点击拿取才会触发概率，按下潜行键移入背包不触发。$(br)$(l:https://www.mcmod.cn/item/772369.html)"
+            "text": "作为彩蛋武器出现。当 $(l:https://www.mcmod.cn/item/735203.html)原石剑$() 被合成时有1%的概率为其添加一个记录标签，获取时会被移除并替换为奇怪的原石剑。$(br)仅在合成时点击拿取才会触发概率，按下潜行键移入背包不触发。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772369.html)奇怪的原石剑"
         }
     ]
 }

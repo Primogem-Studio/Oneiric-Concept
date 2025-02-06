@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可以通过挖掘$(br)赤月金属矿石$(br)获得。使用带有$(br)时运$(br)附魔的$(br)工具$(br)可以增加掉落数量。$(br)$(l:https://www.mcmod.cn/item/793011.html)"
+            "text": "可以通过挖掘 $(l:https://www.mcmod.cn/item/711440.html)赤月金属矿石$() 获得。使用带有 $(l:https://www.mcmod.cn/item/46734.html)时运$() 附魔的 $(l:https://www.mcmod.cn/item/385020.html)工具$() 可以增加掉落数量。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/793011.html)粗赤月矿石"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「十……保……歪」$(br)可由$(br)草原核$(br)掉落。$(br)可用于合成$(br)『小三月』$(br)、$(br)『奇物』银河大乐透$(br)、$(br)纠缠之稿$(br)、模组唱片等高级物品。$(br)在主/副手时，持续给予3秒$(br)幸运$(br)II、$(br)反胃$(br)III的状态效果。$(br)长按右键以祈愿，在上方十格处生成随机$(br)抽奖实体$(br)，使用后扣除1点（$(br)）饥饿值，回复2点（$(br)）饱和度。$(br)$(l:https://www.mcmod.cn/item/700414.html)"
+            "text": "「十……保……歪」$(br)可由 $(l:https://www.mcmod.cn/item/706445.html)草原核$() 掉落。$(br)可用于合成 $(l:https://www.mcmod.cn/item/700443.html)『小三月』$() 、 $(l:https://www.mcmod.cn/item/700423.html)『奇物』银河大乐透$() 、 $(l:https://www.mcmod.cn/item/700419.html)纠缠之稿$() 、模组唱片等高级物品。$(br)在主/副手时，持续给予3秒 $(l:https://www.mcmod.cn/item/192495.html)幸运$() II、 $(l:https://www.mcmod.cn/item/9386.html)反胃$() III的状态效果。$(br)长按右键以祈愿，在上方十格处生成随机 $(l:https://www.mcmod.cn/item/list/10429-4-1019164.html)抽奖实体$() ，使用后扣除1点（ ）饥饿值，回复2点（ ）饱和度。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700414.html)纠缠之缘"
         }
     ]
 }

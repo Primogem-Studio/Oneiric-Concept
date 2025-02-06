@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "重要的合成材料，用于合成$(br)精致摩拉$(br)、$(br)摩拉块$(br)等。$(br)$(l:https://www.mcmod.cn/item/700424.html)"
+            "text": "重要的合成材料，用于合成 $(l:https://www.mcmod.cn/item/706200.html)精致摩拉$() 、 $(l:https://www.mcmod.cn/item/700435.html)摩拉块$() 等。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700424.html)摩拉"
         }
     ]
 }

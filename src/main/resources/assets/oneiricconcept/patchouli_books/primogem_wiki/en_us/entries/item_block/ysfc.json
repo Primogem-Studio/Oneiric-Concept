@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "使用$(br)『燃愿玛瑙』 镐$(br)挖掘石英矿石时有几率掉落。$(br)用于合成$(br)反致精炼用魔矿$(br)和$(br)aha元素晶体 块aha$(br)，可以转换为任意元素晶石碎屑。$(br)$(l:https://www.mcmod.cn/item/739165.html)"
+            "text": "使用 $(l:https://www.mcmod.cn/item/739223.html)『燃愿玛瑙』 镐$() 挖掘石英矿石时有几率掉落。$(br)用于合成 $(l:https://www.mcmod.cn/item/739166.html)反致精炼用魔矿$() 和 $(l:https://www.mcmod.cn/item/706428.html)aha元素晶体 块aha$() ，可以转换为任意元素晶石碎屑。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/739165.html)元素晶石粉尘"
         }
     ]
 }

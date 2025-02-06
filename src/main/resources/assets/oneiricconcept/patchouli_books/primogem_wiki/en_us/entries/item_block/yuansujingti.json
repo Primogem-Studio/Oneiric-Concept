@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于较高级的合成，可在$(br)祈愿金光$(br)中获得。$(br)$(l:https://www.mcmod.cn/item/706427.html)"
+            "text": "用于较高级的合成，可在 $(l:https://www.mcmod.cn/item/700451.html)祈愿金光$() 中获得。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706427.html)aha元素晶体aha"
         }
     ]
 }

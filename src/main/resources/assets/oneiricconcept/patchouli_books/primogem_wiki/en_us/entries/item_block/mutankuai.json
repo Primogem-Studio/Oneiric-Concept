@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "由$(br)『燃愿玛瑙』锹$(br)右击转化原木而来，可分解为9个木炭。$(br)$(l:https://www.mcmod.cn/item/706179.html)"
+            "text": "由 $(l:https://www.mcmod.cn/item/739238.html)『燃愿玛瑙』锹$() 右击转化原木而来，可分解为9个木炭。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706179.html)木炭块"
         }
     ]
 }

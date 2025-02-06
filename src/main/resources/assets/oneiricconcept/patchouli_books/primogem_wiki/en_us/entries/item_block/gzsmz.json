@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "移除$(br)咕咕钟$(br)的负面效果。$(br)$(l:https://www.mcmod.cn/item/803149.html)"
+            "text": "移除 $(l:https://www.mcmod.cn/item/list/10429-1-1027026.html)咕咕钟$() 的负面效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/803149.html)咕钟三明治"
         }
     ]
 }

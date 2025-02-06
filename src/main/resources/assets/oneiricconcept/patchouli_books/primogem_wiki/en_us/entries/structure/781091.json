@@ -1,0 +1,15 @@
+{
+    "name": "星际和平银行--异世界分行",
+    "icon": "",
+    "category": "oneiricconcept:structure",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在地下掩埋，或半掩埋生成，最外层是方解石，内层用黄绿色装饰。内部有 $(l:https://www.mcmod.cn/item/780559.html)星际和平银行--异世界分行$() 和一些摩拉。 $(l:https://www.mcmod.cn/item/780559.html)$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/781091.html)星际和平银行--异世界分行"
+        }
+    ]
+}

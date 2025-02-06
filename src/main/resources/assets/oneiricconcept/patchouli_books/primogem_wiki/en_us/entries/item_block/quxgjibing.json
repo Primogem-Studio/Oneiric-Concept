@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "攻击满血生物时回复自身10%当前生命值。$(br)$(l:https://www.mcmod.cn/item/803146.html)"
+            "text": "攻击满血生物时回复自身10%当前生命值。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/803146.html)『奇物』虚构机兵"
         }
     ]
 }

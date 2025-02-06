@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "置入唱片机播放音乐：$(br)Village Surrounded by Green 葳蕤林野间 - 陈致逸/HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700433.html)"
+            "text": "置入唱片机播放音乐： $(l:https:void(0);)Village Surrounded by Green 葳蕤林野间 - 陈致逸/HOYO-MiX$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700433.html)葳蕤林野间"
         }
     ]
 }

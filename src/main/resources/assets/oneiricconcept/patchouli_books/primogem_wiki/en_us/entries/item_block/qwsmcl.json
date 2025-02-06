@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "攻击亡灵生物时有概率对其进行强化，击败强化后的亡灵生物时有概率掉落2~20个$(br)宇宙碎片$(br)。$(br)触发效果5次后奇物损毁。$(br)$(l:https://www.mcmod.cn/item/803151.html)"
+            "text": "攻击亡灵生物时有概率对其进行强化，击败强化后的亡灵生物时有概率掉落2~20个 $(l:https://www.mcmod.cn/item/711419.html)宇宙碎片$() 。$(br)触发效果5次后奇物损毁。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/803151.html)『奇物』「神秘」磁力"
         }
     ]
 }

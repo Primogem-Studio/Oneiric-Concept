@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "修复期间：$(br)玩家造成暴击时概率降低自身生命值。$(br)代码修复后：$(br)造成暴击后极高概率恢复生命值。$(br)此段资料引用于“$(br)错误代码$(br)”并与其保持同步更新。 $(br)编辑$(br)直接使用$(br)?$(br)，或在$(br)黑塔----异世界分塔$(br)处使用$(br)?$(br)选择获得。$(br)修复需要击杀30个生物，修复前产生负面效果，持有修复的代码时获得增益。$(br)$(l:https://www.mcmod.cn/item/711413.html)"
+            "text": "修复期间：$(br)玩家造成暴击时概率降低自身生命值。$(br)代码修复后：$(br)造成暴击后极高概率恢复生命值。$(br)直接使用 $(l:https://www.mcmod.cn/item/711418.html)?$() ，或在 $(l:https://www.mcmod.cn/item/734052.html)黑塔----异世界分塔$() 处使用 $(l:https://www.mcmod.cn/item/711418.html)?$() 选择获得。$(br)修复需要击杀30个生物，修复前产生负面效果，持有修复的代码时获得增益。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711413.html)『奇物』有点蹊跷的代码"
         }
     ]
 }

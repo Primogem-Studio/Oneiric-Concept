@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在任意$(br)抽卡$(br)中有概率获得，用于较高级的合成。$(br)$(l:https://www.mcmod.cn/item/706429.html)"
+            "text": "在任意 $(l:https://www.mcmod.cn/item/list/10429-4-1019164.html)抽卡$() 中有概率获得，用于较高级的合成。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706429.html)嬗变之尘"
         }
     ]
 }

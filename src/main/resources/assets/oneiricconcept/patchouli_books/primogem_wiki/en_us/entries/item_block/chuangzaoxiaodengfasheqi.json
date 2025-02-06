@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "接收红石信号时释放霄灯，有约1秒的冷却。顶面有$(br)任何非空气方块$(br)都不会释放霄灯。$(br)$(l:https://www.mcmod.cn/item/711422.html)"
+            "text": "接收红石信号时释放霄灯，有约1秒的冷却。顶面有 任何非空气方块 都不会释放霄灯。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711422.html)霄灯发射器创造模式"
         }
     ]
 }

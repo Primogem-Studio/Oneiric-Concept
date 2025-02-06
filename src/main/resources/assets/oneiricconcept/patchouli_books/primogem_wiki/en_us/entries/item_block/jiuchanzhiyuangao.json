@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「抽卡哪有挖矿有意思」$(br)破坏方块时有概率掉落$(br)摩拉$(br)，小概率掉落$(br)原石$(br)。$(br)在主手时：$(br)4攻击伤害$(br)1攻击速度$(br)$(l:https://www.mcmod.cn/item/700419.html)"
+            "text": "「抽卡哪有挖矿有意思」$(br)破坏方块时有概率掉落 $(l:https://www.mcmod.cn/item/700424.html)摩拉$() ，小概率掉落 $(l:https://www.mcmod.cn/item/700412.html)原石$() 。$(br)在主手时：$(br)4攻击伤害$(br)1攻击速度"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700419.html)纠缠之缘镐"
         }
     ]
 }

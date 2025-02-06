@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "击杀$(br)掠夺者$(br)、$(br)劫掠兽$(br)、$(br)唤魔者$(br)、$(br)卫道士$(br)有几率获得，击杀$(br)村民$(br)小概率获得。$(br)用于合成经验书等，食用后获得一分钟村庄英雄BUFF。$(br)$(l:https://www.mcmod.cn/item/711424.html)"
+            "text": "击杀 $(l:https://www.mcmod.cn/item/186649.html)掠夺者$() 、 $(l:https://www.mcmod.cn/item/188036.html)劫掠兽$() 、 $(l:https://www.mcmod.cn/item/64674.html)唤魔者$() 、 $(l:https://www.mcmod.cn/item/64676.html)卫道士$() 有几率获得，击杀 $(l:https://www.mcmod.cn/item/11371.html)村民$() 小概率获得。$(br)用于合成经验书等，食用后获得一分钟村庄英雄BUFF。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711424.html)崇高道德的赞许"
         }
     ]
 }

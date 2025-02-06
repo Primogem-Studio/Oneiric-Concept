@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在宝藏结构中找到。$(br)用于锻造$(br)摩拉 剑$(br)和$(br)摩拉 套具$(br)，也用于锻造$(br)纠缠之缘镐$(br)。$(br)可合成为用于锻造升级元素晶体工具的$(br)锻造模板$(br)。$(br)$(l:https://www.mcmod.cn/item/777139.html)"
+            "text": "在宝藏结构中找到。$(br)用于锻造 $(l:https://www.mcmod.cn/item/706196.html)摩拉 剑$() 和 $(l:https://www.mcmod.cn/item/706456.html)摩拉 套具$() ，也用于锻造 $(l:https://www.mcmod.cn/item/700419.html)纠缠之缘镐$() 。$(br)可合成为用于锻造升级元素晶体工具的 $(l:https://www.mcmod.cn/item/777144.html)锻造模板$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/777139.html)锻造模板"
         }
     ]
 }

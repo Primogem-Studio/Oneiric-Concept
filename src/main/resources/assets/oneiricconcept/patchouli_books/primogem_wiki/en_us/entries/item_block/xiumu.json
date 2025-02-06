@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "由$(br)朽木$(br)制成的建筑方块与装饰品，功能和原版一致。$(br)作为方块被放置在世界中时，可以被火引燃。也可作为熔炉燃料，燃烧速率与原版对应物品一致。$(br)$(l:https://www.mcmod.cn/item/753199.html)"
+            "text": "由 $(l:https://www.mcmod.cn/item/711447.html)朽木$() 制成的建筑方块与装饰品，功能和原版一致。$(br)作为方块被放置在世界中时，可以被火引燃。也可作为熔炉燃料，燃烧速率与原版对应物品一致。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/753199.html)朽木装饰方块"
         }
     ]
 }

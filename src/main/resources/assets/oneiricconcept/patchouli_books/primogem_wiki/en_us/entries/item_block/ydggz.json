@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "神秘礼盒$(br)概率掉落。$(br)拾取时持续获得$(br)永动咕咕钟$(br)状态效果，持有$(br)咕钟零件$(br)时右击修复，消耗30个咕钟零件修复完毕并解除负面效果。$(br)$(l:https://www.mcmod.cn/item/793017.html)"
+            "text": "$(l:https://www.mcmod.cn/item/793018.html)神秘礼盒$() 概率掉落。$(br)拾取时持续获得 $(l:https://www.mcmod.cn/item/795642.html)永动咕咕钟$() 状态效果，持有 $(l:https://www.mcmod.cn/item/793016.html)咕钟零件$() 时右击修复，消耗30个咕钟零件修复完毕并解除负面效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/793017.html)『奇物』永动咕咕钟"
         }
     ]
 }

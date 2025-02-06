@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "玩家死亡时，给予60秒的$(br)临终$(br)、虚弱X、速度III效果。$(br)$(l:https://www.mcmod.cn/item/711409.html)"
+            "text": "玩家死亡时，给予60秒的 $(l:https://www.mcmod.cn/item/745347.html)临终$() 、虚弱X、速度III效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711409.html)『奇物』异木果实"
         }
     ]
 }

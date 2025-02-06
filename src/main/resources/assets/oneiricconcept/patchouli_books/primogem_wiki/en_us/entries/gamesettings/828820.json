@@ -1,0 +1,15 @@
+{
+    "name": "武器强化伤害倍率",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "影响武器每次升级时增加的伤害数值。$(br)默认为10，可在创建世界时编辑游戏规则或使用/gamerule guizewuqishanghai <值>更改"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828820.html)武器强化伤害倍率"
+        }
+    ]
+}

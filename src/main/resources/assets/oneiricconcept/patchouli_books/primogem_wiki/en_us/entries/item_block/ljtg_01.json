@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「真的不是一个普通的垃圾桶盖吗？」$(br)类似盾牌。$(br)趁手：消耗耐久抵消盾牌格挡失败的冷却。$(br)$(l:https://www.mcmod.cn/item/780546.html)"
+            "text": "「真的不是一个普通的垃圾桶盖吗？」$(br)类似盾牌。$(br)$(br)趁手：消耗耐久抵消盾牌格挡失败的冷却。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780546.html)光耀意志之盾"
         }
     ]
 }

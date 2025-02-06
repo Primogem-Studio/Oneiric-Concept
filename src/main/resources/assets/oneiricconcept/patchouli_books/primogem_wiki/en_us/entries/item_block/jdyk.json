@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于装饰和储存$(br)精锻用魔矿$(br)。$(br)$(l:https://www.mcmod.cn/item/780550.html)"
+            "text": "用于装饰和储存 $(l:https://www.mcmod.cn/item/780524.html)精锻用魔矿$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780550.html)精锻矿融合块"
         }
     ]
 }

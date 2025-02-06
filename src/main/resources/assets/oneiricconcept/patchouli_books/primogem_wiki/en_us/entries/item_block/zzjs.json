@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "此段资料引用于“$(br)元素金属$(br)”并与其保持同步更新。 $(br)编辑$(br)用于合成对应的$(br)元素金属块$(br)、$(br)元素金属粒$(br)、$(br)元素火漆$(br)、$(br)钻石升级$(br)、$(br)下界合金升级$(br)、$(br)钻石合金升级$(br)。可用于激活和更改信标效果。$(br)其余6种金属合成$(br)lianai金属$(br)（冰）。$(br)$(l:https://www.mcmod.cn/item/780531.html)"
+            "text": "用于合成对应的 $(l:https://www.mcmod.cn/item/list/10429-1-1025441.html)元素金属块$() 、 $(l:https://www.mcmod.cn/item/list/10429-1-1025439.html)元素金属粒$() 、 $(l:https://www.mcmod.cn/item/list/10429-1-1025442.html)元素火漆$() 、 $(l:https://www.mcmod.cn/item/739333.html)钻石升级$() 、 $(l:https://www.mcmod.cn/item/739334.html)下界合金升级$() 、 $(l:https://www.mcmod.cn/item/739335.html)钻石合金升级$() 。可用于激活和更改信标效果。$(br)其余6种金属合成 $(l:https://www.mcmod.cn/item/780537.html)lianai金属$() （冰）。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780531.html)自在金属"
         }
     ]
 }

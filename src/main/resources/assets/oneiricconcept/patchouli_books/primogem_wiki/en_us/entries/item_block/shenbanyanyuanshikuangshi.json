@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在>1.16.5的版本中出现，生成于-64＜y＜0的深板岩层，同$(br)原石矿石$(br)。$(br)$(l:https://www.mcmod.cn/item/735208.html)"
+            "text": "在>1.16.5的版本中出现，生成于-64＜y＜0的深板岩层，同 $(l:https://www.mcmod.cn/item/700411.html)原石矿石$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/735208.html)深层原石矿石"
         }
     ]
 }

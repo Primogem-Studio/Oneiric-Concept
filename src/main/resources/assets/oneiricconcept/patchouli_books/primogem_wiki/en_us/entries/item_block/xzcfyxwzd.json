@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「更华丽的垃圾桶盖罢了！」$(br)类似盾牌。$(br)抗性提升：持续提供抗性提升I。$(br)趁手：消耗耐久抵消盾牌格挡失败的冷却。$(br)$(l:https://www.mcmod.cn/item/780548.html)"
+            "text": "「更华丽的垃圾桶盖罢了！」$(br)类似盾牌。$(br)抗性提升：持续提供抗性提升I。$(br)趁手：消耗耐久抵消盾牌格挡失败的冷却。$(br)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780548.html)象征财富与希望之盾"
         }
     ]
 }

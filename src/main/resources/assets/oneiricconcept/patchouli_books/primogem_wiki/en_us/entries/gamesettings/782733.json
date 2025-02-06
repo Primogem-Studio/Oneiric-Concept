@@ -1,0 +1,15 @@
+{
+    "name": "套装数值",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "元素护甲的属性，达到要求后给予对应的套装效果。一般情况下，铁，钻石，下界合金材质的护甲每件分别提供0.5，1，2的套装数值。$(br)受 $(l:https://www.mcmod.cn/item/list/10429-1-1025442.html)奇物:元素火漆$() 影响，每件护甲可额外提供0.5的套装数值。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/782733.html)套装数值"
+        }
+    ]
+}

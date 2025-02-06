@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "此段资料引用于“$(br)无主的星尘$(br)”并与其保持同步更新。 $(br)编辑$(br)合成$(br)相遇之缘$(br)的材料，初次获取原石（达成成就/进度：万物起“原”）时获得5个(1.20+为3个)。$(br)获取$(br)蓝$(br)色品质的祈愿奖励时获得2个(1.20+为1个)，获取$(br)紫$(br)色品质的祈愿奖励时获得1个。$(br)$(l:https://www.mcmod.cn/item/735199.html)"
+            "text": "合成 $(l:https://www.mcmod.cn/item/700413.html)相遇之缘$() 的材料，初次获取原石（达成成就/进度：万物起“原”）时获得5个(1.20+为3个)。$(br)获取 $(l:https://www.mcmod.cn/item/700450.html)蓝$() 色品质的祈愿奖励时获得2个(1.20+为1个)，获取 $(l:https://www.mcmod.cn/item/700449.html)紫$() 色品质的祈愿奖励时获得1个。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/735199.html)无主的星尘"
         }
     ]
 }

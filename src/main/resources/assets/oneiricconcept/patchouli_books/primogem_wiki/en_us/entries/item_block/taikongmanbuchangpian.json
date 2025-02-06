@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "置入唱片机播放音乐：$(br)太空漫步 Space Walk - HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700447.html)"
+            "text": "置入唱片机播放音乐： $(l:https:void(0);)太空漫步 Space Walk - HOYO-MiX$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700447.html)太空漫步"
         }
     ]
 }

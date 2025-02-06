@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可在锻造台与$(br)锻造模板$(br)升级对应元素前缀的钻石装备为对应元素前缀的下界合金装备。（无需$(br)锻造模板$(br)（原版）)$(br)$(l:https://www.mcmod.cn/item/739335.html)"
+            "text": "可在锻造台与 $(l:https://www.mcmod.cn/item/777140.html)锻造模板$() 升级对应元素前缀的钻石装备为对应元素前缀的下界合金装备。（无需 $(l:https://www.mcmod.cn/item/703069.html)锻造模板$() （原版）)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/739335.html)钻石合金升级"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可在所有等级的$(br)祈愿用实体$(br)中获得，右击获取随机错误代码。与$(br)黑塔----异世界分塔$(br)交互可在随机三个结果中选择一个$(br)错误代码奇物$(br)。$(br)$(l:https://www.mcmod.cn/item/711418.html)"
+            "text": "可在所有等级的 $(l:https://www.mcmod.cn/item/list/10429-4-1019789.html)祈愿用实体$() 中获得，右击获取随机错误代码。与 $(l:https://www.mcmod.cn/item/734052.html)黑塔----异世界分塔$() 交互可在随机三个结果中选择一个 $(l:https://www.mcmod.cn/item/list/10429-1-1021307.html)错误代码奇物$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711418.html)?"
         }
     ]
 }

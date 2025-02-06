@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可食用，获得3分钟抗性提升II。$(br)@黑椒糖唯酢 @超级索尼马$(br)$(l:https://www.mcmod.cn/item/706214.html)"
+            "text": "可食用，获得3分钟抗性提升II。$(br)@黑椒糖唯酢 @超级索尼马"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706214.html)垃圾桶的尊严"
         }
     ]
 }

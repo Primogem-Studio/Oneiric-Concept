@@ -1,0 +1,15 @@
+{
+    "name": "武器等级上限",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "限制 $(l:https://www.mcmod.cn/item/828652.html)武器强化$() 次数，默认为89次，使武器等级从1级升级至90级。$(br)可在创建世界时编辑游戏规则或使用/gamerule guizewuqishangxian <值>更改"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828821.html)武器等级上限"
+        }
+    ]
+}

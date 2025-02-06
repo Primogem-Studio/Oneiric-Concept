@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在下界0＜y＜256的下界岩层中生成，非破坏性采集需要挖掘等级2（铁镐）及以上工具。挖掘掉落$(br)燃愿玛瑙$(br)，24w12a前精准采集不生效。$(br)$(l:https://www.mcmod.cn/item/706388.html)"
+            "text": "在下界0＜y＜256的下界岩层中生成，非破坏性采集需要挖掘等级2（铁镐）及以上工具。挖掘掉落 $(l:https://www.mcmod.cn/item/706482.html)燃愿玛瑙$() ，24w12a前精准采集不生效。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706388.html)燃愿玛瑙 矿石"
         }
     ]
 }

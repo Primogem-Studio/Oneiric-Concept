@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "右键使用后随机转化物品栏中包括自身的所有种类$(br)奇物$(br)。$(br)同一种类至多转化1件，转化错误代码奇物时有50%的概率失败。$(br)$(l:https://www.mcmod.cn/item/706186.html)"
+            "text": "右键使用后随机转化物品栏中包括自身的所有种类 $(l:https://www.mcmod.cn/item/list/10429-1-1019546.html)奇物$() 。$(br)同一种类至多转化1件，转化错误代码奇物时有50%的概率失败。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706186.html)『奇物』闪耀的偏方三八面骰"
         }
     ]
 }

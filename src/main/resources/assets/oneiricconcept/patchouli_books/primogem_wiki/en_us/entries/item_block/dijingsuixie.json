@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "挖掘$(br)涤净青金 矿石$(br)可以获得。$(br)此段资料引用于“$(br)元素晶体描述$(br)”并与其保持同步更新。 $(br)编辑$(br)合成材料，也可通过$(br)祈愿$(br)获得。由碎屑-断片-碎块-晶体路径每四个合成高一级形态，晶体可使用切石机还原为64个碎屑，其它层级的元素晶体无法分解。$(br)$(l:https://www.mcmod.cn/item/706481.html)"
+            "text": "挖掘 $(l:https://www.mcmod.cn/item/706360.html)涤净青金 矿石$() 可以获得。$(br)合成材料，也可通过 $(l:https://www.mcmod.cn/item/list/10429-4-1019789.html)祈愿$() 获得。由碎屑-断片-碎块-晶体路径每四个合成高一级形态，晶体可使用切石机还原为64个碎屑，其它层级的元素晶体无法分解。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706481.html)涤净青金"
         }
     ]
 }

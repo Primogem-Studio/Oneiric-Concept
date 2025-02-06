@@ -1,0 +1,15 @@
+{
+    "name": "黄金房间",
+    "icon": "",
+    "category": "oneiricconcept:structure",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在露天或地下生成，由 $(l:https://www.mcmod.cn/item/706181.html)廉价摩拉块$() 构成，顶部的中心是 $(l:https://www.mcmod.cn/item/706180.html)精致摩拉块$() ，底部中心是荧石块。内部有一些 $(l:https://www.mcmod.cn/item/700434.html)摩拉堆$() 、 $(l:https://www.mcmod.cn/item/700435.html)摩拉块$() ，宝箱内有一些摩拉，有概率含有 $(l:https://www.mcmod.cn/item/700412.html)原石$() 、 $(l:https://www.mcmod.cn/item/700417.html)创世结晶$() 、 $(l:https://www.mcmod.cn/item/700414.html)纠缠之缘$() 、 $(l:https://www.mcmod.cn/item/list/10429-1-1019546.html)奇物$() 、 $(l:https://www.mcmod.cn/item/711465.html)经验书$() 等高价值物品。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/707298.html)黄金房间"
+        }
+    ]
+}

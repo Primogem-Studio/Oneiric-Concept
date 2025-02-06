@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「好东西」$(br)由$(br)装满垃圾的垃圾桶$(br)烧炼获得。$(br)可烧炼为$(br)垃圾桶的尊严$(br)。$(br)$(l:https://www.mcmod.cn/item/706216.html)"
+            "text": "「好东西」$(br)由 $(l:https://www.mcmod.cn/item/706215.html)装满垃圾的垃圾桶$() 烧炼获得。$(br)可烧炼为 $(l:https://www.mcmod.cn/item/706214.html)垃圾桶的尊严$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706216.html)重口味铁锭"
         }
     ]
 }

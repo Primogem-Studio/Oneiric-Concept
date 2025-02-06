@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "手持右击给予使用者30秒的$(br)瞬间治疗$(br)IV。$(br)仅更新贴图$(br)$(l:https://www.mcmod.cn/item/780512.html)"
+            "text": "手持右击给予使用者30秒的 $(l:https://www.mcmod.cn/item/9383.html)瞬间治疗$() IV。$(br)仅更新贴图"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780512.html)一切的开始"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「超级高清版三月七雕像」$(br)放置、右击、破坏时会播放音效。实体站在上面时会获得极高的加速效果，玩家在单个的雕像上移动可能卡住和视角抖动，跳跃即可脱离。$(br)破坏时，掉落0-2个$(br)纠缠之缘$(br)或$(br)相遇之缘$(br)，首次额外掉落2个$(br)无主的星辉$(br)。$(br)可用于合成$(br)三月祝福$(br)。$(br)外观展示$(br)$(l:https://www.mcmod.cn/item/700443.html)"
+            "text": "「超级高清版三月七雕像」$(br)$(br)放置、右击、破坏时会播放音效。实体站在上面时会获得极高的加速效果，玩家在单个的雕像上移动可能卡住和视角抖动，跳跃即可脱离。$(br)破坏时，掉落0-2个 $(l:https://www.mcmod.cn/item/700414.html)纠缠之缘$() 或 $(l:https://www.mcmod.cn/item/700413.html)相遇之缘$() ，首次额外掉落2个 $(l:https://www.mcmod.cn/item/735200.html)无主的星辉$() 。$(br)可用于合成 $(l:https://www.mcmod.cn/item/711435.html)三月祝福$() 。$(br)外观展示"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700443.html)『小三月』"
         }
     ]
 }

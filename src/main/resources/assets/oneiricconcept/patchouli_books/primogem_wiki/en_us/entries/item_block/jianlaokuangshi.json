@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在主世界任何群系的地下0＜y＜32处生成，非破坏性采集需要挖掘等级2（铁镐）及以上工具。挖掘掉落$(br)坚牢黄玉$(br)，24w12a前精准采集不生效。$(br)$(l:https://www.mcmod.cn/item/706250.html)"
+            "text": "在主世界任何群系的地下0＜y＜32处生成，非破坏性采集需要挖掘等级2（铁镐）及以上工具。挖掘掉落 $(l:https://www.mcmod.cn/item/706478.html)坚牢黄玉$() ，24w12a前精准采集不生效。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706250.html)坚牢黄玉 矿石"
         }
     ]
 }

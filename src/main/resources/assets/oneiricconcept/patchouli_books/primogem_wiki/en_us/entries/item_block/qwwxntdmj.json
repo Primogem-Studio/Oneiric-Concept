@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可以在$(br)神秘礼盒$(br)中开出。$(br)触发$(br)无效念头代码机$(br)状态效果并失效。$(br)失效奇物可以直接无序合成为有效奇物。$(br)$(l:https://www.mcmod.cn/item/803148.html)"
+            "text": "可以在 $(l:https://www.mcmod.cn/item/793018.html)神秘礼盒$() 中开出。$(br)触发 $(l:https://www.mcmod.cn/item/828644.html)无效念头代码机$() 状态效果并失效。$(br)失效奇物可以直接无序合成为有效奇物。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/803148.html)『奇物』「无效念头」代码机"
         }
     ]
 }

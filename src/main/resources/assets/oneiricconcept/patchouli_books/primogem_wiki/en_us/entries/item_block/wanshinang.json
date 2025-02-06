@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "破坏$(br)罐子$(br)时掉落双倍物品。$(br)不与真·银河大乐透同时生效。$(br)$(l:https://www.mcmod.cn/item/711410.html)"
+            "text": "破坏 $(l:https://www.mcmod.cn/item/706198.html)罐子$() 时掉落双倍物品。 不与真·银河大乐透同时生效。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711410.html)『奇物』万识囊"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "种豆得……瓜？$(br)用于合成，也可以食用，恢复5点（$(br)）饥饿值和15点（$(br)）饱和度。给予5秒$(br)饥饿$(br)VI；10秒$(br)伤害吸收$(br)II；90秒$(br)虚弱$(br)III、$(br)生命提升$(br)II；160秒$(br)防火$(br)II。食用后进入约80秒的冷却。$(br)$(l:https://www.mcmod.cn/item/700417.html)"
+            "text": "种豆得……瓜？$(br)用于合成，也可以食用，恢复5点（ ）饥饿值和15点（ ）饱和度。给予5秒 $(l:https://www.mcmod.cn/item/9394.html)饥饿$() VI；10秒 $(l:https://www.mcmod.cn/item/9399.html)伤害吸收$() II；90秒 $(l:https://www.mcmod.cn/item/9395.html)虚弱$() III、 $(l:https://www.mcmod.cn/item/9398.html)生命提升$() II；160秒 $(l:https://www.mcmod.cn/item/9389.html)防火$() II。食用后进入约80秒的冷却。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700417.html)创世结晶"
         }
     ]
 }

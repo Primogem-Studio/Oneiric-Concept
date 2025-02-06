@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可通过$(br)祈愿$(br)获得。$(br)持有此物品时，如果在「过去」效果持续期间死亡，则立刻触发「过去」效果。$(br)可应用$(br)耐久$(br)、建木附着、$(br)经验修补$(br)、$(br)消失诅咒$(br)附魔/魔咒。$(br)无附魔状态下，生效一次后剩余极少耐久度，最多可使用两次。每级耐久可增加一次使用次数。$(br)在耐久度极低且无经验修补的情况下，可以无序合成为$(br)破碎的梦樱$(br)，再使用$(br)最胜紫晶 块$(br)修复。$(br)$(l:https://www.mcmod.cn/item/706298.html)"
+            "text": "可通过 $(l:https://www.mcmod.cn/item/700451.html)祈愿$() 获得。$(br)持有此物品时，如果在「过去」效果持续期间死亡，则立刻触发「过去」效果。$(br)可应用 $(l:https://www.mcmod.cn/item/44603.html)耐久$() 、建木附着、 $(l:https://www.mcmod.cn/item/36388.html)经验修补$() 、 $(l:https://www.mcmod.cn/item/61894.html)消失诅咒$() 附魔/魔咒。$(br)无附魔状态下，生效一次后剩余极少耐久度，最多可使用两次。每级耐久可增加一次使用次数。$(br)在耐久度极低且无经验修补的情况下，可以无序合成为 $(l:https://www.mcmod.cn/item/706299.html)破碎的梦樱$() ，再使用 $(l:https://www.mcmod.cn/item/706279.html)最胜紫晶 块$() 修复。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706298.html)梦樱"
         }
     ]
 }

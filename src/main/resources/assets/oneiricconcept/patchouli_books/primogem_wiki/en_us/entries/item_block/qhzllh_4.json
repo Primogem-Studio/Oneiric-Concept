@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "获得$(br)史诗 强化助力礼盒$(br)时有20%几率转化。（在2415a前堆叠大于1时不分别计算且仅转化一个。）$(br)右击使用，潜行时使用整组。获得一到两个随机元素的$(br)下界合金升级$(br)或$(br)钻石合金升级$(br)。$(br)$(l:https://www.mcmod.cn/item/793019.html)"
+            "text": "获得 $(l:https://www.mcmod.cn/item/780530.html)史诗 强化助力礼盒$() 时有20%几率转化。（在2415a前堆叠大于1时不分别计算且仅转化一个。）$(br)右击使用，潜行时使用整组。获得一到两个随机元素的 $(l:https://www.mcmod.cn/item/739334.html)下界合金升级$() 或 $(l:https://www.mcmod.cn/item/739335.html)钻石合金升级$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/793019.html)特殊产出 强化助力礼盒"
         }
     ]
 }

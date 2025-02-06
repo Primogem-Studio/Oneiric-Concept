@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "长按右键使用，消耗一点耐久，给予1~9颗$(br)原石$(br)，冷却24000ticks。可附魔耐久或经验修补重复使用。$(br)$(l:https://www.mcmod.cn/item/711434.html)"
+            "text": "长按右键使用，消耗一点耐久，给予1~9颗 $(l:https://www.mcmod.cn/item/700412.html)原石$() ，冷却24000ticks。可附魔耐久或经验修补重复使用。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711434.html)空月祝福"
         }
     ]
 }

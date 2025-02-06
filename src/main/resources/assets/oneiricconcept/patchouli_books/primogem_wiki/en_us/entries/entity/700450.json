@@ -1,0 +1,15 @@
+{
+    "name": "右键出蓝",
+    "icon": "",
+    "category": "oneiricconcept:entity",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "右键点击开启，掉落一件物品。$(br)趁早开箱，别被狐狸偷吃了"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700450.html)右键出蓝"
+        }
+    ]
+}

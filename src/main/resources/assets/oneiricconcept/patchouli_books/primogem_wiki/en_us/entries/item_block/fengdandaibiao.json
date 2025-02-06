@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "置入唱片机播放音乐：$(br)众水之诗 Ballad of Many Waters - HOYO-MiX。$(br)$(l:https://www.mcmod.cn/item/772368.html)"
+            "text": "置入唱片机播放音乐： $(l:https:void(0);)众水之诗 Ballad of Many Waters - HOYO-MiX。$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772368.html)众水之诗"
         }
     ]
 }

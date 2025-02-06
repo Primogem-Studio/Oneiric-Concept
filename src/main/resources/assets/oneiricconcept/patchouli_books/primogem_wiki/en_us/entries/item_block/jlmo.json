@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于合成$(br)元素金属$(br)、$(br)下界合金升级$(br)、$(br)钻石合金升级$(br)，也可切石分解为$(br)精锻用杂矿$(br)，或进一步合成$(br)精锻矿融合块$(br)。$(br)$(l:https://www.mcmod.cn/item/780524.html)"
+            "text": "用于合成 $(l:https://www.mcmod.cn/item/list/10429-1-1025382.html)元素金属$() 、 $(l:https://www.mcmod.cn/item/739334.html)下界合金升级$() 、 $(l:https://www.mcmod.cn/item/739335.html)钻石合金升级$() ，也可切石分解为 $(l:https://www.mcmod.cn/item/780522.html)精锻用杂矿$() ，或进一步合成 $(l:https://www.mcmod.cn/item/780550.html)精锻矿融合块$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780524.html)精锻用魔矿"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「其铸造工艺使得本地生物也为之赞叹」$(br)可在祈愿（$(br)紫$(br)、$(br)蓝$(br)）中获得。$(br)可用于合成$(br)摩拉 套装$(br)、$(br)仙跳墙$(br)等高级物品。$(br)$(l:https://www.mcmod.cn/item/706200.html)"
+            "text": "「其铸造工艺使得本地生物也为之赞叹」$(br)可在祈愿（ $(l:https://www.mcmod.cn/item/700449.html)紫$() 、 $(l:https://www.mcmod.cn/item/700450.html)蓝$() ）中获得。$(br)可用于合成 $(l:https://www.mcmod.cn/item/706455.html)摩拉 套装$() 、 $(l:https://www.mcmod.cn/item/706208.html)仙跳墙$() 等高级物品。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706200.html)精致摩拉"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于合成$(br)特制叠影器$(br)，也可以像玻璃板一样放置于世界中，需要长时间挖掘，无需精准采集。$(br)$(l:https://www.mcmod.cn/item/793020.html)"
+            "text": "用于合成 $(l:https://www.mcmod.cn/item/714852.html)特制叠影器$() ，也可以像玻璃板一样放置于世界中，需要长时间挖掘，无需精准采集。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/793020.html)坚实晶板"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "右击方块使用，有约0.5秒的冷却。使用后释放$(br)霄灯$(br)。$(br)$(l:https://www.mcmod.cn/item/711420.html)"
+            "text": "右击方块使用，有约0.5秒的冷却。使用后释放 $(l:https://www.mcmod.cn/item/711464.html)霄灯$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711420.html)霄灯"
         }
     ]
 }

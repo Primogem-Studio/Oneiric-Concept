@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「有能力改变一个世界的人才能拥有它」$(br)18.6攻击伤害$(br)0.05攻击速度$(br)$(l:https://www.mcmod.cn/item/706209.html)"
+            "text": "「有能力改变一个世界的人才能拥有它」$(br)18.6攻击伤害$(br)0.05攻击速度"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706209.html)无锋剑"
         }
     ]
 }

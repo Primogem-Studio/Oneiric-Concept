@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "沧桑石砖$(br)加工的装饰方块，可用于建筑，功能与原版一致。$(br)$(l:https://www.mcmod.cn/item/753201.html)"
+            "text": "$(l:https://www.mcmod.cn/item/711442.html)沧桑石砖$() 加工的装饰方块，可用于建筑，功能与原版一致。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/753201.html)沧桑石砖装饰方块"
         }
     ]
 }

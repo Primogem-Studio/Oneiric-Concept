@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可存入最多96个$(br)宇宙碎片$(br)，存入后给予一张记录数量的$(br)存取凭证$(br)，再次遇到时有50%几率可以凭证提取最多240%数量的宇宙碎片。$(br)在$(br)不稳定星际和平银行分行$(br)结构中生成。$(br)此段资料引用于“$(br)星际和平银行$(br)”并与其保持同步更新。 $(br)编辑$(br)成功存入和取出时会损毁（或在GUI中点击「请你滚开」），可使用$(br)异世界存折$(br)保持不被损毁。$(br)$(l:https://www.mcmod.cn/item/780560.html)"
+            "text": "可存入最多96个 $(l:https://www.mcmod.cn/item/711419.html)宇宙碎片$() ，存入后给予一张记录数量的 $(l:https://www.mcmod.cn/item/780526.html)存取凭证$() ，再次遇到时有50%几率可以凭证提取最多240%数量的宇宙碎片。$(br)在 $(l:https://www.mcmod.cn/item/781092.html)不稳定星际和平银行分行$() 结构中生成。$(br)$(br)成功存入和取出时会损毁（或在GUI中点击「请你滚开」），可使用 $(l:https://www.mcmod.cn/item/780527.html)异世界存折$() 保持不被损毁。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780560.html)不稳定星际和平银行分行"
         }
     ]
 }

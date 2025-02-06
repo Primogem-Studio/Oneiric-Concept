@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「被精准分配的精致摩拉，或许村民会喜欢」$(br)可在$(br)祈愿$(br)中获得。$(br)可用于村民交易中，或合成为$(br)精致摩拉$(br)。$(br)$(l:https://www.mcmod.cn/item/706203.html)"
+            "text": "「被精准分配的精致摩拉，或许村民会喜欢」$(br)可在 $(l:https://www.mcmod.cn/item/700449.html)祈愿$() 中获得。$(br)可用于村民交易中，或合成为 $(l:https://www.mcmod.cn/item/706200.html)精致摩拉$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706203.html)小袋摩拉"
         }
     ]
 }

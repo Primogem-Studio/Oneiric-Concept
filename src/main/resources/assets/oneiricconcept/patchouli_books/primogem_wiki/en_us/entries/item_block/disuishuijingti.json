@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用作装饰或作为燃料烧炼8个物品，破坏掉落1-5个$(br)地髓$(br)，小几率掉落$(br)老石$(br)。发出15级光照。$(br)$(l:https://www.mcmod.cn/item/711461.html)"
+            "text": "用作装饰或作为燃料烧炼8个物品，破坏掉落1-5个 $(l:https://www.mcmod.cn/item/711436.html)地髓$() ，小几率掉落 $(l:https://www.mcmod.cn/item/714863.html)老石$() 。发出15级光照。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711461.html)地髓水晶簇"
         }
     ]
 }

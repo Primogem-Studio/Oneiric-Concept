@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "潜行右击空气转化为$(br)异世界捕风瓶$(br)，有约2秒的冷却。$(br)$(l:https://www.mcmod.cn/item/780525.html)"
+            "text": "潜行右击空气转化为 $(l:https://www.mcmod.cn/item/706228.html)异世界捕风瓶$() ，有约2秒的冷却。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780525.html)异世界捕风瓶（空）"
         }
     ]
 }

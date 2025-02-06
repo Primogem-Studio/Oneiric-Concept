@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "置入唱片机播放音乐：$(br)A New Day with Hope 希望的新一天 - 陈致逸/HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700430.html)"
+            "text": "置入唱片机播放音乐： $(l:https:void(0);)A New Day with Hope 希望的新一天 - 陈致逸/HOYO-MiX$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700430.html)希望的一天"
         }
     ]
 }

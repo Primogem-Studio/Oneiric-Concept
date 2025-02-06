@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于合成$(br)铁质升级$(br)或进一步合成为$(br)精锻用良矿$(br)。$(br)$(l:https://www.mcmod.cn/item/780522.html)"
+            "text": "用于合成 $(l:https://www.mcmod.cn/item/739332.html)铁质升级$() 或进一步合成为 $(l:https://www.mcmod.cn/item/780523.html)精锻用良矿$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780522.html)精锻用杂矿"
         }
     ]
 }

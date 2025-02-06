@@ -1,0 +1,15 @@
+{
+    "name": "泡泡",
+    "icon": "",
+    "category": "oneiricconcept:entity",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "主要由涤净青金剑产生，根据等级回复生命值并且对附近的其他生物造成一定量的伤害。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706447.html)泡泡"
+        }
+    ]
+}

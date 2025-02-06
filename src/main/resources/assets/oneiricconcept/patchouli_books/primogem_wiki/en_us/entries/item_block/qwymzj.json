@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "破坏方块后根据方块硬度给予时长、强度不同的力量效果（最高IV）。$(br)$(l:https://www.mcmod.cn/item/772357.html)"
+            "text": "破坏方块后根据方块硬度给予时长、强度不同的力量效果（最高IV）。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772357.html)『奇物』湮灭烛剪"
         }
     ]
 }

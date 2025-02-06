@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可用于合成$(br)纠缠之缘镐$(br)，挖掘时小概率掉落摩拉。$(br)在主手时：$(br)6攻击伤害$(br)1攻击速度$(br)$(l:https://www.mcmod.cn/item/700440.html)"
+            "text": "可用于合成 $(l:https://www.mcmod.cn/item/700419.html)纠缠之缘镐$() ，挖掘时小概率掉落摩拉。$(br)在主手时：$(br)6攻击伤害$(br)1攻击速度"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700440.html)『勤劳』的哲学"
         }
     ]
 }

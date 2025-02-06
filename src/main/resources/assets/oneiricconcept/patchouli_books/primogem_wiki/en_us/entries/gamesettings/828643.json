@@ -1,0 +1,15 @@
+{
+    "name": "事件附魔",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "提交一个可在附魔台进行附魔的物品，进行附魔：$(br)低级附魔：1~10级经验品质的附魔；$(br)中级附魔：11~20级经验品质的附魔；$(br)高级附魔：21~30级经验品质的附魔；$(br)特级附魔：31~40级经验品质的附魔。$(br)事件可以附加宝藏附魔，若未提交可附魔物品则会给予相应品质的 $(l:https://www.mcmod.cn/item/803153.html)附魔事件补偿券$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828643.html)事件附魔"
+        }
+    ]
+}

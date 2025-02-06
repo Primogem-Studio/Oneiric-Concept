@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "杀死亡灵生物或节肢生物有1%概率为主手物品添加一个低级随机附魔，单一装备重复触发概率将逐渐递减，每次减少当前概率的10%。$(br)$(l:https://www.mcmod.cn/item/772362.html)"
+            "text": "杀死亡灵生物或节肢生物有1%概率为主手物品添加一个低级随机附魔，单一装备重复触发概率将逐渐递减，每次减少当前概率的10%。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772362.html)『奇物』信标着色剂"
         }
     ]
 }

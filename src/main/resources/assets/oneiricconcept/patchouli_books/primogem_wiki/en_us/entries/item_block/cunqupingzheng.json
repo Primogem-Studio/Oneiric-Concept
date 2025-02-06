@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "由$(br)星际和平银行--异世界分行$(br)或$(br)不稳定星际和平银行分行$(br)生成，记录存储$(br)宇宙碎片$(br)数量，潜行右击对应的星际和平银行--异世界分行或不稳定星际和平银行分行以取出。$(br)也可通过$(br)异世界存折$(br)配置。$(br)$(l:https://www.mcmod.cn/item/780526.html)"
+            "text": "由 $(l:https://www.mcmod.cn/item/780559.html)星际和平银行--异世界分行$() 或 $(l:https://www.mcmod.cn/item/780560.html)不稳定星际和平银行分行$() 生成，记录存储 $(l:https://www.mcmod.cn/item/711419.html)宇宙碎片$() 数量，潜行右击对应的星际和平银行--异世界分行或不稳定星际和平银行分行以取出。$(br)也可通过 $(l:https://www.mcmod.cn/item/780527.html)异世界存折$() 配置。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780526.html)存取凭证"
         }
     ]
 }

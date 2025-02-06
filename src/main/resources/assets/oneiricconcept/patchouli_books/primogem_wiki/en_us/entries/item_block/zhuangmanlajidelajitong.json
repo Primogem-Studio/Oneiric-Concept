@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「114514」$(br)由$(br)垃圾桶$(br)合成，可烧炼为$(br)重口味铁锭$(br)。$(br)24w01d后更改装满垃圾的垃圾桶为恶臭溶液，饮用后获得1:14和5:14的中毒IV和反胃IV。$(br)$(l:https://www.mcmod.cn/item/706215.html)"
+            "text": "「114514」$(br)由 $(l:https://www.mcmod.cn/item/706212.html)垃圾桶$() 合成，可烧炼为 $(l:https://www.mcmod.cn/item/706216.html)重口味铁锭$() 。$(br)24w01d后更改装满垃圾的垃圾桶为恶臭溶液，饮用后获得1:14和5:14的中毒IV和反胃IV。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706215.html)恶臭溶液"
         }
     ]
 }

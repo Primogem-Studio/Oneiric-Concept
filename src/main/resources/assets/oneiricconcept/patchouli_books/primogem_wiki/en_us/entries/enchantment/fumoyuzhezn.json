@@ -1,0 +1,15 @@
+{
+    "name": "愚者之怒",
+    "icon": "primogemcraft:fumoyuzhezn",
+    "category": "oneiricconcept:enchantment",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由 $(l:https://www.mcmod.cn/item/793008.html)愚者面具$() 或愚者凝胶附加。$(br)攻击 目标实体 时，有主手+副手相应附魔等级×2%的概率对自身造成一次 目标实体 当前生命值200%的魔法伤害。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/840627.html)愚者之怒"
+        }
+    ]
+}

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "生成于末地的末地岩层中。非破坏性采集需要挖掘等级2及以上的镐。$(br)$(l:https://www.mcmod.cn/item/711441.html)"
+            "text": "生成于末地的末地岩层中。非破坏性采集需要挖掘等级2及以上的镐。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711441.html)满月金属矿石"
         }
     ]
 }

@@ -1,0 +1,15 @@
+{
+    "name": "霄灯",
+    "icon": "",
+    "category": "oneiricconcept:entity",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "使用 $(l:https://www.mcmod.cn/item/711420.html)霄灯$() ，或者由 $(l:https://www.mcmod.cn/item/711421.html)霄灯发射器$() 、 $(l:https://www.mcmod.cn/item/711422.html)霄灯发射器创造模式$() 释放，释放后缓慢上升。免疫大部分攻击，受 $(l:https://www.mcmod.cn/item/706318.html)草原核发射器$() 、窒息等伤害。死亡时变为掉落物，在128格及以上时被清除。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711464.html)霄灯"
+        }
+    ]
+}

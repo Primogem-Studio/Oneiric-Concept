@@ -1,0 +1,15 @@
+{
+    "name": "宇宙碎片修补",
+    "icon": "primogemcraft:fmyuzhousuipian",
+    "category": "oneiricconcept:enchantment",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "使用背包中的 $(l:https://www.mcmod.cn/item/711419.html)宇宙碎片$() 修复主副手物品和穿着盔甲的耐久度，不能修复pgc:token_mending标签中的物品，如 $(l:https://www.mcmod.cn/item/list/10429-1-1021308.html)奇物$() 等。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/840629.html)宇宙碎片修补"
+        }
+    ]
+}

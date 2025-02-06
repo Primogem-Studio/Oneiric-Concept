@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "由$(br)草原核$(br)掉落，用于合成或食用以回复10点（$(br)）饥饿值和50点（$(br) × 25$(br)）饱和度。$(br)1.15以上回复4点（$(br)）饥饿值和16点（$(br)）饱和度$(br)$(l:https://www.mcmod.cn/item/706315.html)"
+            "text": "由 $(l:https://www.mcmod.cn/item/706445.html)草原核$() 掉落，用于合成或食用以回复10点（ ）饥饿值和50点（ × 25 ）饱和度。$(br)1.15以上回复4点（ ）饥饿值和16点（ ）饱和度"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706315.html)草原核"
         }
     ]
 }

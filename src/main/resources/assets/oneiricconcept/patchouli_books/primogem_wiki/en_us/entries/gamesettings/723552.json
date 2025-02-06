@@ -1,0 +1,15 @@
+{
+    "name": "魔阴身",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "当亡灵生物生成时，将会以对应难度的概率获得 $(l:https://www.mcmod.cn/item/711536.html)丰饶$() 效果并同时给予抗性提升效果：$(br)生效受生物的生命值上限限制（默认256点（ × 128 ）），玩家可以通过创建世界时的游戏规则编辑界面或者通过指令/gamerule guizemoyinshenshengmingzhi <值>;$(br)调整限制，生命值大于设定的亡灵生物在生成时不会获得效果。 魔阴身的生成概率也受世界规则影响（默认1倍），玩家可以通过创建世界时的游戏规则编辑界面或者使用指令/gamerule guizemoyinshenshengchengbeilv <值>；$(br)未开启作弊的生存模式也可以使用物品建木生发器来调整该机制的生效倍率。 创建世界时设定界面"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/723552.html)魔阴身"
+        }
+    ]
+}

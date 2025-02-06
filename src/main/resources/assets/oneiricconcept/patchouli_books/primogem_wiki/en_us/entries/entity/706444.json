@@ -1,0 +1,15 @@
+{
+    "name": "金...？",
+    "icon": "",
+    "category": "oneiricconcept:entity",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "使用 $(l:https://www.mcmod.cn/item/706204.html)十枚纠缠之缘$() 时生成，使用刷怪蛋生成的实体无效。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706444.html)金...？"
+        }
+    ]
+}

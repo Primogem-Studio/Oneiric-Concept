@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于合成$(br)摩拉 套装$(br)、$(br)『繁荣』的哲学$(br)、$(br)『勤劳』的哲学$(br)、$(br)『黄金』的哲学$(br)。$(br)$(l:https://www.mcmod.cn/item/706202.html)"
+            "text": "用于合成 $(l:https://www.mcmod.cn/item/706455.html)摩拉 套装$() 、 $(l:https://www.mcmod.cn/item/700442.html)『繁荣』的哲学$() 、 $(l:https://www.mcmod.cn/item/700440.html)『勤劳』的哲学$() 、 $(l:https://www.mcmod.cn/item/700441.html)『黄金』的哲学$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706202.html)摩拉原胚"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在$(br)黑塔----异世界分塔$(br)商店中使用宇宙碎片时减少20%宇宙碎片消耗。$(br)$(l:https://www.mcmod.cn/item/772356.html)"
+            "text": "在 $(l:https://www.mcmod.cn/item/734052.html)黑塔----异世界分塔$() 商店中使用宇宙碎片时减少20%宇宙碎片消耗。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772356.html)『奇物』信仰债券"
         }
     ]
 }

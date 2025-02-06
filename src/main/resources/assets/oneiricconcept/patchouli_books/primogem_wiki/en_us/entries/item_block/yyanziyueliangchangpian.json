@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "置入唱片机播放音乐：$(br)盐渍月亮 Salty Moon  - HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700448.html)"
+            "text": "置入唱片机播放音乐： $(l:https:void(0);)盐渍月亮 Salty Moon  - HOYO-MiX$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700448.html)盐渍月亮！"
         }
     ]
 }

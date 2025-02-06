@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「手感好像还不错？」$(br)类似盾牌。$(br)垃圾桶的顽强！：$(br)受到攻击时有4%几率格挡此次伤害。$(br)趁手：消耗耐久抵消盾牌格挡失败的冷却。$(br)$(l:https://www.mcmod.cn/item/780547.html)"
+            "text": "「手感好像还不错？」$(br)类似盾牌。$(br)垃圾桶的顽强！：$(br)受到攻击时有4%几率格挡此次伤害。$(br)$(br)趁手：消耗耐久抵消盾牌格挡失败的冷却。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780547.html)铁质垃圾桶盖"
         }
     ]
 }

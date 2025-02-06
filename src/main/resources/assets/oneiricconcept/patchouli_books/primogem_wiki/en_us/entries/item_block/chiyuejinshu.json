@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于合成$(br)三月祝福$(br)、$(br)空月祝福$(br)等道具。由$(br)赤月金属矿石$(br)烧炼得到。$(br)$(l:https://www.mcmod.cn/item/711432.html)"
+            "text": "用于合成 $(l:https://www.mcmod.cn/item/711435.html)三月祝福$() 、 $(l:https://www.mcmod.cn/item/711434.html)空月祝福$() 等道具。由 $(l:https://www.mcmod.cn/item/711440.html)赤月金属矿石$() 烧炼得到。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711432.html)赤月金属"
         }
     ]
 }

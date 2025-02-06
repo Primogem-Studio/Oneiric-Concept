@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "用于进行$(br)武器强化$(br)，最左侧栏位放置武器，上方一排栏位可放置4个$(br)特制叠影器$(br)，下方四个栏位从左至右分别放置命运足迹、$(br)精锻用杂矿$(br)、$(br)精锻用良矿$(br)、$(br)精锻用魔矿$(br)。$(br)在放置对应物品后按下GUI右侧蓝色、橙色的按钮以执行对应的武器强化。$(br)GUI界面展示$(br)原石学家村民的工作方块。$(br)$(l:https://www.mcmod.cn/item/793021.html)"
+            "text": "用于进行 $(l:https://www.mcmod.cn/item/828652.html)武器强化$() ，最左侧栏位放置武器，上方一排栏位可放置4个 $(l:https://www.mcmod.cn/item/714852.html)特制叠影器$() ，下方四个栏位从左至右分别放置命运足迹、 $(l:https://www.mcmod.cn/item/780522.html)精锻用杂矿$() 、 $(l:https://www.mcmod.cn/item/780523.html)精锻用良矿$() 、 $(l:https://www.mcmod.cn/item/780524.html)精锻用魔矿$() 。$(br)在放置对应物品后按下GUI右侧蓝色、橙色的按钮以执行对应的武器强化。 GUI界面展示$(br)原石学家村民的工作方块。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/793021.html)华丽锻造台"
         }
     ]
 }

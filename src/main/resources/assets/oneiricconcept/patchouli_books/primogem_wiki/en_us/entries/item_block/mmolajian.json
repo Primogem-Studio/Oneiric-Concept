@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在主手时：$(br)6.5攻击伤害$(br)1.6攻击速度$(br)$(l:https://www.mcmod.cn/item/706196.html)"
+            "text": "在主手时：$(br)6.5攻击伤害$(br)1.6攻击速度"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706196.html)摩拉 剑"
         }
     ]
 }

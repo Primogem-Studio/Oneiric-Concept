@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "「好像还有机会」$(br)任意耐久度的$(br)梦樱$(br)合成获得，合成后清除附魔/魔咒。$(br)可与$(br)最胜紫晶 块$(br)修复为梦樱。$(br)$(l:https://www.mcmod.cn/item/706299.html)"
+            "text": "「好像还有机会」$(br)任意耐久度的 $(l:https://www.mcmod.cn/item/706298.html)梦樱$() 合成获得，合成后清除附魔/魔咒。$(br)可与 $(l:https://www.mcmod.cn/item/706279.html)最胜紫晶 块$() 修复为梦樱。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706299.html)破碎的梦樱"
         }
     ]
 }

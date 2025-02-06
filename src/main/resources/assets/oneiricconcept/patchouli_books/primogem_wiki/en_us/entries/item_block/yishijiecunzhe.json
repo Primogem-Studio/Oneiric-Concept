@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "右击空气打开GUI，可设置存取凭证的提取数量、适用范围。$(br)潜行右击使$(br)星际和平银行--异世界分行$(br)和$(br)不稳定星际和平银行分行$(br)不会因存入和提取损坏。$(br)$(l:https://www.mcmod.cn/item/780527.html)"
+            "text": "右击空气打开GUI，可设置存取凭证的提取数量、适用范围。$(br)$(br)潜行右击使 $(l:https://www.mcmod.cn/item/780559.html)星际和平银行--异世界分行$() 和 $(l:https://www.mcmod.cn/item/780560.html)不稳定星际和平银行分行$() 不会因存入和提取损坏。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/780527.html)异世界存折"
         }
     ]
 }

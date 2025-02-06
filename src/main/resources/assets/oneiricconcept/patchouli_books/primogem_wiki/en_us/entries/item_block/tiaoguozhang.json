@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "激活使用者为中心17×17×17范围内所有$(br)祈愿用实体$(br)，使之掉落奖励。无论是否生效，每次右击都消耗耐久。（23w53a后每激活个祈愿实体消耗1耐久）$(br)$(l:https://www.mcmod.cn/item/711462.html)"
+            "text": "激活使用者为中心17×17×17范围内所有 $(l:https://www.mcmod.cn/item/list/10429-4-1019789.html)祈愿用实体$() ，使之掉落奖励。无论是否生效，每次右击都消耗耐久。（23w53a后每激活个祈愿实体消耗1耐久）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711462.html)祈愿之杖"
         }
     ]
 }

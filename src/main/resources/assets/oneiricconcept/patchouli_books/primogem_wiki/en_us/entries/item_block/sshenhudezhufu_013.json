@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "置入唱片机播放音乐：$(br)Hakushin's Lullaby 神狐的祝福 - 陈致逸/HOYO-MiX$(br)。$(br)$(l:https://www.mcmod.cn/item/700432.html)"
+            "text": "置入唱片机播放音乐： $(l:https:void(0);)Hakushin's Lullaby 神狐的祝福 - 陈致逸/HOYO-MiX$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700432.html)神狐的祝福"
         }
     ]
 }

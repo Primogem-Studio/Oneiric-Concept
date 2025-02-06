@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "造成伤害时有概率掉落摩拉。$(br)在主手时：$(br)11攻击伤害$(br)3攻击速度$(br)$(l:https://www.mcmod.cn/item/700442.html)"
+            "text": "造成伤害时有概率掉落摩拉。$(br)在主手时：$(br)11攻击伤害$(br)3攻击速度"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700442.html)『繁荣』的哲学"
         }
     ]
 }

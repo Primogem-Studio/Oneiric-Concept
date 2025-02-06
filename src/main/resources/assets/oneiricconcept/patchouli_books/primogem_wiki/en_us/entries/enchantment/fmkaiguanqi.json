@@ -1,0 +1,15 @@
+{
+    "name": "开罐器",
+    "icon": "primogemcraft:fmkaiguanqi",
+    "category": "oneiricconcept:enchantment",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "如果主手物品有此附魔，破坏 $(l:https://www.mcmod.cn/item/706198.html)罐子$() 时，此附魔每级提供10%额外掉落战利品的概率。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/840628.html)开罐器"
+        }
+    ]
+}

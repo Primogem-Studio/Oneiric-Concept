@@ -1,0 +1,15 @@
+{
+    "name": "黑塔----异世界分塔",
+    "icon": "",
+    "category": "oneiricconcept:entity",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "使用 $(l:https://www.mcmod.cn/item/734047.html)神秘花瓣$() 放出和收入。不受攻击。$(br)世界中外观$(br)右击以打开GUI：$(br)消耗一个 $(l:https://www.mcmod.cn/item/711418.html)？$() 在随机三个结果中选择一个 $(l:https://www.mcmod.cn/item/list/10429-1-1021307.html)错误代码奇物$() 。$(br)消耗基础值为16的 $(l:https://www.mcmod.cn/item/711419.html)宇宙碎片$() 在随机三个结果中选择一个 $(l:https://www.mcmod.cn/item/list/10429-1-1021308.html)奇物$() 。$(br)$(l:https://www.mcmod.cn/item/734051.html)需知$() ，提示用物品：不选择时退出界面或刷新会在随机结果中随机一个获取。 耗子尾汁！$(br)消耗宇宙碎片进行附魔："
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/734052.html)黑塔----异世界分塔"
+        }
+    ]
+}

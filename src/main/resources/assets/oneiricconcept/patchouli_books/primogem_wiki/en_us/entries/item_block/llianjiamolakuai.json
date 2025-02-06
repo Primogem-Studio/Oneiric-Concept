@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "廉价摩拉块加工的装饰方块，可用于建筑，也常见于自然生成的遗迹。$(br)$(l:https://www.mcmod.cn/item/706453.html)"
+            "text": "廉价摩拉块加工的装饰方块，可用于建筑，也常见于自然生成的遗迹。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706453.html)廉价摩拉块装饰方块"
         }
     ]
 }

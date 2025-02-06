@@ -12587,9 +12587,6 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
-    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -12601,6 +12598,9 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -13014,8 +13014,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -13032,6 +13032,7 @@
       "block.oneiricconcept.nagadus_emerald_ore": "Nagadus Emerald Ore",
       "item.oneiricconcept.xuanyuan_sword": "Xuanyuan Sword",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
+      "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
@@ -13089,6 +13090,7 @@
       "block.oneiricconcept.gactus": "Gactus",
       "item.oneiricconcept.phlogiston_wing_chestplate": "phlogiston wing",
       "item.oneiricconcept.mora_magazine": "Mora Magazine♦",
+      "effect.oneiricconcept.b_2sausage.description": "Continuously causing damage with a health multiplier of 0.8 and a state effect level",
       "block.oneiricconcept.newmo_8": "crescent ingot",
       "block.oneiricconcept.newmo_7": "crescent ingot",
       "block.oneiricconcept.wayfareblessing": "Wayfare blessing",
@@ -13428,6 +13430,7 @@
       "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
       "item.oneiricconcept.xuanyuan_sword": "轩辕剑",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
+      "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -13476,7 +13479,7 @@
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "block.oneiricconcept.liron_9": "重口味铁锭",
-      "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)从MCmod.cn同步介绍，由oneiricconcept添加",
+      "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
       "item.oneiricconcept.waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
@@ -13485,6 +13488,7 @@
       "block.oneiricconcept.gactus": "仙士掌",
       "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
       "item.oneiricconcept.mora_magazine": "摩拉弹匣♦",
+      "effect.oneiricconcept.b_2sausage.description": "持续造成生命倍率×0.8×状态效果等级的伤害",
       "block.oneiricconcept.newmo_8": "新月锭",
       "block.oneiricconcept.newmo_7": "新月锭",
       "block.oneiricconcept.wayfareblessing": "巡游的祝福",
@@ -13494,7 +13498,7 @@
       "block.oneiricconcept.newmo_3": "新月锭",
       "block.oneiricconcept.newmo_6": "新月锭",
       "block.oneiricconcept.newmo_5": "新月锭",
-      "translation.oneiricconcept.patchouli_landing_oc": "这本手册介绍了梦华构想的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/17477.html)从MCmod.cn同步介绍，由oneiricconcept添加",
+      "translation.oneiricconcept.patchouli_landing_oc": "这本手册介绍了梦华构想的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/17477.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
       "block.oneiricconcept.newmo_2": "新月锭",
       "block.oneiricconcept.newmo_1": "新月锭",
       "gamerule.ocfly.description": "设为假以提高兼容",

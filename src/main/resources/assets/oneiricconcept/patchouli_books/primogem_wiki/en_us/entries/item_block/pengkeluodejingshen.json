@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "持有时持续给予$(br)战斗状态$(br)。$(br)$(l:https://www.mcmod.cn/item/706350.html)"
+            "text": "持有时持续给予 $(l:https://www.mcmod.cn/item/828614.html)战斗状态$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706350.html)『奇物』朋克洛德精神"
         }
     ]
 }

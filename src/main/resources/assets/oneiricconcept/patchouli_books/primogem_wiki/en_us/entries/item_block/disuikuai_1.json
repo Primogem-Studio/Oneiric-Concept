@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在雪地群系的地下生成，生成方式类似于花岗岩、闪长岩等，成片生成。$(br)可用于合成或作为燃料烧炼0.2个物品。$(br)$(l:https://www.mcmod.cn/item/711443.html)"
+            "text": "在雪地群系的地下生成，生成方式类似于花岗岩、闪长岩等，成片生成。$(br)可用于合成或作为燃料烧炼0.2个物品。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711443.html)地髓水晶块"
         }
     ]
 }

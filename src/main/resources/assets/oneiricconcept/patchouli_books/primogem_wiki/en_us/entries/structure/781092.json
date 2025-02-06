@@ -1,0 +1,15 @@
+{
+    "name": "不稳定星际和平银行分行",
+    "icon": "",
+    "category": "oneiricconcept:structure",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在地下掩埋，或半掩埋生成，最外层是磨制深板岩，内层用红黑色装饰。内部有 $(l:https://www.mcmod.cn/item/780560.html)不稳定星际和平银行分行$() 和一些摩拉。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/781092.html)不稳定星际和平银行分行"
+        }
+    ]
+}

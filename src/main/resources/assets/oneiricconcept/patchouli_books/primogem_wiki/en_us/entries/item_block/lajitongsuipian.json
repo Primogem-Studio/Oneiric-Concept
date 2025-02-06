@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "挖掘$(br)垃圾桶$(br)得到，可制作垃圾桶或铁锭。$(br)在熔炉中烧炼为铁粒；在高炉中烧炼为铁锭。在工作台中使用八个包围一个$(br)嬗变之尘$(br)合成为4个铁锭。$(br)$(l:https://www.mcmod.cn/item/711463.html)"
+            "text": "挖掘 $(l:https://www.mcmod.cn/item/706212.html)垃圾桶$() 得到，可制作垃圾桶或铁锭。$(br)在熔炉中烧炼为铁粒；在高炉中烧炼为铁锭。在工作台中使用八个包围一个 $(l:https://www.mcmod.cn/item/706429.html)嬗变之尘$() 合成为4个铁锭。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711463.html)垃圾桶碎片"
         }
     ]
 }

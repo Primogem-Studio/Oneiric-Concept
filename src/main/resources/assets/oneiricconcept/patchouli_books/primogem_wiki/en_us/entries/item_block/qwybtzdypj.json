@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "攻击目标会使目标小范围内血量大于80%的非玩家生物受到一次真实伤害，伤害范围不超过血量总值的20%。$(br)$(l:https://www.mcmod.cn/item/772361.html)"
+            "text": "攻击目标会使目标小范围内血量大于80%的非玩家生物受到一次真实伤害，伤害范围不超过血量总值的20%。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772361.html)『奇物』永不停嘴的羊皮卷"
         }
     ]
 }

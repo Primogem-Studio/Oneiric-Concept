@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "此段资料引用于“$(br)「已损坏」奇物$(br)”并与其保持同步更新。 $(br)编辑$(br)部分奇物损毁后不销毁，而是转变为「已损坏」状态，可使用$(br)『奇物』空无烛剪$(br)在工作台中无序合成修复。$(br)$(l:https://www.mcmod.cn/item/772365.html)"
+            "text": "部分奇物损毁后不销毁，而是转变为「已损坏」状态，可使用 $(l:https://www.mcmod.cn/item/772358.html)『奇物』空无烛剪$() 在工作台中无序合成修复。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772365.html)『奇物』星际大乐透"
         }
     ]
 }

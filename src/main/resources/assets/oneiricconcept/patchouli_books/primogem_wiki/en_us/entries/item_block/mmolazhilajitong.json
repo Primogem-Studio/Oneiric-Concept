@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "由$(br)干净的垃圾桶$(br)合成，可存放物品，比干净的垃圾桶的空间更大，有54格储存空间。$(br)$(l:https://www.mcmod.cn/item/706220.html)"
+            "text": "由 $(l:https://www.mcmod.cn/item/706219.html)干净的垃圾桶$() 合成，可存放物品，比干净的垃圾桶的空间更大，有54格储存空间。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706220.html)摩拉制垃圾桶"
         }
     ]
 }

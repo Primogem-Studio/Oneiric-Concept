@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在野外遗迹中可以找到，亦可由$(br)草原核$(br)掉落。$(br)右击给予副手持有的工具$(br)任意$(br)附魔，等级为III级。（可能不与工具适配）$(br)$(l:https://www.mcmod.cn/item/706211.html)"
+            "text": "在野外遗迹中可以找到，亦可由 $(l:https://www.mcmod.cn/item/706445.html)草原核$() 掉落。$(br)右击给予副手持有的工具 任意 附魔，等级为III级。（可能不与工具适配）"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706211.html)『奇物』福灵胶"
         }
     ]
 }

@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "“可好吃了”$(br)在野外生成的垃圾桶中有概率找到。$(br)食用后，回复2点（$(br)）饥饿值，扣除20点（$(br)）饱和度，并给予3秒$(br)中毒$(br)、20秒$(br)反胃$(br)、30秒$(br)虚弱$(br)BUFF。$(br)可用于合成$(br)装满垃圾的垃圾桶$(br)。$(br)$(l:https://www.mcmod.cn/item/706213.html)"
+            "text": "“可好吃了”$(br)在野外生成的垃圾桶中有概率找到。$(br)食用后，回复2点（ ）饥饿值，扣除20点（ ）饱和度，并给予3秒 $(l:https://www.mcmod.cn/item/9396.html)中毒$() 、20秒 $(l:https://www.mcmod.cn/item/9386.html)反胃$() 、30秒 $(l:https://www.mcmod.cn/item/9395.html)虚弱$() BUFF。$(br)可用于合成 $(l:https://www.mcmod.cn/item/706215.html)装满垃圾的垃圾桶$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/706213.html)垃圾"
         }
     ]
 }

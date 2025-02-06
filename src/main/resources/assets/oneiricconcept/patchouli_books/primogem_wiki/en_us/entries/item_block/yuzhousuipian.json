@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在各种野外遗迹中获得，亦可从$(br)祈愿$(br)中获得。$(br)用于合成或与黑塔----异世界分塔交易。$(br)$(l:https://www.mcmod.cn/item/711419.html)"
+            "text": "在各种野外遗迹中获得，亦可从 $(l:https://www.mcmod.cn/item/list/10429-4-1019789.html)祈愿$() 中获得。$(br)用于合成或与黑塔----异世界分塔交易。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711419.html)宇宙碎片"
         }
     ]
 }

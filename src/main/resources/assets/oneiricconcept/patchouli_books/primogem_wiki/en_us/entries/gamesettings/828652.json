@@ -1,0 +1,15 @@
+{
+    "name": "武器强化",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "在 $(l:https://www.mcmod.cn/item/793021.html)华丽锻造台$() 进行武器强化，提升武器性能。$(br)武器精炼：$(br)使用 $(l:https://www.mcmod.cn/item/714852.html)特制叠影器$() 进行武器精炼，提升武器特殊效果的强度。$(br)武器强化：$(br)使用各种 $(l:https://www.mcmod.cn/item/780522.html)精锻矿$() 提升武器等级：$(br)武器1-30级： $(l:https://www.mcmod.cn/item/780522.html)精锻用杂矿$() ；$(br)武器30-60级： $(l:https://www.mcmod.cn/item/780523.html)精锻用良矿$() ；$(br)武器60级以上： $(l:https://www.mcmod.cn/item/780524.html)精锻用魔矿$() 。$(br)每级消耗一个对应的精锻矿，可使用命运足迹减免消耗。$(br)每级提升的攻击伤害由制作者的均衡等级决定，在均衡等级提升后再次强化以刷新伤害。$(br)$(l:https://www.mcmod.cn/item/828653.html)均衡等级$() 0：额外提升武器等级×0.1伤害。$(br)均衡等级1：额外提升武器等级×0.2伤害。$(br)均衡等级2：额外提升武器等级×0.3伤害。$(br)均衡等级3：额外提升武器等级×0.5伤害。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828652.html)武器强化"
+        }
+    ]
+}

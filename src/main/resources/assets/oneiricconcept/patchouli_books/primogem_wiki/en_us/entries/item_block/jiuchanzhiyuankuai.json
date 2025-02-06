@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "装饰方块，可用于合成$(br)十枚纠缠之缘$(br)（成本原因不推荐此配方）。$(br)$(l:https://www.mcmod.cn/item/700421.html)"
+            "text": "装饰方块，可用于合成 $(l:https://www.mcmod.cn/item/706204.html)十枚纠缠之缘$() （成本原因不推荐此配方）。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700421.html)纠缠之缘块"
         }
     ]
 }

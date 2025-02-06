@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "在$(br)祈愿出蓝$(br)、$(br)祈愿出紫$(br)中获得。$(br)右击空气或方块使用，在上方十格处生成$(br)祈愿金光$(br)并进入约2秒的冷却时间。$(br)$(l:https://www.mcmod.cn/item/700429.html)"
+            "text": "在 $(l:https://www.mcmod.cn/item/700450.html)祈愿出蓝$() 、 $(l:https://www.mcmod.cn/item/700449.html)祈愿出紫$() 中获得。$(br)右击空气或方块使用，在上方十格处生成 $(l:https://www.mcmod.cn/item/700451.html)祈愿金光$() 并进入约2秒的冷却时间。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/700429.html)星轨专票"
         }
     ]
 }

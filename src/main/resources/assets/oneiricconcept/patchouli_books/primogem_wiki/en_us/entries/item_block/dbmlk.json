@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "摩拉堆$(br)填充$(br)摩拉$(br)而来，存储64摩拉，大于$(br)摩拉块$(br)的36个。$(br)$(l:https://www.mcmod.cn/item/772373.html)"
+            "text": "$(l:https://www.mcmod.cn/item/772373.html)摩拉堆$() 填充 $(l:https://www.mcmod.cn/item/700424.html)摩拉$() 而来，存储64摩拉，大于 $(l:https://www.mcmod.cn/item/700435.html)摩拉块$() 的36个。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/772373.html)打包摩拉堆"
         }
     ]
 }

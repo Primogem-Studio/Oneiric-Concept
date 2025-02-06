@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "可在$(br)祈愿$(br)中获得。野外遗迹中可以找到，挖掘$(br)地髓水晶块$(br)、破坏$(br)垃圾桶$(br)也有小几率获得。$(br)用于较高级的元素晶石工具的制作。$(br)$(l:https://www.mcmod.cn/item/714863.html)"
+            "text": "可在 $(l:https://www.mcmod.cn/item/list/10429-4-1019789.html)祈愿$() 中获得。野外遗迹中可以找到，挖掘 $(l:https://www.mcmod.cn/item/711443.html)地髓水晶块$() 、破坏 $(l:https://www.mcmod.cn/item/706212.html)垃圾桶$() 也有小几率获得。$(br)用于较高级的元素晶石工具的制作。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/714863.html)老石"
         }
     ]
 }

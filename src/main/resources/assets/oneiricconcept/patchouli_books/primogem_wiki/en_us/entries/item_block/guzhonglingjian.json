@@ -5,7 +5,11 @@
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "永动咕咕钟$(br)永生效期间击杀怪物概率掉落0-3个，用于停用$(br)永动咕咕钟$(br)，或制作$(br)咕钟三明治$(br)。$(br)$(l:https://www.mcmod.cn/item/793016.html)"
+            "text": "$(l:https://www.mcmod.cn/item/795642.html)永动咕咕钟$() 永生效期间击杀怪物概率掉落0-3个，用于停用 $(l:https://www.mcmod.cn/item/793017.html)永动咕咕钟$() ，或制作 $(l:https://www.mcmod.cn/item/803149.html)咕钟三明治$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/793016.html)咕钟零件"
         }
     ]
 }

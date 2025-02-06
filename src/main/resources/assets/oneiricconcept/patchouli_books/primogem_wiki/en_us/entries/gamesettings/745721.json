@@ -1,0 +1,15 @@
+{
+    "name": "自在松石套装效果",
+    "icon": "",
+    "category": "oneiricconcept:gamesettings",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "每2点套装数值提供1级缓降效果，每4点套装数值提供2级跳跃提升效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745721.html)自在松石套装效果"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "建木附着",
+    "icon": "primogemcraft:ceshifumo_01",
+    "category": "oneiricconcept:enchantment",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "任意可附魔物品均可使用该附魔。$(br)当魔咒存在物品上时，若物品的已消耗耐久为当前最大耐久值 -2，则会在下次使用该物品时依据附魔等级提供10%/25%/50%的耐久修复并移除该附魔。$(br)建木附着的最大等级为lll。$(br)建木附着的稀有等级为不寻常。$(br)$(br)番外：该附魔完全兼容 $(l:https://www.mcmod.cn/class/3004.html)连锁破坏$() 。 审镐守护者$(br)但需注意，若恢复的耐久度未能支出连锁破坏后的耐久消耗，工具依旧会损坏。$(br)样式"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/709139.html)建木附着"
+        }
+    ]
+}
