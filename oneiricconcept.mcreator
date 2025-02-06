@@ -12999,6 +12999,7 @@
       "SkyWaffle",
       "ResurrectionPellet",
       "Texturewayfareblessing",
+      "WayfareCakeSlices",
       "Primogemfruit",
       "RedBeanSoupFillingYuanXiao",
       "SweetSesameFillingYuanXiao",
@@ -13008,8 +13009,7 @@
       "DeepMarrowRockSalt",
       "SaltDust",
       "AmbergrisCheeseSliver",
-      "Fishcake",
-      "WayfareCakeSlices"
+      "Fishcake"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",

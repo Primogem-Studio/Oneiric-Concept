@@ -12,6 +12,9 @@
     "creativeTabs": [
       {
         "value": "MATERIALS"
+      },
+      {
+        "value": "OP_BLOCKS"
       }
     ],
     "stackSize": 64,

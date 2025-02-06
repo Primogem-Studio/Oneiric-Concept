@@ -9,7 +9,11 @@
     "states": [],
     "name": "Primogemcraft wiki",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "OP_BLOCKS"
+      }
+    ],
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,

@@ -12,6 +12,9 @@
     "creativeTabs": [
       {
         "value": "TOOLS"
+      },
+      {
+        "value": "OP_BLOCKS"
       }
     ],
     "stackSize": 1,

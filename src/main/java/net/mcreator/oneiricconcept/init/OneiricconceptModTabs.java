@@ -135,6 +135,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SKY_WAFFLE.get());
 				tabData.accept(OneiricconceptModItems.RESURRECTION_PELLET.get());
 				tabData.accept(OneiricconceptModBlocks.WAYFAREBLESSING.get().asItem());
+				tabData.accept(OneiricconceptModItems.WAYFARE_CAKE_SLICES.get());
 				tabData.accept(OneiricconceptModItems.PRIMOGEMFRUIT.get());
 				tabData.accept(OneiricconceptModItems.RED_BEAN_SOUP_FILLING_YUAN_XIAO.get());
 				tabData.accept(OneiricconceptModItems.SWEET_SESAME_FILLING_YUAN_XIAO.get());
@@ -145,7 +146,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SALT_DUST.get());
 				tabData.accept(OneiricconceptModItems.AMBERGRIS_CHEESE_SLIVER.get());
 				tabData.accept(OneiricconceptModItems.FISHCAKE.get());
-				tabData.accept(OneiricconceptModItems.WAYFARE_CAKE_SLICES.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {
@@ -178,6 +178,9 @@ public class OneiricconceptModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
 			if (tabData.hasPermissions()) {
 				tabData.accept(OneiricconceptModItems.ADEPTUS_GUN.get());
+				tabData.accept(OneiricconceptModItems.EXAMPLE.get());
+				tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
+				tabData.accept(OneiricconceptModItems.PRIMOGEMCRAFTWIKI.get());
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());
