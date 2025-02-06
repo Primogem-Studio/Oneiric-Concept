@@ -1,13 +1,17 @@
 
 package net.mcreator.oneiricconcept.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+
+import net.mcreator.oneiricconcept.procedures.PrimogemWikigiveProcedure;
 
 public class PrimogemcraftwikiItem extends Item {
 	public PrimogemcraftwikiItem() {
@@ -24,5 +28,11 @@ public class PrimogemcraftwikiItem extends Item {
 	@Override
 	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
 		return new ItemStack(this);
+	}
+
+	@Override
+	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
+		super.onCraftedBy(itemstack, world, entity);
+		PrimogemWikigiveProcedure.execute(entity, itemstack);
 	}
 }

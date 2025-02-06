@@ -12220,7 +12220,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/process"
     },
     {
       "name": "Crystalturtleloot",
@@ -12256,6 +12257,55 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/recipe/b_2effect_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Primogemcraftwiki1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogemcraftwiki_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogemcraftwiki_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PrimogemWikigive",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogem_wikigive",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PrimogemWikigiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Primogemcraftwiki2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "primogemcraftwiki_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogemcraftwiki_2.json"
         ]
       },
       "path": "~/Recipes"
