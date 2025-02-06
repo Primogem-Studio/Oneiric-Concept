@@ -1,0 +1,9 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":"oneiricconcept:oc_hunger",
+  "providers": [
+    {
+      "item": "oneiricconcept:hunger"
+    }
+  ]
+}

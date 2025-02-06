@@ -1,0 +1,15 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":"oneiricconcept:b_2sausage",
+  "providers": [
+    {
+      "item": "oneiricconcept:s_2ausage"
+    },
+    {
+    	"item": "oneiricconcept:s_2moke_sausage"
+    },
+    {
+    	"item": "oneiricconcept:b_2elobog_sausage"
+    }
+  ]
+}
