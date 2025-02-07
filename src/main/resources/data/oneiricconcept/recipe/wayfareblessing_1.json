@@ -1,14 +1,14 @@
 {
-	 "neoforge:conditions": [
-        {
-            "type": "neoforge:mod_loaded",
-            "modid": "farmersdelight"
-        }
-    ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
   "type": "farmersdelight:cooking",
   "container": {
     "count": 1,
-    "id": "primogemcraft:dangaoliyue"    
+    "id": "primogemcraft:dangaoliyue"
   },
   "cookingtime": 400,
   "experience": 20,
@@ -23,7 +23,7 @@
       "item": "oneiricconcept:resurrection_pellet"
     },
     {
-       "item": "primogemcraft:xiangdanganlao"
+      "item": "primogemcraft:xiangdanganlao"
     },
     {
       "tag": "c:foods/milk"
