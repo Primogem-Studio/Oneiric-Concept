@@ -12663,6 +12663,9 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
+    "BLOCKS:minecraft:wither_immune": [
+      "TAG:minecraft:dragon_immune"
+    ],
     "ENTITIES:c:human": [
       "EntityWitch",
       "EntityPiglin",
@@ -12674,9 +12677,6 @@
       "EntityWanderingTrader",
       "EntityIllusionIllager",
       "EntityGiantZombie"
-    ],
-    "BLOCKS:minecraft:wither_immune": [
-      "TAG:minecraft:dragon_immune"
     ],
     "ITEMS:mod:tawlog": [
       "CUSTOM:TheAnotherWorldLog",
@@ -13090,8 +13090,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "effect.oneiricconcept.b_2sausage": "weird sausage，Defeat the player",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -13128,10 +13128,10 @@
       "block.oneiricconcept.fulmo_10": "full moon ingot",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "Shivada_metal_ingot",
-      "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
       "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
-      "block.oneiricconcept.cryoo_9": "Shivada_metal_ingot",
+      "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
       "item.oneiricconcept.heartofthefish": "Heart of the fish",
+      "block.oneiricconcept.cryoo_9": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_3": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_4": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_5": "Shivada_metal_ingot",
@@ -13234,8 +13234,8 @@
       "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
       "fluid_type.oneiricconcept.memoria": "§9Memoria",
       "block.oneiricconcept.newmo_10": "crescent ingot",
-      "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
       "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
+      "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
       "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
       "item.oneiricconcept.taw_wood_loot": "TAW Wood Loot",
       "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
@@ -13489,8 +13489,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "诡异的熏肠",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -13527,10 +13527,10 @@
       "block.oneiricconcept.fulmo_10": "满月锭",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "§k怜爱§r金属锭",
-      "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "block.oneiricconcept.cryoo_8": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_9": "§k怜爱§r金属锭",
+      "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "item.oneiricconcept.heartofthefish": "鱼心",
+      "block.oneiricconcept.cryoo_9": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_3": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_4": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_5": "§k怜爱§r金属锭",
@@ -13633,8 +13633,8 @@
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
       "block.oneiricconcept.newmo_10": "新月锭",
-      "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "block.oneiricconcept.dendr_10": "智慧金属锭",
+      "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
       "item.oneiricconcept.taw_wood_loot": "异世界礼盒",
       "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",

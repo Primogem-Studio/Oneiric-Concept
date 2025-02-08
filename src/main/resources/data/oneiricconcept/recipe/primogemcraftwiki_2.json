@@ -12,7 +12,7 @@
     "count": 1,
     "id": "patchouli:guide_book",
     "components": {
-      "patchouli:book": "oneiricconcept:primogem_wiki/book"
+      "patchouli:book": "oneiricconcept:primogem_wiki"
     }
   }
 }
