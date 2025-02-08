@@ -9,8 +9,8 @@
     "description": {
       "translate": "advancements.public_clamor_can_melt_metals.descr"
     },
-    "frame": "goal",
-    "show_toast": true,
+    "frame": "challenge",
+    "show_toast": false,
     "announce_to_chat": true,
     "hidden": false
   },
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "oneiricconcept:propaganda_army"
+              "oneiricconcept:propaganda_army_block"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "oneiricconcept:oneiric_concept_advancement"
+  "parent": "oneiricconcept:gossipisafearfulthing"
 }

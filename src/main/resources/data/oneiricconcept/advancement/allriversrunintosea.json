@@ -1,27 +1,27 @@
 {
   "display": {
     "icon": {
-      "id": "oneiricconcept:heartoftheskysea"
+      "id": "oneiricconcept:heartofthevastsea"
     },
     "title": {
-      "translate": "advancements.thesea_ihangupsidedownwillbeyoursky.title"
+      "translate": "advancements.allriversrunintosea.title"
     },
     "description": {
-      "translate": "advancements.thesea_ihangupsidedownwillbeyoursky.descr"
+      "translate": "advancements.allriversrunintosea.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "thesea_ihangupsidedownwillbeyoursky_0": {
+    "allriversrunintosea_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "oneiricconcept:heartoftheskysea"
+              "oneiricconcept:heartofthevastsea"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "oneiricconcept:aftertheiceturnsintowater"
+  "parent": "oneiricconcept:thesea_ihangupsidedownwillbeyoursky"
 }

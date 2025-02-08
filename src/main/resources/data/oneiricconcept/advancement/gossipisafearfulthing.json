@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "id": "oneiricconcept:heartoftheskysea"
+      "id": "minecraft:player_head"
     },
     "title": {
-      "translate": "advancements.thesea_ihangupsidedownwillbeyoursky.title"
+      "translate": "advancements.gossipisafearfulthing.title"
     },
     "description": {
-      "translate": "advancements.thesea_ihangupsidedownwillbeyoursky.descr"
+      "translate": "advancements.gossipisafearfulthing.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,13 +15,13 @@
     "hidden": false
   },
   "criteria": {
-    "thesea_ihangupsidedownwillbeyoursky_0": {
+    "gossipisafearfulthing_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "oneiricconcept:heartoftheskysea"
+              "oneiricconcept:public_clamor"
             ],
             "count": {
               "min": 1,
@@ -32,5 +32,5 @@
       }
     }
   },
-  "parent": "oneiricconcept:aftertheiceturnsintowater"
+  "parent": "oneiricconcept:oneiric_concept_advancement"
 }

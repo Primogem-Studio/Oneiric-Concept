@@ -10,14 +10,19 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.EntityTypeTags;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
 import javax.annotation.Nullable;
@@ -52,6 +57,18 @@ public class EntityDeadProcedure {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
+			}
+			if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(OneiricconceptModMobEffects.B_2SAUSAGE)) {
+				if (entity instanceof ServerPlayer _player) {
+					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("oneiricconcept:diseasename_gastriccancer"));
+					if (_adv != null) {
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
+					}
+				}
 			}
 		}
 		if (RandomProcedure.execute(world, 0.1)) {

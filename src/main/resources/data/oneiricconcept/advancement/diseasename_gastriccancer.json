@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:s_2ausage"
+    },
+    "title": {
+      "translate": "advancements.diseasename_gastriccancer.title"
+    },
+    "description": {
+      "translate": "advancements.diseasename_gastriccancer.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "diseasename_gastriccancer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "oneiricconcept:the_seriousness_of_breakfast"
+}
