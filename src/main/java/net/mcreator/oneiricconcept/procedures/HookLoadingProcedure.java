@@ -18,10 +18,6 @@ public class HookLoadingProcedure {
 		if (entity == null)
 			return;
 		Entity tmp = null;
-		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u7B49\u5F85\u94A9\u5B50" + Calendar.getInstance().getTime().toString())), false);
-		}
 		tmp = (Entity) world.getEntitiesOfClass(FishingHook.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
 			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 				return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
@@ -36,7 +32,7 @@ public class HookLoadingProcedure {
 				});
 			} else if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u8D85\u65F6" + Calendar.getInstance().getTime().toString())), false);
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u7B49\u5F85\u8D85\u65F6" + Calendar.getInstance().getTime().toString())), false);
 			}
 		}
 	}

@@ -16,17 +16,13 @@ public class HookFallingProcedure {
 			return;
 		Entity hookent = null;
 		hookent = HookEntity;
-		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u94A9\u5B50\u4E0B\u843D" + Calendar.getInstance().getTime().toString())), false);
-		}
 		var hook = (FishingHook) hookent;
 		if (hook.getHookedIn() != null || hookent.isInWaterOrBubble() || hookent.isInWall() || hookent.onGround()) {
 			if (hook.getHookedIn() != null) {
-				HookHitProcedure.execute(world, x, y, z, hook.getOwner(), entity, EnchantLevel);
+				HookHitProcedure.execute(world, x, y, z, HookEntity, hook.getHookedIn(), entity, EnchantLevel, 0);
 				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A74\u8C03\u7528\u4F24\u5BB3\uFF0C\u76EE\u6807\uFF1A" + hook.getOwner() + Calendar.getInstance().getTime().toString())), false);
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A74\u8C03\u7528\u4F24\u5BB3\uFF0C\u76EE\u6807\uFF1A" + hook.getHookedIn() + Calendar.getInstance().getTime().toString())), false);
 				}
 			}
 		} else {
