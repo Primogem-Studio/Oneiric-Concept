@@ -25,10 +25,20 @@ public class HookHitProcedure {
 					HookHitProcedure.execute(world, x, y, z, TargetEntity, entity, EnchantLevel);
 				});
 				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-					OneiricconceptMod.LOGGER.debug(("\u94A9\u5B50\u4F24\u5BB3" + Calendar.getInstance().getTime().toString()));
 					if (!world.isClientSide() && world.getServer() != null)
 						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u94A9\u5B50\u4F24\u5BB3" + Calendar.getInstance().getTime().toString())), false);
 				}
+			} else {
+				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5B9E\u4F53\u6CA1\u6D3B\u7740" + Calendar.getInstance().getTime().toString())), false);
+				}
+			}
+		} else {
+			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((Calendar.getInstance().getTime().toString() + "\u5B9E\u4F53\u7C7B\u578B\u4E3A\u6C34\uFF1A" + Damageent.getType().is(EntityTypeTags.AQUATIC)
+							+ "\u5B9E\u4F53\u7C7B\u578B\u4E3A\u4EA1\u7075\uFF1A" + Damageent.getType().is(EntityTypeTags.UNDEAD) + "\u5728\u6C34\u4E2D\uFF1A" + Damageent.isInWaterOrBubble())), false);
 			}
 		}
 	}

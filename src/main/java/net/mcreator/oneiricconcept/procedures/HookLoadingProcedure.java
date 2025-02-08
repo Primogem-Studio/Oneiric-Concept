@@ -14,14 +14,13 @@ import java.util.Comparator;
 import java.util.Calendar;
 
 public class HookLoadingProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double EnchantLevel) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double EnchantLevel, double LoadingTime) {
 		if (entity == null)
 			return;
 		Entity tmp = null;
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u7B49\u5F85\u94A9\u5B50" + Calendar.getInstance().getTime().toString())), false);
-			OneiricconceptMod.LOGGER.debug(("\u7B49\u5F85\u94A9\u5B50" + Calendar.getInstance().getTime().toString()));
 		}
 		tmp = (Entity) world.getEntitiesOfClass(FishingHook.class, AABB.ofSize(new Vec3(x, y, z), 4, 4, 4), e -> true).stream().sorted(new Object() {
 			Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -29,11 +28,16 @@ public class HookLoadingProcedure {
 			}
 		}.compareDistOf(x, y, z)).findFirst().orElse(null);
 		if (!(tmp == null)) {
-			HookFallingProcedure.execute(world, x, y, z, tmp, entity, EnchantLevel);
+			HookFallingProcedure.execute(world, x, y, z, tmp, entity, EnchantLevel, 0);
 		} else {
-			OneiricconceptMod.queueServerWork(2, () -> {
-				HookLoadingProcedure.execute(world, x, y, z, entity, EnchantLevel);
-			});
+			if (LoadingTime <= 20) {
+				OneiricconceptMod.queueServerWork(1, () -> {
+					HookLoadingProcedure.execute(world, x, y, z, entity, EnchantLevel, LoadingTime + 1);
+				});
+			} else if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u8D85\u65F6" + Calendar.getInstance().getTime().toString())), false);
+			}
 		}
 	}
 }
