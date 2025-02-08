@@ -162,6 +162,7 @@ import net.mcreator.oneiricconcept.block.Cryoo2Block;
 import net.mcreator.oneiricconcept.block.Cryoo1Block;
 import net.mcreator.oneiricconcept.block.Cryoo10Block;
 import net.mcreator.oneiricconcept.block.CloudBlock;
+import net.mcreator.oneiricconcept.block.CamerapinkBlock;
 import net.mcreator.oneiricconcept.block.CameraBlock;
 import net.mcreator.oneiricconcept.block.CCactusBlock;
 import net.mcreator.oneiricconcept.block.BoomBlossomsPyroBlock;
@@ -385,6 +386,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> DAWNLEAVES = REGISTRY.register("dawnleaves", DawnleavesBlock::new);
 	public static final DeferredBlock<Block> XIAO_LANTERN_RECYCLER = REGISTRY.register("xiao_lantern_recycler", XiaoLanternRecyclerBlock::new);
 	public static final DeferredBlock<Block> PHLOGISTONTANK = REGISTRY.register("phlogistontank", PhlogistontankBlock::new);
+	public static final DeferredBlock<Block> CAMERAPINK = REGISTRY.register("camerapink", CamerapinkBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

@@ -5,6 +5,12 @@
         "0": "camera"
       },
       "name": "default"
+    },
+    "pink": {
+      "map": {
+        "0": "pink_camera"
+      },
+      "name": "pink"
     }
   }
 }

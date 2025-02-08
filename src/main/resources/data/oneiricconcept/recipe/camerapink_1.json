@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:pink_concrete"
+  },
+  "result": {
+    "id": "oneiricconcept:camerapink",
+    "count": 1
+  }
+}

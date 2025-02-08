@@ -12550,6 +12550,36 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "Camerapink",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camerapink",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/camerapink.json",
+          "src/main/resources/assets/oneiricconcept/models/block/camerapink.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CamerapinkBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/camerapink.json",
+          "src/main/resources/assets/oneiricconcept/models/item/camerapink.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Camerapink1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camerapink_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/camerapink_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -13279,7 +13309,8 @@
       "PhlogistonCrystal",
       "PhlogistonController",
       "PhlogistonWing",
-      "Phlogiston"
+      "Phlogiston",
+      "Camerapink"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -13357,6 +13388,7 @@
       "item.oneiricconcept.memoria_piece": "Memoria Piece",
       "gamerule.ocinitialload.description": "Set game rules as default when entering the world",
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
+      "block.oneiricconcept.camerapink.description_0": "§7The meaning of \u0027相机 is to see through the key points",
       "block.oneiricconcept.geosealingwax": "Geo sealing wax",
       "block.oneiricconcept.nagadus_emerald_ore": "Nagadus Emerald Ore",
       "item.oneiricconcept.xuanyuan_sword": "Xuanyuan Sword",
@@ -13383,6 +13415,7 @@
       "block.oneiricconcept.fulmo_10": "full moon ingot",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "Shivada_metal_ingot",
+      "block.oneiricconcept.camerapink": "Camera",
       "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
       "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
       "item.oneiricconcept.heartofthefish": "Heart of the fish",
@@ -13750,8 +13783,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -13764,6 +13797,7 @@
       "item.oneiricconcept.memoria_piece": "§9忆质凝块",
       "gamerule.ocinitialload.description": "进入世界时将游戏规则设为默认",
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
+      "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
       "block.oneiricconcept.geosealingwax": "岩之印",
       "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
       "item.oneiricconcept.xuanyuan_sword": "轩辕剑",
@@ -13790,6 +13824,7 @@
       "block.oneiricconcept.fulmo_10": "满月锭",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
       "block.oneiricconcept.cryoo_7": "§k怜爱§r金属锭",
+      "block.oneiricconcept.camerapink": "照相机",
       "block.oneiricconcept.cryoo_8": "§k怜爱§r金属锭",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "item.oneiricconcept.heartofthefish": "鱼心",
