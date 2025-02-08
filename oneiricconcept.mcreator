@@ -12370,6 +12370,166 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "ThrowingHook",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "throwing_hook",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ThrowingHookProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "HookLoading",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hook_loading",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HookLoadingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "EnchantLevel",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "HookFalling",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "hook_falling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HookFallingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "HookEntity",
+            "type": "entity"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "EnchantLevel",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "HookHit",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "hook_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HookHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "TargetEntity",
+            "type": "entity"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "EnchantLevel",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
