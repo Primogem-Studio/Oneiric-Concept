@@ -188,6 +188,7 @@ public class OneiricconceptModTabs {
 			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
+			tabData.accept(OneiricconceptModItems.WILDERNESS_ROD.get());
 		}
 	}
 }

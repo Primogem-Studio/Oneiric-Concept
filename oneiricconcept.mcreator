@@ -12309,6 +12309,67 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "SharpHook",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sharp_hook",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/enchantment/sharp_hook.json"
+        ]
+      }
+    },
+    {
+      "name": "WildernessRod",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wilderness_rod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/wilderness_rod.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/WildernessRodItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "HookDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hook_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HookDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -12802,8 +12863,14 @@
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:Surpriseboxforgoodorbad"
     ],
+    "ENCHANTMENTS:minecraft:non_treasure": [
+      "~CUSTOM:SharpHook"
+    ],
     "ITEMS:pgc:wuqi": [
       "CUSTOM:Example"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:SharpHook"
     ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:AmbrosialArborWood",
@@ -12817,6 +12884,9 @@
       "~CUSTOM:Dawnleaves",
       "~CUSTOM:AmbrosialArborLeave",
       "~CUSTOM:TheAnotherWorldLeave"
+    ],
+    "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:WildernessRod"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
@@ -12933,6 +13003,9 @@
     "BLOCKS:minecraft:dragon_immune": [
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:SharpHook"
     ]
   },
   "tab_element_order": {
@@ -13138,6 +13211,7 @@
       "block.oneiricconcept.cryoo_6": "Shivada_metal_ingot",
       "item.oneiricconcept.mora_magazine_n_2": "Mora Magazine♦♦",
       "item.oneiricconcept.mora_magazine_n_3": "Mora Magazine♦♦♦",
+      "item.oneiricconcept.wilderness_rod": "Wilderness Rod",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
       "block.oneiricconcept.liron_7": "stinky iron ingot",
@@ -13349,6 +13423,7 @@
       "block.oneiricconcept.primogemfruitblock": "Primogemfruit",
       "block.oneiricconcept.memoria": "Memoria",
       "item.oneiricconcept.heartoftheskysea": "Heart of the sky sea",
+      "enchantment.oneiricconcept.sharp_hook": "Sharp Hook",
       "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
       "block.oneiricconcept.hydro_9": "Varunada_metal_ingot",
       "block.oneiricconcept.hydro_8": "Varunada_metal_ingot",
@@ -13537,6 +13612,7 @@
       "block.oneiricconcept.cryoo_6": "§k怜爱§r金属锭",
       "item.oneiricconcept.mora_magazine_n_2": "摩拉弹匣♦♦",
       "item.oneiricconcept.mora_magazine_n_3": "摩拉弹匣♦♦♦",
+      "item.oneiricconcept.wilderness_rod": "Wilderness Rod",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
       "block.oneiricconcept.liron_7": "重口味铁锭",
@@ -13748,6 +13824,7 @@
       "block.oneiricconcept.primogemfruitblock": "原石果",
       "block.oneiricconcept.memoria": "忆质",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
+      "enchantment.oneiricconcept.sharp_hook": "Sharp Hook",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "block.oneiricconcept.hydro_9": "正义金属锭",
       "block.oneiricconcept.hydro_8": "正义金属锭",

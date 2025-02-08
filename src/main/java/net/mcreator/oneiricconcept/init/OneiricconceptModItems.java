@@ -23,6 +23,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.oneiricconcept.procedures.VastmodeProcedure;
 import net.mcreator.oneiricconcept.item.XuanyuanSwordItem;
+import net.mcreator.oneiricconcept.item.WildernessRodItem;
 import net.mcreator.oneiricconcept.item.WayfareCakeSlicesItem;
 import net.mcreator.oneiricconcept.item.WaffleItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
@@ -388,6 +389,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> FISHCAKE = REGISTRY.register("fishcake", FishcakeItem::new);
 	public static final DeferredItem<Item> WAYFARE_CAKE_SLICES = REGISTRY.register("wayfare_cake_slices", WayfareCakeSlicesItem::new);
 	public static final DeferredItem<Item> PRIMOGEMCRAFTWIKI = REGISTRY.register("primogemcraftwiki", PrimogemcraftwikiItem::new);
+	public static final DeferredItem<Item> WILDERNESS_ROD = REGISTRY.register("wilderness_rod", WildernessRodItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
