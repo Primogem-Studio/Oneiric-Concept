@@ -1,6 +1,7 @@
 package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.projectile.FishingHook;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
@@ -20,8 +21,9 @@ public class HookFallingProcedure {
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u94A9\u5B50\u4E0B\u843D" + Calendar.getInstance().getTime().toString())), false);
 			OneiricconceptMod.LOGGER.debug(("\u94A9\u5B50\u4E0B\u843D" + Calendar.getInstance().getTime().toString()));
 		}
-		if (hook.getHookedIn() || hookent.isInWaterOrBubble() || hookent.isInWall() || hookent.onGround()) {
-			if (hookent.isPassenger()) {
+		var hook = (FishingHook) hookent;
+		if (hookent.isInWaterOrBubble() || hookent.isInWall() || hookent.onGround()) {
+			if (hook.getHookedIn() != null) {
 				HookHitProcedure.execute(world, x, y, z, hook.getOwner(), entity, EnchantLevel);
 			}
 		} else {
