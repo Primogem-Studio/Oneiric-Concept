@@ -12872,6 +12872,19 @@
         ]
       },
       "path": "~/Feature"
+    },
+    {
+      "name": "SweetMadame2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sweet_madame_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sweet_madame_2.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
