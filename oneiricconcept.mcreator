@@ -12580,6 +12580,161 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Placeconflict",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "placeconflict",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlaceconflictProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "maxx",
+            "type": "number"
+          },
+          {
+            "name": "maxy",
+            "type": "number"
+          },
+          {
+            "name": "maxz",
+            "type": "number"
+          },
+          {
+            "name": "minx",
+            "type": "number"
+          },
+          {
+            "name": "miny",
+            "type": "number"
+          },
+          {
+            "name": "minz",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Placexyz",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "placexyz",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlacexyzProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "maxx",
+            "type": "number"
+          },
+          {
+            "name": "maxy",
+            "type": "number"
+          },
+          {
+            "name": "maxz",
+            "type": "number"
+          },
+          {
+            "name": "minx",
+            "type": "number"
+          },
+          {
+            "name": "miny",
+            "type": "number"
+          },
+          {
+            "name": "minz",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Minx1maxx1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minx_1maxx_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Minx1maxx1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -13374,8 +13529,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "effect.oneiricconcept.b_2sausage": "weird sausage，Defeat the player",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -13783,8 +13938,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
