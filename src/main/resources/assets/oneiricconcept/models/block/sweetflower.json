@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "oneiricconcept:block/tiantianhua",
+    "particle": "oneiricconcept:block/tiantianhua"
+  },
+  "render_type": "cutout"
+}

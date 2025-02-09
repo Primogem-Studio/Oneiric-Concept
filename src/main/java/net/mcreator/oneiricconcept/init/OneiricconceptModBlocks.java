@@ -25,6 +25,7 @@ import net.mcreator.oneiricconcept.block.TheAnotherWorldLogBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldLeaveBlock;
 import net.mcreator.oneiricconcept.block.TexturewayfareblessingBlock;
 import net.mcreator.oneiricconcept.block.TNTDispenserBlock;
+import net.mcreator.oneiricconcept.block.SweetflowerBlock;
 import net.mcreator.oneiricconcept.block.SustenanceanchoroffBlock;
 import net.mcreator.oneiricconcept.block.SustenanceanchorBlock;
 import net.mcreator.oneiricconcept.block.SuperimposerCustommadeBlock;
@@ -387,6 +388,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> XIAO_LANTERN_RECYCLER = REGISTRY.register("xiao_lantern_recycler", XiaoLanternRecyclerBlock::new);
 	public static final DeferredBlock<Block> PHLOGISTONTANK = REGISTRY.register("phlogistontank", PhlogistontankBlock::new);
 	public static final DeferredBlock<Block> CAMERAPINK = REGISTRY.register("camerapink", CamerapinkBlock::new);
+	public static final DeferredBlock<Block> SWEETFLOWER = REGISTRY.register("sweetflower", SweetflowerBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

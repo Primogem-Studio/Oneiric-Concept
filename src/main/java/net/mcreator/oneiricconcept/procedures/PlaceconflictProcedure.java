@@ -31,8 +31,8 @@ public class PlaceconflictProcedure {
 			return PlacexyzProcedure.execute(world, x, y, z, minz, maxy, maxx, maxz, miny, minx);
 		}
 		if (wsen == Direction.EAST) {
-			return PlacexyzProcedure.execute(world, x, y, z, maxz, maxy, minx, minz, miny, maxx);
+			return PlacexyzProcedure.execute(world, x, y, z, 0 - maxz, maxy, 0 - minx, 0 - minz, miny, 0 - maxx);
 		}
-		return PlacexyzProcedure.execute(world, x, y, z, minx, maxy, minz, maxx, miny, maxz);
+		return PlacexyzProcedure.execute(world, x, y, z, 0 - minx, maxy, 0 - minz, 0 - maxx, miny, 0 - maxz);
 	}
 }

@@ -113,6 +113,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PHLOGISTON_WING_CHESTPLATE.get());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON.get());
 				tabData.accept(OneiricconceptModBlocks.CAMERAPINK.get().asItem());
+				tabData.accept(OneiricconceptModItems.WILDERNESS_ROD.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -147,6 +148,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SALT_DUST.get());
 				tabData.accept(OneiricconceptModItems.AMBERGRIS_CHEESE_SLIVER.get());
 				tabData.accept(OneiricconceptModItems.FISHCAKE.get());
+				tabData.accept(OneiricconceptModBlocks.SWEETFLOWER.get().asItem());
+				tabData.accept(OneiricconceptModItems.ICE_FRESH_RAW_FROSTWEAVE_SALMON_SLICES.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {
@@ -189,7 +192,6 @@ public class OneiricconceptModTabs {
 			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
-			tabData.accept(OneiricconceptModItems.WILDERNESS_ROD.get());
 		}
 	}
 }

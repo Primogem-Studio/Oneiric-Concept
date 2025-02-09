@@ -78,6 +78,7 @@ import net.mcreator.oneiricconcept.item.LessRedstonePowderItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
 import net.mcreator.oneiricconcept.item.IgnisAureliaeItem;
+import net.mcreator.oneiricconcept.item.IceFreshRawFrostweaveSalmonSlicesItem;
 import net.mcreator.oneiricconcept.item.HungerItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
 import net.mcreator.oneiricconcept.item.HonkaiShardItem;
@@ -391,6 +392,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PRIMOGEMCRAFTWIKI = REGISTRY.register("primogemcraftwiki", PrimogemcraftwikiItem::new);
 	public static final DeferredItem<Item> WILDERNESS_ROD = REGISTRY.register("wilderness_rod", WildernessRodItem::new);
 	public static final DeferredItem<Item> CAMERAPINK = block(OneiricconceptModBlocks.CAMERAPINK);
+	public static final DeferredItem<Item> SWEETFLOWER = block(OneiricconceptModBlocks.SWEETFLOWER);
+	public static final DeferredItem<Item> ICE_FRESH_RAW_FROSTWEAVE_SALMON_SLICES = REGISTRY.register("ice_fresh_raw_frostweave_salmon_slices", IceFreshRawFrostweaveSalmonSlicesItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

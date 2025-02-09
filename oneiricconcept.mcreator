@@ -12707,34 +12707,82 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/Minx1maxx1Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/process"
+    },
+    {
+      "name": "Sweetflower",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetflower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/SweetflowerBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/sweetflower.json",
+          "src/main/resources/assets/oneiricconcept/models/block/sweetflower.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/sweetflower.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/sweetflower_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sweetflower.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/sweetflower.json",
+          "src/main/resources/assets/oneiricconcept/models/item/sweetflower.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Sugar1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sugar_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sugar_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Sugar2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sugar_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sugar_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SweetMadame1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sweet_madame_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sweet_madame_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "IceFreshRawFrostweaveSalmonSlices",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_fresh_raw_frostweave_salmon_slices",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/IceFreshRawFrostweaveSalmonSlicesItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/ice_fresh_raw_frostweave_salmon_slices.json"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [],
@@ -13204,6 +13252,7 @@
       "CUSTOM:SunStartCan"
     ],
     "ITEMS:minecraft:meat": [
+      "~CUSTOM:IceFreshRawFrostweaveSalmonSlices",
       "~CUSTOM:Fishcake",
       "~CUSTOM:GrilledDumpling",
       "~CUSTOM:GrilledOyDumpling",
@@ -13326,7 +13375,9 @@
       "Items.COOKED_MUTTON",
       "TAG:c:foods/raw_fishes"
     ],
-    "ITEMS:c:foods/raw_fishes": [],
+    "ITEMS:c:foods/raw_fishes": [
+      "CUSTOM:IceFreshRawFrostweaveSalmonSlices"
+    ],
     "ITEMS:oneiricconcept:magazine": [
       "CUSTOM:MoraMagazine",
       "CUSTOM:MoraMagazineN2",
@@ -13465,7 +13516,8 @@
       "PhlogistonController",
       "PhlogistonWing",
       "Phlogiston",
-      "Camerapink"
+      "Camerapink",
+      "WildernessRod"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -13498,7 +13550,9 @@
       "DeepMarrowRockSalt",
       "SaltDust",
       "AmbergrisCheeseSliver",
-      "Fishcake"
+      "Fishcake",
+      "Sweetflower",
+      "IceFreshRawFrostweaveSalmonSlices"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -13529,8 +13583,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "effect.oneiricconcept.b_2sausage": "weird sausage，Defeat the player",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -13551,6 +13605,7 @@
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
+      "block.oneiricconcept.sweetflower": "Sweet flower",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
@@ -13744,6 +13799,7 @@
       "item.oneiricconcept.dreamdive_can.description_2": "The §9Dreamdive Can §fwas originally a toy in the Cosmos\u0027s middle-class family bedroom, but became the only way for people to sleep on some planets deep in the mires of §cCatastrophe. ",
       "item.oneiricconcept.dreamdive_can.description_1": "§6A sweet dream food can from Penacony, Planet of Festivities. It is full of highly compact gaseous memoria. The user will fall into dreams within five minutes after opening the can.",
       "item.oneiricconcept.wayfare_cake_slices": "Wayfare Cake Slices",
+      "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "Ice-Fresh Raw Frostweave Salmon Slices",
       "block.oneiricconcept.dendr_1": "Nagadus_metal_ingot",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
       "block.oneiricconcept.pgc_pg3": "Primogem",
@@ -13938,8 +13994,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -13960,6 +14016,7 @@
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
+      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
@@ -13990,7 +14047,7 @@
       "block.oneiricconcept.cryoo_6": "§k怜爱§r金属锭",
       "item.oneiricconcept.mora_magazine_n_2": "摩拉弹匣♦♦",
       "item.oneiricconcept.mora_magazine_n_3": "摩拉弹匣♦♦♦",
-      "item.oneiricconcept.wilderness_rod": "Wilderness Rod",
+      "item.oneiricconcept.wilderness_rod": "林野钓竿",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
       "block.oneiricconcept.liron_7": "重口味铁锭",
@@ -14153,6 +14210,7 @@
       "item.oneiricconcept.dreamdive_can.description_2": "§9入梦罐§f本是银河中产阶级家庭卧室的玩物，却在一些深陷§c灾厄§f苦难的世界成了人们入眠的唯一方式。",
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
       "item.oneiricconcept.wayfare_cake_slices": "巡游蛋糕片",
+      "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "冰鲜霜纹鲑生鱼片",
       "block.oneiricconcept.dendr_1": "智慧金属锭",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
       "block.oneiricconcept.pgc_pg3": "原石水晶",
