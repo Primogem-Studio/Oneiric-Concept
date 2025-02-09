@@ -23,6 +23,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.oneiricconcept.procedures.VastmodeProcedure;
 import net.mcreator.oneiricconcept.item.XuanyuanSwordItem;
+import net.mcreator.oneiricconcept.item.XuanyuanArrowItem;
 import net.mcreator.oneiricconcept.item.WildernessRodItem;
 import net.mcreator.oneiricconcept.item.WayfareCakeSlicesItem;
 import net.mcreator.oneiricconcept.item.WaffleItem;
@@ -394,6 +395,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> CAMERAPINK = block(OneiricconceptModBlocks.CAMERAPINK);
 	public static final DeferredItem<Item> SWEETFLOWER = block(OneiricconceptModBlocks.SWEETFLOWER);
 	public static final DeferredItem<Item> ICE_FRESH_RAW_FROSTWEAVE_SALMON_SLICES = REGISTRY.register("ice_fresh_raw_frostweave_salmon_slices", IceFreshRawFrostweaveSalmonSlicesItem::new);
+	public static final DeferredItem<Item> XUANYUAN_ARROW = REGISTRY.register("xuanyuan_arrow", XuanyuanArrowItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

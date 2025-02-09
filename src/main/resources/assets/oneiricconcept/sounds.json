@@ -25,5 +25,14 @@
         "stream": false
       }
     ]
+  },
+  "houyi": {
+    "subtitle": "subtitles.houyi",
+    "sounds": [
+      {
+        "name": "oneiricconcept:fallingsun",
+        "stream": false
+      }
+    ]
   }
 }

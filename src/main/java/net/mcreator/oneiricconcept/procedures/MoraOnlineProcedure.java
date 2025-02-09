@@ -12,9 +12,10 @@ public class MoraOnlineProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine2")))
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine1")))
+		ItemStack Litm = ItemStack.EMPTY;
+		Litm = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		return Litm.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine2"))) || Litm.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine1")))
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == OneiricconceptModItems.BOSS_STONE_COIN_GUN_PLUS.get()
-						&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine")));
+						&& (Litm.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine"))) || Litm.getItem() == OneiricconceptModItems.XUANYUAN_ARROW.get());
 	}
 }

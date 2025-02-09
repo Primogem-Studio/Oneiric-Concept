@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " b ",
+    "c  "
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:xuanyuan_sword"
+    },
+    "b": {
+      "item": "minecraft:spectral_arrow"
+    },
+    "c": {
+      "item": "oneiricconcept:honkai_shard"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:xuanyuan_arrow",
+    "count": 1
+  }
+}

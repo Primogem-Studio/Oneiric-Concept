@@ -12807,7 +12807,7 @@
           "src/main/resources/assets/oneiricconcept/models/item/ice_fresh_raw_frostweave_salmon_slices.json"
         ]
       },
-      "path": "~/item"
+      "path": "~/item/item_food"
     },
     {
       "name": "SweetFlowerclimate",
@@ -12885,6 +12885,201 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "FallingSun",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "falling_sun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FallingSunProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "XuanyuanArrow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_arrow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/xuanyuan_arrow.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/XuanyuanArrowItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "XuanYuanArrowArrow",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuan_yuan_arrow_arrow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/entity/XuanYuanArrowArrowEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "XuanyuanArrowrise",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_arrowrise",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanArrowriseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "XuanyuanItemplace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuan_itemplace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanItemplaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Xuanyuanitemmessage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuanitemmessage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanitemmessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itement",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Xuanyuanarrowget",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuanarrowget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XuanyuanarrowgetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Shootingthesun",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shootingthesun",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/shootingthesun.json"
+        ]
+      },
+      "path": "~/Advancement"
+    },
+    {
+      "name": "Xuanyuanarrow1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xuanyuanarrow_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/xuanyuanarrow_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -12912,6 +13107,14 @@
       ],
       "category": "block",
       "subtitle": "BigStoneCrushChest"
+    },
+    {
+      "name": "houyi",
+      "files": [
+        "fallingsun"
+      ],
+      "category": "player",
+      "subtitle": "There used to be a young man named \u0027houyi\u0027 who wanted to use the Xuan Yuan Sword to shoot at the sun."
     }
   ],
   "tag_elements": {
@@ -13619,7 +13822,8 @@
       "PhlogistonWing",
       "Phlogiston",
       "Camerapink",
-      "WildernessRod"
+      "WildernessRod",
+      "XuanyuanArrow"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -13685,8 +13889,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "effect.oneiricconcept.b_2sausage": "weird sausage，Defeat the player",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -13706,8 +13910,8 @@
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
-      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "block.oneiricconcept.sweetflower": "Sweet flower",
+      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
@@ -13784,6 +13988,7 @@
       "gamerule.ocfly.description": "Set as false to eliminate conflicts",
       "item.oneiricconcept.oy_stuffing.description_0": "§7Right... right?",
       "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
+      "advancements.shootingthesun.title": "Shooting the sun",
       "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
       "block.oneiricconcept.ambrosial_arbor_wood": "Ambrosial Arbor Wood",
       "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
@@ -13844,6 +14049,7 @@
       "advancements.railgun.descr": "Although but,_ _,_ _ _ _ _ _ _ _?",
       "advancements.aftertheiceturnsintowater.title": "After the ice turns into water",
       "block.oneiricconcept.hydro_10": "Varunada_metal_ingot",
+      "subtitles.houyi": "There used to be a young man named \u0027houyi\u0027 who wanted to use the Xuan Yuan Sword to shoot at the sun.",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "Arrow of Hunger",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
@@ -13879,6 +14085,7 @@
       "block.oneiricconcept.mm_mushroom.description_1": "The bow on the head is flat",
       "block.oneiricconcept.mm_mushroom.description_0": "Cute mushrooms, but with a strong heart",
       "block.oneiricconcept.dawnleaves": "Dawnleaves",
+      "translation.oneiricconcept.fallingsun": "The sun is setting！",
       "item.oneiricconcept.aureliae_hoe": "Aureliae Hoe",
       "block.oneiricconcept.vajrada_amethyst_ore": "Vajrada Amethyst Ore",
       "advancements.oneiric_concept_advancement.title": "Genshin Impact Speed Edition",
@@ -13907,6 +14114,7 @@
       "block.oneiricconcept.pgc_pg3": "Primogem",
       "block.oneiricconcept.pgc_pg2": "Primogem",
       "block.oneiricconcept.the_another_world_sapling": "The Another World Sapling",
+      "advancements.shootingthesun.descr": "There used to be a young man named \u0027houyi\u0027 who wanted to use the Xuan Yuan Sword to shoot at the sun.",
       "block.oneiricconcept.pgc_pg1": "Primogem",
       "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
       "block.oneiricconcept.pgc_pg7": "Primogem",
@@ -14024,6 +14232,7 @@
       "item.oneiricconcept.salt": "Salt",
       "item.oneiricconcept.surpriseboxforgoodorbad": "Surprise Box,for Good or Bad",
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "After the ice turns into water……",
+      "item.oneiricconcept.xuanyuan_arrow": "Xuanyuan Arrow",
       "block.oneiricconcept.shivada_jade_ore": "Shivada Jade Ore",
       "item.oneiricconcept.ambergris_cheese_sliver": "Ambergris Cheese Sliver",
       "block.oneiricconcept.mm_mushroom": "Mm Mushroom",
@@ -14195,6 +14404,7 @@
       "gamerule.ocfly.description": "设为假以提高兼容",
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
+      "advancements.shootingthesun.title": "Shooting the sun",
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
       "block.oneiricconcept.ambrosial_arbor_wood": "建木",
       "item.oneiricconcept.a_propaganda_army": "一个水军",
@@ -14255,6 +14465,7 @@
       "advancements.railgun.descr": "虽然但是，_ _，_ _ _ _ _ _ _ _？",
       "advancements.aftertheiceturnsintowater.title": "在冰化成水之后",
       "block.oneiricconcept.hydro_10": "正义金属锭",
+      "subtitles.houyi": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "饥饿之箭",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
@@ -14290,6 +14501,7 @@
       "block.oneiricconcept.mm_mushroom.description_1": "头上的蝴蝶结平平的",
       "block.oneiricconcept.mm_mushroom.description_0": "§7萌萌的蘑菇，但有一颗坚硬的心",
       "block.oneiricconcept.dawnleaves": "黎明树叶",
+      "translation.oneiricconcept.fallingsun": "太阳正在坠落！",
       "item.oneiricconcept.aureliae_hoe": "铄金锄",
       "block.oneiricconcept.vajrada_amethyst_ore": "最胜紫晶矿石",
       "advancements.oneiric_concept_advancement.title": "原神极速版",
@@ -14318,6 +14530,7 @@
       "block.oneiricconcept.pgc_pg3": "原石水晶",
       "block.oneiricconcept.pgc_pg2": "原石水晶",
       "block.oneiricconcept.the_another_world_sapling": "异世界树苗",
+      "advancements.shootingthesun.descr": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
       "block.oneiricconcept.pgc_pg1": "原石水晶",
       "block.oneiricconcept.stripped_the_another_world_log": "去皮异世界木",
       "block.oneiricconcept.pgc_pg7": "原石水晶",
@@ -14435,6 +14648,7 @@
       "item.oneiricconcept.salt": "食盐",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "在冰化成水之后……",
+      "item.oneiricconcept.xuanyuan_arrow": "Xuanyuan Arrow",
       "block.oneiricconcept.shivada_jade_ore": "哀叙冰玉矿石",
       "item.oneiricconcept.ambergris_cheese_sliver": "小片香涎干酪",
       "block.oneiricconcept.mm_mushroom": "萌萌菌",

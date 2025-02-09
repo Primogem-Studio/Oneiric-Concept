@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:xuanyuan_arrow"
+    },
+    "title": {
+      "translate": "advancements.shootingthesun.title"
+    },
+    "description": {
+      "translate": "advancements.shootingthesun.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "shootingthesun_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "oneiricconcept:railgun"
+}
