@@ -12707,7 +12707,32 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/Minx1maxx1Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/process"
     },
@@ -12783,6 +12808,70 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "SweetFlowerclimate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_flowerclimate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SweetFlowerclimateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic"
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "SweetFlowers",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_flowers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/world/features/SweetFlowersFeature.java",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sweet_flowers.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/sweet_flowers_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/sweet_flowers.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "CaveSweetFlowers",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cave_sweet_flowers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/world/features/CaveSweetFlowersFeature.java",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/cave_sweet_flowers.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/cave_sweet_flowers_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/cave_sweet_flowers.json"
+        ]
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [],

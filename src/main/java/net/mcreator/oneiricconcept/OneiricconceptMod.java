@@ -28,6 +28,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModMenus;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModFluids;
 import net.mcreator.oneiricconcept.init.OneiricconceptModFluidTypes;
+import net.mcreator.oneiricconcept.init.OneiricconceptModFeatures;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlockEntities;
@@ -56,6 +57,7 @@ public class OneiricconceptMod {
 		OneiricconceptModEntities.REGISTRY.register(modEventBus);
 		OneiricconceptModTabs.REGISTRY.register(modEventBus);
 
+		OneiricconceptModFeatures.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
 		OneiricconceptModPotions.REGISTRY.register(modEventBus);
 		OneiricconceptModMobEffects.REGISTRY.register(modEventBus);

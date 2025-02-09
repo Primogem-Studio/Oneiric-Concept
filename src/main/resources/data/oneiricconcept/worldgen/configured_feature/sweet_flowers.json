@@ -1,0 +1,11 @@
+{
+  "type": "oneiricconcept:sweet_flowers",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "oneiricconcept:sweetflower"
+      }
+    }
+  }
+}
