@@ -1,0 +1,15 @@
+{
+    "name": "神秘磁力[增幅]",
+    "icon": "primogemcraft:smclzf",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由持有 $(l:https://www.mcmod.cn/item/803151.html)『奇物』「神秘」磁力$() 的实体攻击给予。生效时持续给予 $(l:https://www.mcmod.cn/item/35457.html)发光$() 、 $(l:https://www.mcmod.cn/item/9382.html)力量$() V、 $(l:https://www.mcmod.cn/item/9389.html)抗火$() 、 $(l:https://www.mcmod.cn/item/9388.html)抗性提升$() IV、 $(l:https://www.mcmod.cn/item/9378.html)迅捷$() II效果。亡灵生物在效果结束时会重新添加该效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/841046.html)神秘磁力[增幅]"
+        }
+    ]
+}

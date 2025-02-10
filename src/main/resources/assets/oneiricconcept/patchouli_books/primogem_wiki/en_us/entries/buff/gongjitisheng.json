@@ -1,0 +1,15 @@
+{
+    "name": "攻击项增益",
+    "icon": "primogemcraft:gongjitisheng",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "当食用 $(l:https://www.mcmod.cn/item/706208.html)仙跳墙$() 时被赋予，同时提高1级 $(l:https://www.mcmod.cn/item/9382.html)力量$() 的等级，如果 $(l:https://www.mcmod.cn/item/9382.html)力量$() 的持续时间小于300秒，则设置为300秒。$(br)当持续时间结束时，减少1级 $(l:https://www.mcmod.cn/item/9382.html)力量$() 等级。$(br)提高力量等级的逻辑是在仙跳墙里的，所以用指令赋予这个效果是没有任何作用的，但结束时减少力量等级仍然有效（直接变成负面效果了属于是"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745353.html)攻击项增益"
+        }
+    ]
+}

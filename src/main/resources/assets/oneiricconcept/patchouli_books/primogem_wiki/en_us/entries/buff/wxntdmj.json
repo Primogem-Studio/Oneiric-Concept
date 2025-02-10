@@ -1,0 +1,15 @@
+{
+    "name": "无效念头代码机",
+    "icon": "primogemcraft:wxntdmj",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "攻击满生命值的生物时扣除自身50%当前饥饿值，每20秒至多触发一次。$(br)效果持续生效，不被牛奶和不死图腾解除，期间不会再触发 $(l:https://www.mcmod.cn/item/803148.html)『奇物』「无效念头」代码机$() 效果。$(br)食用 $(l:https://www.mcmod.cn/item/803149.html)咕钟三明治$() 以解除效果。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828644.html)无效念头代码机"
+        }
+    ]
+}

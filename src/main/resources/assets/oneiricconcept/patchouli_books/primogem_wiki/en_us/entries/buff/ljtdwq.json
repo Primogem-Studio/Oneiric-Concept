@@ -1,0 +1,15 @@
+{
+    "name": "垃圾桶的顽强！",
+    "icon": "primogemcraft:ljtdwq",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由 $(l:https://www.mcmod.cn/item/780547.html)铁质垃圾桶盖$() 持续给予，受到伤害是有4%概率免疫。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/841053.html)垃圾桶的顽强！"
+        }
+    ]
+}

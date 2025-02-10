@@ -1,0 +1,15 @@
+{
+    "name": "奇思狂想机械团",
+    "icon": "",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "获取 $(l:https://www.mcmod.cn/item/803150.html)『奇物』「奇思狂想」机械团$() 时获得，可被牛奶和不死图腾解除，状态效果生效期间不会再触发『奇物』「奇思狂想」机械团效果。$(br)减少食用食物恢复的饥饿值和饱和度，饥饿值收益减少50%，饱和度收益减少80%，蛋糕等放置类食物不受影响。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828651.html)奇思狂想机械团"
+        }
+    ]
+}

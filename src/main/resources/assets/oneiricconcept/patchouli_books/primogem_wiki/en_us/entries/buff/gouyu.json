@@ -1,0 +1,15 @@
+{
+    "name": "勾玉",
+    "icon": "primogemcraft:gouyu",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由 $(l:https://www.mcmod.cn/item/739205.html)『最胜紫晶』剑$() 赋予。$(br)持续时间内，当手持 $(l:https://www.mcmod.cn/item/739205.html)『最胜紫晶』剑$() 时$(br)赋予等级为（勾玉等级×2-1）的 $(l:https://www.mcmod.cn/item/9382.html)力量$()$(br)赋予等级为（勾玉等级×3-2）的 $(l:https://www.mcmod.cn/item/9378.html)迅捷$()$(br)赋予等级为勾玉等级的 $(l:https://www.mcmod.cn/item/9400.html)饱和$()$(br)赋予等级为2的 $(l:https://www.mcmod.cn/item/9389.html)抗火$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745355.html)勾玉"
+        }
+    ]
+}

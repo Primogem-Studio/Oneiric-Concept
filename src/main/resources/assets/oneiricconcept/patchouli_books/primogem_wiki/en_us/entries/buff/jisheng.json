@@ -1,0 +1,15 @@
+{
+    "name": "寄生",
+    "icon": "primogemcraft:jisheng",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l:https://www.mcmod.cn/item/706185.html)『奇物』虫网$() 存在物品栏时持续获得效果。$(br)持续给予力量I状态效果，生命值达到上限后扣除当前20%~60%的生命值，寄生结束时扣除等同于90%生命值上限的生命值。饥饿值小于12点（ ）时会在快捷栏上方标题位置显示：「它们饿了并准备啃食你」约3秒后扣除等同于90%生命值上限的生命值并设置饥饿值为13点（ ）。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745346.html)寄生"
+        }
+    ]
+}

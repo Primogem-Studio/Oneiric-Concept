@@ -1,0 +1,15 @@
+{
+    "name": "寄生虫的愤怒",
+    "icon": "primogemcraft:jijishengchongdefennu",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "当拥有寄生且饥饿值小于12时被赋予。$(br)拥有该效果时，若饥饿值在12以上，立即清除该效果；若饥饿值小于12，则对拥有者造成最大生命值80%的伤害。 1.1.6a0.2版本，代码里设置的是80%，但虫网描述里写的是90%"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745352.html)寄生虫的愤怒"
+        }
+    ]
+}

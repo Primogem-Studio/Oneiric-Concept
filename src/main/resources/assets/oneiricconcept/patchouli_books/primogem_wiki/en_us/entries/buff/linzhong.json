@@ -1,0 +1,15 @@
+{
+    "name": "临终",
+    "icon": "primogemcraft:linzhong",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l:https://www.mcmod.cn/item/711409.html)『奇物』异木果实$() 触发时获得。$(br)持续期间免疫任何伤害五次（包括kill和虚空伤害）状态效果结束时使用kill指令清除实体（创造模式下仍然生效，可触发 $(l:https://www.mcmod.cn/item/711536.html)丰饶$() 效果）。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745347.html)临终"
+        }
+    ]
+}

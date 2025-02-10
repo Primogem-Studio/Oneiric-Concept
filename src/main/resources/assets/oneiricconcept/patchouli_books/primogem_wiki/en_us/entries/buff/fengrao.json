@@ -1,0 +1,15 @@
+{
+    "name": "丰饶",
+    "icon": "primogemcraft:fengrao",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "饮用丰饶琼浆获得。亡灵生物在满足 $(l:https://www.mcmod.cn/item/723552.html)魔阴身$() 条件生成时有几率获得。$(br)持有此效果时有额外的粒子效果（贴图类似未知叶片）。$(br)受到致命伤害时触发并移除效果，将生命值设为生命上限的一半。获得短暂伤害和速度增益并给予1分钟的发光效果。非玩家实体移除魔阴身的抗性提升。$(br)非玩家实体有25%概率免疫伤害，获得速度III、力量II、防火。$(br)效果触发时有10%几率掉落 $(l:https://www.mcmod.cn/item/711423.html)未知叶片$() ，有1%概率掉落奇物。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/711536.html)丰饶"
+        }
+    ]
+}

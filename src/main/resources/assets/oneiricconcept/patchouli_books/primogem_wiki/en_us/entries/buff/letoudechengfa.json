@@ -1,0 +1,15 @@
+{
+    "name": "乐透的惩罚",
+    "icon": "primogemcraft:letoudechengfa",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l:https://www.mcmod.cn/item/706221.html)『奇物』真·银河大乐透$() 损坏时获得效果，将生命值限制为1点（ ），超出部分将被扣除。受到效果影响的玩家持有的牛奶进入长期冷却，无法使用牛奶解除效果。$(br)可以食用 $(l:https://www.mcmod.cn/item/706217.html)好看的垃圾$() 解除效果，死亡时也会清除此效果。$(br)状态效果结束后，移除牛奶的冷却。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745345.html)乐透的惩罚"
+        }
+    ]
+}

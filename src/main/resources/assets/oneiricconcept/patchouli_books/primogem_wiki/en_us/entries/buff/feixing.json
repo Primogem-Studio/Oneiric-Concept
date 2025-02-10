@@ -1,0 +1,15 @@
+{
+    "name": "飞行",
+    "icon": "primogemcraft:feixing",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "持续时间内，允许玩家飞行。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/745356.html)飞行"
+        }
+    ]
+}

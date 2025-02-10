@@ -1,0 +1,15 @@
+{
+    "name": "生命垂危",
+    "icon": "primogemcraft:x_gsmcw",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由持有俱乐部信仰凭证的实体攻击给予，减少生命上限。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/841059.html)生命垂危"
+        }
+    ]
+}

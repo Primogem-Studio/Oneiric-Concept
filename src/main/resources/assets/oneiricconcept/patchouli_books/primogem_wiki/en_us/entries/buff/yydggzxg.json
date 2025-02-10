@@ -1,0 +1,15 @@
+{
+    "name": "永动咕咕钟",
+    "icon": "primogemcraft:yydggzxg",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "每3分钟扣除自身5%当前经验值，击杀生物有概率掉落 $(l:https://www.mcmod.cn/item/793016.html)咕钟零件$() 。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/795642.html)永动咕咕钟"
+        }
+    ]
+}

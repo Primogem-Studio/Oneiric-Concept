@@ -1,0 +1,15 @@
+{
+    "name": "战斗状态",
+    "icon": "primogemcraft:zhandouzhuangtai",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "被攻击时，将有50%概率对攻击者施加5秒的以下随机一项负面效果：$(br)$(l:https://www.mcmod.cn/item/9397.html)凋零$() I；$(br)$(l:https://www.mcmod.cn/item/9379.html)缓慢$() III；$(br)$(l:https://www.mcmod.cn/item/9392.html)失明$() III；$(br)$(l:https://www.mcmod.cn/item/603336.html)黑暗$() III。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/828614.html)战斗状态"
+        }
+    ]
+}

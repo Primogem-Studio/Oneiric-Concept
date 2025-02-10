@@ -1,0 +1,15 @@
+{
+    "name": "咕钟把戏",
+    "icon": "primogemcraft:hslggzfuzhipin",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(l:https://www.mcmod.cn/item/793014.html)分裂咕咕钟$() 和 $(l:https://www.mcmod.cn/item/793013.html)黑森林咕咕钟$() 产生的额外怪物携带的效果。$(br)生效时，实体不掉落任何物品和经验。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/795643.html)咕钟把戏"
+        }
+    ]
+}

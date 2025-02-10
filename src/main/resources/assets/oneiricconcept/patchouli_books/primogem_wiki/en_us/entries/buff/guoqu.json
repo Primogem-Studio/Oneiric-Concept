@@ -1,0 +1,15 @@
+{
+    "name": "过去",
+    "icon": "primogemcraft:guoqu",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由各等级 $(l:https://)$() $(l:https://www.mcmod.cn/item/706294.html)最胜紫晶 锹$() 给予，记录获得时的生命值与位置，在状态效果结束（刷新）时或触发 $(l:https://www.mcmod.cn/item/706298.html)梦樱$() 效果时回溯到记录的状态。 跨维度使用 会传送至生效世界的对应记录坐标。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/707225.html)过去"
+        }
+    ]
+}

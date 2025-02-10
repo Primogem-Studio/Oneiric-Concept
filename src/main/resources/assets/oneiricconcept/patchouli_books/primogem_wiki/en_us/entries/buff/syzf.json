@@ -1,0 +1,15 @@
+{
+    "name": "三月祝福",
+    "icon": "primogemcraft:syzf",
+    "category": "oneiricconcept:buff",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "由 $(l:https://www.mcmod.cn/item/711435.html)三月祝福$() 持续给予，在受到摔落伤害时免疫。"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(br)$(l:https://www.mcmod.cn/item/841048.html)三月祝福"
+        }
+    ]
+}
