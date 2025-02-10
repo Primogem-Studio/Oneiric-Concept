@@ -1,11 +1,15 @@
 {
     "name": "雾切之回光",
-    "icon": "primogemcraft:wuqiezhihuiguang",
+    "icon": "primogemcraft:wqzhg",
     "category": "oneiricconcept:item_block",
     "pages": [
         {
             "type": "patchouli:text",
-            "text": "24w46e以后仅能通过祈愿获得。$(br)24w46b后：$(br)在主手时：$(br)9攻击伤害$(br)1.6攻击速度$(br)$(l:https://www.mcmod.cn/item/828652.html)武器强化$() 的精炼效果：$(br)精炼1：$(br)普通攻击$(br)每次攻击目标都将修复 0.5 点耐久度$(br)右键攻击$(br)消耗饥饿值对附近生物造成 30% 攻击力的闪电伤害$(br)潜行右击$(br)消耗相当于生命上限20%的生命值，给予自身 1 级持续0.25秒的 $(l:https://www.mcmod.cn/item/9400.html)饱和$() 效果。$(br)每精炼等级会提升：$(br)0.5耐久度 ；$(br)30%攻击力 ；$(br)1饱和效果等级 。$(br)可使用纠缠之缘在铁砧修复耐久。$(br)在主手时：$(br)精炼1：$(br)10攻击伤害$(br)1.2攻击速度$(br)精炼2：$(br)12攻击伤害$(br)1.3攻击速度$(br)精炼3：$(br)14攻击伤害$(br)1.5攻击速度$(br)精炼4：$(br)17攻击伤害$(br)2攻击速度$(br)精炼5：$(br)30攻击伤害$(br)3攻击速度"
+            "text": "在主手时：$(br)9攻击伤害$(br)1.6攻击速度$(br)$(l:https://www.mcmod.cn/item/828652.html)武器强化$() 的精炼效果：$(br)精炼1：$(br)普通攻击$(br)每次攻击目标都将修复 0.5 点耐久度$(br)右键攻击$(br)消耗饥饿值对附近生物造成 30% 攻击力的闪电伤害"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "潜行右击$(br)消耗相当于生命上限20%的生命值，给予自身 1 级持续0.25秒的 $(l:https://www.mcmod.cn/item/9400.html)饱和$() 效果。$(br)每精炼等级会提升：$(br)0.5耐久度 ；$(br)30%攻击力 ；$(br)1饱和效果等级 。$(br)可使用纠缠之缘在铁砧修复耐久。"
         },
         {
             "type": "patchouli:text",

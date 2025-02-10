@@ -1,6 +1,6 @@
 {
     "name": "武器强化",
-    "icon": "",
+    "icon": "minecraft:air",
     "category": "oneiricconcept:gamesettings",
     "pages": [
         {

@@ -1,6 +1,6 @@
 {
     "name": "右键出蓝",
-    "icon": "",
+    "icon": "minecraft:air",
     "category": "oneiricconcept:entity",
     "pages": [
         {
