@@ -13093,6 +13093,200 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Fishing",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/FishingScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/FishingMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/network/FishingSlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Fruitpastebait",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fruitpastebait",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/fruitpastebait.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/FruitpastebaitItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Fruitpastebait1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fruitpastebait_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fruitpastebait_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FruitpastebaitFish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fruitpastebait_fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FruitpastebaitFishProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetBait",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_bait",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetBaitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Bait",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bait",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BaitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Sweetflowermedaka",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetflowermedaka",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/sweetflowermedaka.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SweetflowermedakaItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Fishingoperate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishingoperate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FishingoperateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "fishs",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Fishdifficulty",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishdifficulty",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FishdifficultyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "fishs",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "OpenFishingGui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_fishing_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/OpenFishingGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -13504,6 +13698,9 @@
       "TAG:c:foods/milk",
       "TAG:c:foods/cheese"
     ],
+    "ITEMS:mod:fish_very_easy": [
+      "CUSTOM:Sweetflowermedaka"
+    ],
     "ITEMS:c:foods/milk": [
       "CUSTOM:Milk"
     ],
@@ -13539,7 +13736,8 @@
       "CUSTOM:Heartofthevastsea"
     ],
     "ITEMS:minecraft:fishes": [
-      "CUSTOM:Heartofthefish"
+      "CUSTOM:Heartofthefish",
+      "TAG:mod:fruit_paste_bait_fish"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
@@ -13547,6 +13745,9 @@
       "~CUSTOM:SwordOfBrilliantValor",
       "CUSTOM:XuanyuanSword",
       "CUSTOM:DarkXuanyuanSword"
+    ],
+    "ITEMS:mod:fruit_paste_bait_fish": [
+      "CUSTOM:Sweetflowermedaka"
     ],
     "ITEMS:minecraft:logs_that_burn": [
       "CUSTOM:TheAnotherWorldLog",
@@ -13570,6 +13771,7 @@
       "CUSTOM:SunStartCan"
     ],
     "ITEMS:minecraft:meat": [
+      "~CUSTOM:Sweetflowermedaka",
       "~CUSTOM:IceFreshRawFrostweaveSalmonSlices",
       "~CUSTOM:Fishcake",
       "~CUSTOM:GrilledDumpling",
@@ -13618,7 +13820,7 @@
       "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:minecraft:enchantable/fishing": [
-      "~CUSTOM:WildernessRod"
+      "TAG:mod:rod"
     ],
     "ITEMS:c:gem": [
       "CUSTOM:PgcPg",
@@ -13643,11 +13845,17 @@
     "BLOCKS:c:sugar_canes": [
       "Blocks.REEDS"
     ],
+    "ITEMS:c:bait": [
+      "CUSTOM:Fruitpastebait"
+    ],
     "BLOCKS:minecraft:saplings": [
       "~CUSTOM:BananaMushroom",
       "~CUSTOM:FreshSeedofDawn",
       "~CUSTOM:AmbrosialArborSapling",
       "~CUSTOM:TheAnotherWorldSapling"
+    ],
+    "ITEMS:mod:rod": [
+      "CUSTOM:WildernessRod"
     ],
     "BLOCKS:c:ambrosialarbor": [
       "CUSTOM:AmbrosialArborLog",
@@ -13719,6 +13927,7 @@
     "ITEMS:minecraft:axes": [
       "~CUSTOM:AureliaeAxe"
     ],
+    "ITEMS:mod:fish_easy": [],
     "ITEMS:c:b2sausage": [
       "CUSTOM:BelobogSausage",
       "CUSTOM:B2elobogSausage"
@@ -13871,7 +14080,9 @@
       "AmbergrisCheeseSliver",
       "Fishcake",
       "Sweetflower",
-      "IceFreshRawFrostweaveSalmonSlices"
+      "IceFreshRawFrostweaveSalmonSlices",
+      "Fruitpastebait",
+      "Sweetflowermedaka"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -13925,6 +14136,7 @@
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
       "block.oneiricconcept.sweetflower": "Sweet flower",
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
+      "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
@@ -14158,6 +14370,7 @@
       "block.oneiricconcept.big_stone": "Big Stone",
       "subtitles.mmm": "bump",
       "advancements.big_stone_crush_chest.title": "Big Stone Crush Chest",
+      "item.oneiricconcept.fruitpastebait": "Fruit paste bait",
       "item.oneiricconcept.salt_dust": "Salt Dust",
       "block.oneiricconcept.bactus": "Bactus",
       "block.oneiricconcept.pgc_present": "Present",
@@ -14341,6 +14554,7 @@
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "block.oneiricconcept.sweetflower": "甜甜花",
+      "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
@@ -14574,6 +14788,7 @@
       "block.oneiricconcept.big_stone": "大石头",
       "subtitles.mmm": "碰撞",
       "advancements.big_stone_crush_chest.title": "大石碎胸口",
+      "item.oneiricconcept.fruitpastebait": "Fruit paste bait",
       "item.oneiricconcept.salt_dust": "粗盐",
       "block.oneiricconcept.bactus": "仙帝掌",
       "block.oneiricconcept.pgc_present": "礼盒",

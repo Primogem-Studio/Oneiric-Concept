@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:wilderness_rod"
+    "oneiricconcept:wilderness_rod",
+    "#oneiricconcept:rod"
   ]
 }

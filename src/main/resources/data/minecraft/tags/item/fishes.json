@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:heartofthefish"
+    "oneiricconcept:heartofthefish",
+    "#oneiricconcept:fruit_paste_bait_fish"
   ]
 }

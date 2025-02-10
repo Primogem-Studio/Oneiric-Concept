@@ -31,6 +31,7 @@ import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
 import net.mcreator.oneiricconcept.item.SwordOfBrilliantValorItem;
+import net.mcreator.oneiricconcept.item.SweetflowermedakaItem;
 import net.mcreator.oneiricconcept.item.SweetSesameFillingYuanXiaoItem;
 import net.mcreator.oneiricconcept.item.SustenanceanchoritemItem;
 import net.mcreator.oneiricconcept.item.SurpriseboxforgoodorbadItem;
@@ -91,6 +92,7 @@ import net.mcreator.oneiricconcept.item.HeartofthefrozenseaItem;
 import net.mcreator.oneiricconcept.item.HeartofthefishItem;
 import net.mcreator.oneiricconcept.item.GrilledOyDumplingItem;
 import net.mcreator.oneiricconcept.item.GrilledDumplingItem;
+import net.mcreator.oneiricconcept.item.FruitpastebaitItem;
 import net.mcreator.oneiricconcept.item.FishcakeItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
@@ -396,6 +398,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SWEETFLOWER = block(OneiricconceptModBlocks.SWEETFLOWER);
 	public static final DeferredItem<Item> ICE_FRESH_RAW_FROSTWEAVE_SALMON_SLICES = REGISTRY.register("ice_fresh_raw_frostweave_salmon_slices", IceFreshRawFrostweaveSalmonSlicesItem::new);
 	public static final DeferredItem<Item> XUANYUAN_ARROW = REGISTRY.register("xuanyuan_arrow", XuanyuanArrowItem::new);
+	public static final DeferredItem<Item> FRUITPASTEBAIT = REGISTRY.register("fruitpastebait", FruitpastebaitItem::new);
+	public static final DeferredItem<Item> SWEETFLOWERMEDAKA = REGISTRY.register("sweetflowermedaka", SweetflowermedakaItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
