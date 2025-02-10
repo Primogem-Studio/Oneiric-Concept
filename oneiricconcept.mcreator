@@ -13080,6 +13080,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Wildernessrod1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wildernessrod_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/wildernessrod_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
