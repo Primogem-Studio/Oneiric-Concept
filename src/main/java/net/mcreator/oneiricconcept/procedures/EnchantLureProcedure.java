@@ -1,5 +1,7 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
@@ -39,7 +41,7 @@ public class EnchantLureProcedure {
 				final double _tagValue = (roditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lure") + baitem.getCount());
 				CustomData.update(DataComponents.CUSTOM_DATA, roditem, tag -> tag.putDouble(_tagName, _tagValue));
 			}
-			enchantlevel = roditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lure");
+			lurelevel = roditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lure");
 			if (enchantlevel < 1 && lurelevel >= 128) {
 				EnchantLevelUp = true;
 			} else if (enchantlevel < 2 && lurelevel >= 256) {
@@ -50,12 +52,26 @@ public class EnchantLureProcedure {
 				EnchantLevelUp = true;
 			} else if (enchantlevel < 5 && lurelevel >= 2048) {
 				EnchantLevelUp = true;
+			} else if (enchantlevel >= 5) {
+				EnchantLevelUp = false;
 			}
 			if (EnchantLevelUp) {
 				roditem.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LURE), (int) (enchantlevel + 1));
+				baitem.shrink(baitem.getCount());
 				{
 					final String _tagName = "lure";
 					final double _tagValue = (lurelevel - Math.pow(2, enchantlevel + 7));
+					CustomData.update(DataComponents.CUSTOM_DATA, roditem, tag -> tag.putDouble(_tagName, _tagValue));
+				}
+			} else {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = baitem.copy();
+					_setstack.setCount((int) lurelevel);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+				{
+					final String _tagName = "lure";
+					final double _tagValue = 0;
 					CustomData.update(DataComponents.CUSTOM_DATA, roditem, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 			}
