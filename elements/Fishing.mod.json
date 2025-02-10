@@ -4,10 +4,10 @@
   "definition": {
     "type": 1,
     "width": 176,
-    "height": 166,
+    "height": 88,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
-    "renderBgLayer": false,
+    "inventoryOffsetY": -38,
+    "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
@@ -28,8 +28,8 @@
           "onSlotChanged": {
             "name": "Bait"
           },
-          "x": 126,
-          "y": 184,
+          "x": 74,
+          "y": 108,
           "locked": false
         }
       }

@@ -85,7 +85,7 @@ public class FishingMenu extends AbstractContainerMenu implements Supplier<Map<I
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 1, 148) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, -51, 33) {
 			private final int slot = 0;
 			private int x = FishingMenu.this.x;
 			private int y = FishingMenu.this.y;
@@ -103,9 +103,9 @@ public class FishingMenu extends AbstractContainerMenu implements Supplier<Map<I
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, -77 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, -77 + 142));
 	}
 
 	@Override

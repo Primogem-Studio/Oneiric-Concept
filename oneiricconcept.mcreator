@@ -13287,6 +13287,52 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "OcRodFish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oc_rod_fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/OcRodFishProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "EnchantLure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchant_lure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EnchantLureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -13490,6 +13536,9 @@
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:BigStone"
+    ],
+    "ITEMS:mod:fish": [
+      "TAG:mod:fruit_paste_bait_fish"
     ],
     "ITEMS:c:metal": [
       "CUSTOM:Agnid1",
@@ -13737,7 +13786,7 @@
     ],
     "ITEMS:minecraft:fishes": [
       "CUSTOM:Heartofthefish",
-      "TAG:mod:fruit_paste_bait_fish"
+      "TAG:mod:fish"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:AureliaeSword",
@@ -13820,6 +13869,7 @@
       "~CUSTOM:TheAnotherWorldLeave"
     ],
     "ITEMS:minecraft:enchantable/fishing": [
+      "~CUSTOM:WildernessRod",
       "TAG:mod:rod"
     ],
     "ITEMS:c:gem": [
@@ -14081,8 +14131,8 @@
       "Fishcake",
       "Sweetflower",
       "IceFreshRawFrostweaveSalmonSlices",
-      "Fruitpastebait",
-      "Sweetflowermedaka"
+      "Sweetflowermedaka",
+      "Fruitpastebait"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -14113,8 +14163,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "effect.oneiricconcept.b_2sausage": "weird sausage，Defeat the player",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -14134,8 +14184,8 @@
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
-      "block.oneiricconcept.sweetflower": "Sweet flower",
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
+      "block.oneiricconcept.sweetflower": "Sweet flower",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
@@ -14214,6 +14264,7 @@
       "item.oneiricconcept.oy_stuffing.description_0": "§7Right... right?",
       "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
       "advancements.shootingthesun.title": "Shooting the sun",
+      "translation.oneiricconcept.lure": "Enchanting Progress",
       "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
       "block.oneiricconcept.ambrosial_arbor_wood": "Ambrosial Arbor Wood",
       "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
@@ -14531,8 +14582,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -14552,8 +14603,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "block.oneiricconcept.sweetflower": "甜甜花",
+      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -14632,6 +14683,7 @@
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
       "advancements.shootingthesun.title": "Shooting the sun",
+      "translation.oneiricconcept.lure": "附魔进度：",
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
       "block.oneiricconcept.ambrosial_arbor_wood": "建木",
       "item.oneiricconcept.a_propaganda_army": "一个水军",
