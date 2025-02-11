@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.neoforged.neoforge.items.ItemHandlerHelper;
-
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
@@ -24,9 +22,11 @@ public class EnchantLureProcedure {
 			return;
 		ItemStack roditem = ItemStack.EMPTY;
 		ItemStack baitem = ItemStack.EMPTY;
+		boolean EnchantLevelUp = false;
 		double enchantlevel = 0;
 		double lurelevel = 0;
-		boolean EnchantLevelUp = false;
+		double levelupdemand = 0;
+		double delitem = 0;
 		roditem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
 		baitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		enchantlevel = roditem.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LURE));
@@ -42,42 +42,38 @@ public class EnchantLureProcedure {
 				CustomData.update(DataComponents.CUSTOM_DATA, roditem, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			lurelevel = roditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lure");
-			if (enchantlevel < 1 && lurelevel >= 128) {
-				EnchantLevelUp = true;
-			} else if (enchantlevel < 2 && lurelevel >= 256) {
-				EnchantLevelUp = true;
-			} else if (enchantlevel < 3 && lurelevel >= 512) {
-				EnchantLevelUp = true;
-			} else if (enchantlevel < 4 && lurelevel >= 1024) {
-				EnchantLevelUp = true;
-			} else if (enchantlevel < 5 && lurelevel >= 2048) {
-				EnchantLevelUp = true;
-			} else if (enchantlevel >= 5) {
-				EnchantLevelUp = false;
-			}
-			if (EnchantLevelUp) {
-				roditem.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LURE), (int) (enchantlevel + 1));
-				baitem.shrink(baitem.getCount());
-				{
-					final String _tagName = "lure";
-					final double _tagValue = (lurelevel - Math.pow(2, enchantlevel + 7));
-					CustomData.update(DataComponents.CUSTOM_DATA, roditem, tag -> tag.putDouble(_tagName, _tagValue));
-				}
-			} else {
-				if (entity instanceof Player _player) {
-					ItemStack _setstack = baitem.copy();
-					_setstack.setCount((int) lurelevel);
-					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-				}
+			levelupdemand = Math.pow(2, enchantlevel + 7);
+			delitem = baitem.getCount();
+			if (enchantlevel >= 5) {
 				{
 					final String _tagName = "lure";
 					final double _tagValue = 0;
 					CustomData.update(DataComponents.CUSTOM_DATA, roditem, tag -> tag.putDouble(_tagName, _tagValue));
 				}
+				delitem = 0;
+			} else if (lurelevel >= levelupdemand) {
+				EnchantLevelUp = true;
 			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.lure").getString() + "\u00A7e" + roditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lure")
-						+ "\u00A7r/\u00A7d" + Math.pow(2, enchantlevel + 7))), true);
+			baitem.shrink((int) delitem);
+			if (EnchantLevelUp) {
+				roditem.enchant(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LURE), (int) (enchantlevel + 1));
+				{
+					final String _tagName = "lure";
+					final double _tagValue = (lurelevel - levelupdemand);
+					CustomData.update(DataComponents.CUSTOM_DATA, roditem, tag -> tag.putDouble(_tagName, _tagValue));
+				}
+			}
+			if (EnchantLevelUp) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.lurelevelup").getString())), true);
+			} else if (enchantlevel < 5) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.lure").getString() + "\u00A7e" + roditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("lure")
+							+ "\u00A7r/\u00A7d" + Math.pow(2, enchantlevel + 7))), true);
+			} else {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.lurelevelmax").getString())), true);
+			}
 		}
 	}
 }
