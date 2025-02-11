@@ -14095,7 +14095,9 @@
     "ITEMS:c:foods/fruit": [
       "Items.APPLE",
       "Items.MELON",
-      "Items.CHORUS_FRUIT"
+      "Items.CHORUS_FRUIT",
+      "TAG:minecraft:fox_food",
+      "CUSTOM:Primogemfruit"
     ],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:AureliaeHoe"
