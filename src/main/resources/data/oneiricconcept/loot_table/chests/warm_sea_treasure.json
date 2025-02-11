@@ -148,7 +148,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:cooked_cod",
+          "name": "oneiricconcept:fish",
           "weight": 1,
           "functions": [
             {

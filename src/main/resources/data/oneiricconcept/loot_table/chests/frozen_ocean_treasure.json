@@ -151,7 +151,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:cod",
+          "name": "oneiricconcept:fish",
           "weight": 1,
           "functions": [
             {
