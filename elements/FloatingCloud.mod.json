@@ -44,7 +44,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:OneiricConcept"
+        "value": "OP_BLOCKS"
       }
     ],
     "destroyTool": "Not specified",

@@ -46,6 +46,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.MEMORIA_LOOT.get());
 				tabData.accept(OneiricconceptModItems.MEMORIA_BUCKET.get());
 				tabData.accept(OneiricconceptModItems.XUANYUAN_SWORD.get());
+				tabData.accept(OneiricconceptModItems.XUANYUAN_ARROW.get());
 				tabData.accept(OneiricconceptModItems.DARK_XUANYUAN_SWORD.get());
 				tabData.accept(OneiricconceptModItems.D_XUANYUAN.get());
 				tabData.accept(OneiricconceptModItems.HONKAI_SHARD.get());
@@ -83,7 +84,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.A_PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.LESS_REDSTONE_POWDER.get());
-				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
 				tabData.accept(OneiricconceptModItems.SUSTENANCEANCHORITEM.get());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_SAPLING.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE.get().asItem());
@@ -112,9 +112,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PHLOGISTON_CONTROLLER.get());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON_WING_CHESTPLATE.get());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON.get());
-				tabData.accept(OneiricconceptModBlocks.CAMERAPINK.get().asItem());
 				tabData.accept(OneiricconceptModItems.WILDERNESS_ROD.get());
-				tabData.accept(OneiricconceptModItems.XUANYUAN_ARROW.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -151,12 +149,12 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.FISHCAKE.get());
 				tabData.accept(OneiricconceptModBlocks.SWEETFLOWER.get().asItem());
 				tabData.accept(OneiricconceptModItems.ICE_FRESH_RAW_FROSTWEAVE_SALMON_SLICES.get());
-				tabData.accept(OneiricconceptModItems.SWEETFLOWERMEDAKA.get());
-				tabData.accept(OneiricconceptModItems.FRUITPASTEBAIT.get());
 				tabData.accept(OneiricconceptModItems.FISH.get());
+				tabData.accept(OneiricconceptModItems.FRUITPASTEBAIT.get());
 				tabData.accept(OneiricconceptModItems.MEDAKA.get());
-				tabData.accept(OneiricconceptModItems.GLAZEMEDAKA.get());
 				tabData.accept(OneiricconceptModItems.AIZENMEDAKA.get());
+				tabData.accept(OneiricconceptModItems.SWEETFLOWERMEDAKA.get());
+				tabData.accept(OneiricconceptModItems.GLAZEMEDAKA.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {
@@ -182,6 +180,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.DENDROSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CRYOSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.GEOSEALINGWAX.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CAMERAPINK.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent
@@ -190,6 +190,7 @@ public class OneiricconceptModTabs {
 			if (tabData.hasPermissions()) {
 				tabData.accept(OneiricconceptModItems.ADEPTUS_GUN.get());
 				tabData.accept(OneiricconceptModItems.EXAMPLE.get());
+				tabData.accept(OneiricconceptModBlocks.FLOATING_CLOUD.get().asItem());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
 				tabData.accept(OneiricconceptModItems.PRIMOGEMCRAFTWIKI.get());
 			}

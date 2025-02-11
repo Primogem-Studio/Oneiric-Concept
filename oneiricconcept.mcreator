@@ -14166,7 +14166,6 @@
       "BananaMushroomBock",
       "CloudBottle",
       "Cloud",
-      "FloatingCloud",
       "AgnidusAgateOre",
       "VarunadaLazuriteOre",
       "VayudaTurquoiseOre",
@@ -14183,6 +14182,7 @@
       "MemoriaLoot",
       "Memoria",
       "XuanyuanSword",
+      "XuanyuanArrow",
       "DarkXuanyuanSword",
       "DXuanyuan",
       "HonkaiShard",
@@ -14220,7 +14220,6 @@
       "PropagandaArmy",
       "APropagandaArmy",
       "LessRedstonePowder",
-      "Camera",
       "Sustenanceanchoritem",
       "AmbrosialArborSapling",
       "AmbrosialArborLeave",
@@ -14249,9 +14248,7 @@
       "PhlogistonController",
       "PhlogistonWing",
       "Phlogiston",
-      "Camerapink",
-      "WildernessRod",
-      "XuanyuanArrow"
+      "WildernessRod"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -14287,12 +14284,12 @@
       "Fishcake",
       "Sweetflower",
       "IceFreshRawFrostweaveSalmonSlices",
-      "Sweetflowermedaka",
-      "Fruitpastebait",
       "PlumpFish",
+      "Fruitpastebait",
       "Medaka",
-      "Glazemedaka",
-      "Aizenmedaka"
+      "Aizenmedaka",
+      "Sweetflowermedaka",
+      "Glazemedaka"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -14316,7 +14313,9 @@
       "Electrosealingwax",
       "Dendrosealingwax",
       "Cryosealingwax",
-      "Geosealingwax"
+      "Geosealingwax",
+      "Camerapink",
+      "Camera"
     ]
   },
   "language_map": {
@@ -14775,7 +14774,7 @@
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
-      "item.oneiricconcept.aizenmedaka": "Aizenmedaka",
+      "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
@@ -14869,7 +14868,7 @@
       "item.oneiricconcept.sword_of_brilliant_valor.description_0": "§7当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
       "block.oneiricconcept.elect_9": "永恒金属锭",
       "block.oneiricconcept.elect_8": "永恒金属锭",
-      "item_group.oneiricconcept.oneiric_concept_decoration": "梦华构想 原石工艺",
+      "item_group.oneiricconcept.oneiric_concept_decoration": "梦华构想 装饰",
       "item.oneiricconcept.memoria_loot.description_0": "§7让眠眠给你送回来",
       "block.oneiricconcept.geomarrow_radiator.description_0": "§7用于加工香肠、小麦种子、异世界树苗和云。",
       "item.oneiricconcept.less_redstone_powder": "小堆红石粉",
@@ -14886,7 +14885,7 @@
       "item.oneiricconcept.oneiric_shard": "古老梦华",
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣♦",
-      "item.oneiricconcept.fish": "Plump Fish",
+      "item.oneiricconcept.fish": "鱼肉",
       "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
       "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
@@ -15075,7 +15074,7 @@
       "item.oneiricconcept.smoke_sausage": "熏肠",
       "block.oneiricconcept.redmo_10": "赤月锭",
       "item.oneiricconcept.oy_stuffing": "肉馅",
-      "item.oneiricconcept.medaka": "Medaka",
+      "item.oneiricconcept.medaka": "花鳉",
       "gamerule.ocHealthmultiplier": "生命倍率",
       "block.oneiricconcept.geooo_10": "繁荣金属锭",
       "block.oneiricconcept.cryosealingwax": "冰之印",
@@ -15110,7 +15109,7 @@
       "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
-      "item.oneiricconcept.glazemedaka": "Glaze medaka",
+      "item.oneiricconcept.glazemedaka": "琉璃花鳉",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
       "block.oneiricconcept.geooo_1": "繁荣金属锭",
       "gamerule.ocdebug": "§6梦华构想调试",
