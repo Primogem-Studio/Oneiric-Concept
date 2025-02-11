@@ -12,7 +12,7 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "TAG:c:healthmeat"
+        "value": "TAG:mod:healthymeat"
       },
       {
         "value": ""
@@ -21,7 +21,7 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "TAG:minecraft:leaves"
       },
       {
         "value": ""

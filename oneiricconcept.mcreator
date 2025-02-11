@@ -13536,6 +13536,10 @@
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
       "~CUSTOM:Hbond10",
@@ -13687,6 +13691,7 @@
     "ITEMS:mod:fish": [
       "TAG:mod:fruit_paste_bait_fish"
     ],
+    "ITEMS:c:foods/cooked_fish": [],
     "ITEMS:c:metal": [
       "CUSTOM:Agnid1",
       "CUSTOM:Agnid2",
@@ -13810,6 +13815,12 @@
       "CUSTOM:Hbond9",
       "CUSTOM:Hbond10"
     ],
+    "ITEMS:mod:healthymeat": [
+      "TAG:c:foods/cooked_meat",
+      "TAG:c:foods/raw_meat",
+      "TAG:c:foods/safe_raw_fish",
+      "TAG:c:foods/cooked_fish"
+    ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:Texturewayfareblessing",
       "~CUSTOM:NagadusEmeraldOre",
@@ -13868,12 +13879,6 @@
       "~CUSTOM:CrystalTurtle"
     ],
     "ITEMS:c:foods": [
-      "CUSTOM:Sausage",
-      "CUSTOM:SmokeSausage",
-      "CUSTOM:BelobogSausage",
-      "CUSTOM:S2ausage",
-      "CUSTOM:S2mokeSausage",
-      "CUSTOM:B2elobogSausage",
       "CUSTOM:Stuffing",
       "CUSTOM:S2tuffing",
       "CUSTOM:MoraSausage",
@@ -14098,29 +14103,6 @@
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:AureliaeHoe"
     ],
-    "ITEMS:c:healthmeat": [
-      "Items.FISH#0",
-      "Items.FISH#1",
-      "Items.FISH#2",
-      "Items.COOKED_FISH#0",
-      "Items.COOKED_FISH#1",
-      "Items.PORKCHOP",
-      "Items.COOKED_PORKCHOP",
-      "Items.BEEF",
-      "Items.COOKED_BEEF",
-      "Items.CHICKEN",
-      "Items.COOKED_CHICKEN",
-      "Items.RABBIT",
-      "Items.COOKED_RABBIT",
-      "Items.MUTTON",
-      "Items.COOKED_MUTTON",
-      "TAG:c:foods/raw_fishes",
-      "CUSTOM:IceFreshRawFrostweaveSalmonSlices",
-      "CUSTOM:PlumpFish"
-    ],
-    "ITEMS:c:foods/raw_fishes": [
-      "CUSTOM:IceFreshRawFrostweaveSalmonSlices"
-    ],
     "ITEMS:oneiricconcept:magazine": [
       "CUSTOM:MoraMagazine",
       "CUSTOM:MoraMagazineN2",
@@ -14137,6 +14119,10 @@
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:FloatingCloud",
       "~CUSTOM:Memoria"
+    ],
+    "ITEMS:c:foods/safe_raw_fish": [
+      "TAG:mod:fish",
+      "CUSTOM:IceFreshRawFrostweaveSalmonSlices"
     ],
     "ITEMS:c:cheese": [
       "TAG:c:foods/cheese"
@@ -14163,6 +14149,9 @@
     "BLOCKS:minecraft:dragon_immune": [
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
+    ],
+    "ITEMS:c:foods/raw_meat": [
+      "TAG:c:sausage"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:SharpHook"

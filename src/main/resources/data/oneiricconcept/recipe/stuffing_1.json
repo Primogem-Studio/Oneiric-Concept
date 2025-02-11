@@ -3,7 +3,10 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "c:healthmeat"
+      "tag": "oneiricconcept:healthymeat"
+    },
+    {
+      "tag": "minecraft:leaves"
     }
   ],
   "result": {
