@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "oneiricconcept:fishsize_1"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:fish",
+    "count": 1
+  }
+}

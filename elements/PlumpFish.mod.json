@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fruit_paste_bait",
+    "texture": "plumpfish",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Fruit paste bait",
+    "name": "Plump Fish",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -36,9 +36,6 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntitySwing": {
-      "name": "EnchantLure"
-    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -47,12 +44,12 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 2,
+    "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,

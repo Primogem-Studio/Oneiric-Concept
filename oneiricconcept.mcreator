@@ -13359,6 +13359,33 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "PlumpFish",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/PlumpFishItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/fish.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Fish1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fish_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -13831,6 +13858,9 @@
       "CUSTOM:AmbrosialArborLog",
       "CUSTOM:AmbrosialArborWood"
     ],
+    "ITEMS:mod:fishsize_1": [
+      "TAG:mod:fruit_paste_bait_fish"
+    ],
     "ITEMS:pgc:qyhx_hc": [
       "CUSTOM:Stuffing",
       "CUSTOM:S2tuffing",
@@ -13846,6 +13876,7 @@
       "CUSTOM:SunStartCan"
     ],
     "ITEMS:minecraft:meat": [
+      "~CUSTOM:PlumpFish",
       "~CUSTOM:Sweetflowermedaka",
       "~CUSTOM:IceFreshRawFrostweaveSalmonSlices",
       "~CUSTOM:Fishcake",
@@ -13980,7 +14011,10 @@
       "Items.COOKED_RABBIT",
       "Items.MUTTON",
       "Items.COOKED_MUTTON",
-      "TAG:c:foods/raw_fishes"
+      "TAG:c:foods/raw_fishes",
+      "CUSTOM:IceFreshRawFrostweaveSalmonSlices",
+      "CUSTOM:Sweetflowermedaka",
+      "CUSTOM:PlumpFish"
     ],
     "ITEMS:c:foods/raw_fishes": [
       "CUSTOM:IceFreshRawFrostweaveSalmonSlices"
@@ -14163,7 +14197,8 @@
       "Sweetflower",
       "IceFreshRawFrostweaveSalmonSlices",
       "Sweetflowermedaka",
-      "Fruitpastebait"
+      "Fruitpastebait",
+      "PlumpFish"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -14331,6 +14366,7 @@
       "item.oneiricconcept.oneiric_shard": "Oneiric Shard",
       "block.oneiricconcept.cloud": "Cloud",
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine♦",
+      "item.oneiricconcept.fish": "Plump Fish",
       "item.oneiricconcept.mora_magazine_e_2": "Extended Mora Magazine♦♦",
       "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
@@ -14752,6 +14788,7 @@
       "item.oneiricconcept.oneiric_shard": "古老梦华",
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣♦",
+      "item.oneiricconcept.fish": "Plump Fish",
       "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
       "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",

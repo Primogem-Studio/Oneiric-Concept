@@ -54,6 +54,7 @@ import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
 import net.mcreator.oneiricconcept.item.PrimogemfruitItem;
 import net.mcreator.oneiricconcept.item.PrimogemcraftwikiItem;
 import net.mcreator.oneiricconcept.item.PrimogemWaffleItem;
+import net.mcreator.oneiricconcept.item.PlumpFishItem;
 import net.mcreator.oneiricconcept.item.PhlogistonWingItem;
 import net.mcreator.oneiricconcept.item.PhlogistonItem;
 import net.mcreator.oneiricconcept.item.PhlogistonCrystalItem;
@@ -400,6 +401,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> XUANYUAN_ARROW = REGISTRY.register("xuanyuan_arrow", XuanyuanArrowItem::new);
 	public static final DeferredItem<Item> FRUITPASTEBAIT = REGISTRY.register("fruitpastebait", FruitpastebaitItem::new);
 	public static final DeferredItem<Item> SWEETFLOWERMEDAKA = REGISTRY.register("sweetflowermedaka", SweetflowermedakaItem::new);
+	public static final DeferredItem<Item> FISH = REGISTRY.register("fish", PlumpFishItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

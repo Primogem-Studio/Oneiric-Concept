@@ -16,6 +16,9 @@
     "minecraft:cooked_rabbit",
     "minecraft:mutton",
     "minecraft:cooked_mutton",
-    "#c:foods/raw_fishes"
+    "#c:foods/raw_fishes",
+    "oneiricconcept:ice_fresh_raw_frostweave_salmon_slices",
+    "oneiricconcept:sweetflowermedaka",
+    "oneiricconcept:fish"
   ]
 }
