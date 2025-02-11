@@ -154,6 +154,9 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SWEETFLOWERMEDAKA.get());
 				tabData.accept(OneiricconceptModItems.FRUITPASTEBAIT.get());
 				tabData.accept(OneiricconceptModItems.FISH.get());
+				tabData.accept(OneiricconceptModItems.MEDAKA.get());
+				tabData.accept(OneiricconceptModItems.GLAZEMEDAKA.get());
+				tabData.accept(OneiricconceptModItems.AIZENMEDAKA.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {

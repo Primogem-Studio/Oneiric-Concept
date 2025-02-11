@@ -77,6 +77,7 @@ import net.mcreator.oneiricconcept.item.MemoryBubbleItem;
 import net.mcreator.oneiricconcept.item.MemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.MemoriaLootItem;
 import net.mcreator.oneiricconcept.item.MemoriaItem;
+import net.mcreator.oneiricconcept.item.MedakaItem;
 import net.mcreator.oneiricconcept.item.LessRedstonePowderItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
@@ -93,6 +94,7 @@ import net.mcreator.oneiricconcept.item.HeartofthefrozenseaItem;
 import net.mcreator.oneiricconcept.item.HeartofthefishItem;
 import net.mcreator.oneiricconcept.item.GrilledOyDumplingItem;
 import net.mcreator.oneiricconcept.item.GrilledDumplingItem;
+import net.mcreator.oneiricconcept.item.GlazemedakaItem;
 import net.mcreator.oneiricconcept.item.FruitpastebaitItem;
 import net.mcreator.oneiricconcept.item.FishcakeItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
@@ -115,6 +117,7 @@ import net.mcreator.oneiricconcept.item.AureliaePickaxeItem;
 import net.mcreator.oneiricconcept.item.AureliaeHoeItem;
 import net.mcreator.oneiricconcept.item.AureliaeAxeItem;
 import net.mcreator.oneiricconcept.item.AmbergrisCheeseSliverItem;
+import net.mcreator.oneiricconcept.item.AizenmedakaItem;
 import net.mcreator.oneiricconcept.item.AdeptusGunItem;
 import net.mcreator.oneiricconcept.item.APropagandaArmyItem;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
@@ -402,6 +405,9 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> FRUITPASTEBAIT = REGISTRY.register("fruitpastebait", FruitpastebaitItem::new);
 	public static final DeferredItem<Item> SWEETFLOWERMEDAKA = REGISTRY.register("sweetflowermedaka", SweetflowermedakaItem::new);
 	public static final DeferredItem<Item> FISH = REGISTRY.register("fish", PlumpFishItem::new);
+	public static final DeferredItem<Item> MEDAKA = REGISTRY.register("medaka", MedakaItem::new);
+	public static final DeferredItem<Item> GLAZEMEDAKA = REGISTRY.register("glazemedaka", GlazemedakaItem::new);
+	public static final DeferredItem<Item> AIZENMEDAKA = REGISTRY.register("aizenmedaka", AizenmedakaItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "plumpfish",
+    "texture": "aizen_medaka",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Fish",
+    "name": "Aizenmedaka",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -44,12 +44,12 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 4,
+    "nutritionalValue": 6,
     "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": true,
+    "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,

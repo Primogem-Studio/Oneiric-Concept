@@ -13386,6 +13386,100 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Sweetfish1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "sweetfish_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/sweetfish_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Medaka",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "medaka",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/medaka.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MedakaItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Glazemedaka",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glazemedaka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/GlazemedakaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/glazemedaka.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Aizenmedaka",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aizenmedaka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/AizenmedakaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/aizenmedaka.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Aizenfish1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "aizenfish_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/aizenfish_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Glazefish1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "glazefish_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/glazefish_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Fish2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fish_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fish_2.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -13801,7 +13895,10 @@
       "TAG:c:foods/cheese"
     ],
     "ITEMS:mod:fish_very_easy": [
-      "CUSTOM:Sweetflowermedaka"
+      "CUSTOM:Sweetflowermedaka",
+      "CUSTOM:Medaka",
+      "CUSTOM:Glazemedaka",
+      "CUSTOM:Aizenmedaka"
     ],
     "ITEMS:c:foods/milk": [
       "CUSTOM:Milk"
@@ -13849,7 +13946,10 @@
       "CUSTOM:DarkXuanyuanSword"
     ],
     "ITEMS:mod:fruit_paste_bait_fish": [
-      "CUSTOM:Sweetflowermedaka"
+      "CUSTOM:Sweetflowermedaka",
+      "CUSTOM:Medaka",
+      "CUSTOM:Glazemedaka",
+      "CUSTOM:Aizenmedaka"
     ],
     "ITEMS:minecraft:logs_that_burn": [
       "CUSTOM:TheAnotherWorldLog",
@@ -13938,6 +14038,9 @@
       "CUSTOM:PgcPge",
       "CUSTOM:PgcPgf"
     ],
+    "ITEMS:mod:normalfishsize_1": [
+      "CUSTOM:Medaka"
+    ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:MoltenMetalBlock",
       "~CUSTOM:AgnidusAgateOre",
@@ -14013,7 +14116,6 @@
       "Items.COOKED_MUTTON",
       "TAG:c:foods/raw_fishes",
       "CUSTOM:IceFreshRawFrostweaveSalmonSlices",
-      "CUSTOM:Sweetflowermedaka",
       "CUSTOM:PlumpFish"
     ],
     "ITEMS:c:foods/raw_fishes": [
@@ -14198,7 +14300,10 @@
       "IceFreshRawFrostweaveSalmonSlices",
       "Sweetflowermedaka",
       "Fruitpastebait",
-      "PlumpFish"
+      "PlumpFish",
+      "Medaka",
+      "Glazemedaka",
+      "Aizenmedaka"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -14256,6 +14361,7 @@
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
+      "item.oneiricconcept.aizenmedaka": "Aizenmedaka",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
@@ -14366,7 +14472,7 @@
       "item.oneiricconcept.oneiric_shard": "Oneiric Shard",
       "block.oneiricconcept.cloud": "Cloud",
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine♦",
-      "item.oneiricconcept.fish": "Plump Fish",
+      "item.oneiricconcept.fish": "Fish",
       "item.oneiricconcept.mora_magazine_e_2": "Extended Mora Magazine♦♦",
       "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
@@ -14555,6 +14661,7 @@
       "item.oneiricconcept.smoke_sausage": "Smoke Sausage",
       "block.oneiricconcept.redmo_10": "red moon ingot",
       "item.oneiricconcept.oy_stuffing": "stuffing",
+      "item.oneiricconcept.medaka": "Medaka",
       "gamerule.ocHealthmultiplier": "Health multiplier",
       "block.oneiricconcept.geooo_10": "Prithiva_metal_ingot",
       "block.oneiricconcept.cryosealingwax": "Cryo sealing wax",
@@ -14589,6 +14696,7 @@
       "death.attack.honkai": "%1$s Reduced to ashes by Honkai energy",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "item.oneiricconcept.phlogiston_crystal": "Phlogiston Crystal",
+      "item.oneiricconcept.glazemedaka": "Glaze medaka",
       "gamerule.ocHealthmultiplier.description": "Control the multiplier of partial life changes",
       "block.oneiricconcept.geooo_1": "Prithiva_metal_ingot",
       "gamerule.ocdebug": "ocdebug",
@@ -14678,6 +14786,7 @@
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
+      "item.oneiricconcept.aizenmedaka": "Aizenmedaka",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
@@ -14977,6 +15086,7 @@
       "item.oneiricconcept.smoke_sausage": "熏肠",
       "block.oneiricconcept.redmo_10": "赤月锭",
       "item.oneiricconcept.oy_stuffing": "肉馅",
+      "item.oneiricconcept.medaka": "Medaka",
       "gamerule.ocHealthmultiplier": "生命倍率",
       "block.oneiricconcept.geooo_10": "繁荣金属锭",
       "block.oneiricconcept.cryosealingwax": "冰之印",
@@ -15011,6 +15121,7 @@
       "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
+      "item.oneiricconcept.glazemedaka": "Glaze medaka",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
       "block.oneiricconcept.geooo_1": "繁荣金属锭",
       "gamerule.ocdebug": "§6梦华构想调试",

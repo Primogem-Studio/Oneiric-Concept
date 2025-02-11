@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:sweetflowermedaka"
+    "oneiricconcept:sweetflowermedaka",
+    "oneiricconcept:medaka",
+    "oneiricconcept:glazemedaka",
+    "oneiricconcept:aizenmedaka"
   ]
 }
