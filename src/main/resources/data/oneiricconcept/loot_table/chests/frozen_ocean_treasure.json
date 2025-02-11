@@ -137,7 +137,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cooked_cod",
+          "name": "oneiricconcept:ice_fresh_raw_frostweave_salmon_slices",
           "weight": 1,
           "functions": [
             {
@@ -151,7 +151,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:cooked_salmon",
+          "name": "minecraft:cod",
           "weight": 1,
           "functions": [
             {
