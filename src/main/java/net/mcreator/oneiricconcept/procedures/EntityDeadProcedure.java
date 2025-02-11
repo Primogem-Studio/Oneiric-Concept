@@ -84,6 +84,8 @@ public class EntityDeadProcedure {
 			} else if (entity.getType().is(EntityTypeTags.AQUATIC) && !entity.getPersistentData().getBoolean("fishheart")) {
 				if (RandomProcedure.execute(world, 0.1)) {
 					i1 = new ItemStack(OneiricconceptModItems.HEARTOFTHEFISH.get());
+				} else {
+					i1 = new ItemStack(OneiricconceptModItems.FISH.get());
 				}
 			} else {
 				i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
