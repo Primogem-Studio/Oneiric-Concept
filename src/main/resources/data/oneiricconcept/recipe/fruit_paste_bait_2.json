@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 20,
+  "experience": 1,
+  "ingredients": [
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 7,
+    "id": "oneiricconcept:fruitpastebait"
+  }
+}

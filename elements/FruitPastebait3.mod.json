@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 5,
+    "recipeRetstackSize": 10,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -42,7 +42,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:Fruitpastebait"
     },
-    "name": "fruitpastebait_1",
+    "name": "fruit_pastebait_3",
     "namespace": "mod"
   }
 }

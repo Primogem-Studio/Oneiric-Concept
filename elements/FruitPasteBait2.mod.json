@@ -12,7 +12,7 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "TAG:c:foods/fruit"
+        "value": "Items.APPLE"
       },
       {
         "value": "Items.WHEAT"
@@ -42,7 +42,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:Fruitpastebait"
     },
-    "name": "fruitpastebait_1",
+    "name": "fruit_paste_bait_2",
     "namespace": "mod"
   }
 }
