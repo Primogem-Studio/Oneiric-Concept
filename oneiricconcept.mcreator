@@ -12747,9 +12747,6 @@
           "src/main/java/net/mcreator/oneiricconcept/block/SweetflowerBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/sweetflower.json",
           "src/main/resources/assets/oneiricconcept/models/block/sweetflower.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/sweetflower.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/sweetflower_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sweetflower.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/sweetflower.json",
           "src/main/resources/assets/oneiricconcept/models/item/sweetflower.json"
         ]

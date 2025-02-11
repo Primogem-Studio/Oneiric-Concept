@@ -29,7 +29,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.BANANA_MUSHROOM_BOCK.get().asItem());
 				tabData.accept(OneiricconceptModItems.CLOUD_BOTTLE.get());
 				tabData.accept(OneiricconceptModBlocks.CLOUD.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.FLOATING_CLOUD.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AGNIDUS_AGATE_ORE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.VARUNADA_LAZURITE_ORE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.VAYUDA_TURQUOISE_ORE.get().asItem());
