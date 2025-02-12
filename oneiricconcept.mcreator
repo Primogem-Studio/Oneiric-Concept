@@ -531,37 +531,6 @@
       "path": "~/Feature"
     },
     {
-      "name": "BananaMushroomNagadus",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "banana_mushroom_nagadus",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/BananaMushroomNagadusProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
       "name": "GeomarrowRadiator1",
       "type": "recipe",
       "compiles": true,
@@ -625,38 +594,6 @@
         ]
       },
       "path": "~/Recipes"
-    },
-    {
-      "name": "BananaMushroombone",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "banana_mushroombone",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/BananaMushroomboneProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
     },
     {
       "name": "ElementsCrystalOre",
@@ -1021,10 +958,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -1855,37 +1788,6 @@
         ]
       },
       "path": "~/block"
-    },
-    {
-      "name": "XSaplingNagadus",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "x_sapling_nagadus",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/XSaplingNagadusProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
     },
     {
       "name": "TheAnotherWorldTree",
@@ -13524,10 +13426,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13536,6 +13434,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14321,9 +14223,9 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
-      "effect.oneiricconcept.b_2sausage": "weird sausage，Defeat the player",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
       "block.oneiricconcept.anemo_sealingwax": "Anemo sealing wax",
@@ -14342,8 +14244,8 @@
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
-      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "block.oneiricconcept.sweetflower": "Sweet flower",
+      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
@@ -14746,8 +14648,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -14767,8 +14669,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "block.oneiricconcept.sweetflower": "甜甜花",
+      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",

@@ -16,6 +16,9 @@
     "isProtectedByTotem": true,
     "isCuredbyHoney": true,
     "modifiers": [],
+    "onStarted": {
+      "name": "Bebuffplus"
+    },
     "onActiveTick": {
       "name": "B2effect"
     }

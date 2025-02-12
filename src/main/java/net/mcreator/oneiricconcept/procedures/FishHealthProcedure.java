@@ -64,7 +64,7 @@ public class FishHealthProcedure {
 			if (!(OneiricconceptModItems.HEARTOFTHEFISH.get() == fishitem.getItem())) {
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = fishitem.copy();
-					_setstack.setCount(1);
+					_setstack.setCount((int) RandomintProcedure.execute(fishitem.getMaxStackSize(), 1));
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 			}
