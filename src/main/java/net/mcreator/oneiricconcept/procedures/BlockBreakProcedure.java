@@ -64,7 +64,8 @@ public class BlockBreakProcedure {
 			} else {
 				item = new ItemStack(Blocks.AIR);
 			}
-		} else if (!(tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0) && blockstate.is(BlockTags.create(ResourceLocation.parse("c:ice_blocks")))) {
+		} else if (RandomProcedure.execute(world, 0.1) && !(tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)
+				&& blockstate.is(BlockTags.create(ResourceLocation.parse("c:ice_blocks")))) {
 			item = new ItemStack(OneiricconceptModItems.SOLID_WATER.get());
 			item.grow((int) RandomintProcedure.execute(3, 0));
 		}
