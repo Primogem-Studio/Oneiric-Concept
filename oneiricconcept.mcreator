@@ -8862,45 +8862,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "Aureliae",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aureliae",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/AureliaeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
       "name": "Texturewayfareblessing",
       "type": "block",
       "compiles": true,
@@ -13379,6 +13340,249 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "VirtualParticle",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "virtual_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/VirtualParticleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/virtual_particle.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "SolidWater",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_water",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/solid_water.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SolidWaterItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "CamoPaint",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camo_paint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/CamoPaintItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/camo_paint.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Camo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CamoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Usecamo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usecamo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/UsecamoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Camoeffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/potion/CamoeffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Entrestartfollow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entrestartfollow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EntrestartfollowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "folrange",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "CamoPaint1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camo_paint_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/camo_paint_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CamoPaint2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "camo_paint_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/camo_paint_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CamoPaint3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "camo_paint_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/camo_paint_3.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BlockBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BlockBreakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Ice1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ice_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Solidwater1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solidwater_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/solidwater_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -13426,6 +13630,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13434,10 +13642,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -13865,6 +14069,11 @@
     "ITEMS:mod:fishsize_1": [
       "TAG:mod:fruit_paste_bait_fish"
     ],
+    "BLOCKS:c:ice_blocks": [
+      "Blocks.ICE",
+      "Blocks.PACKED_ICE",
+      "Blocks.BLUE_ICE"
+    ],
     "ITEMS:pgc:qyhx_hc": [
       "CUSTOM:Stuffing",
       "CUSTOM:S2tuffing",
@@ -14190,7 +14399,10 @@
       "Medaka",
       "Aizenmedaka",
       "Sweetflowermedaka",
-      "Glazemedaka"
+      "Glazemedaka",
+      "SolidWater",
+      "CamoPaint",
+      "VirtualParticle"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -14351,6 +14563,7 @@
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
       "item.oneiricconcept.sustenanceanchoritem": "Sustenanceanchor",
       "block.oneiricconcept.camera.description_0": "§7The meaning of \u0027相机 is to see through the key points",
+      "item.oneiricconcept.virtual_particle": "Virtual Particle",
       "block.oneiricconcept.electrosealingwax": "Electro sealing wax",
       "item.oneiricconcept.aureliae_pickaxe": "Aureliae Pickaxe",
       "gamerule.ocfly": "ocfly",
@@ -14487,6 +14700,7 @@
       "item.oneiricconcept.fruitpastebait": "Fruit paste bait",
       "item.oneiricconcept.salt_dust": "Salt Dust",
       "block.oneiricconcept.bactus": "Bactus",
+      "effect.oneiricconcept.camo": "Camo",
       "block.oneiricconcept.pgc_present": "Present",
       "block.oneiricconcept.xiao_lantern_recycler": "Xiao Lantern Recycler",
       "item.oneiricconcept.sausage": "Sausage",
@@ -14528,6 +14742,7 @@
       "block.oneiricconcept.agnid_6": "Agnidus metal ingot",
       "block.oneiricconcept.yactus": "Yactus",
       "block.oneiricconcept.agnid_9": "Agnidus metal ingot",
+      "item.oneiricconcept.camo_paint": "Camo Paint",
       "block.oneiricconcept.agnid_8": "Agnidus metal ingot",
       "block.oneiricconcept.agnid_3": "Agnidus metal ingot",
       "block.oneiricconcept.agnid_2": "Agnidus metal ingot",
@@ -14549,6 +14764,7 @@
       "item.oneiricconcept.aureliae_axe": "Aureliae Axe",
       "item.oneiricconcept.smoke_sausage": "Smoke Sausage",
       "block.oneiricconcept.redmo_10": "red moon ingot",
+      "item.oneiricconcept.solid_water": "Solid Water",
       "item.oneiricconcept.oy_stuffing": "stuffing",
       "item.oneiricconcept.medaka": "Medaka",
       "gamerule.ocHealthmultiplier": "Health multiplier",
@@ -14681,8 +14897,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
+      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -14750,7 +14966,7 @@
       "gamerule.ocfly.description": "设为假以提高兼容",
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
-      "advancements.shootingthesun.title": "Shooting the sun",
+      "advancements.shootingthesun.title": "houyi射日",
       "translation.oneiricconcept.lure": "附魔进度：",
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
       "block.oneiricconcept.ambrosial_arbor_wood": "建木",
@@ -14776,6 +14992,7 @@
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
+      "item.oneiricconcept.virtual_particle": "虚粒子",
       "block.oneiricconcept.electrosealingwax": "雷之印",
       "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
       "gamerule.ocfly": "燃素翼飞行",
@@ -14912,6 +15129,7 @@
       "item.oneiricconcept.fruitpastebait": "果酿饵",
       "item.oneiricconcept.salt_dust": "粗盐",
       "block.oneiricconcept.bactus": "仙帝掌",
+      "effect.oneiricconcept.camo": "Camo",
       "block.oneiricconcept.pgc_present": "礼盒",
       "block.oneiricconcept.xiao_lantern_recycler": "霄灯回收机",
       "item.oneiricconcept.sausage": "香肠",
@@ -14953,6 +15171,7 @@
       "block.oneiricconcept.agnid_6": "燃愿金属锭",
       "block.oneiricconcept.yactus": "仙力掌",
       "block.oneiricconcept.agnid_9": "燃愿金属锭",
+      "item.oneiricconcept.camo_paint": "迷彩油漆",
       "block.oneiricconcept.agnid_8": "燃愿金属锭",
       "block.oneiricconcept.agnid_3": "燃愿金属锭",
       "block.oneiricconcept.agnid_2": "燃愿金属锭",
@@ -14974,6 +15193,7 @@
       "item.oneiricconcept.aureliae_axe": "铄金斧",
       "item.oneiricconcept.smoke_sausage": "熏肠",
       "block.oneiricconcept.redmo_10": "赤月锭",
+      "item.oneiricconcept.solid_water": "固态净水",
       "item.oneiricconcept.oy_stuffing": "肉馅",
       "item.oneiricconcept.medaka": "花鳉",
       "gamerule.ocHealthmultiplier": "生命倍率",

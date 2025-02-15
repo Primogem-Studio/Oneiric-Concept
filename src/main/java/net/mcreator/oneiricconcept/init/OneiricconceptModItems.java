@@ -27,6 +27,7 @@ import net.mcreator.oneiricconcept.item.XuanyuanArrowItem;
 import net.mcreator.oneiricconcept.item.WildernessRodItem;
 import net.mcreator.oneiricconcept.item.WayfareCakeSlicesItem;
 import net.mcreator.oneiricconcept.item.WaffleItem;
+import net.mcreator.oneiricconcept.item.VirtualParticleItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
@@ -37,6 +38,7 @@ import net.mcreator.oneiricconcept.item.SustenanceanchoritemItem;
 import net.mcreator.oneiricconcept.item.SurpriseboxforgoodorbadItem;
 import net.mcreator.oneiricconcept.item.SunStartCanItem;
 import net.mcreator.oneiricconcept.item.StuffingItem;
+import net.mcreator.oneiricconcept.item.SolidWaterItem;
 import net.mcreator.oneiricconcept.item.SmokeSausageItem;
 import net.mcreator.oneiricconcept.item.SmallHertaCoreItem;
 import net.mcreator.oneiricconcept.item.SkyWaffleItem;
@@ -107,6 +109,7 @@ import net.mcreator.oneiricconcept.item.DXuanyuanItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
 import net.mcreator.oneiricconcept.item.CloudBottleItem;
+import net.mcreator.oneiricconcept.item.CamoPaintItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunPlusItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunItem;
 import net.mcreator.oneiricconcept.item.BelobogSausageItem;
@@ -408,6 +411,9 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> MEDAKA = REGISTRY.register("medaka", MedakaItem::new);
 	public static final DeferredItem<Item> GLAZEMEDAKA = REGISTRY.register("glazemedaka", GlazemedakaItem::new);
 	public static final DeferredItem<Item> AIZENMEDAKA = REGISTRY.register("aizenmedaka", AizenmedakaItem::new);
+	public static final DeferredItem<Item> VIRTUAL_PARTICLE = REGISTRY.register("virtual_particle", VirtualParticleItem::new);
+	public static final DeferredItem<Item> SOLID_WATER = REGISTRY.register("solid_water", SolidWaterItem::new);
+	public static final DeferredItem<Item> CAMO_PAINT = REGISTRY.register("camo_paint", CamoPaintItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

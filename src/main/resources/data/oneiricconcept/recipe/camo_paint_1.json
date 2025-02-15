@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:solid_water"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "oneiricconcept:solid_water"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:solid_water"
+    },
+    {
+      "item": "oneiricconcept:solid_water"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:camo_paint",
+    "count": 1
+  }
+}

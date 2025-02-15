@@ -9,6 +9,10 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Slime;
+import net.minecraft.world.entity.monster.MagmaCube;
+import net.minecraft.world.entity.monster.Endermite;
+import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -87,6 +91,12 @@ public class EntityDeadProcedure {
 				} else {
 					i1 = new ItemStack(OneiricconceptModItems.FISH.get());
 				}
+			} else if (entity instanceof EnderMan || entity instanceof Endermite) {
+				i1 = new ItemStack(OneiricconceptModItems.VIRTUAL_PARTICLE.get());
+			} else if (entity instanceof Slime) {
+				i1 = new ItemStack(OneiricconceptModItems.SOLID_WATER.get());
+			} else if (entity instanceof MagmaCube) {
+				i1 = new ItemStack(OneiricconceptModItems.PHLOGISTON.get());
 			} else {
 				i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
 			}

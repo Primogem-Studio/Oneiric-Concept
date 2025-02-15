@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:solid_water"
+    },
+    {
+      "item": "oneiricconcept:solid_water"
+    },
+    {
+      "item": "oneiricconcept:solid_water"
+    },
+    {
+      "item": "oneiricconcept:solid_water"
+    }
+  ],
+  "result": {
+    "id": "minecraft:ice",
+    "count": 1
+  }
+}

@@ -398,7 +398,7 @@
             "item": {
               "value": "CUSTOM:Hunger"
             },
-            "weight": 15,
+            "weight": 5,
             "minCount": 1,
             "maxCount": 16,
             "minEnchantmentLevel": 0,
@@ -412,7 +412,7 @@
             "item": {
               "value": "CUSTOM:DeepMarrowRockSalt"
             },
-            "weight": 15,
+            "weight": 5,
             "minCount": 1,
             "maxCount": 16,
             "minEnchantmentLevel": 0,
@@ -440,9 +440,37 @@
             "item": {
               "value": "CUSTOM:Phlogiston"
             },
+            "weight": 15,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:VirtualParticle"
+            },
             "weight": 5,
             "minCount": 1,
             "maxCount": 16,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:SolidWater"
+            },
+            "weight": 15,
+            "minCount": 1,
+            "maxCount": 32,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
