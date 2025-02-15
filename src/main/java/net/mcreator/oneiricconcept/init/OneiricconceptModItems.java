@@ -100,6 +100,7 @@ import net.mcreator.oneiricconcept.item.GlazemedakaItem;
 import net.mcreator.oneiricconcept.item.FruitpastebaitItem;
 import net.mcreator.oneiricconcept.item.FishcakeItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
+import net.mcreator.oneiricconcept.item.EnergyDrinkItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
 import net.mcreator.oneiricconcept.item.DivineArrowEmbersItem;
@@ -414,6 +415,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> VIRTUAL_PARTICLE = REGISTRY.register("virtual_particle", VirtualParticleItem::new);
 	public static final DeferredItem<Item> SOLID_WATER = REGISTRY.register("solid_water", SolidWaterItem::new);
 	public static final DeferredItem<Item> CAMO_PAINT = REGISTRY.register("camo_paint", CamoPaintItem::new);
+	public static final DeferredItem<Item> ENERGY_DRINK = REGISTRY.register("energy_drink", EnergyDrinkItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

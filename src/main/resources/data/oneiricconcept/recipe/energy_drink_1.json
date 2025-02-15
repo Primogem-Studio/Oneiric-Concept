@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:energy_drink",
+    "count": 1
+  }
+}

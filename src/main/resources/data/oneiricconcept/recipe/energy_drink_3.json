@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "genshincraft"
+    }
+  ],
+  "type": "genshincraft:crafting",
+  "materials": [
+    {
+      "id": "oneiricconcept:virtual_particle",
+      "count": 2
+    },
+    {
+      "id": "oneiricconcept:phlogiston",
+      "count": 3
+    	}
+  ],
+  "result": {
+    "id": "oneiricconcept:camo_paint",
+    "count": 1
+  }
+}

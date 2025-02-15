@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "cookingtime": 100,
+  "experience": 1,
+  "ingredients": [
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "oneiricconcept:energy_drink"
+  }
+}
