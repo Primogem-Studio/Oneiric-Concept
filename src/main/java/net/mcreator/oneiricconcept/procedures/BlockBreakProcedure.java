@@ -45,10 +45,12 @@ public class BlockBreakProcedure {
 			return;
 		ItemStack item = ItemStack.EMPTY;
 		ItemStack tool = ItemStack.EMPTY;
+		double enchantlevel = 0;
 		tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		enchantlevel = Math.max(1, tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)));
 		if (tool.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:ignisaureliae")))) {
 			item = (new ItemStack(blockstate.getBlock()));
-			if (world instanceof Level _level4 && _level4.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _level4).isPresent()) {
+			if (world instanceof Level _level5 && _level5.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _level5).isPresent()) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
 				}
@@ -64,12 +66,13 @@ public class BlockBreakProcedure {
 			} else {
 				item = new ItemStack(Blocks.AIR);
 			}
-		} else if (RandomProcedure.execute(world, 0.1) && !(tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)) {
+		} else if (RandomProcedure.execute(world, Math.min(1, 0.1 * enchantlevel)) && !(tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)) {
 			if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ice_blocks")))) {
 				item = new ItemStack(OneiricconceptModItems.SOLID_WATER.get());
-				item.grow((int) RandomintProcedure.execute(3, 0));
+				item.grow((int) RandomintProcedure.execute(world, 3, Math.min(3, 0 + enchantlevel)));
 			} else if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:bookshelves")))) {
 				item = new ItemStack(OneiricconceptModItems.TREE_BARKOF_ERUDITION.get());
+				item.grow((int) RandomintProcedure.execute(world, 2 + enchantlevel, 0));
 			}
 		}
 		if (world instanceof ServerLevel _level) {

@@ -30,7 +30,7 @@ public class TurtleDamageProcedure {
 		Damagetyplgc = damagesource.is(DamageTypes.FELL_OUT_OF_WORLD) || damagesource.is(DamageTypes.GENERIC_KILL);
 		if (!(entity instanceof CrystalTurtleEntity _datEntL3 && _datEntL3.getEntityData().get(CrystalTurtleEntity.DATA_IsCrystallized))) {
 			items = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ysjsj")));
-			items.setCount((int) RandomintProcedure.execute(5, 1));
+			items.setCount((int) RandomintProcedure.execute(world, 5, 1));
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, items);
 				entityToSpawn.setPickUpDelay(10);

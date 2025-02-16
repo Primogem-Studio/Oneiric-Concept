@@ -21,46 +21,46 @@ public class BebuffplusProcedure {
 		timemin = 40;
 		LVmax = 4;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, (int) RandomintProcedure.execute(LVmax, 1)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 200, (int) RandomintProcedure.execute(world, LVmax, 1)));
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.UNLUCK, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.UNLUCK, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 		if (RandomProcedure.execute(world, C)) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) RandomintProcedure.execute(timemax, timemin), (int) RandomintProcedure.execute(LVmax, 0)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, (int) RandomintProcedure.execute(world, timemax, timemin), (int) RandomintProcedure.execute(world, LVmax, 0)));
 		}
 	}
 }

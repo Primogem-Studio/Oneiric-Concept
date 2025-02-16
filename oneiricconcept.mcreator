@@ -10171,6 +10171,10 @@
           {
             "name": "min",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
