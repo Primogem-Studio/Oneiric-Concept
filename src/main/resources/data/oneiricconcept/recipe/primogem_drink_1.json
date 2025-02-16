@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:memoria_bucket"
+    },
+    {
+      "item": "primogemcraft:shizuoyuanshikuai"
+    },
+    {
+      "item": "oneiricconcept:memoria_bucket"
+    },
+    {
+      "item": "primogemcraft:shizuoyuanshikuai"
+    },
+    {
+      "item": "oneiricconcept:energy_drink_sugar_free"
+    },
+    {
+      "item": "primogemcraft:shizuoyuanshikuai"
+    },
+    {
+      "item": "oneiricconcept:memoria_bucket"
+    },
+    {
+      "item": "primogemcraft:shizuoyuanshikuai"
+    },
+    {
+      "item": "oneiricconcept:memoria_bucket"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:energy_drink_primogem",
+    "count": 1
+  }
+}

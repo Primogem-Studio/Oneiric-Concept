@@ -12,12 +12,16 @@
       "count": 2
     },
     {
+      "id": "oneiricconcept:tree_barkof_erudition",
+      "count": 2
+    },
+    {
       "id": "oneiricconcept:phlogiston",
-      "count": 3
+      "count": 4
     	}
   ],
   "result": {
-    "id": "oneiricconcept:energy_drink",
+    "id": "oneiricconcept:camo_paint",
     "count": 1
   }
 }

@@ -13612,6 +13612,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -13652,6 +13660,191 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/recipe/energy_drink_3.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "EnergyDrinkPrimogem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_drink_primogem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkPrimogemItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/energy_drink_primogem.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "EnergyDrinkSugarFree",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_drink_sugar_free",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkSugarFreeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/energy_drink_sugar_free.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "DrinkNosugar1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drink_nosugar_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/drink_nosugar_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DrinkNosugar2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "drink_nosugar_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/drink_nosugar_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DrinkNosugar3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "drink_nosugar_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/drink_nosugar_3.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TreeBarkofErudition",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_barkof_erudition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/TreeBarkofEruditionItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/tree_barkof_erudition.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "PrimogemDrink1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "primogem_drink_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogem_drink_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "PunitiveEnergy",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "punitive_energy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/punitive_energy.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/PunitiveEnergyItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Punitiveenergy1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "punitiveenergy_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/punitiveenergy_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Punitiveenergy2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "punitiveenergy_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/punitiveenergy_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Punitiveenergy3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "punitiveenergy_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/punitiveenergy_3.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Energy",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/potion/EnergyMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PrimogemDrink2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "primogem_drink_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogem_drink_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MemoriaBucket1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "memoria_bucket_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memoria_bucket_1.json"
         ]
       },
       "path": "~/Recipes"
@@ -13702,10 +13895,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13714,6 +13903,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -13867,6 +14060,9 @@
       "TAG:mod:fruit_paste_bait_fish"
     ],
     "ITEMS:c:foods/cooked_fish": [],
+    "BLOCKS:c:bookshelves": [
+      "Blocks.BOOKSHELF"
+    ],
     "ITEMS:c:metal": [
       "CUSTOM:Agnid1",
       "CUSTOM:Agnid2",
@@ -14475,7 +14671,11 @@
       "SolidWater",
       "CamoPaint",
       "VirtualParticle",
-      "EnergyDrink"
+      "EnergyDrink",
+      "EnergyDrinkPrimogem",
+      "EnergyDrinkSugarFree",
+      "TreeBarkofErudition",
+      "PunitiveEnergy"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
@@ -14670,6 +14870,7 @@
       "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
       "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
       "item.oneiricconcept.taw_wood_loot": "TAW Wood Loot",
+      "item.oneiricconcept.punitive_energy": "Punitive Energy",
       "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
       "advancements.railgun.descr": "Although but,_ _,_ _ _ _ _ _ _ _?",
       "advancements.aftertheiceturnsintowater.title": "After the ice turns into water",
@@ -14779,6 +14980,7 @@
       "block.oneiricconcept.xiao_lantern_recycler": "Xiao Lantern Recycler",
       "item.oneiricconcept.sausage": "Sausage",
       "block.oneiricconcept.floating_cloud": "Floating cloud",
+      "translation.oneiricconcept.effectlevel": "§ePotion Effect Level：§a",
       "block.oneiricconcept.dendrosealingwax": "Dendro sealing wax",
       "item.oneiricconcept.crystal_turtle_spawn_egg": "Crystal Turtle Spawn Egg",
       "item.oneiricconcept.small_herta_core.description_0": "模拟宇宙·寰宇蝗灾",
@@ -14789,6 +14991,7 @@
       "block.oneiricconcept.tnt_dispenser": "TNT Dispenser",
       "block.oneiricconcept.primogemfruitblock": "Primogemfruit",
       "block.oneiricconcept.memoria": "Memoria",
+      "item.oneiricconcept.energy_drink_sugar_free": "Energy Drink（Sugar-Free）",
       "item.oneiricconcept.heartoftheskysea": "Heart of the sky sea",
       "enchantment.oneiricconcept.sharp_hook": "Sharp Hook",
       "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
@@ -14827,7 +15030,9 @@
       "item.oneiricconcept.sun_start_can.description_0": "§6Directly raise the sun of the next day",
       "item.oneiricconcept.oneiric_shard.description_0": "§dLights flicking in a sea of stars, stirring the dream of a Leviathan. The past turns into candles that light the darkness ahead.",
       "translation.oneiricconcept.fight": "§4Cannot be used in combat|§r|",
+      "effect.oneiricconcept.energy": "Energy",
       "painting.oneiricconcept.sliver_wolf.title": "Sliver Wolf",
+      "item.oneiricconcept.energy_drink_primogem": "Energy Drink（Primogem）",
       "item.oneiricconcept.dreamdive_can": "§9Dreamdive Can",
       "block.oneiricconcept.agnid_10": "Agnidus metal ingot",
       "block.oneiricconcept.the_another_world_leave": "The Another World Leave",
@@ -14863,6 +15068,7 @@
       "translation.oneiricconcept.Configurationreminder": "§6[oneiricconcept]§rThe multiplier of health and damage values is low, and it may not achieve the expected effect when loaded together with Genshin Craft",
       "item.oneiricconcept.salt": "Salt",
       "item.oneiricconcept.surpriseboxforgoodorbad": "Surprise Box,for Good or Bad",
+      "item.oneiricconcept.tree_barkof_erudition": "Tree Barkof Erudition",
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "After the ice turns into water……",
       "item.oneiricconcept.xuanyuan_arrow": "Xuanyuan Arrow",
       "block.oneiricconcept.shivada_jade_ore": "Shivada Jade Ore",
@@ -14922,6 +15128,7 @@
       "block.oneiricconcept.phlogistontank.description_0": "Convert the input lava into phlogiston",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7Big sugar meatballs",
       "item.oneiricconcept.sky_waffle": "Sky Waffle",
+      "translation.oneiricconcept.effectlevelmax": "The Effect level has reached the upper limit",
       "item.oneiricconcept.honkai_shard": "Honkai Shard",
       "item.oneiricconcept.dumpling": "Dumpling",
       "advancements.diseasename_gastriccancer.descr": "Pay attention to healthy diet ",
@@ -14938,8 +15145,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -14959,8 +15166,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "block.oneiricconcept.sweetflower": "甜甜花",
+      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -14971,8 +15178,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
+      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -15100,6 +15307,7 @@
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
       "item.oneiricconcept.taw_wood_loot": "异世界礼盒",
+      "item.oneiricconcept.punitive_energy": "惩戒能量",
       "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",
       "advancements.railgun.descr": "虽然但是，_ _，_ _ _ _ _ _ _ _？",
       "advancements.aftertheiceturnsintowater.title": "在冰化成水之后",
@@ -15209,6 +15417,7 @@
       "block.oneiricconcept.xiao_lantern_recycler": "霄灯回收机",
       "item.oneiricconcept.sausage": "香肠",
       "block.oneiricconcept.floating_cloud": "浮云",
+      "translation.oneiricconcept.effectlevel": "§e药水效果等级：§a",
       "block.oneiricconcept.dendrosealingwax": "草之印",
       "item.oneiricconcept.crystal_turtle_spawn_egg": "水晶龟刷怪蛋",
       "item.oneiricconcept.small_herta_core.description_0": "§7模拟宇宙·寰宇蝗灾",
@@ -15219,6 +15428,7 @@
       "block.oneiricconcept.tnt_dispenser": "TNT发射器",
       "block.oneiricconcept.primogemfruitblock": "原石果",
       "block.oneiricconcept.memoria": "忆质",
+      "item.oneiricconcept.energy_drink_sugar_free": "能量饮料（无糖）",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
@@ -15257,7 +15467,9 @@
       "item.oneiricconcept.sun_start_can.description_0": "§6直接使下一日的太阳升起",
       "item.oneiricconcept.oneiric_shard.description_0": "§d泛浮在星辰大海中的结晶微光，律动着古老巨兽的遗梦。旧日的一切最终成了照亮黑暗前路的烛火。",
       "translation.oneiricconcept.fight": "§4战斗中不能使用|§r|",
+      "effect.oneiricconcept.energy": "能量",
       "painting.oneiricconcept.sliver_wolf.title": "银狼",
+      "item.oneiricconcept.energy_drink_primogem": "原石能量",
       "item.oneiricconcept.dreamdive_can": "§9入梦罐",
       "block.oneiricconcept.agnid_10": "燃愿金属锭",
       "block.oneiricconcept.the_another_world_leave": "异世界树叶",
@@ -15293,6 +15505,7 @@
       "translation.oneiricconcept.Configurationreminder": "§6[梦华构想]§r生命值和伤害值倍率较低，与原的世界一同加载时可能无法达到预期效果",
       "item.oneiricconcept.salt": "食盐",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
+      "item.oneiricconcept.tree_barkof_erudition": "智识树皮",
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "在冰化成水之后……",
       "item.oneiricconcept.xuanyuan_arrow": "轩辕箭",
       "block.oneiricconcept.shivada_jade_ore": "哀叙冰玉矿石",
@@ -15352,6 +15565,7 @@
       "block.oneiricconcept.phlogistontank.description_0": "将输入的熔岩转化为燃素；",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7大糖丸子",
       "item.oneiricconcept.sky_waffle": "天华夫饼",
+      "translation.oneiricconcept.effectlevelmax": "药水效果等级已达上限",
       "item.oneiricconcept.honkai_shard": "三分结晶",
       "item.oneiricconcept.dumpling": "饺子",
       "advancements.diseasename_gastriccancer.descr": "注意健康饮食",

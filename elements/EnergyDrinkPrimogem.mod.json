@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "virtual_particle",
+    "texture": "energy_drink_primogem",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Virtual Particle",
+    "name": "Energy Drink（Primogem）",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -16,15 +16,15 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 12,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
-      "value": "Items.GLASS_BOTTLE"
+      "value": ""
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
-    "stayInGridWhenCrafting": true,
+    "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
@@ -36,6 +36,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "SpeedJump"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
@@ -44,14 +47,14 @@
     },
     "projectileDisableAmmoCheck": false,
     "isFood": true,
-    "nutritionalValue": 2,
-    "saturation": 0.3,
+    "nutritionalValue": 4,
+    "saturation": 2.5,
     "eatResultItem": {
       "value": "Items.GLASS_BOTTLE"
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "eat",
+    "isAlwaysEdible": true,
+    "animation": "drink",
     "isMusicDisc": false,
     "musicDiscMusic": {
       "value": ""

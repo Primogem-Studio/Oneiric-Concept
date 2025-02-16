@@ -1,19 +1,46 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+
+import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
+import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
 public class SpeedJumpProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		String txt = "";
+		double maxlevel = 0;
+		double speedlvl = 0;
+		maxlevel = 4;
+		if (itemstack.getItem() == OneiricconceptModItems.ENERGY_DRINK_PRIMOGEM.get()) {
+			maxlevel = 12;
+		} else if (itemstack.getItem() == OneiricconceptModItems.ENERGY_DRINK_SUGAR_FREE.get()) {
+			maxlevel = 6;
+		} else if (itemstack.getItem() == OneiricconceptModItems.PUNITIVE_ENERGY.get()) {
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("oneiricconcept:b_2")))), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.15));
+		}
+		speedlvl = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getAmplifier() : 0;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, (int) (1200 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.JUMP) ? _livEnt.getEffect(MobEffects.JUMP).getDuration() : 0)),
-					(int) Math.min(4, (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.JUMP) ? _livEnt.getEffect(MobEffects.JUMP).getAmplifier() : 0) + 1)));
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) (1200 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SPEED) ? _livEnt.getEffect(MobEffects.MOVEMENT_SPEED).getDuration() : 0)),
-					(int) Math.min(4, (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.MOVEMENT_SPEED) ? _livEnt.getEffect(MobEffects.MOVEMENT_SPEED).getAmplifier() : 0) + 1)));
+			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.ENERGY,
+					(int) (1200 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getDuration() : 0)),
+					(int) Math.min(maxlevel, (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getAmplifier() : 0) + 1)));
+		txt = Component.translatable("translation.oneiricconcept.effectlevel").getString() + ""
+				+ ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getAmplifier() : 0) + 1);
+		if (speedlvl >= maxlevel) {
+			txt = txt + "\u00A7c\uFF08" + Component.translatable("translation.oneiricconcept.effectlevelmax").getString() + "\uFF09";
+		}
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal(txt), true);
 	}
 }

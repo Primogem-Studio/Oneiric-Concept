@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "oneiricconcept:item/tree_bark_of_erudition"
+  }
+}

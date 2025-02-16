@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "oneiricconcept:energy_drink"
+  },
+  "cookingtime": 100,
+  "experience": 1,
+  "ingredients": [
+    {
+      "item": "oneiricconcept:tree_barkof_erudition"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:tree_barkof_erudition"
+    },
+    {
+      "item": "oneiricconcept:phlogiston"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "oneiricconcept:energy_drink_sugar_free"
+  }
+}

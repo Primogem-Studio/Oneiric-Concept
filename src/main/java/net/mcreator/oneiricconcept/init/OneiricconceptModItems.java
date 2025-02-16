@@ -28,6 +28,7 @@ import net.mcreator.oneiricconcept.item.WildernessRodItem;
 import net.mcreator.oneiricconcept.item.WayfareCakeSlicesItem;
 import net.mcreator.oneiricconcept.item.WaffleItem;
 import net.mcreator.oneiricconcept.item.VirtualParticleItem;
+import net.mcreator.oneiricconcept.item.TreeBarkofEruditionItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
@@ -50,6 +51,7 @@ import net.mcreator.oneiricconcept.item.S2mokeSausageItem;
 import net.mcreator.oneiricconcept.item.S2ausageItem;
 import net.mcreator.oneiricconcept.item.ResurrectionPelletItem;
 import net.mcreator.oneiricconcept.item.RedBeanSoupFillingYuanXiaoItem;
+import net.mcreator.oneiricconcept.item.PunitiveEnergyItem;
 import net.mcreator.oneiricconcept.item.PublicClamorItem;
 import net.mcreator.oneiricconcept.item.PropagandaArmyItem;
 import net.mcreator.oneiricconcept.item.PrimogemsSausageItem;
@@ -100,6 +102,8 @@ import net.mcreator.oneiricconcept.item.GlazemedakaItem;
 import net.mcreator.oneiricconcept.item.FruitpastebaitItem;
 import net.mcreator.oneiricconcept.item.FishcakeItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
+import net.mcreator.oneiricconcept.item.EnergyDrinkSugarFreeItem;
+import net.mcreator.oneiricconcept.item.EnergyDrinkPrimogemItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
@@ -416,6 +420,10 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SOLID_WATER = REGISTRY.register("solid_water", SolidWaterItem::new);
 	public static final DeferredItem<Item> CAMO_PAINT = REGISTRY.register("camo_paint", CamoPaintItem::new);
 	public static final DeferredItem<Item> ENERGY_DRINK = REGISTRY.register("energy_drink", EnergyDrinkItem::new);
+	public static final DeferredItem<Item> ENERGY_DRINK_PRIMOGEM = REGISTRY.register("energy_drink_primogem", EnergyDrinkPrimogemItem::new);
+	public static final DeferredItem<Item> ENERGY_DRINK_SUGAR_FREE = REGISTRY.register("energy_drink_sugar_free", EnergyDrinkSugarFreeItem::new);
+	public static final DeferredItem<Item> TREE_BARKOF_ERUDITION = REGISTRY.register("tree_barkof_erudition", TreeBarkofEruditionItem::new);
+	public static final DeferredItem<Item> PUNITIVE_ENERGY = REGISTRY.register("punitive_energy", PunitiveEnergyItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

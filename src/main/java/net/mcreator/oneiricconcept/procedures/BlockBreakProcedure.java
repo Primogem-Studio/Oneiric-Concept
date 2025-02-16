@@ -64,10 +64,13 @@ public class BlockBreakProcedure {
 			} else {
 				item = new ItemStack(Blocks.AIR);
 			}
-		} else if (RandomProcedure.execute(world, 0.1) && !(tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)
-				&& blockstate.is(BlockTags.create(ResourceLocation.parse("c:ice_blocks")))) {
-			item = new ItemStack(OneiricconceptModItems.SOLID_WATER.get());
-			item.grow((int) RandomintProcedure.execute(3, 0));
+		} else if (RandomProcedure.execute(world, 0.1) && !(tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)) {
+			if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ice_blocks")))) {
+				item = new ItemStack(OneiricconceptModItems.SOLID_WATER.get());
+				item.grow((int) RandomintProcedure.execute(3, 0));
+			} else if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:bookshelves")))) {
+				item = new ItemStack(OneiricconceptModItems.TREE_BARKOF_ERUDITION.get());
+			}
 		}
 		if (world instanceof ServerLevel _level) {
 			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, item);

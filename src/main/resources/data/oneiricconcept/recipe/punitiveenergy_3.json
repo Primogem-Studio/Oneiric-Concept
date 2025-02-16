@@ -9,15 +9,15 @@
   "materials": [
     {
       "id": "oneiricconcept:virtual_particle",
-      "count": 2
+      "count": 1
     },
     {
-      "id": "oneiricconcept:phlogiston",
-      "count": 3
+      "id": "primogemcraft:laji",
+      "count": 1
     	}
   ],
   "result": {
-    "id": "oneiricconcept:energy_drink",
+    "id": "oneiricconcept:punitive_energy",
     "count": 1
   }
 }

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "oneiricconcept:virtual_particle"
+    },
+    {
+      "item": "primogemcraft:laji"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "id": "oneiricconcept:punitive_energy",
+    "count": 1
+  }
+}

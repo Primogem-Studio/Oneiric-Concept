@@ -13,8 +13,8 @@ import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.oneiricconcept.procedures.SpeedJumpProcedure;
 
-public class EnergyDrinkItem extends Item {
-	public EnergyDrinkItem() {
+public class PunitiveEnergyItem extends Item {
+	public PunitiveEnergyItem() {
 		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(2.5f).alwaysEdible().build()));
 	}
 
@@ -25,7 +25,7 @@ public class EnergyDrinkItem extends Item {
 
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
-		return 12;
+		return 52;
 	}
 
 	@Override

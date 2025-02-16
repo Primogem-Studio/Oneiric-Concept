@@ -1,33 +1,23 @@
 
 package net.mcreator.oneiricconcept.item;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
-public class VirtualParticleItem extends Item {
-	public VirtualParticleItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationModifier(0.3f).build()));
-	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		return new ItemStack(Items.GLASS_BOTTLE);
+public class TreeBarkofEruditionItem extends Item {
+	public TreeBarkofEruditionItem() {
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.1f).build()));
 	}
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(Items.GLASS_BOTTLE);
+		ItemStack retval = new ItemStack(Blocks.OAK_LOG);
 		super.finishUsingItem(itemstack, world, entity);
 		if (itemstack.isEmpty()) {
 			return retval;
