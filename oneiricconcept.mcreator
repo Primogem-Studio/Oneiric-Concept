@@ -13852,6 +13852,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "DivineArrowEmbers1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_arrow_embers_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/divine_arrow_embers_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -15717,7 +15730,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.0",
+    "version": "1.9.1",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",
