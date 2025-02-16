@@ -14686,13 +14686,13 @@
       "Sweetflowermedaka",
       "Glazemedaka",
       "SolidWater",
-      "CamoPaint",
-      "VirtualParticle",
-      "EnergyDrink",
-      "EnergyDrinkPrimogem",
-      "EnergyDrinkSugarFree",
       "TreeBarkofErudition",
-      "PunitiveEnergy"
+      "VirtualParticle",
+      "CamoPaint",
+      "EnergyDrink",
+      "PunitiveEnergy",
+      "EnergyDrinkSugarFree",
+      "EnergyDrinkPrimogem"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPg",
