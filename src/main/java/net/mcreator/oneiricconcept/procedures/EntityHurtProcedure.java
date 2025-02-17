@@ -7,7 +7,6 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -16,14 +15,11 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
@@ -34,15 +30,15 @@ public class EntityHurtProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingDamageEvent.Post event) {
 		if (event.getEntity() != null) {
-			execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getSource().getEntity());
+			execute(event, event.getEntity().level(), event.getEntity(), event.getSource().getEntity());
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
-		execute(null, world, x, y, z, entity, sourceentity);
+	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
+		execute(null, world, entity, sourceentity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
 		ItemStack sworditem = ItemStack.EMPTY;
@@ -98,39 +94,6 @@ public class EntityHurtProcedure {
 					final String _tagName = "ShuhuCharge";
 					final double _tagValue = 0;
 					CustomData.update(DataComponents.CUSTOM_DATA, sworditem, tag -> tag.putDouble(_tagName, _tagValue));
-				}
-				if (("en").equals(Component.translatable("translation.oneiricconcept.check").getString())) {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_en")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_en")), SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
-				} else if (("jp").equals(Component.translatable("translation.oneiricconcept.check").getString())) {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_jp")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_jp")), SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
-				} else if (("kr").equals(Component.translatable("translation.oneiricconcept.check").getString())) {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_kr")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_kr")), SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
-				} else {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_cn")), SoundSource.PLAYERS, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:shuhu_cn")), SoundSource.PLAYERS, 1, 1, false);
-						}
-					}
 				}
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())

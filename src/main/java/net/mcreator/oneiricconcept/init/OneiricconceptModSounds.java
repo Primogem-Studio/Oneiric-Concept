@@ -20,8 +20,4 @@ public class OneiricconceptModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> MMM = REGISTRY.register("mmm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "mmm")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BIGSTONECRUSHCHEST = REGISTRY.register("bigstonecrushchest", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "bigstonecrushchest")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> HOUYI = REGISTRY.register("houyi", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "houyi")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> SHUHU_CN = REGISTRY.register("shuhu_cn", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "shuhu_cn")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> SHUHU_EN = REGISTRY.register("shuhu_en", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "shuhu_en")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> SHUHU_JP = REGISTRY.register("shuhu_jp", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "shuhu_jp")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> SHUHU_KR = REGISTRY.register("shuhu_kr", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "shuhu_kr")));
 }

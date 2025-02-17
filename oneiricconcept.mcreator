@@ -13898,18 +13898,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -14029,42 +14017,6 @@
       ],
       "category": "player",
       "subtitle": "There used to be a young man named \u0027houyi\u0027 who wanted to use the Xuan Yuan Sword to shoot at the sun."
-    },
-    {
-      "name": "shuhu_cn",
-      "files": [
-        "shuhu_cn1",
-        "shuhu_cn2"
-      ],
-      "category": "player",
-      "subtitle": "Shuhu\u0027s Gift"
-    },
-    {
-      "name": "shuhu_en",
-      "files": [
-        "shuhu_en1",
-        "shuhu_en2"
-      ],
-      "category": "player",
-      "subtitle": "Shuhu\u0027s Gift"
-    },
-    {
-      "name": "shuhu_jp",
-      "files": [
-        "shuhu_jp1",
-        "shuhu_jp2"
-      ],
-      "category": "player",
-      "subtitle": "Shuhu\u0027s Gift"
-    },
-    {
-      "name": "shuhu_kr",
-      "files": [
-        "shuhu_kr1",
-        "shuhu_kr2"
-      ],
-      "category": "player",
-      "subtitle": "Shuhu\u0027s Gift"
     }
   ],
   "tag_elements": {
@@ -14077,6 +14029,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14085,10 +14041,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14914,8 +14866,8 @@
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
-      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "block.oneiricconcept.sweetflower": "Sweet flower",
+      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
@@ -14926,8 +14878,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
       "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
       "block.oneiricconcept.banana_mushroom.description_2": "吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
@@ -15358,8 +15310,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "block.oneiricconcept.sweetflower": "甜甜花",
+      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -15370,8 +15322,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
+      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
