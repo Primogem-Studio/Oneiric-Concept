@@ -155,13 +155,13 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SWEETFLOWERMEDAKA.get());
 				tabData.accept(OneiricconceptModItems.GLAZEMEDAKA.get());
 				tabData.accept(OneiricconceptModItems.SOLID_WATER.get());
-				tabData.accept(OneiricconceptModItems.CAMO_PAINT.get());
-				tabData.accept(OneiricconceptModItems.VIRTUAL_PARTICLE.get());
-				tabData.accept(OneiricconceptModItems.ENERGY_DRINK.get());
-				tabData.accept(OneiricconceptModItems.ENERGY_DRINK_PRIMOGEM.get());
-				tabData.accept(OneiricconceptModItems.ENERGY_DRINK_SUGAR_FREE.get());
 				tabData.accept(OneiricconceptModItems.TREE_BARKOF_ERUDITION.get());
+				tabData.accept(OneiricconceptModItems.VIRTUAL_PARTICLE.get());
+				tabData.accept(OneiricconceptModItems.CAMO_PAINT.get());
+				tabData.accept(OneiricconceptModItems.ENERGY_DRINK.get());
 				tabData.accept(OneiricconceptModItems.PUNITIVE_ENERGY.get());
+				tabData.accept(OneiricconceptModItems.ENERGY_DRINK_SUGAR_FREE.get());
+				tabData.accept(OneiricconceptModItems.ENERGY_DRINK_PRIMOGEM.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {

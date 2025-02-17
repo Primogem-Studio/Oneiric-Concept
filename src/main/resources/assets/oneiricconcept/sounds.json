@@ -34,5 +34,57 @@
         "stream": false
       }
     ]
+  },
+  "shuhu_cn": {
+    "subtitle": "subtitles.shuhu_cn",
+    "sounds": [
+      {
+        "name": "oneiricconcept:shuhu_cn1",
+        "stream": false
+      },
+      {
+        "name": "oneiricconcept:shuhu_cn2",
+        "stream": false
+      }
+    ]
+  },
+  "shuhu_en": {
+    "subtitle": "subtitles.shuhu_en",
+    "sounds": [
+      {
+        "name": "oneiricconcept:shuhu_en1",
+        "stream": false
+      },
+      {
+        "name": "oneiricconcept:shuhu_en2",
+        "stream": false
+      }
+    ]
+  },
+  "shuhu_jp": {
+    "subtitle": "subtitles.shuhu_jp",
+    "sounds": [
+      {
+        "name": "oneiricconcept:shuhu_jp1",
+        "stream": false
+      },
+      {
+        "name": "oneiricconcept:shuhu_jp2",
+        "stream": false
+      }
+    ]
+  },
+  "shuhu_kr": {
+    "subtitle": "subtitles.shuhu_kr",
+    "sounds": [
+      {
+        "name": "oneiricconcept:shuhu_kr1",
+        "stream": false
+      },
+      {
+        "name": "oneiricconcept:shuhu_kr2",
+        "stream": false
+      }
+    ]
   }
 }
