@@ -13988,6 +13988,55 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "EruditionExp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "erudition_exp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EruditionExpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "O",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "o",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/OProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],

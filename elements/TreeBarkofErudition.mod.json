@@ -16,7 +16,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 42,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -36,6 +36,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "EruditionExp"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
