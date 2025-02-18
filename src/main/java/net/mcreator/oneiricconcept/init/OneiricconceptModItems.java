@@ -74,6 +74,7 @@ import net.mcreator.oneiricconcept.item.MoraMagazineItem;
 import net.mcreator.oneiricconcept.item.MoraMagazineE3Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineE2Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineE1Item;
+import net.mcreator.oneiricconcept.item.MoraBowItem;
 import net.mcreator.oneiricconcept.item.MoltenMetalItem;
 import net.mcreator.oneiricconcept.item.MmmhitItem;
 import net.mcreator.oneiricconcept.item.MilkItem;
@@ -424,6 +425,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> ENERGY_DRINK_SUGAR_FREE = REGISTRY.register("energy_drink_sugar_free", EnergyDrinkSugarFreeItem::new);
 	public static final DeferredItem<Item> TREE_BARKOF_ERUDITION = REGISTRY.register("tree_barkof_erudition", TreeBarkofEruditionItem::new);
 	public static final DeferredItem<Item> PUNITIVE_ENERGY = REGISTRY.register("punitive_energy", PunitiveEnergyItem::new);
+	public static final DeferredItem<Item> MORA_BOW = REGISTRY.register("mora_bow", MoraBowItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

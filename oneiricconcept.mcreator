@@ -13982,6 +13982,54 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Bowvideo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowvideo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BowvideoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/extra-process"
+    },
+    {
+      "name": "Octest",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "octest",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      }
+    },
+    {
+      "name": "MoraBow",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mora_bow",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/mora_bow.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MoraBowItem.java"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [],
@@ -14763,7 +14811,8 @@
       "PhlogistonController",
       "PhlogistonWing",
       "Phlogiston",
-      "WildernessRod"
+      "WildernessRod",
+      "MoraBow"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -14955,6 +15004,7 @@
       "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
       "block.oneiricconcept.thunder_sword": "Thunder Sword",
       "block.oneiricconcept.elect_3": "vajrada_metal_ingot",
+      "item.oneiricconcept.mora_bow": "Mora Bow",
       "block.oneiricconcept.elect_2": "vajrada_metal_ingot",
       "block.oneiricconcept.elect_5": "vajrada_metal_ingot",
       "block.oneiricconcept.elect_4": "vajrada_metal_ingot",
@@ -14987,8 +15037,8 @@
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine♦",
       "item.oneiricconcept.fish": "Fish",
       "item.oneiricconcept.mora_magazine_e_2": "Extended Mora Magazine♦♦",
-      "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
+      "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_1": "It is recommended to charge no more than three groups",
       "item.oneiricconcept.phlogiston_core.description_2": "as it may cause significant lag",
       "item.oneiricconcept.memoria_piece.description_0": "§7It\u0027s indeed just a condensed memory",
@@ -15214,6 +15264,7 @@
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "After the ice turns into water……",
       "translation.oneiricconcept.shuhu": "Shuhu\u0027s Gift",
       "item.oneiricconcept.xuanyuan_arrow": "Xuanyuan Arrow",
+      "gamerule.octest.description": "octest",
       "block.oneiricconcept.shivada_jade_ore": "Shivada Jade Ore",
       "item.oneiricconcept.ambergris_cheese_sliver": "Ambergris Cheese Sliver",
       "block.oneiricconcept.mm_mushroom": "Mm Mushroom",
@@ -15265,6 +15316,7 @@
       "block.oneiricconcept.anemo_1": "Vayuda_metal_ingot",
       "block.oneiricconcept.anemo_2": "Vayuda_metal_ingot",
       "item.oneiricconcept.small_herta_core": "Small-Her Ta Core",
+      "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "block.oneiricconcept.phlogistontank.description_1": "When inputting the redstone signal, it will produce explosions of varying power based on the flammable and explosive materials stored in it",
       "block.oneiricconcept.boom_blossoms_pyro": "Boom Blossoms Pyro",
@@ -15399,6 +15451,7 @@
       "item.oneiricconcept.a_propaganda_army": "一个水军",
       "block.oneiricconcept.thunder_sword": "雷霆旧剑",
       "block.oneiricconcept.elect_3": "永恒金属锭",
+      "item.oneiricconcept.mora_bow": "Mora Bow",
       "block.oneiricconcept.elect_2": "永恒金属锭",
       "block.oneiricconcept.elect_5": "永恒金属锭",
       "block.oneiricconcept.elect_4": "永恒金属锭",
@@ -15431,8 +15484,8 @@
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣♦",
       "item.oneiricconcept.fish": "鱼肉",
       "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
-      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
+      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
@@ -15658,6 +15711,7 @@
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "在冰化成水之后……",
       "translation.oneiricconcept.shuhu": "§c倏忽恩赐",
       "item.oneiricconcept.xuanyuan_arrow": "轩辕箭",
+      "gamerule.octest.description": "octest",
       "block.oneiricconcept.shivada_jade_ore": "哀叙冰玉矿石",
       "item.oneiricconcept.ambergris_cheese_sliver": "小片香涎干酪",
       "block.oneiricconcept.mm_mushroom": "萌萌菌",
@@ -15709,6 +15763,7 @@
       "block.oneiricconcept.anemo_1": "自在金属锭",
       "block.oneiricconcept.anemo_2": "自在金属锭",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
+      "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7有股怪味……孜然的味道吗？",
       "block.oneiricconcept.phlogistontank.description_1": "输入红石信号时，根据其中的燃素数量产生爆炸，引起大范围燃烧。",
       "block.oneiricconcept.boom_blossoms_pyro": "火焰爆爆瓜",
@@ -15843,6 +15898,7 @@
       "item.oneiricconcept.a_propaganda_army": "一个水军",
       "block.oneiricconcept.thunder_sword": "雷霆旧剑",
       "block.oneiricconcept.elect_3": "永恒金属锭",
+      "item.oneiricconcept.mora_bow": "Mora Bow",
       "block.oneiricconcept.elect_2": "永恒金属锭",
       "block.oneiricconcept.elect_5": "永恒金属锭",
       "block.oneiricconcept.elect_4": "永恒金属锭",
@@ -15875,8 +15931,8 @@
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣♦",
       "item.oneiricconcept.fish": "鱼肉",
       "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
-      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
+      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
@@ -16102,6 +16158,7 @@
       "advancements.thesea_ihangupsidedownwillbeyoursky.descr": "在冰化成水之后……",
       "translation.oneiricconcept.shuhu": "§c倏忽恩赐",
       "item.oneiricconcept.xuanyuan_arrow": "轩辕箭",
+      "gamerule.octest.description": "octest",
       "block.oneiricconcept.shivada_jade_ore": "哀叙冰玉矿石",
       "item.oneiricconcept.ambergris_cheese_sliver": "小片香涎干酪",
       "block.oneiricconcept.mm_mushroom": "萌萌菌",
@@ -16153,6 +16210,7 @@
       "block.oneiricconcept.anemo_1": "自在金属锭",
       "block.oneiricconcept.anemo_2": "自在金属锭",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
+      "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7有股怪味……孜然的味道吗？",
       "block.oneiricconcept.phlogistontank.description_1": "输入红石信号时，根据其中的燃素数量产生爆炸，引起大范围燃烧。",
       "block.oneiricconcept.boom_blossoms_pyro": "火焰爆爆瓜",
@@ -16301,6 +16359,10 @@
       },
       {
         "name": "custom",
+        "children": []
+      },
+      {
+        "name": "extra-process",
         "children": []
       }
     ]
