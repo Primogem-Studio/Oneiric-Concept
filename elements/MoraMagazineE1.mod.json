@@ -3,11 +3,64 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "moramagazinee1",
+    "texture": "moramagazinee",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
-    "name": "Extended Mora Magazine♦",
+    "customProperties": {
+      "textures": {
+        "name": "Textures"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "moramagazinee1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "moramagazinee2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "moramagazinee3",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      }
+    ],
+    "name": "Extended Mora Magazine",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -18,7 +71,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 44,
+    "damageCount": 58,
     "recipeRemainder": {
       "value": ""
     },
@@ -37,6 +90,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Magazinelevel"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

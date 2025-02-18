@@ -3,11 +3,64 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "moramagazinen1",
+    "texture": "moramagazinen",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
-    "name": "Mora Magazine♦",
+    "customProperties": {
+      "textures": {
+        "name": "Textures"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "moramagazinen1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "moramagazinen2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "moramagazinen3",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 3.0
+          }
+        ]
+      }
+    ],
+    "name": "Mora Magazine",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -37,6 +90,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Magazinelevel"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

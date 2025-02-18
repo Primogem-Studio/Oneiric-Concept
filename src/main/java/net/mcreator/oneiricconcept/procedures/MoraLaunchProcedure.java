@@ -3,20 +3,18 @@ package net.mcreator.oneiricconcept.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.LightningBolt;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
@@ -29,12 +27,16 @@ public class MoraLaunchProcedure {
 			return;
 		ItemStack MainHand = ItemStack.EMPTY;
 		ItemStack SecondaryHand = ItemStack.EMPTY;
+		String lvl = "";
+		String primogem = "";
 		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-		if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine1")))) {
+		lvl = SecondaryHand.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("level");
+		primogem = "primogemcraft:";
+		if ((lvl).equals(primogem + "mmola_01")) {
 			MoraDamageProcedure.execute(world, entity, 1, 5);
-		} else if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine2")))) {
+		} else if ((lvl).equals(primogem + "jinzhimola")) {
 			MoraDamageProcedure.execute(world, entity, 2, 5);
-		} else if (SecondaryHand.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:magazine3")))) {
+		} else if ((lvl).equals(primogem + "mljnb")) {
 			MoraDamageProcedure.execute(world, entity, 4, 16);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -42,12 +44,6 @@ public class MoraLaunchProcedure {
 				} else {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.trident.thunder")), SoundSource.PLAYERS, 1, 1, false);
 				}
-			}
-			if (world instanceof ServerLevel _level) {
-				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y + 2, z)));
-				entityToSpawn.setVisualOnly(true);
-				_level.addFreshEntity(entityToSpawn);
 			}
 		} else if (SecondaryHand.getItem() == OneiricconceptModItems.XUANYUAN_ARROW.get()) {
 			SecondaryHand.shrink(1);

@@ -3692,6 +3692,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_2.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_0.json",
           "src/main/resources/assets/oneiricconcept/models/item/mora_magazine.json"
         ]
       },
@@ -3774,34 +3777,6 @@
       }
     },
     {
-      "name": "MoraMagazineN2",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mora_magazine_n_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineN2Item.java",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_n_2.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
-      "name": "MoraMagazineN3",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mora_magazine_n_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineN3Item.java",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_n_3.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "MoraMagazineE1",
       "type": "item",
       "compiles": true,
@@ -3810,35 +3785,10 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineE1Item.java",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
-      "name": "MoraMagazineE2",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mora_magazine_e_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineE2Item.java",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_2.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
-      "name": "MoraMagazineE3",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mora_magazine_e_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineE3Item.java"
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1_2.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1_1.json"
         ]
       },
       "path": "~/item"
@@ -3901,58 +3851,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/recipe/mme_11.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "MME21",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mme_21",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/mme_21.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "MMN21",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mmn_21",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/mmn_21.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "MMN31",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mmn_31",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/mmn_31.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "MME31",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mme_31",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/mme_31.json"
         ]
       },
       "path": "~/Recipes"
@@ -14030,6 +13928,66 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "Magazinelevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magazinelevel",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MagazinelevelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Textures",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "textures",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TexturesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -14077,10 +14035,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14089,6 +14043,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14701,11 +14659,7 @@
       "~CUSTOM:DivineArrowEmbers",
       "~CUSTOM:Heartofthevastsea",
       "~CUSTOM:Heartoftheskysea",
-      "~CUSTOM:MoraMagazineE3",
-      "~CUSTOM:MoraMagazineE2",
       "~CUSTOM:MoraMagazineE1",
-      "~CUSTOM:MoraMagazineN3",
-      "~CUSTOM:MoraMagazineN2",
       "~CUSTOM:MoraMagazine"
     ],
     "BLOCKS:minecraft:dragon_immune": [
@@ -14774,10 +14728,6 @@
       "BossStoneCoinGunPlus",
       "MoraMagazine",
       "MoraMagazineE1",
-      "MoraMagazineN2",
-      "MoraMagazineE2",
-      "MoraMagazineN3",
-      "MoraMagazineE3",
       "PublicClamor",
       "PropagandaArmyBlock",
       "PropagandaArmy",
@@ -14892,10 +14842,10 @@
   },
   "language_map": {
     "en_us": {
-      "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy",
+      "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -14920,8 +14870,8 @@
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
-      "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
       "item.oneiricconcept.aizenmedaka": "Aizenmedaka",
+      "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
@@ -14947,8 +14897,6 @@
       "block.oneiricconcept.cryoo_4": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_5": "Shivada_metal_ingot",
       "block.oneiricconcept.cryoo_6": "Shivada_metal_ingot",
-      "item.oneiricconcept.mora_magazine_n_2": "Mora Magazine♦♦",
-      "item.oneiricconcept.mora_magazine_n_3": "Mora Magazine♦♦♦",
       "item.oneiricconcept.wilderness_rod": "Wilderness Rod",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
@@ -14979,7 +14927,7 @@
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "Gactus",
       "item.oneiricconcept.phlogiston_wing_chestplate": "phlogiston wing",
-      "item.oneiricconcept.mora_magazine": "Mora Magazine♦",
+      "item.oneiricconcept.mora_magazine": "Mora Magazine",
       "effect.oneiricconcept.b_2sausage.description": "Continuously causing damage with a health multiplier of 0.8 and a state effect level",
       "block.oneiricconcept.newmo_8": "crescent ingot",
       "block.oneiricconcept.newmo_7": "crescent ingot",
@@ -15030,13 +14978,11 @@
       "gamerule.ocfly": "ocfly",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§dOne of the cores of Herrscher of Legion, which can be used to create Divine Keys",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
-      "item.oneiricconcept.mora_magazine_e_3": "Extended Mora Magazine♦♦♦",
       "advancements.power_of_herrschers.title": "Power Of Herrschers",
       "item.oneiricconcept.oneiric_shard": "Oneiric Shard",
       "block.oneiricconcept.cloud": "Cloud",
-      "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine♦",
+      "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine",
       "item.oneiricconcept.fish": "Fish",
-      "item.oneiricconcept.mora_magazine_e_2": "Extended Mora Magazine♦♦",
       "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
       "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_1": "It is recommended to charge no more than three groups",
@@ -15339,10 +15285,10 @@
       "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling"
     },
     "zh_cn": {
-      "translation.oneiricconcept.magazine": "§7放在副手生效",
+      "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15367,8 +15313,8 @@
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
-      "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
+      "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
@@ -15394,8 +15340,6 @@
       "block.oneiricconcept.cryoo_4": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_5": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_6": "§k怜爱§r金属锭",
-      "item.oneiricconcept.mora_magazine_n_2": "摩拉弹匣♦♦",
-      "item.oneiricconcept.mora_magazine_n_3": "摩拉弹匣♦♦♦",
       "item.oneiricconcept.wilderness_rod": "林野钓竿",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
@@ -15426,7 +15370,7 @@
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "仙士掌",
       "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
-      "item.oneiricconcept.mora_magazine": "摩拉弹匣♦",
+      "item.oneiricconcept.mora_magazine": "摩拉弹匣",
       "effect.oneiricconcept.b_2sausage.description": "持续造成生命倍率×0.8×状态效果等级的伤害，击飞玩家",
       "block.oneiricconcept.newmo_8": "新月锭",
       "block.oneiricconcept.newmo_7": "新月锭",
@@ -15477,13 +15421,11 @@
       "gamerule.ocfly": "燃素翼飞行",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
-      "item.oneiricconcept.mora_magazine_e_3": "摩拉扩容弹匣♦♦♦",
       "advancements.power_of_herrschers.title": "律者之力",
       "item.oneiricconcept.oneiric_shard": "古老梦华",
       "block.oneiricconcept.cloud": "云",
-      "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣♦",
+      "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
@@ -15788,8 +15730,8 @@
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15814,8 +15756,8 @@
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
-      "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
+      "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
@@ -15841,8 +15783,6 @@
       "block.oneiricconcept.cryoo_4": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_5": "§k怜爱§r金属锭",
       "block.oneiricconcept.cryoo_6": "§k怜爱§r金属锭",
-      "item.oneiricconcept.mora_magazine_n_2": "摩拉弹匣♦♦",
-      "item.oneiricconcept.mora_magazine_n_3": "摩拉弹匣♦♦♦",
       "item.oneiricconcept.wilderness_rod": "林野钓竿",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
@@ -15873,7 +15813,7 @@
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "仙士掌",
       "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
-      "item.oneiricconcept.mora_magazine": "摩拉弹匣♦",
+      "item.oneiricconcept.mora_magazine": "摩拉弹匣",
       "effect.oneiricconcept.b_2sausage.description": "持续造成生命倍率×0.8×状态效果等级的伤害，击飞玩家",
       "block.oneiricconcept.newmo_8": "新月锭",
       "block.oneiricconcept.newmo_7": "新月锭",
@@ -15924,13 +15864,11 @@
       "gamerule.ocfly": "燃素翼飞行",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
-      "item.oneiricconcept.mora_magazine_e_3": "摩拉扩容弹匣♦♦♦",
       "advancements.power_of_herrschers.title": "律者之力",
       "item.oneiricconcept.oneiric_shard": "古老梦华",
       "block.oneiricconcept.cloud": "云",
-      "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣♦",
+      "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.mora_magazine_e_2": "摩拉扩容弹匣♦♦",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",

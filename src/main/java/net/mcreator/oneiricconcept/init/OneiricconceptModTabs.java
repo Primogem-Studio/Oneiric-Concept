@@ -74,10 +74,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.BOSS_STONE_COIN_GUN_PLUS.get());
 				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE.get());
 				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_1.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_2.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_2.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_N_3.get());
-				tabData.accept(OneiricconceptModItems.MORA_MAGAZINE_E_3.get());
 				tabData.accept(OneiricconceptModItems.PUBLIC_CLAMOR.get());
 				tabData.accept(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK.get().asItem());
 				tabData.accept(OneiricconceptModItems.PROPAGANDA_ARMY.get());

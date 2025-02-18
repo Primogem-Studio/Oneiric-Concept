@@ -22,6 +22,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.oneiricconcept.procedures.VastmodeProcedure;
+import net.mcreator.oneiricconcept.procedures.TexturesProcedure;
 import net.mcreator.oneiricconcept.item.XuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.XuanyuanArrowItem;
 import net.mcreator.oneiricconcept.item.WildernessRodItem;
@@ -68,11 +69,7 @@ import net.mcreator.oneiricconcept.item.OyStuffingItem;
 import net.mcreator.oneiricconcept.item.OyDumplingItem;
 import net.mcreator.oneiricconcept.item.OneiricShardItem;
 import net.mcreator.oneiricconcept.item.MoraSausageItem;
-import net.mcreator.oneiricconcept.item.MoraMagazineN3Item;
-import net.mcreator.oneiricconcept.item.MoraMagazineN2Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineItem;
-import net.mcreator.oneiricconcept.item.MoraMagazineE3Item;
-import net.mcreator.oneiricconcept.item.MoraMagazineE2Item;
 import net.mcreator.oneiricconcept.item.MoraMagazineE1Item;
 import net.mcreator.oneiricconcept.item.MoraBowItem;
 import net.mcreator.oneiricconcept.item.MoltenMetalItem;
@@ -207,11 +204,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> COMPRESS_TOTEMLOOT = REGISTRY.register("compress_totemloot", CompressTotemlootItem::new);
 	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN = REGISTRY.register("boss_stone_coin_gun", BossStoneCoinGunItem::new);
 	public static final DeferredItem<Item> MORA_MAGAZINE = REGISTRY.register("mora_magazine", MoraMagazineItem::new);
-	public static final DeferredItem<Item> MORA_MAGAZINE_N_2 = REGISTRY.register("mora_magazine_n_2", MoraMagazineN2Item::new);
-	public static final DeferredItem<Item> MORA_MAGAZINE_N_3 = REGISTRY.register("mora_magazine_n_3", MoraMagazineN3Item::new);
 	public static final DeferredItem<Item> MORA_MAGAZINE_E_1 = REGISTRY.register("mora_magazine_e_1", MoraMagazineE1Item::new);
-	public static final DeferredItem<Item> MORA_MAGAZINE_E_2 = REGISTRY.register("mora_magazine_e_2", MoraMagazineE2Item::new);
-	public static final DeferredItem<Item> MORA_MAGAZINE_E_3 = REGISTRY.register("mora_magazine_e_3", MoraMagazineE3Item::new);
 	public static final DeferredItem<Item> BOSS_STONE_COIN_GUN_PLUS = REGISTRY.register("boss_stone_coin_gun_plus", BossStoneCoinGunPlusItem::new);
 	public static final DeferredItem<Item> PUBLIC_CLAMOR = REGISTRY.register("public_clamor", PublicClamorItem::new);
 	public static final DeferredItem<Item> PROPAGANDA_ARMY = REGISTRY.register("propaganda_army", PropagandaArmyItem::new);
@@ -444,6 +437,8 @@ public class OneiricconceptModItems {
 		public static void clientLoad(FMLClientSetupEvent event) {
 			event.enqueueWork(() -> {
 				ItemProperties.register(ADEPTUS_GUN.get(), ResourceLocation.parse("oneiricconcept:adeptus_gun_mode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
+				ItemProperties.register(MORA_MAGAZINE.get(), ResourceLocation.parse("oneiricconcept:mora_magazine_textures"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
+				ItemProperties.register(MORA_MAGAZINE_E_1.get(), ResourceLocation.parse("oneiricconcept:mora_magazine_e_1_textures"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
 				ItemProperties.register(HEARTOFTHEVASTSEA.get(), ResourceLocation.parse("oneiricconcept:heartofthevastsea_itemmode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
 			});
 		}
