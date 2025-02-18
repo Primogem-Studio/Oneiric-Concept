@@ -14025,18 +14025,30 @@
       "path": "~/process"
     },
     {
-      "name": "O",
-      "type": "procedure",
+      "name": "Eastroc",
+      "type": "achievement",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "o",
+      "registry_name": "eastroc",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/OProcedure.java"
-        ],
-        "dependencies": []
+          "src/main/resources/data/oneiricconcept/advancement/eastroc.json"
+        ]
       },
-      "path": "~/process"
+      "path": "~/Advancement"
+    },
+    {
+      "name": "FallKing",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fall_king",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/fall_king.json"
+        ]
+      },
+      "path": "~/Advancement"
     }
   ],
   "variable_elements": [],
@@ -14909,6 +14921,7 @@
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
       "block.oneiricconcept.camerapink.description_0": "§7The meaning of \u0027相机 is to see through the key points",
       "block.oneiricconcept.geosealingwax": "Geo sealing wax",
+      "advancements.eastroc.descr": "Tired,Drowsy,Drink Eastroc",
       "block.oneiricconcept.nagadus_emerald_ore": "Nagadus Emerald Ore",
       "item.oneiricconcept.xuanyuan_sword": "Xuanyuan Sword",
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
@@ -14932,6 +14945,7 @@
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
       "death.attack.honkai.item": "%1$s was killed by %2$s using %3$s",
+      "advancements.fall_king.descr": "see you again~",
       "item.oneiricconcept.propaganda_army": "Propaganda Army",
       "translation.oneiricconcept.patchouli_name_pgc": "primogemcraft wiki",
       "block.oneiricconcept.fulmo_10": "full moon ingot",
@@ -15064,6 +15078,7 @@
       "item.oneiricconcept.energy_drink": "Energy Drink",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
+      "advancements.eastroc.title": "Eastroc",
       "block.oneiricconcept.redmo_4": "red moon ingot",
       "block.oneiricconcept.redmo_5": "red moon ingot",
       "block.oneiricconcept.redmo_2": "red moon ingot",
@@ -15182,6 +15197,7 @@
       "enchantment.oneiricconcept.sharp_hook": "Sharp Hook",
       "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
       "block.oneiricconcept.hydro_9": "Varunada_metal_ingot",
+      "advancements.fall_king.title": "Fall King",
       "block.oneiricconcept.hydro_8": "Varunada_metal_ingot",
       "block.oneiricconcept.hydro_7": "Varunada_metal_ingot",
       "block.oneiricconcept.hydro_6": "Varunada_metal_ingot",
@@ -15352,6 +15368,7 @@
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
       "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
       "block.oneiricconcept.geosealingwax": "岩之印",
+      "advancements.eastroc.descr": "累了困了喝东鹏特饮",
       "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
       "item.oneiricconcept.xuanyuan_sword": "轩辕剑",
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
@@ -15362,8 +15379,8 @@
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
-      "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
+      "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
@@ -15375,6 +15392,7 @@
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
       "death.attack.honkai.item": "%1$s was killed by %2$s using %3$s",
+      "advancements.fall_king.descr": "see you again~",
       "item.oneiricconcept.propaganda_army": "水军",
       "translation.oneiricconcept.patchouli_name_pgc": "原石工艺百科",
       "block.oneiricconcept.fulmo_10": "满月锭",
@@ -15507,6 +15525,7 @@
       "item.oneiricconcept.energy_drink": "能量饮料",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
+      "advancements.eastroc.title": "东鹏特饮",
       "block.oneiricconcept.redmo_4": "赤月锭",
       "block.oneiricconcept.redmo_5": "赤月锭",
       "block.oneiricconcept.redmo_2": "赤月锭",
@@ -15625,6 +15644,7 @@
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "block.oneiricconcept.hydro_9": "正义金属锭",
+      "advancements.fall_king.title": "耐摔王",
       "block.oneiricconcept.hydro_8": "正义金属锭",
       "block.oneiricconcept.hydro_7": "正义金属锭",
       "block.oneiricconcept.hydro_6": "正义金属锭",
@@ -15795,6 +15815,7 @@
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
       "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
       "block.oneiricconcept.geosealingwax": "岩之印",
+      "advancements.eastroc.descr": "Tired,Drowsy,Drink Eastroc",
       "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
       "item.oneiricconcept.xuanyuan_sword": "轩辕剑",
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
@@ -15818,6 +15839,7 @@
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
       "death.attack.honkai.item": "%1$s was killed by %2$s using %3$s",
+      "advancements.fall_king.descr": "see you again~",
       "item.oneiricconcept.propaganda_army": "水军",
       "translation.oneiricconcept.patchouli_name_pgc": "原石工艺百科",
       "block.oneiricconcept.fulmo_10": "满月锭",
@@ -15950,6 +15972,7 @@
       "item.oneiricconcept.energy_drink": "能量饮料",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
+      "advancements.eastroc.title": "Eastroc",
       "block.oneiricconcept.redmo_4": "赤月锭",
       "block.oneiricconcept.redmo_5": "赤月锭",
       "block.oneiricconcept.redmo_2": "赤月锭",
@@ -16068,6 +16091,7 @@
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "block.oneiricconcept.hydro_9": "正义金属锭",
+      "advancements.fall_king.title": "Fall King",
       "block.oneiricconcept.hydro_8": "正义金属锭",
       "block.oneiricconcept.hydro_7": "正义金属锭",
       "block.oneiricconcept.hydro_6": "正义金属锭",

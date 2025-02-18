@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:energy_drink"
+    },
+    "title": {
+      "translate": "advancements.eastroc.title"
+    },
+    "description": {
+      "translate": "advancements.eastroc.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "eastroc_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "oneiricconcept:energy_drink"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "oneiricconcept:the_seriousness_of_breakfast"
+}

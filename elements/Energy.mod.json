@@ -99,6 +99,20 @@
         },
         "amount": -0.1,
         "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "BLOCK_REACH"
+        },
+        "amount": 0.3,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ENTITY_REACH"
+        },
+        "amount": 0.3,
+        "operation": "ADD_VALUE"
       }
     ]
   }

@@ -26,5 +26,7 @@ public class EnergyMobEffect extends MobEffect {
 		this.addAttributeModifier(Attributes.STEP_HEIGHT, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_9"), 1, AttributeModifier.Operation.ADD_VALUE);
 		this.addAttributeModifier(Attributes.OXYGEN_BONUS, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_10"), 1, AttributeModifier.Operation.ADD_VALUE);
 		this.addAttributeModifier(Attributes.FALL_DAMAGE_MULTIPLIER, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_11"), -0.1, AttributeModifier.Operation.ADD_VALUE);
+		this.addAttributeModifier(Attributes.BLOCK_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_12"), 0.3, AttributeModifier.Operation.ADD_VALUE);
+		this.addAttributeModifier(Attributes.ENTITY_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_13"), 0.3, AttributeModifier.Operation.ADD_VALUE);
 	}
 }
