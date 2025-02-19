@@ -17,7 +17,7 @@ public class Vastheart2Procedure {
 		} else if (itemmode == 2) {
 			CloudheartmodeProcedure.execute(world, itemstack);
 		} else if (itemmode == 4) {
-			FishHealthProcedure.execute(world, x, y, z, entity);
+			FishHealthProcedure.execute(world, x, y, z, entity, itemstack);
 		}
 	}
 }

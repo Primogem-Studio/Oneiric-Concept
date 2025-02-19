@@ -51,7 +51,7 @@ public class HeartofthefishItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		FishHealthProcedure.execute(world, x, y, z, entity);
+		FishHealthProcedure.execute(world, x, y, z, entity, itemstack);
 		return retval;
 	}
 }

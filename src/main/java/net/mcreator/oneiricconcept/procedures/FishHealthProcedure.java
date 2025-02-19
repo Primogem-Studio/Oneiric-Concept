@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.Comparator;
 
 public class FishHealthProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		ItemStack fishitem = ItemStack.EMPTY;
@@ -69,7 +69,9 @@ public class FishHealthProcedure {
 				}
 			}
 			if (!world.isClientSide() && world.getServer() != null) {
-				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse("minecraft:gameplay/fishing/fish")))
+				for (ItemStack itemstackiterator : world.getServer().reloadableRegistries()
+						.getLootTable(
+								ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse(((RandomProcedure.execute(world, 0.8) ? "minecraft:gameplay/fishing/fish" : "minecraft:gameplay/fishing/junk")).toLowerCase(java.util.Locale.ENGLISH))))
 						.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 					if (entity instanceof Player _player) {
 						ItemStack _setstack = itemstackiterator.copy();
@@ -82,18 +84,10 @@ public class FishHealthProcedure {
 				if (!world.isClientSide() && world.getServer() != null) {
 					for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse("minecraft:gameplay/fishing/treasure")))
 							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-						if (entity instanceof Player _player) {
-							ItemStack _setstack = itemstackiterator.copy();
-							_setstack.setCount(1);
-							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						if (itemstackiterator.isEnchanted() || itemstackiterator.getItem() == Items.ENCHANTED_BOOK) {
+							if (entity instanceof Player _player)
+								_player.getCooldowns().addCooldown(itemstack.getItem(), 140);
 						}
-					}
-				}
-			}
-			if (RandomProcedure.execute(world, 0.3)) {
-				if (!world.isClientSide() && world.getServer() != null) {
-					for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse("minecraft:gameplay/fishing/junk")))
-							.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = itemstackiterator.copy();
 							_setstack.setCount(1);
