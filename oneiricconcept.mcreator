@@ -13928,7 +13928,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/mora_bow.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraBowItem.java"
+          "src/main/resources/assets/oneiricconcept/models/item/mora_bow_2.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MoraBowItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_bow_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_bow_1.json"
         ]
       },
       "path": "~/item"
@@ -14053,6 +14056,69 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "BowPull",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bow_pull",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BowPullProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "MorabowArchery",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "morabow_archery",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MorabowArcheryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -14722,6 +14788,7 @@
       "CUSTOM:B2elobogSausage"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:MoraBow",
       "~CUSTOM:DivineArrowEmbers",
       "~CUSTOM:Heartofthevastsea",
       "~CUSTOM:Heartoftheskysea",
@@ -14734,6 +14801,9 @@
     ],
     "ITEMS:c:foods/raw_meat": [
       "TAG:c:sausage"
+    ],
+    "ITEMS:minecraft:enchantable/bow": [
+      "CUSTOM:MoraBow"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:ShuhuGift",

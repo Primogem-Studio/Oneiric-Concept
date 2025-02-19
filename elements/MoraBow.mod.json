@@ -5,8 +5,61 @@
     "renderType": 0,
     "texture": "molagong_0",
     "customModelName": "Ranged item",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "pull": {
+        "name": "BowPull"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "molagong_1",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pull",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "molagong_2",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pull",
+              "type": "number"
+            },
+            "value": 14.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "molagong_3",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:pull",
+              "type": "number"
+            },
+            "value": 21.0
+          }
+        ]
+      }
+    ],
     "name": "Mora Bow",
     "rarity": "COMMON",
     "creativeTabs": [
@@ -14,16 +67,16 @@
         "value": "CUSTOM:OneiricConcept"
       }
     ],
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 72000,
     "toolType": 1.0,
-    "damageCount": 0,
+    "damageCount": 423,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -36,7 +89,10 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "enableRanged": true,
+    "onStoppedUsing": {
+      "name": "MorabowArchery"
+    },
+    "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
