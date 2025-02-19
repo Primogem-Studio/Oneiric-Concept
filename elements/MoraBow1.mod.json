@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:OneiricShard"
+      },
+      {
+        "value": "Items.STRING"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "Items.STRING"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MoraBow"
+    },
+    "name": "mora_bow_1",
+    "namespace": "mod"
+  }
+}

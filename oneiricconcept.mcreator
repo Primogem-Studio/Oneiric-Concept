@@ -14119,6 +14119,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "MoraBow1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mora_bow_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/mora_bow_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],

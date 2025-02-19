@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "acb",
+    " ab"
+  ],
+  "key": {
+    "a": {
+      "item": "primogemcraft:wmoladai"
+    },
+    "b": {
+      "item": "primogemcraft:jiuchanzhiyuanxian"
+    },
+    "c": {
+      "item": "primogemcraft:mmolapeiziwupin"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:mora_bow",
+    "count": 1
+  }
+}
