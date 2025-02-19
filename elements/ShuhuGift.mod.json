@@ -14,9 +14,9 @@
         "value": "TAG:minecraft:enchantable/sword"
       }
     ],
-    "isTreasureEnchantment": false,
+    "isTreasureEnchantment": true,
     "isCurse": false,
     "canGenerateInLootTables": true,
-    "canVillagerTrade": true
+    "canVillagerTrade": false
   }
 }
