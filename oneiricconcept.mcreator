@@ -583,19 +583,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "Chuangshijiejing1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "chuangshijiejing_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/chuangshijiejing_1.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
       "name": "ElementsCrystalOre",
       "type": "block",
       "compiles": true,
@@ -14132,6 +14119,71 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "MemoriaPiece5",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "memoria_piece_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memoria_piece_5.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Oneiricshard3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oneiricshard_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/oneiricshard_3.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "GenesisCrystal1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "genesis_crystal_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/genesis_crystal_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "GenesisCrystal2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "genesis_crystal_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/genesis_crystal_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Legionpseudocore2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "legionpseudocore_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/legionpseudocore_2.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -14179,6 +14231,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14187,10 +14243,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14993,8 +15045,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -15015,8 +15067,8 @@
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
-      "block.oneiricconcept.sweetflower": "Sweet flower",
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
+      "block.oneiricconcept.sweetflower": "Sweet flower",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
@@ -15027,8 +15079,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
-      "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
+      "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
       "block.oneiricconcept.banana_mushroom.description_2": "吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
@@ -15134,8 +15186,8 @@
       "block.oneiricconcept.cloud": "Cloud",
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine",
       "item.oneiricconcept.fish": "Fish",
-      "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
       "item.oneiricconcept.molten_metal": "Molten Metal Gem",
+      "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
       "item.oneiricconcept.phlogiston_core.description_1": "It is recommended to charge no more than three groups",
       "item.oneiricconcept.phlogiston_core.description_2": "as it may cause significant lag",
       "item.oneiricconcept.memoria_piece.description_0": "§7It\u0027s indeed just a condensed memory",
@@ -15440,8 +15492,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15462,8 +15514,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
+      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -15474,8 +15526,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -15581,8 +15633,8 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.molten_metal": "铄金",
+      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
@@ -15887,8 +15939,8 @@
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15909,8 +15961,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "block.oneiricconcept.sweetflower": "甜甜花",
+      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -15921,8 +15973,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
+      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -16028,8 +16080,8 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.molten_metal": "铄金",
+      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",

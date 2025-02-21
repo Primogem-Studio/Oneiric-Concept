@@ -1,0 +1,7 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],"type":"mekanism:nucleosynthesizing","chemical_input":{"amount":3,"chemical":"mekanism:antimatter"},"duration":750,"item_input":{"count":3,"item":"oneiricconcept:honkai_shard"},"output":{"count":1,"id":"oneiricconcept:legion_pseudo_core"},"per_tick_usage":false}
