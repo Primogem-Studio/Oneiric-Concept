@@ -1,6 +1,11 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "mushroom_fields",
+  "biomes": [
+    "mushroom_fields",
+    "jungle",
+    "bamboo_jungle",
+    "sparse_jungle"
+  ],
   "features": "oneiricconcept:b_2anana_mushroom",
   "step": "fluid_springs"
 }

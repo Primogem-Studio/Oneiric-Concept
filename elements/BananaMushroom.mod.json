@@ -107,12 +107,6 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "isBonemealable": true,
-    "bonemealSuccessCondition": {
-      "name": "BananaMushroombone"
-    },
-    "onBonemealSuccess": {
-      "name": "BananaMushroomNagadus"
-    },
     "frequencyOnChunks": 1,
     "generateFeature": true,
     "restrictionBiomes": [
@@ -121,7 +115,7 @@
       }
     ],
     "generationType": "Flower",
-    "patchSize": 1,
-    "generateAtAnyHeight": false
+    "patchSize": 5,
+    "generateAtAnyHeight": true
   }
 }
