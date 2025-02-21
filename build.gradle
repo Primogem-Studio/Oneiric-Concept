@@ -9,7 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.65"
+    version = "21.1.119"
 
     runs {
         client {
@@ -17,8 +17,7 @@ neoForge {
 
             def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
             if (mcreatorJvmOptions) {
-                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg ->
-                    jvmArgument(arg)
+                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg -> jvmArgument(arg)
                 }
             }
         }
@@ -37,6 +36,26 @@ neoForge {
             sourceSet sourceSets.main
         }
     }
+}
+
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                url "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+    maven { url "https://maven.shedaniel.me/" }
+}
+
+dependencies {
+    implementation "maven.modrinth:genshincraft:2.3.0"
+    implementation "maven.modrinth:2primogem-craft:25w07a"
+    api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.788"
 }
 
 tasks.withType(JavaCompile).configureEach {
