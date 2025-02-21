@@ -24,6 +24,7 @@ import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
 import net.mcreator.oneiricconcept.entity.InvalidEntity;
 import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
+import net.mcreator.oneiricconcept.entity.BaryonEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -47,6 +48,10 @@ public class OneiricconceptModEntities {
 			EntityType.Builder.<ExplosiveEntity>of(ExplosiveEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<XuanYuanArrowArrowEntity>> XUAN_YUAN_ARROW_ARROW = register("xuan_yuan_arrow_arrow",
 			EntityType.Builder.<XuanYuanArrowArrowEntity>of(XuanYuanArrowArrowEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BaryonEntity>> BARYON = register("baryon",
+			EntityType.Builder.<BaryonEntity>of(BaryonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1f, 1.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -57,10 +62,12 @@ public class OneiricconceptModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		CrystalTurtleEntity.init(event);
+		BaryonEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CRYSTAL_TURTLE.get(), CrystalTurtleEntity.createAttributes().build());
+		event.put(BARYON.get(), BaryonEntity.createAttributes().build());
 	}
 }

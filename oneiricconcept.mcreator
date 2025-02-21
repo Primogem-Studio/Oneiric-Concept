@@ -14184,6 +14184,110 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "ThiefSInstinct",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thief_s_instinct",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/ThiefSInstinctItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/thief_s_instinct.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "UsurperSScheme",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usurper_s_scheme",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/usurper_s_scheme.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/UsurperSSchemeItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "ConquerorSWill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "conqueror_s_will",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/ConquerorSWillItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/conqueror_s_will.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Baryon",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baryon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/baryon_spawn_egg.json",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/BaryonRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/BaryonEntity.java",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/baryon_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Baryonloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baryonloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/entities/baryon.json"
+        ]
+      }
+    },
+    {
+      "name": "AntimatterLegionLoot",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "antimatter_legion_loot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AntimatterLegionLootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [],
@@ -14231,10 +14335,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14243,6 +14343,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14963,7 +15067,10 @@
       "PhlogistonWing",
       "Phlogiston",
       "WildernessRod",
-      "MoraBow"
+      "MoraBow",
+      "ConquerorSWill",
+      "UsurperSScheme",
+      "ThiefSInstinct"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -15045,8 +15152,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -15067,8 +15174,8 @@
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
-      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "block.oneiricconcept.sweetflower": "Sweet flower",
+      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
@@ -15079,8 +15186,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
       "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
       "block.oneiricconcept.banana_mushroom.description_2": "吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
@@ -15186,8 +15293,8 @@
       "block.oneiricconcept.cloud": "Cloud",
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine",
       "item.oneiricconcept.fish": "Fish",
-      "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
+      "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_1": "It is recommended to charge no more than three groups",
       "item.oneiricconcept.phlogiston_core.description_2": "as it may cause significant lag",
       "item.oneiricconcept.memoria_piece.description_0": "§7It\u0027s indeed just a condensed memory",
@@ -15257,6 +15364,7 @@
       "block.oneiricconcept.vajrada_amethyst_ore": "Vajrada Amethyst Ore",
       "advancements.oneiric_concept_advancement.title": "Genshin Impact Speed Edition",
       "item.oneiricconcept.sun_start_can": "Sun Start Can",
+      "item.oneiricconcept.thief_s_instinct": "Thief\u0027s Instinct",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "translation.oneiricconcept.tastes": " tastes good",
       "subtitles.shuhu_en": "Shuhu\u0027s Gift",
@@ -15286,6 +15394,7 @@
       "block.oneiricconcept.pgc_pg1": "Primogem",
       "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
       "block.oneiricconcept.pgc_pg7": "Primogem",
+      "entity.oneiricconcept.baryon": "Baryon",
       "block.oneiricconcept.pgc_pg6": "Primogem",
       "block.oneiricconcept.pgc_pg5": "Primogem",
       "advancements.oneiric_concept_advancement.descr": "1.6GB Genshin installation package",
@@ -15293,6 +15402,7 @@
       "gamerule.ocDamagemultiplier": "Damage multiplier",
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
+      "item.oneiricconcept.conqueror_s_will": "Conqueror\u0027s Will",
       "block.oneiricconcept.dendr_6": "Nagadus_metal_ingot",
       "item.oneiricconcept.fishcake": "Fishcake",
       "block.oneiricconcept.dendr_7": "Nagadus_metal_ingot",
@@ -15353,6 +15463,7 @@
       "block.oneiricconcept.agnid_1": "Agnidus metal ingot",
       "translation.oneiricconcept.kill": "Clear quantity:§6",
       "block.oneiricconcept.mactus": "Mactus",
+      "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "Resurrection Pellet",
       "advancements.feed_on_illusions.title": "Feed On Illusions",
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
@@ -15369,6 +15480,7 @@
       "block.oneiricconcept.agnid_5": "Agnidus metal ingot",
       "block.oneiricconcept.agnid_4": "Agnidus metal ingot",
       "subtitles.shuhu_cn": "Shuhu\u0027s Gift",
+      "item.oneiricconcept.usurper_s_scheme": "Usurper\u0027s Scheme",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7romotion of the medicinal propertiesof health products is prohibited by thelaw.",
       "item.oneiricconcept.sun_start_can.description_0": "§6Directly raise the sun of the next day",
       "item.oneiricconcept.oneiric_shard.description_0": "§dLights flicking in a sea of stars, stirring the dream of a Leviathan. The past turns into candles that light the darkness ahead.",
@@ -15492,8 +15604,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15514,8 +15626,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "block.oneiricconcept.sweetflower": "甜甜花",
+      "item.oneiricconcept.memoria_loot": "忆质礼盒",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -15526,8 +15638,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
+      "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -15633,8 +15745,8 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
+      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
@@ -15704,6 +15816,7 @@
       "block.oneiricconcept.vajrada_amethyst_ore": "最胜紫晶矿石",
       "advancements.oneiric_concept_advancement.title": "原神极速版",
       "item.oneiricconcept.sun_start_can": "启阳罐",
+      "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "subtitles.shuhu_en": "倏忽恩赐",
@@ -15733,6 +15846,7 @@
       "block.oneiricconcept.pgc_pg1": "原石水晶",
       "block.oneiricconcept.stripped_the_another_world_log": "去皮异世界木",
       "block.oneiricconcept.pgc_pg7": "原石水晶",
+      "entity.oneiricconcept.baryon": "Baryon",
       "block.oneiricconcept.pgc_pg6": "原石水晶",
       "block.oneiricconcept.pgc_pg5": "原石水晶",
       "advancements.oneiric_concept_advancement.descr": "1.6GB的原神安装包",
@@ -15740,6 +15854,7 @@
       "gamerule.ocDamagemultiplier": "伤害倍率",
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7有股怪味……孜然的味道吗？",
+      "item.oneiricconcept.conqueror_s_will": "Conqueror S Will",
       "block.oneiricconcept.dendr_6": "智慧金属锭",
       "item.oneiricconcept.fishcake": "鱼糕",
       "block.oneiricconcept.dendr_7": "智慧金属锭",
@@ -15800,6 +15915,7 @@
       "block.oneiricconcept.agnid_1": "燃愿金属锭",
       "translation.oneiricconcept.kill": "清除数量：§6",
       "block.oneiricconcept.mactus": "仙女掌",
+      "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
@@ -15816,6 +15932,7 @@
       "block.oneiricconcept.agnid_5": "燃愿金属锭",
       "block.oneiricconcept.agnid_4": "燃愿金属锭",
       "subtitles.shuhu_cn": "倏忽恩赐",
+      "item.oneiricconcept.usurper_s_scheme": "Usurper S Scheme",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7依律禁止宣传保健品的药物功效。",
       "item.oneiricconcept.sun_start_can.description_0": "§6直接使下一日的太阳升起",
       "item.oneiricconcept.oneiric_shard.description_0": "§d泛浮在星辰大海中的结晶微光，律动着古老巨兽的遗梦。旧日的一切最终成了照亮黑暗前路的烛火。",
@@ -15939,8 +16056,8 @@
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15961,8 +16078,8 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
+      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
@@ -15973,8 +16090,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -16080,8 +16197,8 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
+      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
@@ -16151,6 +16268,7 @@
       "block.oneiricconcept.vajrada_amethyst_ore": "最胜紫晶矿石",
       "advancements.oneiric_concept_advancement.title": "原神极速版",
       "item.oneiricconcept.sun_start_can": "启阳罐",
+      "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "subtitles.shuhu_en": "倏忽恩赐",
@@ -16180,6 +16298,7 @@
       "block.oneiricconcept.pgc_pg1": "原石水晶",
       "block.oneiricconcept.stripped_the_another_world_log": "去皮异世界木",
       "block.oneiricconcept.pgc_pg7": "原石水晶",
+      "entity.oneiricconcept.baryon": "Baryon",
       "block.oneiricconcept.pgc_pg6": "原石水晶",
       "block.oneiricconcept.pgc_pg5": "原石水晶",
       "advancements.oneiric_concept_advancement.descr": "1.6GB的原神安装包",
@@ -16187,6 +16306,7 @@
       "gamerule.ocDamagemultiplier": "伤害倍率",
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7有股怪味……孜然的味道吗？",
+      "item.oneiricconcept.conqueror_s_will": "Conqueror S Will",
       "block.oneiricconcept.dendr_6": "智慧金属锭",
       "item.oneiricconcept.fishcake": "鱼糕",
       "block.oneiricconcept.dendr_7": "智慧金属锭",
@@ -16247,6 +16367,7 @@
       "block.oneiricconcept.agnid_1": "燃愿金属锭",
       "translation.oneiricconcept.kill": "清除数量：§6",
       "block.oneiricconcept.mactus": "仙女掌",
+      "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
@@ -16263,6 +16384,7 @@
       "block.oneiricconcept.agnid_5": "燃愿金属锭",
       "block.oneiricconcept.agnid_4": "燃愿金属锭",
       "subtitles.shuhu_cn": "倏忽恩赐",
+      "item.oneiricconcept.usurper_s_scheme": "Usurper S Scheme",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7依律禁止宣传保健品的药物功效。",
       "item.oneiricconcept.sun_start_can.description_0": "§6直接使下一日的太阳升起",
       "item.oneiricconcept.oneiric_shard.description_0": "§d泛浮在星辰大海中的结晶微光，律动着古老巨兽的遗梦。旧日的一切最终成了照亮黑暗前路的烛火。",

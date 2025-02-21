@@ -30,8 +30,10 @@ import net.mcreator.oneiricconcept.item.WildernessRodItem;
 import net.mcreator.oneiricconcept.item.WayfareCakeSlicesItem;
 import net.mcreator.oneiricconcept.item.WaffleItem;
 import net.mcreator.oneiricconcept.item.VirtualParticleItem;
+import net.mcreator.oneiricconcept.item.UsurperSSchemeItem;
 import net.mcreator.oneiricconcept.item.TreeBarkofEruditionItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
+import net.mcreator.oneiricconcept.item.ThiefSInstinctItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
 import net.mcreator.oneiricconcept.item.SwordOfBrilliantValorItem;
@@ -110,6 +112,7 @@ import net.mcreator.oneiricconcept.item.DivineArrowEmbersItem;
 import net.mcreator.oneiricconcept.item.DeepMarrowRockSaltItem;
 import net.mcreator.oneiricconcept.item.DarkXuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.DXuanyuanItem;
+import net.mcreator.oneiricconcept.item.ConquerorSWillItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
 import net.mcreator.oneiricconcept.item.CloudBottleItem;
@@ -420,6 +423,10 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> TREE_BARKOF_ERUDITION = REGISTRY.register("tree_barkof_erudition", TreeBarkofEruditionItem::new);
 	public static final DeferredItem<Item> PUNITIVE_ENERGY = REGISTRY.register("punitive_energy", PunitiveEnergyItem::new);
 	public static final DeferredItem<Item> MORA_BOW = REGISTRY.register("mora_bow", MoraBowItem::new);
+	public static final DeferredItem<Item> THIEF_S_INSTINCT = REGISTRY.register("thief_s_instinct", ThiefSInstinctItem::new);
+	public static final DeferredItem<Item> USURPER_S_SCHEME = REGISTRY.register("usurper_s_scheme", UsurperSSchemeItem::new);
+	public static final DeferredItem<Item> CONQUEROR_S_WILL = REGISTRY.register("conqueror_s_will", ConquerorSWillItem::new);
+	public static final DeferredItem<Item> BARYON_SPAWN_EGG = REGISTRY.register("baryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.BARYON, -16777114, -3355444, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

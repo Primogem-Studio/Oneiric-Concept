@@ -109,6 +109,9 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.PHLOGISTON.get());
 				tabData.accept(OneiricconceptModItems.WILDERNESS_ROD.get());
 				tabData.accept(OneiricconceptModItems.MORA_BOW.get());
+				tabData.accept(OneiricconceptModItems.CONQUEROR_S_WILL.get());
+				tabData.accept(OneiricconceptModItems.USURPER_S_SCHEME.get());
+				tabData.accept(OneiricconceptModItems.THIEF_S_INSTINCT.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -200,6 +203,7 @@ public class OneiricconceptModTabs {
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());
+			tabData.accept(OneiricconceptModItems.BARYON_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
