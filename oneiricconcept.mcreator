@@ -14301,7 +14301,8 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/PGCApi.java"
         ]
-      }
+      },
+      "path": "~/custom"
     },
     {
       "name": "AntiBaryon",
