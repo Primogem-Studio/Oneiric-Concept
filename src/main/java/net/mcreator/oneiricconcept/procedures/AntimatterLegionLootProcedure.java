@@ -23,7 +23,16 @@ public class AntimatterLegionLootProcedure {
 		ItemStack itmsstk = ItemStack.EMPTY;
 		double EquilibriumLevel = 0;
 		if (sourceentity instanceof Player) {
-			EquilibriumLevel = PGCApi.getPlayerVariables(sourceentity).jun_heng / 5;
+			EquilibriumLevel = PGCApi.getPlayerVariables(sourceentity).jun_heng / 5 - 1;
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + EquilibriumLevel)), false);
+			if (7 <= EquilibriumLevel) {
+				EquilibriumLevel = 3;
+			} else if (3 <= EquilibriumLevel) {
+				EquilibriumLevel = 2;
+			} else if (1 <= EquilibriumLevel) {
+				EquilibriumLevel = 1;
+			}
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + EquilibriumLevel)), false);
 			if (0 < EquilibriumLevel) {
