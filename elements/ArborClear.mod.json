@@ -1,0 +1,9 @@
+{
+  "_fv": 73,
+  "_type": "function",
+  "definition": {
+    "code": "fill ~-1 -64 ~-1 ~1 319 ~1 air replace oneiricconcept:ambrosial_arbor_leave\nfill ~-1 -64 ~-1 ~1 319 ~1 air replace oneiricconcept:ambrosial_arbor_log",
+    "name": "arbor_clear",
+    "namespace": "mod"
+  }
+}
