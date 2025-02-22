@@ -14,6 +14,20 @@
           {
             "type": "item",
             "item": {
+              "value": "Blocks.AIR"
+            },
+            "weight": 1600,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
               "value": "CUSTOM:ThiefSInstinct"
             },
             "weight": 2800,
@@ -52,20 +66,6 @@
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
-            "weight": 1600,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
           }
         ]
       },
@@ -79,7 +79,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:SolidWater"
+              "value": "CUSTOM:VirtualParticle"
             },
             "weight": 1,
             "minCount": 1,
@@ -93,7 +93,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:VirtualParticle"
+              "value": "CUSTOM:SolidWater"
             },
             "weight": 1,
             "minCount": 1,
@@ -107,7 +107,7 @@
         ]
       }
     ],
-    "name": "entities/baryon",
+    "name": "entities/antibaryon",
     "namespace": "mod"
   }
 }

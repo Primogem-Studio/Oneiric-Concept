@@ -6,6 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:air",
+          "weight": 1600,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "oneiricconcept:thief_s_instinct",
           "weight": 2800,
           "functions": [
@@ -45,20 +59,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
-          "weight": 1600,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
         }
       ]
     },
@@ -67,7 +67,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:solid_water",
+          "name": "oneiricconcept:virtual_particle",
           "weight": 1,
           "functions": [
             {
@@ -81,7 +81,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:virtual_particle",
+          "name": "oneiricconcept:solid_water",
           "weight": 1,
           "functions": [
             {
@@ -96,5 +96,5 @@
       ]
     }
   ],
-  "random_sequence": "oneiricconcept:entities/baryon"
+  "random_sequence": "oneiricconcept:entities/antibaryon"
 }

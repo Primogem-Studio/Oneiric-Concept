@@ -426,7 +426,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> THIEF_S_INSTINCT = REGISTRY.register("thief_s_instinct", ThiefSInstinctItem::new);
 	public static final DeferredItem<Item> USURPER_S_SCHEME = REGISTRY.register("usurper_s_scheme", UsurperSSchemeItem::new);
 	public static final DeferredItem<Item> CONQUEROR_S_WILL = REGISTRY.register("conqueror_s_will", ConquerorSWillItem::new);
-	public static final DeferredItem<Item> BARYON_SPAWN_EGG = REGISTRY.register("baryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.BARYON, -16777114, -3355444, new Item.Properties()));
+	public static final DeferredItem<Item> BARYON_SPAWN_EGG = REGISTRY.register("baryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.BARYON, -3355444, -16777114, new Item.Properties()));
+	public static final DeferredItem<Item> ANTIBARYON_SPAWN_EGG = REGISTRY.register("antibaryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.ANTIBARYON, -16777114, -3355444, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

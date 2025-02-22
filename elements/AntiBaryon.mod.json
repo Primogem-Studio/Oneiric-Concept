@@ -5,7 +5,7 @@
     "mobName": "Baryon",
     "mobLabel": "",
     "mobModelName": "ModelBaryon",
-    "mobModelTexture": "baryon.png",
+    "mobModelTexture": "antibaryon.png",
     "transparentModelCondition": {
       "fixedValue": false
     },
@@ -38,11 +38,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -3355444,
+      "value": -16777114,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16777114,
+      "value": -3355444,
       "falpha": 0.0
     },
     "creativeTabs": [

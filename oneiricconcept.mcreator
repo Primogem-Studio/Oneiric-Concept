@@ -11989,7 +11989,8 @@
         "files": [
           "src/main/resources/data/oneiricconcept/loot_table/entities/crystal_turtle.json"
         ]
-      }
+      },
+      "path": "~/entityloot"
     },
     {
       "name": "Hungereffect1",
@@ -13242,8 +13243,8 @@
       "registry_name": "virtual_particle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/VirtualParticleItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/virtual_particle.json"
+          "src/main/resources/assets/oneiricconcept/models/item/virtual_particle.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/VirtualParticleItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -13256,8 +13257,8 @@
       "registry_name": "solid_water",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/solid_water.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/SolidWaterItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/SolidWaterItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/solid_water.json"
         ]
       },
       "path": "~/item/item_food"
@@ -14193,8 +14194,8 @@
       "registry_name": "thief_s_instinct",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/ThiefSInstinctItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/thief_s_instinct.json"
+          "src/main/resources/assets/oneiricconcept/models/item/thief_s_instinct.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/ThiefSInstinctItem.java"
         ]
       },
       "path": "~/item"
@@ -14221,8 +14222,8 @@
       "registry_name": "conqueror_s_will",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/ConquerorSWillItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/conqueror_s_will.json"
+          "src/main/resources/assets/oneiricconcept/models/item/conqueror_s_will.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/ConquerorSWillItem.java"
         ]
       },
       "path": "~/item"
@@ -14252,7 +14253,8 @@
         "files": [
           "src/main/resources/data/oneiricconcept/loot_table/entities/baryon.json"
         ]
-      }
+      },
+      "path": "~/entityloot"
     },
     {
       "name": "AntimatterLegionLoot",
@@ -14300,6 +14302,34 @@
           "src/main/java/net/mcreator/oneiricconcept/PGCApi.java"
         ]
       }
+    },
+    {
+      "name": "AntiBaryon",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibaryon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/antibaryon_spawn_egg.json",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/AntiBaryonRenderer.java",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/antibaryon_biome_modifier.json",
+          "src/main/java/net/mcreator/oneiricconcept/entity/AntiBaryonEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Antibaryonloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antibaryonloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/entities/antibaryon.json"
+        ]
+      },
+      "path": "~/entityloot"
     }
   ],
   "variable_elements": [],
@@ -15173,6 +15203,7 @@
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
+      "entity.oneiricconcept.antibaryon": "Baryon",
       "block.oneiricconcept.cloud.description_0": "The source of the river",
       "fluid.oneiricconcept.memoria": "§9Memoria",
       "item.oneiricconcept.memoria_piece": "Memoria Piece",
@@ -15322,6 +15353,7 @@
       "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
       "fluid_type.oneiricconcept.memoria": "§9Memoria",
       "block.oneiricconcept.newmo_10": "crescent ingot",
+      "item.oneiricconcept.antibaryon_spawn_egg": "Baryon Spawn Egg",
       "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
       "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
       "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
@@ -15625,6 +15657,7 @@
       "item.oneiricconcept.mmmhit": "§7蘑菇碎屏特效",
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
+      "entity.oneiricconcept.antibaryon": "Baryon",
       "block.oneiricconcept.cloud.description_0": "§7百川源",
       "fluid.oneiricconcept.memoria": "§9忆质",
       "item.oneiricconcept.memoria_piece": "§9忆质凝块",
@@ -15774,6 +15807,7 @@
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
       "block.oneiricconcept.newmo_10": "新月锭",
+      "item.oneiricconcept.antibaryon_spawn_egg": "Baryon Spawn Egg",
       "block.oneiricconcept.dendr_10": "智慧金属锭",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
@@ -16077,6 +16111,7 @@
       "item.oneiricconcept.mmmhit": "§7蘑菇碎屏特效",
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
+      "entity.oneiricconcept.antibaryon": "Baryon",
       "block.oneiricconcept.cloud.description_0": "§7百川源",
       "fluid.oneiricconcept.memoria": "§9忆质",
       "item.oneiricconcept.memoria_piece": "§9忆质凝块",
@@ -16226,6 +16261,7 @@
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
       "block.oneiricconcept.newmo_10": "新月锭",
+      "item.oneiricconcept.antibaryon_spawn_egg": "Baryon Spawn Egg",
       "block.oneiricconcept.dendr_10": "智慧金属锭",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
@@ -16648,6 +16684,10 @@
       },
       {
         "name": "extra-process",
+        "children": []
+      },
+      {
+        "name": "entityloot",
         "children": []
       }
     ]

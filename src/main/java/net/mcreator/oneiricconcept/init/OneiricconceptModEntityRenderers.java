@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.oneiricconcept.client.renderer.SkyShatteringLuxArrowRenderer;
 import net.mcreator.oneiricconcept.client.renderer.CrystalTurtleRenderer;
 import net.mcreator.oneiricconcept.client.renderer.BaryonRenderer;
+import net.mcreator.oneiricconcept.client.renderer.AntiBaryonRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class OneiricconceptModEntityRenderers {
@@ -28,5 +29,6 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.EXPLOSIVE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.XUAN_YUAN_ARROW_ARROW.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.BARYON.get(), BaryonRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.ANTIBARYON.get(), AntiBaryonRenderer::new);
 	}
 }
