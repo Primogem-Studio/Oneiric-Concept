@@ -14539,6 +14539,23 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "RainbowCactusBall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbow_cactus_ball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/rainbow_cactus_ball.json",
+          "src/main/resources/assets/oneiricconcept/models/item/rainbow_cactus_ball.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/rainbow_cactus_ball.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/RainbowCactusBallBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/rainbow_cactus_ball.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [],
@@ -15399,7 +15416,8 @@
       "Cryosealingwax",
       "Geosealingwax",
       "Camerapink",
-      "Camera"
+      "Camera",
+      "RainbowCactusBall"
     ]
   },
   "language_map": {
@@ -15585,6 +15603,7 @@
       "block.oneiricconcept.redmo_4": "red moon ingot",
       "block.oneiricconcept.redmo_5": "red moon ingot",
       "block.oneiricconcept.redmo_2": "red moon ingot",
+      "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
       "block.oneiricconcept.redmo_3": "red moon ingot",
       "block.oneiricconcept.fulmo_7": "crescent ingot",
       "block.oneiricconcept.redmo_8": "red moon ingot",
@@ -16040,6 +16059,7 @@
       "block.oneiricconcept.redmo_4": "赤月锭",
       "block.oneiricconcept.redmo_5": "赤月锭",
       "block.oneiricconcept.redmo_2": "赤月锭",
+      "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
       "block.oneiricconcept.redmo_3": "赤月锭",
       "block.oneiricconcept.fulmo_7": "满月锭",
       "block.oneiricconcept.redmo_8": "赤月锭",
@@ -16495,6 +16515,7 @@
       "block.oneiricconcept.redmo_4": "赤月锭",
       "block.oneiricconcept.redmo_5": "赤月锭",
       "block.oneiricconcept.redmo_2": "赤月锭",
+      "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
       "block.oneiricconcept.redmo_3": "赤月锭",
       "block.oneiricconcept.fulmo_7": "满月锭",
       "block.oneiricconcept.redmo_8": "赤月锭",

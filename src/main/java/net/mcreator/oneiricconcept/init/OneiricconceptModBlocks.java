@@ -41,6 +41,7 @@ import net.mcreator.oneiricconcept.block.Redmo3Block;
 import net.mcreator.oneiricconcept.block.Redmo2Block;
 import net.mcreator.oneiricconcept.block.Redmo1Block;
 import net.mcreator.oneiricconcept.block.Redmo10Block;
+import net.mcreator.oneiricconcept.block.RainbowCactusBallBlock;
 import net.mcreator.oneiricconcept.block.RactusBlock;
 import net.mcreator.oneiricconcept.block.PyrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.PropagandaArmyBlockBlock;
@@ -389,6 +390,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> PHLOGISTONTANK = REGISTRY.register("phlogistontank", PhlogistontankBlock::new);
 	public static final DeferredBlock<Block> CAMERAPINK = REGISTRY.register("camerapink", CamerapinkBlock::new);
 	public static final DeferredBlock<Block> SWEETFLOWER = REGISTRY.register("sweetflower", SweetflowerBlock::new);
+	public static final DeferredBlock<Block> RAINBOW_CACTUS_BALL = REGISTRY.register("rainbow_cactus_ball", RainbowCactusBallBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

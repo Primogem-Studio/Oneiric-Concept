@@ -189,6 +189,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.GEOSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERAPINK.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

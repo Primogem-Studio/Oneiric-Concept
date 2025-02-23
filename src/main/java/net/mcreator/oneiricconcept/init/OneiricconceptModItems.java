@@ -430,6 +430,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> BARYON_SPAWN_EGG = REGISTRY.register("baryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.BARYON, -3355444, -16777114, new Item.Properties()));
 	public static final DeferredItem<Item> ANTIBARYON_SPAWN_EGG = REGISTRY.register("antibaryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.ANTIBARYON, -16777114, -3355444, new Item.Properties()));
 	public static final DeferredItem<Item> TESTTOOL = REGISTRY.register("testtool", TesttoolItem::new);
+	public static final DeferredItem<Item> RAINBOW_CACTUS_BALL = block(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items
