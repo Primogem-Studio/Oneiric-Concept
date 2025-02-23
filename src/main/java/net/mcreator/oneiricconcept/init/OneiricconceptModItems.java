@@ -452,6 +452,7 @@ public class OneiricconceptModItems {
 				ItemProperties.register(MORA_MAGAZINE_E_1.get(), ResourceLocation.parse("oneiricconcept:mora_magazine_e_1_textures"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
 				ItemProperties.register(HEARTOFTHEVASTSEA.get(), ResourceLocation.parse("oneiricconcept:heartofthevastsea_itemmode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
 				ItemProperties.register(MORA_BOW.get(), ResourceLocation.parse("oneiricconcept:mora_bow_pull"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BowPullProcedure.execute(entity, itemStackToRender));
+				ItemProperties.register(TESTTOOL.get(), ResourceLocation.parse("oneiricconcept:testtool_test"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
 			});
 		}
 	}

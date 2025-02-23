@@ -5,8 +5,29 @@
     "renderType": 0,
     "texture": "testtool",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "test": {
+        "name": "Textures"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "testtool_normal",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:test",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      }
+    ],
     "name": "Testtool",
     "rarity": "COMMON",
     "creativeTabs": [
@@ -36,8 +57,14 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "Testrangedel"
+    },
     "onEntityHitWith": {
       "name": "TestDelete"
+    },
+    "onEntitySwing": {
+      "name": "Testmode"
     },
     "enableRanged": false,
     "shootConstantly": false,

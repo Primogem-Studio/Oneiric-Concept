@@ -2,15 +2,21 @@
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
 
+import net.mcreator.oneiricconcept.procedures.TestrangedelProcedure;
+import net.mcreator.oneiricconcept.procedures.TestmodeProcedure;
 import net.mcreator.oneiricconcept.procedures.TestDeleteProcedure;
 
 public class TesttoolItem extends Item {
@@ -46,9 +52,23 @@ public class TesttoolItem extends Item {
 	}
 
 	@Override
+	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
+		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
+		TestrangedelProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		return ar;
+	}
+
+	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		TestDeleteProcedure.execute(entity);
+		TestDeleteProcedure.execute(entity.level(), entity.getX(), entity.getZ(), entity, sourceentity);
+		return retval;
+	}
+
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
+		boolean retval = super.onEntitySwing(itemstack, entity, hand);
+		TestmodeProcedure.execute(entity, itemstack);
 		return retval;
 	}
 }

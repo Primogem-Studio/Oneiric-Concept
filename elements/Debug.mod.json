@@ -1,0 +1,9 @@
+{
+  "_fv": 73,
+  "_type": "function",
+  "definition": {
+    "code": "gamerule ocdebug true\ngamerule ocfly false",
+    "name": "debug",
+    "namespace": "mod"
+  }
+}

@@ -2,5 +2,13 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "oneiricconcept:item/testtool"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "oneiricconcept:testtool_test": 1
+      },
+      "model": "oneiricconcept:item/testtool_0"
+    }
+  ]
 }
