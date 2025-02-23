@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "def",
+    " g "
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:ractus"
+    },
+    "b": {
+      "item": "oneiricconcept:gactus"
+    },
+    "c": {
+      "item": "oneiricconcept:bactus"
+    },
+    "d": {
+      "item": "oneiricconcept:c_cactus"
+    },
+    "e": {
+      "item": "oneiricconcept:mactus"
+    },
+    "f": {
+      "item": "oneiricconcept:yactus"
+    },
+    "g": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:rainbow_cactus_ball",
+    "count": 1
+  }
+}
