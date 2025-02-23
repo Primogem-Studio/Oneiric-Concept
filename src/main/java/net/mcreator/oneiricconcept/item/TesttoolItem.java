@@ -61,7 +61,7 @@ public class TesttoolItem extends Item {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		TestDeleteProcedure.execute(entity.level(), entity.getX(), entity.getZ(), entity, sourceentity);
+		TestDeleteProcedure.execute(entity.level(), entity.getX(), entity.getZ(), entity);
 		return retval;
 	}
 
