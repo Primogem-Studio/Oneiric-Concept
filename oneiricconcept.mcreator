@@ -14443,6 +14443,45 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "UsurperSScheme1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "usurper_s_scheme_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/usurper_s_scheme_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ConquerorSWill1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "conqueror_s_will_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/conqueror_s_will_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Antimatter",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "antimatter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/antimatter.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -15099,6 +15138,9 @@
     "ITEMS:c:foods/safe_raw_fish": [
       "TAG:mod:fish",
       "CUSTOM:IceFreshRawFrostweaveSalmonSlices"
+    ],
+    "ITEMS:mod:antimatter": [
+      "CUSTOM:ConquerorSWill"
     ],
     "ITEMS:c:cheese": [
       "TAG:c:foods/cheese"

@@ -1,0 +1,8 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+"type":"mekanism:oxidizing","input":{"count":3,"tag":"oneiricconcept:antimatter"},"output":{"amount":1,"id":"mekanism:antimatter"}}

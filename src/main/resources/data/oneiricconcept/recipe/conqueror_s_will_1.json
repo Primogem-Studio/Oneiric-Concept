@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:usurper_s_scheme"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:conqueror_s_will",
+    "count": 1
+  }
+}

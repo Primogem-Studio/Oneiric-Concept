@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:thief_s_instinct"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:usurper_s_scheme",
+    "count": 1
+  }
+}
