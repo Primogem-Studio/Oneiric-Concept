@@ -200,6 +200,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.FLOATING_CLOUD.get().asItem());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
 				tabData.accept(OneiricconceptModItems.PRIMOGEMCRAFTWIKI.get());
+				tabData.accept(OneiricconceptModItems.TESTTOOL.get());
 			}
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());

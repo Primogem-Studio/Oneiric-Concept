@@ -34,6 +34,7 @@ import net.mcreator.oneiricconcept.item.UsurperSSchemeItem;
 import net.mcreator.oneiricconcept.item.TreeBarkofEruditionItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.ThiefSInstinctItem;
+import net.mcreator.oneiricconcept.item.TesttoolItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
 import net.mcreator.oneiricconcept.item.SwordOfBrilliantValorItem;
@@ -428,6 +429,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> CONQUEROR_S_WILL = REGISTRY.register("conqueror_s_will", ConquerorSWillItem::new);
 	public static final DeferredItem<Item> BARYON_SPAWN_EGG = REGISTRY.register("baryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.BARYON, -3355444, -16777114, new Item.Properties()));
 	public static final DeferredItem<Item> ANTIBARYON_SPAWN_EGG = REGISTRY.register("antibaryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.ANTIBARYON, -16777114, -3355444, new Item.Properties()));
+	public static final DeferredItem<Item> TESTTOOL = REGISTRY.register("testtool", TesttoolItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

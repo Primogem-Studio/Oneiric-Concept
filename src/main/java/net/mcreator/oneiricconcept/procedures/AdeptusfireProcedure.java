@@ -91,7 +91,7 @@ public class AdeptusfireProcedure {
 							entityToSpawn.setSilent(true);
 							return entityToSpawn;
 						}
-					}.getArrow(projectileLevel, entity, 5, 1, (byte) 5);
+					}.getArrow(projectileLevel, entity, 8192, 1, (byte) 32768);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 13, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
