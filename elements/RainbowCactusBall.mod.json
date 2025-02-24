@@ -12,7 +12,7 @@
     "customModelName": "rainbowcactusball:default",
     "rotationMode": 1,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -110,7 +110,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 3,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
