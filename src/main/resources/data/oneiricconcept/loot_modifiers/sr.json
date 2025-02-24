@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    { "condition": "neoforge:loot_table_id", "value": "primogemcraft:q_qqyzi" },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.25
+    }
+  ],
+  "table": "oneiricconcept:sr"
+}
