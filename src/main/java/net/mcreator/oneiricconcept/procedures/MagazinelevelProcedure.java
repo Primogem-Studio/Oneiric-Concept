@@ -58,8 +58,6 @@ public class MagazinelevelProcedure {
 					final double _tagValue = nu;
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(level), false);
 				bulletitem.shrink(1);
 				itemstack.setDamageValue((int) (itemstack.getMaxDamage() - 1));
 				return InteractionResult.SUCCESS;

@@ -16,6 +16,12 @@
     "entityModel": "Default",
     "customModelTexture": "",
     "modelWidth": 0.5,
-    "modelHeight": 0.5
+    "modelHeight": 0.5,
+    "onHitsEntity": {
+      "name": "ProjectileHitEntity"
+    },
+    "onFlyingTick": {
+      "name": "NoGravity"
+    }
   }
 }

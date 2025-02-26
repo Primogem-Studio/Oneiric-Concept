@@ -5,6 +5,7 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -18,6 +19,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.oneiricconcept.procedures.ProjectileHitEntityProcedure;
+import net.mcreator.oneiricconcept.procedures.NoGravityProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 
@@ -73,8 +76,15 @@ public class MoraCoinEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		ProjectileHitEntityProcedure.execute(this.level(), this);
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
+		NoGravityProcedure.execute(this);
 		if (this.inGround)
 			this.discard();
 	}
