@@ -1,12 +1,6 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:pgc_pg1",
-    "oneiricconcept:pgc_pg2",
-    "oneiricconcept:pgc_pg3",
-    "oneiricconcept:pgc_pg4",
-    "oneiricconcept:pgc_pg5",
-    "oneiricconcept:pgc_pg6",
-    "oneiricconcept:pgc_pg7"
+    "oneiricconcept:primogem"
   ]
 }

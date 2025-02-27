@@ -39,7 +39,7 @@
       "fixedValue": []
     },
     "hardness": 1.0,
-    "resistance": 10.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTabs": [
@@ -125,10 +125,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "Pgprocess"
+      "name": "Blockmode"
     },
-    "onNeighbourBlockChanges": {
-      "name": "Supportdown"
+    "onDestroyedByPlayer": {
+      "name": "BreakDrops"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

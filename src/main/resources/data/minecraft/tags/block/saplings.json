@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:banana_mushroom",
     "oneiricconcept:fresh_seedof_dawn",
     "oneiricconcept:ambrosial_arbor_sapling",
-    "oneiricconcept:the_another_world_sapling"
+    "oneiricconcept:the_another_world_sapling",
+    "oneiricconcept:banana_mushroom"
   ]
 }

@@ -165,12 +165,10 @@ public class OneiricconceptModTabs {
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HBOND_0.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(OneiricconceptModBlocks.PGC_PG1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HBOND_0.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.REDMO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.FULMO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
@@ -190,6 +188,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.CAMERAPINK.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PRIMOGEM.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.REDMOON_METAL.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

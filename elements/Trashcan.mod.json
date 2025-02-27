@@ -345,7 +345,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:PgcPgc"
+              "value": "CUSTOM:PgcPg"
             },
             "weight": 3,
             "minCount": 1,

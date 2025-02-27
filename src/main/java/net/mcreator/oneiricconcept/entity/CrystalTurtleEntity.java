@@ -286,7 +286,7 @@ public class CrystalTurtleEntity extends Animal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return Ingredient.of(new ItemStack(OneiricconceptModBlocks.PGC_PG1.get())).test(stack);
+		return Ingredient.of(new ItemStack(OneiricconceptModBlocks.PRIMOGEM.get())).test(stack);
 	}
 
 	@Override

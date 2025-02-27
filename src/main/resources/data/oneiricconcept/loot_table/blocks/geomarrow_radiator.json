@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "oneiricconcept:blocks/redmo_1",
+  "random_sequence": "oneiricconcept:blocks/geomarrow_radiator",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:redmo_1"
+          "name": "oneiricconcept:geomarrow_radiator"
         }
       ]
     }

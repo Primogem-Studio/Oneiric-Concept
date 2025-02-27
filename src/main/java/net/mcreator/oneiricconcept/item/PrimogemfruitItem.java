@@ -18,7 +18,7 @@ public class PrimogemfruitItem extends Item {
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(OneiricconceptModBlocks.PGC_PG1.get());
+		ItemStack retval = new ItemStack(OneiricconceptModBlocks.PRIMOGEM.get());
 		super.finishUsingItem(itemstack, world, entity);
 		if (itemstack.isEmpty()) {
 			return retval;

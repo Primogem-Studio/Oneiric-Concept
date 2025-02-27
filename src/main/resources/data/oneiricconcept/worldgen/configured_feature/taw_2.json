@@ -46,7 +46,7 @@
         "block_provider": {
           "type": "minecraft:simple_state_provider",
           "state": {
-            "Name": "oneiricconcept:pgc_pg1"
+            "Name": "oneiricconcept:primogem"
           }
         },
         "probability": 1,
