@@ -26,18 +26,18 @@ public class MakemetalmeltProcedure {
 		ItemStack blkitm = ItemStack.EMPTY;
 		block = (world.getBlockState(BlockPos.containing(x, y + 1, z)));
 		blkitm = (new ItemStack(block.getBlock()));
-		if (block.getBlock() == OneiricconceptModBlocks.GEOOO_1.get()) {
+		if (block.getBlock() == OneiricconceptModBlocks.GEO_METAL.get()) {
 			for (int index0 = 0; index0 < 200; index0++) {
 				a = a + 1;
 				OneiricconceptMod.queueServerWork((int) a, () -> {
-					if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == OneiricconceptModBlocks.GEOOO_1.get()) {
+					if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == OneiricconceptModBlocks.GEO_METAL.get()) {
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles(ParticleTypes.FLAME, (x + 0.5), (y + 1), (z + 0.5), 1, 0.06, 0.01, 0.06, 0.01);
 					}
 				});
 			}
 			OneiricconceptMod.queueServerWork(202, () -> {
-				if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == OneiricconceptModBlocks.GEOOO_1.get() && (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == OneiricconceptModBlocks.MOLTEN_METAL_BLOCK.get()) {
+				if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == OneiricconceptModBlocks.GEO_METAL.get() && (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == OneiricconceptModBlocks.MOLTEN_METAL_BLOCK.get()) {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.FLAME, (x + 0.5), (y + 3), (z + 0.5), 100, 0.05, 1, 0.05, 0.1);
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);

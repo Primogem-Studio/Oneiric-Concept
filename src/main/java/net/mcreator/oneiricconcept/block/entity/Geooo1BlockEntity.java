@@ -29,7 +29,7 @@ public class Geooo1BlockEntity extends RandomizableContainerBlockEntity implemen
 	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
 
 	public Geooo1BlockEntity(BlockPos position, BlockState state) {
-		super(OneiricconceptModBlockEntities.GEOOO_1.get(), position, state);
+		super(OneiricconceptModBlockEntities.GEO_METAL.get(), position, state);
 	}
 
 	@Override
@@ -73,7 +73,7 @@ public class Geooo1BlockEntity extends RandomizableContainerBlockEntity implemen
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("geooo_1");
+		return Component.literal("geo_metal");
 	}
 
 	@Override

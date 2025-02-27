@@ -5747,82 +5747,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "anemo_1",
+      "registry_name": "anemo_metal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/anemo_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Anemo1Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo2Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_2.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_2.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_3.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo3Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_4.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_4.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo4Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo7Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_7.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_7.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/anemo_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/Anemo_Feng"
@@ -5832,83 +5764,15 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "geooo_1",
+      "registry_name": "geo_metal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_1.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/geo_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/geo_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/geo_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Geooo1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_1.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/Geooo1BlockEntity.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo2Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_2.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo3Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_3.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo4Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_4.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo7Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_7.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_7.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/Geo_Yan"
@@ -6422,176 +6286,6 @@
         ]
       },
       "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Anemo5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_5.json",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo5Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_6",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo6Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_6.json",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_6.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_8.json",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_8.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo8Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo9Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Anemo10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anemo_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_10.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Anemo10Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_10.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_10.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
-    },
-    {
-      "name": "Geooo5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_5.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo5Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_5.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo6Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_6.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_8",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo8Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_8.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_8.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_9.json",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo9Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Geooo10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "geooo_10",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Geooo10Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/geooo_10.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/geooo_10.json",
-          "src/main/resources/assets/oneiricconcept/models/item/geooo_10.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geooo_10.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Geo_Yan"
     },
     {
       "name": "Dechitaudio",
@@ -14508,6 +14202,69 @@
         ]
       },
       "path": "~/PgcCopyDecoration/pgcprocess"
+    },
+    {
+      "name": "FullmoonMeatal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fullmoon_meatal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_7.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block"
+    },
+    {
+      "name": "GeoMetal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "geo_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_6.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/Geo_Yan"
+    },
+    {
+      "name": "AnemoMetal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anemo_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_6.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/Anemo_Feng"
     }
   ],
   "variable_elements": [],
@@ -14581,16 +14338,6 @@
       "~CUSTOM:Hbond2",
       "~CUSTOM:Herta1",
       "~CUSTOM:Hertabond",
-      "~CUSTOM:Geooo10",
-      "~CUSTOM:Geooo9",
-      "~CUSTOM:Geooo8",
-      "~CUSTOM:Geooo6",
-      "~CUSTOM:Geooo5",
-      "~CUSTOM:Anemo10",
-      "~CUSTOM:Anemo9",
-      "~CUSTOM:Anemo8",
-      "~CUSTOM:Anemo6",
-      "~CUSTOM:Anemo5",
       "~CUSTOM:Dendr10",
       "~CUSTOM:Dendr9",
       "~CUSTOM:Dendr8",
@@ -14621,15 +14368,7 @@
       "~CUSTOM:Fulmo8",
       "~CUSTOM:Fulmo6",
       "~CUSTOM:Fulmo5",
-      "~CUSTOM:Geooo7",
-      "~CUSTOM:Geooo4",
-      "~CUSTOM:Geooo3",
-      "~CUSTOM:Geooo2",
       "~CUSTOM:Geooo1",
-      "~CUSTOM:Anemo7",
-      "~CUSTOM:Anemo4",
-      "~CUSTOM:Anemo3",
-      "~CUSTOM:Anemo2",
       "~CUSTOM:Anemo1",
       "~CUSTOM:Dendr7",
       "~CUSTOM:Dendr4",
@@ -15336,11 +15075,9 @@
       "Liron1",
       "Agnid1",
       "Hydro1",
-      "Anemo1",
       "Elect1",
       "Dendr1",
       "Cryoo1",
-      "Geooo1",
       "Pyrosealingwax",
       "Hydrosealingwax",
       "AnemoSealingwax",
@@ -15352,7 +15089,9 @@
       "Camera",
       "RainbowCactusBall",
       "PgcPg",
-      "Redmo1"
+      "Redmo1",
+      "Anemo1",
+      "Geooo1"
     ]
   },
   "language_map": {
@@ -15614,12 +15353,12 @@
       "translation.oneiricconcept.sustenance": "§aEmergency treatment has been carried out|§r|",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "Sweet Sesame Filling Yuan Xiao",
       "block.oneiricconcept.elements_crystal_ore": "Elements Crystal Ore",
-      "block.oneiricconcept.anemo_10": "Vayuda_metal_ingot",
       "block.oneiricconcept.big_stone": "Big Stone",
       "subtitles.mmm": "bump",
       "advancements.big_stone_crush_chest.title": "Big Stone Crush Chest",
       "item.oneiricconcept.fruitpastebait": "Fruit paste bait",
       "item.oneiricconcept.salt_dust": "Salt Dust",
+      "block.oneiricconcept.geo_metal": "Prithiva_metal_ingot",
       "block.oneiricconcept.bactus": "Bactus",
       "effect.oneiricconcept.camo": "Camo",
       "block.oneiricconcept.pgc_present": "Present",
@@ -15697,7 +15436,6 @@
       "item.oneiricconcept.oy_stuffing": "stuffing",
       "item.oneiricconcept.medaka": "Medaka",
       "gamerule.ocHealthmultiplier": "Health multiplier",
-      "block.oneiricconcept.geooo_10": "Prithiva_metal_ingot",
       "block.oneiricconcept.cryosealingwax": "Cryo sealing wax",
       "translation.oneiricconcept.lurelevelup": "§6Lure Upgraded!",
       "death.attack.b_2.player": "%1$s was unable to escape the %2$s\u0027s fumigation",
@@ -15736,24 +15474,15 @@
       "item.oneiricconcept.phlogiston_crystal": "Phlogiston Crystal",
       "item.oneiricconcept.glazemedaka": "Glaze medaka",
       "gamerule.ocHealthmultiplier.description": "Control the multiplier of partial life changes",
-      "block.oneiricconcept.geooo_1": "Prithiva_metal_ingot",
       "gamerule.ocdebug": "ocdebug",
-      "block.oneiricconcept.geooo_3": "Prithiva_metal_ingot",
-      "block.oneiricconcept.geooo_2": "Prithiva_metal_ingot",
       "block.oneiricconcept.hydrosealingwax": "Hydro sealing wax",
       "item.oneiricconcept.hiltwood_from_the_arbor": "Hilt-wood From The Arbor",
-      "block.oneiricconcept.geooo_5": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_2": "Herta bond",
-      "block.oneiricconcept.geooo_4": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_3": "Herta bond",
-      "block.oneiricconcept.geooo_7": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_4": "Herta bond",
       "block.oneiricconcept.hbond_5": "Herta bond",
-      "block.oneiricconcept.geooo_6": "Prithiva_metal_ingot",
-      "block.oneiricconcept.geooo_9": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_6": "Herta bond",
       "item.oneiricconcept.stuffing": "stuffing",
-      "block.oneiricconcept.geooo_8": "Prithiva_metal_ingot",
       "block.oneiricconcept.hbond_7": "Herta bond",
       "block.oneiricconcept.hbond_8": "Herta bond",
       "gamerule.ocdebug.description": "debug",
@@ -15761,19 +15490,11 @@
       "death.attack.b_2": "%1$s Feeling uncomfortable after eating smoked sausage",
       "block.oneiricconcept.hbond_0": "Herta bond",
       "block.oneiricconcept.hbond_1": "Herta bond",
-      "block.oneiricconcept.anemo_5": "Vayuda_metal_ingot",
-      "block.oneiricconcept.anemo_6": "Vayuda_metal_ingot",
-      "block.oneiricconcept.anemo_3": "Vayuda_metal_ingot",
       "item.oneiricconcept.milk": "Milk",
-      "block.oneiricconcept.anemo_4": "Vayuda_metal_ingot",
-      "block.oneiricconcept.anemo_9": "Vayuda_metal_ingot",
       "block.oneiricconcept.fresh_seedof_dawn": "Fresh Seedof Dawn",
-      "block.oneiricconcept.anemo_7": "Vayuda_metal_ingot",
       "block.oneiricconcept.sustenanceanchor": "Sustenanceanchor",
-      "block.oneiricconcept.anemo_8": "Vayuda_metal_ingot",
+      "block.oneiricconcept.anemo_metal": "Vayuda_metal_ingot",
       "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
-      "block.oneiricconcept.anemo_1": "Vayuda_metal_ingot",
-      "block.oneiricconcept.anemo_2": "Vayuda_metal_ingot",
       "item.oneiricconcept.small_herta_core": "Small-Her Ta Core",
       "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
@@ -16055,12 +15776,12 @@
       "translation.oneiricconcept.sustenance": "§a已进行应急治疗|§r|",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "芝麻馅元宵",
       "block.oneiricconcept.elements_crystal_ore": "元素晶体矿石",
-      "block.oneiricconcept.anemo_10": "自在金属锭",
       "block.oneiricconcept.big_stone": "大石头",
       "subtitles.mmm": "碰撞",
       "advancements.big_stone_crush_chest.title": "大石碎胸口",
       "item.oneiricconcept.fruitpastebait": "果酿饵",
       "item.oneiricconcept.salt_dust": "粗盐",
+      "block.oneiricconcept.geo_metal": "Prithiva_metal_ingot",
       "block.oneiricconcept.bactus": "仙帝掌",
       "effect.oneiricconcept.camo": "迷彩",
       "block.oneiricconcept.pgc_present": "礼盒",
@@ -16138,7 +15859,6 @@
       "item.oneiricconcept.oy_stuffing": "肉馅",
       "item.oneiricconcept.medaka": "花鳉",
       "gamerule.ocHealthmultiplier": "生命倍率",
-      "block.oneiricconcept.geooo_10": "繁荣金属锭",
       "block.oneiricconcept.cryosealingwax": "冰之印",
       "translation.oneiricconcept.lurelevelup": "§6饵钓已升级！",
       "death.attack.b_2.player": "%1$s 没能逃离 %2$s的熏肠",
@@ -16177,24 +15897,15 @@
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
       "item.oneiricconcept.glazemedaka": "琉璃花鳉",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
-      "block.oneiricconcept.geooo_1": "繁荣金属锭",
       "gamerule.ocdebug": "§6梦华构想调试",
-      "block.oneiricconcept.geooo_3": "繁荣金属锭",
-      "block.oneiricconcept.geooo_2": "繁荣金属锭",
       "block.oneiricconcept.hydrosealingwax": "水之印",
       "item.oneiricconcept.hiltwood_from_the_arbor": "建木柄材",
-      "block.oneiricconcept.geooo_5": "繁荣金属锭",
       "block.oneiricconcept.hbond_2": "黑塔债券",
-      "block.oneiricconcept.geooo_4": "繁荣金属锭",
       "block.oneiricconcept.hbond_3": "黑塔债券",
-      "block.oneiricconcept.geooo_7": "繁荣金属锭",
       "block.oneiricconcept.hbond_4": "黑塔债券",
       "block.oneiricconcept.hbond_5": "黑塔债券",
-      "block.oneiricconcept.geooo_6": "繁荣金属锭",
-      "block.oneiricconcept.geooo_9": "繁荣金属锭",
       "block.oneiricconcept.hbond_6": "黑塔债券",
       "item.oneiricconcept.stuffing": "肉馅",
-      "block.oneiricconcept.geooo_8": "繁荣金属锭",
       "block.oneiricconcept.hbond_7": "黑塔债券",
       "block.oneiricconcept.hbond_8": "黑塔债券",
       "gamerule.ocdebug.description": "调试",
@@ -16202,19 +15913,11 @@
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
       "block.oneiricconcept.hbond_0": "黑塔债券",
       "block.oneiricconcept.hbond_1": "黑塔债券",
-      "block.oneiricconcept.anemo_5": "自在金属锭",
-      "block.oneiricconcept.anemo_6": "自在金属锭",
-      "block.oneiricconcept.anemo_3": "自在金属锭",
       "item.oneiricconcept.milk": "牛奶",
-      "block.oneiricconcept.anemo_4": "自在金属锭",
-      "block.oneiricconcept.anemo_9": "自在金属锭",
       "block.oneiricconcept.fresh_seedof_dawn": "黎明新籽",
-      "block.oneiricconcept.anemo_7": "自在金属锭",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
-      "block.oneiricconcept.anemo_8": "自在金属锭",
+      "block.oneiricconcept.anemo_metal": "Vayuda_metal_ingot",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
-      "block.oneiricconcept.anemo_1": "自在金属锭",
-      "block.oneiricconcept.anemo_2": "自在金属锭",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
       "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7有股怪味……孜然的味道吗？",
@@ -16496,12 +16199,12 @@
       "translation.oneiricconcept.sustenance": "§a已进行应急治疗|§r|",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "芝麻馅元宵",
       "block.oneiricconcept.elements_crystal_ore": "元素晶体矿石",
-      "block.oneiricconcept.anemo_10": "自在金属锭",
       "block.oneiricconcept.big_stone": "大石头",
       "subtitles.mmm": "碰撞",
       "advancements.big_stone_crush_chest.title": "大石碎胸口",
       "item.oneiricconcept.fruitpastebait": "果酿饵",
       "item.oneiricconcept.salt_dust": "粗盐",
+      "block.oneiricconcept.geo_metal": "Prithiva_metal_ingot",
       "block.oneiricconcept.bactus": "仙帝掌",
       "effect.oneiricconcept.camo": "Camo",
       "block.oneiricconcept.pgc_present": "礼盒",
@@ -16579,7 +16282,6 @@
       "item.oneiricconcept.oy_stuffing": "肉馅",
       "item.oneiricconcept.medaka": "花鳉",
       "gamerule.ocHealthmultiplier": "生命倍率",
-      "block.oneiricconcept.geooo_10": "繁荣金属锭",
       "block.oneiricconcept.cryosealingwax": "冰之印",
       "translation.oneiricconcept.lurelevelup": "§6饵钓已升级！",
       "death.attack.b_2.player": "%1$s 没能逃离 %2$s的熏肠",
@@ -16618,24 +16320,15 @@
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
       "item.oneiricconcept.glazemedaka": "琉璃花鳉",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
-      "block.oneiricconcept.geooo_1": "繁荣金属锭",
       "gamerule.ocdebug": "§6梦华构想调试",
-      "block.oneiricconcept.geooo_3": "繁荣金属锭",
-      "block.oneiricconcept.geooo_2": "繁荣金属锭",
       "block.oneiricconcept.hydrosealingwax": "水之印",
       "item.oneiricconcept.hiltwood_from_the_arbor": "建木柄材",
-      "block.oneiricconcept.geooo_5": "繁荣金属锭",
       "block.oneiricconcept.hbond_2": "黑塔债券",
-      "block.oneiricconcept.geooo_4": "繁荣金属锭",
       "block.oneiricconcept.hbond_3": "黑塔债券",
-      "block.oneiricconcept.geooo_7": "繁荣金属锭",
       "block.oneiricconcept.hbond_4": "黑塔债券",
       "block.oneiricconcept.hbond_5": "黑塔债券",
-      "block.oneiricconcept.geooo_6": "繁荣金属锭",
-      "block.oneiricconcept.geooo_9": "繁荣金属锭",
       "block.oneiricconcept.hbond_6": "黑塔债券",
       "item.oneiricconcept.stuffing": "肉馅",
-      "block.oneiricconcept.geooo_8": "繁荣金属锭",
       "block.oneiricconcept.hbond_7": "黑塔债券",
       "block.oneiricconcept.hbond_8": "黑塔债券",
       "gamerule.ocdebug.description": "调试",
@@ -16643,19 +16336,11 @@
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
       "block.oneiricconcept.hbond_0": "黑塔债券",
       "block.oneiricconcept.hbond_1": "黑塔债券",
-      "block.oneiricconcept.anemo_5": "自在金属锭",
-      "block.oneiricconcept.anemo_6": "自在金属锭",
-      "block.oneiricconcept.anemo_3": "自在金属锭",
       "item.oneiricconcept.milk": "牛奶",
-      "block.oneiricconcept.anemo_4": "自在金属锭",
-      "block.oneiricconcept.anemo_9": "自在金属锭",
       "block.oneiricconcept.fresh_seedof_dawn": "黎明新籽",
-      "block.oneiricconcept.anemo_7": "自在金属锭",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
-      "block.oneiricconcept.anemo_8": "自在金属锭",
+      "block.oneiricconcept.anemo_metal": "Vayuda_metal_ingot",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
-      "block.oneiricconcept.anemo_1": "自在金属锭",
-      "block.oneiricconcept.anemo_2": "自在金属锭",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
       "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7有股怪味……孜然的味道吗？",

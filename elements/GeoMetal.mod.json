@@ -1,0 +1,216 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Geooo1",
+    "blockstateList": [
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_b:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.5,
+            "my": 0.0,
+            "mz": 4.5,
+            "Mx": 12.5,
+            "My": 2.0,
+            "Mz": 11.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_c:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 4.5,
+            "Mx": 15.0,
+            "My": 2.0,
+            "Mz": 11.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_d:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 0.5,
+            "Mx": 15.0,
+            "My": 2.0,
+            "Mz": 15.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_e:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 0.5,
+            "Mx": 15.0,
+            "My": 2.0,
+            "Mz": 15.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_f:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 0.5,
+            "Mx": 15.0,
+            "My": 2.0,
+            "Mz": 15.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_g:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 0.5,
+            "Mx": 15.0,
+            "My": 4.0,
+            "Mz": 15.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_h:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 0.5,
+            "Mx": 15.0,
+            "My": 4.0,
+            "Mz": 15.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_i:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 0.5,
+            "Mx": 15.0,
+            "My": 4.0,
+            "Mz": 15.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "agnidus_metal_ingot_j:geo_yan",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 0.5,
+            "Mx": 15.0,
+            "My": 4.0,
+            "Mz": 15.5,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

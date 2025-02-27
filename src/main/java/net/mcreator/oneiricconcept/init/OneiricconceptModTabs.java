@@ -173,11 +173,9 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HYDRO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.ANEMO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ELECT_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.DENDR_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CRYOO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.GEOOO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PYROSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HYDROSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ANEMO_SEALINGWAX.get().asItem());
@@ -190,6 +188,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PRIMOGEM.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.REDMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ANEMO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.GEO_METAL.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent
