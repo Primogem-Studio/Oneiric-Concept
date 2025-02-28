@@ -123,6 +123,6 @@ public class Hydro1Block extends Block implements SimpleWaterloggedBlock {
 	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 		event.getBlockColors().register((bs, world, pos, index) -> {
 			return world != null && pos != null ? BiomeColors.getAverageWaterColor(world, pos) : -1;
-		}, OneiricconceptModBlocks.HYDRO_1.get());
+		}, OneiricconceptModBlocks.HYDRO_METAL.get());
 	}
 }

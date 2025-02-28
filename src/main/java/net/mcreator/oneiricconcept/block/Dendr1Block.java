@@ -36,7 +36,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
-import net.mcreator.oneiricconcept.procedures.PgprocessProcedure;
+import net.mcreator.oneiricconcept.procedures.BreakDropsProcedure;
+import net.mcreator.oneiricconcept.procedures.BlockmodeProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class Dendr1Block extends Block implements SimpleWaterloggedBlock {
@@ -107,6 +108,13 @@ public class Dendr1Block extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		BreakDropsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		return retval;
+	}
+
+	@Override
 	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player entity, BlockHitResult hit) {
 		super.useWithoutItem(blockstate, world, pos, entity, hit);
 		int x = pos.getX();
@@ -116,7 +124,7 @@ public class Dendr1Block extends Block implements SimpleWaterloggedBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		PgprocessProcedure.execute(world, x, y, z, entity);
+		BlockmodeProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 
@@ -124,6 +132,6 @@ public class Dendr1Block extends Block implements SimpleWaterloggedBlock {
 	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
 		event.getBlockColors().register((bs, world, pos, index) -> {
 			return world != null && pos != null ? BiomeColors.getAverageGrassColor(world, pos) : GrassColor.get(0.5D, 1.0D);
-		}, OneiricconceptModBlocks.DENDR_1.get());
+		}, OneiricconceptModBlocks.DENDRO_METAL.get());
 	}
 }

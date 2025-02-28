@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/trashmetal"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/trashmetal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/trashmetal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/trashmetal",
+      "y": 270
+    }
+  }
+}

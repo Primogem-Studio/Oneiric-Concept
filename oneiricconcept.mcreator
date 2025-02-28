@@ -4568,167 +4568,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "agnid_1",
+      "registry_name": "pyro_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_1.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_1.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/pyro_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Agnid1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_2.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid2Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid3Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid4Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_4.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_4.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_5.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid5Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_6.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid6Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_6.json",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid7Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_7.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_7.json",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_7.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid8Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_8.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid9Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_9.json",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
-    },
-    {
-      "name": "Agnid10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "agnid_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnid_10.json",
-          "src/main/resources/assets/oneiricconcept/models/block/agnid_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Agnid10Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/agnid_10.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnid_10.json"
+          "src/main/resources/assets/oneiricconcept/models/item/pyro_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyro_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/pyro_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
@@ -5050,167 +4897,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "newmo_1",
+      "registry_name": "crescent_metal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_1.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/crescent_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Newmo1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo2Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_2.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_2.json",
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo3Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_3.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_4.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo4Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo7Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_7.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_7.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_5.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo5Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_6",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo6Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_6.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_6.json",
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_8.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo8Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_8.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo9Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
-    },
-    {
-      "name": "Newmo10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "newmo_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/newmo_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Newmo10Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/newmo_10.json",
-          "src/main/resources/assets/oneiricconcept/models/block/newmo_10.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/newmo_10.json"
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/crescent_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/crescent_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
@@ -5237,82 +4931,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fulmo_1",
+      "registry_name": "fullmoon_metal",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Fulmo1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_1.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_1.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_2.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_2.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo2Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo3Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_4.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo4Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_4.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo7Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_7.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_7.json"
+          "src/main/resources/assets/oneiricconcept/models/item/fullmoon_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/fullmoon_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/fullmoon_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/full_moon_ingot"
@@ -5322,82 +4948,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "liron_1",
+      "registry_name": "trashmetal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/liron_1.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_1.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_1.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/trashmetal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/trashmetal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/trashmetal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Liron1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron2Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_2.json",
-          "src/main/resources/assets/oneiricconcept/models/item/liron_2.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron3Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/liron_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_3.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/liron_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_4.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_4.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_4.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron4Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_7",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_7.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron7Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_7.json",
-          "src/main/resources/assets/oneiricconcept/models/item/liron_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_7.json"
+          "src/main/resources/assets/oneiricconcept/models/block/trashmetal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/ironLaji"
@@ -5407,82 +4965,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "elect_1",
+      "registry_name": "electro_metal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electro_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/electro_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Elect1Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect2Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_2.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_2.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/elect_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect3Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_4.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_4.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect4Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect7Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_7.json",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_7.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/electro_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/electro_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/Electro_Lei"
@@ -5492,82 +4982,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hydro_1",
+      "registry_name": "hydro_metal",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/block/Hydro1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_1.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_1.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_2.json",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_2.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro2Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro3Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_4.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_4.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro4Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_7",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_7.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_7.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro7Block.java"
+          "src/main/resources/assets/oneiricconcept/models/block/hydro_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/hydro_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hydro_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/Hydro_shui"
@@ -5577,82 +4999,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cryoo_1",
+      "registry_name": "cryo_metal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_1.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_1.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo1Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo2Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_2.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_2.json",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo3Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_3.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_3.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_4.json",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_4.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_4.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo4Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_7",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo7Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_7.json",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_7.json"
+          "src/main/resources/assets/oneiricconcept/models/item/cryo_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryo_metal.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo1Block.java",
+          "src/main/resources/assets/oneiricconcept/models/block/cryo_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/cryo_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/Cryo_Bing"
@@ -5662,82 +5016,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dendr_1",
+      "registry_name": "dendro_metal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_1.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendro_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/dendro_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendro_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Dendr1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_1.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_2.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr2Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_3.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_3.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr3Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_3.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr4",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr4Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_4.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_4.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_4.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr7",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_7",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_7.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_7.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr7Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_7.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/dendro_metal.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/Dendro_Cao"
@@ -5776,516 +5062,6 @@
         ]
       },
       "path": "~/PgcCopyDecoration/block/Geo_Yan"
-    },
-    {
-      "name": "Fulmo5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo5Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_5.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_6.json",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo6Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_8.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_8.json",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo8Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_9",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo9Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_9.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Fulmo10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fulmo_10",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo10Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/fulmo_10.json",
-          "src/main/resources/assets/oneiricconcept/models/item/fulmo_10.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fulmo_10.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/fulmo_10.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
-    },
-    {
-      "name": "Liron5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_5.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron5Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/liron_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_5.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/liron_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron6Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_6.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron8Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/liron_8.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/liron_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron9Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Liron10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "liron_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/liron_10.json",
-          "src/main/resources/assets/oneiricconcept/models/block/liron_10.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/liron_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Liron10Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/liron_10.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/ironLaji"
-    },
-    {
-      "name": "Elect5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_5.json",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect5Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/elect_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect6Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_6.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/elect_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect8Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_8.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elect_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect9Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_9.json",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Elect10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "elect_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/elect_10.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/elect_10.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/elect_10.json",
-          "src/main/resources/assets/oneiricconcept/models/item/elect_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect10Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Electro_Lei"
-    },
-    {
-      "name": "Hydro5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_5.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro5Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro6Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_6.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_8.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro8Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_8.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_9",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro9Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_9.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Hydro10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hydro_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/hydro_10.json",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_10.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro10Block.java",
-          "src/main/resources/assets/oneiricconcept/models/block/hydro_10.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Hydro_shui"
-    },
-    {
-      "name": "Cryoo5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_5",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo5Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_5.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_5.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_6.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_6.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo6Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo8Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_8.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_9.json",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo9Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Cryoo10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cryoo_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/cryoo_10.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryoo_10.json",
-          "src/main/resources/assets/oneiricconcept/models/item/cryoo_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo10Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryoo_10.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
-    },
-    {
-      "name": "Dendr5",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_5",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_5.json",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_5.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_5.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr5Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr6",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_6",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_6.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_6.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr6Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_6.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr8",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_8",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_8.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_8.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_8.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr8Block.java"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr9",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_9",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_9.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_9.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr9Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_9.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_9.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
-    },
-    {
-      "name": "Dendr10",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dendr_10",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/dendr_10.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendr_10.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Dendr10Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dendr_10.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendr_10.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
     },
     {
       "name": "Dechitaudio",
@@ -14222,7 +12998,7 @@
           "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_7.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/block"
+      "path": "~/PgcCopyDecoration/block/full_moon_ingot"
     },
     {
       "name": "GeoMetal",
@@ -14265,6 +13041,153 @@
         ]
       },
       "path": "~/PgcCopyDecoration/block/Anemo_Feng"
+    },
+    {
+      "name": "Dendrometal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dendrometal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_4.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/Dendro_Cao"
+    },
+    {
+      "name": "Cryometal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryometal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_7.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/Cryo_Bing"
+    },
+    {
+      "name": "Hydrometal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydrometal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_4.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/Hydro_shui"
+    },
+    {
+      "name": "Electrometal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electrometal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_7.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/Electro_Lei"
+    },
+    {
+      "name": "Pyrometal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyrometal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_4.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
+    },
+    {
+      "name": "TrashMetal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trash_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_5.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/ironLaji"
+    },
+    {
+      "name": "CrescentMetal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crescent_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_6.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/block/crescent_moon_ingot"
     }
   ],
   "variable_elements": [],
@@ -14312,10 +13235,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14325,104 +13244,26 @@
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:MoltenMetalBlock",
-      "~CUSTOM:Hbond10",
-      "~CUSTOM:Hbond9",
-      "~CUSTOM:Hbond8",
-      "~CUSTOM:Hbond7",
-      "~CUSTOM:Hbond6",
-      "~CUSTOM:Hbond5",
-      "~CUSTOM:Hbond4",
-      "~CUSTOM:Hbond3",
-      "~CUSTOM:Hbond2",
-      "~CUSTOM:Herta1",
       "~CUSTOM:Hertabond",
-      "~CUSTOM:Dendr10",
-      "~CUSTOM:Dendr9",
-      "~CUSTOM:Dendr8",
-      "~CUSTOM:Dendr6",
-      "~CUSTOM:Dendr5",
-      "~CUSTOM:Cryoo10",
-      "~CUSTOM:Cryoo9",
-      "~CUSTOM:Cryoo8",
-      "~CUSTOM:Cryoo6",
-      "~CUSTOM:Cryoo5",
-      "~CUSTOM:Hydro10",
-      "~CUSTOM:Hydro9",
-      "~CUSTOM:Hydro8",
-      "~CUSTOM:Hydro6",
-      "~CUSTOM:Hydro5",
-      "~CUSTOM:Elect10",
-      "~CUSTOM:Elect9",
-      "~CUSTOM:Elect8",
-      "~CUSTOM:Elect6",
-      "~CUSTOM:Elect5",
-      "~CUSTOM:Liron10",
-      "~CUSTOM:Liron9",
-      "~CUSTOM:Liron8",
-      "~CUSTOM:Liron6",
-      "~CUSTOM:Liron5",
-      "~CUSTOM:Fulmo10",
-      "~CUSTOM:Fulmo9",
-      "~CUSTOM:Fulmo8",
-      "~CUSTOM:Fulmo6",
-      "~CUSTOM:Fulmo5",
+      "~CUSTOM:Agnid1",
+      "~CUSTOM:Newmo1",
+      "~CUSTOM:Fulmo1",
+      "~CUSTOM:Liron1",
+      "~CUSTOM:Elect1",
+      "~CUSTOM:Hydro1",
+      "~CUSTOM:Cryoo1",
+      "~CUSTOM:Dendr1",
+      "~CUSTOM:MoltenMetalBlock",
       "~CUSTOM:Geooo1",
       "~CUSTOM:Anemo1",
-      "~CUSTOM:Dendr7",
-      "~CUSTOM:Dendr4",
-      "~CUSTOM:Dendr3",
-      "~CUSTOM:Dendr2",
-      "~CUSTOM:Dendr1",
-      "~CUSTOM:Cryoo7",
-      "~CUSTOM:Cryoo4",
-      "~CUSTOM:Cryoo3",
-      "~CUSTOM:Cryoo2",
-      "~CUSTOM:Cryoo1",
-      "~CUSTOM:Hydro7",
-      "~CUSTOM:Hydro4",
-      "~CUSTOM:Hydro3",
-      "~CUSTOM:Hydro2",
-      "~CUSTOM:Hydro1",
-      "~CUSTOM:Elect7",
-      "~CUSTOM:Elect4",
-      "~CUSTOM:Elect3",
-      "~CUSTOM:Elect2",
-      "~CUSTOM:Elect1",
-      "~CUSTOM:Liron7",
-      "~CUSTOM:Liron4",
-      "~CUSTOM:Liron3",
-      "~CUSTOM:Liron2",
-      "~CUSTOM:Liron1",
-      "~CUSTOM:Fulmo7",
-      "~CUSTOM:Fulmo4",
-      "~CUSTOM:Fulmo3",
-      "~CUSTOM:Fulmo2",
-      "~CUSTOM:Fulmo1",
       "~CUSTOM:Redmo1",
-      "~CUSTOM:Newmo10",
-      "~CUSTOM:Newmo9",
-      "~CUSTOM:Newmo8",
-      "~CUSTOM:Newmo6",
-      "~CUSTOM:Newmo5",
-      "~CUSTOM:Newmo7",
-      "~CUSTOM:Newmo4",
-      "~CUSTOM:Newmo3",
-      "~CUSTOM:Newmo2",
-      "~CUSTOM:Newmo1",
       "~CUSTOM:Sustenanceanchor",
       "~CUSTOM:Sustenanceanchoroff",
-      "~CUSTOM:Agnid10",
-      "~CUSTOM:Agnid9",
-      "~CUSTOM:Agnid8",
-      "~CUSTOM:Agnid7",
-      "~CUSTOM:Agnid6",
-      "~CUSTOM:Agnid5",
-      "~CUSTOM:Agnid4",
-      "~CUSTOM:Agnid3",
-      "~CUSTOM:Agnid2",
-      "~CUSTOM:Agnid1",
       "~CUSTOM:PgcPg",
       "~CUSTOM:ThunderSword",
       "~CUSTOM:PropagandaArmyBlock",
@@ -15069,15 +13910,6 @@
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPresent",
       "SuperimposerCustommade",
-      "Hertabond",
-      "Newmo1",
-      "Fulmo1",
-      "Liron1",
-      "Agnid1",
-      "Hydro1",
-      "Elect1",
-      "Dendr1",
-      "Cryoo1",
       "Pyrosealingwax",
       "Hydrosealingwax",
       "AnemoSealingwax",
@@ -15091,15 +13923,24 @@
       "PgcPg",
       "Redmo1",
       "Anemo1",
-      "Geooo1"
+      "Geooo1",
+      "Dendr1",
+      "Cryoo1",
+      "Hydro1",
+      "Elect1",
+      "Liron1",
+      "Fulmo1",
+      "Newmo1",
+      "Agnid1",
+      "Hertabond"
     ]
   },
   "language_map": {
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -15107,6 +13948,7 @@
       "item.oneiricconcept.mmmhit": "Mmmhit",
       "item.oneiricconcept.primogem_waffle.description_0": "§7To the legendary pancake fairy",
       "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
+      "block.oneiricconcept.electro_metal": "vajrada metal ingot",
       "entity.oneiricconcept.antibaryon": "Baryon",
       "block.oneiricconcept.cloud.description_0": "The source of the river",
       "fluid.oneiricconcept.memoria": "Memoria",
@@ -15121,11 +13963,11 @@
       "advancements.diseasename_gastriccancer.title": "Disease name: Gastric cancer ",
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
-      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "block.oneiricconcept.sweetflower": "Sweet flower",
+      "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
-      "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
+      "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
       "item.oneiricconcept.aizenmedaka": "Aizenmedaka",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
@@ -15133,8 +13975,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
       "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
       "block.oneiricconcept.banana_mushroom.description_2": "吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
@@ -15142,39 +13984,20 @@
       "advancements.fall_king.descr": "see you again~",
       "item.oneiricconcept.propaganda_army": "Propaganda Army",
       "translation.oneiricconcept.patchouli_name_pgc": "primogemcraft wiki",
-      "block.oneiricconcept.fulmo_10": "full moon ingot",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
-      "block.oneiricconcept.cryoo_7": "Shivada_metal_ingot",
       "block.oneiricconcept.camerapink": "Camera",
-      "block.oneiricconcept.cryoo_8": "Shivada_metal_ingot",
       "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
       "item.oneiricconcept.heartofthefish": "Heart of the fish",
-      "block.oneiricconcept.cryoo_9": "Shivada_metal_ingot",
-      "block.oneiricconcept.cryoo_3": "Shivada_metal_ingot",
-      "block.oneiricconcept.cryoo_4": "Shivada_metal_ingot",
-      "block.oneiricconcept.cryoo_5": "Shivada_metal_ingot",
-      "block.oneiricconcept.cryoo_6": "Shivada_metal_ingot",
       "item.oneiricconcept.wilderness_rod": "Wilderness Rod",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
-      "block.oneiricconcept.liron_7": "stinky iron ingot",
-      "block.oneiricconcept.liron_8": "stinky iron ingot",
       "advancements.allriversrunintosea.descr": "the vast sea",
-      "block.oneiricconcept.liron_5": "stinky iron ingot",
-      "block.oneiricconcept.liron_6": "stinky iron ingot",
       "block.oneiricconcept.the_another_world_wood": "The Another World Wood",
-      "block.oneiricconcept.liron_3": "stinky iron ingot",
-      "block.oneiricconcept.liron_4": "stinky iron ingot",
       "item.oneiricconcept.adeptus_gun": "Adeptus Gun",
-      "block.oneiricconcept.liron_1": "stinky iron ingot",
-      "block.oneiricconcept.liron_2": "stinky iron ingot",
       "item.oneiricconcept.memory_bubble": "Memory Bubble",
-      "block.oneiricconcept.cryoo_1": "crescent ingot",
-      "block.oneiricconcept.cryoo_2": "Shivada_metal_ingot",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7Little sugar meatballs",
       "translation.oneiricconcept.patchouli_name_oc": "oneiricconcept wiki",
       "advancements.big_stone_crush_chest.descr": "The darkness is like a boulder pressing down upon the breast",
-      "block.oneiricconcept.liron_9": "stinky iron ingot",
       "translation.oneiricconcept.patchouli_landing_pgc": "This manual introduces the items/blocks, creatures/entities, enchantments/spells of \u0027primogemcraft\u0027 BUFF/DEBUFF、 Natural generation and game settings For more detailed content, please refer to MCMOD.cnSynchronized introduction from MCmod.cn, added by oneiricconcept",
       "item.oneiricconcept.waffle.description_0": "§7To the legendary pancake fairy",
       "item.oneiricconcept.b_2elobog_sausage": "German style cumin smoked sausage",
@@ -15186,20 +14009,12 @@
       "item.oneiricconcept.phlogiston_wing_chestplate": "phlogiston wing",
       "item.oneiricconcept.mora_magazine": "Mora Magazine",
       "effect.oneiricconcept.b_2sausage.description": "Continuously causing damage with a health multiplier of 0.8 and a state effect level",
-      "block.oneiricconcept.newmo_8": "crescent ingot",
-      "block.oneiricconcept.newmo_7": "crescent ingot",
       "block.oneiricconcept.wayfareblessing": "Wayfare blessing",
       "block.oneiricconcept.propaganda_army_block": "Propaganda Army Server",
-      "block.oneiricconcept.newmo_9": "crescent ingot",
-      "block.oneiricconcept.newmo_4": "crescent ingot",
-      "block.oneiricconcept.newmo_3": "crescent ingot",
-      "block.oneiricconcept.newmo_6": "crescent ingot",
-      "block.oneiricconcept.newmo_5": "crescent ingot",
       "translation.oneiricconcept.patchouli_landing_oc": "This manual introduces the items/blocks, creatures/entities, enchantments/spells of \u0027oneiricconcept\u0027 BUFF/DEBUFF、 Natural generation and game settings For more detailed content, please refer to MCMOD.cnSynchronized introduction from MCmod.cn, added by oneiricconcept",
-      "block.oneiricconcept.newmo_2": "crescent ingot",
-      "block.oneiricconcept.newmo_1": "crescent ingot",
       "gamerule.ocfly.description": "Set as false to eliminate conflicts",
       "item.oneiricconcept.oy_stuffing.description_0": "§7Right... right?",
+      "block.oneiricconcept.hertabond": "Herta bond",
       "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
       "advancements.shootingthesun.title": "Shooting the sun",
       "translation.oneiricconcept.lure": "Enchanting Progress",
@@ -15208,28 +14023,21 @@
       "translation.oneiricconcept.check": "en",
       "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
       "block.oneiricconcept.thunder_sword": "Thunder Sword",
-      "block.oneiricconcept.elect_3": "vajrada_metal_ingot",
       "item.oneiricconcept.mora_bow": "Mora Bow",
-      "block.oneiricconcept.elect_2": "vajrada_metal_ingot",
-      "block.oneiricconcept.elect_5": "vajrada_metal_ingot",
-      "block.oneiricconcept.elect_4": "vajrada_metal_ingot",
       "translation.key.fail": "Don\u0027t confuse it",
-      "block.oneiricconcept.elect_1": "vajrada metal ingot",
       "block.oneiricconcept.phlogistontank": "Phlogiston tank",
-      "block.oneiricconcept.elect_7": "vajrada_metal_ingot",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "并非母亲留下的宝藏",
-      "block.oneiricconcept.elect_6": "vajrada_metal_ingot",
-      "block.oneiricconcept.elect_9": "vajrada_metal_ingot",
       "item.oneiricconcept.sword_of_brilliant_valor.description_0": "当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
       "item_group.oneiricconcept.oneiric_concept_decoration": "Oneiric Concept Decoration",
-      "block.oneiricconcept.elect_8": "vajrada_metal_ingot",
       "item.oneiricconcept.memoria_loot.description_0": "让眠眠给你送回来",
       "block.oneiricconcept.geomarrow_radiator.description_0": "Used for processing sausages, wheat seeds, The Another World Sapling, and clouds.",
       "item.oneiricconcept.less_redstone_powder": "Less Redstone Powder",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
+      "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
       "item.oneiricconcept.sustenanceanchoritem": "Sustenanceanchor",
       "block.oneiricconcept.camera.description_0": "§7The meaning of \u0027相机 is to see through the key points",
       "item.oneiricconcept.virtual_particle": "Virtual Particle",
+      "block.oneiricconcept.fullmoon_metal": "full moon ingot",
       "block.oneiricconcept.electrosealingwax": "Electro sealing wax",
       "item.oneiricconcept.aureliae_pickaxe": "Aureliae Pickaxe",
       "gamerule.ocfly": "ocfly",
@@ -15240,27 +14048,25 @@
       "block.oneiricconcept.cloud": "Cloud",
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine",
       "item.oneiricconcept.fish": "Fish",
-      "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
+      "item.oneiricconcept.molten_metal": "Molten Metal Gem",
       "item.oneiricconcept.phlogiston_core.description_1": "It is recommended to charge no more than three groups",
       "item.oneiricconcept.phlogiston_core.description_2": "as it may cause significant lag",
+      "block.oneiricconcept.cryo_metal": "crescent ingot",
       "item.oneiricconcept.memoria_piece.description_0": "§7It\u0027s indeed just a condensed memory",
       "advancements.aftertheiceturnsintowater.descr": "……the sea I hang upside down will be your sky",
       "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
       "item.oneiricconcept.phlogiston_core": "Phlogiston Core",
-      "block.oneiricconcept.hbond_10": "Herta bond",
-      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "Big Rock",
+      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "item.oneiricconcept.sword_of_brilliant_valor": "Sword Of Brilliant Valor",
       "block.oneiricconcept.ambrosial_arbor_plank": "Ambrosial Arbor Plank",
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
       "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
       "fluid_type.oneiricconcept.memoria": "§9Memoria",
-      "block.oneiricconcept.newmo_10": "crescent ingot",
       "item.oneiricconcept.antibaryon_spawn_egg": "Baryon Spawn Egg",
       "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
-      "block.oneiricconcept.dendr_10": "Nagadus_metal_ingot",
       "item_group.oneiricconcept.oneiric_concept": "OneiricConcept",
       "item.oneiricconcept.taw_wood_loot": "TAW Wood Loot",
       "item.oneiricconcept.punitive_energy": "Punitive Energy",
@@ -15268,7 +14074,6 @@
       "advancements.the_seriousness_of_breakfast.descr": "All of you, eat while the food is hot!",
       "advancements.railgun.descr": "Although but,_ _,_ _ _ _ _ _ _ _?",
       "advancements.aftertheiceturnsintowater.title": "After the ice turns into water",
-      "block.oneiricconcept.hydro_10": "Varunada_metal_ingot",
       "subtitles.houyi": "There used to be a young man named \u0027houyi\u0027 who wanted to use the Xuan Yuan Sword to shoot at the sun.",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "Arrow of Hunger",
       "item.oneiricconcept.energy_drink": "Energy Drink",
@@ -15276,19 +14081,10 @@
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
       "advancements.eastroc.title": "Eastroc",
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
-      "block.oneiricconcept.fulmo_7": "crescent ingot",
-      "block.oneiricconcept.fulmo_6": "full moon ingot",
       "item.oneiricconcept.ignis_aureliae": "Ignis Aureliae",
-      "block.oneiricconcept.fulmo_9": "full moon ingot",
-      "block.oneiricconcept.fulmo_8": "full moon ingot",
-      "block.oneiricconcept.fulmo_3": "full moon ingot",
-      "block.oneiricconcept.fulmo_2": "full moon ingot",
-      "block.oneiricconcept.fulmo_5": "full moon ingot",
       "block.oneiricconcept.sustenanceanchoroff": "Sustenanceanchor",
-      "block.oneiricconcept.fulmo_4": "full moon ingot",
       "subtitles.shuhu_kr": "Shuhu\u0027s Gift",
       "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
-      "block.oneiricconcept.fulmo_1": "full moon ingot",
       "advancements.feed_on_illusions.descr": "Gaseous purified water, it seems like I\u0027ve eaten it, but it also seems like I haven\u0027t eaten anything.",
       "death.attack.b_2.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.primogems_sausage": "Primogems Sausage",
@@ -15326,7 +14122,6 @@
       "item.oneiricconcept.dreamdive_can.description_1": "§6A sweet dream food can from Penacony, Planet of Festivities. It is full of highly compact gaseous memoria. The user will fall into dreams within five minutes after opening the can.",
       "item.oneiricconcept.wayfare_cake_slices": "Wayfare Cake Slices",
       "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "Ice-Fresh Raw Frostweave Salmon Slices",
-      "block.oneiricconcept.dendr_1": "Nagadus_metal_ingot",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
       "block.oneiricconcept.the_another_world_sapling": "The Another World Sapling",
       "advancements.shootingthesun.descr": "There used to be a young man named \u0027houyi\u0027 who wanted to use the Xuan Yuan Sword to shoot at the sun.",
@@ -15337,16 +14132,8 @@
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "item.oneiricconcept.conqueror_s_will": "Conqueror\u0027s Will",
-      "block.oneiricconcept.dendr_6": "Nagadus_metal_ingot",
       "item.oneiricconcept.fishcake": "Fishcake",
-      "block.oneiricconcept.dendr_7": "Nagadus_metal_ingot",
-      "block.oneiricconcept.dendr_8": "Nagadus_metal_ingot",
       "advancements.the_seriousness_of_breakfast.title": "The Seriousness Of Breakfast",
-      "block.oneiricconcept.dendr_9": "Nagadus_metal_ingot",
-      "block.oneiricconcept.dendr_2": "Nagadus_metal_ingot",
-      "block.oneiricconcept.dendr_3": "Nagadus_metal_ingot",
-      "block.oneiricconcept.dendr_4": "Nagadus_metal_ingot",
-      "block.oneiricconcept.dendr_5": "Nagadus_metal_ingot",
       "item.oneiricconcept.totemloot": "Totemloot",
       "advancements.gossipisafearfulthing.title": "Gossip is a fearful thing ",
       "gamerule.ocinitialload": "initial load",
@@ -15365,6 +14152,7 @@
       "block.oneiricconcept.xiao_lantern_recycler": "Xiao Lantern Recycler",
       "item.oneiricconcept.sausage": "Sausage",
       "block.oneiricconcept.floating_cloud": "Floating cloud",
+      "block.oneiricconcept.pyro_metal": "Agnidus metal ingot",
       "translation.oneiricconcept.effectlevel": "§ePotion Effect Level：§a",
       "block.oneiricconcept.dendrosealingwax": "Dendro sealing wax",
       "item.oneiricconcept.crystal_turtle_spawn_egg": "Crystal Turtle Spawn Egg",
@@ -15380,39 +14168,21 @@
       "item.oneiricconcept.heartoftheskysea": "Heart of the sky sea",
       "enchantment.oneiricconcept.sharp_hook": "Sharp Hook",
       "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
-      "block.oneiricconcept.hydro_9": "Varunada_metal_ingot",
       "advancements.fall_king.title": "Fall King",
-      "block.oneiricconcept.hydro_8": "Varunada_metal_ingot",
-      "block.oneiricconcept.hydro_7": "Varunada_metal_ingot",
-      "block.oneiricconcept.hydro_6": "Varunada_metal_ingot",
-      "block.oneiricconcept.hydro_5": "Varunada_metal_ingot",
-      "block.oneiricconcept.hydro_4": "Varunada_metal_ingot",
-      "block.oneiricconcept.hydro_3": "Varunada_metal_ingot",
-      "block.oneiricconcept.hydro_2": "Varunada_metal_ingot",
-      "block.oneiricconcept.hydro_1": "Varunada metal ingot",
       "translation.key.load": "speed of progress:§6",
       "item.oneiricconcept.s_2ausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6The tenth Divine Keys contains the powerful power of Herrschers",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
-      "block.oneiricconcept.agnid_1": "Agnidus metal ingot",
       "translation.oneiricconcept.kill": "Clear quantity:§6",
       "block.oneiricconcept.mactus": "Mactus",
       "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "Resurrection Pellet",
       "advancements.feed_on_illusions.title": "Feed On Illusions",
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
-      "block.oneiricconcept.agnid_7": "Agnidus metal ingot",
       "item.oneiricconcept.hunger": "「Hunger」",
-      "block.oneiricconcept.agnid_6": "Agnidus metal ingot",
       "block.oneiricconcept.yactus": "Yactus",
-      "block.oneiricconcept.agnid_9": "Agnidus metal ingot",
       "item.oneiricconcept.camo_paint": "Camo Paint",
-      "block.oneiricconcept.agnid_8": "Agnidus metal ingot",
-      "block.oneiricconcept.agnid_3": "Agnidus metal ingot",
-      "block.oneiricconcept.agnid_2": "Agnidus metal ingot",
       "item.oneiricconcept.s_2tuffing": "stuffing",
-      "block.oneiricconcept.agnid_5": "Agnidus metal ingot",
-      "block.oneiricconcept.agnid_4": "Agnidus metal ingot",
       "subtitles.shuhu_cn": "Shuhu\u0027s Gift",
       "item.oneiricconcept.usurper_s_scheme": "Usurper\u0027s Scheme",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7romotion of the medicinal propertiesof health products is prohibited by thelaw.",
@@ -15424,8 +14194,8 @@
       "block.oneiricconcept.primogem": "Primogem",
       "item.oneiricconcept.energy_drink_primogem": "Energy Drink（Primogem）",
       "item.oneiricconcept.dreamdive_can": "§9Dreamdive Can",
-      "block.oneiricconcept.agnid_10": "Agnidus metal ingot",
       "block.oneiricconcept.the_another_world_leave": "The Another World Leave",
+      "block.oneiricconcept.trashmetal": "stinky iron ingot",
       "item.oneiricconcept.heartofthevastsea": "Heart of the vast sea",
       "item.oneiricconcept.heartofthewarmsea": "Heart of the warm sea",
       "block.oneiricconcept.varunada_lazurite_ore": "Varunada Lazurite Ore",
@@ -15439,10 +14209,8 @@
       "block.oneiricconcept.cryosealingwax": "Cryo sealing wax",
       "translation.oneiricconcept.lurelevelup": "§6Lure Upgraded!",
       "death.attack.b_2.player": "%1$s was unable to escape the %2$s\u0027s fumigation",
-      "block.oneiricconcept.cryoo_10": "Shivada_metal_ingot",
       "item.oneiricconcept.honkai_sliver": "Honkai Sliver",
       "item.oneiricconcept.d_xuanyuan": "XuanyuanSword",
-      "block.oneiricconcept.elect_10": "vajrada_metal_ingot",
       "item.oneiricconcept.aureliae_shovel": "Aureliae Shovel",
       "item.oneiricconcept.condensed_memoria_piece.description_0": "§7More concentrated memory quality",
       "block.oneiricconcept.vayuda_turquoise_ore": "Vayuda Turquoise Ore",
@@ -15469,6 +14237,7 @@
       "item.oneiricconcept.testtool": "Testtool",
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
       "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
+      "block.oneiricconcept.crescent_metal": "crescent ingot",
       "death.attack.honkai": "%1$s Reduced to ashes by Honkai energy",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "item.oneiricconcept.phlogiston_crystal": "Phlogiston Crystal",
@@ -15477,19 +14246,9 @@
       "gamerule.ocdebug": "ocdebug",
       "block.oneiricconcept.hydrosealingwax": "Hydro sealing wax",
       "item.oneiricconcept.hiltwood_from_the_arbor": "Hilt-wood From The Arbor",
-      "block.oneiricconcept.hbond_2": "Herta bond",
-      "block.oneiricconcept.hbond_3": "Herta bond",
-      "block.oneiricconcept.hbond_4": "Herta bond",
-      "block.oneiricconcept.hbond_5": "Herta bond",
-      "block.oneiricconcept.hbond_6": "Herta bond",
       "item.oneiricconcept.stuffing": "stuffing",
-      "block.oneiricconcept.hbond_7": "Herta bond",
-      "block.oneiricconcept.hbond_8": "Herta bond",
       "gamerule.ocdebug.description": "debug",
-      "block.oneiricconcept.hbond_9": "Herta bond",
       "death.attack.b_2": "%1$s Feeling uncomfortable after eating smoked sausage",
-      "block.oneiricconcept.hbond_0": "Herta bond",
-      "block.oneiricconcept.hbond_1": "Herta bond",
       "item.oneiricconcept.milk": "Milk",
       "block.oneiricconcept.fresh_seedof_dawn": "Fresh Seedof Dawn",
       "block.oneiricconcept.sustenanceanchor": "Sustenanceanchor",
@@ -15508,9 +14267,9 @@
       "item.oneiricconcept.honkai_shard": "Honkai Shard",
       "item.oneiricconcept.dumpling": "Dumpling",
       "advancements.diseasename_gastriccancer.descr": "Pay attention to healthy diet ",
-      "block.oneiricconcept.liron_10": "stinky iron ingot",
       "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "§7Follow me and teach you how to unlock the gene lock!",
       "painting.oneiricconcept.sliver_wolf.author": "HoYoverse",
+      "block.oneiricconcept.dendro_metal": "Nagadus_metal_ingot",
       "block.oneiricconcept.molten_metal_block": "Block of MoltenMetal",
       "item.oneiricconcept.deep_marrow_rock_salt": "Deep Marrow Rock Salt",
       "translation.oneiricconcept.textdec": "Can be placed in the world",
@@ -15521,8 +14280,8 @@
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15530,6 +14289,7 @@
       "item.oneiricconcept.mmmhit": "§7蘑菇碎屏特效",
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
+      "block.oneiricconcept.electro_metal": "vajrada metal ingot",
       "entity.oneiricconcept.antibaryon": "反重子",
       "block.oneiricconcept.cloud.description_0": "§7百川源",
       "fluid.oneiricconcept.memoria": "§9忆质",
@@ -15544,11 +14304,11 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
+      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
-      "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
+      "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
@@ -15556,8 +14316,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -15565,39 +14325,20 @@
       "advancements.fall_king.descr": "see you again~",
       "item.oneiricconcept.propaganda_army": "水军",
       "translation.oneiricconcept.patchouli_name_pgc": "原石工艺百科",
-      "block.oneiricconcept.fulmo_10": "满月锭",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
-      "block.oneiricconcept.cryoo_7": "§k怜爱§r金属锭",
       "block.oneiricconcept.camerapink": "照相机",
-      "block.oneiricconcept.cryoo_8": "§k怜爱§r金属锭",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "item.oneiricconcept.heartofthefish": "鱼心",
-      "block.oneiricconcept.cryoo_9": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_3": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_4": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_5": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_6": "§k怜爱§r金属锭",
       "item.oneiricconcept.wilderness_rod": "林野钓竿",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
-      "block.oneiricconcept.liron_7": "重口味铁锭",
-      "block.oneiricconcept.liron_8": "重口味铁锭",
       "advancements.allriversrunintosea.descr": "博洋",
-      "block.oneiricconcept.liron_5": "重口味铁锭",
-      "block.oneiricconcept.liron_6": "重口味铁锭",
       "block.oneiricconcept.the_another_world_wood": "异世界木头",
-      "block.oneiricconcept.liron_3": "重口味铁锭",
-      "block.oneiricconcept.liron_4": "重口味铁锭",
       "item.oneiricconcept.adeptus_gun": "仙力之枪",
-      "block.oneiricconcept.liron_1": "重口味铁锭",
-      "block.oneiricconcept.liron_2": "重口味铁锭",
       "item.oneiricconcept.memory_bubble": "§9忆泡",
-      "block.oneiricconcept.cryoo_1": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_2": "§k怜爱§r金属锭",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
-      "block.oneiricconcept.liron_9": "重口味铁锭",
       "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
       "item.oneiricconcept.waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
@@ -15609,20 +14350,12 @@
       "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
       "item.oneiricconcept.mora_magazine": "摩拉弹匣",
       "effect.oneiricconcept.b_2sausage.description": "持续造成生命倍率×0.8×状态效果等级的伤害，击飞玩家",
-      "block.oneiricconcept.newmo_8": "新月锭",
-      "block.oneiricconcept.newmo_7": "新月锭",
       "block.oneiricconcept.wayfareblessing": "巡游的祝福",
       "block.oneiricconcept.propaganda_army_block": "水军服务器",
-      "block.oneiricconcept.newmo_9": "新月锭",
-      "block.oneiricconcept.newmo_4": "新月锭",
-      "block.oneiricconcept.newmo_3": "新月锭",
-      "block.oneiricconcept.newmo_6": "新月锭",
-      "block.oneiricconcept.newmo_5": "新月锭",
       "translation.oneiricconcept.patchouli_landing_oc": "这本手册介绍了梦华构想的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/17477.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
-      "block.oneiricconcept.newmo_2": "新月锭",
-      "block.oneiricconcept.newmo_1": "新月锭",
       "gamerule.ocfly.description": "设为假以提高兼容",
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
+      "block.oneiricconcept.hertabond": "Herta bond",
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
       "advancements.shootingthesun.title": "houyi射日",
       "translation.oneiricconcept.lure": "附魔进度：",
@@ -15631,28 +14364,21 @@
       "translation.oneiricconcept.check": "cn",
       "item.oneiricconcept.a_propaganda_army": "一个水军",
       "block.oneiricconcept.thunder_sword": "雷霆旧剑",
-      "block.oneiricconcept.elect_3": "永恒金属锭",
       "item.oneiricconcept.mora_bow": "摩拉弓",
-      "block.oneiricconcept.elect_2": "永恒金属锭",
-      "block.oneiricconcept.elect_5": "永恒金属锭",
-      "block.oneiricconcept.elect_4": "永恒金属锭",
       "translation.key.fail": "别搞混了",
-      "block.oneiricconcept.elect_1": "永恒金属锭",
       "block.oneiricconcept.phlogistontank": "燃素储气罐",
-      "block.oneiricconcept.elect_7": "永恒金属锭",
-      "block.oneiricconcept.elect_6": "永恒金属锭",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "§0并非母亲留下的宝藏",
       "item.oneiricconcept.sword_of_brilliant_valor.description_0": "§7当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
-      "block.oneiricconcept.elect_9": "永恒金属锭",
-      "block.oneiricconcept.elect_8": "永恒金属锭",
       "item_group.oneiricconcept.oneiric_concept_decoration": "梦华构想 装饰",
       "item.oneiricconcept.memoria_loot.description_0": "§7让眠眠给你送回来",
       "block.oneiricconcept.geomarrow_radiator.description_0": "§7用于加工香肠、小麦种子、异世界树苗和云。",
       "item.oneiricconcept.less_redstone_powder": "小堆红石粉",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
+      "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.virtual_particle": "虚粒子",
+      "block.oneiricconcept.fullmoon_metal": "full moon ingot",
       "block.oneiricconcept.electrosealingwax": "雷之印",
       "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
       "gamerule.ocfly": "燃素翼飞行",
@@ -15663,26 +14389,24 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.molten_metal": "铄金",
+      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
+      "block.oneiricconcept.cryo_metal": "crescent ingot",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.phlogiston_core": "燃素核心",
-      "block.oneiricconcept.hbond_10": "黑塔债券",
-      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "大石头块",
+      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
       "block.oneiricconcept.ambrosial_arbor_plank": "建木木板",
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
-      "block.oneiricconcept.newmo_10": "新月锭",
       "item.oneiricconcept.antibaryon_spawn_egg": "反重子刷怪蛋",
-      "block.oneiricconcept.dendr_10": "智慧金属锭",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
       "item.oneiricconcept.taw_wood_loot": "异世界礼盒",
@@ -15691,7 +14415,6 @@
       "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",
       "advancements.railgun.descr": "虽然但是，_ _，_ _ _ _ _ _ _ _？",
       "advancements.aftertheiceturnsintowater.title": "在冰化成水之后",
-      "block.oneiricconcept.hydro_10": "正义金属锭",
       "subtitles.houyi": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "饥饿之箭",
       "item.oneiricconcept.energy_drink": "能量饮料",
@@ -15699,19 +14422,10 @@
       "block.oneiricconcept.the_another_world_log": "异世界原木",
       "advancements.eastroc.title": "东鹏特饮",
       "block.oneiricconcept.rainbow_cactus_ball": "六彩炫人球",
-      "block.oneiricconcept.fulmo_7": "满月锭",
-      "block.oneiricconcept.fulmo_6": "满月锭",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
-      "block.oneiricconcept.fulmo_9": "满月锭",
-      "block.oneiricconcept.fulmo_8": "满月锭",
-      "block.oneiricconcept.fulmo_3": "满月锭",
-      "block.oneiricconcept.fulmo_2": "满月锭",
-      "block.oneiricconcept.fulmo_5": "满月锭",
       "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",
-      "block.oneiricconcept.fulmo_4": "满月锭",
       "subtitles.shuhu_kr": "倏忽恩赐",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
-      "block.oneiricconcept.fulmo_1": "满月锭",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.primogems_sausage": "原石香肠",
@@ -15749,7 +14463,6 @@
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
       "item.oneiricconcept.wayfare_cake_slices": "巡游蛋糕片",
       "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "冰鲜霜纹鲑生鱼片",
-      "block.oneiricconcept.dendr_1": "智慧金属锭",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
       "block.oneiricconcept.the_another_world_sapling": "异世界树苗",
       "advancements.shootingthesun.descr": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
@@ -15760,16 +14473,8 @@
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7有股怪味……孜然的味道吗？",
       "item.oneiricconcept.conqueror_s_will": "践踏的意志",
-      "block.oneiricconcept.dendr_6": "智慧金属锭",
       "item.oneiricconcept.fishcake": "鱼糕",
-      "block.oneiricconcept.dendr_7": "智慧金属锭",
-      "block.oneiricconcept.dendr_8": "智慧金属锭",
       "advancements.the_seriousness_of_breakfast.title": "早餐的仪式感",
-      "block.oneiricconcept.dendr_9": "智慧金属锭",
-      "block.oneiricconcept.dendr_2": "智慧金属锭",
-      "block.oneiricconcept.dendr_3": "智慧金属锭",
-      "block.oneiricconcept.dendr_4": "智慧金属锭",
-      "block.oneiricconcept.dendr_5": "智慧金属锭",
       "item.oneiricconcept.totemloot": "图腾礼盒",
       "advancements.gossipisafearfulthing.title": "人言可畏",
       "gamerule.ocinitialload": "初次加载",
@@ -15788,6 +14493,7 @@
       "block.oneiricconcept.xiao_lantern_recycler": "霄灯回收机",
       "item.oneiricconcept.sausage": "香肠",
       "block.oneiricconcept.floating_cloud": "浮云",
+      "block.oneiricconcept.pyro_metal": "Agnidus metal ingot",
       "translation.oneiricconcept.effectlevel": "§e药水效果等级：§a",
       "block.oneiricconcept.dendrosealingwax": "草之印",
       "item.oneiricconcept.crystal_turtle_spawn_egg": "水晶龟刷怪蛋",
@@ -15803,39 +14509,21 @@
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
-      "block.oneiricconcept.hydro_9": "正义金属锭",
       "advancements.fall_king.title": "耐摔王",
-      "block.oneiricconcept.hydro_8": "正义金属锭",
-      "block.oneiricconcept.hydro_7": "正义金属锭",
-      "block.oneiricconcept.hydro_6": "正义金属锭",
-      "block.oneiricconcept.hydro_5": "正义金属锭",
-      "block.oneiricconcept.hydro_4": "正义金属锭",
-      "block.oneiricconcept.hydro_3": "正义金属锭",
-      "block.oneiricconcept.hydro_2": "正义金属锭",
-      "block.oneiricconcept.hydro_1": "正义金属锭",
       "translation.key.load": "进度：§6",
       "item.oneiricconcept.s_2ausage.description_0": "§7有股怪味……孜然的味道吗？",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
-      "block.oneiricconcept.agnid_1": "燃愿金属锭",
       "translation.oneiricconcept.kill": "清除数量：§6",
       "block.oneiricconcept.mactus": "仙女掌",
       "item.oneiricconcept.baryon_spawn_egg": "重子刷怪蛋",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
-      "block.oneiricconcept.agnid_7": "燃愿金属锭",
       "item.oneiricconcept.hunger": "「饥饿」",
-      "block.oneiricconcept.agnid_6": "燃愿金属锭",
       "block.oneiricconcept.yactus": "仙力掌",
-      "block.oneiricconcept.agnid_9": "燃愿金属锭",
       "item.oneiricconcept.camo_paint": "迷彩油漆",
-      "block.oneiricconcept.agnid_8": "燃愿金属锭",
-      "block.oneiricconcept.agnid_3": "燃愿金属锭",
-      "block.oneiricconcept.agnid_2": "燃愿金属锭",
       "item.oneiricconcept.s_2tuffing": "肉馅",
-      "block.oneiricconcept.agnid_5": "燃愿金属锭",
-      "block.oneiricconcept.agnid_4": "燃愿金属锭",
       "subtitles.shuhu_cn": "倏忽恩赐",
       "item.oneiricconcept.usurper_s_scheme": "篡改的野心",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7依律禁止宣传保健品的药物功效。",
@@ -15847,8 +14535,8 @@
       "block.oneiricconcept.primogem": "Primogem",
       "item.oneiricconcept.energy_drink_primogem": "原石能量",
       "item.oneiricconcept.dreamdive_can": "§9入梦罐",
-      "block.oneiricconcept.agnid_10": "燃愿金属锭",
       "block.oneiricconcept.the_another_world_leave": "异世界树叶",
+      "block.oneiricconcept.trashmetal": "stinky iron ingot",
       "item.oneiricconcept.heartofthevastsea": "博洋之心",
       "item.oneiricconcept.heartofthewarmsea": "暖洋之心",
       "block.oneiricconcept.varunada_lazurite_ore": "涤净青金矿石",
@@ -15862,10 +14550,8 @@
       "block.oneiricconcept.cryosealingwax": "冰之印",
       "translation.oneiricconcept.lurelevelup": "§6饵钓已升级！",
       "death.attack.b_2.player": "%1$s 没能逃离 %2$s的熏肠",
-      "block.oneiricconcept.cryoo_10": "§k怜爱§r金属锭",
       "item.oneiricconcept.honkai_sliver": "崩坏碎片",
       "item.oneiricconcept.d_xuanyuan": "黑轩辕剑",
-      "block.oneiricconcept.elect_10": "永恒金属锭",
       "item.oneiricconcept.aureliae_shovel": "铄金锹",
       "item.oneiricconcept.condensed_memoria_piece.description_0": "§7更加浓缩的忆质块",
       "block.oneiricconcept.vayuda_turquoise_ore": "自在松石矿石",
@@ -15892,6 +14578,7 @@
       "item.oneiricconcept.testtool": "秒人锤",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
       "item.minecraft.lingering_potion.effect.hunger_potion": "滞留型饥饿药水",
+      "block.oneiricconcept.crescent_metal": "crescent ingot",
       "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
@@ -15900,19 +14587,9 @@
       "gamerule.ocdebug": "§6梦华构想调试",
       "block.oneiricconcept.hydrosealingwax": "水之印",
       "item.oneiricconcept.hiltwood_from_the_arbor": "建木柄材",
-      "block.oneiricconcept.hbond_2": "黑塔债券",
-      "block.oneiricconcept.hbond_3": "黑塔债券",
-      "block.oneiricconcept.hbond_4": "黑塔债券",
-      "block.oneiricconcept.hbond_5": "黑塔债券",
-      "block.oneiricconcept.hbond_6": "黑塔债券",
       "item.oneiricconcept.stuffing": "肉馅",
-      "block.oneiricconcept.hbond_7": "黑塔债券",
-      "block.oneiricconcept.hbond_8": "黑塔债券",
       "gamerule.ocdebug.description": "调试",
-      "block.oneiricconcept.hbond_9": "黑塔债券",
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
-      "block.oneiricconcept.hbond_0": "黑塔债券",
-      "block.oneiricconcept.hbond_1": "黑塔债券",
       "item.oneiricconcept.milk": "牛奶",
       "block.oneiricconcept.fresh_seedof_dawn": "黎明新籽",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
@@ -15931,9 +14608,9 @@
       "item.oneiricconcept.honkai_shard": "三分结晶",
       "item.oneiricconcept.dumpling": "饺子",
       "advancements.diseasename_gastriccancer.descr": "注意健康饮食",
-      "block.oneiricconcept.liron_10": "重口味铁锭",
       "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "§7关注我，教你开基因锁！",
       "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
+      "block.oneiricconcept.dendro_metal": "Nagadus_metal_ingot",
       "block.oneiricconcept.molten_metal_block": "铄金块",
       "item.oneiricconcept.deep_marrow_rock_salt": "深髓岩盐",
       "translation.oneiricconcept.textdec": "可放置在世界",
@@ -15944,8 +14621,8 @@
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -15953,6 +14630,7 @@
       "item.oneiricconcept.mmmhit": "§7蘑菇碎屏特效",
       "item.oneiricconcept.primogem_waffle.description_0": "§7敬传说中的画饼仙人",
       "death.attack.honkai.player": "%1$s died whilst trying to escape %2$s",
+      "block.oneiricconcept.electro_metal": "vajrada metal ingot",
       "entity.oneiricconcept.antibaryon": "Baryon",
       "block.oneiricconcept.cloud.description_0": "§7百川源",
       "fluid.oneiricconcept.memoria": "§9忆质",
@@ -15967,11 +14645,11 @@
       "advancements.diseasename_gastriccancer.title": "病名胃癌",
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
-      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.memoria_loot": "忆质礼盒",
+      "block.oneiricconcept.sweetflower": "甜甜花",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
-      "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
+      "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
@@ -15979,8 +14657,8 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -15988,39 +14666,20 @@
       "advancements.fall_king.descr": "see you again~",
       "item.oneiricconcept.propaganda_army": "水军",
       "translation.oneiricconcept.patchouli_name_pgc": "原石工艺百科",
-      "block.oneiricconcept.fulmo_10": "满月锭",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
-      "block.oneiricconcept.cryoo_7": "§k怜爱§r金属锭",
       "block.oneiricconcept.camerapink": "照相机",
-      "block.oneiricconcept.cryoo_8": "§k怜爱§r金属锭",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "item.oneiricconcept.heartofthefish": "鱼心",
-      "block.oneiricconcept.cryoo_9": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_3": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_4": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_5": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_6": "§k怜爱§r金属锭",
       "item.oneiricconcept.wilderness_rod": "林野钓竿",
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
-      "block.oneiricconcept.liron_7": "重口味铁锭",
-      "block.oneiricconcept.liron_8": "重口味铁锭",
       "advancements.allriversrunintosea.descr": "博洋",
-      "block.oneiricconcept.liron_5": "重口味铁锭",
-      "block.oneiricconcept.liron_6": "重口味铁锭",
       "block.oneiricconcept.the_another_world_wood": "异世界木头",
-      "block.oneiricconcept.liron_3": "重口味铁锭",
-      "block.oneiricconcept.liron_4": "重口味铁锭",
       "item.oneiricconcept.adeptus_gun": "仙力之枪",
-      "block.oneiricconcept.liron_1": "重口味铁锭",
-      "block.oneiricconcept.liron_2": "重口味铁锭",
       "item.oneiricconcept.memory_bubble": "§9忆泡",
-      "block.oneiricconcept.cryoo_1": "§k怜爱§r金属锭",
-      "block.oneiricconcept.cryoo_2": "§k怜爱§r金属锭",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
-      "block.oneiricconcept.liron_9": "重口味铁锭",
       "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
       "item.oneiricconcept.waffle.description_0": "§7敬传说中的画饼仙人",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
@@ -16032,20 +14691,12 @@
       "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
       "item.oneiricconcept.mora_magazine": "摩拉弹匣",
       "effect.oneiricconcept.b_2sausage.description": "持续造成生命倍率×0.8×状态效果等级的伤害，击飞玩家",
-      "block.oneiricconcept.newmo_8": "新月锭",
-      "block.oneiricconcept.newmo_7": "新月锭",
       "block.oneiricconcept.wayfareblessing": "巡游的祝福",
       "block.oneiricconcept.propaganda_army_block": "水军服务器",
-      "block.oneiricconcept.newmo_9": "新月锭",
-      "block.oneiricconcept.newmo_4": "新月锭",
-      "block.oneiricconcept.newmo_3": "新月锭",
-      "block.oneiricconcept.newmo_6": "新月锭",
-      "block.oneiricconcept.newmo_5": "新月锭",
       "translation.oneiricconcept.patchouli_landing_oc": "这本手册介绍了梦华构想的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/17477.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
-      "block.oneiricconcept.newmo_2": "新月锭",
-      "block.oneiricconcept.newmo_1": "新月锭",
       "gamerule.ocfly.description": "设为假以提高兼容",
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
+      "block.oneiricconcept.hertabond": "Herta bond",
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
       "advancements.shootingthesun.title": "houyi射日",
       "translation.oneiricconcept.lure": "附魔进度：",
@@ -16054,28 +14705,21 @@
       "translation.oneiricconcept.check": "jp",
       "item.oneiricconcept.a_propaganda_army": "一个水军",
       "block.oneiricconcept.thunder_sword": "雷霆旧剑",
-      "block.oneiricconcept.elect_3": "永恒金属锭",
       "item.oneiricconcept.mora_bow": "Mora Bow",
-      "block.oneiricconcept.elect_2": "永恒金属锭",
-      "block.oneiricconcept.elect_5": "永恒金属锭",
-      "block.oneiricconcept.elect_4": "永恒金属锭",
       "translation.key.fail": "别搞混了",
-      "block.oneiricconcept.elect_1": "永恒金属锭",
       "block.oneiricconcept.phlogistontank": "燃素储气罐",
-      "block.oneiricconcept.elect_7": "永恒金属锭",
-      "block.oneiricconcept.elect_6": "永恒金属锭",
       "item.oneiricconcept.sword_of_brilliant_valor.description_1": "§0并非母亲留下的宝藏",
       "item.oneiricconcept.sword_of_brilliant_valor.description_0": "§7当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
-      "block.oneiricconcept.elect_9": "永恒金属锭",
-      "block.oneiricconcept.elect_8": "永恒金属锭",
       "item_group.oneiricconcept.oneiric_concept_decoration": "梦华构想 装饰",
       "item.oneiricconcept.memoria_loot.description_0": "§7让眠眠给你送回来",
       "block.oneiricconcept.geomarrow_radiator.description_0": "§7用于加工香肠、小麦种子、异世界树苗和云。",
       "item.oneiricconcept.less_redstone_powder": "小堆红石粉",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
+      "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.virtual_particle": "虚粒子",
+      "block.oneiricconcept.fullmoon_metal": "full moon ingot",
       "block.oneiricconcept.electrosealingwax": "雷之印",
       "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
       "gamerule.ocfly": "燃素翼飞行",
@@ -16086,26 +14730,24 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
+      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
+      "block.oneiricconcept.cryo_metal": "crescent ingot",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.phlogiston_core": "燃素核心",
-      "block.oneiricconcept.hbond_10": "黑塔债券",
-      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "大石头块",
+      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
       "block.oneiricconcept.ambrosial_arbor_plank": "建木木板",
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
-      "block.oneiricconcept.newmo_10": "新月锭",
       "item.oneiricconcept.antibaryon_spawn_egg": "Baryon Spawn Egg",
-      "block.oneiricconcept.dendr_10": "智慧金属锭",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
       "item_group.oneiricconcept.oneiric_concept": "梦华构想",
       "item.oneiricconcept.taw_wood_loot": "异世界礼盒",
@@ -16114,7 +14756,6 @@
       "advancements.the_seriousness_of_breakfast.descr": "都给我趁热吃帕！",
       "advancements.railgun.descr": "虽然但是，_ _，_ _ _ _ _ _ _ _？",
       "advancements.aftertheiceturnsintowater.title": "在冰化成水之后",
-      "block.oneiricconcept.hydro_10": "正义金属锭",
       "subtitles.houyi": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "饥饿之箭",
       "item.oneiricconcept.energy_drink": "能量饮料",
@@ -16122,19 +14763,10 @@
       "block.oneiricconcept.the_another_world_log": "异世界原木",
       "advancements.eastroc.title": "Eastroc",
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
-      "block.oneiricconcept.fulmo_7": "满月锭",
-      "block.oneiricconcept.fulmo_6": "满月锭",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
-      "block.oneiricconcept.fulmo_9": "满月锭",
-      "block.oneiricconcept.fulmo_8": "满月锭",
-      "block.oneiricconcept.fulmo_3": "满月锭",
-      "block.oneiricconcept.fulmo_2": "满月锭",
-      "block.oneiricconcept.fulmo_5": "满月锭",
       "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",
-      "block.oneiricconcept.fulmo_4": "满月锭",
       "subtitles.shuhu_kr": "倏忽恩赐",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
-      "block.oneiricconcept.fulmo_1": "满月锭",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.primogems_sausage": "原石香肠",
@@ -16172,7 +14804,6 @@
       "item.oneiricconcept.dreamdive_can.description_1": "§6产自「盛会之星」匹诺康尼的美梦罐头，装满了高度浓缩的气态忆质，使用者会在打开罐头的五分钟内沉入梦乡。",
       "item.oneiricconcept.wayfare_cake_slices": "巡游蛋糕片",
       "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "冰鲜霜纹鲑生鱼片",
-      "block.oneiricconcept.dendr_1": "智慧金属锭",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
       "block.oneiricconcept.the_another_world_sapling": "异世界树苗",
       "advancements.shootingthesun.descr": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
@@ -16183,16 +14814,8 @@
       "item.oneiricconcept.example": "Example",
       "item.oneiricconcept.b_2elobog_sausage.description_0": "§7有股怪味……孜然的味道吗？",
       "item.oneiricconcept.conqueror_s_will": "Conqueror S Will",
-      "block.oneiricconcept.dendr_6": "智慧金属锭",
       "item.oneiricconcept.fishcake": "鱼糕",
-      "block.oneiricconcept.dendr_7": "智慧金属锭",
-      "block.oneiricconcept.dendr_8": "智慧金属锭",
       "advancements.the_seriousness_of_breakfast.title": "早餐的仪式感",
-      "block.oneiricconcept.dendr_9": "智慧金属锭",
-      "block.oneiricconcept.dendr_2": "智慧金属锭",
-      "block.oneiricconcept.dendr_3": "智慧金属锭",
-      "block.oneiricconcept.dendr_4": "智慧金属锭",
-      "block.oneiricconcept.dendr_5": "智慧金属锭",
       "item.oneiricconcept.totemloot": "图腾礼盒",
       "advancements.gossipisafearfulthing.title": "人言可畏",
       "gamerule.ocinitialload": "初次加载",
@@ -16211,6 +14834,7 @@
       "block.oneiricconcept.xiao_lantern_recycler": "霄灯回收机",
       "item.oneiricconcept.sausage": "香肠",
       "block.oneiricconcept.floating_cloud": "浮云",
+      "block.oneiricconcept.pyro_metal": "Agnidus metal ingot",
       "translation.oneiricconcept.effectlevel": "§e药水效果等级：§a",
       "block.oneiricconcept.dendrosealingwax": "草之印",
       "item.oneiricconcept.crystal_turtle_spawn_egg": "水晶龟刷怪蛋",
@@ -16226,39 +14850,21 @@
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
-      "block.oneiricconcept.hydro_9": "正义金属锭",
       "advancements.fall_king.title": "Fall King",
-      "block.oneiricconcept.hydro_8": "正义金属锭",
-      "block.oneiricconcept.hydro_7": "正义金属锭",
-      "block.oneiricconcept.hydro_6": "正义金属锭",
-      "block.oneiricconcept.hydro_5": "正义金属锭",
-      "block.oneiricconcept.hydro_4": "正义金属锭",
-      "block.oneiricconcept.hydro_3": "正义金属锭",
-      "block.oneiricconcept.hydro_2": "正义金属锭",
-      "block.oneiricconcept.hydro_1": "正义金属锭",
       "translation.key.load": "进度：§6",
       "item.oneiricconcept.s_2ausage.description_0": "§7有股怪味……孜然的味道吗？",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
-      "block.oneiricconcept.agnid_1": "燃愿金属锭",
       "translation.oneiricconcept.kill": "清除数量：§6",
       "block.oneiricconcept.mactus": "仙女掌",
       "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
-      "block.oneiricconcept.agnid_7": "燃愿金属锭",
       "item.oneiricconcept.hunger": "「饥饿」",
-      "block.oneiricconcept.agnid_6": "燃愿金属锭",
       "block.oneiricconcept.yactus": "仙力掌",
-      "block.oneiricconcept.agnid_9": "燃愿金属锭",
       "item.oneiricconcept.camo_paint": "迷彩油漆",
-      "block.oneiricconcept.agnid_8": "燃愿金属锭",
-      "block.oneiricconcept.agnid_3": "燃愿金属锭",
-      "block.oneiricconcept.agnid_2": "燃愿金属锭",
       "item.oneiricconcept.s_2tuffing": "肉馅",
-      "block.oneiricconcept.agnid_5": "燃愿金属锭",
-      "block.oneiricconcept.agnid_4": "燃愿金属锭",
       "subtitles.shuhu_cn": "倏忽恩赐",
       "item.oneiricconcept.usurper_s_scheme": "Usurper S Scheme",
       "item.oneiricconcept.resurrection_pellet.description_0": "§7依律禁止宣传保健品的药物功效。",
@@ -16270,8 +14876,8 @@
       "block.oneiricconcept.primogem": "Primogem",
       "item.oneiricconcept.energy_drink_primogem": "原石能量",
       "item.oneiricconcept.dreamdive_can": "§9入梦罐",
-      "block.oneiricconcept.agnid_10": "燃愿金属锭",
       "block.oneiricconcept.the_another_world_leave": "异世界树叶",
+      "block.oneiricconcept.trashmetal": "stinky iron ingot",
       "item.oneiricconcept.heartofthevastsea": "博洋之心",
       "item.oneiricconcept.heartofthewarmsea": "暖洋之心",
       "block.oneiricconcept.varunada_lazurite_ore": "涤净青金矿石",
@@ -16285,10 +14891,8 @@
       "block.oneiricconcept.cryosealingwax": "冰之印",
       "translation.oneiricconcept.lurelevelup": "§6饵钓已升级！",
       "death.attack.b_2.player": "%1$s 没能逃离 %2$s的熏肠",
-      "block.oneiricconcept.cryoo_10": "§k怜爱§r金属锭",
       "item.oneiricconcept.honkai_sliver": "崩坏碎片",
       "item.oneiricconcept.d_xuanyuan": "黑轩辕剑",
-      "block.oneiricconcept.elect_10": "永恒金属锭",
       "item.oneiricconcept.aureliae_shovel": "铄金锹",
       "item.oneiricconcept.condensed_memoria_piece.description_0": "§7更加浓缩的忆质块",
       "block.oneiricconcept.vayuda_turquoise_ore": "自在松石矿石",
@@ -16315,6 +14919,7 @@
       "item.oneiricconcept.testtool": "Testtool",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
       "item.minecraft.lingering_potion.effect.hunger_potion": "滞留型饥饿药水",
+      "block.oneiricconcept.crescent_metal": "crescent ingot",
       "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
@@ -16323,19 +14928,9 @@
       "gamerule.ocdebug": "§6梦华构想调试",
       "block.oneiricconcept.hydrosealingwax": "水之印",
       "item.oneiricconcept.hiltwood_from_the_arbor": "建木柄材",
-      "block.oneiricconcept.hbond_2": "黑塔债券",
-      "block.oneiricconcept.hbond_3": "黑塔债券",
-      "block.oneiricconcept.hbond_4": "黑塔债券",
-      "block.oneiricconcept.hbond_5": "黑塔债券",
-      "block.oneiricconcept.hbond_6": "黑塔债券",
       "item.oneiricconcept.stuffing": "肉馅",
-      "block.oneiricconcept.hbond_7": "黑塔债券",
-      "block.oneiricconcept.hbond_8": "黑塔债券",
       "gamerule.ocdebug.description": "调试",
-      "block.oneiricconcept.hbond_9": "黑塔债券",
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
-      "block.oneiricconcept.hbond_0": "黑塔债券",
-      "block.oneiricconcept.hbond_1": "黑塔债券",
       "item.oneiricconcept.milk": "牛奶",
       "block.oneiricconcept.fresh_seedof_dawn": "黎明新籽",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
@@ -16354,9 +14949,9 @@
       "item.oneiricconcept.honkai_shard": "三分结晶",
       "item.oneiricconcept.dumpling": "饺子",
       "advancements.diseasename_gastriccancer.descr": "注意健康饮食",
-      "block.oneiricconcept.liron_10": "重口味铁锭",
       "item.oneiricconcept.surpriseboxforgoodorbad.description_0": "§7关注我，教你开基因锁！",
       "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
+      "block.oneiricconcept.dendro_metal": "Nagadus_metal_ingot",
       "block.oneiricconcept.molten_metal_block": "铄金块",
       "item.oneiricconcept.deep_marrow_rock_salt": "深髓岩盐",
       "translation.oneiricconcept.textdec": "可放置在世界",

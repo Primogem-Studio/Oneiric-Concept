@@ -1,9 +1,0 @@
-{
-  "parent": "oneiricconcept:custom/agnidus_metal_ingot_i",
-  "textures": {
-    "all": "oneiricconcept:block/agnidus_metal_ingot",
-    "particle": "oneiricconcept:block/agnidus_metal_ingot",
-    "1": "oneiricconcept:block/agnidus_metal_ingot"
-  },
-  "render_type": "cutout"
-}

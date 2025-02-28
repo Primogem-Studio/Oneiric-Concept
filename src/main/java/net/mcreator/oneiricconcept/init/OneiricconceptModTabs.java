@@ -168,14 +168,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HBOND_0.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.NEWMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.FULMO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.LIRON_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.AGNID_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.HYDRO_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.ELECT_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.DENDR_1.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.CRYOO_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PYROSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HYDROSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ANEMO_SEALINGWAX.get().asItem());
@@ -190,6 +182,14 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.REDMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ANEMO_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.GEO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.DENDRO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CRYO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.HYDRO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ELECTRO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.TRASHMETAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FULLMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CRESCENT_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PYRO_METAL.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

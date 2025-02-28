@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/hydro_metal"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/hydro_metal",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/hydro_metal",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/hydro_metal",
+      "y": 270
+    }
+  }
+}

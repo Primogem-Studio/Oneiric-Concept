@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/hertabond"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/hertabond",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/hertabond",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/hertabond",
+      "y": 270
+    }
+  }
+}
