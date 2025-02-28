@@ -13040,6 +13040,32 @@
         ]
       },
       "path": "~/PgcCopyDecoration/block/herta_bond"
+    },
+    {
+      "name": "Energyeffect1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "energyeffect_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/energyeffect_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Camoeffect1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "camoeffect_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/camoeffect_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -13087,10 +13113,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13099,6 +13121,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -13919,6 +13945,7 @@
       "translation.oneiricconcept.patchouli_name_oc": "oneiricconcept wiki",
       "advancements.big_stone_crush_chest.descr": "The darkness is like a boulder pressing down upon the breast",
       "translation.key.load": "speed of progress:§6",
+      "effect.oneiricconcept.camo.description": "Reduce the monster\u0027s range and attack.",
       "item.oneiricconcept.s_2ausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6The tenth Divine Keys contains the powerful power of Herrschers",
       "translation.oneiricconcept.patchouli_landing_pgc": "This manual introduces the items/blocks, creatures/entities, enchantments/spells of \u0027primogemcraft\u0027 BUFF/DEBUFF、 Natural generation and game settings For more detailed content, please refer to MCMOD.cnSynchronized introduction from MCmod.cn, added by oneiricconcept",
@@ -13999,6 +14026,7 @@
       "block.oneiricconcept.vayuda_turquoise_ore": "Vayuda Turquoise Ore",
       "item.oneiricconcept.public_clamor": "Public Clamor",
       "block.oneiricconcept.ractus": "Ractus",
+      "effect.oneiricconcept.energy.description": "Enhance overall athletic ability.",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
       "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
       "item.oneiricconcept.sustenanceanchoritem": "Sustenanceanchor",
@@ -14260,6 +14288,7 @@
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "translation.key.load": "进度：§6",
+      "effect.oneiricconcept.camo.description": "减少怪物的索敌范围和攻击性。",
       "item.oneiricconcept.s_2ausage.description_0": "§7有股怪味……孜然的味道吗？",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
@@ -14340,6 +14369,7 @@
       "block.oneiricconcept.vayuda_turquoise_ore": "自在松石矿石",
       "item.oneiricconcept.public_clamor": "众口",
       "block.oneiricconcept.ractus": "仙术掌",
+      "effect.oneiricconcept.energy.description": "全方位提升运动能力。",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
       "block.oneiricconcept.hydro_metal": "正义金属锭",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
@@ -14474,8 +14504,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14601,6 +14631,7 @@
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "translation.key.load": "进度：§6",
+      "effect.oneiricconcept.camo.description": "",
       "item.oneiricconcept.s_2ausage.description_0": "§7有股怪味……孜然的味道吗？",
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
@@ -14681,6 +14712,7 @@
       "block.oneiricconcept.vayuda_turquoise_ore": "自在松石矿石",
       "item.oneiricconcept.public_clamor": "众口",
       "block.oneiricconcept.ractus": "仙术掌",
+      "effect.oneiricconcept.energy.description": "",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
       "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",

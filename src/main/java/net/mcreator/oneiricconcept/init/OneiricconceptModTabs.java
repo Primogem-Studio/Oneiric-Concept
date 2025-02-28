@@ -167,6 +167,8 @@ public class OneiricconceptModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HERTABOND.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(OneiricconceptModBlocks.PGC_PRESENT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.HERTABOND.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PRIMOGEM.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PYROSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.HYDROSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ANEMO_SEALINGWAX.get().asItem());
@@ -176,20 +178,18 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.GEOSEALINGWAX.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERAPINK.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CAMERA.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.PRIMOGEM.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.REDMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PYRO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.HYDRO_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ANEMO_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.GEO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.ELECTRO_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.DENDRO_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CRYO_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.HYDRO_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.ELECTRO_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.GEO_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.TRASHMETAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.FULLMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CRESCENT_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.PYRO_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.HERTABOND.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.REDMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FULLMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

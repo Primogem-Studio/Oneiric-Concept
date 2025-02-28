@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "jeed"
+    }
+  ],
+  "type": "jeed:effect_provider",
+  "effect":"oneiricconcept:energy",
+  "providers": [
+    {
+      "item": "oneiricconcept:energy_drink"
+    },
+    {
+    	"item": "oneiricconcept:punitive_energy"
+    },
+    {
+    	"item": "oneiricconcept:energy_drink_sugar_free"
+    },
+    {
+    	"item": "oneiricconcept:energy_drink_primogem"
+    }
+  ]
+}
