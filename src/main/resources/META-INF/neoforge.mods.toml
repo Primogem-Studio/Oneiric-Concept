@@ -18,25 +18,25 @@ config = "oneiricconcept.mixins.json"
 # End of user code block mod configuration
 
 [[dependencies.oneiricconcept]]
-    modId="neoforge"
-    type="required"
-    versionRange="[21.1.65,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.oneiricconcept]]
-    modId="minecraft"
-    type="required"
-    versionRange="[1.21.1]"
-    ordering="AFTER"
-    side="BOTH"
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.oneiricconcept]]
-    modId="primogemcraft"
-    type="required"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="primogemcraft"
+type="required"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 
 
 

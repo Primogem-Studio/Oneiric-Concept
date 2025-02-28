@@ -81,8 +81,9 @@ public class EntityHurtProcedure {
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * swordEnchant * 0.5 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
 				Changetxt = Component.translatable("translation.oneiricconcept.shuhu").getString();
 				for (Entity entityiterator : world.getEntities(entity, new AABB((sx + range), (sy + range), (sz + range), (sx - range), (sy - range), (sz - range)))) {
-					entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), (float) (swordEnchant * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
-					DelayedDamageProcedure.execute(world, new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), entityiterator,
+					entityiterator.hurt(ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1),
+							(float) (swordEnchant * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
+					DelayedDamageProcedure.execute(world, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), entityiterator,
 							(entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity15.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
 									* (0.168 + swordEnchant * 0.052)
 									+ (entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity16.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)

@@ -4581,6 +4581,50 @@
       "path": "~/PgcCopyDecoration/block/agnidus_metal_ingot"
     },
     {
+      "name": "ElementDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "element_damage",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ElementDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "apply",
+            "type": "logic"
+          },
+          {
+            "name": "cooldown",
+            "type": "logic"
+          },
+          {
+            "name": "critical",
+            "type": "logic"
+          },
+          {
+            "name": "knockback",
+            "type": "logic"
+          },
+          {
+            "name": "element",
+            "type": "number"
+          },
+          {
+            "name": "quantity",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/custom"
+    },
+    {
       "name": "Camera",
       "type": "block",
       "compiles": true,
