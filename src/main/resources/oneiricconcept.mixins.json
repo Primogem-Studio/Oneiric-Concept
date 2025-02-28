@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.hackermdch.oc.mixin",
+  "plugin": "net.hackermdch.oc.mixin.compat.MixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "compat.BaryonMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

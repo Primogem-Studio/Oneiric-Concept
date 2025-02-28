@@ -13,6 +13,8 @@ authors="GlowStar, Pepper\u67D0\u4EBA\uFF0CMCreator"
 description="\u539F\u77F3\u5DE5\u827A\u7684\u9644\u5C5E\u6A21\u7EC4"
 
 # Start of user code block mod configuration
+[[mixins]]
+config = "oneiricconcept.mixins.json"
 # End of user code block mod configuration
 
 [[dependencies.oneiricconcept]]
