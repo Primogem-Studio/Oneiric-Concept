@@ -122,7 +122,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "Pgprocess"
+      "name": "Blockmode"
+    },
+    "onDestroyedByPlayer": {
+      "name": "BreakDrops"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

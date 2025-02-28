@@ -30,7 +30,7 @@ public class BlockmodeProcedure {
 		blockmode = blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip2 ? blockstate.getValue(_getip2) : -1;
 		if (blockstate.getBlock() == OneiricconceptModBlocks.PRIMOGEM.get()) {
 			maxmdoe = 6;
-		} else if (blockstate.getBlock() == OneiricconceptModBlocks.HBOND_0.get()) {
+		} else if (blockstate.getBlock() == OneiricconceptModBlocks.HERTABOND.get()) {
 			maxmdoe = 10;
 		} else {
 			maxmdoe = 9;

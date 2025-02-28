@@ -10,6 +10,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -31,14 +32,40 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.procedures.PgprocessProcedure;
+import net.mcreator.oneiricconcept.procedures.BreakDropsProcedure;
+import net.mcreator.oneiricconcept.procedures.BlockmodeProcedure;
 
 public class HertabondBlock extends Block implements SimpleWaterloggedBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 10);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public HertabondBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.METAL).strength(0.5f, 10f).lightLevel(s -> 1).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.METAL).strength(0.5f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 2)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 3)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 4)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 5)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 6)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 7)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 8)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 9)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 10)
+					return 0;
+				return 1;
+			}
+		}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -59,6 +86,86 @@ public class HertabondBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(BLOCKSTATE) == 1) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 3, 14.8, 0.6, 12.8);
+				case NORTH -> box(1.2, 0, 3.2, 14.5, 0.6, 13);
+				case EAST -> box(3, 0, 1.2, 12.8, 0.6, 14.5);
+				case WEST -> box(3.2, 0, 1.5, 13, 0.6, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 2) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 3.5, 6.5, 1.6, 12);
+				case NORTH -> box(9.5, 0, 4, 14.5, 1.6, 12.5);
+				case EAST -> box(3.5, 0, 9.5, 12, 1.6, 14.5);
+				case WEST -> box(4, 0, 1.5, 12.5, 1.6, 6.5);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 3) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 3.5, 14.8, 1.6, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 1.6, 12.5);
+				case EAST -> box(3.5, 0, 1.2, 15, 1.6, 14.5);
+				case WEST -> box(1, 0, 1.5, 12.5, 1.6, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 4) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 0.377, 14.8, 1.6, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 1.6, 15.623);
+				case EAST -> box(0.377, 0, 1.2, 15, 1.6, 14.5);
+				case WEST -> box(1, 0, 1.5, 15.623, 1.6, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 5) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 3.5, 14.8, 1.6, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 1.6, 12.5);
+				case EAST -> box(3.5, 0, 1.2, 15, 1.6, 14.5);
+				case WEST -> box(1, 0, 1.5, 12.5, 1.6, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 6) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 0.377, 14.8, 1.6, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 1.6, 15.623);
+				case EAST -> box(0.377, 0, 1.2, 15, 1.6, 14.5);
+				case WEST -> box(1, 0, 1.5, 15.623, 1.6, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 7) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 3.5, 14.8, 2.6, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 2.6, 12.5);
+				case EAST -> box(3.5, 0, 1.2, 15, 2.6, 14.5);
+				case WEST -> box(1, 0, 1.5, 12.5, 2.6, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 8) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 0.377, 14.8, 2.6, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 2.6, 15.623);
+				case EAST -> box(0.377, 0, 1.2, 15, 2.6, 14.5);
+				case WEST -> box(1, 0, 1.5, 15.623, 2.6, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 9) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 3.5, 14.8, 8.316, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 8.316, 12.5);
+				case EAST -> box(3.5, 0, 1.2, 15, 8.316, 14.5);
+				case WEST -> box(1, 0, 1.5, 12.5, 8.316, 14.8);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 10) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1.5, 0, 0.377, 14.8, 8.316, 15);
+				case NORTH -> box(1.2, 0, 1, 14.5, 8.316, 15.623);
+				case EAST -> box(0.377, 0, 1.2, 15, 8.316, 14.5);
+				case WEST -> box(1, 0, 1.5, 15.623, 8.316, 14.8);
+			};
+		}
 		return switch (state.getValue(FACING)) {
 			default -> box(5.5, 0, 3.5, 10.5, 0.6, 12);
 			case NORTH -> box(5.5, 0, 4, 10.5, 0.6, 12.5);
@@ -70,7 +177,7 @@ public class HertabondBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, WATERLOGGED);
+		builder.add(FACING, WATERLOGGED, BLOCKSTATE);
 	}
 
 	@Override
@@ -101,6 +208,13 @@ public class HertabondBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		BreakDropsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		return retval;
+	}
+
+	@Override
 	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player entity, BlockHitResult hit) {
 		super.useWithoutItem(blockstate, world, pos, entity, hit);
 		int x = pos.getX();
@@ -110,7 +224,7 @@ public class HertabondBlock extends Block implements SimpleWaterloggedBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		PgprocessProcedure.execute(world, x, y, z, entity);
+		BlockmodeProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

@@ -1,0 +1,239 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Hertabond",
+    "blockstateList": [
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_b:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 3.2,
+            "Mx": 14.5,
+            "My": 0.6,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_c:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 9.5,
+            "my": 0.0,
+            "mz": 4.0,
+            "Mx": 14.5,
+            "My": 1.6,
+            "Mz": 12.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_d:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 1.6,
+            "Mz": 12.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_e:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 1.6,
+            "Mz": 15.623,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_f:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 1.6,
+            "Mz": 12.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_g:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 1.6,
+            "Mz": 15.623,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_h:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 2.6,
+            "Mz": 12.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_i:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 2.6,
+            "Mz": 15.623,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "red_moon_ingot",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_j:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 8.316,
+            "Mz": 12.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "herta_bond",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "herta_bond_k:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.2,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 14.5,
+            "My": 8.316,
+            "Mz": 15.623,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

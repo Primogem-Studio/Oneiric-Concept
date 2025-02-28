@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "blockstates",
   "definition": {
-    "block": "Redmo1",
+    "block": "Elect1",
     "blockstateList": [
       {
         "texture": "red_moon_ingot",
@@ -13,7 +13,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_b:redmoon",
+        "customModelName": "agnidus_metal_ingot_b:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -36,7 +36,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_c:redmoon",
+        "customModelName": "agnidus_metal_ingot_c:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -59,7 +59,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_d:redmoon",
+        "customModelName": "agnidus_metal_ingot_d:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -82,7 +82,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_e:redmoon",
+        "customModelName": "agnidus_metal_ingot_e:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -105,7 +105,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_f:readmoon",
+        "customModelName": "agnidus_metal_ingot_f:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -128,7 +128,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_g:redmoon",
+        "customModelName": "agnidus_metal_ingot_g:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -151,7 +151,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_h:redmoon",
+        "customModelName": "agnidus_metal_ingot_h:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -174,7 +174,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_i:redmoon",
+        "customModelName": "agnidus_metal_ingot_i:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -197,7 +197,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "agnidus_metal_ingot_j:redmoon",
+        "customModelName": "agnidus_metal_ingot_j:electro_lei",
         "luminance": 0,
         "boundingBoxes": [
           {

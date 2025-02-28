@@ -137,7 +137,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> ANEMO_METAL = REGISTRY.register("anemo_metal", Anemo1Block::new);
 	public static final DeferredBlock<Block> GEO_METAL = REGISTRY.register("geo_metal", Geooo1Block::new);
 	public static final DeferredBlock<Block> SUPERIMPOSER_CUSTOMMADE = REGISTRY.register("superimposer_custommade", SuperimposerCustommadeBlock::new);
-	public static final DeferredBlock<Block> HBOND_0 = REGISTRY.register("hbond_0", HertabondBlock::new);
+	public static final DeferredBlock<Block> HERTABOND = REGISTRY.register("hertabond", HertabondBlock::new);
 	public static final DeferredBlock<Block> PYROSEALINGWAX = REGISTRY.register("pyrosealingwax", PyrosealingwaxBlock::new);
 	public static final DeferredBlock<Block> ELECTROSEALINGWAX = REGISTRY.register("electrosealingwax", ElectrosealingwaxBlock::new);
 	public static final DeferredBlock<Block> HYDROSEALINGWAX = REGISTRY.register("hydrosealingwax", HydrosealingwaxBlock::new);

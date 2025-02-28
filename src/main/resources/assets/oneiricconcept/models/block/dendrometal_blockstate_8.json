@@ -2,8 +2,8 @@
   "parent": "oneiricconcept:custom/agnidus_metal_ingot_j",
   "textures": {
     "all": "oneiricconcept:block/red_moon_ingot",
-    "particle": "oneiricconcept:block/red_moon_ingot",
-    "1": "oneiricconcept:block/red_moon_ingot"
+    "particle": "oneiricconcept:block/nagadus_metal_ingot",
+    "1": "oneiricconcept:block/nagadus_metal_ingot"
   },
   "render_type": "cutout"
 }

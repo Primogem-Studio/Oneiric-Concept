@@ -235,7 +235,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> ANEMO_METAL = block(OneiricconceptModBlocks.ANEMO_METAL);
 	public static final DeferredItem<Item> GEO_METAL = block(OneiricconceptModBlocks.GEO_METAL);
 	public static final DeferredItem<Item> SUPERIMPOSER_CUSTOMMADE = block(OneiricconceptModBlocks.SUPERIMPOSER_CUSTOMMADE);
-	public static final DeferredItem<Item> HBOND_0 = block(OneiricconceptModBlocks.HBOND_0);
+	public static final DeferredItem<Item> HERTABOND = block(OneiricconceptModBlocks.HERTABOND);
 	public static final DeferredItem<Item> PYROSEALINGWAX = block(OneiricconceptModBlocks.PYROSEALINGWAX);
 	public static final DeferredItem<Item> ELECTROSEALINGWAX = block(OneiricconceptModBlocks.ELECTROSEALINGWAX);
 	public static final DeferredItem<Item> HYDROSEALINGWAX = block(OneiricconceptModBlocks.HYDROSEALINGWAX);

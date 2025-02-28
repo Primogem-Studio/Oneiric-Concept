@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/herta_bond_b",
+  "textures": {
+    "all": "oneiricconcept:block/red_moon_ingot",
+    "particle": "oneiricconcept:block/herta_bond",
+    "0": "oneiricconcept:block/herta_bond"
+  },
+  "render_type": "cutout"
+}
