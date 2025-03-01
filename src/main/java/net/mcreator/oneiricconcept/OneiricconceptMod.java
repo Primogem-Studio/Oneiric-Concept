@@ -68,6 +68,7 @@ public class OneiricconceptMod {
 		OneiricconceptModFluidTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
+		PGCApi.init();
 		// End of user code block mod init
 	}
 
