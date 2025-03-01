@@ -5,8 +5,8 @@
   "plugin": "net.hackermdch.oc.mixin.compat.MixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "compat.BaryonMixin",
-    "compat.ElementDamageMixin"
+    "compat.ElementDamageMixin",
+    "compat.OnLaserEntityMixin"
   ],
   "client": [
   ],

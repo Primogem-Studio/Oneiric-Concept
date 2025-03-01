@@ -1,22 +1,23 @@
-package net.hackermdch.oc;
+package net.hackermdch.oc.mixin.compat;
 
 import net.hacker.genshincraft.misc.TypeDamageSource;
+import net.mcreator.oneiricconcept.entity.OnLaserEntity;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageSources;
 import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.Arrow;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
+import org.spongepowered.asm.mixin.Mixin;
 
 import static net.hacker.genshincraft.misc.TypeDamageSource.Type.QUANTUM;
 
-public class SpecialArrow extends Arrow {
-    public SpecialArrow(Level level, LivingEntity owner, ItemStack stack, @Nullable ItemStack weapon) {
-        super(level, owner, stack, weapon);
+@Mixin(OnLaserEntity.class)
+public abstract class OnLaserEntityMixin extends AbstractArrow {
+    protected OnLaserEntityMixin(EntityType<? extends AbstractArrow> type, Level level) {
+        super(type, level);
     }
 
     @Override
