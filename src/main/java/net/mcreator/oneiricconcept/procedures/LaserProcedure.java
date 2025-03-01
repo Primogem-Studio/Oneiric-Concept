@@ -24,6 +24,7 @@ public class LaserProcedure {
 		double x2 = 0;
 		double y2 = 0;
 		double z2 = 0;
+		Entity target = null;
 		world.addParticle(ParticleTypes.FLASH, x, y, z, 0, 0, 0);
 		rangee = 20;
 		x2 = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(rangee)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX();
@@ -40,7 +41,10 @@ public class LaserProcedure {
 			ratio = (index0 * 0.1) / total_distance;
 			world.addParticle(ParticleTypes.FIREWORK, (x + ratio * dx), (y + ratio * dy), (z + ratio * dz), 0, 0, 0);
 		}
-		(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).hurt(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), 3);
+		target = entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null;
+		if (target != null) {
+			target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, true, 1), 3);
+		}
 		if (!immediatesourceentity.level().isClientSide())
 			immediatesourceentity.discard();
 	}

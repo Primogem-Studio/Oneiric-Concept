@@ -6,7 +6,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "compat.ElementDamageMixin",
-    "compat.OnLaserEntityMixin"
+    "compat.TypeDamageMixin"
   ],
   "client": [
   ],

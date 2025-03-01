@@ -13163,6 +13163,42 @@
       }
     },
     {
+      "name": "TypeDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "type_damage",
+      "metadata": {
+        "return_type": "damagesource",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TypeDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "cooldown",
+            "type": "logic"
+          },
+          {
+            "name": "critical",
+            "type": "logic"
+          },
+          {
+            "name": "knockback",
+            "type": "logic"
+          },
+          {
+            "name": "type",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/custom"
+    },
+    {
       "name": "Hyyxms",
       "type": "procedure",
       "compiles": true,
