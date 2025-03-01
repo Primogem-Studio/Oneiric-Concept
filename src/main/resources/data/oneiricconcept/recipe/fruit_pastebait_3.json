@@ -8,13 +8,13 @@
   "type": "genshincraft:crafting",
   "materials": [
     {
-      "id": "minecraft:apple",
+      "id": "genshincraft:sunsettia",
       "count": 1
     },
     {
       "id": "minecraft:wheat",
       "count": 1
-    	}
+    }
   ],
   "result": {
     "id": "oneiricconcept:fruitpastebait",
