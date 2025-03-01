@@ -20,6 +20,7 @@ import net.mcreator.oneiricconcept.entity.XuanyuanSwordQEntity;
 import net.mcreator.oneiricconcept.entity.XuanyuanQ2Entity;
 import net.mcreator.oneiricconcept.entity.XuanYuanArrowArrowEntity;
 import net.mcreator.oneiricconcept.entity.SkyShatteringLuxArrowEntity;
+import net.mcreator.oneiricconcept.entity.OnLaserEntity;
 import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
 import net.mcreator.oneiricconcept.entity.InvalidEntity;
 import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
@@ -57,6 +58,8 @@ public class OneiricconceptModEntities {
 			EntityType.Builder.<AntiBaryonEntity>of(AntiBaryonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1f, 1.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<OnLaserEntity>> ON_LASER = register("on_laser",
+			EntityType.Builder.<OnLaserEntity>of(OnLaserEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

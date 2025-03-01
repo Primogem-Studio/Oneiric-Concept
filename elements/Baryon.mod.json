@@ -142,7 +142,7 @@
     "rangedAttackItem": {
       "value": ""
     },
-    "rangedItemType": "Default item",
+    "rangedItemType": "OnLaser",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,

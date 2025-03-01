@@ -30,5 +30,6 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.XUAN_YUAN_ARROW_ARROW.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.BARYON.get(), BaryonRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.ANTIBARYON.get(), AntiBaryonRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.ON_LASER.get(), ThrownItemRenderer::new);
 	}
 }
