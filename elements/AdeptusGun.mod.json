@@ -61,7 +61,7 @@
       },
       {
         "renderType": 0,
-        "texture": "minecraft:dragon_breath",
+        "texture": "conquerorswill",
         "customModelName": "Normal",
         "stateMap": [
           {

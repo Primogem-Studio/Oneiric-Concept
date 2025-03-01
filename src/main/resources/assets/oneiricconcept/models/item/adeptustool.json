@@ -6,9 +6,9 @@
   "overrides": [
     {
       "predicate": {
-        "oneiricconcept:testtool_test": 1
+        "oneiricconcept:adeptustool_test": 1
       },
-      "model": "oneiricconcept:item/testtool_0"
+      "model": "oneiricconcept:item/adeptustool_0"
     }
   ]
 }

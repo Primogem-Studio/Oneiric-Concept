@@ -12474,11 +12474,11 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "testtool",
+      "registry_name": "adeptustool",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/testtool.json",
-          "src/main/resources/assets/oneiricconcept/models/item/testtool_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool_0.json",
           "src/main/java/net/mcreator/oneiricconcept/item/TesttoolItem.java"
         ]
       },
@@ -13259,6 +13259,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13267,10 +13271,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -13964,8 +13964,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief\u0027s Instinct",
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "translation.oneiricconcept.tastes": " tastes good",
       "effect.oneiricconcept.b_2sausage": "sausage",
@@ -14035,6 +14035,7 @@
       "subtitles.mmm": "bump",
       "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
       "item.oneiricconcept.aizenmedaka": "Aizenmedaka",
+      "item.oneiricconcept.adeptustool": "Testtool",
       "advancements.big_stone_crush_chest.title": "Big Stone Crush Chest",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "item.oneiricconcept.fruitpastebait": "Fruit paste bait",
@@ -14215,7 +14216,6 @@
       "advancements.aftertheiceturnsintowater.descr": "……the sea I hang upside down will be your sky",
       "block.oneiricconcept.banana_mushroom": "Banana Mushroom",
       "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
-      "item.oneiricconcept.testtool": "Testtool",
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
       "item.oneiricconcept.phlogiston_core": "Phlogiston Core",
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
@@ -14307,8 +14307,8 @@
       "item.oneiricconcept.thief_s_instinct": "掠夺的本能",
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14378,6 +14378,7 @@
       "subtitles.mmm": "碰撞",
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
+      "item.oneiricconcept.adeptustool": "Testtool",
       "advancements.big_stone_crush_chest.title": "大石碎胸口",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "item.oneiricconcept.fruitpastebait": "果酿饵",
@@ -14558,7 +14559,6 @@
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.banana_mushroom": "香蕉菌",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
-      "item.oneiricconcept.testtool": "秒人锤",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.phlogiston_core": "燃素核心",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
@@ -14650,8 +14650,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14721,6 +14721,7 @@
       "subtitles.mmm": "碰撞",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
+      "item.oneiricconcept.adeptustool": "Testtool",
       "advancements.big_stone_crush_chest.title": "大石碎胸口",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "item.oneiricconcept.fruitpastebait": "果酿饵",
@@ -14901,7 +14902,6 @@
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.banana_mushroom": "香蕉菌",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
-      "item.oneiricconcept.testtool": "Testtool",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.phlogiston_core": "燃素核心",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",

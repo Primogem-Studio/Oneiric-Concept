@@ -314,7 +314,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> CONQUEROR_S_WILL = REGISTRY.register("conqueror_s_will", ConquerorSWillItem::new);
 	public static final DeferredItem<Item> BARYON_SPAWN_EGG = REGISTRY.register("baryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.BARYON, -3355444, -16777114, new Item.Properties()));
 	public static final DeferredItem<Item> ANTIBARYON_SPAWN_EGG = REGISTRY.register("antibaryon_spawn_egg", () -> new DeferredSpawnEggItem(OneiricconceptModEntities.ANTIBARYON, -16777114, -3355444, new Item.Properties()));
-	public static final DeferredItem<Item> TESTTOOL = REGISTRY.register("testtool", TesttoolItem::new);
+	public static final DeferredItem<Item> ADEPTUSTOOL = REGISTRY.register("adeptustool", TesttoolItem::new);
 	public static final DeferredItem<Item> RAINBOW_CACTUS_BALL = block(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL);
 
 	// Start of user code block custom items
@@ -338,7 +338,7 @@ public class OneiricconceptModItems {
 				ItemProperties.register(MORA_MAGAZINE_E_1.get(), ResourceLocation.parse("oneiricconcept:mora_magazine_e_1_textures"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
 				ItemProperties.register(HEARTOFTHEVASTSEA.get(), ResourceLocation.parse("oneiricconcept:heartofthevastsea_itemmode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
 				ItemProperties.register(MORA_BOW.get(), ResourceLocation.parse("oneiricconcept:mora_bow_pull"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BowPullProcedure.execute(entity, itemStackToRender));
-				ItemProperties.register(TESTTOOL.get(), ResourceLocation.parse("oneiricconcept:testtool_test"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
+				ItemProperties.register(ADEPTUSTOOL.get(), ResourceLocation.parse("oneiricconcept:adeptustool_test"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
 			});
 		}
 	}
