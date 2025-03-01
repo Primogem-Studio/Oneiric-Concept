@@ -19,8 +19,10 @@ public class ByzxmsProcedure {
 			s1 = (s0 + "" + Component.translatable("item.oneiricconcept.heartofthefrozensea").getString()) + "\n" + DyzxmsProcedure.execute();
 		} else if (itemmode == 2) {
 			s1 = (s0 + "" + Component.translatable("item.oneiricconcept.heartoftheskysea").getString()) + "\n" + KyzxmsProcedure.execute();
-		} else {
+		} else if (itemmode == 3) {
 			s1 = (s0 + "" + Component.translatable("item.oneiricconcept.heartofthewarmsea").getString()) + "\n" + NyzxmsProcedure.execute();
+		} else {
+			s1 = (s0 + "" + Component.translatable("item.oneiricconcept.heartofthefish").getString()) + "\n" + HyyxmsProcedure.execute();
 		}
 		return Diaoyongshift0Procedure.execute("\u00A7d\u00A7l\u6F5C\u884C\u5DE6\u952E\u4EE5\u5207\u6362\u5F62\u6001" + "\n" + s1, "\u8BE6\u60C5");
 	}
