@@ -26,7 +26,6 @@ import net.mcreator.oneiricconcept.entity.InvalidEntity;
 import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
 import net.mcreator.oneiricconcept.entity.BaryonEntity;
-import net.mcreator.oneiricconcept.entity.AntiBaryonEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -54,10 +53,6 @@ public class OneiricconceptModEntities {
 			EntityType.Builder.<BaryonEntity>of(BaryonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1f, 1.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<AntiBaryonEntity>> ANTIBARYON = register("antibaryon",
-			EntityType.Builder.<AntiBaryonEntity>of(AntiBaryonEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(1f, 1.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<OnLaserEntity>> ON_LASER = register("on_laser",
 			EntityType.Builder.<OnLaserEntity>of(OnLaserEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
@@ -71,13 +66,11 @@ public class OneiricconceptModEntities {
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		CrystalTurtleEntity.init(event);
 		BaryonEntity.init(event);
-		AntiBaryonEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CRYSTAL_TURTLE.get(), CrystalTurtleEntity.createAttributes().build());
 		event.put(BARYON.get(), BaryonEntity.createAttributes().build());
-		event.put(ANTIBARYON.get(), AntiBaryonEntity.createAttributes().build());
 	}
 }

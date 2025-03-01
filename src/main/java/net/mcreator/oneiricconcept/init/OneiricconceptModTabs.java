@@ -206,7 +206,6 @@ public class OneiricconceptModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());
 			tabData.accept(OneiricconceptModItems.BARYON_SPAWN_EGG.get());
-			tabData.accept(OneiricconceptModItems.ANTIBARYON_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

@@ -4,6 +4,7 @@ package net.mcreator.oneiricconcept.entity;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.RangedAttackMob;
@@ -17,27 +18,44 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.SpawnGroupData;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.oneiricconcept.procedures.BaryonmodeProcedure;
 import net.mcreator.oneiricconcept.procedures.AntimatterLegionLootProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 
+import javax.annotation.Nullable;
+
 public class BaryonEntity extends Monster implements RangedAttackMob {
+	public static final EntityDataAccessor<Integer> DATA_mode = SynchedEntityData.defineId(BaryonEntity.class, EntityDataSerializers.INT);
 	public final AnimationState animationState0 = new AnimationState();
 
 	public BaryonEntity(EntityType<BaryonEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+	}
+
+	@Override
+	protected void defineSynchedData(SynchedEntityData.Builder builder) {
+		super.defineSynchedData(builder);
+		builder.define(DATA_mode, 0);
 	}
 
 	@Override
@@ -51,9 +69,9 @@ public class BaryonEntity extends Monster implements RangedAttackMob {
 			}
 		});
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(5, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10f) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 30f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -85,6 +103,26 @@ public class BaryonEntity extends Monster implements RangedAttackMob {
 	}
 
 	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata);
+		BaryonmodeProcedure.execute(world, this);
+		return retval;
+	}
+
+	@Override
+	public void addAdditionalSaveData(CompoundTag compound) {
+		super.addAdditionalSaveData(compound);
+		compound.putInt("Datamode", this.entityData.get(DATA_mode));
+	}
+
+	@Override
+	public void readAdditionalSaveData(CompoundTag compound) {
+		super.readAdditionalSaveData(compound);
+		if (compound.contains("Datamode"))
+			this.entityData.set(DATA_mode, compound.getInt("Datamode"));
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
 		if (this.level().isClientSide()) {
@@ -109,7 +147,7 @@ public class BaryonEntity extends Monster implements RangedAttackMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 30);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
 		return builder;
 	}
