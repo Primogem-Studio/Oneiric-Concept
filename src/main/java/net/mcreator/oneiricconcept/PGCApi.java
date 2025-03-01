@@ -15,8 +15,11 @@ public class PGCApi {
     }
 
     static void init() {
-        WishInfoConfiguration.addRare(ResourceLocation.fromNamespaceAndPath(MODID, "r"));
-        WishInfoConfiguration.addSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "sr"));
-        WishInfoConfiguration.addSuperSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "ssr"));
+        try {
+            WishInfoConfiguration.addRare(ResourceLocation.fromNamespaceAndPath(MODID, "r"));
+            WishInfoConfiguration.addSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "sr"));
+            WishInfoConfiguration.addSuperSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "ssr"));
+        } catch (Throwable ignore) {
+        }
     }
 }

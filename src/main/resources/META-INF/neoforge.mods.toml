@@ -41,4 +41,10 @@ side="BOTH"
 
 
 # Start of user code block dependencies configuration
+[[dependencies.oneiricconcept]]
+modId="genshincraft"
+type="optional"
+versionRange="[2.5.0,)"
+ordering="AFTER"
+side="BOTH"
 # End of user code block dependencies configuration
