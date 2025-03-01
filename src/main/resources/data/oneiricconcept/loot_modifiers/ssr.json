@@ -1,7 +1,10 @@
 {
   "type": "neoforge:add_table",
   "conditions": [
-    { "condition": "neoforge:loot_table_id", "value": "primogemcraft:qqyjin" },
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "primogemcraft:qqyjin"
+    },
     {
       "condition": "minecraft:random_chance",
       "chance": 0.25

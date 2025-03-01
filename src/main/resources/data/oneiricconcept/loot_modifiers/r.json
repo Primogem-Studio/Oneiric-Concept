@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "value": "primogemcraft:qq_qqylan"
+      "loot_table_id": "primogemcraft:qq_qqylan"
     },
     {
       "condition": "minecraft:random_chance",
