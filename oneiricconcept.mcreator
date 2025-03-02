@@ -13240,6 +13240,91 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Skiplife",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skiplife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SkiplifeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "SkipTool",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skip_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/skip_tool.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SkipToolItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Skipdamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skipdamage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SkipdamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "indexx",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Skiptool1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "skiptool_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/skiptool_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -13287,10 +13372,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13299,6 +13380,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -13908,7 +13993,8 @@
       "MoraBow",
       "ConquerorSWill",
       "UsurperSScheme",
-      "ThiefSInstinct"
+      "ThiefSInstinct",
+      "SkipTool"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -14013,6 +14099,7 @@
       "item.oneiricconcept.a_propaganda_army.description_0": "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low ",
       "block.oneiricconcept.pyrosealingwax": "Pyro sealing wax",
       "item.minecraft.splash_potion.effect.hunger_potion": "Splash Potion of Hunger",
+      "item.oneiricconcept.skip_tool": "Skip Tool",
       "advancements.thesea_ihangupsidedownwillbeyoursky.title": "The sea I hang upside down will be your sky.",
       "item.oneiricconcept.dreamdive_can.description_0": "Can replace the bed to skip the night",
       "block.oneiricconcept.ambrosial_arbor_log": "Ambrosial Arbor Log",
@@ -14125,6 +14212,7 @@
       "translation.oneiricconcept.patchouli_landing_pgc": "This manual introduces the items/blocks, creatures/entities, enchantments/spells of \u0027primogemcraft\u0027 BUFF/DEBUFF、 Natural generation and game settings For more detailed content, please refer to MCMOD.cnSynchronized introduction from MCmod.cn, added by oneiricconcept",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
       "item.oneiricconcept.waffle.description_0": "§7To the legendary pancake fairy",
+      "death.attack.skip": "The %1$s\u0027s life has been skipped",
       "item.oneiricconcept.b_2elobog_sausage": "German style cumin smoked sausage",
       "item.oneiricconcept.s_2tuffing.description_0": "夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§cThe lure level has reached the upper limit",
@@ -14354,6 +14442,7 @@
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
       "block.oneiricconcept.pyrosealingwax": "火之印",
       "item.minecraft.splash_potion.effect.hunger_potion": "喷溅型饥饿药水",
+      "item.oneiricconcept.skip_tool": "跳过之杖",
       "advancements.thesea_ihangupsidedownwillbeyoursky.title": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_log": "建木原木",
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
@@ -14466,6 +14555,7 @@
       "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
       "item.oneiricconcept.waffle.description_0": "§7敬传说中的画饼仙人",
+      "death.attack.skip": "%1$s跳过了人生",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",
@@ -14674,8 +14764,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14695,6 +14785,7 @@
       "item.oneiricconcept.a_propaganda_army.description_0": "§7一个装载水军程序的手机……用上这个，你的米线看来有点低了",
       "block.oneiricconcept.pyrosealingwax": "火之印",
       "item.minecraft.splash_potion.effect.hunger_potion": "喷溅型饥饿药水",
+      "item.oneiricconcept.skip_tool": "Skip Tool",
       "advancements.thesea_ihangupsidedownwillbeyoursky.title": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_log": "建木原木",
       "item.oneiricconcept.dreamdive_can.description_0": "§7可以代替床来跳过夜晚",
@@ -14807,6 +14898,7 @@
       "translation.oneiricconcept.patchouli_landing_pgc": "这本手册介绍了原石工艺的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/10429.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
       "item.oneiricconcept.waffle.description_0": "§7敬传说中的画饼仙人",
+      "death.attack.skip": "",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",

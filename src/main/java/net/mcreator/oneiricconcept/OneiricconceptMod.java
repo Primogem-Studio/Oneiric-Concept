@@ -56,17 +56,14 @@ public class OneiricconceptMod {
 		OneiricconceptModItems.REGISTRY.register(modEventBus);
 		OneiricconceptModEntities.REGISTRY.register(modEventBus);
 		OneiricconceptModTabs.REGISTRY.register(modEventBus);
-
 		OneiricconceptModFeatures.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
 		OneiricconceptModPotions.REGISTRY.register(modEventBus);
 		OneiricconceptModMobEffects.REGISTRY.register(modEventBus);
 		OneiricconceptModMenus.REGISTRY.register(modEventBus);
 		OneiricconceptModParticleTypes.REGISTRY.register(modEventBus);
-
 		OneiricconceptModFluids.REGISTRY.register(modEventBus);
 		OneiricconceptModFluidTypes.REGISTRY.register(modEventBus);
-
 		// Start of user code block mod init
 		PGCApi.init();
 		// End of user code block mod init

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " b ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:sky_waffle"
+    },
+    "b": {
+      "item": "primogemcraft:yishijiemugun"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:skip_tool",
+    "count": 1
+  }
+}
