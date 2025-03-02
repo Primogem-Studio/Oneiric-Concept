@@ -29,7 +29,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Can consume hunger points and skip the loading time of lucky tickets"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

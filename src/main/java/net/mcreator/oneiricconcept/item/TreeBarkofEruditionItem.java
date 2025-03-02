@@ -1,16 +1,23 @@
 
 package net.mcreator.oneiricconcept.item;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.procedures.EruditionExpProcedure;
+
+import java.util.List;
 
 public class TreeBarkofEruditionItem extends Item {
 	public TreeBarkofEruditionItem() {
@@ -20,6 +27,13 @@ public class TreeBarkofEruditionItem extends Item {
 	@Override
 	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 42;
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, list, flag);
+		list.add(Component.translatable("item.oneiricconcept.tree_barkof_erudition.description_0"));
 	}
 
 	@Override

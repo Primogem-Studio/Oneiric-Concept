@@ -13325,6 +13325,36 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Energydrinktxt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energydrinktxt",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EnergydrinktxtProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/process/text"
+    },
+    {
+      "name": "Autosmelttxt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "autosmelttxt",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AutosmelttxtProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/process/text"
     }
   ],
   "variable_elements": [],
@@ -14196,6 +14226,7 @@
       "block.oneiricconcept.tnt_dispenser": "TNT Dispenser",
       "block.oneiricconcept.primogemfruitblock": "Primogemfruit",
       "item.oneiricconcept.memory_bubble": "Memory Bubble",
+      "translation.oneiricconcept.autosmelt": "autosmelt、suppression marastruck",
       "block.oneiricconcept.memoria": "Memoria",
       "item.oneiricconcept.energy_drink_sugar_free": "Energy Drink（Sugar-Free）",
       "item.oneiricconcept.heartoftheskysea": "Heart of the sky sea",
@@ -14203,6 +14234,7 @@
       "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
       "advancements.fall_king.title": "Fall King",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7Little sugar meatballs",
+      "item.oneiricconcept.skip_tool.description_0": "Can consume hunger points and skip the loading time of lucky tickets",
       "translation.oneiricconcept.patchouli_name_oc": "oneiricconcept wiki",
       "advancements.big_stone_crush_chest.descr": "The darkness is like a boulder pressing down upon the breast",
       "translation.key.load": "speed of progress:§6",
@@ -14340,6 +14372,7 @@
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "item.oneiricconcept.phlogiston_crystal": "Phlogiston Crystal",
       "item.oneiricconcept.glazemedaka": "Glaze medaka",
+      "item.oneiricconcept.tree_barkof_erudition.description_0": "Gain experience to upgrade from the current level to the next level, up to a maximum of 99 levels",
       "gamerule.ocHealthmultiplier.description": "Control the multiplier of partial life changes",
       "gamerule.ocdebug": "ocdebug",
       "block.oneiricconcept.big_rock": "Big Rock",
@@ -14414,6 +14447,7 @@
       "block.oneiricconcept.vajrada_amethyst_ore": "Vajrada Amethyst Ore",
       "advancements.oneiric_concept_advancement.title": "Genshin Impact Speed Edition",
       "item.oneiricconcept.dark_xuanyuan_sword": "Xuanyuan Sword",
+      "block.oneiricconcept.wayfareblessing.description_0": "输入红石信号以清除范围内的魔阴身",
       "item.oneiricconcept.sun_start_can": "Sun Start Can",
       "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling"
     },
@@ -14421,8 +14455,8 @@
       "item.oneiricconcept.thief_s_instinct": "掠夺的本能",
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14539,6 +14573,7 @@
       "block.oneiricconcept.tnt_dispenser": "TNT发射器",
       "block.oneiricconcept.primogemfruitblock": "原石果",
       "item.oneiricconcept.memory_bubble": "§9忆泡",
+      "translation.oneiricconcept.autosmelt": "自动冶炼、抑制丰饶效果",
       "block.oneiricconcept.memoria": "忆质",
       "item.oneiricconcept.energy_drink_sugar_free": "能量饮料（无糖）",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
@@ -14546,6 +14581,7 @@
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "advancements.fall_king.title": "耐摔王",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
+      "item.oneiricconcept.skip_tool.description_0": "可以消耗饥饿值跳过幸运专票的等待时间",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "translation.key.load": "进度：§6",
@@ -14683,6 +14719,7 @@
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
       "item.oneiricconcept.glazemedaka": "琉璃花鳉",
+      "item.oneiricconcept.tree_barkof_erudition.description_0": "获得当前等级升到下一等级的经验，最高99级",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
       "gamerule.ocdebug": "§6梦华构想调试",
       "block.oneiricconcept.big_rock": "大石头块",
@@ -14757,6 +14794,7 @@
       "block.oneiricconcept.vajrada_amethyst_ore": "最胜紫晶矿石",
       "advancements.oneiric_concept_advancement.title": "原神极速版",
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
+      "block.oneiricconcept.wayfareblessing.description_0": "Input redstone signal to clear marastrick within the range",
       "item.oneiricconcept.sun_start_can": "启阳罐",
       "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗"
     },
@@ -14882,6 +14920,7 @@
       "block.oneiricconcept.tnt_dispenser": "TNT发射器",
       "block.oneiricconcept.primogemfruitblock": "原石果",
       "item.oneiricconcept.memory_bubble": "§9忆泡",
+      "translation.oneiricconcept.autosmelt": "",
       "block.oneiricconcept.memoria": "忆质",
       "item.oneiricconcept.energy_drink_sugar_free": "能量饮料（无糖）",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
@@ -14889,6 +14928,7 @@
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "advancements.fall_king.title": "Fall King",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
+      "item.oneiricconcept.skip_tool.description_0": "Can consume hunger points and skip the loading time of lucky tickets",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "translation.key.load": "进度：§6",
@@ -15026,6 +15066,7 @@
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
       "item.oneiricconcept.glazemedaka": "琉璃花鳉",
+      "item.oneiricconcept.tree_barkof_erudition.description_0": "Gain experience to upgrade from the current level to the next level, up to a maximum of 99 levels",
       "gamerule.ocHealthmultiplier.description": "控制部分生命变化的倍率",
       "gamerule.ocdebug": "§6梦华构想调试",
       "block.oneiricconcept.big_rock": "大石头块",
@@ -15100,6 +15141,7 @@
       "block.oneiricconcept.vajrada_amethyst_ore": "最胜紫晶矿石",
       "advancements.oneiric_concept_advancement.title": "原神极速版",
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
+      "block.oneiricconcept.wayfareblessing.description_0": "Input redstone signal to clear marastrick within the range",
       "item.oneiricconcept.sun_start_can": "启阳罐",
       "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗"
     }
@@ -15113,7 +15155,12 @@
       },
       {
         "name": "process",
-        "children": []
+        "children": [
+          {
+            "name": "text",
+            "children": []
+          }
+        ]
       },
       {
         "name": "block",

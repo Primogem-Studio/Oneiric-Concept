@@ -10,7 +10,8 @@
     "blockingModelName": "Normal blocking",
     "name": "Aureliae Shovel",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "Autosmelttxt"
     },
     "creativeTabs": [
       {

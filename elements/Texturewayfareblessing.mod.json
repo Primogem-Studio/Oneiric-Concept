@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "Wayfare blessing",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Input redstone signal to clear marastrick within the range"
+      ]
     },
     "hardness": 0.5,
     "resistance": 1.0,

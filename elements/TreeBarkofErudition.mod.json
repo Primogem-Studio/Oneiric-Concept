@@ -29,7 +29,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Gain experience to upgrade from the current level to the next level, up to a maximum of 99 levels"
+      ]
     },
     "glowCondition": {
       "fixedValue": false

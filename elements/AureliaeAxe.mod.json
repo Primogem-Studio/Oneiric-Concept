@@ -10,7 +10,8 @@
     "blockingModelName": "Normal blocking",
     "name": "Aureliae Axe",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "Autosmelttxt"
     },
     "creativeTabs": [
       {
