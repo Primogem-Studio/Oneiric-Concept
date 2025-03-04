@@ -19,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.oneiricconcept.world.features.StructureFeature;
+import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModTabs;
 import net.mcreator.oneiricconcept.init.OneiricconceptModSounds;
 import net.mcreator.oneiricconcept.init.OneiricconceptModPotions;
@@ -56,6 +57,7 @@ public class OneiricconceptMod {
 		OneiricconceptModItems.REGISTRY.register(modEventBus);
 		OneiricconceptModEntities.REGISTRY.register(modEventBus);
 		OneiricconceptModTabs.REGISTRY.register(modEventBus);
+		OneiricconceptModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		OneiricconceptModFeatures.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
 		OneiricconceptModPotions.REGISTRY.register(modEventBus);

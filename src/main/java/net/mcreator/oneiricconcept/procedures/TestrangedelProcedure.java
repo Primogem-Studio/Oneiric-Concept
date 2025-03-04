@@ -45,6 +45,7 @@ public class TestrangedelProcedure {
 						_ent.getServer().getFunctions().execute(_fopt.get(), _ent.createCommandSourceStack());
 				}
 			}
+			EightCharactersofBirthBackProcedure.execute(entity);
 		}
 	}
 }

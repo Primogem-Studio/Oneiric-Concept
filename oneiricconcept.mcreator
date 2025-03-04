@@ -13355,9 +13355,84 @@
         "dependencies": []
       },
       "path": "~/process/text"
+    },
+    {
+      "name": "EightCharactersOfBirth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eight_characters_of_birth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EightCharactersOfBirthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "EightCharactersIndex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eight_characters_index",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EightCharactersIndexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "branchIndex",
+            "type": "number"
+          },
+          {
+            "name": "stemIndex",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "EightCharactersofBirthBack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eight_charactersof_birth_back",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EightCharactersofBirthBackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "id",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "EightCharactersofBirth",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    }
+  ],
   "sound_elements": [
     {
       "name": "surprise_box_for_good_or_bad",
@@ -13402,6 +13477,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13410,10 +13489,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14233,6 +14308,7 @@
       "enchantment.oneiricconcept.sharp_hook": "Sharp Hook",
       "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
       "advancements.fall_king.title": "Fall King",
+      "translation.oneiricconcept.eight": "Your birth date and eight characters are:",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7Little sugar meatballs",
       "item.oneiricconcept.skip_tool.description_0": "Can consume hunger points and skip the loading time of lucky tickets",
       "translation.oneiricconcept.patchouli_name_oc": "oneiricconcept wiki",
@@ -14455,8 +14531,8 @@
       "item.oneiricconcept.thief_s_instinct": "掠夺的本能",
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14580,6 +14656,7 @@
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "advancements.fall_king.title": "耐摔王",
+      "translation.oneiricconcept.eight": "你的生辰八字是：",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "item.oneiricconcept.skip_tool.description_0": "可以消耗饥饿值跳过幸运专票的等待时间",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
@@ -14802,8 +14879,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14927,6 +15004,7 @@
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "advancements.fall_king.title": "Fall King",
+      "translation.oneiricconcept.eight": "",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "item.oneiricconcept.skip_tool.description_0": "Can consume hunger points and skip the loading time of lucky tickets",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
