@@ -9,7 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.125"
+    version = "21.1.128"
 
     runs {
         client {
@@ -53,8 +53,8 @@ repositories {
 }
 
 dependencies {
-    implementation "maven.modrinth:genshincraft:2.5.1"
-    implementation "maven.modrinth:2primogem-craft:25w09b"
+    implementation "maven.modrinth:genshincraft:2.7.0"
+    implementation "maven.modrinth:2primogem-craft:25w10a"
     api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.788"
 }
 
