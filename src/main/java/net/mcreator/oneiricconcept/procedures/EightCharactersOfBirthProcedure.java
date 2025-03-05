@@ -1,6 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import org.checkerframework.checker.units.qual.s;
 import org.checkerframework.checker.units.qual.mm;
 
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
@@ -11,7 +10,6 @@ import net.neoforged.bus.api.Event;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
-import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 import javax.annotation.Nullable;
 
@@ -63,17 +61,7 @@ public class EightCharactersOfBirthProcedure {
 			isLeapYear = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 			offset = year - 1900;
 			calculateYearColumn = EightCharactersIndexProcedure.execute((6 + offset) % 12, (0 + offset) % 10);
-			OneiricconceptMod.LOGGER.info("y");
-			calculateMonthColumn = EightCharactersIndexProcedure.execute((month - 1) / 12, (new Object() {
-				double convert(String s) {
-					try {
-						return Double.parseDouble(s.trim());
-					} catch (Exception e) {
-					}
-					return 0;
-				}
-			}.convert(monthStemMapping.substring(heavenlyStems.indexOf((calculateYearColumn.substring(0)), 0))) + month - 1) % 10);
-			OneiricconceptMod.LOGGER.info("m");
+			calculateMonthColumn = EightCharactersIndexProcedure.execute((month - 1) / 12, (EightIdexstrProcedure.execute(calculateYearColumn, monthStemMapping, heavenlyStems) + month - 1) % 10);
 			if (month < 3) {
 				mm = month + 12;
 				yy = year - 1;
@@ -83,18 +71,8 @@ public class EightCharactersOfBirthProcedure {
 			dd = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 			ww = (cc / 4 - 2 * cc + yy + yy / 4 + (13 * (mm + 1)) / 5 + dd - 1) % 60;
 			calculateDayColumn = EightCharactersIndexProcedure.execute(ww % 12, ww % 10);
-			OneiricconceptMod.LOGGER.info("d");
 			hourBranchIndex = (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) / 2) % 12;
-			calculateHourColumn = EightCharactersIndexProcedure.execute(hourBranchIndex, (new Object() {
-				double convert(String s) {
-					try {
-						return Double.parseDouble(s.trim());
-					} catch (Exception e) {
-					}
-					return 0;
-				}
-			}.convert(hourStemMapping.substring(heavenlyStems.indexOf((calculateDayColumn.substring(0)), 0))) + hourBranchIndex) % 10);
-			OneiricconceptMod.LOGGER.info("h");
+			calculateHourColumn = EightCharactersIndexProcedure.execute(hourBranchIndex, (EightIdexstrProcedure.execute(calculateDayColumn, hourStemMapping, heavenlyStems) + hourBranchIndex) % 10);
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 				_vars.EightCharactersofBirth = calculateYearColumn + "" + calculateMonthColumn + calculateDayColumn + calculateHourColumn;
