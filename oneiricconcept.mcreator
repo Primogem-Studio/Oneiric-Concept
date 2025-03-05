@@ -13445,6 +13445,25 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "NeoShengChenBaZi",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neo_sheng_chen_ba_zi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/NeoShengChenBaZiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [

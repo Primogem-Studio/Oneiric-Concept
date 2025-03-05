@@ -16,7 +16,7 @@ public class EightIdexstrProcedure {
 		OneiricconceptMod.LOGGER.warn(("stems:" + stems));
 		indexx = stems.indexOf(strr, 0);
 		OneiricconceptMod.LOGGER.warn(("3:" + ("" + indexx)));
-		strr = mapp.substring((int) indexx);
+		strr = mapp.substring((int) indexx, (int) (indexx + 1));
 		OneiricconceptMod.LOGGER.warn(("4:" + strr));
 		indexx = new Object() {
 			double convert(String s) {

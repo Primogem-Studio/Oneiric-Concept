@@ -1,5 +1,6 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.neoforged.neoforge.items.ItemHandlerHelper;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.ModList;
@@ -7,10 +8,12 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
 import javax.annotation.Nullable;
@@ -37,6 +40,18 @@ public class GCWProcedure {
 				&& ModList.get().isLoaded("genshincraft")) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.Configurationreminder").getString())), false);
+		}
+		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(OneiricconceptModItems.ADEPTUSTOOL.get()).copy();
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(OneiricconceptModItems.ADEPTUS_GUN.get()).copy();
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
 		}
 		world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OCINITIALLOAD).set(false, world.getServer());
 	}

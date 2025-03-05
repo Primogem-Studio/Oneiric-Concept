@@ -13,10 +13,12 @@ import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 
 import javax.annotation.Nullable;
 
+import java.util.List;
 import java.util.Calendar;
+import java.util.ArrayList;
 
 @EventBusSubscriber
-public class EightCharactersOfBirthProcedure {
+public class NeoShengChenBaZiProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		execute(event, event.getEntity());
@@ -30,6 +32,8 @@ public class EightCharactersOfBirthProcedure {
 		if (entity == null)
 			return;
 		boolean isLeapYear = false;
+		List<Object> indexHeavenlyStems = new ArrayList<>();
+		List<Object> idnexEarthlyBranches = new ArrayList<>();
 		String heavenlyStems = "";
 		String earthlyBranches = "";
 		String monthStemMapping = "";
@@ -56,9 +60,8 @@ public class EightCharactersOfBirthProcedure {
 			month = Calendar.getInstance().get(Calendar.MONTH) + 1;
 			isLeapYear = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 			offset = year - 1900;
-			calculateYearColumn = heavenlyStems.substring((int) ((6 + offset) % 10), (int) ((6 + offset) % 10 + 1)) + "" + earthlyBranches.substring((int) ((0 + offset) % 12), (int) ((0 + offset) % 12 + 1));
-			calculateMonthColumn = heavenlyStems.substring((int) ((EightIdexstrProcedure.execute(calculateYearColumn, monthStemMapping, heavenlyStems) + month - 1) % 10),
-					(int) ((EightIdexstrProcedure.execute(calculateYearColumn, monthStemMapping, heavenlyStems) + month - 1) % 10 + 1)) + "" + earthlyBranches.substring((int) ((month - 1) / 12), (int) ((month - 1) / 12 + 1));
+			calculateYearColumn = EightCharactersIndexProcedure.execute((0 + offset) % 12, (6 + offset) % 10);
+			calculateMonthColumn = EightCharactersIndexProcedure.execute((month - 1) / 12, (EightIdexstrProcedure.execute(calculateYearColumn, monthStemMapping, heavenlyStems) + month - 1) % 10);
 			if (month < 3) {
 				mm = month + 12;
 				yy = year - 1;
@@ -67,10 +70,9 @@ public class EightCharactersOfBirthProcedure {
 			yy = yy % 100;
 			dd = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 			ww = (cc / 4 - 2 * cc + yy + yy / 4 + (13 * (mm + 1)) / 5 + dd - 1) % 60;
-			calculateDayColumn = heavenlyStems.substring((int) (ww % 10), (int) (ww % 10 + 1)) + "" + earthlyBranches.substring((int) (ww % 12), (int) (ww % 12 + 1));
+			calculateDayColumn = EightCharactersIndexProcedure.execute(ww % 12, ww % 10);
 			hourBranchIndex = (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) / 2) % 12;
-			calculateHourColumn = heavenlyStems.substring((int) ((EightIdexstrProcedure.execute(calculateDayColumn, hourStemMapping, heavenlyStems) + hourBranchIndex) % 10),
-					(int) ((EightIdexstrProcedure.execute(calculateDayColumn, hourStemMapping, heavenlyStems) + hourBranchIndex) % 10 + 1)) + "" + earthlyBranches.substring((int) hourBranchIndex, (int) (hourBranchIndex + 1));
+			calculateHourColumn = EightCharactersIndexProcedure.execute(hourBranchIndex, (EightIdexstrProcedure.execute(calculateDayColumn, hourStemMapping, heavenlyStems) + hourBranchIndex) % 10);
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 				_vars.EightCharactersofBirth = calculateYearColumn + "" + calculateMonthColumn + calculateDayColumn + calculateHourColumn;
