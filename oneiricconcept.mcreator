@@ -4652,7 +4652,7 @@
           "src/main/resources/data/oneiricconcept/recipe/pg_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Agnidusmetalingot1",
@@ -4665,7 +4665,7 @@
           "src/main/resources/data/oneiricconcept/recipe/agnidusmetalingot_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Present1",
@@ -4678,7 +4678,7 @@
           "src/main/resources/data/oneiricconcept/recipe/present_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Sustenanceanchoritem",
@@ -5149,7 +5149,7 @@
           "src/main/resources/data/oneiricconcept/recipe/pg_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Pyro1",
@@ -5162,7 +5162,7 @@
           "src/main/resources/data/oneiricconcept/recipe/pyro_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "ElectroLei1",
@@ -5175,7 +5175,7 @@
           "src/main/resources/data/oneiricconcept/recipe/electro_lei_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "ElectroLei2",
@@ -5188,7 +5188,7 @@
           "src/main/resources/data/oneiricconcept/recipe/electro_lei_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Hydroshui1",
@@ -5201,7 +5201,7 @@
           "src/main/resources/data/oneiricconcept/recipe/hydroshui_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Hydroshui2",
@@ -5214,7 +5214,7 @@
           "src/main/resources/data/oneiricconcept/recipe/hydroshui_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "CryoBing1",
@@ -5227,7 +5227,7 @@
           "src/main/resources/data/oneiricconcept/recipe/cryo_bing_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "CryoBing2",
@@ -5240,7 +5240,7 @@
           "src/main/resources/data/oneiricconcept/recipe/cryo_bing_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "DendroCao2",
@@ -5253,7 +5253,7 @@
           "src/main/resources/data/oneiricconcept/recipe/dendro_cao_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "DendroCao1",
@@ -5266,7 +5266,7 @@
           "src/main/resources/data/oneiricconcept/recipe/dendro_cao_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "AnemoFeng1",
@@ -5279,7 +5279,7 @@
           "src/main/resources/data/oneiricconcept/recipe/anemo_feng_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "AnemoFeng2",
@@ -5292,7 +5292,7 @@
           "src/main/resources/data/oneiricconcept/recipe/anemo_feng_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "GeoYan1",
@@ -5305,7 +5305,7 @@
           "src/main/resources/data/oneiricconcept/recipe/geo_yan_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "GeoYan2",
@@ -5318,7 +5318,7 @@
           "src/main/resources/data/oneiricconcept/recipe/geo_yan_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Fullmoon1",
@@ -5331,7 +5331,7 @@
           "src/main/resources/data/oneiricconcept/recipe/fullmoon_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Fullmoon2",
@@ -5344,7 +5344,7 @@
           "src/main/resources/data/oneiricconcept/recipe/fullmoon_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Newmoon1",
@@ -5357,7 +5357,7 @@
           "src/main/resources/data/oneiricconcept/recipe/newmoon_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Newmoon2",
@@ -5370,7 +5370,7 @@
           "src/main/resources/data/oneiricconcept/recipe/newmoon_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Redmoon1",
@@ -5383,7 +5383,7 @@
           "src/main/resources/data/oneiricconcept/recipe/redmoon_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Redmoon2",
@@ -5396,7 +5396,7 @@
           "src/main/resources/data/oneiricconcept/recipe/redmoon_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "IronLaji1",
@@ -5409,7 +5409,7 @@
           "src/main/resources/data/oneiricconcept/recipe/iron_laji_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "IronLaji2",
@@ -5422,7 +5422,7 @@
           "src/main/resources/data/oneiricconcept/recipe/iron_laji_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Sustenanceanchor1",
@@ -5465,7 +5465,7 @@
           "src/main/resources/data/oneiricconcept/recipe/superimposer_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Superimposer2",
@@ -5478,7 +5478,7 @@
           "src/main/resources/data/oneiricconcept/recipe/superimposer_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Hertabond",
@@ -5508,7 +5508,7 @@
           "src/main/resources/data/oneiricconcept/recipe/hertabond_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Hertabond2",
@@ -5521,7 +5521,7 @@
           "src/main/resources/data/oneiricconcept/recipe/hertabond_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "MaraStruckClear",
@@ -5672,7 +5672,7 @@
           "src/main/resources/data/oneiricconcept/recipe/pyro_huo_sealingwax_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "ElectroLeiSealingwax1",
@@ -5685,7 +5685,7 @@
           "src/main/resources/data/oneiricconcept/recipe/electro_lei_sealingwax_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "HydroshuiSealingwax1",
@@ -5698,7 +5698,7 @@
           "src/main/resources/data/oneiricconcept/recipe/hydroshui_sealingwax_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "CryoBingSealingwax1",
@@ -5711,7 +5711,7 @@
           "src/main/resources/data/oneiricconcept/recipe/cryo_bing_sealingwax_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "DendroCaoSealingwax1",
@@ -5724,7 +5724,7 @@
           "src/main/resources/data/oneiricconcept/recipe/dendro_cao_sealingwax_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "AnemoFengSealingwax1",
@@ -5737,7 +5737,7 @@
           "src/main/resources/data/oneiricconcept/recipe/anemo_feng_sealingwax_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "GeoYanSealingwax1",
@@ -5750,7 +5750,7 @@
           "src/main/resources/data/oneiricconcept/recipe/geo_yan_sealingwax_1.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "PyroHuoSealingwax2",
@@ -5763,7 +5763,7 @@
           "src/main/resources/data/oneiricconcept/recipe/pyro_huo_sealingwax_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "ElectroLeiSealingwax2",
@@ -5776,7 +5776,7 @@
           "src/main/resources/data/oneiricconcept/recipe/electro_lei_sealingwax_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "HydroshuiSealingwax2",
@@ -5789,7 +5789,7 @@
           "src/main/resources/data/oneiricconcept/recipe/hydroshui_sealingwax_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "CryoBingSealingwax2",
@@ -5802,7 +5802,7 @@
           "src/main/resources/data/oneiricconcept/recipe/cryo_bing_sealingwax_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "DendroCaoSealingwax2",
@@ -5815,7 +5815,7 @@
           "src/main/resources/data/oneiricconcept/recipe/dendro_cao_sealingwax_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "AnemoFengSealingwax2",
@@ -5828,7 +5828,7 @@
           "src/main/resources/data/oneiricconcept/recipe/anemo_feng_sealingwax_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "GeoYanSealingwax2",
@@ -5841,7 +5841,7 @@
           "src/main/resources/data/oneiricconcept/recipe/geo_yan_sealingwax_2.json"
         ]
       },
-      "path": "~/PgcCopyDecoration/pgcFeature"
+      "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
       "name": "Taw2",
@@ -13568,6 +13568,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13576,10 +13580,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14274,8 +14274,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief\u0027s Instinct",
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "translation.oneiricconcept.tastes": " tastes good",
       "effect.oneiricconcept.b_2sausage": "sausage",
@@ -14623,8 +14623,8 @@
       "item.oneiricconcept.thief_s_instinct": "掠夺的本能",
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14972,8 +14972,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -15377,7 +15377,7 @@
             "children": []
           },
           {
-            "name": "pgcFeature",
+            "name": "pgcrecipes",
             "children": []
           },
           {
