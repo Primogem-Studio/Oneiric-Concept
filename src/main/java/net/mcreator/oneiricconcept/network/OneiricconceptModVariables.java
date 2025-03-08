@@ -60,8 +60,8 @@ public class OneiricconceptModVariables {
 		public static void clonePlayer(PlayerEvent.Clone event) {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
-			clone.id = original.id;
 			clone.EightCharactersofBirth = original.EightCharactersofBirth;
+			clone.UID = original.UID;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -69,21 +69,21 @@ public class OneiricconceptModVariables {
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
-		public double id = 0.0;
 		public String EightCharactersofBirth = "";
+		public String UID = "";
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("id", id);
 			nbt.putString("EightCharactersofBirth", EightCharactersofBirth);
+			nbt.putString("UID", UID);
 			return nbt;
 		}
 
 		@Override
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
-			id = nbt.getDouble("id");
 			EightCharactersofBirth = nbt.getString("EightCharactersofBirth");
+			UID = nbt.getString("UID");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

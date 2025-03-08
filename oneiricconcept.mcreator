@@ -13366,12 +13366,7 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/EightCharactersOfBirthProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/process"
     },
@@ -13456,9 +13451,58 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/NeoShengChenBaZiProcedure.java"
         ],
+        "dependencies": []
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "UID18",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uid_18",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/UID18Procedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "QueryUID",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "query_uid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/QueryUIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "playeruid",
             "type": "entity"
           }
         ]
@@ -13468,13 +13512,13 @@
   ],
   "variable_elements": [
     {
-      "name": "id",
-      "type": "number",
+      "name": "EightCharactersofBirth",
+      "type": "string",
       "scope": "player_persistent",
-      "value": "0.0"
+      "value": ""
     },
     {
-      "name": "EightCharactersofBirth",
+      "name": "UID",
       "type": "string",
       "scope": "player_persistent",
       "value": ""
@@ -14311,6 +14355,7 @@
       "block.oneiricconcept.bactus": "Bactus",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
+      "translation.oneiricconcept.uid": " s uid：",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
       "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
@@ -14578,8 +14623,8 @@
       "item.oneiricconcept.thief_s_instinct": "掠夺的本能",
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14659,6 +14704,7 @@
       "block.oneiricconcept.bactus": "仙帝掌",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
+      "translation.oneiricconcept.uid": " 的UID是：",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
@@ -15007,6 +15053,7 @@
       "block.oneiricconcept.bactus": "仙帝掌",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
+      "translation.oneiricconcept.uid": "",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
