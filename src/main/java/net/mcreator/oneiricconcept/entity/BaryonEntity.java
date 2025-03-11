@@ -71,7 +71,7 @@ public class BaryonEntity extends Monster implements RangedAttackMob {
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(5, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 30f) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 30, 16f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
