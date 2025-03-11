@@ -13,6 +13,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
@@ -32,6 +33,11 @@ public class GCWProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
+		{
+			OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
+			_vars.ListOrder = 0;
+			_vars.syncPlayerVariables(entity);
+		}
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCINITIALLOAD) && ModList.get().isLoaded("genshincraft")) {
 			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER).set(4, world.getServer());
 			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER).set(32, world.getServer());

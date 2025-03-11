@@ -13660,6 +13660,29 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "ExitWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exit_world",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExitWorldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -13679,7 +13702,7 @@
       "name": "ListOrder",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "1.0"
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -14432,8 +14455,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief\u0027s Instinct",
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "translation.oneiricconcept.tastes": " tastes good",
       "effect.oneiricconcept.b_2sausage": "sausage",
@@ -14717,6 +14740,7 @@
       "item.oneiricconcept.milk": "Milk",
       "block.oneiricconcept.fresh_seedof_dawn": "Fresh Seedof Dawn",
       "block.oneiricconcept.sustenanceanchor": "Sustenanceanchor",
+      "translation.oneiricconcept.exitworld": "exitworld",
       "block.oneiricconcept.anemo_metal": "Vayuda_metal_ingot",
       "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
       "advancements.public_clamor_can_melt_metals.descr": "Sometimes it works silently as the cohesion of the people, sometimes it confounds right with wrong.",
@@ -15069,6 +15093,7 @@
       "item.oneiricconcept.milk": "牛奶",
       "block.oneiricconcept.fresh_seedof_dawn": "黎明新籽",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
+      "translation.oneiricconcept.exitworld": "离开世界",
       "block.oneiricconcept.anemo_metal": "自在金属锭",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
@@ -15421,6 +15446,7 @@
       "item.oneiricconcept.milk": "牛奶",
       "block.oneiricconcept.fresh_seedof_dawn": "黎明新籽",
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
+      "translation.oneiricconcept.exitworld": "",
       "block.oneiricconcept.anemo_metal": "Vayuda_metal_ingot",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
       "advancements.public_clamor_can_melt_metals.descr": "积毁销骨",
@@ -15640,7 +15666,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.1",
+    "version": "1.9.22",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",

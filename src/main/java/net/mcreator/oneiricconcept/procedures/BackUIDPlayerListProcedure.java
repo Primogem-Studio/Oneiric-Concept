@@ -1,18 +1,18 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.LevelAccessor;
-import java.util.ArrayList;
+import net.minecraft.world.entity.Entity;
+
 import java.util.List;
+import java.util.ArrayList;
 
 public class BackUIDPlayerListProcedure {
-    public static ArrayList<Object> execute(LevelAccessor world) {
-        List<Object> playerlist = new ArrayList<>();
-        List<Object> lst = new ArrayList<>();
-        for (Entity entityiterator : new ArrayList<>(world.players())) {
-            playerlist.add(entityiterator);
-        }
+	public static ArrayList execute(LevelAccessor world) {
+		List<Object> playerlist = new ArrayList<>();
+		for (Entity entityiterator : new ArrayList<>(world.players())) {
+			playerlist.add(entityiterator);
+		}
         ArrayList<Object> result = new ArrayList<>(playerlist);
         return result;
-    }
+	}
 }

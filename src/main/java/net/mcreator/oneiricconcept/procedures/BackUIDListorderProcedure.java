@@ -11,7 +11,7 @@ public class BackUIDListorderProcedure {
 			return;
 		double listoder = 0;
 		listoder = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).ListOrder;
-		if (listoder < BackUIDPlayerListProcedure.execute(world).size()) {
+		if (listoder < BackUIDPlayerListProcedure.execute(world).size() - 1) {
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 				_vars.ListOrder = listoder + 1;

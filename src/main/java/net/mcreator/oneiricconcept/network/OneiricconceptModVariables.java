@@ -72,7 +72,7 @@ public class OneiricconceptModVariables {
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public String EightCharactersofBirth = "";
 		public String UID = "";
-		public double ListOrder = 1.0;
+		public double ListOrder = 0.0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {

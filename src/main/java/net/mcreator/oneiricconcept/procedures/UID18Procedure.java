@@ -37,6 +37,7 @@ public class UID18Procedure {
 		double modx = 0;
 		double mody = 0;
 		double modz = 0;
+		double UID1567 = 0;
 		if ((entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).UID).isEmpty()) {
 			List<Integer> weighting = Arrays.asList(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);
 			for (int index0 = 0; index0 < 8; index0++) {
@@ -45,16 +46,18 @@ public class UID18Procedure {
 			modx = Math.abs(x) % 99;
 			mody = Math.abs(y) % 99;
 			modz = Math.abs(z) % 99;
+			UID1567 = new Object() {
+				double convert(String s) {
+					try {
+						return Double.parseDouble(s.trim());
+					} catch (Exception e) {
+					}
+					return 0;
+				}
+			}.convert(UID151617);
+			UID1567 = (true && UID1567 % 2 == 0 ? UID1567 + 1 : UID1567) % 999;
 			UUIDstr = (((modx < 10 ? "0" : "") + "" + Math.round(Math.floor(modx))) + "" + ((mody < 10 ? "0" : "") + "" + Math.round(Math.floor(mody))) + ((modz < 10 ? "0" : "") + "" + Math.round(Math.floor(modz)))) + ""
-					+ new java.text.SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime()) + new java.text.DecimalFormat("###").format(new Object() {
-						double convert(String s) {
-							try {
-								return Double.parseDouble(s.trim());
-							} catch (Exception e) {
-							}
-							return 0;
-						}
-					}.convert(UID151617) % 999);
+					+ new java.text.SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime()) + new java.text.DecimalFormat("###").format(modx);
 			for (int index1 = 0; index1 < 17; index1++) {
 				checkk = checkk + new Object() {
 					double convert(String s) {
