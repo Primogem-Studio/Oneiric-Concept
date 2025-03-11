@@ -3995,6 +3995,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/block/propaganda_army_block.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PropagandaArmyBlockBlockEntity.java",
           "src/main/resources/assets/oneiricconcept/blockstates/propaganda_army_block.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/propaganda_army_block.json",
           "src/main/resources/assets/oneiricconcept/models/item/propaganda_army_block.json",
@@ -13508,6 +13509,157 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "BackUIDEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_uid_entity",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BackUIDEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BackUIDPlayername",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_uid_playername",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BackUIDPlayernameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BackUIDPlayerList",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "back_uid_player_list",
+      "metadata": {
+        "return_type": "arraylist",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BackUIDPlayerListProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BackUIDListorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_uid_listorder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BackUIDListorderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "MinusLIstorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minus_l_istorder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MinusLIstorderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LibGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lib_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/network/LibGuiButtonMessage.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/LibGuiMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/LibGuiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "LibQuery",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lib_query",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LibQueryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -13522,6 +13674,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": ""
+    },
+    {
+      "name": "ListOrder",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "1.0"
     }
   ],
   "sound_elements": [
@@ -13568,6 +13726,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13576,10 +13738,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14274,8 +14432,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief\u0027s Instinct",
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
+      "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§bBroken Herrscher cores require a large amount of Honkai Energy to repair",
       "translation.oneiricconcept.tastes": " tastes good",
       "effect.oneiricconcept.b_2sausage": "sausage",
@@ -14537,6 +14695,7 @@
       "item.minecraft.lingering_potion.effect.hunger_potion": "Lingering Potion of Hunger",
       "block.oneiricconcept.crescent_metal": "crescent ingot",
       "death.attack.honkai": "%1$s Reduced to ashes by Honkai energy",
+      "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
       "item.oneiricconcept.compress_totemloot": "Totemloot",
       "item.oneiricconcept.phlogiston_crystal": "Phlogiston Crystal",
       "item.oneiricconcept.glazemedaka": "Glaze medaka",
@@ -14578,6 +14737,7 @@
       "enchantment.oneiricconcept.shuhu_gift": "Shuhu\u0027s Gift",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "Arrow of Hunger",
       "item.oneiricconcept.energy_drink": "Energy Drink",
+      "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7Big sugar meatballs",
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
@@ -14591,6 +14751,7 @@
       "subtitles.shuhu_kr": "Shuhu\u0027s Gift",
       "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
       "advancements.feed_on_illusions.descr": "Gaseous purified water, it seems like I\u0027ve eaten it, but it also seems like I haven\u0027t eaten anything.",
+      "gui.oneiricconcept.lib_gui.button_empty1": "\u003e",
       "death.attack.b_2.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.dumpling": "Dumpling",
       "advancements.diseasename_gastriccancer.descr": "Pay attention to healthy diet ",
@@ -14623,8 +14784,8 @@
       "item.oneiricconcept.thief_s_instinct": "掠夺的本能",
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -14886,6 +15047,7 @@
       "item.minecraft.lingering_potion.effect.hunger_potion": "滞留型饥饿药水",
       "block.oneiricconcept.crescent_metal": "新月金属锭",
       "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
+      "gui.oneiricconcept.lib_gui.button_getuid": "UID查询",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
       "item.oneiricconcept.glazemedaka": "琉璃花鳉",
@@ -14927,6 +15089,7 @@
       "enchantment.oneiricconcept.shuhu_gift": "倏忽恩赐",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "饥饿之箭",
       "item.oneiricconcept.energy_drink": "能量饮料",
+      "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7大糖丸子",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
@@ -14940,6 +15103,7 @@
       "subtitles.shuhu_kr": "倏忽恩赐",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
+      "gui.oneiricconcept.lib_gui.button_empty1": "\u003e",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.dumpling": "饺子",
       "advancements.diseasename_gastriccancer.descr": "注意健康饮食",
@@ -14972,8 +15136,8 @@
       "item.oneiricconcept.thief_s_instinct": "Thief S Instinct",
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
+      "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
@@ -15235,6 +15399,7 @@
       "item.minecraft.lingering_potion.effect.hunger_potion": "滞留型饥饿药水",
       "block.oneiricconcept.crescent_metal": "crescent ingot",
       "death.attack.honkai": "%1$s 被崩坏能化为灰烬",
+      "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
       "item.oneiricconcept.compress_totemloot": "压缩图腾礼盒",
       "item.oneiricconcept.phlogiston_crystal": "燃素结晶",
       "item.oneiricconcept.glazemedaka": "琉璃花鳉",
@@ -15276,6 +15441,7 @@
       "enchantment.oneiricconcept.shuhu_gift": "倏忽恩赐",
       "item.minecraft.tipped_arrow.effect.hunger_potion": "饥饿之箭",
       "item.oneiricconcept.energy_drink": "能量饮料",
+      "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7大糖丸子",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
@@ -15289,6 +15455,7 @@
       "subtitles.shuhu_kr": "倏忽恩赐",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
+      "gui.oneiricconcept.lib_gui.button_empty1": "\u003e",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.dumpling": "饺子",
       "advancements.diseasename_gastriccancer.descr": "注意健康饮食",
