@@ -22,7 +22,6 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 import java.util.Optional;
-import java.util.List;
 import java.util.Comparator;
 
 public class ShatteringCutAatreeProcedure {
@@ -52,8 +51,7 @@ public class ShatteringCutAatreeProcedure {
 		}
 		{
 			final Vec3 _center = new Vec3(x, 250, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(60 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(60 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("oneiricconcept:divinearrow")))) {
 					ent = ent + 1;
 				}
@@ -61,8 +59,7 @@ public class ShatteringCutAatreeProcedure {
 		}
 		{
 			final Vec3 _center = new Vec3(x, (y + 10), z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				entityiterator.push((Mth.nextDouble(RandomSource.create(), -3, 3)), 3, (Mth.nextDouble(RandomSource.create(), -3, 3)));
 			}
 		}

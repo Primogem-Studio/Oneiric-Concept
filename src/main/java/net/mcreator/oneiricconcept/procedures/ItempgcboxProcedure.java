@@ -17,14 +17,7 @@ public class ItempgcboxProcedure {
 		String s1 = "";
 		String s2 = "";
 		String s3 = "";
-		s1 = new Object() {
-			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getString(tag);
-				return "";
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "item");
+		s1 = getBlockNBTString(world, BlockPos.containing(x, y, z), "item");
 		s2 = "c:curio/normal/";
 		s3 = "primogemcraft:";
 		if ((s3 + "shenmilihe").equals(s1)) {
@@ -54,5 +47,12 @@ public class ItempgcboxProcedure {
 			world.destroyBlock(_pos, false);
 		}
 		return i1;
+	}
+
+	private static String getBlockNBTString(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getString(tag);
+		return "";
 	}
 }

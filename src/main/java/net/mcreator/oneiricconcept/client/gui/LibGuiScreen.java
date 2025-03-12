@@ -49,7 +49,6 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> {
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		if (BackUIDEntityProcedure.execute(world, entity) instanceof LivingEntity livingEntity) {
 			this.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 87, this.topPos + 114, 30, 0f + (float) Math.atan((this.leftPos + 87 - mouseX) / 40.0), (float) Math.atan((this.topPos + 65 - mouseY) / 40.0), livingEntity);

@@ -16,7 +16,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class KillLanternProcedure {
@@ -27,8 +26,7 @@ public class KillLanternProcedure {
 		ItemStack itmstk = ItemStack.EMPTY;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(99 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(99 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if ((BuiltInRegistries.ENTITY_TYPE.getKey(entityiterator.getType()).toString()).equals("primogemcraft:xiaodeng")) {
 					if (!entityiterator.level().isClientSide())
 						entityiterator.discard();

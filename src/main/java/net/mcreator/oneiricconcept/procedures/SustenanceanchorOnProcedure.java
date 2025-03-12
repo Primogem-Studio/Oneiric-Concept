@@ -26,14 +26,7 @@ public class SustenanceanchorOnProcedure {
 			return;
 		double a = 0;
 		double on = 0;
-		on = new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "on");
+		on = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "on");
 		if (20 <= on) {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, (x + 0.5), y, (z + 0.5), 100, 0.2, 0.6, 0.2, 0.1);
@@ -87,5 +80,12 @@ public class SustenanceanchorOnProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((Component.translatable("translation.key.load").getString() + "" + sb.toString())), true);
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

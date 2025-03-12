@@ -20,7 +20,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class SustenanceanchorHealthProcedure {
@@ -40,21 +39,13 @@ public class SustenanceanchorHealthProcedure {
 			txt = "";
 			health = entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1;
 			maxhealth = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
-			hreserve = new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "healthreserve");
+			hreserve = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
 			Magnification = (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER));
 			sav = 200 * Magnification;
 			fight = false;
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(13 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-				for (Entity entityiterator : _entfound) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(13 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (entity == (entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) {
 						fight = true;
 					}
@@ -95,14 +86,7 @@ public class SustenanceanchorHealthProcedure {
 			} else {
 				ErrorerrProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5);
 			}
-			hreserve = new Object() {
-				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-					BlockEntity blockEntity = world.getBlockEntity(pos);
-					if (blockEntity != null)
-						return blockEntity.getPersistentData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, BlockPos.containing(x, y, z), "healthreserve");
+			hreserve = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
 			if (hreserve < sav) {
 				hre = "\u00A72" + new java.text.DecimalFormat("##.##").format(sav - hreserve);
 			} else {
@@ -111,5 +95,12 @@ public class SustenanceanchorHealthProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((txt + "" + Component.translatable("translation.oneiricconcept.sustenance2").getString() + hre)), true);
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

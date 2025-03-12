@@ -18,14 +18,7 @@ public class SustenanceanchorParticleProcedure {
 		double Magnification = 0;
 		double healthre = 0;
 		Magnification = (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER));
-		healthre = new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "healthreserve");
+		healthre = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
 		if (0 < healthre) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
@@ -53,5 +46,12 @@ public class SustenanceanchorParticleProcedure {
 					_level.sendParticles(ParticleTypes.FIREWORK, (x + 0.5), (y - 0.5), (z + 0.5), 1, 0.2, 0.2, 0.2, 0.01);
 			});
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

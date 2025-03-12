@@ -22,14 +22,7 @@ public class SkiplifeProcedure {
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
 		for (int index0 = 0; index0 < 36; index0++) {
-			zpitem = (new Object() {
-				public ItemStack getItemStack(int sltid, Entity entity) {
-					if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
-						return _modHandler.getStackInSlot(sltid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack((int) index0, entity));
+			zpitem = (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler ? _modHandler.getStackInSlot((int) index0).copy() : ItemStack.EMPTY);
 			if (zpitem.getItem() == BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:xyzp")) && zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("dai_kai_jiang")) {
 				ktime = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("k1");
 				while (ktime < 24000) {

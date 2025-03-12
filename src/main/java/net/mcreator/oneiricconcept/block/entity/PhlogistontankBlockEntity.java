@@ -1,3 +1,4 @@
+
 package net.mcreator.oneiricconcept.block.entity;
 
 import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
@@ -120,12 +121,12 @@ public class PhlogistontankBlockEntity extends RandomizableContainerBlockEntity 
 	}
 
 	@Override
-	public boolean canPlaceItemThroughFace(int index, ItemStack stack, @Nullable Direction direction) {
-		return this.canPlaceItem(index, stack);
+	public boolean canPlaceItemThroughFace(int index, ItemStack itemstack, @Nullable Direction direction) {
+		return this.canPlaceItem(index, itemstack);
 	}
 
 	@Override
-	public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
+	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
 	}
 

@@ -15,7 +15,6 @@ import net.minecraft.commands.functions.CommandFunction;
 import net.minecraft.commands.CommandSourceStack;
 
 import java.util.Optional;
-import java.util.List;
 import java.util.Comparator;
 
 public class TestrangedelProcedure {
@@ -27,8 +26,7 @@ public class TestrangedelProcedure {
 		if (0 < mode) {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-				for (Entity entityiterator : _entfound) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator instanceof Player)) {
 						TestDeleteProcedure.execute(world, x, z, entityiterator);
 					}

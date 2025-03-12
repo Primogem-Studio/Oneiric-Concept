@@ -11,14 +11,7 @@ public class TankGetphlogistonProcedure {
 		String timecolor = "";
 		double nulav = 0;
 		double colornu = 0;
-		nulav = Math.floor((new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu")) / 10);
+		nulav = Math.floor(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lavasnu") / 10);
 		for (int index0 = 0; index0 < (int) nulav; index0++) {
 			colornu = colornu + 1;
 			if (nulav - 0 <= colornu) {
@@ -40,5 +33,12 @@ public class TankGetphlogistonProcedure {
 		}
 		txtstr = Component.translatable("item.oneiricconcept.phlogiston").getString() + "\uFF1A" + txtstr;
 		return txtstr;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

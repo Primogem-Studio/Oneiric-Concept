@@ -29,7 +29,6 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
 import java.util.Optional;
-import java.util.List;
 import java.util.Comparator;
 
 public class FishHealthProcedure {
@@ -48,8 +47,7 @@ public class FishHealthProcedure {
 				_level.sendParticles(ParticleTypes.BUBBLE, (entity.getX()), (entity.getY()), (entity.getZ()), 3, 0.5, 0.5, 0.5, 0.5);
 			{
 				final Vec3 _center = new Vec3(x, (y + 3), z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-				for (Entity entityiterator : _entfound) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (entityiterator.getPersistentData().getBoolean("fishheart")) {
 						if (RandomProcedure.execute(world, 0.9)) {
 							if (!entityiterator.level().isClientSide())

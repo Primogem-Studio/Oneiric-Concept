@@ -14,6 +14,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
@@ -44,31 +45,22 @@ public class ChestplateFlyProcedure {
 			flylgc = entity.getPersistentData().getBoolean("ocfly") && entity.getPersistentData().getBoolean("ocflyon");
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCFLY)) {
 				if (entity instanceof Player _player) {
-					_player.getAbilities().mayfly = (flylgc || new Object() {
-						public boolean checkGamemode(Entity _ent) {
-							if (_ent instanceof ServerPlayer _serverPlayer) {
-								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-							}
-							return false;
-						}
-					}.checkGamemode(entity) || new Object() {
-						public boolean checkGamemode(Entity _ent) {
-							if (_ent instanceof ServerPlayer _serverPlayer) {
-								return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
-							} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-								return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-										&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
-							}
-							return false;
-						}
-					}.checkGamemode(entity));
+					_player.getAbilities().mayfly = (flylgc || getEntityGameType(entity) == GameType.CREATIVE || getEntityGameType(entity) == GameType.SPECTATOR);
 					_player.onUpdateAbilities();
 				}
 			}
 		}
 		return flylgc;
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

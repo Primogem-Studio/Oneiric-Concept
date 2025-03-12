@@ -41,11 +41,7 @@ public class LaserProcedure {
 		y1 = entity.getY() + entity.getBbHeight() / 2;
 		z1 = entity.getZ();
 		if (target == null) {
-			target = (Entity) world.getEntitiesOfClass(Monster.class, AABB.ofSize(new Vec3(x, y, z), 30, 30, 30), e -> true).stream().sorted(new Object() {
-				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null);
+			target = findEntityInWorldRange(world, Monster.class, x, y, z, 30);
 		}
 		if (target != null) {
 			world.addParticle(ParticleTypes.FLASH, x, y, z, 0, 0, 0);
@@ -65,5 +61,9 @@ public class LaserProcedure {
 			}
 			target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, true, 1), 3);
 		}
+	}
+
+	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
+		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
 	}
 }

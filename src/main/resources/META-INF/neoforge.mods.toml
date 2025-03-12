@@ -20,7 +20,7 @@ config = "oneiricconcept.mixins.json"
 [[dependencies.oneiricconcept]]
 modId="neoforge"
 type="required"
-versionRange="[21.1.65,)"
+versionRange="[21.1.92,)"
 ordering="AFTER"
 side="BOTH"
 

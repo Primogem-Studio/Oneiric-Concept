@@ -15,6 +15,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
@@ -31,24 +32,8 @@ public class PhlogistonTickProcedure {
 		double sz = 0;
 		double xyz = 0;
 		double range = 0;
-		snu = new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu");
-		if (1 <= new Object() {
-			public int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank) {
-				if (level instanceof ILevelExtension _ext) {
-					IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, pos, null);
-					if (_fluidHandler != null)
-						return _fluidHandler.getFluidInTank(tank).getAmount();
-				}
-				return 0;
-			}
-		}.getFluidTankLevel(world, BlockPos.containing(x, y, z), 1) && snu < 1000) {
+		snu = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lavasnu");
+		if (1 <= getFluidTankLevel(world, BlockPos.containing(x, y, z), 1, null) && snu < 1000) {
 			if (world instanceof ILevelExtension _ext) {
 				IFluidHandler _fluidHandler = _ext.getCapability(Capabilities.FluidHandler.BLOCK, BlockPos.containing(x, y, z), null);
 				if (_fluidHandler != null)
@@ -66,28 +51,10 @@ public class PhlogistonTickProcedure {
 		} else if (snu >= 1000) {
 			inventory = 2;
 			while (!itmgiv && inventory <= 10) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), (int) inventory) < 64) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) inventory).getCount() < 64) {
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 						ItemStack _setstack = new ItemStack(OneiricconceptModItems.PHLOGISTON.get()).copy();
-						_setstack.setCount((int) (1 + new Object() {
-							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-								if (world instanceof ILevelExtension _ext) {
-									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(slotid).getCount();
-								}
-								return 0;
-							}
-						}.getAmount(world, BlockPos.containing(x, y, z), (int) inventory)));
+						_setstack.setCount((int) (1 + itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) inventory).getCount()));
 						_itemHandlerModifiable.setStackInSlot((int) inventory, _setstack);
 					}
 					itmgiv = true;
@@ -112,24 +79,8 @@ public class PhlogistonTickProcedure {
 				}
 			}
 		}
-		snu = new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "lavasnu");
-		itm0 = (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0));
+		snu = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lavasnu");
+		itm0 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
 		if ((BuiltInRegistries.ITEM.getKey(itm0.getItem()).toString()).contains("phlogiston") && itm0.isDamaged() && snu >= 10) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
@@ -173,5 +124,30 @@ public class PhlogistonTickProcedure {
 				InduceddetonationProcedure.execute(world, x, y, z);
 			}
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
+	}
+
+	private static int getFluidTankLevel(LevelAccessor level, BlockPos pos, int tank, Direction direction) {
+		if (level instanceof ILevelExtension levelExtension) {
+			IFluidHandler fluidHandler = levelExtension.getCapability(Capabilities.FluidHandler.BLOCK, pos, direction);
+			if (fluidHandler != null)
+				return fluidHandler.getFluidInTank(tank).getAmount();
+		}
+		return 0;
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			if (itemHandler != null)
+				return itemHandler.getStackInSlot(slot);
+		}
+		return ItemStack.EMPTY;
 	}
 }

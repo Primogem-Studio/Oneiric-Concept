@@ -2,16 +2,16 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.LlamaSpit;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
@@ -31,31 +31,8 @@ public class AdeptusfireProcedure {
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
 				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-							AbstractArrow entityToSpawn = new XuanyuanSwordQEntity(OneiricconceptModEntities.XUANYUAN_SWORD_Q.get(), level) {
-								@Override
-								public byte getPierceLevel() {
-									return piercing;
-								}
-
-								@Override
-								protected void doKnockback(LivingEntity livingEntity, DamageSource damageSource) {
-									if (knockback > 0) {
-										double d1 = Math.max(0.0, 1.0 - livingEntity.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
-										Vec3 vec3 = this.getDeltaMovement().multiply(1.0, 0.0, 1.0).normalize().scale(knockback * 0.6 * d1);
-										if (vec3.lengthSqr() > 0.0) {
-											livingEntity.push(vec3.x, 0.1, vec3.z);
-										}
-									}
-								}
-							};
-							entityToSpawn.setOwner(shooter);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setSilent(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, entity, 1000, 1, (byte) 5);
+					Projectile _entityToSpawn = initArrowProjectile(new XuanyuanSwordQEntity(OneiricconceptModEntities.XUANYUAN_SWORD_Q.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 5)), entity, 1000, true,
+							false, false, AbstractArrow.Pickup.DISALLOWED);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 13, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
@@ -66,31 +43,8 @@ public class AdeptusfireProcedure {
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
 				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-							AbstractArrow entityToSpawn = new SkyShatteringLuxArrowEntity(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), level) {
-								@Override
-								public byte getPierceLevel() {
-									return piercing;
-								}
-
-								@Override
-								protected void doKnockback(LivingEntity livingEntity, DamageSource damageSource) {
-									if (knockback > 0) {
-										double d1 = Math.max(0.0, 1.0 - livingEntity.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
-										Vec3 vec3 = this.getDeltaMovement().multiply(1.0, 0.0, 1.0).normalize().scale(knockback * 0.6 * d1);
-										if (vec3.lengthSqr() > 0.0) {
-											livingEntity.push(vec3.x, 0.1, vec3.z);
-										}
-									}
-								}
-							};
-							entityToSpawn.setOwner(shooter);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setSilent(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, entity, 8192, 1, (byte) 32768);
+					Projectile _entityToSpawn = initArrowProjectile(new SkyShatteringLuxArrowEntity(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 32768)),
+							entity, 8192, true, false, false, AbstractArrow.Pickup.DISALLOWED);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 13, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
@@ -101,31 +55,8 @@ public class AdeptusfireProcedure {
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
 				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-							AbstractArrow entityToSpawn = new ExplosiveEntity(OneiricconceptModEntities.EXPLOSIVE.get(), level) {
-								@Override
-								public byte getPierceLevel() {
-									return piercing;
-								}
-
-								@Override
-								protected void doKnockback(LivingEntity livingEntity, DamageSource damageSource) {
-									if (knockback > 0) {
-										double d1 = Math.max(0.0, 1.0 - livingEntity.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
-										Vec3 vec3 = this.getDeltaMovement().multiply(1.0, 0.0, 1.0).normalize().scale(knockback * 0.6 * d1);
-										if (vec3.lengthSqr() > 0.0) {
-											livingEntity.push(vec3.x, 0.1, vec3.z);
-										}
-									}
-								}
-							};
-							entityToSpawn.setOwner(shooter);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setSilent(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, entity, 5, 1, (byte) 5);
+					Projectile _entityToSpawn = initArrowProjectile(new ExplosiveEntity(OneiricconceptModEntities.EXPLOSIVE.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 5)), entity, 5, true, false, false,
+							AbstractArrow.Pickup.DISALLOWED);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 7, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
@@ -136,31 +67,8 @@ public class AdeptusfireProcedure {
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
 				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-							AbstractArrow entityToSpawn = new OnLaserEntity(OneiricconceptModEntities.ON_LASER.get(), level) {
-								@Override
-								public byte getPierceLevel() {
-									return piercing;
-								}
-
-								@Override
-								protected void doKnockback(LivingEntity livingEntity, DamageSource damageSource) {
-									if (knockback > 0) {
-										double d1 = Math.max(0.0, 1.0 - livingEntity.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
-										Vec3 vec3 = this.getDeltaMovement().multiply(1.0, 0.0, 1.0).normalize().scale(knockback * 0.6 * d1);
-										if (vec3.lengthSqr() > 0.0) {
-											livingEntity.push(vec3.x, 0.1, vec3.z);
-										}
-									}
-								}
-							};
-							entityToSpawn.setOwner(shooter);
-							entityToSpawn.setBaseDamage(damage);
-							entityToSpawn.setSilent(true);
-							return entityToSpawn;
-						}
-					}.getArrow(projectileLevel, entity, 5, 1, (byte) 5);
+					Projectile _entityToSpawn = initArrowProjectile(new OnLaserEntity(OneiricconceptModEntities.ON_LASER.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 5)), entity, 5, true, false, false,
+							AbstractArrow.Pickup.DISALLOWED);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 7, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
@@ -171,18 +79,43 @@ public class AdeptusfireProcedure {
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
 				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = new Object() {
-						public Projectile getProjectile(Level level, Entity shooter) {
-							Projectile entityToSpawn = new LlamaSpit(EntityType.LLAMA_SPIT, level);
-							entityToSpawn.setOwner(shooter);
-							return entityToSpawn;
-						}
-					}.getProjectile(projectileLevel, entity);
+					Projectile _entityToSpawn = initProjectileProperties(new LlamaSpit(EntityType.LLAMA_SPIT, projectileLevel), entity, Vec3.ZERO);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
 					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 7, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}
 		}
+	}
+
+	private static AbstractArrow initArrowProjectile(AbstractArrow entityToSpawn, Entity shooter, float damage, boolean silent, boolean fire, boolean particles, AbstractArrow.Pickup pickup) {
+		entityToSpawn.setOwner(shooter);
+		entityToSpawn.setBaseDamage(damage);
+		if (silent)
+			entityToSpawn.setSilent(true);
+		if (fire)
+			entityToSpawn.igniteForSeconds(100);
+		if (particles)
+			entityToSpawn.setCritArrow(true);
+		entityToSpawn.pickup = pickup;
+		return entityToSpawn;
+	}
+
+	private static ItemStack createArrowWeaponItemStack(Level level, int knockback, byte piercing) {
+		ItemStack weapon = new ItemStack(Items.ARROW);
+		if (knockback > 0)
+			weapon.enchant(level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), knockback);
+		if (piercing > 0)
+			weapon.enchant(level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.PIERCING), piercing);
+		return weapon;
+	}
+
+	private static Projectile initProjectileProperties(Projectile entityToSpawn, Entity shooter, Vec3 acceleration) {
+		entityToSpawn.setOwner(shooter);
+		if (!Vec3.ZERO.equals(acceleration)) {
+			entityToSpawn.setDeltaMovement(acceleration);
+			entityToSpawn.hasImpulse = true;
+		}
+		return entityToSpawn;
 	}
 }

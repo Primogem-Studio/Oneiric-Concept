@@ -23,27 +23,13 @@ public class BoxprocessProcedure {
 		String s1 = "";
 		String s2 = "";
 		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		if (!(new Object() {
-			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getString(tag);
-				return "";
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "item")).isEmpty() && item.getItem() == Blocks.AIR.asItem()) {
+		if (!(getBlockNBTString(world, BlockPos.containing(x, y, z), "item")).isEmpty() && item.getItem() == Blocks.AIR.asItem()) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), ItempgcboxProcedure.execute(world, x, y, z));
 				entityToSpawn.setPickUpDelay(0);
 				_level.addFreshEntity(entityToSpawn);
 			}
-		} else if (!(item.getItem() == Blocks.AIR.asItem()) && (new Object() {
-			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getString(tag);
-				return "";
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "item")).isEmpty()) {
+		} else if (!(item.getItem() == Blocks.AIR.asItem()) && (getBlockNBTString(world, BlockPos.containing(x, y, z), "item")).isEmpty()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -55,5 +41,12 @@ public class BoxprocessProcedure {
 			}
 			item.shrink(1);
 		}
+	}
+
+	private static String getBlockNBTString(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getString(tag);
+		return "";
 	}
 }

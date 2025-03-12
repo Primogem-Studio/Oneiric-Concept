@@ -21,14 +21,8 @@ public class BoxitemprocessProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()) {
 			if (entity.isShiftKeyDown()) {
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((new Object() {
-						public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getString(tag);
-							return "";
-						}
-					}.getValue(world, BlockPos.containing(x, y, z), "item"))).toLowerCase(java.util.Locale.ENGLISH)))));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
+							new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((getBlockNBTString(world, BlockPos.containing(x, y, z), "item"))).toLowerCase(java.util.Locale.ENGLISH)))));
 					entityToSpawn.setPickUpDelay(0);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -45,5 +39,12 @@ public class BoxitemprocessProcedure {
 				world.destroyBlock(_pos, false);
 			}
 		}
+	}
+
+	private static String getBlockNBTString(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getString(tag);
+		return "";
 	}
 }

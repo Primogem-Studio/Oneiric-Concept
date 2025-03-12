@@ -13,7 +13,6 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class CamoProcedure {
@@ -24,8 +23,7 @@ public class CamoProcedure {
 		double foloowrange = 0;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-			for (Entity entityiterator : _entfound) {
+			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (entity == (entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) {
 					foloowrange = entityiterator instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(Attributes.FOLLOW_RANGE) ? _livingEntity5.getAttribute(Attributes.FOLLOW_RANGE).getBaseValue() : 0;
 					if (-7 != foloowrange) {

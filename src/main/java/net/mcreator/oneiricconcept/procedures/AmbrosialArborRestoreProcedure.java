@@ -20,6 +20,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import javax.annotation.Nullable;
@@ -43,16 +44,8 @@ public class AmbrosialArborRestoreProcedure {
 		Entity ent = null;
 		String summons = "";
 		ent = entity;
-		if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor"))) && !(new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-				}
-				return false;
-			}
-		}.checkGamemode(ent)) && !((ent instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("oneiricconcept:ignisaureliae"))))) {
+		if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor"))) && !(getEntityGameType(ent) == GameType.CREATIVE)
+				&& !((ent instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("oneiricconcept:ignisaureliae"))))) {
 			if (Math.random() < 0.75) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
@@ -65,5 +58,16 @@ public class AmbrosialArborRestoreProcedure {
 			}
 			SummonzombieProcedure.execute(world, ent.getX(), ent.getY() + 3, ent.getZ());
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

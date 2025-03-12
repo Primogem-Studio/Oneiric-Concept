@@ -8,8 +8,7 @@
       },
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:air",
+          "type": "minecraft:empty",
           "weight": 1000,
           "conditions": [
             {
