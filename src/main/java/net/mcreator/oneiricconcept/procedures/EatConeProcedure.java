@@ -11,8 +11,8 @@ public class EatConeProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.TARGETOFFSET, 3600, 33, false, false));
+			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.TARGETOFFSET, 3600, 32, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.ATK_BUFF, 3600, 60, false, false));
+			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.ATK_BUFF, 3600, 59, false, false));
 	}
 }

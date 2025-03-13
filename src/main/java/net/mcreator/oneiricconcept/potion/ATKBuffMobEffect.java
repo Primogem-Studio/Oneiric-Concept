@@ -12,6 +12,6 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 public class ATKBuffMobEffect extends MobEffect {
 	public ATKBuffMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -13369345);
-		this.addAttributeModifier(Attributes.ATTACK_DAMAGE, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.atk_buff_0"), 1, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+		this.addAttributeModifier(Attributes.ATTACK_DAMAGE, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.atk_buff_0"), 0.01, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
 	}
 }

@@ -3,6 +3,7 @@ package net.mcreator.oneiricconcept.procedures;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.ICancellableEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.phys.Vec3;
@@ -46,10 +47,11 @@ public class HitTargetoffsetProcedure {
 		if (damagesource == null || sourceentity == null)
 			return;
 		List<Object> Entitylist = new ArrayList<>();
-		if (RandomProcedure.execute(world, ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) ? _livEnt.getEffect(OneiricconceptModMobEffects.TARGETOFFSET).getAmplifier() : 0) + 1) / 100)) {
+		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) && RandomProcedure.execute(world,
+				((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) ? _livEnt.getEffect(OneiricconceptModMobEffects.TARGETOFFSET).getAmplifier() : 0) + 1) * 0.01)) {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (entityiterator instanceof Mob && !(entityiterator == sourceentity && (entityiterator instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) == sourceentity)) {
 						Entitylist.add(entityiterator);
 					}
@@ -68,8 +70,8 @@ public class HitTargetoffsetProcedure {
 					}
 				}
 			}
-			if (event != null && event.isCancelable()) {
-				event.setCanceled(true);
+			if (event instanceof ICancellableEvent _cancellable) {
+				_cancellable.setCanceled(true);
 			}
 		}
 	}

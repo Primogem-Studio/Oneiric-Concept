@@ -13691,7 +13691,7 @@
     {
       "name": "HitTargetoffset",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "hit_targetoffset",
       "metadata": {
@@ -13874,6 +13874,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13882,10 +13886,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14943,7 +14943,7 @@
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
       "item.oneiricconcept.legion_pseudo_sliver.description_0": "§b破碎的律者核心，需要大量崩坏能来修复",
       "translation.oneiricconcept.tastes": "味道不错",
-      "effect.oneiricconcept.atk_buff": "ATK Buff",
+      "effect.oneiricconcept.atk_buff": "攻击增益",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "subtitles.shuhu_en": "倏忽恩赐",
       "painting.oneiricconcept.mimo.title": "Mimo",
