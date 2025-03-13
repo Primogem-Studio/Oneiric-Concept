@@ -10,10 +10,12 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.oneiricconcept.potion.TargetoffsetMobEffect;
 import net.mcreator.oneiricconcept.potion.OcHungerMobEffect;
 import net.mcreator.oneiricconcept.potion.EnergyMobEffect;
 import net.mcreator.oneiricconcept.potion.CamoeffectMobEffect;
 import net.mcreator.oneiricconcept.potion.B2sausageMobEffect;
+import net.mcreator.oneiricconcept.potion.ATKBuffMobEffect;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModMobEffects {
@@ -22,4 +24,6 @@ public class OneiricconceptModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> OC_HUNGER = REGISTRY.register("oc_hunger", () -> new OcHungerMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> CAMO = REGISTRY.register("camo", () -> new CamoeffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> ENERGY = REGISTRY.register("energy", () -> new EnergyMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> TARGETOFFSET = REGISTRY.register("targetoffset", () -> new TargetoffsetMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> ATK_BUFF = REGISTRY.register("atk_buff", () -> new ATKBuffMobEffect());
 }

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:dreamy_cone"
+    },
+    "title": {
+      "translate": "advancements.fragile_crisp_cone.title"
+    },
+    "description": {
+      "translate": "advancements.fragile_crisp_cone.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fragile_crisp_cone_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "oneiricconcept:the_seriousness_of_breakfast"
+}

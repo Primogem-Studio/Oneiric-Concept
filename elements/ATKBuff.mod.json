@@ -1,0 +1,29 @@
+{
+  "_fv": 77,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "ATK Buff",
+    "icon": "atkbuff",
+    "color": {
+      "value": -13369345,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 1.0,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
+  }
+}

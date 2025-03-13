@@ -109,6 +109,7 @@ import net.mcreator.oneiricconcept.item.EnergyDrinkSugarFreeItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkPrimogemItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
+import net.mcreator.oneiricconcept.item.DreamyConeItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
 import net.mcreator.oneiricconcept.item.DivineArrowEmbersItem;
 import net.mcreator.oneiricconcept.item.DeepMarrowRockSaltItem;
@@ -317,6 +318,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> ADEPTUSTOOL = REGISTRY.register("adeptustool", TesttoolItem::new);
 	public static final DeferredItem<Item> RAINBOW_CACTUS_BALL = block(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL);
 	public static final DeferredItem<Item> SKIP_TOOL = REGISTRY.register("skip_tool", SkipToolItem::new);
+	public static final DeferredItem<Item> DREAMY_CONE = REGISTRY.register("dreamy_cone", DreamyConeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

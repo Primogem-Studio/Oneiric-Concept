@@ -64,6 +64,7 @@ public class OneiricconceptModVariables {
 			clone.UID = original.UID;
 			if (!event.isWasDeath()) {
 				clone.ListOrder = original.ListOrder;
+				clone.targetOffset = original.targetOffset;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -73,6 +74,7 @@ public class OneiricconceptModVariables {
 		public String EightCharactersofBirth = "";
 		public String UID = "";
 		public double ListOrder = 0.0;
+		public boolean targetOffset = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -80,6 +82,7 @@ public class OneiricconceptModVariables {
 			nbt.putString("EightCharactersofBirth", EightCharactersofBirth);
 			nbt.putString("UID", UID);
 			nbt.putDouble("ListOrder", ListOrder);
+			nbt.putBoolean("targetOffset", targetOffset);
 			return nbt;
 		}
 
@@ -88,6 +91,7 @@ public class OneiricconceptModVariables {
 			EightCharactersofBirth = nbt.getString("EightCharactersofBirth");
 			UID = nbt.getString("UID");
 			ListOrder = nbt.getDouble("ListOrder");
+			targetOffset = nbt.getBoolean("targetOffset");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
