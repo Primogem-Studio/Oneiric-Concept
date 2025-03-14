@@ -13802,6 +13802,37 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Targetcooling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "targetcooling",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TargetcoolingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "level",
+            "type": "number"
+          },
+          {
+            "name": "time",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [

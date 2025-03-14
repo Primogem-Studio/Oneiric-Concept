@@ -19,15 +19,18 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
 import javax.annotation.Nullable;
 
 import java.util.List;
 import java.util.Comparator;
+import java.util.Calendar;
 import java.util.ArrayList;
 
 @EventBusSubscriber
@@ -47,8 +50,11 @@ public class HitTargetoffsetProcedure {
 		if (damagesource == null || sourceentity == null)
 			return;
 		List<Object> Entitylist = new ArrayList<>();
-		if (sourceentity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) && RandomProcedure.execute(world,
-				((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) ? _livEnt.getEffect(OneiricconceptModMobEffects.TARGETOFFSET).getAmplifier() : 0) + 1) * 0.01)) {
+		double efflevel = 0;
+		double efftime = 0;
+		efflevel = sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) ? _livEnt.getEffect(OneiricconceptModMobEffects.TARGETOFFSET).getAmplifier() : 0;
+		efftime = sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) ? _livEnt.getEffect(OneiricconceptModMobEffects.TARGETOFFSET).getDuration() : 0;
+		if (sourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(OneiricconceptModMobEffects.TARGETOFFSET) && RandomProcedure.execute(world, (efflevel + 1) * 0.01)) {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
@@ -69,6 +75,15 @@ public class HitTargetoffsetProcedure {
 						}
 					}
 				}
+			}
+			if (0 < efftime) {
+				if (sourceentity instanceof LivingEntity _entity)
+					_entity.removeEffect(OneiricconceptModMobEffects.TARGETOFFSET);
+				TargetcoolingProcedure.execute(world, sourceentity, efflevel, efftime);
+			}
+			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A7" + ("1234569abcde".substring((int) (world.dayTime() % 12))).substring(0, 0) + Calendar.getInstance().getTime().toString())), false);
 			}
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);
