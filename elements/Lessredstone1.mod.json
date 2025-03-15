@@ -11,10 +11,10 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "blastingInputStack": {
-      "value": "CUSTOM:PublicClamor"
+      "value": "CUSTOM:MoltenMetal"
     },
     "blastingReturnStack": {
-      "value": "CUSTOM:LessRedstonePowder"
+      "value": "Items.REDSTONE"
     },
     "name": "lessredstone_1",
     "namespace": "mod"

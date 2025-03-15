@@ -85,7 +85,6 @@ import net.mcreator.oneiricconcept.item.MemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.MemoriaLootItem;
 import net.mcreator.oneiricconcept.item.MemoriaItem;
 import net.mcreator.oneiricconcept.item.MedakaItem;
-import net.mcreator.oneiricconcept.item.LessRedstonePowderItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
 import net.mcreator.oneiricconcept.item.IgnisAureliaeItem;
@@ -217,7 +216,6 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PROPAGANDA_ARMY = REGISTRY.register("propaganda_army", PropagandaArmyItem::new);
 	public static final DeferredItem<Item> PROPAGANDA_ARMY_BLOCK = block(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK);
 	public static final DeferredItem<Item> A_PROPAGANDA_ARMY = REGISTRY.register("a_propaganda_army", APropagandaArmyItem::new);
-	public static final DeferredItem<Item> LESS_REDSTONE_POWDER = REGISTRY.register("less_redstone_powder", LessRedstonePowderItem::new);
 	public static final DeferredItem<Item> THUNDER_SWORD = block(OneiricconceptModBlocks.THUNDER_SWORD);
 	public static final DeferredItem<Item> PGC_PRESENT = block(OneiricconceptModBlocks.PGC_PRESENT);
 	public static final DeferredItem<Item> PRIMOGEM = block(OneiricconceptModBlocks.PRIMOGEM);

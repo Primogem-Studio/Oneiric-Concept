@@ -182,7 +182,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:LessRedstonePowder"
+              "value": "CUSTOM:PublicClamor"
             },
             "weight": 1,
             "minCount": 1,

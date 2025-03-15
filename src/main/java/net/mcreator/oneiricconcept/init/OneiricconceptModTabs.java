@@ -78,7 +78,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK.get().asItem());
 				tabData.accept(OneiricconceptModItems.PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.A_PROPAGANDA_ARMY.get());
-				tabData.accept(OneiricconceptModItems.LESS_REDSTONE_POWDER.get());
 				tabData.accept(OneiricconceptModItems.SUSTENANCEANCHORITEM.get());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_SAPLING.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE.get().asItem());

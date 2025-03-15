@@ -173,7 +173,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:less_redstone_powder",
+          "name": "oneiricconcept:public_clamor",
           "weight": 1,
           "functions": [
             {

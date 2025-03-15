@@ -41,20 +41,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:less_redstone_powder",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 16
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "oneiricconcept:honkai_sliver",
           "weight": 1,
           "functions": [
