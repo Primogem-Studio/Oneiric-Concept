@@ -13838,6 +13838,36 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Exhaustedprimogem",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exhaustedprimogem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/exhaustedprimogem.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ExhaustedprimogemBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/exhaustedprimogem.json",
+          "src/main/resources/assets/oneiricconcept/models/block/exhaustedprimogem.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/exhaustedprimogem.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "Primogemdust1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "primogemdust_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogemdust_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -14531,7 +14561,8 @@
       "ConquerorSWill",
       "UsurperSScheme",
       "ThiefSInstinct",
-      "SkipTool"
+      "SkipTool",
+      "Exhaustedprimogem"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -14762,6 +14793,7 @@
       "item.oneiricconcept.b_2elobog_sausage": "German style cumin smoked sausage",
       "item.oneiricconcept.s_2tuffing.description_0": "夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§cThe lure level has reached the upper limit",
+      "block.oneiricconcept.exhaustedprimogem": "Exhausted primogem",
       "item.oneiricconcept.s_2ausage": "Sausage",
       "translation.oneiricconcept.kill": "Clear quantity:§6",
       "block.oneiricconcept.mactus": "Mactus",
@@ -15119,6 +15151,7 @@
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",
+      "block.oneiricconcept.exhaustedprimogem": "Exhaustedprimogem",
       "item.oneiricconcept.s_2ausage": "香肠",
       "translation.oneiricconcept.kill": "清除数量：§6",
       "block.oneiricconcept.mactus": "仙女掌",
@@ -15476,6 +15509,7 @@
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",
+      "block.oneiricconcept.exhaustedprimogem": "Exhaustedprimogem",
       "item.oneiricconcept.s_2ausage": "香肠",
       "translation.oneiricconcept.kill": "清除数量：§6",
       "block.oneiricconcept.mactus": "仙女掌",

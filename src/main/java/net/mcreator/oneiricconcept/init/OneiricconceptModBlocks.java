@@ -58,6 +58,7 @@ import net.mcreator.oneiricconcept.block.GactusBlock;
 import net.mcreator.oneiricconcept.block.Fulmo1Block;
 import net.mcreator.oneiricconcept.block.FreshSeedofDawnBlock;
 import net.mcreator.oneiricconcept.block.FloatingCloudBlock;
+import net.mcreator.oneiricconcept.block.ExhaustedprimogemBlock;
 import net.mcreator.oneiricconcept.block.ElementsCrystalOreBlock;
 import net.mcreator.oneiricconcept.block.ElectrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Elect1Block;
@@ -161,6 +162,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> CAMERAPINK = REGISTRY.register("camerapink", CamerapinkBlock::new);
 	public static final DeferredBlock<Block> SWEETFLOWER = REGISTRY.register("sweetflower", SweetflowerBlock::new);
 	public static final DeferredBlock<Block> RAINBOW_CACTUS_BALL = REGISTRY.register("rainbow_cactus_ball", RainbowCactusBallBlock::new);
+	public static final DeferredBlock<Block> EXHAUSTEDPRIMOGEM = REGISTRY.register("exhaustedprimogem", ExhaustedprimogemBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
