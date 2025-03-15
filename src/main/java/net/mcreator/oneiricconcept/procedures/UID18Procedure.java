@@ -67,7 +67,7 @@ public class UID18Procedure {
 						}
 						return 0;
 					}
-				}.convert(UUIDstr.substring((int) index1, (int) (index1 + 1))) * weighting.get((int) index1);
+				}.convert(UUIDstr.substring((int) index1, (int) index1)) * weighting.get((int) index1);
 			}
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);

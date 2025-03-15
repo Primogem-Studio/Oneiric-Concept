@@ -63,7 +63,9 @@ public class HitTargetoffsetProcedure {
 					}
 				}
 			}
-			(Entitylist.get(Mth.nextInt(RandomSource.create(), 0, (int) (Entitylist.size() - 1))) instanceof Entity _e ? _e : null).hurt(damagesource, (float) amount);
+			if (!Entitylist.isEmpty()) {
+				(Entitylist.get(Mth.nextInt(RandomSource.create(), 0, (int) (Entitylist.size() - 1))) instanceof Entity _e ? _e : null).hurt(damagesource, (float) amount);
+			}
 			if (sourceentity instanceof Player) {
 				if (sourceentity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("oneiricconcept:fragile_crisp_cone"));
