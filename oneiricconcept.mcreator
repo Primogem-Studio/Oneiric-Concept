@@ -12467,9 +12467,10 @@
       "registry_name": "adeptustool",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool.json",
           "src/main/resources/assets/oneiricconcept/models/item/adeptustool_0.json",
           "src/main/java/net/mcreator/oneiricconcept/item/TesttoolItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/adeptustool.json"
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool_1.json"
         ]
       },
       "path": "~/item"
@@ -13824,6 +13825,37 @@
           },
           {
             "name": "time",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PrimogemExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogem_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PrimogemExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
             "type": "number"
           },
           {

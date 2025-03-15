@@ -9,6 +9,12 @@
         "oneiricconcept:adeptustool_test": 1
       },
       "model": "oneiricconcept:item/adeptustool_0"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:adeptustool_test": 2
+      },
+      "model": "oneiricconcept:item/adeptustool_1"
     }
   ]
 }

@@ -23,7 +23,7 @@ public class TestrangedelProcedure {
 			return;
 		double mode = 0;
 		mode = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("textures");
-		if (0 < mode) {
+		if (1 == mode) {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
@@ -32,6 +32,8 @@ public class TestrangedelProcedure {
 					}
 				}
 			}
+		} else if (2 == mode) {
+			PrimogemExplosionProcedure.execute(world, x, y - 22, z);
 		} else {
 			if (entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.LUCK))
 				_livingEntity4.getAttribute(Attributes.LUCK).setBaseValue(51522);

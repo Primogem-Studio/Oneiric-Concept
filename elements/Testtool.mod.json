@@ -26,6 +26,22 @@
             "value": 1.0
           }
         ]
+      },
+      {
+        "renderType": 0,
+        "texture": "primogemwaffle",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:test",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
       }
     ],
     "name": "Testtool",
