@@ -14468,9 +14468,7 @@
     "ENCHANTMENTS:minecraft:non_treasure": [
       "~CUSTOM:SharpHook"
     ],
-    "ITEMS:pgc:wuqi": [
-      "CUSTOM:Example"
-    ],
+    "ITEMS:pgc:wuqi": [],
     "ENCHANTMENTS:minecraft:tradeable": [
       "~CUSTOM:SharpHook"
     ],
