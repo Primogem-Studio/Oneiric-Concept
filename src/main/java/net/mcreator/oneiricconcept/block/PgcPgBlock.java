@@ -48,17 +48,17 @@ public class PgcPgBlock extends Block implements SimpleWaterloggedBlock {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.AMETHYST_CLUSTER).strength(1f, 3f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
+					return 5;
 				if (s.getValue(BLOCKSTATE) == 2)
-					return 0;
+					return 7;
 				if (s.getValue(BLOCKSTATE) == 3)
-					return 0;
+					return 9;
 				if (s.getValue(BLOCKSTATE) == 4)
-					return 0;
+					return 11;
 				if (s.getValue(BLOCKSTATE) == 5)
-					return 0;
+					return 13;
 				if (s.getValue(BLOCKSTATE) == 6)
-					return 0;
+					return 15;
 				return 3;
 			}
 		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));

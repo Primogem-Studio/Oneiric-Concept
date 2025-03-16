@@ -192,6 +192,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.REDMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.FULLMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

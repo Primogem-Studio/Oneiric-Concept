@@ -4317,11 +4317,11 @@
       "registry_name": "primogem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/primogem.json",
-          "src/main/resources/assets/oneiricconcept/models/block/primogem.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogem.json",
           "src/main/resources/assets/oneiricconcept/blockstates/primogem.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/PgcPgBlock.java"
+          "src/main/java/net/mcreator/oneiricconcept/block/PgcPgBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogem.json",
+          "src/main/resources/assets/oneiricconcept/models/item/primogem.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogem.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/primogem"
@@ -12712,12 +12712,12 @@
       "registry_name": "primogem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_0.json",
           "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_0.json"
+          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_3.json"
         ]
       },
       "path": "~/PgcCopyDecoration/block/primogem"
@@ -13868,6 +13868,158 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "WeatherStatusUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weather_status_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WeatherStatusUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Getwether",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "getwether",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetwetherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Primogemstormglass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogemstormglass",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/PrimogemstormglassBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogemstormglass.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogemstormglass.json",
+          "src/main/resources/assets/oneiricconcept/models/item/primogemstormglass.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/primogemstormglass.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PrimogemstormglassBlockEntity.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "PrimogemWether",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogem_wether",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/primogem_wether_blockstate_0.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "PrimogemSwordPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primogem_sword_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PrimogemSwordPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "StormGlassParticle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storm_glass_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/StormGlassParticleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "cycle",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -13940,6 +14092,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -13948,10 +14104,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14639,7 +14791,8 @@
       "Newmo1",
       "Redmo1",
       "Fulmo1",
-      "RainbowCactusBall"
+      "RainbowCactusBall",
+      "Primogemstormglass"
     ]
   },
   "language_map": {
@@ -14886,6 +15039,7 @@
       "item.oneiricconcept.salt": "Salt",
       "item.oneiricconcept.surpriseboxforgoodorbad": "Surprise Box,for Good or Bad",
       "advancements.power_of_herrschers.title": "Power Of Herrschers",
+      "translation.oneiricconcept.weatherrain": "Until the next §9rain§r：",
       "item.oneiricconcept.oneiric_shard": "Oneiric Shard",
       "item.oneiricconcept.tree_barkof_erudition": "Tree Barkof Erudition",
       "block.oneiricconcept.cloud": "Cloud",
@@ -14961,10 +15115,12 @@
       "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7Big sugar meatballs",
+      "translation.oneiricconcept.weatherclear": "Until the next §6clear day§r：",
       "block.oneiricconcept.the_another_world_log": "The Another World Log",
       "advancements.eastroc.title": "Eastroc",
       "item.oneiricconcept.sky_waffle": "Sky Waffle",
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
+      "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
       "translation.oneiricconcept.effectlevelmax": "The Effect level has reached the upper limit",
       "item.oneiricconcept.ignis_aureliae": "Ignis Aureliae",
       "block.oneiricconcept.sustenanceanchoroff": "Sustenanceanchor",
@@ -15244,6 +15400,7 @@
       "item.oneiricconcept.salt": "食盐",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
       "advancements.power_of_herrschers.title": "律者之力",
+      "translation.oneiricconcept.weatherrain": "距离下次§9下雨§r还有：",
       "item.oneiricconcept.oneiric_shard": "古老梦华",
       "item.oneiricconcept.tree_barkof_erudition": "智识树皮",
       "block.oneiricconcept.cloud": "云",
@@ -15319,10 +15476,12 @@
       "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7大糖丸子",
+      "translation.oneiricconcept.weatherclear": "距离下次§6天晴§r还有：",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
       "advancements.eastroc.title": "东鹏特饮",
       "item.oneiricconcept.sky_waffle": "天华夫饼",
       "block.oneiricconcept.rainbow_cactus_ball": "六彩炫人球",
+      "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
       "translation.oneiricconcept.effectlevelmax": "药水效果等级已达上限",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
       "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",
@@ -15602,6 +15761,7 @@
       "item.oneiricconcept.salt": "食盐",
       "item.oneiricconcept.surpriseboxforgoodorbad": "开盒有惊__",
       "advancements.power_of_herrschers.title": "律者之力",
+      "translation.oneiricconcept.weatherrain": "",
       "item.oneiricconcept.oneiric_shard": "古老梦华",
       "item.oneiricconcept.tree_barkof_erudition": "智识树皮",
       "block.oneiricconcept.cloud": "云",
@@ -15677,10 +15837,12 @@
       "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao.description_0": "§7大糖丸子",
+      "translation.oneiricconcept.weatherclear": "",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
       "advancements.eastroc.title": "Eastroc",
       "item.oneiricconcept.sky_waffle": "天华夫饼",
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
+      "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
       "translation.oneiricconcept.effectlevelmax": "药水效果等级已达上限",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
       "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",

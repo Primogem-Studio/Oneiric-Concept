@@ -318,6 +318,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SKIP_TOOL = REGISTRY.register("skip_tool", SkipToolItem::new);
 	public static final DeferredItem<Item> DREAMY_CONE = REGISTRY.register("dreamy_cone", DreamyConeItem::new);
 	public static final DeferredItem<Item> EXHAUSTEDPRIMOGEM = block(OneiricconceptModBlocks.EXHAUSTEDPRIMOGEM);
+	public static final DeferredItem<Item> PRIMOGEMSTORMGLASS = block(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -14,7 +14,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "pgc_pg_a:default",
-        "luminance": 0,
+        "luminance": 5,
         "boundingBoxes": [
           {
             "mx": 0.0,
@@ -37,7 +37,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "pgc_pg_b:default",
-        "luminance": 0,
+        "luminance": 7,
         "boundingBoxes": [
           {
             "mx": 0.0,
@@ -60,7 +60,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "pgc_pg_c:default",
-        "luminance": 0,
+        "luminance": 9,
         "boundingBoxes": [
           {
             "mx": 0.0,
@@ -83,7 +83,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "pgc_pg_d:default",
-        "luminance": 0,
+        "luminance": 11,
         "boundingBoxes": [
           {
             "mx": 0.0,
@@ -106,7 +106,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "pgc_pg_e:default",
-        "luminance": 0,
+        "luminance": 13,
         "boundingBoxes": [
           {
             "mx": 0.0,
@@ -129,7 +129,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "pgc_pg_f:default",
-        "luminance": 0,
+        "luminance": 15,
         "boundingBoxes": [
           {
             "mx": 0.0,

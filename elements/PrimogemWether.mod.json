@@ -1,0 +1,32 @@
+{
+  "_fv": 77,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Primogemstormglass",
+    "blockstateList": [
+      {
+        "texture": "primogem_storm_glass",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "shizuoyuanshikuai",
+        "renderType": 2,
+        "customModelName": "primogem_storm_glass_rain:default",
+        "luminance": 1,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 18.83,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

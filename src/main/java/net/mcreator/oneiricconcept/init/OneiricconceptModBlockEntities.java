@@ -18,6 +18,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchoroffBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchorBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PropagandaArmyBlockBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.PrimogemstormglassBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PhlogistontankBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.Geooo1BlockEntity;
@@ -32,6 +33,7 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> SUSTENANCEANCHOR = register("sustenanceanchor", OneiricconceptModBlocks.SUSTENANCEANCHOR, SustenanceanchorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> GEO_METAL = register("geo_metal", OneiricconceptModBlocks.GEO_METAL, Geooo1BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PHLOGISTONTANK = register("phlogistontank", OneiricconceptModBlocks.PHLOGISTONTANK, PhlogistontankBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PRIMOGEMSTORMGLASS = register("primogemstormglass", OneiricconceptModBlocks.PRIMOGEMSTORMGLASS, PrimogemstormglassBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -48,5 +50,6 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, GEO_METAL.get(), (blockEntity, side) -> ((Geooo1BlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PHLOGISTONTANK.get(), (blockEntity, side) -> ((PhlogistontankBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, PHLOGISTONTANK.get(), (blockEntity, side) -> ((PhlogistontankBlockEntity) blockEntity).getFluidTank());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PRIMOGEMSTORMGLASS.get(), (blockEntity, side) -> ((PrimogemstormglassBlockEntity) blockEntity).getItemHandler());
 	}
 }
