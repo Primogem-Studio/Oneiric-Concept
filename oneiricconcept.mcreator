@@ -14020,6 +14020,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Primogemstormglass1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "primogemstormglass_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogemstormglass_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -14092,10 +14105,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14104,6 +14113,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15479,7 +15492,7 @@
       "advancements.eastroc.title": "东鹏特饮",
       "item.oneiricconcept.sky_waffle": "天华夫饼",
       "block.oneiricconcept.rainbow_cactus_ball": "六彩炫人球",
-      "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
+      "block.oneiricconcept.primogemstormglass": "原石天气瓶",
       "translation.oneiricconcept.effectlevelmax": "药水效果等级已达上限",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
       "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",

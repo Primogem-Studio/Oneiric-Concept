@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:primogem"
+    },
+    "b": {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    "c": {
+      "item": "primogemcraft:xingqiong"
+    },
+    "d": {
+      "item": "oneiricconcept:primogemfruit"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:primogemstormglass",
+    "count": 1
+  }
+}
