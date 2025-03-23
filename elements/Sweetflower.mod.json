@@ -94,7 +94,56 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.GRASS_PATH"
+      },
+      {
+        "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.ROOTED_DIRT"
+      },
+      {
+        "value": "Blocks.MUD"
+      },
+      {
+        "value": "Blocks.PACKED_MUD"
+      },
+      {
+        "value": "CUSTOM:NagadusEmeraldOre"
+      },
+      {
+        "value": "Blocks.MOSS_BLOCK"
+      },
+      {
+        "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "Blocks.SAND#1"
+      },
+      {
+        "value": "Blocks.WARPED_NYLIUM"
+      },
+      {
+        "value": "Blocks.CRIMSON_NYLIUM"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": "Blocks.SOUL_SOIL"
+      }
+    ],
     "isBonemealable": false,
     "frequencyOnChunks": 40,
     "generateFeature": false,

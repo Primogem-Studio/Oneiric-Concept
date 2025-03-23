@@ -3,22 +3,15 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 10
+      "chance": 9
     },
     {
-      "type": "minecraft:in_square"
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
     },
     {
       "type": "minecraft:heightmap",
       "heightmap": "MOTION_BLOCKING_NO_LEAVES"
-    },
-    {
-      "type": "minecraft:count",
-      "count": {
-        "type": "uniform",
-        "min_inclusive": 1,
-        "max_inclusive": 5
-      }
     },
     {
       "type": "minecraft:block_predicate_filter",
@@ -32,8 +25,19 @@
     {
       "type": "minecraft:block_predicate_filter",
       "predicate": {
-        "type": "minecraft:matching_blocks",
-        "blocks": "minecraft:air"
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:replaceable"
+          },
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": "minecraft:water"
+            }
+          }
+        ]
       }
     }
   ]

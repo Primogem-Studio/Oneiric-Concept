@@ -10677,22 +10677,6 @@
       "path": "~/Feature"
     },
     {
-      "name": "CaveSweetFlowers",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cave_sweet_flowers",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/world/features/CaveSweetFlowersFeature.java",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/cave_sweet_flowers.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/cave_sweet_flowers_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/cave_sweet_flowers.json"
-        ]
-      },
-      "path": "~/Feature"
-    },
-    {
       "name": "SweetMadame2",
       "type": "recipe",
       "compiles": true,
@@ -14105,6 +14089,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14113,10 +14101,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
