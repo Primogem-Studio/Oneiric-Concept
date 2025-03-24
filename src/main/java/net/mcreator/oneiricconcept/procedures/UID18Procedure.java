@@ -7,10 +7,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
+import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 import javax.annotation.Nullable;
 
@@ -22,14 +22,14 @@ import java.util.Arrays;
 public class UID18Procedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+		execute(event, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(double x, double y, double z, Entity entity) {
+		execute(null, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		String UUIDstr = "";
@@ -39,7 +39,8 @@ public class UID18Procedure {
 		double mody = 0;
 		double modz = 0;
 		double UID1567 = 0;
-		if ((entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).UID).isEmpty() && world.isClientSide()) {
+		double checktest = 0;
+		if ((entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).UID).isEmpty()) {
 			List<Integer> weighting = Arrays.asList(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);
 			for (int index0 = 0; index0 < 8; index0++) {
 				UID151617 = UID151617 + "" + "0123456789abcdef".indexOf(((entity.getStringUUID()).substring((int) index0, (int) (index0 + 1))), 0);
@@ -56,11 +57,11 @@ public class UID18Procedure {
 					return 0;
 				}
 			}.convert(UID151617);
-			UID1567 = (IsslimModelProcedure.execute(entity) && UID1567 % 2 == 0 ? UID1567 + 1 : UID1567) % 999;
+			UID1567 = (IsslimModelProcedure.execute(entity) && UID1567 % 2 == 0 ? UID1567 : UID1567 + 1) % 999;
 			UUIDstr = (((modx < 10 ? "0" : "") + "" + Math.round(Math.floor(modx))) + "" + ((mody < 10 ? "0" : "") + "" + Math.round(Math.floor(mody))) + ((modz < 10 ? "0" : "") + "" + Math.round(Math.floor(modz)))) + ""
 					+ new java.text.SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime()) + ((UID1567 < 100 ? "0" : "") + "" + Math.round(Math.floor(UID1567)));
 			for (int index1 = 0; index1 < 17; index1++) {
-				checkk = checkk + new Object() {
+				checktest = new Object() {
 					double convert(String s) {
 						try {
 							return Double.parseDouble(s.trim());
@@ -68,7 +69,9 @@ public class UID18Procedure {
 						}
 						return 0;
 					}
-				}.convert(UUIDstr.substring((int) index1, (int) index1)) * weighting.get((int) index1);
+				}.convert((UUIDstr.substring((int) index1)).substring(0, 1)) * weighting.get((int) index1);
+				OneiricconceptMod.LOGGER.debug(((UUIDstr.substring((int) index1)).substring(0, 1) + "--->" + checktest));
+				checkk = checkk + checktest;
 			}
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);

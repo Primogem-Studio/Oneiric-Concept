@@ -2,18 +2,18 @@
   "_fv": 77,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Blasting",
+    "recipeType": "Smelting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 1.0,
-    "cookingTime": 100,
+    "cookingTime": 20,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
+    "smeltingInputStack": {
       "value": "CUSTOM:Exhaustedprimogem"
     },
-    "blastingReturnStack": {
+    "smeltingReturnStack": {
       "value": "CUSTOM:PgcPg"
     },
     "name": "primogemdust_1",
