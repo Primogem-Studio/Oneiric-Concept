@@ -10,7 +10,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
@@ -24,8 +23,6 @@ public class AntimatterLegionLootProcedure {
 		double EquilibriumLevel = 0;
 		if (sourceentity instanceof Player) {
 			EquilibriumLevel = PGCApi.getPlayerVariables(sourceentity).jun_heng / 5 - 1;
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + EquilibriumLevel)), false);
 			if (7 <= EquilibriumLevel) {
 				EquilibriumLevel = 3;
 			} else if (3 <= EquilibriumLevel) {
@@ -33,8 +30,6 @@ public class AntimatterLegionLootProcedure {
 			} else if (1 <= EquilibriumLevel) {
 				EquilibriumLevel = 1;
 			}
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + EquilibriumLevel)), false);
 			if (0 < EquilibriumLevel) {
 				for (int index0 = 0; index0 < (int) EquilibriumLevel; index0++) {
 					if (RandomProcedure.execute(world, 0.2 * EquilibriumLevel)) {
