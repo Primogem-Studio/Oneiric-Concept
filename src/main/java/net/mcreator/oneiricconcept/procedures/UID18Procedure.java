@@ -56,8 +56,7 @@ public class UID18Procedure {
 					}
 					return 0;
 				}
-			}.convert(UID151617);
-			UID1567 = (IsslimModelProcedure.execute(entity) && UID1567 % 2 == 0 ? UID1567 : UID1567 + 1) % 999;
+			}.convert(UID151617) % 999;
 			UUIDstr = (((modx < 10 ? "0" : "") + "" + Math.round(Math.floor(modx))) + "" + ((mody < 10 ? "0" : "") + "" + Math.round(Math.floor(mody))) + ((modz < 10 ? "0" : "") + "" + Math.round(Math.floor(modz)))) + ""
 					+ new java.text.SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime()) + ((UID1567 < 100 ? "0" : "") + "" + Math.round(Math.floor(UID1567)));
 			for (int index1 = 0; index1 < 17; index1++) {
