@@ -1,13 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:zhjs"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:zhjs"
   },
   "result": {
     "id": "oneiricconcept:dendro_metal",

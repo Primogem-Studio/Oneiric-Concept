@@ -1,13 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:jlzs"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:jlzs"
   },
   "result": {
     "id": "oneiricconcept:geo_metal",

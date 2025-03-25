@@ -1,11 +1,8 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    {
-      "item": "primogemcraft:yuanshi"
-    }
-  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:yuanshi"
+  },
   "result": {
     "id": "oneiricconcept:primogem",
     "count": 1

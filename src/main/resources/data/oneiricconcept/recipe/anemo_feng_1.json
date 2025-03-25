@@ -1,13 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:zzjs"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:zzjs"
   },
   "result": {
     "id": "oneiricconcept:anemo_metal",

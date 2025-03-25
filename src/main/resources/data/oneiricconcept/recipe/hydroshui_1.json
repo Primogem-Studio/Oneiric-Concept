@@ -1,13 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:zyjs"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:zyjs"
   },
   "result": {
     "id": "oneiricconcept:hydro_metal",

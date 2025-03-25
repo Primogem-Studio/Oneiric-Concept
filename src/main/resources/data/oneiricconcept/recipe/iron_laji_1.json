@@ -1,13 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "a"
-  ],
-  "key": {
-    "a": {
-      "item": "primogemcraft:zhongkouweitieding"
-    }
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:zhongkouweitieding"
   },
   "result": {
     "id": "oneiricconcept:trashmetal",

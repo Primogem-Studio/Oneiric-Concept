@@ -15,12 +15,17 @@ import net.mcreator.oneiricconcept.procedures.MorabowArcheryProcedure;
 
 public class MoraBowItem extends Item {
 	public MoraBowItem() {
-		super(new Item.Properties().durability(423).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(4230).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.BOW;
+	}
+
+	@Override
+	public int getEnchantmentValue() {
+		return 22;
 	}
 
 	@Override

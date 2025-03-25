@@ -1,11 +1,8 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    {
-      "item": "primogemcraft:ryjs"
-    }
-  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "primogemcraft:ryjs"
+  },
   "result": {
     "id": "oneiricconcept:pyro_metal",
     "count": 1

@@ -5296,84 +5296,6 @@
       "path": "~/PgcCopyDecoration/pgcrecipes"
     },
     {
-      "name": "Fullmoon1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "fullmoon_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/fullmoon_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/pgcrecipes"
-    },
-    {
-      "name": "Fullmoon2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "fullmoon_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/fullmoon_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/pgcrecipes"
-    },
-    {
-      "name": "Newmoon1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "newmoon_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/newmoon_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/pgcrecipes"
-    },
-    {
-      "name": "Newmoon2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "newmoon_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/newmoon_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/pgcrecipes"
-    },
-    {
-      "name": "Redmoon1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "redmoon_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/redmoon_1.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/pgcrecipes"
-    },
-    {
-      "name": "Redmoon2",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "redmoon_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/redmoon_2.json"
-        ]
-      },
-      "path": "~/PgcCopyDecoration/pgcrecipes"
-    },
-    {
       "name": "IronLaji1",
       "type": "recipe",
       "compiles": true,
@@ -14109,6 +14031,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14117,10 +14043,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
