@@ -11761,6 +11761,10 @@
             "type": "entity"
           },
           {
+            "name": "amount",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -13983,6 +13987,40 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "StardustbaseballerText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stardustbaseballer_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/PgcCopyDecoration/PER"
+    },
+    {
+      "name": "StardustBaseballer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stardust_baseballer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/StardustBaseballerItem.java"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [
@@ -14055,10 +14093,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14067,6 +14101,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14562,6 +14600,7 @@
       "CUSTOM:B2elobogSausage"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:StardustBaseballer",
       "~CUSTOM:MoraBow",
       "~CUSTOM:DivineArrowEmbers",
       "~CUSTOM:Heartofthevastsea",
@@ -14676,7 +14715,8 @@
       "UsurperSScheme",
       "ThiefSInstinct",
       "SkipTool",
-      "Exhaustedprimogem"
+      "Exhaustedprimogem",
+      "StardustBaseballer"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -14889,6 +14929,7 @@
       "block.oneiricconcept.memoria": "Memoria",
       "item.oneiricconcept.energy_drink_sugar_free": "Energy Drink（Sugar-Free）",
       "item.oneiricconcept.heartoftheskysea": "Heart of the sky sea",
+      "item.oneiricconcept.stardust_baseballer": "Stardust Baseballer",
       "enchantment.oneiricconcept.sharp_hook": "Sharp Hook",
       "item.minecraft.potion.effect.hunger_potion": "Potion of Hunger",
       "advancements.fall_king.title": "Fall King",
@@ -15252,6 +15293,7 @@
       "block.oneiricconcept.memoria": "忆质",
       "item.oneiricconcept.energy_drink_sugar_free": "能量饮料（无糖）",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
+      "item.oneiricconcept.stardust_baseballer": "Stardust Baseballer",
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "advancements.fall_king.title": "耐摔王",
@@ -15615,6 +15657,7 @@
       "block.oneiricconcept.memoria": "忆质",
       "item.oneiricconcept.energy_drink_sugar_free": "能量饮料（无糖）",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
+      "item.oneiricconcept.stardust_baseballer": "Stardust Baseballer",
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "advancements.fall_king.title": "Fall King",
