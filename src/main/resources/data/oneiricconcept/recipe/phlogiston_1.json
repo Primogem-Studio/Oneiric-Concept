@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "oneiricconcept:phlogiston_crystal"
+  },
+  "result": {
+    "id": "oneiricconcept:phlogiston",
+    "count": 9
+  }
+}

@@ -13970,6 +13970,19 @@
         "files": [],
         "type": "logic"
       }
+    },
+    {
+      "name": "Phlogiston1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phlogiston_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/phlogiston_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -14382,7 +14395,9 @@
       "CUSTOM:StrippedTheAnotherWorldLog",
       "CUSTOM:TheAnotherWorldSapling",
       "CUSTOM:Waffle",
-      "CUSTOM:PrimogemWaffle"
+      "CUSTOM:PrimogemWaffle",
+      "CUSTOM:DeepMarrowRockSalt",
+      "CUSTOM:ThiefSInstinct"
     ],
     "ITEMS:c:curio": [
       "CUSTOM:SunStartCan"
@@ -15243,7 +15258,7 @@
       "translation.oneiricconcept.eight": "你的生辰八字是：",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "item.oneiricconcept.skip_tool.description_0": "可以消耗饥饿值跳过幸运专票的等待时间",
-      "gamerule.friendshipMode.description": "After activation, some player friendly interactive features can be enabled",
+      "gamerule.friendshipMode.description": "开启后可以启用和玩家「友好」互动的一些功能",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "translation.key.load": "进度：§6",
@@ -15395,7 +15410,7 @@
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
       "item.oneiricconcept.stuffing": "肉馅",
       "gamerule.ocdebug.description": "调试",
-      "gamerule.friendshipMode": "Friendship Mode",
+      "gamerule.friendshipMode": "友谊模式",
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
