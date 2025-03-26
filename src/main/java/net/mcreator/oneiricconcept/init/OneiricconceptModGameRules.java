@@ -18,6 +18,7 @@ public class OneiricconceptModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> OCDEBUG;
 	public static GameRules.Key<GameRules.BooleanValue> OCFLY;
 	public static GameRules.Key<GameRules.IntegerValue> OCTEST;
+	public static GameRules.Key<GameRules.BooleanValue> FRIENDSHIP_MODE;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -27,5 +28,6 @@ public class OneiricconceptModGameRules {
 		OCDEBUG = GameRules.register("ocdebug", GameRules.Category.CHAT, GameRules.BooleanValue.create(false));
 		OCFLY = GameRules.register("ocfly", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 		OCTEST = GameRules.register("octest", GameRules.Category.PLAYER, GameRules.IntegerValue.create(15));
+		FRIENDSHIP_MODE = GameRules.register("friendshipMode", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 	}
 }

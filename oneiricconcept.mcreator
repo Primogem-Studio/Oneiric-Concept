@@ -13959,6 +13959,17 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "FriendshipMode",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friendship_mode",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [
@@ -14031,6 +14042,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14039,10 +14054,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14869,6 +14880,7 @@
       "translation.oneiricconcept.eight": "Your birth date and eight characters are:",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7Little sugar meatballs",
       "item.oneiricconcept.skip_tool.description_0": "Can consume hunger points and skip the loading time of lucky tickets",
+      "gamerule.friendshipMode.description": "After activation, some player friendly interactive features can be enabled",
       "translation.oneiricconcept.patchouli_name_oc": "oneiricconcept wiki",
       "advancements.big_stone_crush_chest.descr": "The darkness is like a boulder pressing down upon the breast",
       "translation.key.load": "speed of progress:§6",
@@ -15020,6 +15032,7 @@
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
       "item.oneiricconcept.stuffing": "stuffing",
       "gamerule.ocdebug.description": "debug",
+      "gamerule.friendshipMode": "Friendship Mode",
       "item.oneiricconcept.cloud_bottle": "Cloud Bottle",
       "fluid_type.oneiricconcept.memoria": "§9Memoria",
       "death.attack.b_2": "%1$s Feeling uncomfortable after eating smoked sausage",
@@ -15230,6 +15243,7 @@
       "translation.oneiricconcept.eight": "你的生辰八字是：",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "item.oneiricconcept.skip_tool.description_0": "可以消耗饥饿值跳过幸运专票的等待时间",
+      "gamerule.friendshipMode.description": "After activation, some player friendly interactive features can be enabled",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "translation.key.load": "进度：§6",
@@ -15381,6 +15395,7 @@
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
       "item.oneiricconcept.stuffing": "肉馅",
       "gamerule.ocdebug.description": "调试",
+      "gamerule.friendshipMode": "Friendship Mode",
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
@@ -15591,6 +15606,7 @@
       "translation.oneiricconcept.eight": "",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "item.oneiricconcept.skip_tool.description_0": "Can consume hunger points and skip the loading time of lucky tickets",
+      "gamerule.friendshipMode.description": "After activation, some player friendly interactive features can be enabled",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "translation.key.load": "进度：§6",
@@ -15742,6 +15758,7 @@
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
       "item.oneiricconcept.stuffing": "肉馅",
       "gamerule.ocdebug.description": "调试",
+      "gamerule.friendshipMode": "Friendship Mode",
       "item.oneiricconcept.cloud_bottle": "云朵瓶",
       "fluid_type.oneiricconcept.memoria": "§9忆质",
       "death.attack.b_2": "%1$s 吃熏肠后感到不适",
