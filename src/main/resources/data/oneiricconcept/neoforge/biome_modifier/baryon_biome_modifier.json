@@ -5,8 +5,8 @@
   },
   "spawners": {
     "type": "oneiricconcept:baryon",
-    "weight": 20,
+    "weight": 4,
     "minCount": 1,
-    "maxCount": 4
+    "maxCount": 1
   }
 }

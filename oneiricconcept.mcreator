@@ -12209,10 +12209,10 @@
       "registry_name": "baryon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/baryon_spawn_egg.json",
           "src/main/java/net/mcreator/oneiricconcept/entity/BaryonEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/BaryonRenderer.java",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/baryon_biome_modifier.json",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/BaryonRenderer.java"
+          "src/main/resources/assets/oneiricconcept/models/item/baryon_spawn_egg.json"
         ]
       }
     },
@@ -14031,10 +14031,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14043,6 +14039,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
