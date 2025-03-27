@@ -7,10 +7,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
 public class WeaponclickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack, boolean IsLeft, double cooling) {
@@ -24,25 +27,33 @@ public class WeaponclickProcedure {
 		double LastTime = 0;
 		String DBtagname = "";
 		String valueTagName = "";
+		String testext = "";
 		Refinement = GetDoubleNBTTagProcedure.execute(itemstack, "jing_lian");
-		LastTime = GetDoubleNBTTagProcedure.execute(itemstack, "time");
+		LastTime = GetDoubleNBTTagProcedure.execute(itemstack, IsLeft ? "time_L" : "time_R");
 		DBtagname = IsLeft ? "Charged_L" : "Charged_R";
-		if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(DBtagname) || cooling * (1 - 0.1 * Refinement) < LastTime - world.dayTime()) {
+		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+			testext = ("\u83B7\u53D6\u5230\u7CBE\u70BC\u7B49\u7EA7\uFF1A\u00A79" + Refinement + "\n") + "" + ("\u00A7r\u83B7\u53D6\u5230\u6280\u80FD\u6A21\u5F0FL\uFF1A\u00A79" + IsLeft + "\n")
+					+ ("\u00A7r\u83B7\u53D6\u5230\u4E0A\u6B21\u4F7F\u7528\u65F6\u95F4\uFF1A\u00A79" + LastTime + "\n") + ("\u00A7r\u83B7\u53D6\u5230\u5F53\u524D\u4E16\u754C\u65F6\u95F4\uFF1A\u00A79" + world.dayTime() + "\n")
+					+ ("\u00A7r\u83B7\u53D6\u5230\u81EA\u4E0A\u6B21\u4F7F\u7528\uFF1A\u00A79" + (world.dayTime() - LastTime) + "\n") + ("\u00A7r\u83B7\u53D6\u5230\u4F20\u5165\u7684\u51B7\u5374\u65F6\u95F4\uFF1A\u00A79" + cooling + "\n")
+					+ ("\u00A7r\u83B7\u53D6\u5230\u57FA\u4E8E\u7CBE\u70BC\u7B49\u7EA7\u7684\u51B7\u5374\u65F6\u95F4\uFF1A\u00A79" + cooling * (1 - 0.1 * Refinement) + "\u00A7r");
+		}
+		if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean(DBtagname) && cooling * (1 - 0.1 * Refinement) < world.dayTime() - LastTime) {
 			{
 				final String _tagName = DBtagname;
 				final boolean _tagValue = true;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 			}
-			DBtagnu = 1;
+			DBtagnu = IsLeft ? 0 : 1;
 			DBtagname = "textures";
 			for (int index0 = 0; index0 < 2; index0++) {
+				testext = "\n" + testext + "\u5C06\u7269\u54C1\u6807\u7B7E\u00A7e" + DBtagname + "\u00A7r\u8BBE\u7F6E\u4E3A\u00A79" + DBtagnu + "\u00A7r";
 				{
 					final String _tagName = DBtagname;
 					final double _tagValue = DBtagnu;
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 				DBtagnu = world.dayTime();
-				DBtagname = "time";
+				DBtagname = IsLeft ? "time_L" : "time_R";
 			}
 			for (int index1 = 0; index1 < (int) (2 + Refinement); index1++) {
 				num = 160 + 20 * index1;
@@ -59,6 +70,10 @@ public class WeaponclickProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.grindstone.use")), SoundSource.NEUTRAL, 1, 20, false);
 				}
 			}
+		}
+		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(testext), false);
 		}
 	}
 }
