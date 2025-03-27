@@ -14374,6 +14374,15 @@
     "ITEMS:mod:fish": [
       "TAG:mod:fruit_paste_bait_fish"
     ],
+    "ITEMS:minecraft:enchantable/sword": [
+      "CUSTOM:XuanyuanSword",
+      "CUSTOM:DarkXuanyuanSword",
+      "CUSTOM:SwordOfBrilliantValor",
+      "CUSTOM:DXuanyuan",
+      "CUSTOM:AureliaeAxe",
+      "CUSTOM:AureliaeSword",
+      "CUSTOM:StardustBaseballer"
+    ],
     "BLOCKS:c:bookshelves": [
       "Blocks.BOOKSHELF"
     ],
@@ -14702,6 +14711,9 @@
     ],
     "ENCHANTMENTS:minecraft:non_treasure": [
       "~CUSTOM:SharpHook"
+    ],
+    "ITEMS:pgc:wuqi": [
+      "CUSTOM:StardustBaseballer"
     ],
     "ENCHANTMENTS:minecraft:tradeable": [
       "~CUSTOM:SharpHook"
