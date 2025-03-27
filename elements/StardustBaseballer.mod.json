@@ -66,8 +66,7 @@
     "enableMeleeDamage": true,
     "damageVsEntity": 13.0,
     "specialInformation": {
-      "fixedValue": [],
-      "name": "StardustbaseballerText"
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false,
@@ -76,7 +75,13 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "WeaponRightclick"
+      "name": "BlowoutFarewellHit"
+    },
+    "onEntityHitWith": {
+      "name": "StardustbaseballerHurt"
+    },
+    "onEntitySwing": {
+      "name": "RIPHomeRun"
     },
     "enableRanged": false,
     "shootConstantly": false,

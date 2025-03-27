@@ -8,6 +8,6 @@ public class BlowoutFarewellHitProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		WeaponclickProcedure.execute(world, x, y, z, entity, itemstack, false, 2000);
+		WeaponclickProcedure.execute(world, x, y, z, entity, itemstack, false, 600);
 	}
 }

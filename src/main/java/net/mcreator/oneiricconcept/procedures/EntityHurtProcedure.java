@@ -5,14 +5,13 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -21,11 +20,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 
-import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
-
 import javax.annotation.Nullable;
+
+import java.util.Comparator;
 
 @EventBusSubscriber
 public class EntityHurtProcedure {
@@ -43,6 +43,9 @@ public class EntityHurtProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, Entity sourceentity, double amount) {
 		if (entity == null || sourceentity == null)
 			return;
+		String Changetxt = "";
+		ItemStack sworditem = ItemStack.EMPTY;
+		ItemStack hitItem = ItemStack.EMPTY;
 		double swordEnchant = 0;
 		double Charge = 0;
 		double MaxCharge = 0;
@@ -50,11 +53,10 @@ public class EntityHurtProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		String Changetxt = "";
-		ItemStack sworditem = ItemStack.EMPTY;
-		ItemStack hitItem = ItemStack.EMPTY;
+		double Refinement = 0;
 		sworditem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		Refinement = GetDoubleNBTTagProcedure.execute(hitItem, "jing_lian");
 		if (sworditem.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("oneiricconcept:shuhu_gift")))) != 0) {
 			swordEnchant = sworditem.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("oneiricconcept:shuhu_gift"))));
 			Charge = sworditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("ShuhuCharge") + 1;
@@ -84,16 +86,18 @@ public class EntityHurtProcedure {
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * swordEnchant * 0.5 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
 				Changetxt = Component.translatable("translation.oneiricconcept.shuhu").getString();
-				for (Entity entityiterator : world.getEntities(entity, new AABB((sx + range), (sy + range), (sz + range), (sx - range), (sy - range), (sz - range)))) {
-					if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.FRIENDSHIP_MODE) && entityiterator instanceof Player || entity == (entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)
-							|| entityiterator instanceof Monster) {
-						entityiterator.hurt(ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), (float) swordEnchant);
-						DelayedDamageProcedure.execute(world, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), entityiterator,
-								(entity instanceof LivingEntity _livingEntity20 && _livingEntity20.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity20.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
-										* (0.168 + swordEnchant * 0.052)
-										+ (entity instanceof LivingEntity _livingEntity21 && _livingEntity21.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity21.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)
-												* (0.418 + swordEnchant * 0.132),
-								40);
+				{
+					final Vec3 _center = new Vec3(sx, sy, sz);
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(range / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+						if (IsEntityDamageProcedure.execute(world, entity, entityiterator)) {
+							entityiterator.hurt(ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), (float) swordEnchant);
+							DelayedDamageProcedure.execute(world, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), entityiterator,
+									(entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity15.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
+											* (0.168 + swordEnchant * 0.052)
+											+ (entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity16.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)
+													* (0.418 + swordEnchant * 0.132),
+									40);
+						}
 					}
 				}
 				ParticleSweepProcedure.execute(world, sx, sy, sz, 20, 5, range * 2);
@@ -106,9 +110,9 @@ public class EntityHurtProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(Changetxt), true);
 		}
-		if (hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged")) {
+		if ((BuiltInRegistries.ITEM.getKey(hitItem.getItem()).toString()).equals("oneiricconcept:stardust_baseballer") && hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged_R")) {
 			if (event instanceof LivingIncomingDamageEvent _hurt) {
-				_hurt.setAmount((float) (amount * (3 + hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") * 0.75)));
+				_hurt.setAmount((float) (amount * (3 + Refinement * 0.75)));
 			}
 			{
 				final String _tagName = "textures";
@@ -116,7 +120,7 @@ public class EntityHurtProcedure {
 				CustomData.update(DataComponents.CUSTOM_DATA, hitItem, tag -> tag.putDouble(_tagName, _tagValue));
 			}
 			{
-				final String _tagName = "Charged";
+				final String _tagName = "Charged_R";
 				final boolean _tagValue = false;
 				CustomData.update(DataComponents.CUSTOM_DATA, hitItem, tag -> tag.putBoolean(_tagName, _tagValue));
 			}
