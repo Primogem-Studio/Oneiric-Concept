@@ -106,12 +106,17 @@ public class EntityHurtProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal(Changetxt), true);
 		}
-		if (hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("FarewellHit")) {
+		if (hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged")) {
 			if (event instanceof LivingIncomingDamageEvent _hurt) {
 				_hurt.setAmount((float) (amount * (3 + hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian") * 0.75)));
 			}
 			{
-				final String _tagName = "FarewellHit";
+				final String _tagName = "textures";
+				final double _tagValue = 0;
+				CustomData.update(DataComponents.CUSTOM_DATA, hitItem, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "Charged";
 				final boolean _tagValue = false;
 				CustomData.update(DataComponents.CUSTOM_DATA, hitItem, tag -> tag.putBoolean(_tagName, _tagValue));
 			}

@@ -11751,24 +11751,7 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/EntityHurtProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/process"
     },
@@ -13995,9 +13978,39 @@
       "locked_code": false,
       "registry_name": "stardustbaseballer_text",
       "metadata": {
-        "return_type": "string",
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/PgcCopyDecoration/PER"
+    },
+    {
+      "name": "StardustBaseballer",
+      "type": "item",
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "stardust_baseballer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer.json",
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_0.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/StardustBaseballerItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_1.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "IsCharged",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_charged",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsChargedProcedure.java"
         ],
         "dependencies": [
           {
@@ -14006,21 +14019,145 @@
           }
         ]
       },
-      "path": "~/PgcCopyDecoration/PER"
+      "path": "~/process"
     },
     {
-      "name": "StardustBaseballer",
-      "type": "item",
+      "name": "GetDoubleNBTTag",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "stardust_baseballer",
+      "registry_name": "get_double_nbt_tag",
       "metadata": {
+        "return_type": "number",
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/StardustBaseballerItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetDoubleNBTTagProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tagname",
+            "type": "string"
+          }
         ]
       },
-      "path": "~/item"
+      "path": "~/process"
+    },
+    {
+      "name": "Weaponclick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weaponclick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WeaponclickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "IsLeft",
+            "type": "logic"
+          },
+          {
+            "name": "cooling",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BlowoutFarewellHit",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blowout_farewell_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BlowoutFarewellHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "IsEntityDamage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_entity_damage",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsEntityDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "target",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -14600,7 +14737,6 @@
       "CUSTOM:B2elobogSausage"
     ],
     "ITEMS:minecraft:enchantable/durability": [
-      "~CUSTOM:StardustBaseballer",
       "~CUSTOM:MoraBow",
       "~CUSTOM:DivineArrowEmbers",
       "~CUSTOM:Heartofthevastsea",
@@ -15293,7 +15429,7 @@
       "block.oneiricconcept.memoria": "忆质",
       "item.oneiricconcept.energy_drink_sugar_free": "能量饮料（无糖）",
       "item.oneiricconcept.heartoftheskysea": "空洋之心",
-      "item.oneiricconcept.stardust_baseballer": "Stardust Baseballer",
+      "item.oneiricconcept.stardust_baseballer": "星尘球棒",
       "enchantment.oneiricconcept.sharp_hook": "锐钩",
       "item.minecraft.potion.effect.hunger_potion": "饥饿药水",
       "advancements.fall_king.title": "耐摔王",

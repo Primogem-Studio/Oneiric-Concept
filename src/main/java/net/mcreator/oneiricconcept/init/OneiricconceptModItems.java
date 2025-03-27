@@ -44,6 +44,7 @@ import net.mcreator.oneiricconcept.item.SustenanceanchoritemItem;
 import net.mcreator.oneiricconcept.item.SurpriseboxforgoodorbadItem;
 import net.mcreator.oneiricconcept.item.SunStartCanItem;
 import net.mcreator.oneiricconcept.item.StuffingItem;
+import net.mcreator.oneiricconcept.item.StardustBaseballerItem;
 import net.mcreator.oneiricconcept.item.SolidWaterItem;
 import net.mcreator.oneiricconcept.item.SmokeSausageItem;
 import net.mcreator.oneiricconcept.item.SmallHertaCoreItem;
@@ -343,6 +344,7 @@ public class OneiricconceptModItems {
 				ItemProperties.register(HEARTOFTHEVASTSEA.get(), ResourceLocation.parse("oneiricconcept:heartofthevastsea_itemmode"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) VastmodeProcedure.execute(itemStackToRender));
 				ItemProperties.register(MORA_BOW.get(), ResourceLocation.parse("oneiricconcept:mora_bow_pull"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) BowPullProcedure.execute(entity, itemStackToRender));
 				ItemProperties.register(ADEPTUSTOOL.get(), ResourceLocation.parse("oneiricconcept:adeptustool_test"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
+				ItemProperties.register(STARDUST_BASEBALLER.get(), ResourceLocation.parse("oneiricconcept:stardust_baseballer_textures"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TexturesProcedure.execute(itemStackToRender));
 			});
 		}
 	}

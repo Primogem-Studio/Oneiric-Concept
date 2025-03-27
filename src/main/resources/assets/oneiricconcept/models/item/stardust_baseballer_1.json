@@ -1,0 +1,7 @@
+{
+  "parent": "oneiricconcept:custom/stardust_baseballer_charged",
+  "textures": {
+    "2": "oneiricconcept:block/stardust_baseballer",
+    "particle": "oneiricconcept:item/stardust_baseballer"
+  }
+}

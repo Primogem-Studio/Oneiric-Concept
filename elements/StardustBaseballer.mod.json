@@ -3,10 +3,47 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "shizuoyuanshikuai",
+    "texture": "stardust_baseballer",
     "customModelName": "Normal",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "textures": {
+        "name": "Textures"
+      }
+    },
+    "states": [
+      {
+        "renderType": 1,
+        "texture": "stardust_baseballer",
+        "customModelName": "stardust_baseballer:default",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 1,
+        "texture": "stardust_baseballer",
+        "customModelName": "stardust_baseballer_charged:default",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:textures",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      }
+    ],
     "name": "Stardust Baseballer",
     "rarity": "EPIC",
     "creativeTabs": [
@@ -18,7 +55,7 @@
     "enchantability": 22,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 1600,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
@@ -27,16 +64,20 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
-    "damageVsEntity": 15.0,
+    "damageVsEntity": 13.0,
     "specialInformation": {
       "fixedValue": [],
       "name": "StardustbaseballerText"
     },
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": false,
+      "name": "IsCharged"
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "WeaponRightclick"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
