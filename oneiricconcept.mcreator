@@ -13989,20 +13989,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "StardustbaseballerText",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stardustbaseballer_text",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/PgcCopyDecoration/PER"
-    },
-    {
       "name": "StardustBaseballer",
       "type": "item",
       "compiles": true,
@@ -14253,6 +14239,26 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "StardustbaseballerText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stardustbaseballer_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/PgcCopyDecoration/PER"
     }
   ],
   "variable_elements": [
@@ -14325,10 +14331,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14337,6 +14339,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15107,6 +15113,7 @@
       "item.oneiricconcept.s_2moke_sausage": "SmokeSausage",
       "translation.oneiricconcept.sustenance": "§aEmergency treatment has been carried out|§r|",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "Sweet Sesame Filling Yuan Xiao",
+      "translation.oneiricconcept.leftclick": " Left click effect",
       "effect.oneiricconcept.oc_hunger.description": "Continuously set the hunger value to 19 points. Hunger is the best seasoning.",
       "block.oneiricconcept.elements_crystal_ore": "Elements Crystal Ore",
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
@@ -15145,10 +15152,17 @@
       "block.oneiricconcept.floating_cloud": "Floating cloud",
       "item.oneiricconcept.propaganda_army": "Propaganda Army",
       "block.oneiricconcept.pyro_metal": "Agnidus metal ingot",
+      "translation.oneiricconcept.stardust_baseballer_7": "",
+      "translation.oneiricconcept.stardust_baseballer_6": "",
       "translation.oneiricconcept.effectlevel": "§ePotion Effect Level：§a",
       "translation.oneiricconcept.patchouli_name_pgc": "primogemcraft wiki",
+      "translation.oneiricconcept.stardust_baseballer_5": "",
       "block.oneiricconcept.dendrosealingwax": "Dendro sealing wax",
+      "translation.oneiricconcept.stardust_baseballer_4": "",
+      "translation.oneiricconcept.stardust_baseballer_3": "",
+      "translation.oneiricconcept.stardust_baseballer_2": "",
       "block.oneiricconcept.banana_mushroom.description_5": "幸福美满没烦恼",
+      "translation.oneiricconcept.stardust_baseballer_1": "",
       "block.oneiricconcept.camerapink": "Camera",
       "item.oneiricconcept.honkai_shard.description_0": "§7A very rare aggregate of Honkai Energy.",
       "item.oneiricconcept.heartofthefish": "Heart of the fish",
@@ -15190,6 +15204,7 @@
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
       "item.oneiricconcept.waffle.description_0": "§7To the legendary pancake fairy",
       "death.attack.skip": "The %1$s\u0027s life has been skipped",
+      "translation.oneiricconcept.rightclick": "Right click effect",
       "item.oneiricconcept.b_2elobog_sausage": "German style cumin smoked sausage",
       "item.oneiricconcept.s_2tuffing.description_0": "夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§cThe lure level has reached the upper limit",
@@ -15269,6 +15284,7 @@
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
       "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
       "item.oneiricconcept.sustenanceanchoritem": "Sustenanceanchor",
+      "translation.oneiricconcept.passive": "Passive effect",
       "entity.oneiricconcept.crystal_turtle": "Crystal Turtle",
       "item.oneiricconcept.condensed_memoria_piece": "Condensed Memoria Piece",
       "block.oneiricconcept.camera.description_0": "§7The meaning of \u0027相机 is to see through the key points",
@@ -15278,6 +15294,7 @@
       "block.oneiricconcept.fullmoon_metal": "full moon ingot",
       "item.oneiricconcept.aureliae_sword": "Aureliae Sword",
       "block.oneiricconcept.electrosealingwax": "Electro sealing wax",
+      "translation.oneiricconcept.second": "",
       "item.oneiricconcept.aureliae_pickaxe": "Aureliae Pickaxe",
       "gamerule.ocfly": "ocfly",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§dOne of the cores of Herrscher of Legion, which can be used to create Divine Keys",
@@ -15471,6 +15488,7 @@
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "translation.oneiricconcept.sustenance": "§a已进行应急治疗|§r|",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "芝麻馅元宵",
+      "translation.oneiricconcept.leftclick": "左键效果",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
       "block.oneiricconcept.elements_crystal_ore": "元素晶体矿石",
       "block.oneiricconcept.sweetflower": "甜甜花",
@@ -15509,10 +15527,17 @@
       "block.oneiricconcept.floating_cloud": "浮云",
       "item.oneiricconcept.propaganda_army": "水军",
       "block.oneiricconcept.pyro_metal": "战争金属锭",
+      "translation.oneiricconcept.stardust_baseballer_7": "范围内的目标造成60%的伤害，冷却",
+      "translation.oneiricconcept.stardust_baseballer_6": "使下次攻击对目标周围直径",
       "translation.oneiricconcept.effectlevel": "§e药水效果等级：§a",
       "translation.oneiricconcept.patchouli_name_pgc": "原石工艺百科",
+      "translation.oneiricconcept.stardust_baseballer_5": "%，冷却",
       "block.oneiricconcept.dendrosealingwax": "草之印",
+      "translation.oneiricconcept.stardust_baseballer_4": "使下次攻击造成的伤害提高",
+      "translation.oneiricconcept.stardust_baseballer_3": "的概率攻击其它单位 ",
+      "translation.oneiricconcept.stardust_baseballer_2": "的概率使敌人获得错误目标DEBUFF，有",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
+      "translation.oneiricconcept.stardust_baseballer_1": "在攻击时有",
       "block.oneiricconcept.camerapink": "照相机",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "item.oneiricconcept.heartofthefish": "鱼心",
@@ -15554,6 +15579,7 @@
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
       "item.oneiricconcept.waffle.description_0": "§7敬传说中的画饼仙人",
       "death.attack.skip": "%1$s跳过了人生",
+      "translation.oneiricconcept.rightclick": "右键效果",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",
@@ -15633,6 +15659,7 @@
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
       "block.oneiricconcept.hydro_metal": "正义金属锭",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
+      "translation.oneiricconcept.passive": "被动效果",
       "entity.oneiricconcept.crystal_turtle": "水晶龟",
       "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
@@ -15642,6 +15669,7 @@
       "block.oneiricconcept.fullmoon_metal": "满月金属锭",
       "item.oneiricconcept.aureliae_sword": "铄金剑",
       "block.oneiricconcept.electrosealingwax": "雷之印",
+      "translation.oneiricconcept.second": "秒",
       "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
       "gamerule.ocfly": "燃素翼飞行",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
@@ -15835,6 +15863,7 @@
       "item.oneiricconcept.s_2moke_sausage": "熏肠",
       "translation.oneiricconcept.sustenance": "§a已进行应急治疗|§r|",
       "item.oneiricconcept.sweet_sesame_filling_yuan_xiao": "芝麻馅元宵",
+      "translation.oneiricconcept.leftclick": "",
       "effect.oneiricconcept.oc_hunger.description": "持续将饥饿值设为19点。饥饿是最好的调味料。",
       "block.oneiricconcept.elements_crystal_ore": "元素晶体矿石",
       "block.oneiricconcept.sweetflower": "甜甜花",
@@ -15873,10 +15902,18 @@
       "block.oneiricconcept.floating_cloud": "浮云",
       "item.oneiricconcept.propaganda_army": "水军",
       "block.oneiricconcept.pyro_metal": "Agnidus metal ingot",
+      "translation.oneiricconcept.stardust_baseballer_8": "",
+      "translation.oneiricconcept.stardust_baseballer_7": "",
       "translation.oneiricconcept.effectlevel": "§e药水效果等级：§a",
+      "translation.oneiricconcept.stardust_baseballer_6": "",
       "translation.oneiricconcept.patchouli_name_pgc": "原石工艺百科",
+      "translation.oneiricconcept.stardust_baseballer_5": "",
       "block.oneiricconcept.dendrosealingwax": "草之印",
+      "translation.oneiricconcept.stardust_baseballer_4": "",
+      "translation.oneiricconcept.stardust_baseballer_3": "",
+      "translation.oneiricconcept.stardust_baseballer_2": "",
       "block.oneiricconcept.banana_mushroom.description_5": "§7幸福美满没烦恼",
+      "translation.oneiricconcept.stardust_baseballer_1": "",
       "block.oneiricconcept.camerapink": "照相机",
       "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
       "item.oneiricconcept.heartofthefish": "鱼心",
@@ -15918,6 +15955,7 @@
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
       "item.oneiricconcept.waffle.description_0": "§7敬传说中的画饼仙人",
       "death.attack.skip": "",
+      "translation.oneiricconcept.rightclick": "",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
       "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",
@@ -15997,6 +16035,7 @@
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
       "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
       "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
+      "translation.oneiricconcept.passive": "",
       "entity.oneiricconcept.crystal_turtle": "水晶龟",
       "item.oneiricconcept.condensed_memoria_piece": "浓缩忆质块",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
@@ -16006,6 +16045,7 @@
       "block.oneiricconcept.fullmoon_metal": "full moon ingot",
       "item.oneiricconcept.aureliae_sword": "铄金剑",
       "block.oneiricconcept.electrosealingwax": "雷之印",
+      "translation.oneiricconcept.second": "",
       "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
       "gamerule.ocfly": "燃素翼飞行",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
