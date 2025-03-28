@@ -7,19 +7,24 @@ import net.minecraft.core.component.DataComponents;
 
 public class StardustbaseballerTextProcedure {
 	public static String execute(ItemStack itemstack) {
-		double a = 0;
+		double Refinement = 0;
 		String itemname = "";
 		String tran = "";
-		a = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+		Refinement = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
 		tran = "translation.oneiricconcept.";
-		itemname = "translation.oneiricconcept.";
+		itemname = "stardust_baseballer";
 		itemname = tran + "" + itemname + "_";
-		return PgcwuqiProcedure.execute(itemstack, (("\u00A76\u00A7l\u00A7n" + Component.translatable((tran + "passive")).getString() + "\n") + ""
-				+ ("\u00A7e" + (itemname + "1") + "\u00A7b" + new java.text.DecimalFormat("##.##").format(a) + "\u00A7e" + (itemname + "2") + "\u00A7b" + new java.text.DecimalFormat("##.##").format(a) + "\n" + "\u00A7e" + (itemname + "3")))
-				+ ""
-				+ (("\u00A76\u00A7l\u00A7n" + Component.translatable((tran + "rightclick")).getString() + "\n") + ""
-						+ ("\u00A7e" + (itemname + "4") + "\u00A7b" + new java.text.DecimalFormat("##.##").format(a) + "\u00A7e" + (itemname + "5") + "\u00A7b" + new java.text.DecimalFormat("##.##").format(a) + "\n" + "\u00A7e" + (tran + "second")))
-				+ (("\u00A76\u00A7l\u00A7n" + Component.translatable((tran + "leftclick")).getString() + "\n") + "" + ("\u00A7e" + (itemname + "6") + "\u00A7b" + new java.text.DecimalFormat("##.##").format(a) + "\u00A7e" + (itemname + "7")
-						+ "\u00A7b" + new java.text.DecimalFormat("##.##").format(a) + "\n" + "\u00A7e" + (tran + "second"))));
+		return PgcwuqiProcedure.execute(itemstack,
+				(("\u00A76\u00A7l\u00A7n" + Component.translatable((tran + "passive")).getString() + "\n") + ""
+						+ ("\u00A7e" + Component.translatable((itemname + "1")).getString() + "\u00A7b" + new java.text.DecimalFormat("##.##").format(4 + Refinement * 1) + "\u00A7e" + Component.translatable((itemname + "2")).getString() + "\u00A7b"
+								+ new java.text.DecimalFormat("##.##").format(16 + Refinement * 4) + "\u00A7e" + Component.translatable((itemname + "3")).getString()))
+						+ "\n"
+						+ (("\u00A76\u00A7l\u00A7n" + Component.translatable((tran + "rightclick")).getString() + "\n") + ""
+								+ ("\u00A7e" + Component.translatable((itemname + "4")).getString() + "\u00A7b" + new java.text.DecimalFormat("##.##").format(300 + Refinement * 75) + "\u00A7e" + Component.translatable((itemname + "5")).getString()
+										+ "\u00A7b" + new java.text.DecimalFormat("##.##").format(600 * (1 - 0.1 * Refinement)) + "\u00A7e" + Component.translatable((tran + "second")).getString()))
+						+ "\n"
+						+ (("\u00A76\u00A7l\u00A7n" + Component.translatable((tran + "leftclick")).getString() + "\n") + ""
+								+ ("\u00A7e" + Component.translatable((itemname + "6")).getString() + "\u00A7b" + new java.text.DecimalFormat("##.##").format(4 + Refinement) + "\u00A7e" + Component.translatable((itemname + "7")).getString()
+										+ "\u00A7b" + new java.text.DecimalFormat("##.##").format(100 * (1 - 0.1 * Refinement)) + "\u00A7e" + Component.translatable((tran + "second")).getString())));
 	}
 }
