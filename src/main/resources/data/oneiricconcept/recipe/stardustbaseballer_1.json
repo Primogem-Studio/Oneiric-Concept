@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " a ",
+    "b  "
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:conqueror_s_will"
+    },
+    "b": {
+      "item": "oneiricconcept:hiltwood_from_the_arbor"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:stardust_baseballer",
+    "count": 1
+  }
+}

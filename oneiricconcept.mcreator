@@ -14259,6 +14259,19 @@
         ]
       },
       "path": "~/PgcCopyDecoration/PER"
+    },
+    {
+      "name": "Stardustbaseballer1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stardustbaseballer_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/stardustbaseballer_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -16333,7 +16346,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.34",
+    "version": "1.9.4",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",
