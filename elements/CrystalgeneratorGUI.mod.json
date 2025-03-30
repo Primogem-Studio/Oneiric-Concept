@@ -156,13 +156,13 @@
         "type": "sprite",
         "data": {
           "sprite": "energybar.png",
-          "spritesCount": 16,
+          "spritesCount": 17,
           "spriteIndex": {
             "fixedValue": 0.0,
             "name": "Energybar"
           },
-          "x": 276,
-          "y": 107,
+          "x": 287,
+          "y": 52,
           "locked": false
         }
       }

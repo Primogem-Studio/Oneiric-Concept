@@ -48,7 +48,7 @@ public class CrystalgeneratorGUIScreen extends AbstractContainerScreen<Crystalge
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/energybar.png"), this.leftPos + 150, this.topPos + 70, 0, Mth.clamp((int) EnergybarProcedure.execute(world, x, y, z) * 1, 0, 15), 2, 1, 2, 16);
+		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/energybar.png"), this.leftPos + 161, this.topPos + 15, Mth.clamp((int) EnergybarProcedure.execute(world, x, y, z) * 8, 0, 128), 0, 8, 64, 136, 64);
 
 		RenderSystem.disableBlend();
 	}

@@ -5,16 +5,14 @@ import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class CrystalgeneratorpowerProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itm, double power) {
+	public static void execute(LevelAccessor world, double x, double y, double z, double power) {
 		new Object() {
 			void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
-				renderItem(itm, x, y, z, 0, 0, 0, 1, true, true);
 				if (world instanceof ILevelExtension _ext) {
 					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
 					if (_entityStorage != null)

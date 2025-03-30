@@ -43,7 +43,7 @@ public class CrystalgeneratoritemProcedure {
 		} else if (crystal.is(ItemTags.create(ResourceLocation.parse("minecraft:logs")))) {
 			crystal_power = 1600;
 		}
-		CrystalgeneratorpowerProcedure.execute(world, x, y, z, crystal, crystal_power);
+		CrystalgeneratorpowerProcedure.execute(world, x, y, z, crystal_power);
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
