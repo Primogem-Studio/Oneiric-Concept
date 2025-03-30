@@ -296,6 +296,34 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "oneiricconcept:dreamy_cone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "oneiricconcept:tree_barkof_erudition",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 71
+              }
+            }
+          ]
         }
       ]
     }
