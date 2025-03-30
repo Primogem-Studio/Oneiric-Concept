@@ -13,6 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
@@ -61,6 +62,8 @@ public class DivineArrowProcedure {
 								_entityToSpawn.shoot(0, (-1), 0, 2, 0);
 								projectileLevel.addFreshEntity(_entityToSpawn);
 							}
+							OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux + 1;
+							OneiricconceptModVariables.MapVariables.get(world).syncData(world);
 							if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 								if (!world.isClientSide() && world.getServer() != null)
 									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((Calendar.getInstance().getTime().toString() + "\u989D\u5916")), false);
@@ -74,6 +77,8 @@ public class DivineArrowProcedure {
 			sx = sx + 1;
 		}
 		if (found) {
+			OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux + 1;
+			OneiricconceptModVariables.MapVariables.get(world).syncData(world);
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = initArrowProjectile(new SkyShatteringLuxArrowEntity(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), null, 5,
 						true, false, false, AbstractArrow.Pickup.DISALLOWED);

@@ -2,27 +2,23 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
-import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.functions.CommandFunction;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 import java.util.Optional;
-import java.util.Comparator;
 
 public class ShatteringCutAatreeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -49,22 +45,12 @@ public class ShatteringCutAatreeProcedure {
 			sx = x + Mth.nextInt(RandomSource.create(), -7, 7);
 			sz = z + Mth.nextInt(RandomSource.create(), -7, 7);
 		}
-		{
-			final Vec3 _center = new Vec3(x, 250, z);
-			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(60 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-				if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("oneiricconcept:divinearrow")))) {
-					ent = ent + 1;
-				}
-			}
-		}
-		{
-			final Vec3 _center = new Vec3(x, (y + 10), z);
-			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-				entityiterator.push((Mth.nextDouble(RandomSource.create(), -3, 3)), 3, (Mth.nextDouble(RandomSource.create(), -3, 3)));
-			}
-		}
-		if (ent < 60) {
+		OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux - 1;
+		OneiricconceptModVariables.MapVariables.get(world).syncData(world);
+		if (OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux < 60) {
 			DivineArrowProcedure.execute(world, x, y, z);
+			OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux + 1;
+			OneiricconceptModVariables.MapVariables.get(world).syncData(world);
 		}
 	}
 }
