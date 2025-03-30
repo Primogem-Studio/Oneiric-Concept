@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/crystal_generator",
+  "textures": {
+    "all": "oneiricconcept:block/crystalgenerator",
+    "particle": "oneiricconcept:block/crystalgenerator",
+    "0": "oneiricconcept:block/crystalgenerator"
+  },
+  "render_type": "solid"
+}

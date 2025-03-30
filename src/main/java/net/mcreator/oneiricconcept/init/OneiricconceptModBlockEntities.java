@@ -22,6 +22,7 @@ import net.mcreator.oneiricconcept.block.entity.PrimogemstormglassBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PhlogistontankBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.Geooo1BlockEntity;
+import net.mcreator.oneiricconcept.block.entity.CrystalgeneratorBlockEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -34,6 +35,7 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> GEO_METAL = register("geo_metal", OneiricconceptModBlocks.GEO_METAL, Geooo1BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PHLOGISTONTANK = register("phlogistontank", OneiricconceptModBlocks.PHLOGISTONTANK, PhlogistontankBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PRIMOGEMSTORMGLASS = register("primogemstormglass", OneiricconceptModBlocks.PRIMOGEMSTORMGLASS, PrimogemstormglassBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> CRYSTALGENERATOR = register("crystalgenerator", OneiricconceptModBlocks.CRYSTALGENERATOR, CrystalgeneratorBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -51,5 +53,7 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PHLOGISTONTANK.get(), (blockEntity, side) -> ((PhlogistontankBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, PHLOGISTONTANK.get(), (blockEntity, side) -> ((PhlogistontankBlockEntity) blockEntity).getFluidTank());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PRIMOGEMSTORMGLASS.get(), (blockEntity, side) -> ((PrimogemstormglassBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CRYSTALGENERATOR.get(), (blockEntity, side) -> ((CrystalgeneratorBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, CRYSTALGENERATOR.get(), (blockEntity, side) -> ((CrystalgeneratorBlockEntity) blockEntity).getEnergyStorage());
 	}
 }

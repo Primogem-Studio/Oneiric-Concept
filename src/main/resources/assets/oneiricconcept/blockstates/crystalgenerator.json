@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/crystalgenerator"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/crystalgenerator",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/crystalgenerator",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/crystalgenerator",
+      "y": 270
+    }
+  }
+}

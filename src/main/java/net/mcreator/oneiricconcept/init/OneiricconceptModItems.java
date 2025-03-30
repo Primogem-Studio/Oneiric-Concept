@@ -321,6 +321,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> EXHAUSTEDPRIMOGEM = block(OneiricconceptModBlocks.EXHAUSTEDPRIMOGEM);
 	public static final DeferredItem<Item> PRIMOGEMSTORMGLASS = block(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS);
 	public static final DeferredItem<Item> STARDUST_BASEBALLER = REGISTRY.register("stardust_baseballer", StardustBaseballerItem::new);
+	public static final DeferredItem<Item> CRYSTALGENERATOR = block(OneiricconceptModBlocks.CRYSTALGENERATOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

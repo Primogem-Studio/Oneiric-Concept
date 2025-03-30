@@ -14315,6 +14315,172 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Crystalgenerator",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalgenerator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/CrystalgeneratorBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/CrystalgeneratorBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/crystalgenerator.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/crystalgenerator.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/crystalgenerator.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crystalgenerator.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "CrystalgeneratorGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalgenerator_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/CrystalgeneratorGUIScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/CrystalgeneratorGUIMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/network/CrystalgeneratorGUISlotMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Energybar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energybar",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EnergybarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "EnergyTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_tip",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EnergyTipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Crystalgeneratorpower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalgeneratorpower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CrystalgeneratorpowerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itm",
+            "type": "itemstack"
+          },
+          {
+            "name": "power",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Crystalgeneratoritem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystalgeneratoritem",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CrystalgeneratoritemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -14393,10 +14559,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14405,6 +14567,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -14853,6 +15019,17 @@
       "CUSTOM:MoraMagazine",
       "CUSTOM:MoraMagazineE1"
     ],
+    "ITEMS:c:crystals": [
+      "CUSTOM:Exhaustedprimogem",
+      "Items.DIAMOND",
+      "Items.EMERALD",
+      "Items.QUARTZ",
+      "Items.PRISMARINE_SHARD",
+      "Items.PRISMARINE_CRYSTALS",
+      "Items.AMETHYST_SHARD",
+      "EXTERNAL:primogemcraft:jlza",
+      "EXTERNAL:primogemcraft:zuishengsuixie"
+    ],
     "ITEMS:mod:magazine3": [
       "CUSTOM:MoraMagazineN3",
       "CUSTOM:MoraMagazineE3"
@@ -15027,7 +15204,8 @@
       "ThiefSInstinct",
       "SkipTool",
       "Exhaustedprimogem",
-      "StardustBaseballer"
+      "StardustBaseballer",
+      "Crystalgenerator"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -15150,6 +15328,7 @@
       "gamerule.ocinitialload.description": "Set game rules as default when entering the world",
       "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "Ice-Fresh Raw Frostweave Salmon Slices",
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
+      "block.oneiricconcept.crystalgenerator": "Crystalgenerator",
       "block.oneiricconcept.camerapink.description_0": "§7The meaning of \u0027相机 is to see through the key points",
       "item.oneiricconcept.mora_sausage": "Mora Sausage",
       "block.oneiricconcept.the_another_world_sapling": "The Another World Sapling",
@@ -15525,6 +15704,7 @@
       "gamerule.ocinitialload.description": "进入世界时将游戏规则设为默认",
       "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "冰鲜霜纹鲑生鱼片",
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
+      "block.oneiricconcept.crystalgenerator": "Crystalgenerator",
       "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
       "block.oneiricconcept.the_another_world_sapling": "异世界树苗",
@@ -15900,6 +16080,7 @@
       "gamerule.ocinitialload.description": "进入世界时将游戏规则设为默认",
       "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "冰鲜霜纹鲑生鱼片",
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
+      "block.oneiricconcept.crystalgenerator": "Crystalgenerator",
       "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
       "block.oneiricconcept.the_another_world_sapling": "异世界树苗",
