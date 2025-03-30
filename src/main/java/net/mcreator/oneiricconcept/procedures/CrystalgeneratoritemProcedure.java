@@ -19,6 +19,7 @@ public class CrystalgeneratoritemProcedure {
 		ItemStack crystal = ItemStack.EMPTY;
 		double crystal_power = 0;
 		String pgc = "";
+		boolean iscrystals = false;
 		pgc = "primogemcraft:";
 		for (int index0 = 0; index0 < 7; index0++) {
 			crystal = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy());
@@ -42,8 +43,12 @@ public class CrystalgeneratoritemProcedure {
 			crystal_power = 1600000;
 		} else if (crystal.is(ItemTags.create(ResourceLocation.parse("minecraft:logs")))) {
 			crystal_power = 1600;
+		} else {
+			iscrystals = true;
 		}
-		CrystalgeneratorpowerProcedure.execute(world, x, y, z, crystal_power);
+		if (!iscrystals) {
+			CrystalgeneratorpowerProcedure.execute(world, x, y, z, crystal_power);
+		}
 	}
 
 	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {

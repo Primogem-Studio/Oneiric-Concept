@@ -26,6 +26,8 @@ public class CrystalgeneratorpowerProcedure {
 				});
 			}
 		}.timedLoop(0, 200, 1);
-		CrystalgeneratoritemProcedure.execute(world, x, y, z);
+		OneiricconceptMod.queueServerWork(200, () -> {
+			CrystalgeneratoritemProcedure.execute(world, x, y, z);
+		});
 	}
 }
