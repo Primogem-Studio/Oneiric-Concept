@@ -14481,14 +14481,20 @@
     {
       "name": "CrystalgeneratorList",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "crystalgenerator_list",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/CrystalgeneratorListProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number"
       },
       "path": "~/process"
     }
