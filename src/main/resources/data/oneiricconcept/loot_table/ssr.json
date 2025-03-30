@@ -100,27 +100,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "oneiricconcept:stardust_baseballer",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 42,
-                "max": 42
-              }
-            }
-          ]
         }
       ]
     }

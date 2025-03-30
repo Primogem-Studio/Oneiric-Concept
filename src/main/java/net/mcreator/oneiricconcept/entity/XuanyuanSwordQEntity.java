@@ -23,6 +23,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.oneiricconcept.procedures.XuanyuanSwordhitProcedure;
 import net.mcreator.oneiricconcept.procedures.XuanyuanBoomProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
@@ -87,13 +88,13 @@ public class XuanyuanSwordQEntity extends AbstractArrow implements ItemSupplier 
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		XuanyuanBoomProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		XuanyuanSwordhitProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this, this.getOwner());
 	}
 
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		XuanyuanBoomProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this);
+		XuanyuanBoomProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner(), this);
 	}
 
 	@Override

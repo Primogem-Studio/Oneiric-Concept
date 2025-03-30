@@ -108,20 +108,6 @@
             "affectedByFortune": false,
             "explosionDecay": false,
             "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:StardustBaseballer"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 42,
-            "maxEnchantmentLevel": 42,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
           }
         ]
       }

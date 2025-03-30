@@ -21,7 +21,7 @@
       "name": "XuanyuanBoom"
     },
     "onHitsEntity": {
-      "name": "XuanyuanBoom"
+      "name": "XuanyuanSwordhit"
     }
   }
 }
