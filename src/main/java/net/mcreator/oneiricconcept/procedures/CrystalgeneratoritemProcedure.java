@@ -8,10 +8,12 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class CrystalgeneratoritemProcedure {
@@ -23,6 +25,10 @@ public class CrystalgeneratoritemProcedure {
 		pgc = "primogemcraft:";
 		for (int index0 = 0; index0 < 7; index0++) {
 			crystal = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy());
+			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u7B2C" + index0 + "\u683C\u7684\u7269\u54C1\uFF1A" + crystal)), false);
+			}
 			if (!(crystal == ItemStack.EMPTY)) {
 				break;
 			}
@@ -41,12 +47,16 @@ public class CrystalgeneratoritemProcedure {
 			crystal_power = 160000;
 		} else if (OneiricconceptModItems.HONKAI_SHARD.get() == crystal.getItem() || BuiltInRegistries.ITEM.get(ResourceLocation.parse(((pgc + "zuishengzijing")).toLowerCase(java.util.Locale.ENGLISH))) == crystal.getItem()) {
 			crystal_power = 1600000;
-		} else if (crystal.is(ItemTags.create(ResourceLocation.parse("minecraft:logs")))) {
+		} else if (crystal.is(ItemTags.create(ResourceLocation.parse("c::crystals")))) {
 			crystal_power = 1600;
 		} else {
 			iscrystals = true;
 		}
 		if (!iscrystals) {
+			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5411\u53D1\u7535\u6D41\u7A0B\u4F20\u8F93\u7535\u529B\uFF1A" + crystal_power + "\u7269\u54C1\uFF1A" + crystal)), false);
+			}
 			CrystalgeneratorpowerProcedure.execute(world, x, y, z, crystal_power);
 		}
 	}

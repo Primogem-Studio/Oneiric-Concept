@@ -121,8 +121,14 @@
         }
       },
       {
-        "type": "outputslot",
+        "type": "inputslot",
         "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 5,
           "disablePickup": {
             "fixedValue": false
@@ -137,8 +143,14 @@
         }
       },
       {
-        "type": "outputslot",
+        "type": "inputslot",
         "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 6,
           "disablePickup": {
             "fixedValue": false

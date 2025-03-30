@@ -149,11 +149,6 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 				super.setChanged();
 				slotChanged(5, 0, 0);
 			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
-			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 116, 62) {
 			private final int slot = 6;
@@ -164,11 +159,6 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(6, 0, 0);
-			}
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return false;
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
