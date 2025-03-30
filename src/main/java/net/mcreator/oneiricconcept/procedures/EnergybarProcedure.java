@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class EnergybarProcedure {
 	public static double execute(LevelAccessor world, double x, double y, double z) {
-		return Math.floor(getEnergyStored(world, BlockPos.containing(x, y, z), null) / 10000);
+		return Math.floor(getEnergyStored(world, BlockPos.containing(x, y, z), null) / 10000000);
 	}
 
 	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {

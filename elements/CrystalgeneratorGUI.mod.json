@@ -17,7 +17,8 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "Iscrystals"
           },
           "id": 0,
           "disablePickup": {
@@ -39,7 +40,8 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "Iscrystals"
           },
           "id": 1,
           "disablePickup": {
@@ -61,7 +63,8 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "Iscrystals"
           },
           "id": 2,
           "disablePickup": {
@@ -83,7 +86,8 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "Iscrystals"
           },
           "id": 3,
           "disablePickup": {
@@ -105,7 +109,8 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "Iscrystals"
           },
           "id": 4,
           "disablePickup": {
@@ -127,7 +132,8 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "Iscrystals"
           },
           "id": 5,
           "disablePickup": {
@@ -149,7 +155,8 @@
             "value": ""
           },
           "disablePlacement": {
-            "fixedValue": false
+            "fixedValue": false,
+            "name": "Iscrystals"
           },
           "id": 6,
           "disablePickup": {
@@ -173,8 +180,53 @@
             "fixedValue": 0.0,
             "name": "Energybar"
           },
-          "x": 287,
-          "y": 52,
+          "x": 286,
+          "y": 51,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_energy_tip",
+          "text": {
+            "fixedValue": "",
+            "name": "EnergyTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 272,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_energy_tip1",
+          "text": {
+            "fixedValue": "",
+            "name": "EnergyTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 272,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_energy_tip2",
+          "text": {
+            "fixedValue": "",
+            "name": "EnergyTip"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 272,
+          "y": 95,
           "locked": false
         }
       }

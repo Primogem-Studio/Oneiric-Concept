@@ -14481,7 +14481,7 @@
     {
       "name": "CrystalgeneratorList",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystalgenerator_list",
       "metadata": {
@@ -14495,6 +14495,30 @@
           }
         ],
         "return_type": "number"
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Iscrystals",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iscrystals",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IscrystalsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/process"
     }
@@ -14575,10 +14599,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14587,6 +14607,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",

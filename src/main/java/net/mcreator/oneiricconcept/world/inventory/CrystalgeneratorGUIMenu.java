@@ -23,6 +23,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.IscrystalsProcedure;
 import net.mcreator.oneiricconcept.network.CrystalgeneratorGUISlotMessage;
 import net.mcreator.oneiricconcept.init.OneiricconceptModMenus;
 
@@ -94,6 +95,11 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 				super.setChanged();
 				slotChanged(0, 0, 0);
 			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !IscrystalsProcedure.execute(world, itemstack);
+			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 26, 62) {
 			private final int slot = 1;
@@ -104,6 +110,11 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(1, 0, 0);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !IscrystalsProcedure.execute(world, itemstack);
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 44, 62) {
@@ -116,6 +127,11 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 				super.setChanged();
 				slotChanged(2, 0, 0);
 			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !IscrystalsProcedure.execute(world, itemstack);
+			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 62, 62) {
 			private final int slot = 3;
@@ -126,6 +142,11 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(3, 0, 0);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !IscrystalsProcedure.execute(world, itemstack);
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 62) {
@@ -138,6 +159,11 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 				super.setChanged();
 				slotChanged(4, 0, 0);
 			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !IscrystalsProcedure.execute(world, itemstack);
+			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 98, 62) {
 			private final int slot = 5;
@@ -149,6 +175,11 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 				super.setChanged();
 				slotChanged(5, 0, 0);
 			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !IscrystalsProcedure.execute(world, itemstack);
+			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 116, 62) {
 			private final int slot = 6;
@@ -159,6 +190,11 @@ public class CrystalgeneratorGUIMenu extends AbstractContainerMenu implements Su
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(6, 0, 0);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack itemstack) {
+				return !IscrystalsProcedure.execute(world, itemstack);
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

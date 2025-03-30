@@ -20,7 +20,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -116,9 +116,9 @@
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
     "energyInitial": 0,
-    "energyCapacity": 16000000,
-    "energyMaxReceive": 200,
-    "energyMaxExtract": 1600000,
+    "energyCapacity": 160000000,
+    "energyMaxReceive": 2147483647,
+    "energyMaxExtract": 16000000,
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
