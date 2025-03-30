@@ -10814,7 +10814,7 @@
       "name": "Wildernessrod1",
       "type": "recipe",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "wildernessrod_1",
       "metadata": {
         "files": [

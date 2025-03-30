@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "primogemcraft:crafting_shaped_with_components",
   "category": "misc",
   "pattern": [
     "  a",
@@ -14,6 +14,7 @@
       "item": "minecraft:stick"
     }
   },
+  "source": "minecraft:fishing_rod",
   "result": {
     "id": "oneiricconcept:wilderness_rod",
     "count": 1
