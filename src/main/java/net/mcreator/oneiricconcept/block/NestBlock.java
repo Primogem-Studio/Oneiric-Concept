@@ -10,11 +10,15 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
@@ -22,6 +26,7 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -42,6 +47,7 @@ import io.netty.buffer.Unpooled;
 
 public class NestBlock extends Block implements EntityBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public NestBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_YELLOW).sound(SoundType.CROP).strength(1f, 10f).lightLevel(s -> (new Object() {
@@ -51,6 +57,7 @@ public class NestBlock extends Block implements EntityBlock {
 				return 0;
 			}
 		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
@@ -71,15 +78,38 @@ public class NestBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return box(3.1, 0, 3.1, 12.9, 2, 12.9);
+			return switch (state.getValue(FACING)) {
+				default -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+				case NORTH -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+				case EAST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+				case WEST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+			};
 		}
-		return box(3.1, 0, 3.1, 12.9, 2, 12.9);
+		return switch (state.getValue(FACING)) {
+			default -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+			case NORTH -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+			case EAST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+			case WEST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
+		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(BLOCKSTATE);
+		builder.add(FACING, BLOCKSTATE);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
+	}
+
+	public BlockState rotate(BlockState state, Rotation rot) {
+		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+	}
+
+	public BlockState mirror(BlockState state, Mirror mirrorIn) {
+		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 
 	@Override
