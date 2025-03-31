@@ -12357,7 +12357,8 @@
           "src/main/resources/assets/oneiricconcept/models/item/adeptustool.json",
           "src/main/resources/assets/oneiricconcept/models/item/adeptustool_0.json",
           "src/main/java/net/mcreator/oneiricconcept/item/TesttoolItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/adeptustool_1.json"
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool_2.json"
         ]
       },
       "path": "~/item"
@@ -14678,7 +14679,25 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/IsBoughProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic"
       },
       "path": "~/Feature"
     }
@@ -14759,6 +14778,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14767,10 +14790,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",

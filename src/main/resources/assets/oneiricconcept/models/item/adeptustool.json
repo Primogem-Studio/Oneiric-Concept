@@ -15,6 +15,12 @@
         "oneiricconcept:adeptustool_test": 2
       },
       "model": "oneiricconcept:item/adeptustool_1"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:adeptustool_test": 3
+      },
+      "model": "oneiricconcept:item/adeptustool_2"
     }
   ]
 }

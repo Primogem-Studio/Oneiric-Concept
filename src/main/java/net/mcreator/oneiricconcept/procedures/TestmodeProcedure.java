@@ -22,7 +22,7 @@ public class TestmodeProcedure {
 								ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
 						.getType() == HitResult.Type.BLOCK)) {
 			mode = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("textures");
-			if (2 <= mode) {
+			if (3 <= mode) {
 				mode = 0;
 			} else {
 				mode = mode + 1;
