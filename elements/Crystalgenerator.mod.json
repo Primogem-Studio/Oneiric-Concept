@@ -61,7 +61,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 120,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -108,7 +108,7 @@
     "hasInventory": true,
     "guiBoundTo": "CrystalgeneratorGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 7,
+    "inventorySize": 8,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "SetEffect"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

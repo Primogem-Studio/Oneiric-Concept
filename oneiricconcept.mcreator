@@ -14636,6 +14636,37 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "SetEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SetEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -15184,7 +15215,8 @@
       "Items.PRISMARINE_CRYSTALS",
       "Items.AMETHYST_SHARD",
       "EXTERNAL:primogemcraft:jlza",
-      "EXTERNAL:primogemcraft:zuishengsuixie"
+      "EXTERNAL:primogemcraft:zuishengsuixie",
+      "EXTERNAL:primogrmcraft:yuanshif"
     ],
     "ITEMS:mod:magazine3": [
       "CUSTOM:MoraMagazineN3",

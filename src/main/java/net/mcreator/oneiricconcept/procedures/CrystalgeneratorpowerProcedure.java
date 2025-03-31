@@ -14,6 +14,15 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class CrystalgeneratorpowerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, double power) {
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null)
+				_blockEntity.getPersistentData().putDouble("time", (world.getLevelData().getGameTime()));
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 		new Object() {
 			void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 				if (world instanceof ILevelExtension _ext) {
