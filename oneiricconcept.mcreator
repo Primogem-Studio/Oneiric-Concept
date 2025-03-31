@@ -14667,6 +14667,20 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "IsBough",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_bough",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsBoughProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [
