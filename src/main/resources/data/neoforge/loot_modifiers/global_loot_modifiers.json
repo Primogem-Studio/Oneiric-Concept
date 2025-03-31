@@ -1,4 +1,12 @@
 {
   "replace": false,
-  "entries": ["oneiricconcept:ssr", "oneiricconcept:sr", "oneiricconcept:r"]
+  "entries": [
+    "oneiricconcept:ssr",
+    "oneiricconcept:sr",
+    "oneiricconcept:r",
+    "oneiricconcept:chests/trashcan",
+    "primogemcraft:q_qqyzi",
+    "primogemcraft:qq_qqylan",
+    "primogemcraft:qqyjin"
+  ]
 }

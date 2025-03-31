@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "oneiricconcept:block/geomarrow_radiator"
+    },
+    "blockstate=1": {
+      "model": "oneiricconcept:block/neststate_blockstate_0"
     }
   }
 }

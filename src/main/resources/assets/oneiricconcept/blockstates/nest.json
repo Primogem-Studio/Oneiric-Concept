@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "oneiricconcept:block/nest"
+    },
+    "blockstate=1": {
+      "model": "oneiricconcept:block/neststate_blockstate_0"
     }
   }
 }

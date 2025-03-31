@@ -14612,20 +14612,6 @@
       }
     },
     {
-      "name": "Inputloot",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "inputloot",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/InputlootProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/process"
-    },
-    {
       "name": "NestLoot",
       "type": "loottable",
       "compiles": true,
@@ -14637,6 +14623,19 @@
         ]
       },
       "path": "~/loot/chestloot"
+    },
+    {
+      "name": "Neststate",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neststate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/neststate_blockstate_0.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [
@@ -14715,10 +14714,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14727,6 +14722,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",

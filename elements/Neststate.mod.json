@@ -1,0 +1,32 @@
+{
+  "_fv": 77,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Nest",
+    "blockstateList": [
+      {
+        "texture": "nest",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "nest_searched:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.1,
+            "my": 0.0,
+            "mz": 3.1,
+            "Mx": 12.9,
+            "My": 2.0,
+            "Mz": 12.9,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

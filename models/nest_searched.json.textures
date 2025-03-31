@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "nest"
+        "1": "nest"
       },
       "name": "default"
     }

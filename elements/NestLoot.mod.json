@@ -28,11 +28,11 @@
           {
             "type": "item",
             "item": {
-              "value": "Blocks.AIR"
+              "value": "Items.EGG"
             },
             "weight": 999,
             "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,

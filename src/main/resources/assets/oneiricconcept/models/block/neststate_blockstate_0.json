@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/nest_searched",
+  "textures": {
+    "all": "oneiricconcept:block/nest",
+    "particle": "oneiricconcept:block/nest",
+    "1": "oneiricconcept:block/nest"
+  },
+  "render_type": "cutout"
+}
