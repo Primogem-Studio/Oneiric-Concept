@@ -10,6 +10,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.oneiricconcept.client.gui.PhlogistontankGuiScreen;
+import net.mcreator.oneiricconcept.client.gui.NestGUIScreen;
 import net.mcreator.oneiricconcept.client.gui.LibGuiScreen;
 import net.mcreator.oneiricconcept.client.gui.FishingScreen;
 import net.mcreator.oneiricconcept.client.gui.CrystalgeneratorGUIScreen;
@@ -22,5 +23,6 @@ public class OneiricconceptModScreens {
 		event.register(OneiricconceptModMenus.FISHING.get(), FishingScreen::new);
 		event.register(OneiricconceptModMenus.LIB_GUI.get(), LibGuiScreen::new);
 		event.register(OneiricconceptModMenus.CRYSTALGENERATOR_GUI.get(), CrystalgeneratorGUIScreen::new);
+		event.register(OneiricconceptModMenus.NEST_GUI.get(), NestGUIScreen::new);
 	}
 }

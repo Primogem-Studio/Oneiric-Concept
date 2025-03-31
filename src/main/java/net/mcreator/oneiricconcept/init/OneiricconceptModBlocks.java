@@ -43,6 +43,7 @@ import net.mcreator.oneiricconcept.block.PhlogistontankBlock;
 import net.mcreator.oneiricconcept.block.PgcPresentBlock;
 import net.mcreator.oneiricconcept.block.PgcPgBlock;
 import net.mcreator.oneiricconcept.block.Newmo1Block;
+import net.mcreator.oneiricconcept.block.NestBlock;
 import net.mcreator.oneiricconcept.block.NagadusEmeraldOreBlock;
 import net.mcreator.oneiricconcept.block.MoltenMetalBlockBlock;
 import net.mcreator.oneiricconcept.block.MmMushroomBlock;
@@ -167,6 +168,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> EXHAUSTEDPRIMOGEM = REGISTRY.register("exhaustedprimogem", ExhaustedprimogemBlock::new);
 	public static final DeferredBlock<Block> PRIMOGEMSTORMGLASS = REGISTRY.register("primogemstormglass", PrimogemstormglassBlock::new);
 	public static final DeferredBlock<Block> CRYSTALGENERATOR = REGISTRY.register("crystalgenerator", CrystalgeneratorBlock::new);
+	public static final DeferredBlock<Block> NEST = REGISTRY.register("nest", NestBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

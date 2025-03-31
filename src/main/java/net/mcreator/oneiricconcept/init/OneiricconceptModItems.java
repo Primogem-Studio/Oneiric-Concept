@@ -115,6 +115,7 @@ import net.mcreator.oneiricconcept.item.DivineArrowEmbersItem;
 import net.mcreator.oneiricconcept.item.DeepMarrowRockSaltItem;
 import net.mcreator.oneiricconcept.item.DarkXuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.DXuanyuanItem;
+import net.mcreator.oneiricconcept.item.CullinanItem;
 import net.mcreator.oneiricconcept.item.ConquerorSWillItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
@@ -322,6 +323,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PRIMOGEMSTORMGLASS = block(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS);
 	public static final DeferredItem<Item> STARDUST_BASEBALLER = REGISTRY.register("stardust_baseballer", StardustBaseballerItem::new);
 	public static final DeferredItem<Item> CRYSTALGENERATOR = block(OneiricconceptModBlocks.CRYSTALGENERATOR);
+	public static final DeferredItem<Item> CULLINAN = REGISTRY.register("cullinan", CullinanItem::new);
+	public static final DeferredItem<Item> NEST = block(OneiricconceptModBlocks.NEST);
 
 	// Start of user code block custom items
 	// End of user code block custom items

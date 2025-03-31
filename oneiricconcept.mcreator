@@ -14521,6 +14521,109 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Crystalgenerator1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystalgenerator_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/crystalgenerator_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Cullinan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cullinan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/cullinan.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/CullinanItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "Nest",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/nest.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/NestBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/nest.json",
+          "src/main/resources/assets/oneiricconcept/models/item/nest.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/NestBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/nest.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "State1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "state_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/State1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "NestGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nest_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/NestGUIMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/NestGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Inputloot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inputloot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/InputlootProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -14993,6 +15096,7 @@
       "~CUSTOM:SharpHook"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Nest",
       "~CUSTOM:AmbrosialArborWood",
       "~CUSTOM:Primogemfruitblock",
       "~CUSTOM:AmbrosialArborLog",
@@ -15245,7 +15349,9 @@
       "SkipTool",
       "Exhaustedprimogem",
       "StardustBaseballer",
-      "Crystalgenerator"
+      "Crystalgenerator",
+      "Cullinan",
+      "Nest"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -15402,6 +15508,7 @@
       "block.oneiricconcept.big_stone": "Big Stone",
       "advancements.fragile_crisp_cone.title": "As Fragile as Crisp Cone",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
+      "block.oneiricconcept.nest": "Nest",
       "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
       "subtitles.mmm": "bump",
@@ -15496,6 +15603,7 @@
       "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "Resurrection Pellet",
       "advancements.feed_on_illusions.title": "Feed On Illusions",
+      "item.oneiricconcept.cullinan": "Cullinan",
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
       "advancements.power_of_herrschers.descr": "1‰",
       "item.oneiricconcept.hunger": "「Hunger」",
@@ -15744,7 +15852,7 @@
       "gamerule.ocinitialload.description": "进入世界时将游戏规则设为默认",
       "item.oneiricconcept.ice_fresh_raw_frostweave_salmon_slices": "冰鲜霜纹鲑生鱼片",
       "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
-      "block.oneiricconcept.crystalgenerator": "Crystalgenerator",
+      "block.oneiricconcept.crystalgenerator": "晶体发电机",
       "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.mora_sausage": "摩拉香肠",
       "block.oneiricconcept.the_another_world_sapling": "异世界树苗",
@@ -15778,6 +15886,7 @@
       "block.oneiricconcept.big_stone": "大石头",
       "advancements.fragile_crisp_cone.title": "如脆筒般脆弱",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
+      "block.oneiricconcept.nest": "Nest",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "subtitles.mmm": "碰撞",
@@ -15872,6 +15981,7 @@
       "item.oneiricconcept.baryon_spawn_egg": "重子刷怪蛋",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
+      "item.oneiricconcept.cullinan": "非洲之心",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
       "advancements.power_of_herrschers.descr": "1‰",
       "item.oneiricconcept.hunger": "「饥饿」",
@@ -16154,6 +16264,7 @@
       "block.oneiricconcept.big_stone": "大石头",
       "advancements.fragile_crisp_cone.title": "As Fragile as Crisp Cone",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
+      "block.oneiricconcept.nest": "Nest",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
       "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "subtitles.mmm": "碰撞",
@@ -16249,6 +16360,7 @@
       "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
+      "item.oneiricconcept.cullinan": "Cullinan",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
       "advancements.power_of_herrschers.descr": "1‰",
       "item.oneiricconcept.hunger": "「饥饿」",

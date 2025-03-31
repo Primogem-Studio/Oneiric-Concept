@@ -12,6 +12,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.oneiricconcept.world.inventory.PhlogistontankGuiMenu;
+import net.mcreator.oneiricconcept.world.inventory.NestGUIMenu;
 import net.mcreator.oneiricconcept.world.inventory.LibGuiMenu;
 import net.mcreator.oneiricconcept.world.inventory.FishingMenu;
 import net.mcreator.oneiricconcept.world.inventory.CrystalgeneratorGUIMenu;
@@ -23,4 +24,5 @@ public class OneiricconceptModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<FishingMenu>> FISHING = REGISTRY.register("fishing", () -> IMenuTypeExtension.create(FishingMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<LibGuiMenu>> LIB_GUI = REGISTRY.register("lib_gui", () -> IMenuTypeExtension.create(LibGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<CrystalgeneratorGUIMenu>> CRYSTALGENERATOR_GUI = REGISTRY.register("crystalgenerator_gui", () -> IMenuTypeExtension.create(CrystalgeneratorGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<NestGUIMenu>> NEST_GUI = REGISTRY.register("nest_gui", () -> IMenuTypeExtension.create(NestGUIMenu::new));
 }

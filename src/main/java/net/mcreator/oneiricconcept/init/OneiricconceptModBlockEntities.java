@@ -21,6 +21,7 @@ import net.mcreator.oneiricconcept.block.entity.PropagandaArmyBlockBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PrimogemstormglassBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PhlogistontankBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.NestBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.Geooo1BlockEntity;
 import net.mcreator.oneiricconcept.block.entity.CrystalgeneratorBlockEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
@@ -36,6 +37,7 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PHLOGISTONTANK = register("phlogistontank", OneiricconceptModBlocks.PHLOGISTONTANK, PhlogistontankBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PRIMOGEMSTORMGLASS = register("primogemstormglass", OneiricconceptModBlocks.PRIMOGEMSTORMGLASS, PrimogemstormglassBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> CRYSTALGENERATOR = register("crystalgenerator", OneiricconceptModBlocks.CRYSTALGENERATOR, CrystalgeneratorBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> NEST = register("nest", OneiricconceptModBlocks.NEST, NestBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -55,5 +57,6 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PRIMOGEMSTORMGLASS.get(), (blockEntity, side) -> ((PrimogemstormglassBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CRYSTALGENERATOR.get(), (blockEntity, side) -> ((CrystalgeneratorBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, CRYSTALGENERATOR.get(), (blockEntity, side) -> ((CrystalgeneratorBlockEntity) blockEntity).getEnergyStorage());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEST.get(), (blockEntity, side) -> ((NestBlockEntity) blockEntity).getItemHandler());
 	}
 }
