@@ -11,9 +11,11 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.oneiricconcept.world.features.SweetFlowersFeature;
+import net.mcreator.oneiricconcept.world.features.PlaceNestFeature;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(Registries.FEATURE, OneiricconceptMod.MODID);
 	public static final DeferredHolder<Feature<?>, Feature<?>> SWEET_FLOWERS = REGISTRY.register("sweet_flowers", SweetFlowersFeature::new);
+	public static final DeferredHolder<Feature<?>, Feature<?>> PLACE_NEST = REGISTRY.register("place_nest", PlaceNestFeature::new);
 }

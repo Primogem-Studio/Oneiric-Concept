@@ -14700,6 +14700,23 @@
         "return_type": "logic"
       },
       "path": "~/Feature"
+    },
+    {
+      "name": "PlaceNest",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_nest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest.json",
+          "src/main/java/net/mcreator/oneiricconcept/world/features/PlaceNestFeature.java"
+        ],
+        "has_nbt_structure": true
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [

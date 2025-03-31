@@ -1,0 +1,8 @@
+{
+  "type": "oneiricconcept:place_nest",
+  "config": {
+    "structure": "oneiricconcept:nest",
+    "random_rotation": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}
