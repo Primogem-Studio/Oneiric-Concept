@@ -14624,19 +14624,6 @@
         "dependencies": []
       },
       "path": "~/process"
-    },
-    {
-      "name": "NeatLoot",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "neat_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/chests/neat.json"
-        ]
-      },
-      "path": "~/loot/chestloot"
     }
   ],
   "variable_elements": [
@@ -14715,10 +14702,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14727,6 +14710,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
