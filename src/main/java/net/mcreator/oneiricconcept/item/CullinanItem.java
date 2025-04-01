@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 
 public class CullinanItem extends Item {
 	public CullinanItem() {
-		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC));
 	}
 
 	@Override

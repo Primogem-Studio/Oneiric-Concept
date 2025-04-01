@@ -14717,6 +14717,19 @@
         "has_nbt_structure": true
       },
       "path": "~/Feature"
+    },
+    {
+      "name": "DiamondBlock1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_block_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/diamond_block_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -14795,10 +14808,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14807,6 +14816,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15697,7 +15710,7 @@
       "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
       "item.oneiricconcept.resurrection_pellet": "Resurrection Pellet",
       "advancements.feed_on_illusions.title": "Feed On Illusions",
-      "item.oneiricconcept.cullinan": "Cullinan",
+      "item.oneiricconcept.cullinan": "§4Cullinan",
       "item.oneiricconcept.memoria_bucket": "Memoria Bucket",
       "advancements.power_of_herrschers.descr": "1‰",
       "item.oneiricconcept.hunger": "「Hunger」",
@@ -16075,7 +16088,7 @@
       "item.oneiricconcept.baryon_spawn_egg": "重子刷怪蛋",
       "item.oneiricconcept.resurrection_pellet": "养心返魂丹",
       "advancements.feed_on_illusions.title": "画饼充饥",
-      "item.oneiricconcept.cullinan": "非洲之心",
+      "item.oneiricconcept.cullinan": "§4非洲之心",
       "item.oneiricconcept.memoria_bucket": "§9忆质桶",
       "advancements.power_of_herrschers.descr": "1‰",
       "item.oneiricconcept.hunger": "「饥饿」",
@@ -16822,7 +16835,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.41",
+    "version": "1.9.5",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",
