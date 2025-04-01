@@ -15279,7 +15279,9 @@
       "Items.AMETHYST_SHARD",
       "EXTERNAL:primogemcraft:jlza",
       "EXTERNAL:primogemcraft:zuishengsuixie",
-      "EXTERNAL:primogrmcraft:yuanshif"
+      "EXTERNAL:primogemcraft:yuanshif",
+      "TAG:c:gem",
+      "TAG:c:gems"
     ],
     "ITEMS:mod:magazine3": [
       "CUSTOM:MoraMagazineN3",
