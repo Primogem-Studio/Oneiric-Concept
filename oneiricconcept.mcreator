@@ -14730,6 +14730,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Forever",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forever",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/forever.json"
+        ]
+      },
+      "path": "~/Advancement"
     }
   ],
   "variable_elements": [
@@ -14808,6 +14821,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14816,10 +14833,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15635,6 +15648,7 @@
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "translation.oneiricconcept.uid": " s uid：",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
+      "advancements.forever.descr": "Diamonds are forever",
       "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
       "effect.oneiricconcept.camo": "Camo",
@@ -15770,6 +15784,7 @@
       "item_group.oneiricconcept.oneiric_concept_decoration": "Oneiric Concept Decoration",
       "item.oneiricconcept.memoria_loot.description_0": "让眠眠给你送回来",
       "death.attack.b_2.player": "%1$s was unable to escape the %2$s\u0027s fumigation",
+      "advancements.forever.title": "One that will last forever",
       "item.oneiricconcept.honkai_sliver": "Honkai Sliver",
       "item.oneiricconcept.d_xuanyuan": "XuanyuanSword",
       "item.oneiricconcept.aureliae_shovel": "Aureliae Shovel",
@@ -16013,6 +16028,7 @@
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "translation.oneiricconcept.uid": " 的UID是：",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
+      "advancements.forever.descr": "钻石恒久远",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "effect.oneiricconcept.camo": "迷彩",
@@ -16148,6 +16164,7 @@
       "item_group.oneiricconcept.oneiric_concept_decoration": "梦华构想 装饰",
       "item.oneiricconcept.memoria_loot.description_0": "§7让眠眠给你送回来",
       "death.attack.b_2.player": "%1$s 没能逃离 %2$s的熏肠",
+      "advancements.forever.title": "一颗永流传",
       "item.oneiricconcept.honkai_sliver": "崩坏碎片",
       "item.oneiricconcept.d_xuanyuan": "黑轩辕剑",
       "item.oneiricconcept.aureliae_shovel": "铄金锹",
@@ -16391,6 +16408,7 @@
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "translation.oneiricconcept.uid": "",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
+      "advancements.forever.descr": "Diamonds are forever",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "effect.oneiricconcept.camo": "Camo",
@@ -16527,6 +16545,7 @@
       "item_group.oneiricconcept.oneiric_concept_decoration": "梦华构想 装饰",
       "item.oneiricconcept.memoria_loot.description_0": "§7让眠眠给你送回来",
       "death.attack.b_2.player": "%1$s 没能逃离 %2$s的熏肠",
+      "advancements.forever.title": "One that will last forever",
       "item.oneiricconcept.honkai_sliver": "崩坏碎片",
       "item.oneiricconcept.d_xuanyuan": "黑轩辕剑",
       "item.oneiricconcept.aureliae_shovel": "铄金锹",

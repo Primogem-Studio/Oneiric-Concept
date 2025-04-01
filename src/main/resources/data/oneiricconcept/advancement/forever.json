@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:cullinan"
+    },
+    "title": {
+      "translate": "advancements.forever.title"
+    },
+    "description": {
+      "translate": "advancements.forever.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "forever_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oneiricconcept:cullinan"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 888
+  },
+  "parent": "oneiricconcept:oneiric_concept_advancement"
+}
