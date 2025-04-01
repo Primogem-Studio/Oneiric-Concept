@@ -46,21 +46,7 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:MemoryBubble"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 7,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -74,7 +60,7 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 7,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -88,7 +74,7 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 7,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -102,7 +88,7 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 7,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -116,21 +102,7 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "Items.GHAST_TEAR"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 7,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -144,7 +116,7 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 7,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -196,20 +168,6 @@
           {
             "type": "item",
             "item": {
-              "value": "Items.ECHO_SHARD"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
               "value": "Items.GOLDEN_APPLE#1"
             },
             "weight": 1,
@@ -228,21 +186,7 @@
             },
             "weight": 1,
             "minCount": 1,
-            "maxCount": 1,
-            "minEnchantmentLevel": 0,
-            "maxEnchantmentLevel": 0,
-            "affectedByFortune": false,
-            "explosionDecay": false,
-            "silkTouchMode": 0
-          },
-          {
-            "type": "item",
-            "item": {
-              "value": "CUSTOM:FreshSeedofDawn"
-            },
-            "weight": 1,
-            "minCount": 1,
-            "maxCount": 1,
+            "maxCount": 7,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
@@ -286,7 +230,7 @@
             "item": {
               "value": "Items.GOLD_NUGGET"
             },
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 7,
             "minEnchantmentLevel": 0,
@@ -300,7 +244,7 @@
             "item": {
               "value": "Items.IRON_NUGGET"
             },
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 7,
             "minEnchantmentLevel": 0,
@@ -359,6 +303,62 @@
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:MemoryBubble"
+            },
+            "weight": 2,
+            "minCount": 1,
+            "maxCount": 7,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:MoltenMetal"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 7,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:TreeBarkofErudition"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 7,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:FreshSeedofDawn"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 3,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,
             "affectedByFortune": false,
