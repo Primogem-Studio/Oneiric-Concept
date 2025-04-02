@@ -31,7 +31,7 @@ import java.util.List;
 
 public class BigRockBlock extends Block {
 	public BigRockBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.STONE).strength(1f, 10f).pushReaction(PushReaction.DESTROY));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(1f, 10f).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
