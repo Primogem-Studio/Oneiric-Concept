@@ -93,7 +93,7 @@
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 100,
+    "flammability": 0,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
@@ -104,7 +104,7 @@
     "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 3,
-    "generateAtAnyHeight": false,
+    "generateAtAnyHeight": true,
     "onDestroyedByPlayer": {
       "name": "Mmhit"
     }
