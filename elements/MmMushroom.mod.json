@@ -97,7 +97,38 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:GeomarrowRadiator"
+      },
+      {
+        "value": "CUSTOM:BoomBlossomsPyro"
+      },
+      {
+        "value": "CUSTOM:BananaMushroom"
+      },
+      {
+        "value": "CUSTOM:BananaMushroomBock"
+      },
+      {
+        "value": "CUSTOM:ElementsCrystalOre"
+      },
+      {
+        "value": "CUSTOM:NagadusEmeraldOre"
+      },
+      {
+        "value": "CUSTOM:ShivadaJadeOre"
+      },
+      {
+        "value": "CUSTOM:VajradaAmethystOre"
+      },
+      {
+        "value": "CUSTOM:VarunadaLazuriteOre"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      }
+    ],
     "isBonemealable": false,
     "frequencyOnChunks": 1,
     "generateFeature": true,
