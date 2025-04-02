@@ -286,7 +286,7 @@
             "item": {
               "value": "Items.FEATHER"
             },
-            "weight": 63,
+            "weight": 6,
             "minCount": 1,
             "maxCount": 3,
             "minEnchantmentLevel": 0,

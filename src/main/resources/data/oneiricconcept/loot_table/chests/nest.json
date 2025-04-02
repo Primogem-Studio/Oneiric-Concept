@@ -272,7 +272,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:feather",
-          "weight": 63,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
