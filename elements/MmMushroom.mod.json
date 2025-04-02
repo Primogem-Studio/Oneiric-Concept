@@ -98,12 +98,15 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
+    "placingCondition": {
+      "name": "Supportdown"
+    },
     "isBonemealable": false,
-    "frequencyOnChunks": 1,
+    "frequencyOnChunks": 8,
     "generateFeature": true,
     "restrictionBiomes": [],
-    "generationType": "Flower",
-    "patchSize": 3,
+    "generationType": "Grass",
+    "patchSize": 1,
     "generateAtAnyHeight": true,
     "onDestroyedByPlayer": {
       "name": "Mmhit"
