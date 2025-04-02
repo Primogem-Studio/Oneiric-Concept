@@ -216,7 +216,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
-          "weight": 2,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -230,7 +230,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_nugget",
-          "weight": 2,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -244,13 +244,13 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wheat_seeds",
-          "weight": 3,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 32
+                "max": 16
               }
             }
           ]
@@ -258,7 +258,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:glass_bottle",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -272,7 +272,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:feather",
-          "weight": 3,
+          "weight": 63,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -286,7 +286,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stick",
-          "weight": 3,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -300,7 +300,7 @@
         {
           "type": "minecraft:item",
           "name": "oneiricconcept:memory_bubble",
-          "weight": 2,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -314,7 +314,7 @@
         {
           "type": "minecraft:item",
           "name": "oneiricconcept:molten_metal",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -328,7 +328,7 @@
         {
           "type": "minecraft:item",
           "name": "oneiricconcept:tree_barkof_erudition",
-          "weight": 1,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -348,7 +348,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 3
+                "max": 1
               }
             }
           ]
