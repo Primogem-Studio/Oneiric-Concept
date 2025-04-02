@@ -30,6 +30,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.SupportdownProcedure;
 import net.mcreator.oneiricconcept.procedures.MmhitProcedure;
+import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 import java.util.List;
 
