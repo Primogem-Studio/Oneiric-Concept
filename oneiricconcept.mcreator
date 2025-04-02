@@ -2087,7 +2087,7 @@
       "name": "MmMushroom",
       "type": "plant",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "mm_mushroom",
       "metadata": {
         "files": [
