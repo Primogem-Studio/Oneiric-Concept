@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "oneiricconcept:place_nest_below_leave",
+  "step": "top_layer_modification"
+}

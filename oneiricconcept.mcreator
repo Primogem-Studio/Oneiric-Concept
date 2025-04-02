@@ -14743,6 +14743,22 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "PlaceNestBelowLeave",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_nest_below_leave",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest_below_leave.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_below_leave_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest_below_leave.json"
+        ]
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [
