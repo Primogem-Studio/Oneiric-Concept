@@ -23,7 +23,8 @@ public class CrystalgeneratorListProcedure {
 				|| BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:zuishengkuai")) == crystal.getItem() || BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:laoshi")) == crystal.getItem()
 				|| BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:chuangshijiejing")) == crystal.getItem() || OneiricconceptModItems.ONEIRIC_SHARD.get() == crystal.getItem()) {
 			crystal_power = 64000;
-		} else if (BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:yhjs")) == crystal.getItem() || OneiricconceptModBlocks.ELECTRO_METAL.get().asItem() == crystal.getItem()) {
+		} else if (BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:yhjs")) == crystal.getItem() || OneiricconceptModBlocks.ELECTRO_METAL.get().asItem() == crystal.getItem()
+				|| OneiricconceptModItems.CULLINAN.get() == crystal.getItem()) {
 			crystal_power = 160000;
 		} else if (OneiricconceptModItems.HONKAI_SHARD.get() == crystal.getItem() || BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:zuishengzijing")) == crystal.getItem()) {
 			crystal_power = 1600000;

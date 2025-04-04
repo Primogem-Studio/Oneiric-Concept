@@ -15,6 +15,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
 public class CrystalgeneratoritemProcedure {
@@ -61,6 +62,13 @@ public class CrystalgeneratoritemProcedure {
 					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
 					_stk.shrink(1);
 					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+				}
+				if (OneiricconceptModItems.CULLINAN.get() == crystal.getItem()) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(OneiricconceptModItems.CULLINAN.get()).copy();
+						_setstack.setCount(1);
+						_itemHandlerModifiable.setStackInSlot((int) copyindex0, _setstack);
+					}
 				}
 				CrystalgeneratorpowerProcedure.execute(world, x, y, z, crystal_power);
 			}
