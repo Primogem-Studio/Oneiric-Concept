@@ -27,7 +27,6 @@ import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -37,6 +36,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.oneiricconcept.procedures.BaryonmodeProcedure;
+import net.mcreator.oneiricconcept.procedures.BaryonPlaceProcedure;
 import net.mcreator.oneiricconcept.procedures.AntimatterLegionLootProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 
@@ -136,9 +136,12 @@ public class BaryonEntity extends Monster implements RangedAttackMob {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(OneiricconceptModEntities.BARYON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)),
-				RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(OneiricconceptModEntities.BARYON.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return BaryonPlaceProcedure.execute(world, x, y, z);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

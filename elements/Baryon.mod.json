@@ -168,6 +168,9 @@
     "rangedAttackRadius": 16.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
+    "spawningCondition": {
+      "name": "BaryonPlace"
+    },
     "spawningProbability": 4,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,

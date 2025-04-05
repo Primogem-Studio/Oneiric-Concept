@@ -12217,10 +12217,10 @@
       "registry_name": "baryon",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/baryon_spawn_egg.json",
           "src/main/java/net/mcreator/oneiricconcept/entity/BaryonEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/BaryonRenderer.java",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/baryon_biome_modifier.json",
-          "src/main/resources/assets/oneiricconcept/models/item/baryon_spawn_egg.json"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/BaryonRenderer.java"
         ]
       }
     },
@@ -14759,6 +14759,37 @@
         ]
       },
       "path": "~/Feature"
+    },
+    {
+      "name": "BaryonPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baryon_place",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BaryonPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -14837,6 +14868,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14845,10 +14880,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15127,6 +15158,22 @@
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:AureliaeShovel"
     ],
+    "BLOCKS:mod:topblock": [
+      "Blocks.GRASS",
+      "Blocks.GRASS_PATH",
+      "Blocks.MYCELIUM",
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#1",
+      "Blocks.DIRT#2",
+      "Blocks.ROOTED_DIRT",
+      "Blocks.MUD",
+      "Blocks.NETHERRACK",
+      "Blocks.WARPED_NYLIUM",
+      "Blocks.CRIMSON_NYLIUM",
+      "Blocks.SOUL_SAND",
+      "Blocks.SOUL_SOIL",
+      "Blocks.END_STONE"
+    ],
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
       "CUSTOM:S2ausage"
@@ -15294,10 +15341,6 @@
       "CUSTOM:AmbrosialArborLeave",
       "CUSTOM:AmbrosialArborWood"
     ],
-    "ITEMS:mod:magazine1": [
-      "CUSTOM:MoraMagazine",
-      "CUSTOM:MoraMagazineE1"
-    ],
     "ITEMS:c:crystals": [
       "CUSTOM:Exhaustedprimogem",
       "Items.DIAMOND",
@@ -15311,14 +15354,6 @@
       "EXTERNAL:primogemcraft:yuanshif",
       "TAG:c:gem",
       "TAG:c:gems"
-    ],
-    "ITEMS:mod:magazine3": [
-      "CUSTOM:MoraMagazineN3",
-      "CUSTOM:MoraMagazineE3"
-    ],
-    "ITEMS:mod:magazine2": [
-      "CUSTOM:MoraMagazineN2",
-      "CUSTOM:MoraMagazineE2"
     ],
     "ITEMS:c:salt_dusts": [
       "TAG:c:salt_dust"
