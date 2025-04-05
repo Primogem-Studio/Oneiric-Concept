@@ -6,6 +6,7 @@ import org.checkerframework.checker.units.qual.s;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
@@ -56,7 +57,7 @@ public class NestBlock extends Block implements EntityBlock {
 					return 0;
 				return 0;
 			}
-		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -78,19 +79,21 @@ public class NestBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return switch (state.getValue(FACING)) {
+			Vec3 offset = state.getOffset(world, pos);
+			return (switch (state.getValue(FACING)) {
 				default -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
 				case NORTH -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
 				case EAST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
 				case WEST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
-			};
+			}).move(offset.x, offset.y, offset.z);
 		}
-		return switch (state.getValue(FACING)) {
+		Vec3 offset = state.getOffset(world, pos);
+		return (switch (state.getValue(FACING)) {
 			default -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
 			case NORTH -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
 			case EAST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
 			case WEST -> box(3.1, 0, 3.1, 12.9, 2, 12.9);
-		};
+		}).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
