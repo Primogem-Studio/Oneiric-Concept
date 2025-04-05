@@ -30,13 +30,12 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.SupportdownProcedure;
 import net.mcreator.oneiricconcept.procedures.MmhitProcedure;
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 import java.util.List;
 
 public class MmMushroomBlock extends DoublePlantBlock {
 	public MmMushroomBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK)
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT)
 				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:mmm")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:mmm")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.grass.place")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.grass.hit")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:mmm"))))
