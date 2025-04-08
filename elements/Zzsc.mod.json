@@ -1,0 +1,12 @@
+{
+  "_fv": 77,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "重子生成",
+    "description": "太恶心了，加个开关 ----- Pepper留",
+    "category": "SPAWNING",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}
