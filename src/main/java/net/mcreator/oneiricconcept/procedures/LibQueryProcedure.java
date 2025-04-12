@@ -8,7 +8,7 @@ public class LibQueryProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		QueryUIDProcedure.execute(entity, BackUIDEntityProcedure.execute(world, entity));
+		QueryUIDProcedure.execute(world, entity);
 		if (entity instanceof Player _player)
 			_player.closeContainer();
 	}

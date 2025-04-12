@@ -1,0 +1,7 @@
+{
+  "_fv": 77,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"String\" id=\"UUID\">UUID</variable><variable type=\"String\" id=\"name\">name</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"70\" y=\"-90\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_negate\"><value name=\"BOOL\"><block type=\"is_uuid_valid\"><value name=\"uuid\"><block type=\"procedure_retval_string\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"procedure\">GetPlayerUUID</field></block></value></block></value></block></value></block></next></block></xml>"
+  }
+}

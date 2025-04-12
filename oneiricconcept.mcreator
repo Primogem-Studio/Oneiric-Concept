@@ -13375,6 +13375,10 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -13396,8 +13400,8 @@
             "type": "entity"
           },
           {
-            "name": "playeruid",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -14790,6 +14794,126 @@
           }
         ]
       }
+    },
+    {
+      "name": "GetPlayerName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_player_name",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetPlayerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string"
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetPlayerUUID",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_player_uuid",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetPlayerUUIDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "IsUUIDTrue",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_uuid_true",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsUUIDTrueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetPlayerModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_player_model",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetPlayerModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "IsUUIDFalse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_uuid_false",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsUUIDFalseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -14821,7 +14945,25 @@
       "name": "skyshatteringlux",
       "type": "number",
       "scope": "map",
-      "value": "0"
+      "value": "0.0"
+    },
+    {
+      "name": "playername",
+      "type": "datalist",
+      "scope": "map",
+      "value": "new ListTag()"
+    },
+    {
+      "name": "playerUID",
+      "type": "datalist",
+      "scope": "map",
+      "value": "new ListTag()"
+    },
+    {
+      "name": "PlayerUUID",
+      "type": "datalist",
+      "scope": "map",
+      "value": "new ListTag()"
     }
   ],
   "sound_elements": [
@@ -15735,6 +15877,7 @@
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.propaganda_army.description_0": "§7An account seems to be a bit too slow",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
+      "gui.oneiricconcept.lib_gui.label_no_signal": "No Signal",
       "item.oneiricconcept.phlogiston": "Phlogiston",
       "advancements.allriversrunintosea.descr": "the vast sea",
       "subtitles.bigstonecrushchest": "BigStoneCrushChest",
@@ -15890,6 +16033,7 @@
       "advancements.aftertheiceturnsintowater.descr": "……the sea I hang upside down will be your sky",
       "block.oneiricconcept.banana_mushroom": "Banana Mushroom",
       "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
+      "gui.oneiricconcept.lib_gui.label_wan_jia_wei_lian_jie": "Player not connected",
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
       "item.oneiricconcept.phlogiston_core": "Phlogiston Core",
       "item.oneiricconcept.taw_wood_box": "TAW Wood Box",
@@ -16115,6 +16259,7 @@
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.propaganda_army.description_0": "§7一个账号手磨疑似有些太慢了",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
+      "gui.oneiricconcept.lib_gui.label_no_signal": "No Signal",
       "item.oneiricconcept.phlogiston": "燃素",
       "advancements.allriversrunintosea.descr": "博洋",
       "subtitles.bigstonecrushchest": "大石碎胸口",
@@ -16270,6 +16415,7 @@
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.banana_mushroom": "香蕉菌",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
+      "gui.oneiricconcept.lib_gui.label_wan_jia_wei_lian_jie": "玩家未连接",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.phlogiston_core": "燃素核心",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",
@@ -16496,6 +16642,7 @@
       "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
       "item.oneiricconcept.propaganda_army.description_0": "§7一个账号手磨疑似有些太慢了",
       "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
+      "gui.oneiricconcept.lib_gui.label_no_signal": "No Signal",
       "item.oneiricconcept.phlogiston": "燃素",
       "advancements.allriversrunintosea.descr": "博洋",
       "subtitles.bigstonecrushchest": "大石碎胸口",
@@ -16651,6 +16798,7 @@
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.banana_mushroom": "香蕉菌",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
+      "gui.oneiricconcept.lib_gui.label_wan_jia_wei_lian_jie": "玩家未连接",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.phlogiston_core": "燃素核心",
       "item.oneiricconcept.taw_wood_box": "异世界木盒",

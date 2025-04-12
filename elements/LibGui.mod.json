@@ -14,7 +14,10 @@
         "type": "entitymodel",
         "data": {
           "entityModel": {
-            "name": "BackUIDEntity"
+            "name": "GetPlayerModel"
+          },
+          "displayCondition": {
+            "name": "IsUUIDTrue"
           },
           "scale": 30,
           "rotationX": 0,
@@ -30,7 +33,7 @@
           "name": "label_proc_back_uid_playername",
           "text": {
             "fixedValue": "",
-            "name": "BackUIDPlayername"
+            "name": "GetPlayerName"
           },
           "color": {
             "value": -13369345,
@@ -86,6 +89,44 @@
           "height": 20,
           "x": 232,
           "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_no_signal",
+          "text": {
+            "fixedValue": "No Signal"
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsUUIDFalse"
+          },
+          "x": 190,
+          "y": 108,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wan_jia_wei_lian_jie",
+          "text": {
+            "fixedValue": "玩家未连接"
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsUUIDFalse"
+          },
+          "x": 202,
+          "y": 92,
           "locked": false
         }
       }
