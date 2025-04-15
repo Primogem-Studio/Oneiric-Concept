@@ -14793,7 +14793,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/process"
     },
     {
       "name": "GetPlayerName",
@@ -15010,6 +15011,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -15018,10 +15023,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15911,7 +15912,7 @@
       "death.attack.skip": "The %1$s\u0027s life has been skipped",
       "translation.oneiricconcept.rightclick": "Right click effect",
       "item.oneiricconcept.b_2elobog_sausage": "German style cumin smoked sausage",
-      "item.oneiricconcept.s_2tuffing.description_0": "夹杂着碎骨头渣子，有股孜然味",
+      "item.oneiricconcept.s_2tuffing.description_0": "Mixed with broken bones and debris, it has a cumin flavor",
       "translation.oneiricconcept.lurelevelmax": "§cThe lure level has reached the upper limit",
       "block.oneiricconcept.exhaustedprimogem": "Exhausted primogem",
       "item.oneiricconcept.s_2ausage": "Sausage",
@@ -17055,7 +17056,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.61",
+    "version": "1.9.62",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",
