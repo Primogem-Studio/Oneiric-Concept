@@ -14,14 +14,14 @@
         "type": "entitymodel",
         "data": {
           "entityModel": {
-            "name": "GetPlayerModel"
+            "name": "GetPlayerEntity"
           },
           "displayCondition": {
             "name": "IsUUIDTrue"
           },
-          "scale": 30,
+          "scale": 50,
           "rotationX": 0,
-          "followMouseMovement": true,
+          "followMouseMovement": false,
           "x": 203,
           "y": 131,
           "locked": false
@@ -114,19 +114,19 @@
       {
         "type": "label",
         "data": {
-          "name": "label_wan_jia_wei_lian_jie",
+          "name": "label_player_not_connected",
           "text": {
-            "fixedValue": "玩家未连接"
+            "fixedValue": "Player not connected"
           },
           "color": {
-            "value": -13312,
+            "value": -26368,
             "falpha": 0.0
           },
           "displayCondition": {
             "name": "IsUUIDFalse"
           },
-          "x": 202,
-          "y": 92,
+          "x": 190,
+          "y": 89,
           "locked": false
         }
       }

@@ -11,17 +11,6 @@ public class IsUUIDFalseProcedure {
 			return false;
 		String UUID = "";
 		String name = "";
-		return !isStringUUIDValid(GetPlayerUUIDProcedure.execute(world, entity));
-	}
-
-	public static boolean isStringUUIDValid(String uuid) {
-		boolean valid;
-		try {
-			UUID.fromString(uuid);
-			valid = true;
-		} catch (Exception e) {
-			valid = false;
-		}
-		return valid;
+		return !(!(GetPlayerEntityProcedure.execute(world, entity) == null));
 	}
 }

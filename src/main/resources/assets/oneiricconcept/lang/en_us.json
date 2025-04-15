@@ -283,7 +283,7 @@
   "advancements.aftertheiceturnsintowater.descr": "……the sea I hang upside down will be your sky",
   "block.oneiricconcept.banana_mushroom": "Banana Mushroom",
   "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
-  "gui.oneiricconcept.lib_gui.label_wan_jia_wei_lian_jie": "Player not connected",
+  "gui.oneiricconcept.lib_gui.label_player_not_connected": "Player not connected",
   "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
   "item.oneiricconcept.phlogiston_core": "Phlogiston Core",
   "item.oneiricconcept.taw_wood_box": "TAW Wood Box",

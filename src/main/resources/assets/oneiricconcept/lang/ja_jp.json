@@ -284,7 +284,7 @@
   "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
   "block.oneiricconcept.banana_mushroom": "香蕉菌",
   "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
-  "gui.oneiricconcept.lib_gui.label_wan_jia_wei_lian_jie": "玩家未连接",
+  "gui.oneiricconcept.lib_gui.label_player_not_connected": "Player not connected",
   "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
   "item.oneiricconcept.phlogiston_core": "燃素核心",
   "item.oneiricconcept.taw_wood_box": "异世界木盒",
