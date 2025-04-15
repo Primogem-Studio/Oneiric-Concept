@@ -14790,6 +14790,17 @@
           }
         ]
       }
+    },
+    {
+      "name": "Zzsc",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zzsc",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
     }
   ],
   "variable_elements": [
@@ -14868,10 +14879,6 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
-    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -14880,6 +14887,10 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
+    ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15698,6 +15709,7 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "translation.oneiricconcept.uid": " s uid：",
+      "gamerule.zzsc": "重子生成",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
       "advancements.forever.descr": "Diamonds are forever",
       "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
@@ -15968,6 +15980,7 @@
       "item.oneiricconcept.boss_stone_coin_gun": "Coin Gun",
       "painting.oneiricconcept.sliver_wolf.author": "HoYoverse",
       "block.oneiricconcept.c_cactus": "Cactus",
+      "gamerule.zzsc.description": "太恶心了，加个开关 ----- Pepper留",
       "item.oneiricconcept.grilled_dumpling": "GrilledDumpling",
       "block.oneiricconcept.dendro_metal": "Nagadus_metal_ingot",
       "block.oneiricconcept.mm_mushroom.description_1": "The bow on the head is flat",
@@ -16078,6 +16091,7 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "translation.oneiricconcept.uid": " 的UID是：",
+      "gamerule.zzsc": "重子生成",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
       "advancements.forever.descr": "钻石恒久远",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
@@ -16348,6 +16362,7 @@
       "item.oneiricconcept.boss_stone_coin_gun": "撒币枪",
       "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
       "block.oneiricconcept.c_cactus": "仙灵掌",
+      "gamerule.zzsc.description": "太恶心了，加个开关 ----- Pepper留",
       "item.oneiricconcept.grilled_dumpling": "烤饺子",
       "block.oneiricconcept.dendro_metal": "智慧金属锭",
       "block.oneiricconcept.mm_mushroom.description_1": "头上的蝴蝶结平平的",
@@ -16458,6 +16473,7 @@
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "translation.oneiricconcept.uid": "",
+      "gamerule.zzsc": "重子生成",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
       "advancements.forever.descr": "Diamonds are forever",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
@@ -16729,6 +16745,7 @@
       "item.oneiricconcept.boss_stone_coin_gun": "撒币枪",
       "painting.oneiricconcept.sliver_wolf.author": "miHoYo",
       "block.oneiricconcept.c_cactus": "仙灵掌",
+      "gamerule.zzsc.description": "太恶心了，加个开关 ----- Pepper留",
       "item.oneiricconcept.grilled_dumpling": "烤饺子",
       "block.oneiricconcept.dendro_metal": "Nagadus_metal_ingot",
       "block.oneiricconcept.mm_mushroom.description_1": "头上的蝴蝶结平平的",
