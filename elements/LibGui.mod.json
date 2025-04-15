@@ -19,7 +19,7 @@
           "displayCondition": {
             "name": "IsUUIDTrue"
           },
-          "scale": 50,
+          "scale": 42,
           "rotationX": 0,
           "followMouseMovement": false,
           "x": 203,
@@ -36,7 +36,7 @@
             "name": "GetPlayerName"
           },
           "color": {
-            "value": -13369345,
+            "value": -13408513,
             "falpha": 0.0
           },
           "x": 137,
@@ -100,7 +100,7 @@
             "fixedValue": "No Signal"
           },
           "color": {
-            "value": -13312,
+            "value": -52480,
             "falpha": 0.0
           },
           "displayCondition": {
