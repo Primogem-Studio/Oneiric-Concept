@@ -19,6 +19,7 @@ public class OneiricconceptModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> OCFLY;
 	public static GameRules.Key<GameRules.IntegerValue> OCTEST;
 	public static GameRules.Key<GameRules.BooleanValue> FRIENDSHIP_MODE;
+	public static GameRules.Key<GameRules.IntegerValue> BARYON_SPAWN;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -29,5 +30,6 @@ public class OneiricconceptModGameRules {
 		OCFLY = GameRules.register("ocfly", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 		OCTEST = GameRules.register("octest", GameRules.Category.PLAYER, GameRules.IntegerValue.create(15));
 		FRIENDSHIP_MODE = GameRules.register("friendshipMode", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
+		BARYON_SPAWN = GameRules.register("baryonSpawn", GameRules.Category.MOBS, GameRules.IntegerValue.create(10));
 	}
 }

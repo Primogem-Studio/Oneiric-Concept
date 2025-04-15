@@ -1,0 +1,12 @@
+{
+  "_fv": 77,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Baryon Spawn Quantity",
+    "description": "The larger the value, the higher the Spawn of Baryon",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 10
+  }
+}
