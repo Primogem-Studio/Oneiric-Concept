@@ -14,11 +14,14 @@
         "type": "entitymodel",
         "data": {
           "entityModel": {
-            "name": "BackUIDEntity"
+            "name": "GetPlayerEntity"
           },
-          "scale": 30,
+          "displayCondition": {
+            "name": "IsUUIDTrue"
+          },
+          "scale": 50,
           "rotationX": 0,
-          "followMouseMovement": true,
+          "followMouseMovement": false,
           "x": 203,
           "y": 131,
           "locked": false
@@ -30,7 +33,7 @@
           "name": "label_proc_back_uid_playername",
           "text": {
             "fixedValue": "",
-            "name": "BackUIDPlayername"
+            "name": "GetPlayerName"
           },
           "color": {
             "value": -13369345,
@@ -86,6 +89,44 @@
           "height": 20,
           "x": 232,
           "y": 169,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_no_signal",
+          "text": {
+            "fixedValue": "No Signal"
+          },
+          "color": {
+            "value": -13312,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsUUIDFalse"
+          },
+          "x": 190,
+          "y": 108,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_player_not_connected",
+          "text": {
+            "fixedValue": "Player not connected"
+          },
+          "color": {
+            "value": -26368,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsUUIDFalse"
+          },
+          "x": 190,
+          "y": 89,
           "locked": false
         }
       }

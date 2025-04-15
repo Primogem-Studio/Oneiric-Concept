@@ -14,7 +14,7 @@ public class MinusLIstorderProcedure {
 		if (listoder <= 0) {
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
-				_vars.ListOrder = BackUIDPlayerListProcedure.execute(world).size() - 1;
+				_vars.ListOrder = OneiricconceptModVariables.MapVariables.get(world).playername.size() - 1;
 				_vars.syncPlayerVariables(entity);
 			}
 		} else {

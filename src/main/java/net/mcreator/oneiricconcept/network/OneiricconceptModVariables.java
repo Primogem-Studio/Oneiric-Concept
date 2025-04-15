@@ -24,6 +24,7 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.HolderLookup;
 
@@ -133,7 +134,10 @@ public class OneiricconceptModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "oneiricconcept_mapvars";
-		public double skyshatteringlux = 0;
+		public double skyshatteringlux = 0.0;
+		public ListTag playername = new ListTag();
+		public ListTag playerUID = new ListTag();
+		public ListTag PlayerUUID = new ListTag();
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -143,11 +147,17 @@ public class OneiricconceptModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			skyshatteringlux = nbt.getDouble("skyshatteringlux");
+			this.playername = nbt.get("playername") instanceof ListTag playername ? playername : new ListTag();
+			this.playerUID = nbt.get("playerUID") instanceof ListTag playerUID ? playerUID : new ListTag();
+			this.PlayerUUID = nbt.get("PlayerUUID") instanceof ListTag PlayerUUID ? PlayerUUID : new ListTag();
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("skyshatteringlux", skyshatteringlux);
+			nbt.put("playername", this.playername);
+			nbt.put("playerUID", this.playerUID);
+			nbt.put("PlayerUUID", this.PlayerUUID);
 			return nbt;
 		}
 

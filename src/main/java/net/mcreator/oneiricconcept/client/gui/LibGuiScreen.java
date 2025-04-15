@@ -17,8 +17,10 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.oneiricconcept.world.inventory.LibGuiMenu;
-import net.mcreator.oneiricconcept.procedures.BackUIDPlayernameProcedure;
-import net.mcreator.oneiricconcept.procedures.BackUIDEntityProcedure;
+import net.mcreator.oneiricconcept.procedures.IsUUIDTrueProcedure;
+import net.mcreator.oneiricconcept.procedures.IsUUIDFalseProcedure;
+import net.mcreator.oneiricconcept.procedures.GetPlayerNameProcedure;
+import net.mcreator.oneiricconcept.procedures.GetPlayerEntityProcedure;
 import net.mcreator.oneiricconcept.network.LibGuiButtonMessage;
 
 import java.util.HashMap;
@@ -50,8 +52,9 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> {
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		if (BackUIDEntityProcedure.execute(world, entity) instanceof LivingEntity livingEntity) {
-			this.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 87, this.topPos + 114, 30, 0f + (float) Math.atan((this.leftPos + 87 - mouseX) / 40.0), (float) Math.atan((this.topPos + 65 - mouseY) / 40.0), livingEntity);
+		if (GetPlayerEntityProcedure.execute(world, entity) instanceof LivingEntity livingEntity) {
+			if (IsUUIDTrueProcedure.execute(world, entity))
+				this.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 87, this.topPos + 114, 50, 0f, 0, livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -78,7 +81,11 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> {
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
-				BackUIDPlayernameProcedure.execute(world, entity), 11, 115, -13369345, false);
+				GetPlayerNameProcedure.execute(world, entity), 11, 115, -13369345, false);
+		if (IsUUIDFalseProcedure.execute(world, entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.oneiricconcept.lib_gui.label_no_signal"), 64, 71, -13312, false);
+		if (IsUUIDFalseProcedure.execute(world, entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.oneiricconcept.lib_gui.label_player_not_connected"), 64, 52, -26368, false);
 	}
 
 	@Override

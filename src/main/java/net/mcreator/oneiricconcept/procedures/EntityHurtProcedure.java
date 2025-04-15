@@ -23,6 +23,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
+import net.mcreator.oneiricconcept.OneiricconceptMod;
+
 import javax.annotation.Nullable;
 
 import java.util.Comparator;
@@ -90,11 +93,14 @@ public class EntityHurtProcedure {
 					final Vec3 _center = new Vec3(sx, sy, sz);
 					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(range / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 						if (IsEntityDamageProcedure.execute(world, entity, entityiterator)) {
-							entityiterator.hurt(ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), (float) swordEnchant);
+							OneiricconceptMod.queueServerWork(1, () -> {
+								entityiterator.hurt(ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1),
+										(world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)));
+							});
 							DelayedDamageProcedure.execute(world, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), entityiterator,
-									(entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity15.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
+									(entity instanceof LivingEntity _livingEntity17 && _livingEntity17.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity17.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
 											* (0.2 + swordEnchant * 0.068)
-											+ (entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity16.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)
+											+ (entity instanceof LivingEntity _livingEntity18 && _livingEntity18.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity18.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)
 													* (0.33 + swordEnchant * 0.07),
 									40);
 						}
