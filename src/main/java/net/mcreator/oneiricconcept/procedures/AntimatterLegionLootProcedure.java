@@ -3,9 +3,12 @@ package net.mcreator.oneiricconcept.procedures;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -21,6 +24,7 @@ public class AntimatterLegionLootProcedure {
 			return;
 		ItemStack itmsstk = ItemStack.EMPTY;
 		double EquilibriumLevel = 0;
+		double lootingAndLuck = 0;
 		if (sourceentity instanceof Player) {
 			EquilibriumLevel = PGCApi.getPlayerVariables(sourceentity).jun_heng / 5 - 1;
 			if (7 <= EquilibriumLevel) {
@@ -30,8 +34,10 @@ public class AntimatterLegionLootProcedure {
 			} else if (1 <= EquilibriumLevel) {
 				EquilibriumLevel = 1;
 			}
+			lootingAndLuck = Math.max((sourceentity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity1.getAttribute(Attributes.LUCK).getValue() : 0) * 0.2
+					+ (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) * 0.2, 10);
 			if (0 < EquilibriumLevel) {
-				for (int index0 = 0; index0 < (int) EquilibriumLevel; index0++) {
+				for (int index0 = 0; index0 < (int) Math.ceil(EquilibriumLevel * (EquilibriumLevel + 1)); index0++) {
 					if (RandomProcedure.execute(world, 0.2 * EquilibriumLevel)) {
 						itmsstk = (RandomProcedure.execute(world, 0.1 * EquilibriumLevel) ? new ItemStack(OneiricconceptModItems.CONQUEROR_S_WILL.get()) : new ItemStack(OneiricconceptModItems.USURPER_S_SCHEME.get()));
 					} else {
@@ -48,6 +54,11 @@ public class AntimatterLegionLootProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 				}
+			}
+			if (world instanceof ServerLevel _level) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.THIEF_S_INSTINCT.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
 			}
 		}
 	}
