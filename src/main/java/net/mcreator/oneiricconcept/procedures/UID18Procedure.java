@@ -12,7 +12,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.nbt.StringTag;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
-import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 import javax.annotation.Nullable;
 
@@ -47,7 +46,7 @@ public class UID18Procedure {
 			OneiricconceptModVariables.MapVariables.get(world).playername.addTag(OneiricconceptModVariables.MapVariables.get(world).playername.size(), StringTag.valueOf((entity.getDisplayName().getString())));
 			List<Integer> weighting = Arrays.asList(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);
 			for (int index0 = 0; index0 < 8; index0++) {
-				UID151617 = UID151617 + "" + "0123456789abcdef".indexOf(((entity.getStringUUID()).substring((int) index0, (int) (index0 + 1))), 0);
+				UID151617 = UID151617 + "" + "0123456789abcdef".indexOf(((entity.getStringUUID()).substring((int) index0, (int) index0)), 0);
 			}
 			modx = Math.abs(x) % 99;
 			mody = Math.abs(y) % 99;
@@ -73,12 +72,11 @@ public class UID18Procedure {
 						return 0;
 					}
 				}.convert((UUIDstr.substring((int) index1)).substring(0, 1)) * weighting.get((int) index1);
-				OneiricconceptMod.LOGGER.debug(((UUIDstr.substring((int) index1)).substring(0, 1) + "--->" + checktest));
 				checkk = checkk + checktest;
 			}
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
-				_vars.UID = UUIDstr + "\u00A7e" + "10X98765432".substring((int) (checkk % 11), (int) (checkk % 11 + 1));
+				_vars.UID = UUIDstr + "\u00A7e" + "10X98765432".substring((int) (checkk % 11), (int) (checkk % 11));
 				_vars.syncPlayerVariables(entity);
 			}
 			OneiricconceptModVariables.MapVariables.get(world).playerUID.addTag(OneiricconceptModVariables.MapVariables.get(world).playerUID.size(), StringTag.valueOf(entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).UID));
