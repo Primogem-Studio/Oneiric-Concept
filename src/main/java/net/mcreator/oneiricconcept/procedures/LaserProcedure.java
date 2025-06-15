@@ -15,6 +15,9 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
+
 import java.util.Comparator;
 
 public class LaserProcedure {
@@ -59,7 +62,8 @@ public class LaserProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("particle minecraft:wax_off " + (x1 + ratio * dx) + (" " + (y1 + ratio * dy)) + (" " + (z1 + ratio * dz)) + " 0 0 0 1 1 force @a"));
 			}
-			target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, true, 1), 3);
+			target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, true, 1),
+					(float) Math.min(3, 3 * target.getData(OneiricconceptModVariables.PLAYER_VARIABLES).EquilibriumLevel * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
 		}
 	}
 

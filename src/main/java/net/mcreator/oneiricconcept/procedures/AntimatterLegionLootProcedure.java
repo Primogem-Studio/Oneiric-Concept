@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.PGCApi;
 
@@ -26,7 +27,12 @@ public class AntimatterLegionLootProcedure {
 		double EquilibriumLevel = 0;
 		double lootingAndLuck = 0;
 		if (sourceentity instanceof Player) {
-			EquilibriumLevel = PGCApi.getPlayerVariables(sourceentity).jun_heng / 5 - 1;
+			{
+				OneiricconceptModVariables.PlayerVariables _vars = sourceentity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
+				_vars.EquilibriumLevel = PGCApi.getPlayerVariables(sourceentity).jun_heng / 5 - 1;
+				_vars.syncPlayerVariables(sourceentity);
+			}
+			EquilibriumLevel = sourceentity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).EquilibriumLevel;
 			if (7 <= EquilibriumLevel) {
 				EquilibriumLevel = 3;
 			} else if (3 <= EquilibriumLevel) {

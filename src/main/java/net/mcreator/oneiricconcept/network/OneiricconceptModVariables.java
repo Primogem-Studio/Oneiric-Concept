@@ -69,6 +69,7 @@ public class OneiricconceptModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.EightCharactersofBirth = original.EightCharactersofBirth;
 			clone.UID = original.UID;
+			clone.EquilibriumLevel = original.EquilibriumLevel;
 			if (!event.isWasDeath()) {
 				clone.ListOrder = original.ListOrder;
 				clone.targetOffset = original.targetOffset;
@@ -223,6 +224,7 @@ public class OneiricconceptModVariables {
 		public String UID = "";
 		public double ListOrder = 0.0;
 		public boolean targetOffset = false;
+		public double EquilibriumLevel = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -231,6 +233,7 @@ public class OneiricconceptModVariables {
 			nbt.putString("UID", UID);
 			nbt.putDouble("ListOrder", ListOrder);
 			nbt.putBoolean("targetOffset", targetOffset);
+			nbt.putDouble("EquilibriumLevel", EquilibriumLevel);
 			return nbt;
 		}
 
@@ -240,6 +243,7 @@ public class OneiricconceptModVariables {
 			UID = nbt.getString("UID");
 			ListOrder = nbt.getDouble("ListOrder");
 			targetOffset = nbt.getBoolean("targetOffset");
+			EquilibriumLevel = nbt.getDouble("EquilibriumLevel");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
