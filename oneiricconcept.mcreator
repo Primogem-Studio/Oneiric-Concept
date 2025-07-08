@@ -14766,6 +14766,108 @@
         "files": [],
         "type": "number"
       }
+    },
+    {
+      "name": "HealthLoseTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "health_lose_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/HealthLoseTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BlockClear",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_clear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BlockClearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BlockClearStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_clear_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BlockClearStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "EngineeringAntimatterBomb",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engineering_antimatter_bomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/EngineeringAntimatterBombRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -15658,8 +15760,8 @@
       "item.oneiricconcept.propaganda_army": "Propaganda Army",
       "translation.oneiricconcept.stardust_baseballer_7": " in the next attack, and cool down ",
       "translation.oneiricconcept.stardust_baseballer_6": "Deal 60% damage to targets within a diameter range of ",
-      "translation.oneiricconcept.stardust_baseballer_5": "% and cools down for",
       "translation.oneiricconcept.patchouli_name_pgc": "primogemcraft wiki",
+      "translation.oneiricconcept.stardust_baseballer_5": "% and cools down for",
       "translation.oneiricconcept.stardust_baseballer_4": "Increases the damage caused by the next attack by ",
       "translation.oneiricconcept.stardust_baseballer_3": "% chance to attack other units",
       "translation.oneiricconcept.stardust_baseballer_2": "% chance that the enemy will obtain the wrong target DEBUFF during the attack, giving them a ",
@@ -15822,6 +15924,7 @@
       "advancements.shootingthesun.descr": "There used to be a young man named \u0027houyi\u0027 who wanted to use the Xuan Yuan Sword to shoot at the sun.",
       "block.oneiricconcept.stripped_the_another_world_log": "Stripped The Another World Log",
       "entity.oneiricconcept.baryon": "Baryon",
+      "entity.oneiricconcept.engineering_antimatter_bomb": "Engineering Antimatter Bomb",
       "advancements.oneiric_concept_advancement.descr": "1.6GB Genshin installation package",
       "gamerule.ocDamagemultiplier": "Damage multiplier",
       "item.oneiricconcept.example": "Example",
@@ -16044,8 +16147,8 @@
       "item.oneiricconcept.propaganda_army": "水军",
       "translation.oneiricconcept.stardust_baseballer_7": "范围内的目标造成60%的伤害，冷却",
       "translation.oneiricconcept.stardust_baseballer_6": "使下次攻击对目标周围直径",
-      "translation.oneiricconcept.stardust_baseballer_5": "%，冷却",
       "translation.oneiricconcept.patchouli_name_pgc": "原石工艺百科",
+      "translation.oneiricconcept.stardust_baseballer_5": "%，冷却",
       "translation.oneiricconcept.stardust_baseballer_4": "使下次攻击造成的伤害提高",
       "translation.oneiricconcept.stardust_baseballer_3": "%的概率攻击其它单位 ",
       "translation.oneiricconcept.stardust_baseballer_2": "%的概率使敌人获得错误目标DEBUFF，使其有",
@@ -16208,6 +16311,7 @@
       "advancements.shootingthesun.descr": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
       "block.oneiricconcept.stripped_the_another_world_log": "去皮异世界木",
       "entity.oneiricconcept.baryon": "重子",
+      "entity.oneiricconcept.engineering_antimatter_bomb": "Engineering Antimatter Bomb",
       "advancements.oneiric_concept_advancement.descr": "1.6GB的原神安装包",
       "gamerule.ocDamagemultiplier": "伤害倍率",
       "item.oneiricconcept.example": "Example",
@@ -16595,6 +16699,7 @@
       "advancements.shootingthesun.descr": "以前有个叫“houyi”的年轻人，想拿轩辕剑去射太阳。",
       "block.oneiricconcept.stripped_the_another_world_log": "去皮异世界木",
       "entity.oneiricconcept.baryon": "Baryon",
+      "entity.oneiricconcept.engineering_antimatter_bomb": "Engineering Antimatter Bomb",
       "advancements.oneiric_concept_advancement.descr": "1.6GB的原神安装包",
       "gamerule.ocDamagemultiplier": "伤害倍率",
       "item.oneiricconcept.example": "Example",

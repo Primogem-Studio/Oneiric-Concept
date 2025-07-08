@@ -12,6 +12,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.oneiricconcept.client.renderer.SkyShatteringLuxArrowRenderer;
+import net.mcreator.oneiricconcept.client.renderer.EngineeringAntimatterBombRenderer;
 import net.mcreator.oneiricconcept.client.renderer.CrystalTurtleRenderer;
 import net.mcreator.oneiricconcept.client.renderer.BaryonRenderer;
 
@@ -29,5 +30,6 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.XUAN_YUAN_ARROW_ARROW.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.BARYON.get(), BaryonRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.ON_LASER.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.ENGINEERING_ANTIMATTER_BOMB.get(), EngineeringAntimatterBombRenderer::new);
 	}
 }

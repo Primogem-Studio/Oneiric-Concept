@@ -24,6 +24,7 @@ import net.mcreator.oneiricconcept.entity.OnLaserEntity;
 import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
 import net.mcreator.oneiricconcept.entity.InvalidEntity;
 import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
+import net.mcreator.oneiricconcept.entity.EngineeringAntimatterBombEntity;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
 import net.mcreator.oneiricconcept.entity.BaryonEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
@@ -55,6 +56,10 @@ public class OneiricconceptModEntities {
 					.sized(1f, 1.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<OnLaserEntity>> ON_LASER = register("on_laser",
 			EntityType.Builder.<OnLaserEntity>of(OnLaserEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<EngineeringAntimatterBombEntity>> ENGINEERING_ANTIMATTER_BOMB = register("engineering_antimatter_bomb",
+			EntityType.Builder.<EngineeringAntimatterBombEntity>of(EngineeringAntimatterBombEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -66,11 +71,13 @@ public class OneiricconceptModEntities {
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		CrystalTurtleEntity.init(event);
 		BaryonEntity.init(event);
+		EngineeringAntimatterBombEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CRYSTAL_TURTLE.get(), CrystalTurtleEntity.createAttributes().build());
 		event.put(BARYON.get(), BaryonEntity.createAttributes().build());
+		event.put(ENGINEERING_ANTIMATTER_BOMB.get(), EngineeringAntimatterBombEntity.createAttributes().build());
 	}
 }

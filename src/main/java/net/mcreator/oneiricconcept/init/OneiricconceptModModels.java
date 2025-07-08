@@ -11,6 +11,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.oneiricconcept.client.model.Modelsky_shattering_lux_arrow;
 import net.mcreator.oneiricconcept.client.model.Modelcrystal_turtle;
+import net.mcreator.oneiricconcept.client.model.Modelblock;
 import net.mcreator.oneiricconcept.client.model.ModelBaryon;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -20,5 +21,6 @@ public class OneiricconceptModModels {
 		event.registerLayerDefinition(Modelsky_shattering_lux_arrow.LAYER_LOCATION, Modelsky_shattering_lux_arrow::createBodyLayer);
 		event.registerLayerDefinition(ModelBaryon.LAYER_LOCATION, ModelBaryon::createBodyLayer);
 		event.registerLayerDefinition(Modelcrystal_turtle.LAYER_LOCATION, Modelcrystal_turtle::createBodyLayer);
+		event.registerLayerDefinition(Modelblock.LAYER_LOCATION, Modelblock::createBodyLayer);
 	}
 }
