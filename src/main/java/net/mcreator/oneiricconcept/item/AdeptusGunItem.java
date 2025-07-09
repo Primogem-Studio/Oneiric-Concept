@@ -77,7 +77,7 @@ public class AdeptusGunItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		AdeptusfireProcedure.execute(entity, itemstack);
+		AdeptusfireProcedure.execute(world, entity, itemstack);
 		return retval;
 	}
 
