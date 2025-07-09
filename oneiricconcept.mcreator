@@ -14868,6 +14868,25 @@
           "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java"
         ]
       }
+    },
+    {
+      "name": "Bombknockback",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bombknockback",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/BombknockbackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -15279,6 +15298,9 @@
     "ITEMS:c:sausage": [
       "CUSTOM:Sausage",
       "CUSTOM:S2ausage"
+    ],
+    "ENTITIES:oneiricconcept:bomb": [
+      "CUSTOM:EngineeringAntimatterBomb"
     ],
     "ITEMS:c:salt": [
       "TAG:c:salt_dust",

@@ -57,9 +57,7 @@ public class OneiricconceptModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<OnLaserEntity>> ON_LASER = register("on_laser",
 			EntityType.Builder.<OnLaserEntity>of(OnLaserEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<EngineeringAntimatterBombEntity>> ENGINEERING_ANTIMATTER_BOMB = register("engineering_antimatter_bomb",
-			EntityType.Builder.<EngineeringAntimatterBombEntity>of(EngineeringAntimatterBombEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(1f, 1f));
+			EntityType.Builder.<EngineeringAntimatterBombEntity>of(EngineeringAntimatterBombEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(1f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
