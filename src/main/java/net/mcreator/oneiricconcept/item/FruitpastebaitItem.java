@@ -1,7 +1,5 @@
-
 package net.mcreator.oneiricconcept.item;
 
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
@@ -12,7 +10,7 @@ import net.mcreator.oneiricconcept.procedures.EnchantLureProcedure;
 
 public class FruitpastebaitItem extends Item {
 	public FruitpastebaitItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationModifier(0.3f).build()));
+		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(2).saturationModifier(0.3f).build()));
 	}
 
 	@Override

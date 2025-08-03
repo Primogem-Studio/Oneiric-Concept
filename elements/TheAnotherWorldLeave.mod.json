@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "block",
   "definition": {
     "texture": "theanotherworldlogleavetop",
@@ -14,9 +14,11 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "animations": [],
     "itemTexture": "",
     "particleTexture": "",
     "blockBase": "Leaves",
+    "blockSetType": "OAK",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -43,6 +45,10 @@
     "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
     "creativeTabs": [
       {
         "value": "CUSTOM:OneiricConcept"
@@ -59,9 +65,6 @@
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
-    "material": {
-      "value": "NONE"
-    },
     "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
@@ -70,6 +73,7 @@
       "fixedValue": 15.0
     },
     "colorOnMap": "DIAMOND",
+    "noteBlockInstrument": "harp",
     "creativePickItem": {
       "value": ""
     },
@@ -79,6 +83,7 @@
       "value": -7167251,
       "falpha": 0.0
     },
+    "ignitedByLava": false,
     "flammability": 30,
     "fireSpreadSpeed": 3,
     "isLadder": false,
@@ -110,6 +115,8 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
+    "sensitiveToVibration": false,
+    "vibrationalEvents": [],
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,

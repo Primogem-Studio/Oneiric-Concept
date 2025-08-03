@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:wilderness_rod",
-    "#oneiricconcept:rod"
+    {
+      "id": "#oneiricconcept:rod",
+      "required": false
+    },
+    "oneiricconcept:wilderness_rod"
   ]
 }

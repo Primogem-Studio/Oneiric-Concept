@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -24,7 +23,7 @@ import java.util.List;
 
 public class B2elobogSausageItem extends Item {
 	public B2elobogSausageItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(8).saturationModifier(0.8f).alwaysEdible().build())
+		super(new Item.Properties().fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(8).saturationModifier(0.8f).alwaysEdible().build())
 				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 7, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
 	}

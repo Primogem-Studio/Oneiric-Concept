@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#oneiricconcept:fruit_paste_bait_fish"
+    {
+      "id": "#oneiricconcept:fruit_paste_bait_fish",
+      "required": false
+    }
   ]
 }

@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.fluid.types;
 
 import net.neoforged.neoforge.fluids.FluidType;

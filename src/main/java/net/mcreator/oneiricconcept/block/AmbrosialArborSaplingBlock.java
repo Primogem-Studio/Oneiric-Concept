@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import net.minecraft.world.level.material.PushReaction;
@@ -25,7 +24,7 @@ public class AmbrosialArborSaplingBlock extends SaplingBlock {
 	public static final TreeGrower TREE_GROWER = new TreeGrower("ambrosial_arbor_sapling", Optional.empty(), Optional.of(getFeatureKey("oneiricconcept:ambrosial_arbor")), Optional.empty());
 
 	public AmbrosialArborSaplingBlock() {
-		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).randomTicks().sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).randomTicks().sound(SoundType.GRASS).instabreak().noCollission().pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

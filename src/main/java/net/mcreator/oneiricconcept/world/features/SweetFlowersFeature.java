@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.world.features;
 
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
@@ -18,7 +17,7 @@ public class SweetFlowersFeature extends SimpleBlockFeature {
 		int x = context.origin().getX();
 		int y = context.origin().getY();
 		int z = context.origin().getZ();
-		if (!SweetFlowerclimateProcedure.execute(world, x, y, z))
+		if (!SweetFlowerclimateProcedure.execute())
 			return false;
 		return super.place(context);
 	}

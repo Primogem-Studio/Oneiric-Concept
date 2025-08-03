@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -19,7 +18,7 @@ import java.util.List;
 
 public class OneiricShardItem extends Item {
 	public OneiricShardItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(7f).alwaysEdible().build()));
+		super(new Item.Properties().fireResistant().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(7f).alwaysEdible().build()));
 	}
 
 	@Override

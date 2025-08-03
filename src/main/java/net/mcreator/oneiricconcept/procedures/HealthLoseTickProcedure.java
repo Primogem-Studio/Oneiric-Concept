@@ -11,7 +11,7 @@ public class HealthLoseTickProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 200));
+			_entity.setHealth((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 200);
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) / 200 + 1) {
 			if (!entity.level().isClientSide())
 				entity.discard();

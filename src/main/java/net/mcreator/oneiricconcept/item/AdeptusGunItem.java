@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -31,7 +30,7 @@ import java.util.List;
 
 public class AdeptusGunItem extends Item {
 	public AdeptusGunItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.EPIC)
+		super(new Item.Properties().fireResistant().rarity(Rarity.EPIC)
 				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 279, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
 	}

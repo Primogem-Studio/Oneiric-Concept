@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
@@ -30,7 +29,7 @@ public class FreshSeedofDawnBlock extends SaplingBlock {
 	public static final TreeGrower TREE_GROWER = new TreeGrower("fresh_seedof_dawn", Optional.empty(), Optional.of(getFeatureKey("oneiricconcept:dawntree")), Optional.empty());
 
 	public FreshSeedofDawnBlock() {
-		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).randomTicks().sound(SoundType.GRASS).instabreak().noCollission().pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

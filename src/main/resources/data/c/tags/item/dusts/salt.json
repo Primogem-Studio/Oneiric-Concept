@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "#c:salt_dust"
+    {
+      "id": "#c:salt_dust",
+      "required": false
+    }
   ]
 }

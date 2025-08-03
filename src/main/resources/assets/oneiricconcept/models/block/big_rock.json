@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "minecraft:block/furnace_top",
-    "particle": "minecraft:block/furnace_top"
-  },
-  "render_type": "solid"
-}

@@ -14,8 +14,13 @@ public class XuanyuanOnlineProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(OneiricconceptModItems.LEGION_PSEUDO_CORE.get())) : false)
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(OneiricconceptModItems.XUANYUAN_SWORD.get())) : false) || getEntityGameType(entity) == GameType.CREATIVE;
+		return hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.LEGION_PSEUDO_CORE.get())) || hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.XUANYUAN_SWORD.get())) || getEntityGameType(entity) == GameType.CREATIVE;
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 
 	private static GameType getEntityGameType(Entity entity) {

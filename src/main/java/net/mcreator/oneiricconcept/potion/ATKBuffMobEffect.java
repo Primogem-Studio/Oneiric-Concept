@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.potion;
 
 import net.minecraft.world.entity.ai.attributes.Attributes;

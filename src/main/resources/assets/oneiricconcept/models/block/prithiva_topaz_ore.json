@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/prithivatopazore",
-    "particle": "oneiricconcept:block/prithivatopazore"
-  },
-  "render_type": "solid"
-}

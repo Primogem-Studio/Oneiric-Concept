@@ -1,8 +1,6 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
 
@@ -10,7 +8,7 @@ import net.mcreator.oneiricconcept.procedures.ArborProcedure;
 
 public class HiltwoodFromTheArborItem extends Item {
 	public HiltwoodFromTheArborItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().fireResistant());
 	}
 
 	@Override

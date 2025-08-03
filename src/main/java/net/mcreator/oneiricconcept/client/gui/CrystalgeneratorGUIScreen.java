@@ -12,18 +12,18 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.oneiricconcept.world.inventory.CrystalgeneratorGUIMenu;
 import net.mcreator.oneiricconcept.procedures.EnergybarProcedure;
 import net.mcreator.oneiricconcept.procedures.EnergyTipProcedure;
+import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import java.util.stream.Collectors;
-import java.util.HashMap;
 import java.util.Arrays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class CrystalgeneratorGUIScreen extends AbstractContainerScreen<CrystalgeneratorGUIMenu> {
-	private final static HashMap<String, Object> guistate = CrystalgeneratorGUIMenu.guistate;
+public class CrystalgeneratorGUIScreen extends AbstractContainerScreen<CrystalgeneratorGUIMenu> implements OneiricconceptModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public CrystalgeneratorGUIScreen(CrystalgeneratorGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -36,41 +36,50 @@ public class CrystalgeneratorGUIScreen extends AbstractContainerScreen<Crystalge
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/crystalgenerator_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		boolean customTooltipShown = false;
 		if (mouseX > leftPos + 146 && mouseX < leftPos + 170 && mouseY > topPos + 34 && mouseY < topPos + 58) {
 			String hoverText = EnergyTipProcedure.execute(world, x, y, z);
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
+			customTooltipShown = true;
 		}
 		if (mouseX > leftPos + 146 && mouseX < leftPos + 170 && mouseY > topPos + 10 && mouseY < topPos + 34) {
 			String hoverText = EnergyTipProcedure.execute(world, x, y, z);
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
+			customTooltipShown = true;
 		}
 		if (mouseX > leftPos + 146 && mouseX < leftPos + 170 && mouseY > topPos + 58 && mouseY < topPos + 82) {
 			String hoverText = EnergyTipProcedure.execute(world, x, y, z);
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
+			customTooltipShown = true;
 		}
+		if (!customTooltipShown)
+			this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/energybar.png"), this.leftPos + 160, this.topPos + 14, Mth.clamp((int) EnergybarProcedure.execute(world, x, y, z) * 8, 0, 128), 0, 8, 64, 136, 64);
-
 		RenderSystem.disableBlend();
 	}
 

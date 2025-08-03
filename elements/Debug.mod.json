@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "function",
   "definition": {
     "code": "gamerule ocdebug true\ngamerule ocfly false",

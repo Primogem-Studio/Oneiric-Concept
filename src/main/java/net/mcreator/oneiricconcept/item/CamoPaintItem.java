@@ -1,9 +1,7 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -15,7 +13,7 @@ import net.mcreator.oneiricconcept.procedures.UsecamoProcedure;
 
 public class CamoPaintItem extends Item {
 	public CamoPaintItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationModifier(0.3f).alwaysEdible().build()));
+		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(2).saturationModifier(0.3f).alwaysEdible().build()));
 	}
 
 	@Override

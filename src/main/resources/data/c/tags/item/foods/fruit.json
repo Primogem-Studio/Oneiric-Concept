@@ -1,10 +1,13 @@
 {
   "replace": false,
   "values": [
-    "minecraft:apple",
     "minecraft:melon_slice",
+    "oneiricconcept:primogemfruit",
+    {
+      "id": "#minecraft:fox_food",
+      "required": false
+    },
     "minecraft:chorus_fruit",
-    "#minecraft:fox_food",
-    "oneiricconcept:primogemfruit"
+    "minecraft:apple"
   ]
 }

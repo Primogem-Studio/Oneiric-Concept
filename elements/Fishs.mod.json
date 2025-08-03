@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "function",
   "definition": {
     "code": "summon minecraft:squid ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:glow_squid ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:axolotl ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:tadpole ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:salmon ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:tropical_fish ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:cod ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:pufferfish ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:turtle ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:dolphin ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:guardian ~ ~3 ~ {NeoForgeData: {fishheart:1b}}\nsummon minecraft:elder_guardian ~ ~3 ~ {NeoForgeData: {fishheart:1b}}",

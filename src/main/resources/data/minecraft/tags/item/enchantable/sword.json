@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:xuanyuan_sword",
-    "oneiricconcept:dark_xuanyuan_sword",
-    "oneiricconcept:sword_of_brilliant_valor",
-    "oneiricconcept:d_xuanyuan",
+    "oneiricconcept:stardust_baseballer",
     "oneiricconcept:aureliae_axe",
+    "oneiricconcept:sword_of_brilliant_valor",
     "oneiricconcept:aureliae_sword",
-    "oneiricconcept:stardust_baseballer"
+    "oneiricconcept:d_xuanyuan",
+    "oneiricconcept:xuanyuan_sword",
+    "oneiricconcept:dark_xuanyuan_sword"
   ]
 }

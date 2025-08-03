@@ -34,7 +34,7 @@ public class XuanyuanBoomProcedure {
 			final Vec3 _center = new Vec3(x, y, z);
 			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(67 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				entityiterator.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("oneiricconcept:honkai"))), immediatesourceentity, entity),
-						(float) (280 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER))));
+						280 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)));
 			}
 		}
 		if (world instanceof Level _level && !_level.isClientSide())

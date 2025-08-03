@@ -1,8 +1,6 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
@@ -13,7 +11,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class PrimogemfruitItem extends Item {
 	public PrimogemfruitItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(12).saturationModifier(0.5f).build()));
+		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(12).saturationModifier(0.5f).build()));
 	}
 
 	@Override

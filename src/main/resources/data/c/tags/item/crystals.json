@@ -1,17 +1,32 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:exhaustedprimogem",
-    "minecraft:diamond",
-    "minecraft:emerald",
-    "minecraft:quartz",
-    "minecraft:prismarine_shard",
     "minecraft:prismarine_crystals",
-    "minecraft:amethyst_shard",
-    "primogemcraft:jlza",
-    "primogemcraft:zuishengsuixie",
-    "primogemcraft:yuanshif",
-    "#c:gem",
-    "#c:gems"
+    "minecraft:emerald",
+    "minecraft:prismarine_shard",
+    "minecraft:diamond",
+    {
+      "id": "primogemcraft:zuishengsuixie",
+      "required": false
+    },
+    "oneiricconcept:exhaustedprimogem",
+    "minecraft:quartz",
+    {
+      "id": "primogemcraft:yuanshif",
+      "required": false
+    },
+    {
+      "id": "#c:gem",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:jlza",
+      "required": false
+    },
+    {
+      "id": "#c:gems",
+      "required": false
+    },
+    "minecraft:amethyst_shard"
   ]
 }

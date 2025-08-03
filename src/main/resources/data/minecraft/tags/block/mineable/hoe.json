@@ -1,9 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "oneiricconcept:wayfareblessing",
-    "oneiricconcept:nagadus_emerald_ore",
-    "oneiricconcept:banana_mushroom_bock",
-    "oneiricconcept:boom_blossoms_pyro"
-  ]
+  "values": []
 }

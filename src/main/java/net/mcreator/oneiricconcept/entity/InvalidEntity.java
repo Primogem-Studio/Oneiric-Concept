@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.entity;
 
 import net.neoforged.api.distmarker.OnlyIn;

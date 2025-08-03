@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/varunadalazuriteore",
-    "particle": "oneiricconcept:block/varunadalazuriteore"
-  },
-  "render_type": "solid"
-}

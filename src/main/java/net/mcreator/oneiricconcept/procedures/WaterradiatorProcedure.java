@@ -28,7 +28,7 @@ public class WaterradiatorProcedure {
 				sz = -3;
 				for (int index2 = 0; index2 < 7; index2++) {
 					waterblock = (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)));
-					if (waterblock.getBlock() == Blocks.WATER || waterblock.getBlock() == Blocks.WATER) {
+					if (waterblock.getBlock() == Blocks.AIR || waterblock.getBlock() == Blocks.WATER) {
 						world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), Blocks.AIR.defaultBlockState(), 3);
 						if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_ocean")))) {
 							if (world instanceof ServerLevel _level) {

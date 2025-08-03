@@ -1,8 +1,6 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
@@ -14,7 +12,7 @@ import net.mcreator.oneiricconcept.procedures.TAWWoodLootoProcedure;
 
 public class TAWWoodLootItem extends Item {
 	public TAWWoodLootItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().fireResistant());
 	}
 
 	@Override

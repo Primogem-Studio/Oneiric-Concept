@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     "minecraft:cactus",
-    "oneiricconcept:bactus",
-    "oneiricconcept:c_cactus",
     "oneiricconcept:gactus",
-    "oneiricconcept:mactus",
+    "oneiricconcept:c_cactus",
+    "oneiricconcept:bactus",
+    "oneiricconcept:yactus",
     "oneiricconcept:ractus",
-    "oneiricconcept:yactus"
+    "oneiricconcept:mactus"
   ]
 }

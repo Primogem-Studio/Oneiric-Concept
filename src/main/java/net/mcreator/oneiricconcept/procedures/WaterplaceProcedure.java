@@ -11,6 +11,6 @@ public class WaterplaceProcedure {
 		double x1 = 0;
 		double y1 = 0;
 		double z1 = 0;
-		BlockplaceProcedure.execute(world, x, y, z, Blocks.WATER.defaultBlockState(), direction);
+		BlockplaceProcedure.execute(world, x, y, z, Blocks.AIR.defaultBlockState(), direction);
 	}
 }

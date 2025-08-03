@@ -37,7 +37,7 @@ public class SpeedJumpProcedure {
 		speedlvl = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getAmplifier() : 0;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.ENERGY,
-					(int) (1200 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getDuration() : 0)),
+					1200 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getDuration() : 0),
 					(int) Math.min(maxlevel, (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(OneiricconceptModMobEffects.ENERGY) ? _livEnt.getEffect(OneiricconceptModMobEffects.ENERGY).getAmplifier() : 0) + 1)));
 		if ((entity instanceof LivingEntity _livingEntity13 && _livingEntity13.getAttributes().hasAttribute(Attributes.FALL_DAMAGE_MULTIPLIER) ? _livingEntity13.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER).getValue() : 0) <= 0) {
 			if (entity instanceof ServerPlayer _player) {

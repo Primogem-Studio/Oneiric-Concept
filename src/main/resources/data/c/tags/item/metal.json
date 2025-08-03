@@ -1,17 +1,17 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:pyro_metal",
     "oneiricconcept:crescent_metal",
-    "oneiricconcept:redmoon_metal",
-    "oneiricconcept:fullmoon_metal",
-    "oneiricconcept:trashmetal",
-    "oneiricconcept:electro_metal",
-    "oneiricconcept:hydro_metal",
     "oneiricconcept:cryo_metal",
     "oneiricconcept:dendro_metal",
-    "oneiricconcept:anemo_metal",
+    "oneiricconcept:hertabond",
+    "oneiricconcept:electro_metal",
+    "oneiricconcept:hydro_metal",
+    "oneiricconcept:redmoon_metal",
     "oneiricconcept:geo_metal",
-    "oneiricconcept:hertabond"
+    "oneiricconcept:fullmoon_metal",
+    "oneiricconcept:pyro_metal",
+    "oneiricconcept:anemo_metal",
+    "oneiricconcept:trashmetal"
   ]
 }

@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.potion;
 
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;

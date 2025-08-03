@@ -1,9 +1,0 @@
-{
-  "parent": "oneiricconcept:custom/wayfare_blessing",
-  "textures": {
-    "all": "oneiricconcept:block/texturewayfare_blessing",
-    "particle": "oneiricconcept:block/texturewayfare_blessing",
-    "0": "oneiricconcept:block/texturewayfare_blessing"
-  },
-  "render_type": "translucent"
-}
