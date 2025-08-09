@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:theanotherworldmooningot",
+    "oneiricconcept:crescentmoonore",
+    "oneiricconcept:redmoonore",
+    "oneiricconcept:fullmoonore",
     "oneiricconcept:molten_metal_block",
     "oneiricconcept:hertabond",
     "oneiricconcept:geo_metal",

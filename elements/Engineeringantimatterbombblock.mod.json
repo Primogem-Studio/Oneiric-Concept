@@ -121,6 +121,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Flint"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "FireTnt"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

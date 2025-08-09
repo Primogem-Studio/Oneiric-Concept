@@ -183,6 +183,12 @@ public class PgcPgBlock extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		SupportdownProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
 		BreakDropsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);

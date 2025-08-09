@@ -34,7 +34,9 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
@@ -42,6 +44,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.world.inventory.NestGUIMenu;
 import net.mcreator.oneiricconcept.procedures.SupportdownProcedure;
+import net.mcreator.oneiricconcept.procedures.IncubateProcedure;
 import net.mcreator.oneiricconcept.block.entity.NestBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -57,7 +60,7 @@ public class NestBlock extends Block implements EntityBlock {
 					return 0;
 				return 0;
 			}
-		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		}.getLightLevel())).noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -129,6 +132,12 @@ public class NestBlock extends Block implements EntityBlock {
 	@Override
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.randomTick(blockstate, world, pos, random);
+		IncubateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

@@ -104,6 +104,9 @@
     "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
+    "placingCondition": {
+      "name": "Supportdown"
+    },
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,

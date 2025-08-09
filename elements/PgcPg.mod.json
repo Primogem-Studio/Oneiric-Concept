@@ -127,6 +127,9 @@
     "onRightClicked": {
       "name": "Blockmode"
     },
+    "onNeighbourBlockChanges": {
+      "name": "Supportdown"
+    },
     "onDestroyedByPlayer": {
       "name": "BreakDrops"
     },

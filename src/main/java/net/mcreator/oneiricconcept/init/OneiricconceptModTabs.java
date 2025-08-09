@@ -118,6 +118,12 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.CULLINAN.get());
 				tabData.accept(OneiricconceptModBlocks.NEST.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ENGINEERINGANTIMATTERBOMBBLOCK.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CRESCENTMOONORE.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.REDMOONORE.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FULLMOONORE.get().asItem());
+				tabData.accept(OneiricconceptModItems.RAWCRESCENTMOONORE.get());
+				tabData.accept(OneiricconceptModItems.RAWREDMOONORE.get());
+				tabData.accept(OneiricconceptModItems.RAWFULLMOONORE.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -198,6 +204,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.FULLMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

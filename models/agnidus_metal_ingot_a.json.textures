@@ -65,6 +65,12 @@
         "1": "stinky_iron_ingot"
       },
       "name": "iron_laji"
+    },
+    "tawmooningot": {
+      "map": {
+        "1": "the_another_world_moon_ingot"
+      },
+      "name": "tawmooningot"
     }
   }
 }

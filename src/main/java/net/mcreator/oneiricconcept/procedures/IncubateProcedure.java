@@ -23,6 +23,7 @@ import java.util.Comparator;
 public class IncubateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		ItemStack egg = ItemStack.EMPTY;
+		boolean stop = false;
 		for (int index0 = 0; index0 < 16; index0++) {
 			egg = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy());
 			{
@@ -41,9 +42,13 @@ public class IncubateProcedure {
 								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
+						stop = true;
 						break;
 					}
 				}
+			}
+			if (stop) {
+				break;
 			}
 		}
 	}

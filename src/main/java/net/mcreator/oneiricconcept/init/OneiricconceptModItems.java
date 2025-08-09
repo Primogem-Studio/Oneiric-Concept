@@ -58,6 +58,9 @@ import net.mcreator.oneiricconcept.item.S2mokeSausageItem;
 import net.mcreator.oneiricconcept.item.S2ausageItem;
 import net.mcreator.oneiricconcept.item.ResurrectionPelletItem;
 import net.mcreator.oneiricconcept.item.RedBeanSoupFillingYuanXiaoItem;
+import net.mcreator.oneiricconcept.item.RawredmoonoreItem;
+import net.mcreator.oneiricconcept.item.RawfullmoonoreItem;
+import net.mcreator.oneiricconcept.item.RawcrescentmoonoreItem;
 import net.mcreator.oneiricconcept.item.PunitiveEnergyItem;
 import net.mcreator.oneiricconcept.item.PublicClamorItem;
 import net.mcreator.oneiricconcept.item.PropagandaArmyItem;
@@ -326,6 +329,13 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> CULLINAN = REGISTRY.register("cullinan", CullinanItem::new);
 	public static final DeferredItem<Item> NEST = block(OneiricconceptModBlocks.NEST);
 	public static final DeferredItem<Item> ENGINEERINGANTIMATTERBOMBBLOCK = block(OneiricconceptModBlocks.ENGINEERINGANTIMATTERBOMBBLOCK);
+	public static final DeferredItem<Item> CRESCENTMOONORE = block(OneiricconceptModBlocks.CRESCENTMOONORE);
+	public static final DeferredItem<Item> REDMOONORE = block(OneiricconceptModBlocks.REDMOONORE);
+	public static final DeferredItem<Item> FULLMOONORE = block(OneiricconceptModBlocks.FULLMOONORE);
+	public static final DeferredItem<Item> RAWCRESCENTMOONORE = REGISTRY.register("rawcrescentmoonore", RawcrescentmoonoreItem::new);
+	public static final DeferredItem<Item> RAWREDMOONORE = REGISTRY.register("rawredmoonore", RawredmoonoreItem::new);
+	public static final DeferredItem<Item> RAWFULLMOONORE = REGISTRY.register("rawfullmoonore", RawfullmoonoreItem::new);
+	public static final DeferredItem<Item> THEANOTHERWORLDMOONINGOT = block(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT);
 
 	// Start of user code block custom items
 	// End of user code block custom items

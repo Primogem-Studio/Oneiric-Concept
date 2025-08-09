@@ -27,7 +27,9 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.GrassColor;
@@ -39,6 +41,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
+import net.mcreator.oneiricconcept.procedures.SupportdownProcedure;
 import net.mcreator.oneiricconcept.procedures.BreakDropsProcedure;
 import net.mcreator.oneiricconcept.procedures.BlockmodeProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
@@ -193,6 +196,17 @@ public class Dendr1Block extends Block implements SimpleWaterloggedBlock {
 	}
 
 	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return SupportdownProcedure.execute(world, x, y, z);
+		}
+		return super.canSurvive(blockstate, worldIn, pos);
+	}
+
+	@Override
 	public FluidState getFluidState(BlockState state) {
 		return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
 	}
@@ -202,7 +216,13 @@ public class Dendr1Block extends Block implements SimpleWaterloggedBlock {
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
-		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		SupportdownProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

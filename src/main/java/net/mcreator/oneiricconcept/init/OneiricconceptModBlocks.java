@@ -19,6 +19,7 @@ import net.mcreator.oneiricconcept.block.VayudaTurquoiseOreBlock;
 import net.mcreator.oneiricconcept.block.VarunadaLazuriteOreBlock;
 import net.mcreator.oneiricconcept.block.VajradaAmethystOreBlock;
 import net.mcreator.oneiricconcept.block.ThunderSwordBlock;
+import net.mcreator.oneiricconcept.block.TheanotherworldmooningotBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldWoodBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldSaplingBlock;
 import net.mcreator.oneiricconcept.block.TheAnotherWorldLogBlock;
@@ -31,6 +32,7 @@ import net.mcreator.oneiricconcept.block.SustenanceanchorBlock;
 import net.mcreator.oneiricconcept.block.SuperimposerCustommadeBlock;
 import net.mcreator.oneiricconcept.block.StrippedTheAnotherWorldLogBlock;
 import net.mcreator.oneiricconcept.block.ShivadaJadeOreBlock;
+import net.mcreator.oneiricconcept.block.RedmoonoreBlock;
 import net.mcreator.oneiricconcept.block.Redmo1Block;
 import net.mcreator.oneiricconcept.block.RainbowCactusBallBlock;
 import net.mcreator.oneiricconcept.block.RactusBlock;
@@ -58,6 +60,7 @@ import net.mcreator.oneiricconcept.block.Geooo1Block;
 import net.mcreator.oneiricconcept.block.GeomarrowRadiatorBlock;
 import net.mcreator.oneiricconcept.block.GactusBlock;
 import net.mcreator.oneiricconcept.block.Fulmo1Block;
+import net.mcreator.oneiricconcept.block.FullmoonoreBlock;
 import net.mcreator.oneiricconcept.block.FreshSeedofDawnBlock;
 import net.mcreator.oneiricconcept.block.FloatingCloudBlock;
 import net.mcreator.oneiricconcept.block.ExhaustedprimogemBlock;
@@ -71,6 +74,7 @@ import net.mcreator.oneiricconcept.block.DawnleavesBlock;
 import net.mcreator.oneiricconcept.block.CrystalgeneratorBlock;
 import net.mcreator.oneiricconcept.block.CryosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Cryoo1Block;
+import net.mcreator.oneiricconcept.block.CrescentmoonoreBlock;
 import net.mcreator.oneiricconcept.block.CloudBlock;
 import net.mcreator.oneiricconcept.block.CamerapinkBlock;
 import net.mcreator.oneiricconcept.block.CameraBlock;
@@ -171,6 +175,10 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> CRYSTALGENERATOR = REGISTRY.register("crystalgenerator", CrystalgeneratorBlock::new);
 	public static final DeferredBlock<Block> NEST = REGISTRY.register("nest", NestBlock::new);
 	public static final DeferredBlock<Block> ENGINEERINGANTIMATTERBOMBBLOCK = REGISTRY.register("engineeringantimatterbombblock", EngineeringantimatterbombblockBlock::new);
+	public static final DeferredBlock<Block> CRESCENTMOONORE = REGISTRY.register("crescentmoonore", CrescentmoonoreBlock::new);
+	public static final DeferredBlock<Block> REDMOONORE = REGISTRY.register("redmoonore", RedmoonoreBlock::new);
+	public static final DeferredBlock<Block> FULLMOONORE = REGISTRY.register("fullmoonore", FullmoonoreBlock::new);
+	public static final DeferredBlock<Block> THEANOTHERWORLDMOONINGOT = REGISTRY.register("theanotherworldmooningot", TheanotherworldmooningotBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
