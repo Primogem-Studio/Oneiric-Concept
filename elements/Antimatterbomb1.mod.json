@@ -1,0 +1,48 @@
+{
+  "_fv": 77,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 64,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:UsurperSScheme"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:UsurperSScheme"
+      },
+      {
+        "value": "CUSTOM:ConquerorSWill"
+      },
+      {
+        "value": "CUSTOM:HonkaiShard"
+      },
+      {
+        "value": "CUSTOM:ConquerorSWill"
+      },
+      {
+        "value": "CUSTOM:UsurperSScheme"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:UsurperSScheme"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Engineeringantimatterbombblock"
+    },
+    "name": "antimatterbomb_1",
+    "namespace": "mod"
+  }
+}

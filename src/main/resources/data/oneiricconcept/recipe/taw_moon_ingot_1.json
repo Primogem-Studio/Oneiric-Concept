@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:crescent_metal"
+    },
+    "b": {
+      "item": "oneiricconcept:redmoon_metal"
+    },
+    "c": {
+      "item": "oneiricconcept:fullmoon_metal"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:theanotherworldmooningot",
+    "count": 1
+  }
+}

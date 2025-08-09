@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:usurper_s_scheme"
+    },
+    "b": {
+      "item": "oneiricconcept:honkai_sliver"
+    },
+    "c": {
+      "item": "oneiricconcept:conqueror_s_will"
+    },
+    "d": {
+      "item": "oneiricconcept:honkai_shard"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:engineeringantimatterbombblock",
+    "count": 64
+  }
+}

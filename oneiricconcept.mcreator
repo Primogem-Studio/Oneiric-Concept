@@ -15301,6 +15301,123 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "TawMoonIngot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_moon_ingot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/taw_moon_ingot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CrescentMoonIngot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crescent_moon_ingot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/crescent_moon_ingot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CrescentMoonIngot2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crescent_moon_ingot_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/crescent_moon_ingot_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "RedMoonIngot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_moon_ingot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/red_moon_ingot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FullMoonIngot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_moon_ingot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/full_moon_ingot_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "FullMoonIngot2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_moon_ingot_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/full_moon_ingot_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "TawIngot1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "taw_ingot_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/taw_ingot_1.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcrecipes"
+    },
+    {
+      "name": "TawIngot2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "taw_ingot_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/taw_ingot_2.json"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/pgcrecipes"
+    },
+    {
+      "name": "Nest1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nest_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/nest_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -16933,7 +17050,7 @@
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
       "block.oneiricconcept.anemo_metal": "自在金属锭",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
-      "block.oneiricconcept.engineeringantimatterbombblock": "Engineering antimatter bomb block",
+      "block.oneiricconcept.engineeringantimatterbombblock": "工业反物质炸弹",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
       "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7有股怪味……孜然的味道吗？",

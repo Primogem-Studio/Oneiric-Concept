@@ -1,0 +1,22 @@
+{
+  "_fv": 77,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Rawcrescentmoonore"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Newmo1"
+    },
+    "name": "crescent_moon_ingot_2",
+    "namespace": "mod"
+  }
+}
