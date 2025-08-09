@@ -15431,6 +15431,45 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Fullmoonoreloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fullmoonoreloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/fullmoonore.json"
+        ]
+      },
+      "path": "~/OreLoot"
+    },
+    {
+      "name": "Crescentmoonoreloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crescentmoonoreloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/crescentmoonore.json"
+        ]
+      },
+      "path": "~/OreLoot"
+    },
+    {
+      "name": "Redmoonoreloot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redmoonoreloot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoonore.json"
+        ]
+      },
+      "path": "~/OreLoot"
     }
   ],
   "variable_elements": [
