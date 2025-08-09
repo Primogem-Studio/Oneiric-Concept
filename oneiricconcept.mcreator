@@ -14891,6 +14891,287 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Engineeringantimatterbombblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engineeringantimatterbombblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/engineeringantimatterbombblock.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/engineeringantimatterbombblock.json",
+          "src/main/resources/assets/oneiricconcept/models/item/engineeringantimatterbombblock.json",
+          "src/main/resources/assets/oneiricconcept/models/block/engineeringantimatterbombblock.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/EngineeringantimatterbombblockBlock.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "TntAct",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_act",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TntActProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TntFireAct",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_fire_act",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TntFireActProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "x2",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "y2",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "z2",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "FireTnt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_tnt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FireTntProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "IfTime5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "if_time_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IfTime5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TntPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tnt_place",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TntPlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Incubate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "incubate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IncubateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Flint",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FlintProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Getplayerposition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "getplayerposition",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetplayerpositionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "BigRed",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "big_red",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/function/big_red.mcfunction"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -15001,6 +15282,10 @@
     "ITEMS:c:dusts/salt": [
       "TAG:c:salt_dust"
     ],
+    "ITEMS:c:foods/cooked_meat": [
+      "TAG:c:smokesausage",
+      "TAG:c:b2sausage"
+    ],
     "BLOCKS:c:cactus": [
       "Blocks.CACTUS",
       "CUSTOM:Bactus",
@@ -15009,10 +15294,6 @@
       "CUSTOM:Mactus",
       "CUSTOM:Ractus",
       "CUSTOM:Yactus"
-    ],
-    "ITEMS:c:foods/cooked_meat": [
-      "TAG:c:smokesausage",
-      "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:MoltenMetalBlock",
@@ -15660,7 +15941,8 @@
       "StardustBaseballer",
       "Crystalgenerator",
       "Cullinan",
-      "Nest"
+      "Nest",
+      "Engineeringantimatterbombblock"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -15745,8 +16027,8 @@
     "en_us": {
       "translation.oneiricconcept.magazine": "§7Put it into effect on the deputy，Right click to fill in deputy ammunition",
       "item.oneiricconcept.primogemcraftwiki": "Primogemcraft wiki",
-      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "item.oneiricconcept.legion_pseudo_core": "Legion Pseudo Core",
+      "item.oneiricconcept.grilled_oy_dumpling": "Grilled Oy Dumpling",
       "effect.oneiricconcept.b_2sausage": "sausage",
       "item.oneiricconcept.oy_dumpling": "Dumpling",
       "block.oneiricconcept.camera": "Camera",
@@ -15760,8 +16042,8 @@
       "fluid.oneiricconcept.memoria": "Memoria",
       "item.oneiricconcept.memoria_piece": "Memoria Piece",
       "gamerule.ocinitialload.description": "Set game rules as default when entering the world",
-      "block.oneiricconcept.crystalgenerator": "Crystalgenerator",
       "block.oneiricconcept.geomarrow_radiator": "Geomarrow Radiator",
+      "block.oneiricconcept.crystalgenerator": "Crystalgenerator",
       "block.oneiricconcept.camerapink.description_0": "§7The meaning of \u0027相机 is to see through the key points",
       "block.oneiricconcept.geosealingwax": "Geo sealing wax",
       "advancements.eastroc.descr": "Tired,Drowsy,Drink Eastroc",
@@ -15775,17 +16057,17 @@
       "item.oneiricconcept.memoria_loot": "Memoria Loot",
       "advancements.fragile_crisp_cone.title": "As Fragile as Crisp Cone",
       "item.oneiricconcept.sweetflowermedaka": "Sweet flower medaka",
-      "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "block.oneiricconcept.superimposer_custommade": "Superimposer (Custom-made)",
-      "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
+      "item.oneiricconcept.legion_pseudo_sliver": "Legion Pseudo Sliver",
       "item.oneiricconcept.aizenmedaka": "Aizenmedaka",
+      "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
-      "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
       "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
+      "block.oneiricconcept.banana_mushroom.description_3": "快快乐乐没烦恼",
       "block.oneiricconcept.banana_mushroom.description_2": "吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "摆满香蕉的小岛",
@@ -15794,8 +16076,8 @@
       "item.oneiricconcept.propaganda_army": "Propaganda Army",
       "translation.oneiricconcept.stardust_baseballer_7": " in the next attack, and cool down ",
       "translation.oneiricconcept.stardust_baseballer_6": "Deal 60% damage to targets within a diameter range of ",
-      "translation.oneiricconcept.patchouli_name_pgc": "primogemcraft wiki",
       "translation.oneiricconcept.stardust_baseballer_5": "% and cools down for",
+      "translation.oneiricconcept.patchouli_name_pgc": "primogemcraft wiki",
       "translation.oneiricconcept.stardust_baseballer_4": "Increases the damage caused by the next attack by ",
       "translation.oneiricconcept.stardust_baseballer_3": "% chance to attack other units",
       "translation.oneiricconcept.stardust_baseballer_2": "% chance that the enemy will obtain the wrong target DEBUFF during the attack, giving them a ",
@@ -15813,8 +16095,8 @@
       "item.oneiricconcept.memory_bubble": "Memory Bubble",
       "translation.oneiricconcept.autosmelt": "autosmelt、suppression marastruck",
       "item.oneiricconcept.stardust_baseballer": "Stardust Baseballer",
-      "gamerule.friendshipMode.description": "After activation, some player friendly interactive features can be enabled",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7Little sugar meatballs",
+      "gamerule.friendshipMode.description": "After activation, some player friendly interactive features can be enabled",
       "translation.oneiricconcept.patchouli_name_oc": "oneiricconcept wiki",
       "advancements.big_stone_crush_chest.descr": "The darkness is like a boulder pressing down upon the breast",
       "effect.oneiricconcept.camo.description": "Reduce the monster\u0027s range and attack.",
@@ -15823,8 +16105,8 @@
       "translation.oneiricconcept.rightclick": "Right click effect",
       "item.oneiricconcept.b_2elobog_sausage": "German style cumin smoked sausage",
       "item.oneiricconcept.s_2tuffing.description_0": "Mixed with broken bones and debris, it has a cumin flavor",
-      "block.oneiricconcept.exhaustedprimogem": "Exhausted primogem",
       "translation.oneiricconcept.lurelevelmax": "§cThe lure level has reached the upper limit",
+      "block.oneiricconcept.exhaustedprimogem": "Exhausted primogem",
       "item.oneiricconcept.s_2ausage": "Sausage",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "Gactus",
@@ -15838,8 +16120,8 @@
       "item.oneiricconcept.oy_stuffing.description_0": "§7Right... right?",
       "block.oneiricconcept.hertabond": "Herta bond",
       "enchantment.oneiricconcept.sharp_hook.desc": "Eliminate obstacles encountered while fishing in the water; Fish hooks can cause damage to undead creatures in the water, so retrieve the hooked items.",
-      "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
       "advancements.shootingthesun.title": "Shooting the sun",
+      "block.oneiricconcept.agnidus_agate_ore": "Shivada Jade Ore",
       "translation.oneiricconcept.lure": "Enchanting Progress",
       "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
       "block.oneiricconcept.ambrosial_arbor_wood": "Ambrosial Arbor Wood",
@@ -15872,11 +16154,11 @@
       "block.oneiricconcept.cloud": "Cloud",
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine",
       "item.oneiricconcept.fish": "Fish",
-      "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
       "item.oneiricconcept.molten_metal": "Molten Metal Gem",
+      "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
       "item.oneiricconcept.phlogiston_core.description_1": "It is recommended to charge no more than three groups",
-      "item.oneiricconcept.phlogiston_core.description_2": "as it may cause significant lag",
       "block.oneiricconcept.cryo_metal": "cryo metal ingot",
+      "item.oneiricconcept.phlogiston_core.description_2": "as it may cause significant lag",
       "item.oneiricconcept.memoria_piece.description_0": "§7It\u0027s indeed just a condensed memory",
       "advancements.aftertheiceturnsintowater.descr": "……the sea I hang upside down will be your sky",
       "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
@@ -15884,8 +16166,8 @@
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
       "item.oneiricconcept.phlogiston_core": "Phlogiston Core",
       "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
-      "block.oneiricconcept.big_rock": "Big Rock",
       "block.oneiricconcept.redmoon_metal": "red moon ingot",
+      "block.oneiricconcept.big_rock": "Big Rock",
       "item.oneiricconcept.sword_of_brilliant_valor": "Sword Of Brilliant Valor",
       "block.oneiricconcept.ambrosial_arbor_plank": "Ambrosial Arbor Plank",
       "item.oneiricconcept.belobog_sausage": "Belobog Sausage",
@@ -15905,8 +16187,8 @@
       "item.oneiricconcept.energy_drink": "Energy Drink",
       "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "Surprise Box,for Good or Bad",
-      "block.oneiricconcept.the_another_world_log": "The Another World Log",
       "advancements.eastroc.title": "Eastroc",
+      "block.oneiricconcept.the_another_world_log": "The Another World Log",
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
       "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
       "item.oneiricconcept.ignis_aureliae": "Ignis Aureliae",
@@ -16105,6 +16387,7 @@
       "block.oneiricconcept.sustenanceanchor": "Sustenanceanchor",
       "block.oneiricconcept.anemo_metal": "Vayuda_metal_ingot",
       "item.oneiricconcept.oy_dumpling.description_0": "这啥馅儿啊",
+      "block.oneiricconcept.engineeringantimatterbombblock": "Engineering antimatter bomb block",
       "item.oneiricconcept.small_herta_core": "Small-Her Ta Core",
       "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7Do you have a strange smell... the scent of cumin?",
@@ -16493,6 +16776,7 @@
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
       "block.oneiricconcept.anemo_metal": "自在金属锭",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
+      "block.oneiricconcept.engineeringantimatterbombblock": "Engineering antimatter bomb block",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
       "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7有股怪味……孜然的味道吗？",
@@ -16521,8 +16805,8 @@
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
       "item.oneiricconcept.primogemcraftwiki": "原石工艺百科",
-      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "item.oneiricconcept.legion_pseudo_core": "千律赝核",
+      "item.oneiricconcept.grilled_oy_dumpling": "烤饺子",
       "effect.oneiricconcept.b_2sausage": "食物中毒",
       "item.oneiricconcept.oy_dumpling": "饺子",
       "block.oneiricconcept.camera": "照相机",
@@ -16536,8 +16820,8 @@
       "fluid.oneiricconcept.memoria": "§9忆质",
       "item.oneiricconcept.memoria_piece": "§9忆质凝块",
       "gamerule.ocinitialload.description": "进入世界时将游戏规则设为默认",
-      "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
       "block.oneiricconcept.crystalgenerator": "Crystalgenerator",
+      "block.oneiricconcept.geomarrow_radiator": "地髓加热器",
       "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
       "block.oneiricconcept.geosealingwax": "岩之印",
       "advancements.eastroc.descr": "Tired,Drowsy,Drink Eastroc",
@@ -16551,17 +16835,17 @@
       "block.oneiricconcept.sweetflower": "甜甜花",
       "advancements.fragile_crisp_cone.title": "As Fragile as Crisp Cone",
       "item.oneiricconcept.sweetflowermedaka": "甜甜花鳉",
-      "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "item.oneiricconcept.legion_pseudo_sliver": "千律赝核碎片",
-      "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
+      "block.oneiricconcept.superimposer_custommade": "特制叠影器",
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
+      "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
       "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
-      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_3": "§7快快乐乐没烦恼",
+      "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
       "block.oneiricconcept.banana_mushroom.description_2": "§7吃完香蕉就睡觉",
       "block.oneiricconcept.banana_mushroom.description_1": "§7睡蕉小猴的爱巢",
       "block.oneiricconcept.banana_mushroom.description_0": "§7摆满香蕉的小岛",
@@ -16590,8 +16874,8 @@
       "item.oneiricconcept.memory_bubble": "§9忆泡",
       "translation.oneiricconcept.autosmelt": "",
       "item.oneiricconcept.stardust_baseballer": "Stardust Baseballer",
-      "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "gamerule.friendshipMode.description": "After activation, some player friendly interactive features can be enabled",
+      "item.oneiricconcept.red_bean_soup_filling_yuan_xiao.description_0": "§7小糖丸子",
       "translation.oneiricconcept.patchouli_name_oc": "梦华构想百科",
       "advancements.big_stone_crush_chest.descr": "黑暗好像一颗巨石按在胸口",
       "effect.oneiricconcept.camo.description": "",
@@ -16600,8 +16884,8 @@
       "translation.oneiricconcept.rightclick": "",
       "item.oneiricconcept.b_2elobog_sausage": "德式孜然熏肠",
       "item.oneiricconcept.s_2tuffing.description_0": "§7夹杂着碎骨头渣子，有股孜然味",
-      "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",
       "block.oneiricconcept.exhaustedprimogem": "Exhaustedprimogem",
+      "translation.oneiricconcept.lurelevelmax": "§c饵钓等级已达上限",
       "item.oneiricconcept.s_2ausage": "香肠",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "仙士掌",
@@ -16615,8 +16899,8 @@
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
       "block.oneiricconcept.hertabond": "Herta bond",
       "enchantment.oneiricconcept.sharp_hook.desc": "",
-      "advancements.shootingthesun.title": "houyi射日",
       "block.oneiricconcept.agnidus_agate_ore": "燃愿玛瑙矿石",
+      "advancements.shootingthesun.title": "houyi射日",
       "translation.oneiricconcept.lure": "附魔进度：",
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
       "block.oneiricconcept.ambrosial_arbor_wood": "建木",
@@ -16649,11 +16933,11 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
+      "item.oneiricconcept.molten_metal": "铄金",
       "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
-      "block.oneiricconcept.cryo_metal": "crescent ingot",
       "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
+      "block.oneiricconcept.cryo_metal": "crescent ingot",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
@@ -16661,8 +16945,8 @@
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "item.oneiricconcept.phlogiston_core": "燃素核心",
       "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
-      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "大石头块",
+      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
       "block.oneiricconcept.ambrosial_arbor_plank": "建木木板",
       "item.oneiricconcept.belobog_sausage": "贝洛伯格红肠",
@@ -16682,8 +16966,8 @@
       "item.oneiricconcept.energy_drink": "能量饮料",
       "gui.oneiricconcept.lib_gui.button_empty": "\u003c",
       "subtitles.surprise_box_for_good_or_bad": "开盒有惊__",
-      "advancements.eastroc.title": "Eastroc",
       "block.oneiricconcept.the_another_world_log": "异世界原木",
+      "advancements.eastroc.title": "Eastroc",
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
       "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
@@ -16882,6 +17166,7 @@
       "block.oneiricconcept.sustenanceanchor": "维生定锚",
       "block.oneiricconcept.anemo_metal": "Vayuda_metal_ingot",
       "item.oneiricconcept.oy_dumpling.description_0": "§7这啥馅儿啊",
+      "block.oneiricconcept.engineeringantimatterbombblock": "Engineering antimatter bomb block",
       "item.oneiricconcept.small_herta_core": "小黑塔核心",
       "gamerule.octest": "octest",
       "item.oneiricconcept.s_2moke_sausage.description_0": "§7有股怪味……孜然的味道吗？",

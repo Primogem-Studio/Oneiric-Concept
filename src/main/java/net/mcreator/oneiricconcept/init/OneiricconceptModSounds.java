@@ -20,4 +20,6 @@ public class OneiricconceptModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> MMM = REGISTRY.register("mmm", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "mmm")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BIGSTONECRUSHCHEST = REGISTRY.register("bigstonecrushchest", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "bigstonecrushchest")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> HOUYI = REGISTRY.register("houyi", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "houyi")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> JIMODERENSHANGXINDEGE = REGISTRY.register("jimoderenshangxindege",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("oneiricconcept", "jimoderenshangxindege")));
 }

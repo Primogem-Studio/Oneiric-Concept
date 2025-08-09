@@ -34,5 +34,14 @@
         "stream": false
       }
     ]
+  },
+  "jimoderenshangxindege": {
+    "subtitle": "subtitles.jimoderenshangxindege",
+    "sounds": [
+      {
+        "name": "oneiricconcept:jimoderenshangxindege",
+        "stream": false
+      }
+    ]
   }
 }

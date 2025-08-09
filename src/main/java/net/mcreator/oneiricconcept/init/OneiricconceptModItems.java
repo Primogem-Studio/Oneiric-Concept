@@ -325,6 +325,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> CRYSTALGENERATOR = block(OneiricconceptModBlocks.CRYSTALGENERATOR);
 	public static final DeferredItem<Item> CULLINAN = REGISTRY.register("cullinan", CullinanItem::new);
 	public static final DeferredItem<Item> NEST = block(OneiricconceptModBlocks.NEST);
+	public static final DeferredItem<Item> ENGINEERINGANTIMATTERBOMBBLOCK = block(OneiricconceptModBlocks.ENGINEERINGANTIMATTERBOMBBLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

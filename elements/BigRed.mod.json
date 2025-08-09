@@ -1,0 +1,9 @@
+{
+  "_fv": 77,
+  "_type": "function",
+  "definition": {
+    "code": "summon minecraft:firework_rocket ~1 ~ ~ {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nsummon minecraft:firework_rocket ~ ~ ~1 {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nsummon minecraft:firework_rocket ~-1 ~ ~ {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nsummon minecraft:firework_rocket ~ ~ ~-1 {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nsummon minecraft:firework_rocket ~1 ~ ~1 {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nsummon minecraft:firework_rocket ~-1 ~ ~-1 {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nsummon minecraft:firework_rocket ~1 ~ ~-1 {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nsummon minecraft:firework_rocket ~-1 ~ ~1 {LifeTime:60,FireworksItem:{id:'primogemcraft:yuanshi'}}\nplaysound oneiricconcept:jimoderenshangxindege player @a ~ ~ ~ 60.0",
+    "name": "big_red",
+    "namespace": "mod"
+  }
+}

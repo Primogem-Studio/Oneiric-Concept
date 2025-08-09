@@ -61,6 +61,7 @@ import net.mcreator.oneiricconcept.block.Fulmo1Block;
 import net.mcreator.oneiricconcept.block.FreshSeedofDawnBlock;
 import net.mcreator.oneiricconcept.block.FloatingCloudBlock;
 import net.mcreator.oneiricconcept.block.ExhaustedprimogemBlock;
+import net.mcreator.oneiricconcept.block.EngineeringantimatterbombblockBlock;
 import net.mcreator.oneiricconcept.block.ElementsCrystalOreBlock;
 import net.mcreator.oneiricconcept.block.ElectrosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Elect1Block;
@@ -169,6 +170,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> PRIMOGEMSTORMGLASS = REGISTRY.register("primogemstormglass", PrimogemstormglassBlock::new);
 	public static final DeferredBlock<Block> CRYSTALGENERATOR = REGISTRY.register("crystalgenerator", CrystalgeneratorBlock::new);
 	public static final DeferredBlock<Block> NEST = REGISTRY.register("nest", NestBlock::new);
+	public static final DeferredBlock<Block> ENGINEERINGANTIMATTERBOMBBLOCK = REGISTRY.register("engineeringantimatterbombblock", EngineeringantimatterbombblockBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
