@@ -14,6 +14,7 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
+    "rewardFunction": "BigRed",
     "rewardXP": 888,
     "achievementType": "challenge",
     "parent": {

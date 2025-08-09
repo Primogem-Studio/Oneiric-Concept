@@ -19,11 +19,14 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.oneiricconcept.world.inventory.LibGuiMenu;
 import net.mcreator.oneiricconcept.procedures.IsUUIDTrueProcedure;
 import net.mcreator.oneiricconcept.procedures.IsUUIDFalseProcedure;
+import net.mcreator.oneiricconcept.procedures.GetplayerpositionProcedure;
 import net.mcreator.oneiricconcept.procedures.GetPlayerNameProcedure;
 import net.mcreator.oneiricconcept.procedures.GetPlayerEntityProcedure;
 import net.mcreator.oneiricconcept.network.LibGuiButtonMessage;
 
+import java.util.stream.Collectors;
 import java.util.HashMap;
+import java.util.Arrays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -57,6 +60,48 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> {
 				this.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 87, this.topPos + 114, 42, 0f, 0, livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (IsUUIDTrueProcedure.execute(world, entity))
+			if (mouseX > leftPos + 63 && mouseX < leftPos + 87 && mouseY > topPos + 90 && mouseY < topPos + 114) {
+				String hoverText = GetplayerpositionProcedure.execute(world, entity);
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
+		if (IsUUIDTrueProcedure.execute(world, entity))
+			if (mouseX > leftPos + 87 && mouseX < leftPos + 111 && mouseY > topPos + 90 && mouseY < topPos + 114) {
+				String hoverText = GetplayerpositionProcedure.execute(world, entity);
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
+		if (IsUUIDTrueProcedure.execute(world, entity))
+			if (mouseX > leftPos + 63 && mouseX < leftPos + 87 && mouseY > topPos + 66 && mouseY < topPos + 90) {
+				String hoverText = GetplayerpositionProcedure.execute(world, entity);
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
+		if (IsUUIDTrueProcedure.execute(world, entity))
+			if (mouseX > leftPos + 87 && mouseX < leftPos + 111 && mouseY > topPos + 66 && mouseY < topPos + 90) {
+				String hoverText = GetplayerpositionProcedure.execute(world, entity);
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
+		if (IsUUIDTrueProcedure.execute(world, entity))
+			if (mouseX > leftPos + 63 && mouseX < leftPos + 87 && mouseY > topPos + 42 && mouseY < topPos + 66) {
+				String hoverText = GetplayerpositionProcedure.execute(world, entity);
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
+		if (IsUUIDTrueProcedure.execute(world, entity))
+			if (mouseX > leftPos + 87 && mouseX < leftPos + 111 && mouseY > topPos + 42 && mouseY < topPos + 66) {
+				String hoverText = GetplayerpositionProcedure.execute(world, entity);
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+			}
 	}
 
 	@Override

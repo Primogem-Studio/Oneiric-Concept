@@ -33,7 +33,8 @@
     }
   },
   "rewards": {
-    "experience": 888
+    "experience": 888,
+    "function": "oneiricconcept:big_red"
   },
   "parent": "oneiricconcept:oneiric_concept_advancement"
 }

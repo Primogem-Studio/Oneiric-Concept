@@ -15418,6 +15418,19 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Antimatterbomb1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "antimatterbomb_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/antimatterbomb_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -17633,7 +17646,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.64",
+    "version": "1.9.66",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",
