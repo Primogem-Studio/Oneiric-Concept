@@ -11,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class CrescentmoonoreBlock extends Block {
 	public CrescentmoonoreBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.STONE).strength(-1, 3600000));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.STONE).strength(20f).requiresCorrectToolForDrops());
 	}
 
 	@Override

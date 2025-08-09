@@ -16091,6 +16091,7 @@
       "~CUSTOM:AureliaeHoe"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:Crescentmoonore",
       "~CUSTOM:Redmoonore",
       "~CUSTOM:Fullmoonore"
     ],

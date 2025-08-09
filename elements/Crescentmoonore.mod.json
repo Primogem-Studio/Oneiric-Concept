@@ -53,7 +53,7 @@
     },
     "dropAmount": 1,
     "useLootTableForDrops": true,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
@@ -102,7 +102,7 @@
       "value": ""
     },
     "luminance": 0,
-    "unbreakable": true,
+    "unbreakable": false,
     "vanillaToolTier": "DIAMOND",
     "isBonemealable": false,
     "hasInventory": false,
