@@ -129,11 +129,11 @@
     ],
     "blocksToReplace": [
       {
-        "value": "TAG:stone_ore_replaceables"
+        "value": "Blocks.DEEPSLATE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 4,
+    "frequencyPerChunks": 2,
     "frequencyOnChunk": 16,
     "minGenerateHeight": -63,
     "maxGenerateHeight": -61
