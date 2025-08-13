@@ -1,0 +1,48 @@
+{
+  "feature": "oneiricconcept:container",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 60
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 10
+        },
+        "max_inclusive": {
+          "absolute": 50
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:solid",
+            "offset": [
+              0,
+              5,
+              0
+            ]
+          },
+          {
+            "type": "minecraft:solid",
+            "offset": [
+              0,
+              -5,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

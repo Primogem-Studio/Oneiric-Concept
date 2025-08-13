@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": {
+      "feature": {
+        "type": "minecraft:no_op",
+        "config": {}
+      },
+      "placement": []
+    },
+    "features": [
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_acientdebris",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_agnidusagateore",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_coalblock",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_goldore",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.2,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_quartzblock",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.2,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_quartzore",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_rawgold",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      },
+      {
+        "chance": 0.1,
+        "feature": {
+          "feature": {
+            "type": "oneiricconcept:structure_feature",
+            "config": {
+              "structure": "oneiricconcept:container_wither",
+              "random_rotation": true,
+              "ignored_blocks": "minecraft:bedrock"
+            }
+          },
+          "placement": []
+        }
+      }
+    ]
+  }
+}
