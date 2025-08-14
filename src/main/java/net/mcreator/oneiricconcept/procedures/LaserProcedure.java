@@ -63,7 +63,7 @@ public class LaserProcedure {
 							("particle minecraft:wax_off " + (x1 + ratio * dx) + (" " + (y1 + ratio * dy)) + (" " + (z1 + ratio * dz)) + " 0 0 0 1 1 force @a"));
 			}
 			target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, true, 1),
-					(float) Math.min(3, 3 * target.getData(OneiricconceptModVariables.PLAYER_VARIABLES).EquilibriumLevel * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
+					(float) Math.max(3, 3 * target.getData(OneiricconceptModVariables.PLAYER_VARIABLES).EquilibriumLevel * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
 		}
 	}
 
