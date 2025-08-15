@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ddd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:amethyst_block"
+    },
+    "b": {
+      "item": "minecraft:daylight_detector"
+    },
+    "c": {
+      "item": "primogemcraft:qxzhq"
+    },
+    "d": {
+      "item": "minecraft:purpur_block"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:white_moonlight_absorber",
+    "count": 1
+  }
+}

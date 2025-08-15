@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.oneiricconcept.block.entity.WhiteMoonlightAbsorberBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchoroffBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchorBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PropagandaArmyBlockBlockEntity;
@@ -38,6 +39,7 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> PRIMOGEMSTORMGLASS = register("primogemstormglass", OneiricconceptModBlocks.PRIMOGEMSTORMGLASS, PrimogemstormglassBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> CRYSTALGENERATOR = register("crystalgenerator", OneiricconceptModBlocks.CRYSTALGENERATOR, CrystalgeneratorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> NEST = register("nest", OneiricconceptModBlocks.NEST, NestBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> WHITE_MOONLIGHT_ABSORBER = register("white_moonlight_absorber", OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER, WhiteMoonlightAbsorberBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -58,5 +60,6 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CRYSTALGENERATOR.get(), (blockEntity, side) -> ((CrystalgeneratorBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, CRYSTALGENERATOR.get(), (blockEntity, side) -> ((CrystalgeneratorBlockEntity) blockEntity).getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEST.get(), (blockEntity, side) -> ((NestBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WHITE_MOONLIGHT_ABSORBER.get(), (blockEntity, side) -> ((WhiteMoonlightAbsorberBlockEntity) blockEntity).getItemHandler());
 	}
 }

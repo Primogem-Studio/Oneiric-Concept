@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.oneiricconcept.client.gui.WhiteMoonlightAbsorberGUIScreen;
 import net.mcreator.oneiricconcept.client.gui.PhlogistontankGuiScreen;
 import net.mcreator.oneiricconcept.client.gui.NestGUIScreen;
 import net.mcreator.oneiricconcept.client.gui.LibGuiScreen;
@@ -24,5 +25,6 @@ public class OneiricconceptModScreens {
 		event.register(OneiricconceptModMenus.LIB_GUI.get(), LibGuiScreen::new);
 		event.register(OneiricconceptModMenus.CRYSTALGENERATOR_GUI.get(), CrystalgeneratorGUIScreen::new);
 		event.register(OneiricconceptModMenus.NEST_GUI.get(), NestGUIScreen::new);
+		event.register(OneiricconceptModMenus.WHITE_MOONLIGHT_ABSORBER_GUI.get(), WhiteMoonlightAbsorberGUIScreen::new);
 	}
 }

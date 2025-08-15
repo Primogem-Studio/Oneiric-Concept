@@ -24,42 +24,37 @@ public class DreamdiveProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_overworld")))) {
-			if (world.getMaxLocalRawBrightness(new BlockPos(world.getLevelData().getSpawnPos().getX(), 310, world.getLevelData().getSpawnPos().getZ())) < 12) {
-				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = new ItemStack(OneiricconceptModItems.DREAMDIVE_CAN.get());
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		if ((IsNightProcedure.execute(world) || world.getLevelData().isThundering()) && world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_overworld")))) {
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(OneiricconceptModItems.DREAMDIVE_CAN.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			}
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.enter")), SoundSource.BLOCKS, 1, 1);
+				} else {
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.enter")), SoundSource.BLOCKS, 1, 1, false);
 				}
+			}
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 100, 1, false, false));
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 1, false, false));
+			OneiricconceptMod.queueServerWork(60, () -> {
+				if (world instanceof ServerLevel _level)
+					_level.setDayTime((int) (24000 * (Math.ceil(world.dayTime() / 24000) + 1)));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.enter")), SoundSource.BLOCKS, 1, 1);
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.exit")), SoundSource.BLOCKS, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.enter")), SoundSource.BLOCKS, 1, 1, false);
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.exit")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 100, 1, false, false));
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 1, false, false));
-				OneiricconceptMod.queueServerWork(60, () -> {
-					if (world instanceof ServerLevel _level)
-						_level.setDayTime((int) (24000 * (Math.ceil(world.dayTime() / 24000) + 1)));
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.exit")), SoundSource.BLOCKS, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("ambient.underwater.exit")), SoundSource.BLOCKS, 1, 1, false);
-						}
-					}
-					if (entity instanceof Player _player)
-						_player.getCooldowns().addCooldown(OneiricconceptModItems.DREAMDIVE_CAN.get(), 600);
-					world.getLevelData().setRaining(false);
-					SleepProcedure.execute(world, x, y, z);
-				});
-			} else {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("\u73B0\u5728\u8FD8\u4E0D\u80FD\u4F11\u606F\u54E6\u3002"), true);
-			}
+				if (entity instanceof Player _player)
+					_player.getCooldowns().addCooldown(OneiricconceptModItems.DREAMDIVE_CAN.get(), 600);
+				world.getLevelData().setRaining(false);
+				SleepProcedure.execute(world, x, y, z);
+			});
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("\u73B0\u5728\u8FD8\u4E0D\u80FD\u4F11\u606F\u54E6\u3002"), true);

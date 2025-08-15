@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.oneiricconcept.block.YactusBlock;
 import net.mcreator.oneiricconcept.block.XiaoLanternRecyclerBlock;
+import net.mcreator.oneiricconcept.block.WhiteMoonlightAbsorberBlock;
 import net.mcreator.oneiricconcept.block.VayudaTurquoiseOreBlock;
 import net.mcreator.oneiricconcept.block.VarunadaLazuriteOreBlock;
 import net.mcreator.oneiricconcept.block.VajradaAmethystOreBlock;
@@ -179,6 +180,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> REDMOONORE = REGISTRY.register("redmoonore", RedmoonoreBlock::new);
 	public static final DeferredBlock<Block> FULLMOONORE = REGISTRY.register("fullmoonore", FullmoonoreBlock::new);
 	public static final DeferredBlock<Block> THEANOTHERWORLDMOONINGOT = REGISTRY.register("theanotherworldmooningot", TheanotherworldmooningotBlock::new);
+	public static final DeferredBlock<Block> WHITE_MOONLIGHT_ABSORBER = REGISTRY.register("white_moonlight_absorber", WhiteMoonlightAbsorberBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

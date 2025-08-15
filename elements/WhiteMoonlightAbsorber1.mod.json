@@ -1,0 +1,48 @@
+{
+  "_fv": 77,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.DAYLIGHT_DETECTOR"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "CUSTOM:Testtool"
+      },
+      {
+        "value": "Blocks.AMETHYST_BLOCK"
+      },
+      {
+        "value": "Blocks.PURPUR_BLOCK"
+      },
+      {
+        "value": "Blocks.PURPUR_BLOCK"
+      },
+      {
+        "value": "Blocks.PURPUR_BLOCK"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:WhiteMoonlightAbsorber"
+    },
+    "name": "white_moonlight_absorber_1",
+    "namespace": "mod"
+  }
+}

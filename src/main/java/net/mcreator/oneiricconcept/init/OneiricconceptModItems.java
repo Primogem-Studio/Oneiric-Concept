@@ -336,6 +336,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> RAWREDMOONORE = REGISTRY.register("rawredmoonore", RawredmoonoreItem::new);
 	public static final DeferredItem<Item> RAWFULLMOONORE = REGISTRY.register("rawfullmoonore", RawfullmoonoreItem::new);
 	public static final DeferredItem<Item> THEANOTHERWORLDMOONINGOT = block(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT);
+	public static final DeferredItem<Item> WHITE_MOONLIGHT_ABSORBER = block(OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

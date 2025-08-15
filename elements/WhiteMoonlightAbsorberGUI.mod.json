@@ -1,0 +1,110 @@
+{
+  "_fv": 77,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:mod:moonlightabsorb_input"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 184,
+          "y": 70,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 226,
+          "y": 70,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "phase.png",
+          "spritesCount": 5,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "GetPhase"
+          },
+          "x": 210,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "moonlight.png",
+          "spritesCount": 31,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "WhiteMoonlightAbsorb"
+          },
+          "x": 210,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_get_phase_text",
+          "text": {
+            "fixedValue": "",
+            "name": "GetPhaseText"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 202,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 244,
+          "y": 70,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
