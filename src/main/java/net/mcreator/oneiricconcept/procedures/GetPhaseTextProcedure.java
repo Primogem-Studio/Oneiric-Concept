@@ -10,8 +10,8 @@ import net.minecraft.core.BlockPos;
 public class GetPhaseTextProcedure {
 	public static String execute(LevelAccessor world, double x, double y, double z) {
 		String txt = "";
-		if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_overworld"))) && !(world.getLevelData().isRaining() || world.getLevelData().isThundering())
-				&& world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+		if (IsNightProcedure.execute(world) && world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_overworld")))
+				&& !(world.getLevelData().isRaining() || world.getLevelData().isThundering()) && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			txt = GetPhaseProcedure.execute(world) + "\uFF081~5\uFF09";
 		} else {
 			txt = "-";

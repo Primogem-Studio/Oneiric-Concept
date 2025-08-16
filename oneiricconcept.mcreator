@@ -12370,7 +12370,15 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
             "type": "number"
           },
           {
@@ -17904,7 +17912,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.7",
+    "version": "1.9.71",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",
