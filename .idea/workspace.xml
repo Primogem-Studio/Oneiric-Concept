@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0754dd77-8c38-43e4-8f5e-86585115d548" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/StardustbaseballerHurt.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/StardustbaseballerHurt.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/StardustbaseballerText.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/StardustbaseballerText.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elements/Weaponclick.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Weaponclick.mod.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerHurtProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerHurtProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/WeaponclickProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/WeaponclickProcedure.java" afterDir="false" />
-    </list>
+    <list default="true" id="0754dd77-8c38-43e4-8f5e-86585115d548" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,16 +35,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.下载源代码.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Amcmozuchengp/omenghuagouxiang/Oneiric-Concept&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Oneiric-Concept [:net.neoforged.devlaunch.Main.main()].executor": "Run",
+    "Gradle.下载源代码.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Amcmozuchengp/omenghuagouxiang/Oneiric-Concept"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="应用程序.Client">
     <configuration name="Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
