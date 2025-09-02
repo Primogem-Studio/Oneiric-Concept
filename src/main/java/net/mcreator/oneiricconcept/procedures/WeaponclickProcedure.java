@@ -28,7 +28,7 @@ public class WeaponclickProcedure {
 		String DBtagname = "";
 		String valueTagName = "";
 		String testext = "";
-		Refinement = GetDoubleNBTTagProcedure.execute(itemstack, "jing_lian");
+		Refinement = WuqijinglianupProcedure.execute(entity, itemstack);
 		LastTime = GetDoubleNBTTagProcedure.execute(itemstack, IsLeft ? "time_L" : "time_R");
 		DBtagname = IsLeft ? "Charged_L" : "Charged_R";
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {

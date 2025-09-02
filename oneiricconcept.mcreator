@@ -15689,6 +15689,30 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Wuqijinglianup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wuqijinglianup",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WuqijinglianupProcedure.java"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/PER"
     }
   ],
   "variable_elements": [

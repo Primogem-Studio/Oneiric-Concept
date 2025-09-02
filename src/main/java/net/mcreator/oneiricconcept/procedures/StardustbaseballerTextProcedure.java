@@ -1,10 +1,8 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
 
 public class StardustbaseballerTextProcedure {
 	public static String execute(Entity entity, ItemStack itemstack) {
@@ -13,7 +11,7 @@ public class StardustbaseballerTextProcedure {
 		double Refinement = 0;
 		String itemname = "";
 		String tran = "";
-		Refinement = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("jing_lian");
+		Refinement = WuqijinglianupProcedure.execute(entity, itemstack);
 		tran = "translation.oneiricconcept.";
 		itemname = "stardust_baseballer";
 		itemname = tran + "" + itemname + "_";

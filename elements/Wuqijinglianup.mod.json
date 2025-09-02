@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"MCItem\" id=\"i1\">i1</variable><variable type=\"Entity\" id=\"e1\">e1</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"variables_set_itemstack\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:i1</field><value name=\"VAL\"><block type=\"itemstack_to_mcitem\"></block></value><next><block type=\"variables_set_entity\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:e1</field><value name=\"VAL\"><block type=\"entity_from_deps\"></block></value><next><block type=\"return_number\"><value name=\"return\"><block type=\"java_code_get\"><field name=\"CODE\">net.mcreator.ceshi.procedures.HSjinglianupProcedure.execute(e1, i1)</field><comment pinned=\"false\" h=\"80\" w=\"160\">调用原石工艺的精炼等级检测函数</comment></block></value></block></next></block></next></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

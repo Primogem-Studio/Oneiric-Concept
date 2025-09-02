@@ -33,7 +33,7 @@ public class StardustbaseballerHurtProcedure {
 		ItemStack sworditem = ItemStack.EMPTY;
 		String Changetxt = "";
 		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		Refinement = GetDoubleNBTTagProcedure.execute(hitItem, "jing_lian");
+		Refinement = WuqijinglianupProcedure.execute(entity, hitItem);
 		if (hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged_L")) {
 			{
 				final String _tagName = "Charged_L";
