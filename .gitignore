@@ -16,3 +16,7 @@ runs/
 .classpath
 
 .project
+
+.idea/
+
+/*.mcreator.lock
