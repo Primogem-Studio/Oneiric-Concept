@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0754dd77-8c38-43e4-8f5e-86585115d548" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/elements/Pgcwuqi.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/elements/Pgcwuqi.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oneiricconcept.mcreator" beforeDir="false" afterPath="$PROJECT_DIR$/oneiricconcept.mcreator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/item/StardustBaseballerItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/item/StardustBaseballerItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/ExampledescribeProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/ExampledescribeProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/PgcwuqiProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/PgcwuqiProcedure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="329EpsqPYBlp5XeWvDEj0l3DqWS" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Amcmozuchengp/omenghuagouxiang/Oneiric-Concept"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="Oneiric-Concept.main" />
+      <option name="PROGRAM_PARAMETERS" value="@D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\moddev\\clientRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\moddev\\clientRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\classes\\java\\main;mcreator%%D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
+      <module name="Oneiric-Concept.main" />
+      <option name="PROGRAM_PARAMETERS" value="@D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\moddev\\serverRunProgramArgs.txt" />
+      <option name="VM_PARAMETERS" value="@D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\moddev\\serverRunVmArgs.txt -Dfml.modFolders=mcreator%%D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\classes\\java\\main;mcreator%%D:\\Amcmozuchengp\\omenghuagouxiang\\Oneiric-Concept\\build\\resources\\main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0754dd77-8c38-43e4-8f5e-86585115d548" name="更改" comment="" />
+      <created>1756824573144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756824573144</updated>
+    </task>
+    <servers />
+  </component>
+</project>
