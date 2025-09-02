@@ -4,6 +4,6 @@
     "structure": "oneiricconcept:frozen_sea_treasure",
     "random_rotation": true,
     "random_mirror": true,
-    "ignored_blocks": "minecraft:water"
+    "ignored_blocks": "minecraft:air"
   }
 }

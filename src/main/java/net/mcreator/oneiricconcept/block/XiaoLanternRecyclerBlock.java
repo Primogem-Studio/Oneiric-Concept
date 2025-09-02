@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import net.minecraft.world.phys.BlockHitResult;

@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:ambergris_cheese_sliver",
-    "primogemcraft:xiangdanganlao"
+    {
+      "id": "primogemcraft:xiangdanganlao",
+      "required": false
+    },
+    "oneiricconcept:ambergris_cheese_sliver"
   ]
 }

@@ -59,7 +59,7 @@ public class MagazinelevelProcedure {
 					CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 				}
 				bulletitem.shrink(1);
-				itemstack.setDamageValue((int) (itemstack.getMaxDamage() - 1));
+				itemstack.setDamageValue(itemstack.getMaxDamage() - 1);
 				return InteractionResult.SUCCESS;
 			}
 			bulletitem.shrink(1);

@@ -1,22 +1,22 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:fish",
-    "oneiricconcept:sweetflowermedaka",
-    "oneiricconcept:ice_fresh_raw_frostweave_salmon_slices",
-    "oneiricconcept:fishcake",
-    "oneiricconcept:grilled_dumpling",
-    "oneiricconcept:grilled_oy_dumpling",
-    "oneiricconcept:oy_stuffing",
-    "oneiricconcept:dumpling",
-    "oneiricconcept:oy_dumpling",
     "oneiricconcept:s_2tuffing",
-    "oneiricconcept:stuffing",
-    "oneiricconcept:b_2elobog_sausage",
-    "oneiricconcept:s_2moke_sausage",
-    "oneiricconcept:s_2ausage",
-    "oneiricconcept:belobog_sausage",
+    "oneiricconcept:oy_stuffing",
+    "oneiricconcept:grilled_dumpling",
     "oneiricconcept:smoke_sausage",
-    "oneiricconcept:sausage"
+    "oneiricconcept:ice_fresh_raw_frostweave_salmon_slices",
+    "oneiricconcept:grilled_oy_dumpling",
+    "oneiricconcept:s_2moke_sausage",
+    "oneiricconcept:sweetflowermedaka",
+    "oneiricconcept:s_2ausage",
+    "oneiricconcept:sausage",
+    "oneiricconcept:dumpling",
+    "oneiricconcept:fish",
+    "oneiricconcept:belobog_sausage",
+    "oneiricconcept:oy_dumpling",
+    "oneiricconcept:stuffing",
+    "oneiricconcept:fishcake",
+    "oneiricconcept:b_2elobog_sausage"
   ]
 }

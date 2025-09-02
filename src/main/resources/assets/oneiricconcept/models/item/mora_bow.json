@@ -3,26 +3,6 @@
   "textures": {
     "layer0": "oneiricconcept:item/molagong_0"
   },
-  "overrides": [
-    {
-      "predicate": {
-        "oneiricconcept:mora_bow_pull": 2
-      },
-      "model": "oneiricconcept:item/mora_bow_0"
-    },
-    {
-      "predicate": {
-        "oneiricconcept:mora_bow_pull": 14
-      },
-      "model": "oneiricconcept:item/mora_bow_1"
-    },
-    {
-      "predicate": {
-        "oneiricconcept:mora_bow_pull": 21
-      },
-      "model": "oneiricconcept:item/mora_bow_2"
-    }
-  ],
   "display": {
     "thirdperson_righthand": {
       "rotation": [
@@ -92,5 +72,25 @@
         1
       ]
     }
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "oneiricconcept:mora_bow_pull": 2
+      },
+      "model": "oneiricconcept:item/mora_bow_0"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:mora_bow_pull": 14
+      },
+      "model": "oneiricconcept:item/mora_bow_1"
+    },
+    {
+      "predicate": {
+        "oneiricconcept:mora_bow_pull": 21
+      },
+      "model": "oneiricconcept:item/mora_bow_2"
+    }
+  ]
 }

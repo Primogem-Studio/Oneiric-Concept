@@ -54,7 +54,7 @@ public class PhlogistonTickProcedure {
 				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) inventory).getCount() < 64) {
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 						ItemStack _setstack = new ItemStack(OneiricconceptModItems.PHLOGISTON.get()).copy();
-						_setstack.setCount((int) (1 + itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) inventory).getCount()));
+						_setstack.setCount(1 + itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) inventory).getCount());
 						_itemHandlerModifiable.setStackInSlot((int) inventory, _setstack);
 					}
 					itmgiv = true;

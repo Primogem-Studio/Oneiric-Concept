@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.neoforge.registries.RegisterEvent;

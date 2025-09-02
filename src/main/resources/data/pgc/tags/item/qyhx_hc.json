@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:stuffing",
-    "oneiricconcept:s_2tuffing",
-    "oneiricconcept:memory_bubble",
-    "oneiricconcept:oy_stuffing",
-    "oneiricconcept:the_another_world_log",
     "oneiricconcept:stripped_the_another_world_log",
-    "oneiricconcept:the_another_world_sapling",
-    "oneiricconcept:waffle",
-    "oneiricconcept:primogem_waffle",
     "oneiricconcept:deep_marrow_rock_salt",
-    "oneiricconcept:thief_s_instinct"
+    "oneiricconcept:primogem_waffle",
+    "oneiricconcept:thief_s_instinct",
+    "oneiricconcept:memory_bubble",
+    "oneiricconcept:s_2tuffing",
+    "oneiricconcept:oy_stuffing",
+    "oneiricconcept:waffle",
+    "oneiricconcept:the_another_world_sapling",
+    "oneiricconcept:the_another_world_log",
+    "oneiricconcept:stuffing"
   ]
 }

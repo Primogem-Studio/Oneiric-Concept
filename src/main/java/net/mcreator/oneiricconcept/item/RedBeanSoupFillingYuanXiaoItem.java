@@ -1,11 +1,9 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
@@ -15,7 +13,7 @@ import java.util.List;
 
 public class RedBeanSoupFillingYuanXiaoItem extends Item {
 	public RedBeanSoupFillingYuanXiaoItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(0.6f).build()));
+		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(10).saturationModifier(0.6f).build()));
 	}
 
 	@Override

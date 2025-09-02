@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -20,7 +19,7 @@ import net.mcreator.oneiricconcept.procedures.TawleaveProcedure;
 
 public class TheAnotherWorldLeaveBlock extends LeavesBlock {
 	public TheAnotherWorldLeaveBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.GRASS).strength(0.4f, 1f).lightLevel(s -> 5).noOcclusion());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).sound(SoundType.GRASS).strength(0.4f, 1f).lightLevel(s -> 5).noOcclusion().isSuffocating((bs, br, bp) -> false).isViewBlocking((bs, br, bp) -> false));
 	}
 
 	@Override

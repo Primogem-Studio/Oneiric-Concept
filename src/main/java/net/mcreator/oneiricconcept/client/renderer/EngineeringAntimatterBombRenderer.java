@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;

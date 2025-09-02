@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:aureliae_pickaxe",
     "oneiricconcept:aureliae_axe",
+    "oneiricconcept:aureliae_hoe",
     "oneiricconcept:aureliae_sword",
-    "oneiricconcept:aureliae_shovel",
-    "oneiricconcept:aureliae_hoe"
+    "oneiricconcept:aureliae_pickaxe",
+    "oneiricconcept:aureliae_shovel"
   ]
 }

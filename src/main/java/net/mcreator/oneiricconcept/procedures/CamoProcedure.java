@@ -32,8 +32,8 @@ public class CamoProcedure {
 					if (entityiterator instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.FOLLOW_RANGE))
 						_livingEntity6.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue((-7));
 					debugtxt = debugtxt + "" + entityiterator;
-					if (entityiterator instanceof Mob _entity && null instanceof LivingEntity _ent)
-						_entity.setTarget(_ent);
+					if (entityiterator instanceof Mob _entity)
+						_entity.setTarget(null);
 					if (entityiterator instanceof Mob _entity)
 						_entity.getNavigation().stop();
 				}

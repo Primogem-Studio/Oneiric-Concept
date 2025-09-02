@@ -1,8 +1,6 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -14,7 +12,7 @@ import net.mcreator.oneiricconcept.procedures.EatHungerProcedure;
 
 public class HungerItem extends Item {
 	public HungerItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(0f).alwaysEdible().build()));
+		super(new Item.Properties().food((new FoodProperties.Builder()).nutrition(20).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override

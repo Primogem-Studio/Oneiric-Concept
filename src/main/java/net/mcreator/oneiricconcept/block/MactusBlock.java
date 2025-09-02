@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import net.neoforged.neoforge.common.CommonHooks;
@@ -28,7 +27,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class MactusBlock extends SugarCaneBlock {
 	public MactusBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).randomTicks().sound(SoundType.GRASS).strength(2f, 10f).noOcclusion().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).randomTicks().sound(SoundType.GRASS).strength(2f, 10f).noOcclusion().pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

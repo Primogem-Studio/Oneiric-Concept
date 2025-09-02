@@ -9,16 +9,15 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.oneiricconcept.world.inventory.FishingMenu;
-
-import java.util.HashMap;
+import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class FishingScreen extends AbstractContainerScreen<FishingMenu> {
-	private final static HashMap<String, Object> guistate = FishingMenu.guistate;
+public class FishingScreen extends AbstractContainerScreen<FishingMenu> implements OneiricconceptModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public FishingScreen(FishingMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -31,6 +30,12 @@ public class FishingScreen extends AbstractContainerScreen<FishingMenu> {
 		this.imageHeight = 88;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/fishing.png");
 
 	@Override
@@ -40,7 +45,7 @@ public class FishingScreen extends AbstractContainerScreen<FishingMenu> {
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();

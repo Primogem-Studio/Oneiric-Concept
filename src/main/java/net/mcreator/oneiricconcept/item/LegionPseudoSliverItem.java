@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -18,7 +17,7 @@ import java.util.List;
 
 public class LegionPseudoSliverItem extends Item {
 	public LegionPseudoSliverItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
+		super(new Item.Properties().fireResistant().rarity(Rarity.RARE));
 	}
 
 	@Override

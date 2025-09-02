@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
@@ -16,7 +15,7 @@ import net.mcreator.oneiricconcept.procedures.BlbgBuffProcedure;
 
 public class PrimogemsSausageItem extends Item {
 	public PrimogemsSausageItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(1f).build())
+		super(new Item.Properties().fireResistant().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(1f).build())
 				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 8, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
 	}

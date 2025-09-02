@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:stripped_the_another_world_log",
+    "oneiricconcept:primogemfruitblock",
     "oneiricconcept:nest",
     "oneiricconcept:ambrosial_arbor_wood",
-    "oneiricconcept:primogemfruitblock",
-    "oneiricconcept:ambrosial_arbor_log",
+    "oneiricconcept:the_another_world_log",
     "oneiricconcept:the_another_world_wood",
-    "oneiricconcept:stripped_the_another_world_log",
-    "oneiricconcept:the_another_world_log"
+    "oneiricconcept:ambrosial_arbor_log"
   ]
 }

@@ -62,7 +62,7 @@ public class WarmheartProcedure {
 				}
 				world.setBlock(_bp, _bs, 3);
 			}
-			if (block.contains("block") && (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.WATER) {
+			if (block.contains("block") && (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR) {
 				if (RandomProcedure.execute(world, 0.2)) {
 					{
 						BlockPos _bp = BlockPos.containing(x, y + 1, z);

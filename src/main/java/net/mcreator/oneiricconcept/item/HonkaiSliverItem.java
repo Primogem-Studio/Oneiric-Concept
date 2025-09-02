@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
@@ -11,7 +10,7 @@ import net.mcreator.oneiricconcept.procedures.HonkaiParticleProcedure;
 
 public class HonkaiSliverItem extends Item {
 	public HonkaiSliverItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().fireResistant().rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

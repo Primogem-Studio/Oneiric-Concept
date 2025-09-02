@@ -1,9 +1,7 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
@@ -14,7 +12,7 @@ import net.mcreator.oneiricconcept.procedures.TNTlaunchProcedure;
 
 public class TNTDispenserBlock extends Block {
 	public TNTDispenserBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 999f));
+		super(BlockBehaviour.Properties.of().strength(1f, 999f));
 	}
 
 	@Override

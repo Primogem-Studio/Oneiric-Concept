@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -27,7 +26,7 @@ import java.util.List;
 
 public class HeartofthewarmseaItem extends Item {
 	public HeartofthewarmseaItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

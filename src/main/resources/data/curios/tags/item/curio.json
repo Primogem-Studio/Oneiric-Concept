@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:heartofthevastsea",
     "oneiricconcept:heartofthefrozensea",
-    "oneiricconcept:heartoftheskysea",
-    "oneiricconcept:heartofthevastsea"
+    "oneiricconcept:heartoftheskysea"
   ]
 }

@@ -1,9 +1,21 @@
 {
   "replace": false,
   "values": [
-    "#c:foods/cooked_meat",
-    "#c:foods/raw_meat",
-    "#c:foods/safe_raw_fish",
-    "#c:foods/cooked_fish"
+    {
+      "id": "#c:foods/safe_raw_fish",
+      "required": false
+    },
+    {
+      "id": "#c:foods/raw_meat",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_fish",
+      "required": false
+    },
+    {
+      "id": "#c:foods/cooked_meat",
+      "required": false
+    }
   ]
 }

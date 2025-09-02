@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -122,7 +121,7 @@ public class SustenanceanchorBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -67,7 +66,7 @@ public class Liron1Block extends Block implements SimpleWaterloggedBlock {
 					return 0;
 				return 0;
 			}
-		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 

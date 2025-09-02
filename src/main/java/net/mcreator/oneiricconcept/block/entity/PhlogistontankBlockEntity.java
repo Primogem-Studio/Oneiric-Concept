@@ -1,7 +1,5 @@
-
 package net.mcreator.oneiricconcept.block.entity;
 
-import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
 import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 
 import net.minecraft.world.level.material.Fluids;
@@ -31,8 +29,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class PhlogistontankBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(11, ItemStack.EMPTY);
-	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(11, ItemStack.EMPTY);
 
 	public PhlogistontankBlockEntity(BlockPos position, BlockState state) {
 		super(OneiricconceptModBlockEntities.PHLOGISTONTANK.get(), position, state);
@@ -128,10 +125,6 @@ public class PhlogistontankBlockEntity extends RandomizableContainerBlockEntity 
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
-	}
-
-	public SidedInvWrapper getItemHandler() {
-		return handler;
 	}
 
 	private final FluidTank fluidTank = new FluidTank(10000, fs -> {

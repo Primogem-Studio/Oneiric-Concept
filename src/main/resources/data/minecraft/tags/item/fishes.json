@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:heartofthefish",
-    "#oneiricconcept:fish"
+    {
+      "id": "#oneiricconcept:fish",
+      "required": false
+    },
+    "oneiricconcept:heartofthefish"
   ]
 }

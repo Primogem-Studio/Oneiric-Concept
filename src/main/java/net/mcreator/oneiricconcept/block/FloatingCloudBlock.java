@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import net.minecraft.world.level.material.MapColor;
@@ -8,7 +7,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
@@ -19,7 +17,7 @@ import net.mcreator.oneiricconcept.procedures.FloatingShiftDelProcedure;
 
 public class FloatingCloudBlock extends Block {
 	public FloatingCloudBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOL).instabreak().jumpFactor(2f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.SNOW).sound(SoundType.WOOL).instabreak().jumpFactor(2f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).replaceable());
 	}
 
 	@Override
@@ -30,11 +28,6 @@ public class FloatingCloudBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
-	}
-
-	@Override
-	public boolean canBeReplaced(BlockState state, BlockPlaceContext context) {
-		return context.getItemInHand().getItem() != this.asItem();
 	}
 
 	@Override

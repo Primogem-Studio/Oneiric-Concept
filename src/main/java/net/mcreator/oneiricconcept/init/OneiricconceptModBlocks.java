@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -188,6 +187,7 @@ public class OneiricconceptModBlocks {
 	public static class BlocksClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			GeomarrowRadiatorBlock.blockColorLoad(event);
 			Hydro1Block.blockColorLoad(event);
 			Dendr1Block.blockColorLoad(event);
 			Anemo1Block.blockColorLoad(event);

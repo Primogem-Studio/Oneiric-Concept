@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -59,6 +59,10 @@
     "unbreakable": false,
     "isSolid": false,
     "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
     "isCustomSoundType": true,
     "soundOnStep": {
       "value": "PLANT"
@@ -93,6 +97,7 @@
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
+    "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,

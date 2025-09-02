@@ -13,14 +13,18 @@ authors="GlowStar, Pepper\u67D0\u4EBA\uFF0CMCreator"
 description="\u539F\u77F3\u5DE5\u827A\u7684\u9644\u5C5E\u6A21\u7EC4"
 
 # Start of user code block mod configuration
-[[mixins]]
-config = "oneiricconcept.mixins.json"
 # End of user code block mod configuration
+
+
+# Start of user code block custom mixins
+[[mixins]]
+config = "oc.custom.mixins.json"
+# End of user code block custom mixins
 
 [[dependencies.oneiricconcept]]
 modId="neoforge"
 type="required"
-versionRange="[21.1.92,)"
+versionRange="[21.1.176,)"
 ordering="AFTER"
 side="BOTH"
 

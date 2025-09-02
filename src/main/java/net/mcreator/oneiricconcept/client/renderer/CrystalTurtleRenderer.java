@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.client.renderer;
 
 import net.minecraft.world.level.Level;
@@ -15,9 +14,16 @@ import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
 import net.mcreator.oneiricconcept.client.model.animations.crystal_turtleAnimation;
 import net.mcreator.oneiricconcept.client.model.Modelcrystal_turtle;
 
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Modelcrystal_turtle<CrystalTurtleEntity>> {
 	public CrystalTurtleRenderer(EntityRendererProvider.Context context) {
 		super(context, new AnimatedModel(context.bakeLayer(Modelcrystal_turtle.LAYER_LOCATION)), 1f);
+	}
+
+	@Override
+	protected void scale(CrystalTurtleEntity entity, PoseStack poseStack, float f) {
+		poseStack.scale(entity.getAgeScale(), entity.getAgeScale(), entity.getAgeScale());
 	}
 
 	@Override

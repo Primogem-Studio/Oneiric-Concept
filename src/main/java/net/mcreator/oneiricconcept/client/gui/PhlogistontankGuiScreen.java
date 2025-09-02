@@ -11,16 +11,15 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.oneiricconcept.world.inventory.PhlogistontankGuiMenu;
 import net.mcreator.oneiricconcept.procedures.TankGetphlogistonProcedure;
 import net.mcreator.oneiricconcept.procedures.TankGetLavaProcedure;
-
-import java.util.HashMap;
+import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class PhlogistontankGuiScreen extends AbstractContainerScreen<PhlogistontankGuiMenu> {
-	private final static HashMap<String, Object> guistate = PhlogistontankGuiMenu.guistate;
+public class PhlogistontankGuiScreen extends AbstractContainerScreen<PhlogistontankGuiMenu> implements OneiricconceptModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public PhlogistontankGuiScreen(PhlogistontankGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -33,6 +32,12 @@ public class PhlogistontankGuiScreen extends AbstractContainerScreen<Phlogistont
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/phlogistontank_gui.png");
 
 	@Override
@@ -42,7 +47,7 @@ public class PhlogistontankGuiScreen extends AbstractContainerScreen<Phlogistont
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
@@ -61,12 +66,8 @@ public class PhlogistontankGuiScreen extends AbstractContainerScreen<Phlogistont
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font,
-
-				TankGetLavaProcedure.execute(world, x, y, z), 10, 10, -52480, false);
-		guiGraphics.drawString(this.font,
-
-				TankGetphlogistonProcedure.execute(world, x, y, z), 9, 42, -39424, false);
+		guiGraphics.drawString(this.font, TankGetLavaProcedure.execute(world, x, y, z), 10, 10, -52480, false);
+		guiGraphics.drawString(this.font, TankGetphlogistonProcedure.execute(world, x, y, z), 9, 42, -39424, false);
 	}
 
 	@Override

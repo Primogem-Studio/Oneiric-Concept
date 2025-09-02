@@ -24,6 +24,6 @@ public class UsecamoProcedure {
 			}
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.CAMO, (int) (75 * 20), 1, false, false));
+			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.CAMO, 75 * 20, 1, false, false));
 	}
 }

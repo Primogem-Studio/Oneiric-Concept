@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "block",
   "definition": {
     "texture": "geomarrowradiator",
@@ -14,9 +14,11 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "animations": [],
     "itemTexture": "",
     "particleTexture": "",
-    "tintType": "No tint",
+    "blockSetType": "OAK",
+    "tintType": "Grass",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
@@ -44,6 +46,10 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
     "creativeTabs": [
       {
         "value": "CUSTOM:OneiricConcept"
@@ -60,9 +66,6 @@
     "plantsGrowOn": false,
     "canRedstoneConnect": true,
     "lightOpacity": 0,
-    "material": {
-      "value": "NONE"
-    },
     "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
@@ -71,6 +74,7 @@
       "fixedValue": 3.0
     },
     "colorOnMap": "RAW_IRON_PINK",
+    "noteBlockInstrument": "harp",
     "creativePickItem": {
       "value": ""
     },
@@ -80,6 +84,7 @@
       "value": -39424,
       "falpha": 0.0
     },
+    "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -111,6 +116,11 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
+    "sensitiveToVibration": false,
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 3,

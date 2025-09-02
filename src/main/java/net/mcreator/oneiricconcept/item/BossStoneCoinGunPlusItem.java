@@ -1,8 +1,6 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -19,7 +17,7 @@ import net.mcreator.oneiricconcept.entity.InvalidEntity;
 
 public class BossStoneCoinGunPlusItem extends Item {
 	public BossStoneCoinGunPlusItem() {
-		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).fireResistant());
 	}
 
 	@Override

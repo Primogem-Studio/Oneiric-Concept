@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -14,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class DawnleavesBlock extends LeavesBlock {
 	public DawnleavesBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.GRASS).strength(1f).lightLevel(s -> 7).noOcclusion());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.GOLD).sound(SoundType.GRASS).strength(1f).lightLevel(s -> 7).noOcclusion().isSuffocating((bs, br, bp) -> false).isViewBlocking((bs, br, bp) -> false));
 	}
 
 	@Override

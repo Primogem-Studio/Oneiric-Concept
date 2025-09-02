@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "oneiricconcept:mora_bow",
-    "oneiricconcept:divine_arrow_embers",
     "oneiricconcept:heartofthevastsea",
-    "oneiricconcept:heartoftheskysea",
+    "oneiricconcept:divine_arrow_embers",
     "oneiricconcept:mora_magazine_e_1",
-    "oneiricconcept:mora_magazine"
+    "oneiricconcept:mora_magazine",
+    "oneiricconcept:heartoftheskysea"
   ]
 }

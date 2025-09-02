@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "projectile",
   "definition": {
     "projectileItem": {
@@ -10,6 +10,7 @@
       "value": "entity.firework.launch"
     },
     "igniteFire": true,
+    "disableGravity": false,
     "power": 13.0,
     "damage": 100.0,
     "knockback": 5,

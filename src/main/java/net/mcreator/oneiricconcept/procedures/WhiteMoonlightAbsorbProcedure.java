@@ -77,13 +77,13 @@ public class WhiteMoonlightAbsorbProcedure {
 				if (0 == itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() || output.getItem() == (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem()) {
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 						ItemStack _setstack = output.copy();
-						_setstack.setCount((int) (1 + itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount()));
+						_setstack.setCount(1 + itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount());
 						_itemHandlerModifiable.setStackInSlot(1, _setstack);
 					}
 				} else if (0 == itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() || output.getItem() == (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem()) {
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 						ItemStack _setstack = output.copy();
-						_setstack.setCount((int) (1 + itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount()));
+						_setstack.setCount(1 + itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount());
 						_itemHandlerModifiable.setStackInSlot(2, _setstack);
 					}
 				} else {

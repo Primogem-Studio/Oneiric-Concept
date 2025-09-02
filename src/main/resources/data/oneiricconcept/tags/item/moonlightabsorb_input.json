@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:the_another_world_sapling",
+    "minecraft:book",
     "oneiricconcept:milk",
-    "oneiricconcept:energy_drink",
-    "minecraft:deepslate_redstone_ore",
     "minecraft:deepslate_gold_ore",
-    "minecraft:deepslate_lapis_ore",
-    "minecraft:amethyst_block",
     "minecraft:netherite_ingot",
-    "minecraft:book"
+    "oneiricconcept:energy_drink",
+    "minecraft:amethyst_block",
+    "oneiricconcept:the_another_world_sapling",
+    "minecraft:deepslate_redstone_ore",
+    "minecraft:deepslate_lapis_ore"
   ]
 }

@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "#c:smokesausage",
-    "#c:b2sausage"
+    {
+      "id": "#c:smokesausage",
+      "required": false
+    },
+    {
+      "id": "#c:b2sausage",
+      "required": false
+    }
   ]
 }

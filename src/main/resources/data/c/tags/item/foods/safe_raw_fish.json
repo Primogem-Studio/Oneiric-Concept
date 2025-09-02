@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#oneiricconcept:fish",
+    {
+      "id": "#oneiricconcept:fish",
+      "required": false
+    },
     "oneiricconcept:ice_fresh_raw_frostweave_salmon_slices"
   ]
 }

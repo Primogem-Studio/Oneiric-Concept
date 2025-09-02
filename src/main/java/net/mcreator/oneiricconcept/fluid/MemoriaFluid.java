@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.fluid;
 
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;

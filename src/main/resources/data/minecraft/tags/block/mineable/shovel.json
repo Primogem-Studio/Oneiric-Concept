@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:varunada_lazurite_ore",
     "oneiricconcept:vajrada_amethyst_ore",
-    "oneiricconcept:shivada_jade_ore"
+    "oneiricconcept:shivada_jade_ore",
+    "oneiricconcept:varunada_lazurite_ore"
   ]
 }

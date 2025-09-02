@@ -1,7 +1,5 @@
-
 package net.mcreator.oneiricconcept.block.entity;
 
-import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
 import net.neoforged.neoforge.energy.EnergyStorage;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -31,8 +29,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class CrystalgeneratorBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(8, ItemStack.EMPTY);
-	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(8, ItemStack.EMPTY);
 
 	public CrystalgeneratorBlockEntity(BlockPos position, BlockState state) {
 		super(OneiricconceptModBlockEntities.CRYSTALGENERATOR.get(), position, state);
@@ -128,10 +125,6 @@ public class CrystalgeneratorBlockEntity extends RandomizableContainerBlockEntit
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
-	}
-
-	public SidedInvWrapper getItemHandler() {
-		return handler;
 	}
 
 	private final EnergyStorage energyStorage = new EnergyStorage(160000000, 2147483647, 16000000, 0) {

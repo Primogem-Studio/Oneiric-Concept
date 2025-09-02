@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import net.minecraft.world.phys.BlockHitResult;
@@ -18,7 +17,7 @@ import net.mcreator.oneiricconcept.procedures.FireTntProcedure;
 
 public class EngineeringantimatterbombblockBlock extends Block {
 	public EngineeringantimatterbombblockBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).instabreak());
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().ignitedByLava());
 	}
 
 	@Override

@@ -13,18 +13,18 @@ import net.mcreator.oneiricconcept.world.inventory.WhiteMoonlightAbsorberGUIMenu
 import net.mcreator.oneiricconcept.procedures.WhiteMoonlightAbsorbProcedure;
 import net.mcreator.oneiricconcept.procedures.GetPhaseTextProcedure;
 import net.mcreator.oneiricconcept.procedures.GetPhaseProcedure;
+import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import java.util.stream.Collectors;
-import java.util.HashMap;
 import java.util.Arrays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class WhiteMoonlightAbsorberGUIScreen extends AbstractContainerScreen<WhiteMoonlightAbsorberGUIMenu> {
-	private final static HashMap<String, Object> guistate = WhiteMoonlightAbsorberGUIMenu.guistate;
+public class WhiteMoonlightAbsorberGUIScreen extends AbstractContainerScreen<WhiteMoonlightAbsorberGUIMenu> implements OneiricconceptModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public WhiteMoonlightAbsorberGUIScreen(WhiteMoonlightAbsorberGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -37,31 +37,37 @@ public class WhiteMoonlightAbsorberGUIScreen extends AbstractContainerScreen<Whi
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/white_moonlight_absorber_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		boolean customTooltipShown = false;
 		if (mouseX > leftPos + 76 && mouseX < leftPos + 100 && mouseY > topPos + 5 && mouseY < topPos + 29) {
 			String hoverText = GetPhaseTextProcedure.execute(world, x, y, z);
 			if (hoverText != null) {
 				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
 			}
+			customTooltipShown = true;
 		}
+		if (!customTooltipShown)
+			this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/phase.png"), this.leftPos + 84, this.topPos + 17, Mth.clamp((int) GetPhaseProcedure.execute(world) * 8, 0, 32), 0, 8, 8, 40, 8);
-
 		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/moonlight.png"), this.leftPos + 84, this.topPos + 29, Mth.clamp((int) WhiteMoonlightAbsorbProcedure.execute(world, x, y, z) * 8, 0, 240), 0, 8, 30, 248, 30);
-
 		RenderSystem.disableBlend();
 	}
 

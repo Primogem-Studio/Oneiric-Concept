@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -33,8 +32,7 @@ public class BananaMushroomBlock extends SaplingBlock {
 			Optional.empty(), Optional.empty());
 
 	public BananaMushroomBlock() {
-		super(TREE_GROWER,
-				BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 3).noCollission().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 3).noCollission().pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

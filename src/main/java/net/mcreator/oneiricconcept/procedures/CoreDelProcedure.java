@@ -15,12 +15,12 @@ public class CoreDelProcedure {
 		if (entity == null)
 			return;
 		if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(OneiricconceptModItems.LEGION_PSEUDO_CORE.get())) : false) {
+			if (hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.LEGION_PSEUDO_CORE.get()))) {
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(OneiricconceptModItems.LEGION_PSEUDO_CORE.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
-			} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(OneiricconceptModItems.XUANYUAN_SWORD.get())) : false) {
+			} else if (hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.XUANYUAN_SWORD.get()))) {
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(OneiricconceptModItems.XUANYUAN_SWORD.get());
 					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -38,5 +38,11 @@ public class CoreDelProcedure {
 				return playerInfo.getGameMode();
 		}
 		return null;
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

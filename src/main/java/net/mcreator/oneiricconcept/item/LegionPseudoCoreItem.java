@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -18,7 +17,7 @@ import java.util.List;
 
 public class LegionPseudoCoreItem extends Item {
 	public LegionPseudoCoreItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

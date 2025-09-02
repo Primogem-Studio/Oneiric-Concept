@@ -1,4 +1,3 @@
-
 package net.mcreator.oneiricconcept.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -28,7 +27,7 @@ import net.mcreator.oneiricconcept.procedures.AaleaveProcedure;
 
 public class AmbrosialArborLeaveBlock extends LeavesBlock {
 	public AmbrosialArborLeaveBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).strength(0.5f, 0f).lightLevel(s -> 3).noOcclusion());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).strength(0.5f, 0f).lightLevel(s -> 3).noOcclusion().ignitedByLava().isSuffocating((bs, br, bp) -> false).isViewBlocking((bs, br, bp) -> false));
 	}
 
 	@Override

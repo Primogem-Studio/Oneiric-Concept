@@ -1,24 +1,30 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:stuffing",
-    "oneiricconcept:s_2tuffing",
-    "oneiricconcept:mora_sausage",
-    "oneiricconcept:primogems_sausage",
-    "oneiricconcept:oy_dumpling",
-    "oneiricconcept:dumpling",
-    "oneiricconcept:oy_stuffing",
-    "oneiricconcept:waffle",
-    "oneiricconcept:primogem_waffle",
-    "oneiricconcept:resurrection_pellet",
+    "oneiricconcept:red_bean_soup_filling_yuan_xiao",
+    {
+      "id": "#c:foods/cheese",
+      "required": false
+    },
     "oneiricconcept:primogemfruit",
     "oneiricconcept:salt",
-    "oneiricconcept:red_bean_soup_filling_yuan_xiao",
-    "oneiricconcept:sweet_sesame_filling_yuan_xiao",
-    "oneiricconcept:grilled_oy_dumpling",
+    "oneiricconcept:s_2tuffing",
+    "oneiricconcept:oy_stuffing",
+    "oneiricconcept:waffle",
     "oneiricconcept:grilled_dumpling",
+    "oneiricconcept:resurrection_pellet",
+    "oneiricconcept:mora_sausage",
+    "oneiricconcept:grilled_oy_dumpling",
+    "oneiricconcept:sweet_sesame_filling_yuan_xiao",
+    "oneiricconcept:primogem_waffle",
+    "oneiricconcept:dumpling",
     "oneiricconcept:hunger",
-    "#c:foods/milk",
-    "#c:foods/cheese"
+    "oneiricconcept:oy_dumpling",
+    {
+      "id": "#c:foods/milk",
+      "required": false
+    },
+    "oneiricconcept:stuffing",
+    "oneiricconcept:primogems_sausage"
   ]
 }

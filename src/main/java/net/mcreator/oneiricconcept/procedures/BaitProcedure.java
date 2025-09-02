@@ -1,34 +1,30 @@
 package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModMenus;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
-
-import java.util.function.Supplier;
-import java.util.Map;
 
 public class BaitProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			ItemStack _setstack = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).copy();
-			_setstack.setCount((int) (getAmountInGUISlot(entity, 0) - 1));
-			((Slot) _slots.get(0)).set(_setstack);
+		if (entity instanceof Player _player && _player.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu) {
+			ItemStack _setstack = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(0).getItem() : ItemStack.EMPTY).copy();
+			_setstack.setCount(getAmountInGUISlot(entity, 0) - 1);
+			_menu.getSlots().get(0).set(_setstack);
 			_player.containerMenu.broadcastChanges();
 		}
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == OneiricconceptModItems.FRUITPASTEBAIT
-				.get()) {
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu3 ? _menu3.getSlots().get(0).getItem() : ItemStack.EMPTY).getItem() == OneiricconceptModItems.FRUITPASTEBAIT.get()) {
 			FruitpastebaitFishProcedure.execute(entity);
 		}
 	}
 
 	private static int getAmountInGUISlot(Entity entity, int sltid) {
-		if (entity instanceof Player player && player.containerMenu instanceof Supplier slotSupplier && slotSupplier.get() instanceof Map guiSlots) {
-			ItemStack stack = ((Slot) guiSlots.get(sltid)).getItem();
+		if (entity instanceof Player player && player.containerMenu instanceof OneiricconceptModMenus.MenuAccessor menuAccessor) {
+			ItemStack stack = menuAccessor.getSlots().get(sltid).getItem();
 			if (stack != null)
 				return stack.getCount();
 		}
