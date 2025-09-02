@@ -15530,12 +15530,12 @@
       "registry_name": "white_moonlight_absorber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/white_moonlight_absorber.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/WhiteMoonlightAbsorberBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/white_moonlight_absorber.json",
           "src/main/resources/assets/oneiricconcept/blockstates/white_moonlight_absorber.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/white_moonlight_absorber.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/WhiteMoonlightAbsorberBlockEntity.java"
+          "src/main/java/net/mcreator/oneiricconcept/block/WhiteMoonlightAbsorberBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/white_moonlight_absorber.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/WhiteMoonlightAbsorberBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/block/white_moonlight_absorber.json"
         ]
       },
       "path": "~/block"
