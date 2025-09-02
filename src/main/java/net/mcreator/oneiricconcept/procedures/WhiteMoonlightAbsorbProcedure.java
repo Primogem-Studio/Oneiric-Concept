@@ -22,7 +22,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
-import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class WhiteMoonlightAbsorbProcedure {
 	public static double execute(LevelAccessor world, double x, double y, double z) {
@@ -39,7 +38,6 @@ public class WhiteMoonlightAbsorbProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			OneiricconceptMod.LOGGER.info(new java.text.DecimalFormat("##.##").format(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "moonlight")));
 			if (30 <= getBlockNBTNumber(world, BlockPos.containing(x, y, z), "moonlight") && 1 <= itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount()) {
 				input = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
 				if (Items.NETHERITE_INGOT == input.getItem()) {
