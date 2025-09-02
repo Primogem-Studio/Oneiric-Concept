@@ -28,10 +28,6 @@ public class WhiteMoonlightAbsorbProcedure {
 	public static double execute(LevelAccessor world, double x, double y, double z) {
 		ItemStack output = ItemStack.EMPTY;
 		ItemStack input = ItemStack.EMPTY;
-		OneiricconceptMod.LOGGER.info(IsNightProcedure.execute(world));
-		OneiricconceptMod.LOGGER.info(world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_overworld"))));
-		OneiricconceptMod.LOGGER.info(!(world.getLevelData().isRaining() || world.getLevelData().isThundering()));
-		OneiricconceptMod.LOGGER.info(world.canSeeSkyFromBelowWater(BlockPos.containing(x, y + 1, z)));
 		if (IsNightProcedure.execute(world) && world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_overworld")))
 				&& !(world.getLevelData().isRaining() || world.getLevelData().isThundering()) && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y + 1, z))) {
 			if (!world.isClientSide()) {
