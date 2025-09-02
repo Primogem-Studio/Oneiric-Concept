@@ -2,11 +2,14 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 
 public class StardustbaseballerTextProcedure {
-	public static String execute(ItemStack itemstack) {
+	public static String execute(Entity entity, ItemStack itemstack) {
+		if (entity == null)
+			return "";
 		double Refinement = 0;
 		String itemname = "";
 		String tran = "";
@@ -14,7 +17,7 @@ public class StardustbaseballerTextProcedure {
 		tran = "translation.oneiricconcept.";
 		itemname = "stardust_baseballer";
 		itemname = tran + "" + itemname + "_";
-		return PgcwuqiProcedure.execute(itemstack,
+		return PgcwuqiProcedure.execute(entity, itemstack,
 				(("\u00A76\u00A7l\u00A7n" + Component.translatable((tran + "passive")).getString() + "\n") + ""
 						+ ("\u00A7e" + Component.translatable((itemname + "1")).getString() + "\u00A7b" + new java.text.DecimalFormat("##.##").format(4 + Refinement * 1) + "\u00A7e" + Component.translatable((itemname + "2")).getString() + "\u00A7b"
 								+ new java.text.DecimalFormat("##.##").format(16 + Refinement * 4) + "\u00A7e" + Component.translatable((itemname + "3")).getString()))

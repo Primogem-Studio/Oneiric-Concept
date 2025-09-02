@@ -3434,6 +3434,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -3453,8 +3457,8 @@
       "registry_name": "example",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/example.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/example.json"
         ]
       },
       "path": "~/PgcCopyDecoration/PER"
@@ -3471,6 +3475,10 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/ExampledescribeProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -13857,10 +13865,10 @@
       "registry_name": "stardust_baseballer",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_1.json",
           "src/main/java/net/mcreator/oneiricconcept/item/StardustBaseballerItem.java",
           "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer.json",
-          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_1.json"
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer.json"
         ]
       },
       "path": "~/item"
@@ -14113,6 +14121,10 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/StardustbaseballerTextProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -17756,34 +17768,34 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
-      "src/main/java/net/mcreator/oneiricconcept/OneiricconceptMod.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/assets/oneiricconcept/sounds.json",
-      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/oneiricconcept/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
+      "src/main/resources/assets/oneiricconcept/sounds.json",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
+      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
+      "src/main/java/net/mcreator/oneiricconcept/OneiricconceptMod.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMenus.java",
-      "src/main/java/net/mcreator/oneiricconcept/world/features/StructureFeature.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
+      "src/main/java/net/mcreator/oneiricconcept/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/oneiricconcept/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/oneiricconcept/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluids.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluidTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModGameRules.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFuels.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMobEffects.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticles.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticleTypes.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticles.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModPotions.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlocks.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlockEntities.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModItems.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModEntities.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModEntityRenderers.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModEntities.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFeatures.java"
     ]
   },
