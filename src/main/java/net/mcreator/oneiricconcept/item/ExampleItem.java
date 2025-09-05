@@ -16,6 +16,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.oneiricconcept.procedures.InfinitMMProcedure;
+import net.mcreator.oneiricconcept.procedures.ExamplexsProcedure;
 import net.mcreator.oneiricconcept.procedures.ExampledescribeProcedure;
 
 import java.util.List;
@@ -47,6 +48,7 @@ public class ExampleItem extends Item {
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		entity.startUsingItem(hand);
+		ExamplexsProcedure.execute(world, entity);
 		return ar;
 	}
 
@@ -56,7 +58,7 @@ public class ExampleItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		InfinitMMProcedure.execute(world, x, y, z);
+		InfinitMMProcedure.execute();
 		return retval;
 	}
 }

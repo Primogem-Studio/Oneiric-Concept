@@ -3891,24 +3891,7 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/InfinitMMProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/process"
     },
@@ -15737,11 +15720,38 @@
           {
             "name": "ss1",
             "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "return_type": "logic",
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/PGCcounterProcedure.java"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/PER"
+    },
+    {
+      "name": "Examplexs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "examplexs",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExamplexsProcedure.java"
         ]
       },
       "path": "~/PgcCopyDecoration/PER"
