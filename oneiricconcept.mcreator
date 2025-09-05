@@ -15713,6 +15713,38 @@
         ]
       },
       "path": "~/PgcCopyDecoration/PER"
+    },
+    {
+      "name": "PGCcounter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pg_ccounter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "zhi_xing",
+            "type": "logic"
+          },
+          {
+            "name": "zhi",
+            "type": "number"
+          },
+          {
+            "name": "ss1",
+            "type": "string"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PGCcounterProcedure.java"
+        ]
+      },
+      "path": "~/PgcCopyDecoration/PER"
     }
   ],
   "variable_elements": [
