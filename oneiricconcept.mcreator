@@ -15760,7 +15760,7 @@
       "name": "JunHengDengJi",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "jun_heng_deng_ji",
       "metadata": {
         "dependencies": [
@@ -15775,6 +15775,25 @@
         ]
       },
       "path": "~/Per/PER"
+    },
+    {
+      "name": "GetEquilibriumLevel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_equilibrium_level",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetEquilibriumLevelProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [

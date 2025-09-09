@@ -13,11 +13,11 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
-import net.mcreator.oneiricconcept.PGCApi;
 
 public class AntimatterLegionLootProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity sourceentity) {
@@ -29,9 +29,11 @@ public class AntimatterLegionLootProcedure {
 		if (sourceentity instanceof Player) {
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = sourceentity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
-				_vars.EquilibriumLevel = PGCApi.getPlayerVariables(sourceentity).jun_heng / 5 - 1;
+				_vars.EquilibriumLevel = JunHengDengJiProcedure.execute(sourceentity);
 				_vars.syncPlayerVariables(sourceentity);
 			}
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + JunHengDengJiProcedure.execute(sourceentity))), false);
 			EquilibriumLevel = sourceentity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).EquilibriumLevel;
 			if (7 <= EquilibriumLevel) {
 				EquilibriumLevel = 3;
@@ -40,7 +42,7 @@ public class AntimatterLegionLootProcedure {
 			} else if (1 <= EquilibriumLevel) {
 				EquilibriumLevel = 1;
 			}
-			lootingAndLuck = Math.max((sourceentity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity1.getAttribute(Attributes.LUCK).getValue() : 0) * 0.2
+			lootingAndLuck = Math.max((sourceentity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity2.getAttribute(Attributes.LUCK).getValue() : 0) * 0.2
 					+ (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) * 0.2, 10);
 			if (0 < EquilibriumLevel) {
 				for (int index0 = 0; index0 < (int) Math.ceil(EquilibriumLevel * (EquilibriumLevel + 1)); index0++) {
