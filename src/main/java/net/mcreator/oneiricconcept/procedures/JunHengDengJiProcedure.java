@@ -1,5 +1,6 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 import net.minecraft.world.entity.Entity;
 
 public class JunHengDengJiProcedure {
@@ -8,6 +9,6 @@ public class JunHengDengJiProcedure {
 			return 0;
 		Entity entity0 = null;
 		entity0 = entity;
-		return 0;
+		return entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng;
 	}
 }
