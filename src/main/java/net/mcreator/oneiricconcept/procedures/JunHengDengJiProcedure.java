@@ -9,6 +9,6 @@ public class JunHengDengJiProcedure {
 			return 0;
 		Entity entity0 = null;
 		entity0 = entity;
-		return entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng;
+		return entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng/1000;
 	}
 }
