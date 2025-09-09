@@ -1,5 +1,7 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.neoforged.fml.ModList;
+
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
@@ -37,6 +39,7 @@ public class LaserProcedure {
 		double x1 = 0;
 		double y1 = 0;
 		double z1 = 0;
+		boolean isGc = false;
 		if (!immediatesourceentity.level().isClientSide())
 			immediatesourceentity.discard();
 		target = entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null;
@@ -62,8 +65,9 @@ public class LaserProcedure {
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("particle minecraft:wax_off " + (x1 + ratio * dx) + (" " + (y1 + ratio * dy)) + (" " + (z1 + ratio * dz)) + " 0 0 0 1 1 force @a"));
 			}
+			isGc = ModList.get().isLoaded("genshincraft");
 			target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, true, 1),
-					(float) Math.max(3, 3 * target.getData(OneiricconceptModVariables.PLAYER_VARIABLES).EquilibriumLevel * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
+					(float) Math.max(isGc ? 30 : 1, (isGc ? 30 : 2) * target.getData(OneiricconceptModVariables.PLAYER_VARIABLES).EquilibriumLevel * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
 		}
 	}
 

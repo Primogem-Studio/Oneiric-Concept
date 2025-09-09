@@ -6,6 +6,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -61,16 +62,17 @@ public class BaryonEntity extends Monster implements RangedAttackMob {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, true, true));
-		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
+		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Villager.class, true, true));
+		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 0.7, true) {
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(5, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 30, 16f) {
+		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 0.5));
+		this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(6, new FloatGoal(this));
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 160, 16f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
