@@ -688,7 +688,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/elements_crystal_ore.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "Cloud",
@@ -772,7 +772,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/nagadus_emerald_ore.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "PrithivaTopazOre1",
@@ -785,7 +785,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/prithiva_topaz_ore.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "ShivadaJadeOre1",
@@ -798,7 +798,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/shivada_jade_ore.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "VayudaTurquoiseOre1",
@@ -811,7 +811,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/vayuda_turquoise_ore_1.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "VajradaAmethystOre2",
@@ -824,7 +824,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/vajrada_amethyst_ore_2.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "AgnidusAgateOre1",
@@ -837,7 +837,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/agnidus_agate_ore_1.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "VarunadaLazuriteOre1",
@@ -850,7 +850,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/varunada_lazurite_ore_1.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "CloudFeature",
@@ -15446,7 +15446,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/fullmoonore.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "Crescentmoonoreloot",
@@ -15459,7 +15459,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/crescentmoonore.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "Redmoonoreloot",
@@ -15472,7 +15472,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoonore.json"
         ]
       },
-      "path": "~/OreLoot"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "AbandonedWitherTransportBox",
@@ -18057,15 +18057,15 @@
           {
             "name": "wishloot",
             "children": []
+          },
+          {
+            "name": "OreLoot",
+            "children": []
           }
         ]
       },
       {
         "name": "effect",
-        "children": []
-      },
-      {
-        "name": "OreLoot",
         "children": []
       }
     ]
