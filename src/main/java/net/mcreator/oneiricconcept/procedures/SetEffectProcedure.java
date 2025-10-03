@@ -8,7 +8,7 @@ import net.minecraft.core.BlockPos;
 
 public class SetEffectProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "running") && 120 < world.dayTime() - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "time")) {
+		if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "running") && 120 < world.dayTime() - getBlockNBTNumber(world, BlockPos.containing(x, y, z), "time") && !world.isClientSide()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
