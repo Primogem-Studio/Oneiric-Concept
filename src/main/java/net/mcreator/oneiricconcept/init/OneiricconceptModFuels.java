@@ -20,5 +20,7 @@ public class OneiricconceptModFuels {
 			event.setBurnTime(20000);
 		else if (itemstack.getItem() == OneiricconceptModItems.PHLOGISTON_CRYSTAL.get())
 			event.setBurnTime(180000);
+		else if (itemstack.getItem() == OneiricconceptModItems.MOLTEN_METAL.get())
+			event.setBurnTime(1600);
 	}
 }

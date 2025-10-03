@@ -15794,6 +15794,17 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "MoltenMetalFire",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_metal_fire",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [
