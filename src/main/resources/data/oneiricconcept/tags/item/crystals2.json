@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "oneiricconcept:honkai_sliver",
+    {
+      "id": "primogemcraft:zuishengkuai",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:laoshi",
+      "required": false
+    }
+  ]
+}

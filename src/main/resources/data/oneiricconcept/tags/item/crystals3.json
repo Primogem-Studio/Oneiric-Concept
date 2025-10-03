@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "oneiricconcept:oneiric_shard",
+    {
+      "id": "primogemcraft:chuangshijiejing",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:yhjs",
+      "required": false
+    },
+    "oneiricconcept:electro_metal"
+  ]
+}

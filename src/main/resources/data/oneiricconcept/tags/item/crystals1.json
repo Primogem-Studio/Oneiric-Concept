@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "primogemcraft:zuishengduanpian",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:yuanshi",
+      "required": false
+    },
+    "oneiricconcept:primogem",
+    {
+      "id": "primogemcraft:disui",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:yhjsl",
+      "required": false
+    }
+  ]
+}

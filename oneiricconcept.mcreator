@@ -16497,6 +16497,28 @@
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:ShuhuGift",
       "~CUSTOM:SharpHook"
+    ],
+    "ITEMS:mod:crystals1": [
+      "EXTERNAL:primogemcraft:yuanshi",
+      "EXTERNAL:primogemcraft:disui",
+      "EXTERNAL:primogemcraft:zuishengduanpian",
+      "EXTERNAL:primogemcraft:yhjsl",
+      "CUSTOM:PgcPg"
+    ],
+    "ITEMS:mod:crystals2": [
+      "CUSTOM:HonkaiSliver",
+      "EXTERNAL:primogemcraft:zuishengkuai",
+      "EXTERNAL:primogemcraft:laoshi"
+    ],
+    "ITEMS:mod:crystals3": [
+      "CUSTOM:OneiricShard",
+      "EXTERNAL:primogemcraft:chuangshijiejing",
+      "EXTERNAL:primogemcraft:yhjs",
+      "CUSTOM:Elect1"
+    ],
+    "ITEMS:mod:crystals4": [
+      "EXTERNAL:primogemcraft:zuishengzijing",
+      "CUSTOM:HonkaiShard"
     ]
   },
   "tab_element_order": {
