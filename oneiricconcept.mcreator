@@ -15805,6 +15805,19 @@
         "files": []
       },
       "path": "~/item"
+    },
+    {
+      "name": "PrimogemBlock1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "primogem_block_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/primogem_block_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
