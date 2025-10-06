@@ -14195,8 +14195,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/network/CrystalgeneratorGUISlotMessage.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/gui/CrystalgeneratorGUIScreen.java",
-          "src/main/java/net/mcreator/oneiricconcept/world/inventory/CrystalgeneratorGUIMenu.java"
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/CrystalgeneratorGUIMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/CrystalgeneratorGUIScreen.java"
         ]
       }
     },
@@ -17561,8 +17561,8 @@
       "item.oneiricconcept.heartofthefrozensea": "冻洋之心",
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
       "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗",
-      "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
-      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea"
+      "item.oneiricconcept.fine_tea_full_moon": "茶好月圆",
+      "item.oneiricconcept.chenyu_adeptea": "沉玉仙茗"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",

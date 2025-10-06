@@ -44,7 +44,8 @@ public class CrystalgeneratoritemProcedure {
 			crystal_power = CrystalgeneratorListProcedure.execute(crystal);
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5411\u53D1\u7535\u6D41\u7A0B\u4F20\u8F93\u7535\u529B\uFF1A" + crystal_power + "\u7269\u54C1\uFF1A" + crystal)), false);
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5411\u53D1\u7535\u6D41\u7A0B\u4F20\u8F93\u7535\u529B\uFF1A" + crystal_power + "\u7269\u54C1\uFF1A" + crystal + "\u5F53\u524D\u80FD\u91CF\uFF1A"
+							+ getEnergyStored(world, BlockPos.containing(x, y, z), null) + "\u80FD\u91CF\u4E0A\u9650\uFF1A" + getMaxEnergyStored(world, BlockPos.containing(x, y, z), null))), false);
 			}
 			if (0 < crystal_power && getEnergyStored(world, BlockPos.containing(x, y, z), null) < getMaxEnergyStored(world, BlockPos.containing(x, y, z), null)) {
 				if (!world.isClientSide()) {
