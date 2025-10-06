@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:chenyu_adeptea"
+    },
+    "b": {
+      "tag": "c:eggs"
+    },
+    "c": {
+      "item": "minecraft:wheat"
+    },
+    "d": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:fine_tea_full_moon",
+    "count": 1
+  }
+}

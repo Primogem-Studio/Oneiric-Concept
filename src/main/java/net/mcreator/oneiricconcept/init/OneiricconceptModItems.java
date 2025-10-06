@@ -106,6 +106,7 @@ import net.mcreator.oneiricconcept.item.GrilledDumplingItem;
 import net.mcreator.oneiricconcept.item.GlazemedakaItem;
 import net.mcreator.oneiricconcept.item.FruitpastebaitItem;
 import net.mcreator.oneiricconcept.item.FishcakeItem;
+import net.mcreator.oneiricconcept.item.FineTeaFullMoonItem;
 import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkSugarFreeItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkPrimogemItem;
@@ -122,6 +123,7 @@ import net.mcreator.oneiricconcept.item.ConquerorSWillItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
 import net.mcreator.oneiricconcept.item.CloudBottleItem;
+import net.mcreator.oneiricconcept.item.ChenyuAdepteaItem;
 import net.mcreator.oneiricconcept.item.CamoPaintItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunPlusItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunItem;
@@ -336,6 +338,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> RAWFULLMOONORE = REGISTRY.register("rawfullmoonore", RawfullmoonoreItem::new);
 	public static final DeferredItem<Item> THEANOTHERWORLDMOONINGOT = block(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT);
 	public static final DeferredItem<Item> WHITE_MOONLIGHT_ABSORBER = block(OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER);
+	public static final DeferredItem<Item> FINE_TEA_FULL_MOON = REGISTRY.register("fine_tea_full_moon", FineTeaFullMoonItem::new);
+	public static final DeferredItem<Item> CHENYU_ADEPTEA = REGISTRY.register("chenyu_adeptea", ChenyuAdepteaItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

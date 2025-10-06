@@ -15818,6 +15818,47 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "FineTeaFullMoon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fine_tea_full_moon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/FineTeaFullMoonItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/fine_tea_full_moon.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "ChenyuAdeptea",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyu_adeptea",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/ChenyuAdepteaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "FineTeaFullMoon1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fine_tea_full_moon_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/fine_tea_full_moon_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -16688,7 +16729,9 @@
       "PunitiveEnergy",
       "EnergyDrinkSugarFree",
       "EnergyDrinkPrimogem",
-      "DreamyCone"
+      "DreamyCone",
+      "FineTeaFullMoon",
+      "ChenyuAdeptea"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPresent",
@@ -17117,7 +17160,9 @@
       "item.oneiricconcept.rawfullmoonore": "Raw full moon ore",
       "item.oneiricconcept.heartofthefrozensea": "Heart of the frozen sea",
       "item.oneiricconcept.dark_xuanyuan_sword": "Xuanyuan Sword",
-      "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling"
+      "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling",
+      "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
+      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -17515,7 +17560,9 @@
       "item.oneiricconcept.rawfullmoonore": "粗满月矿石",
       "item.oneiricconcept.heartofthefrozensea": "冻洋之心",
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
-      "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗"
+      "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗",
+      "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
+      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -17914,7 +17961,9 @@
       "item.oneiricconcept.rawfullmoonore": "Raw red moon ore",
       "item.oneiricconcept.heartofthefrozensea": "冻洋之心",
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
-      "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗"
+      "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗",
+      "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
+      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea"
     }
   },
   "metadata": {
@@ -18108,7 +18157,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.74",
+    "version": "1.9.75",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",

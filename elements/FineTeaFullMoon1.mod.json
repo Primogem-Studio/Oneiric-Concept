@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ChenyuAdeptea"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ChenyuAdeptea"
+      },
+      {
+        "value": "TAG:c:eggs"
+      },
+      {
+        "value": "CUSTOM:ChenyuAdeptea"
+      },
+      {
+        "value": "Items.WHEAT"
+      },
+      {
+        "value": "Items.SUGAR"
+      },
+      {
+        "value": "Items.WHEAT"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:FineTeaFullMoon"
+    },
+    "name": "fine_tea_full_moon_1",
+    "namespace": "mod"
+  }
+}
