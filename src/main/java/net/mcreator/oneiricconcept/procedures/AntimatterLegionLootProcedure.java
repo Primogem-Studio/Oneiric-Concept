@@ -26,10 +26,10 @@ public class AntimatterLegionLootProcedure {
 		double lootingAndLuck = 0;
 		if (sourceentity instanceof Player) {
 			EquilibriumLevel = JunHengDengJiProcedure.execute(sourceentity);
-			lootingAndLuck = Math.max((sourceentity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity1.getAttribute(Attributes.LUCK).getValue() : 0) * 0.2
-					+ (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) * 0.2, 10);
+			lootingAndLuck = Math.min((sourceentity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity1.getAttribute(Attributes.LUCK).getValue() : 0) * 0.2
+					+ (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)), 10);
 			if (0 < EquilibriumLevel) {
-				for (int index0 = 0; index0 < (int) Math.ceil(EquilibriumLevel * (EquilibriumLevel + 1)); index0++) {
+				for (int index0 = 0; index0 < (int) Math.ceil(lootingAndLuck * (EquilibriumLevel + 1)); index0++) {
 					if (RandomProcedure.execute(world, 0.2 * EquilibriumLevel)) {
 						itmsstk = (RandomProcedure.execute(world, 0.1 * EquilibriumLevel) ? new ItemStack(OneiricconceptModItems.CONQUEROR_S_WILL.get()) : new ItemStack(OneiricconceptModItems.USURPER_S_SCHEME.get()));
 					} else {
