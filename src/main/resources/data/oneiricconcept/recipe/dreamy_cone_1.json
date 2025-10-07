@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    " cd",
+    "e  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glow_berries"
+    },
+    "b": {
+      "item": "oneiricconcept:chenyu_adeptea"
+    },
+    "c": {
+      "item": "minecraft:snowball"
+    },
+    "d": {
+      "item": "minecraft:melon_slice"
+    },
+    "e": {
+      "item": "oneiricconcept:waffle"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:dreamy_cone",
+    "count": 1
+  }
+}
