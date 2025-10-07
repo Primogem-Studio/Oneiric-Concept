@@ -76,6 +76,7 @@ import net.mcreator.oneiricconcept.block.CryosealingwaxBlock;
 import net.mcreator.oneiricconcept.block.Cryoo1Block;
 import net.mcreator.oneiricconcept.block.CrescentmoonoreBlock;
 import net.mcreator.oneiricconcept.block.CloudBlock;
+import net.mcreator.oneiricconcept.block.ChenyuAdepteaSeedlingBlock;
 import net.mcreator.oneiricconcept.block.CamerapinkBlock;
 import net.mcreator.oneiricconcept.block.CameraBlock;
 import net.mcreator.oneiricconcept.block.CCactusBlock;
@@ -180,6 +181,8 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> FULLMOONORE = REGISTRY.register("fullmoonore", FullmoonoreBlock::new);
 	public static final DeferredBlock<Block> THEANOTHERWORLDMOONINGOT = REGISTRY.register("theanotherworldmooningot", TheanotherworldmooningotBlock::new);
 	public static final DeferredBlock<Block> WHITE_MOONLIGHT_ABSORBER = REGISTRY.register("white_moonlight_absorber", WhiteMoonlightAbsorberBlock::new);
+	public static final DeferredBlock<Block> CHENYU_ADEPTEA_TREE = REGISTRY.register("chenyu_adeptea_tree", ChenyuAdepteaTreeBlock::new);
+	public static final DeferredBlock<Block> CHENYU_ADEPTEA_SEEDLING = REGISTRY.register("chenyu_adeptea_seedling", ChenyuAdepteaSeedlingBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

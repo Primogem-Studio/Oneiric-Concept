@@ -340,6 +340,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> WHITE_MOONLIGHT_ABSORBER = block(OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER);
 	public static final DeferredItem<Item> FINE_TEA_FULL_MOON = REGISTRY.register("fine_tea_full_moon", FineTeaFullMoonItem::new);
 	public static final DeferredItem<Item> CHENYU_ADEPTEA = REGISTRY.register("chenyu_adeptea", ChenyuAdepteaItem::new);
+	public static final DeferredItem<Item> CHENYU_ADEPTEA_TREE = block(OneiricconceptModBlocks.CHENYU_ADEPTEA_TREE);
+	public static final DeferredItem<Item> CHENYU_ADEPTEA_SEEDLING = block(OneiricconceptModBlocks.CHENYU_ADEPTEA_SEEDLING);
 
 	// Start of user code block custom items
 	// End of user code block custom items

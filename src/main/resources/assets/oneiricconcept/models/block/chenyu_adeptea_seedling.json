@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "oneiricconcept:block/chenyu_adeptea_seedling",
+    "particle": "oneiricconcept:block/chenyu_adeptea_seedling"
+  },
+  "render_type": "cutout"
+}

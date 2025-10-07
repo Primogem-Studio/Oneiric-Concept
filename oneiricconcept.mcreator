@@ -1414,7 +1414,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/big_rock.json"
         ]
       },
-      "path": "~/block"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "BigRockR",
@@ -1440,7 +1440,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/big_stone.json"
         ]
       },
-      "path": "~/block"
+      "path": "~/loot/OreLoot"
     },
     {
       "name": "HonkaiParticle",
@@ -2128,7 +2128,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/banana_mushroom_bock.json"
         ]
       },
-      "path": "~/block"
+      "path": "~/loot"
     },
     {
       "name": "BigRock2",
@@ -2724,7 +2724,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_leave.json"
         ]
       },
-      "path": "~/block"
+      "path": "~/loot"
     },
     {
       "name": "TheAnotherWorldLeave",
@@ -8910,7 +8910,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_leave.json"
         ]
       },
-      "path": "~/block"
+      "path": "~/loot"
     },
     {
       "name": "DeepMarrowRockSalt",
@@ -9010,7 +9010,7 @@
           "src/main/resources/data/oneiricconcept/loot_table/blocks/dawnleaves.json"
         ]
       },
-      "path": "~/block"
+      "path": "~/loot"
     },
     {
       "name": "Dawntree",
@@ -15859,6 +15859,70 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "DreamyCone1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dreamy_cone_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/dreamy_cone_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ChenyuAdepteaTree",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyu_adeptea_tree",
+      "path": "~/block"
+    },
+    {
+      "name": "ChenyuadepteatreeLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyuadepteatree_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/chenyu_adeptea_tree.json"
+        ]
+      },
+      "path": "~/loot"
+    },
+    {
+      "name": "Chenyuadepteatreef",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyuadepteatreef",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/chenyuadepteatreef.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "ChenyuAdepteaSeedling",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyu_adeptea_seedling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_seedling.json",
+          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_seedling.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_seedling.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaSeedlingBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/chenyu_adeptea_seedling.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [
@@ -16451,6 +16515,7 @@
       "CUSTOM:WildernessRod"
     ],
     "BLOCKS:minecraft:saplings": [
+      "~CUSTOM:ChenyuAdepteaSeedling",
       "~CUSTOM:FreshSeedofDawn",
       "~CUSTOM:AmbrosialArborSapling",
       "~CUSTOM:TheAnotherWorldSapling",
@@ -16679,7 +16744,8 @@
       "Rawcrescentmoonore",
       "Rawredmoonore",
       "Rawfullmoonore",
-      "WhiteMoonlightAbsorber"
+      "WhiteMoonlightAbsorber",
+      "ChenyuAdepteaSeedling"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -17162,7 +17228,8 @@
       "item.oneiricconcept.dark_xuanyuan_sword": "Xuanyuan Sword",
       "block.oneiricconcept.ambrosial_arbor_sapling": "Ambrosial Arbor Sapling",
       "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
-      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea"
+      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea",
+      "block.oneiricconcept.chenyu_adeptea_seedling": "Chenyu Adeptea Seedling"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -17562,7 +17629,8 @@
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
       "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗",
       "item.oneiricconcept.fine_tea_full_moon": "茶好月圆",
-      "item.oneiricconcept.chenyu_adeptea": "沉玉仙茗"
+      "item.oneiricconcept.chenyu_adeptea": "沉玉仙茗",
+      "block.oneiricconcept.chenyu_adeptea_seedling": "Chenyu Adeptea Seedling"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -17963,7 +18031,8 @@
       "item.oneiricconcept.dark_xuanyuan_sword": "黑轩辕剑",
       "block.oneiricconcept.ambrosial_arbor_sapling": "建木树苗",
       "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
-      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea"
+      "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea",
+      "block.oneiricconcept.chenyu_adeptea_seedling": "Chenyu Adeptea Seedling"
     }
   },
   "metadata": {
