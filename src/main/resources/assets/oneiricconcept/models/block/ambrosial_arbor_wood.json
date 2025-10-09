@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/ambrosialarborlog",
-    "particle": "oneiricconcept:block/ambrosialarborlog"
-  },
-  "render_type": "solid"
-}

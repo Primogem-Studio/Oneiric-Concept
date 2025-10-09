@@ -1,9 +1,0 @@
-{
-  "parent": "oneiricconcept:custom/rainbowcactusball",
-  "textures": {
-    "all": "oneiricconcept:block/rainbowcactusball",
-    "particle": "oneiricconcept:block/rainbowcactusball",
-    "0": "oneiricconcept:block/rainbowcactusball"
-  },
-  "render_type": "cutout_mipped"
-}

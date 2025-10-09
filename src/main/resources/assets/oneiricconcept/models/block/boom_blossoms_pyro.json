@@ -1,9 +1,0 @@
-{
-  "parent": "oneiricconcept:custom/boomblossoms",
-  "textures": {
-    "all": "oneiricconcept:block/boomblossoms",
-    "particle": "oneiricconcept:block/boomblossoms",
-    "0": "oneiricconcept:block/boomblossoms"
-  },
-  "render_type": "solid"
-}

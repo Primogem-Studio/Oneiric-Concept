@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/red_moon_ore",
-    "particle": "oneiricconcept:block/red_moon_ore"
-  },
-  "render_type": "solid"
-}
