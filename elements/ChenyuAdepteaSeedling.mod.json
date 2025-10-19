@@ -104,10 +104,14 @@
     "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 5,
-    "generateFeature": false,
-    "restrictionBiomes": [],
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_forest"
+      }
+    ],
     "generationType": "Flower",
-    "patchSize": 64,
+    "patchSize": 3,
     "generateAtAnyHeight": false
   }
 }

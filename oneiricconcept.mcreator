@@ -15882,10 +15882,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaTreeBlock.java",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/chenyu_adeptea_tree.json",
           "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_tree.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/chenyu_adeptea_tree_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/chenyu_adeptea_tree.json",
           "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_tree.json",
           "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json"
         ]
@@ -15926,6 +15923,9 @@
       "registry_name": "chenyu_adeptea_seedling",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/chenyu_adeptea_seedling.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/chenyu_adeptea_seedling_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/chenyu_adeptea_seedling.json",
           "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_seedling.json",
           "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_seedling.json",
           "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_seedling.json",
@@ -18241,7 +18241,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.75",
+    "version": "1.9.76",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",

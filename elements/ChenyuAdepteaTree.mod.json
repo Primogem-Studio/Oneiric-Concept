@@ -138,7 +138,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "generateFeature": true,
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "#minecraft:is_forest"
@@ -146,7 +146,7 @@
     ],
     "blocksToReplace": [
       {
-        "value": "TAG:stone_ore_replaceables"
+        "value": "TAG:minecraft:replaceable_by_mushrooms"
       }
     ],
     "generationShape": "UNIFORM",
