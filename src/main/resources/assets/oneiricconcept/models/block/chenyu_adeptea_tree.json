@@ -5,5 +5,5 @@
     "particle": "oneiricconcept:block/adeptus_plant",
     "1": "oneiricconcept:block/adeptus_plant"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

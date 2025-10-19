@@ -1,11 +1,5 @@
 {
   "mappings": {
-    "adepteanew": {
-      "map": {
-        "1": ""
-      },
-      "name": "adepteanew"
-    },
     "default": {
       "map": {
         "1": "adeptus_plant"
