@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "oneiricconcept:item/yong_heng_jin_shu_"
+  },
+  "render_type": "translucent"
+}

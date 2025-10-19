@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/pgcbox",
+  "textures": {
+    "all": "oneiricconcept:block/pgcbox",
+    "particle": "oneiricconcept:block/pgcbox",
+    "0": "oneiricconcept:block/pgcbox"
+  },
+  "render_type": "solid"
+}

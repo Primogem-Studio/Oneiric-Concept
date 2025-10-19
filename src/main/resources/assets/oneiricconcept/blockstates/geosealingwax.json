@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/geosealingwax"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/geosealingwax",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/geosealingwax",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/geosealingwax",
+      "y": 270
+    }
+  }
+}

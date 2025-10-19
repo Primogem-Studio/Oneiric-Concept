@@ -16,6 +16,16 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.oneiricconcept.block.entity.WhiteMoonlightAbsorberBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.SustenanceanchoroffBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.SustenanceanchorBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.PropagandaArmyBlockBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.PrimogemstormglassBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.PhlogistontankBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.NestBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.Geooo1BlockEntity;
+import net.mcreator.oneiricconcept.block.entity.CrystalgeneratorBlockEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)

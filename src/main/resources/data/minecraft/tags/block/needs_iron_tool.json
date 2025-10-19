@@ -1,4 +1,14 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "oneiricconcept:elements_crystal_ore",
+    "oneiricconcept:vajrada_amethyst_ore",
+    "oneiricconcept:nagadus_emerald_ore",
+    "oneiricconcept:agnidus_agate_ore",
+    "oneiricconcept:shivada_jade_ore",
+    "oneiricconcept:prithiva_topaz_ore",
+    "oneiricconcept:varunada_lazurite_ore",
+    "oneiricconcept:molten_metal_block",
+    "oneiricconcept:vayuda_turquoise_ore"
+  ]
 }

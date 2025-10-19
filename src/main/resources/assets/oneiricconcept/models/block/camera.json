@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/camera",
+  "textures": {
+    "all": "oneiricconcept:block/camera",
+    "particle": "oneiricconcept:block/camera",
+    "0": "oneiricconcept:block/camera"
+  },
+  "render_type": "cutout"
+}

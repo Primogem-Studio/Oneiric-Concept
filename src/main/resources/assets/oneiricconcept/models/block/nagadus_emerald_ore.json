@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "oneiricconcept:block/nagadusemeraldore",
+    "particle": "oneiricconcept:block/nagadusemeraldore"
+  },
+  "render_type": "solid"
+}

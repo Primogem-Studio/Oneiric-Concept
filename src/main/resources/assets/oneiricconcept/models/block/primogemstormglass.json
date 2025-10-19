@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/primogem_storm_glass",
+  "textures": {
+    "all": "oneiricconcept:block/primogem_storm_glass",
+    "particle": "oneiricconcept:block/shizuoyuanshikuai",
+    "0": "oneiricconcept:block/primogem_storm_glass"
+  },
+  "render_type": "cutout_mipped"
+}

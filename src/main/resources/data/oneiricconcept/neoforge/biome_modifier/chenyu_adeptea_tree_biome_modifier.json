@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "oneiricconcept:chenyu_adeptea_tree",
+  "step": "underground_ores"
+}

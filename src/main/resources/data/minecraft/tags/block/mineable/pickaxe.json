@@ -1,4 +1,34 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "oneiricconcept:propaganda_army_block",
+    "oneiricconcept:primogem",
+    "oneiricconcept:big_stone",
+    "oneiricconcept:molten_metal_block",
+    "oneiricconcept:vayuda_turquoise_ore",
+    "oneiricconcept:crescent_metal",
+    "oneiricconcept:geomarrow_radiator",
+    "oneiricconcept:redmoon_metal",
+    "oneiricconcept:thunder_sword",
+    "oneiricconcept:fullmoonore",
+    "oneiricconcept:geo_metal",
+    "oneiricconcept:hertabond",
+    "oneiricconcept:redmoonore",
+    "oneiricconcept:sustenanceanchor",
+    "oneiricconcept:fullmoon_metal",
+    "oneiricconcept:pyro_metal",
+    "oneiricconcept:dendro_metal",
+    "oneiricconcept:cryo_metal",
+    "oneiricconcept:electro_metal",
+    "oneiricconcept:white_moonlight_absorber",
+    "oneiricconcept:crescentmoonore",
+    "oneiricconcept:sustenanceanchoroff",
+    "oneiricconcept:anemo_metal",
+    "oneiricconcept:trashmetal",
+    "oneiricconcept:elements_crystal_ore",
+    "oneiricconcept:agnidus_agate_ore",
+    "oneiricconcept:hydro_metal",
+    "oneiricconcept:theanotherworldmooningot",
+    "oneiricconcept:prithiva_topaz_ore"
+  ]
 }

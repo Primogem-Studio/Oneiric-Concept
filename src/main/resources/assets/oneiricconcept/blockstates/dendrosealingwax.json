@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/dendrosealingwax"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/dendrosealingwax",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/dendrosealingwax",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/dendrosealingwax",
+      "y": 270
+    }
+  }
+}
