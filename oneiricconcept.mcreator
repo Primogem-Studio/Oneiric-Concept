@@ -16030,8 +16030,8 @@
       "files": [
         "jimoderenshangxindege"
       ],
-      "category": "player",
-      "subtitle": "得吃的小曲"
+      "category": "music",
+      "subtitle": "得吃"
     }
   ],
   "tag_elements": {
@@ -17123,7 +17123,7 @@
       "item.oneiricconcept.xuanyuan_sword.description_0": "§6The tenth Divine Keys contains the powerful power of Herrschers",
       "item.oneiricconcept.xuanyuan_sword.description_1": "§7虽然只有千分之一",
       "death.attack.skip": "The %1$s\u0027s life has been skipped",
-      "subtitles.jimoderenshangxindege": "得吃的小曲",
+      "subtitles.jimoderenshangxindege": "得吃",
       "translation.oneiricconcept.kill": "Clear quantity:§6",
       "block.oneiricconcept.mactus": "Mactus",
       "item.oneiricconcept.baryon_spawn_egg": "Baryon Spawn Egg",
