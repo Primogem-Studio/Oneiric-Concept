@@ -14,12 +14,10 @@ public class OneiricconceptModFuels {
 	@SubscribeEvent
 	public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
 		ItemStack itemstack = event.getItemStack();
-		if (itemstack.getItem() == OneiricconceptModItems.PUBLIC_CLAMOR.get())
-			event.setBurnTime(1600);
-		else if (itemstack.getItem() == OneiricconceptModItems.PHLOGISTON.get())
-			event.setBurnTime(20000);
+		if (itemstack.getItem() == OneiricconceptModItems.PHLOGISTON.get())
+			event.setBurnTime(30000);
 		else if (itemstack.getItem() == OneiricconceptModItems.PHLOGISTON_CRYSTAL.get())
-			event.setBurnTime(180000);
+			event.setBurnTime(270000);
 		else if (itemstack.getItem() == OneiricconceptModItems.MOLTEN_METAL.get())
 			event.setBurnTime(1600);
 	}

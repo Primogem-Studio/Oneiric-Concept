@@ -40,7 +40,7 @@
     "sounds": [
       {
         "name": "oneiricconcept:jimoderenshangxindege",
-        "stream": false
+        "stream": true
       }
     ]
   }

@@ -3923,17 +3923,6 @@
       "path": "~/item"
     },
     {
-      "name": "PublicClamorFire",
-      "type": "itemextension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "public_clamor_fire",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/item"
-    },
-    {
       "name": "PublicClamorGet",
       "type": "procedure",
       "compiles": true,
