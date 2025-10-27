@@ -140,7 +140,7 @@
       "name": "ChenyuClick"
     },
     "onNeighbourBlockChanges": {
-      "name": "Supportdown"
+      "name": "ChenyuClick"
     },
     "onTickUpdate": {
       "name": "ChenyuLeaf"

@@ -22,7 +22,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.procedures.SupportdownProcedure;
 import net.mcreator.oneiricconcept.procedures.ChenyuLeafProcedure;
 import net.mcreator.oneiricconcept.procedures.ChenyuClickProcedure;
 
@@ -71,7 +70,7 @@ public class ChenyuAdepteaTreeBlock extends Block {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		SupportdownProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		ChenyuClickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

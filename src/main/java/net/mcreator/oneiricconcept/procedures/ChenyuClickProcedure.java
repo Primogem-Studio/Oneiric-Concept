@@ -34,5 +34,6 @@ public class ChenyuClickProcedure {
 				}
 			}
 		}
+		SupportdownProcedure.execute(world, x, y, z);
 	}
 }
