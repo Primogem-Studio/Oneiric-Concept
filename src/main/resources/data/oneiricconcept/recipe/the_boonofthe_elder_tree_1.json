@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "tag": "minecraft:logs"
+    },
+    "c": {
+      "item": "oneiricconcept:the_another_world_log"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:the_boon_of_the_elder_tree",
+    "count": 1
+  }
+}

@@ -125,6 +125,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.RAWFULLMOONORE.get());
 				tabData.accept(OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CHENYU_ADEPTEA_SEEDLING.get().asItem());
+				tabData.accept(OneiricconceptModItems.THE_BOON_OF_THE_ELDER_TREE.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {

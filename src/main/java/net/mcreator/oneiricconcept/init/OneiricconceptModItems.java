@@ -33,6 +33,7 @@ import net.mcreator.oneiricconcept.item.UsurperSSchemeItem;
 import net.mcreator.oneiricconcept.item.TreeBarkofEruditionItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
 import net.mcreator.oneiricconcept.item.ThiefSInstinctItem;
+import net.mcreator.oneiricconcept.item.TheBoonOfTheElderTreeItem;
 import net.mcreator.oneiricconcept.item.TesttoolItem;
 import net.mcreator.oneiricconcept.item.TAWWoodLootItem;
 import net.mcreator.oneiricconcept.item.TAWWoodBoxItem;
@@ -342,6 +343,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> CHENYU_ADEPTEA = REGISTRY.register("chenyu_adeptea", ChenyuAdepteaItem::new);
 	public static final DeferredItem<Item> CHENYU_ADEPTEA_TREE = block(OneiricconceptModBlocks.CHENYU_ADEPTEA_TREE);
 	public static final DeferredItem<Item> CHENYU_ADEPTEA_SEEDLING = block(OneiricconceptModBlocks.CHENYU_ADEPTEA_SEEDLING);
+	public static final DeferredItem<Item> THE_BOON_OF_THE_ELDER_TREE = REGISTRY.register("the_boon_of_the_elder_tree", TheBoonOfTheElderTreeItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

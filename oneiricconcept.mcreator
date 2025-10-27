@@ -16034,6 +16034,103 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "TheBoonOfTheElderTree",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_boon_of_the_elder_tree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/TheBoonOfTheElderTreeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/the_boon_of_the_elder_tree.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "ExtractWood",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extract_wood",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExtractWoodProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ExtractStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extract_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExtractStartProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "TheBoonoftheElderTree1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_boonofthe_elder_tree_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/the_boonofthe_elder_tree_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -16857,7 +16954,8 @@
       "Rawredmoonore",
       "Rawfullmoonore",
       "WhiteMoonlightAbsorber",
-      "ChenyuAdepteaSeedling"
+      "ChenyuAdepteaSeedling",
+      "TheBoonOfTheElderTree"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -17342,7 +17440,8 @@
       "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
       "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea",
       "block.oneiricconcept.chenyu_adeptea_seedling": "Chenyu Adeptea Seedling",
-      "block.oneiricconcept.chenyu_adeptea_tree": "Chenyu Adeptea Tree"
+      "block.oneiricconcept.chenyu_adeptea_tree": "Chenyu Adeptea Tree",
+      "item.oneiricconcept.the_boon_of_the_elder_tree": "The Boon Of The Elder Tree"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -17744,7 +17843,8 @@
       "item.oneiricconcept.fine_tea_full_moon": "茶好月圆",
       "item.oneiricconcept.chenyu_adeptea": "沉玉仙茗",
       "block.oneiricconcept.chenyu_adeptea_seedling": "沉玉茶树苗",
-      "block.oneiricconcept.chenyu_adeptea_tree": "沉玉茶树"
+      "block.oneiricconcept.chenyu_adeptea_tree": "沉玉茶树",
+      "item.oneiricconcept.the_boon_of_the_elder_tree": "王树瑞佑"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18147,7 +18247,8 @@
       "item.oneiricconcept.fine_tea_full_moon": "Fine Tea Full Moon",
       "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea",
       "block.oneiricconcept.chenyu_adeptea_seedling": "Chenyu Adeptea Seedling",
-      "block.oneiricconcept.chenyu_adeptea_tree": "Chenyu Adeptea Tree"
+      "block.oneiricconcept.chenyu_adeptea_tree": "Chenyu Adeptea Tree",
+      "item.oneiricconcept.the_boon_of_the_elder_tree": "The Boon Of The Elder Tree"
     }
   },
   "metadata": {
