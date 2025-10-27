@@ -19,6 +19,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.oneiricconcept.procedures.HyyxmsProcedure;
 import net.mcreator.oneiricconcept.procedures.FishHealthProcedure;
+import net.mcreator.oneiricconcept.procedures.CurioHeartFishProcedure;
 
 import java.util.List;
 
@@ -75,5 +76,11 @@ public class HeartofthefishItem extends Item {
 		double z = entity.getZ();
 		FishHealthProcedure.execute(world, x, y, z, entity, itemstack);
 		return retval;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		CurioHeartFishProcedure.execute(entity);
 	}
 }

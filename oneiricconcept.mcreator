@@ -6797,8 +6797,8 @@
       "registry_name": "heartofthefrozensea",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefrozenseaItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthefrozensea.json"
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthefrozensea.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefrozenseaItem.java"
         ]
       },
       "path": "~/item"
@@ -6914,12 +6914,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_4.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json"
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java"
         ]
       },
       "path": "~/item"
@@ -9163,8 +9163,8 @@
       "registry_name": "heartofthefish",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefishItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthefish.json"
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthefish.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefishItem.java"
         ]
       },
       "path": "~/item"
@@ -16012,6 +16012,25 @@
         ],
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/ChenyuClickProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "CurioHeartFish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curio_heart_fish",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CurioHeartFishProcedure.java"
         ]
       },
       "path": "~/process"

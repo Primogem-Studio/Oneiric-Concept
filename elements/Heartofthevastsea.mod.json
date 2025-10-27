@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "heart_of_the_vast_sea",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {
       "itemmode": {
         "name": "Vastmode"

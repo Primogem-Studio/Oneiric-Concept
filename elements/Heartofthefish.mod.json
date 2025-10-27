@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "heart_of_the_fish",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Heart of the fish",
@@ -37,6 +38,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "CurioHeartFish"
+    },
     "onFinishUsingItem": {
       "name": "FishHealth"
     },

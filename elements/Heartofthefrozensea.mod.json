@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "heart_of_the_frozen_sea",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Heart of the frozen sea",
