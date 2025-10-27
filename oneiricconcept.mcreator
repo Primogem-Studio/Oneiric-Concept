@@ -15870,8 +15870,8 @@
       "registry_name": "chenyu_adeptea_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaTreeBlock.java",
           "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_tree.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaTreeBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_tree.json",
           "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json"
         ]
@@ -15923,6 +15923,98 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "ChenyuState",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyu_state",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/chenyu_state_blockstate_0.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "ChenyuLeaf",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyu_leaf",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ChenyuLeafProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ChenyuadepteaLeafLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyuadeptea_leaf_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/chenyuadeptea_leaf_loot.json"
+        ]
+      },
+      "path": "~/loot"
+    },
+    {
+      "name": "ChenyuClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chenyu_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ChenyuClickProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -18041,28 +18133,28 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
-      "src/main/resources/assets/oneiricconcept/sounds.json",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/oneiricconcept/OneiricconceptMod.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
+      "src/main/resources/assets/oneiricconcept/sounds.json",
       "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMenus.java",
       "src/main/java/net/mcreator/oneiricconcept/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
       "src/main/java/net/mcreator/oneiricconcept/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/oneiricconcept/world/features/configurations/StructureFeatureConfiguration.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluidTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluids.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluidTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModGameRules.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFuels.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMobEffects.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticleTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticles.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticleTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModPotions.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlocks.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlockEntities.java",

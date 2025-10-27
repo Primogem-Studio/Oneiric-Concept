@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "blockstate=0": {
       "model": "oneiricconcept:block/chenyu_adeptea_tree"
+    },
+    "blockstate=1": {
+      "model": "oneiricconcept:block/chenyu_state_blockstate_0"
     }
   }
 }

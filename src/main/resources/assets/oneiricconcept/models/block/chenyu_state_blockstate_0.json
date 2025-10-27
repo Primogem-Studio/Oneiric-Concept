@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/chenyu_adeptea_leaf",
+  "textures": {
+    "all": "oneiricconcept:block/adeptus_new_plant",
+    "particle": "oneiricconcept:block/adeptus_plant",
+    "2": "oneiricconcept:block/adeptus_new_plant"
+  },
+  "render_type": "cutout"
+}

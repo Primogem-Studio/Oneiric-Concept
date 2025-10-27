@@ -27,31 +27,29 @@
     "boundingBoxes": [
       {
         "mx": 0.0,
-        "my": 0.0,
+        "my": 4.0,
         "mz": 0.0,
         "Mx": 16.0,
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
-      }
-    ],
-    "customProperties": [
-      {
-        "name": "CUSTOM:grow",
-        "type": "logic",
-        "value": false
       },
       {
-        "name": "CUSTOM:leaf",
-        "type": "logic",
-        "value": false
+        "mx": 6.0,
+        "my": 0.0,
+        "mz": 6.0,
+        "Mx": 10.0,
+        "My": 4.0,
+        "Mz": 10.0,
+        "subtract": false
       }
     ],
+    "customProperties": [],
     "name": "Chenyu Adeptea Tree",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.0,
+    "hardness": 3.0,
     "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -72,7 +70,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "tickRate": 0,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -138,6 +136,18 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "ChenyuClick"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "Supportdown"
+    },
+    "onTickUpdate": {
+      "name": "ChenyuLeaf"
+    },
+    "onStartToDestroy": {
+      "name": "ChenyuClick"
+    },
     "generateFeature": false,
     "restrictionBiomes": [
       {
