@@ -13175,6 +13175,10 @@
             "type": "itemstack"
           },
           {
+            "name": "db",
+            "type": "logic"
+          },
+          {
             "name": "indexx",
             "type": "number"
           },
