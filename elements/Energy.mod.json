@@ -115,6 +115,9 @@
         "amount": 0.3,
         "operation": "ADD_VALUE"
       }
-    ]
+    ],
+    "onMobHurt": {
+      "name": "WALOVI"
+    }
   }
 }

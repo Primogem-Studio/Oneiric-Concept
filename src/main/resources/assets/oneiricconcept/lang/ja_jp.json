@@ -400,5 +400,7 @@
   "item.oneiricconcept.chenyu_adeptea": "Chenyu Adeptea",
   "block.oneiricconcept.chenyu_adeptea_seedling": "Chenyu Adeptea Seedling",
   "block.oneiricconcept.chenyu_adeptea_tree": "Chenyu Adeptea Tree",
-  "item.oneiricconcept.the_boon_of_the_elder_tree": "The Boon Of The Elder Tree"
+  "item.oneiricconcept.the_boon_of_the_elder_tree": "The Boon Of The Elder Tree",
+  "advancements.drink_walovi_to_prevent_heatiness.descr": "Fire-resistant functional beverage",
+  "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness"
 }

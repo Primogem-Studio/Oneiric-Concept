@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:energy_drink"
+    },
+    "title": {
+      "translate": "advancements.drink_walovi_to_prevent_heatiness.title"
+    },
+    "description": {
+      "translate": "advancements.drink_walovi_to_prevent_heatiness.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "drink_walovi_to_prevent_heatiness_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "oneiricconcept:eastroc"
+}

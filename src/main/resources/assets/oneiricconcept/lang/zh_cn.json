@@ -20,7 +20,7 @@
   "block.oneiricconcept.crystalgenerator": "晶体发电机",
   "block.oneiricconcept.camerapink.description_0": "§7「相机」者，洞见要害也",
   "block.oneiricconcept.geosealingwax": "岩之印",
-  "advancements.eastroc.descr": "累了困了喝东鹏特饮",
+  "advancements.eastroc.descr": "累了困了，就喝东鹏特饮",
   "block.oneiricconcept.nagadus_emerald_ore": "生长碧翡矿石",
   "item.oneiricconcept.xuanyuan_sword": "轩辕剑",
   "item.oneiricconcept.dreamy_cone": "美梦脆筒（三种口味）",
@@ -60,7 +60,7 @@
   "block.oneiricconcept.camerapink": "照相机",
   "item.oneiricconcept.rawcrescentmoonore": "粗新月矿石",
   "item.oneiricconcept.honkai_shard.description_0": "§7稀有的崩坏能量聚合体",
-  "item.oneiricconcept.heartofthefish": "鱼心",
+  "item.oneiricconcept.heartofthefish": "群鱼之心",
   "item.oneiricconcept.wilderness_rod": "林野钓竿",
   "item.oneiricconcept.dark_xuanyuan_sword.description_0": "§6第十神之键，蕴含着强大的律者力量",
   "item.oneiricconcept.dark_xuanyuan_sword.description_1": "§7在长达数千年的（人工）噩梦中，满溢而出的绝望，将轩辕剑黄金色的剑身染成了黑暗的颜色。",
@@ -399,5 +399,7 @@
   "item.oneiricconcept.chenyu_adeptea": "沉玉仙茗",
   "block.oneiricconcept.chenyu_adeptea_seedling": "沉玉茶树苗",
   "block.oneiricconcept.chenyu_adeptea_tree": "沉玉茶树",
-  "item.oneiricconcept.the_boon_of_the_elder_tree": "王树瑞佑"
+  "item.oneiricconcept.the_boon_of_the_elder_tree": "王树瑞佑",
+  "advancements.drink_walovi_to_prevent_heatiness.descr": "Fire-resistant functional beverage",
+  "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness"
 }

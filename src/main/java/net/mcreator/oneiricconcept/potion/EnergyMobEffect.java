@@ -4,10 +4,13 @@ import net.neoforged.neoforge.common.NeoForgeMod;
 
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.oneiricconcept.procedures.WALOVIProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class EnergyMobEffect extends MobEffect {
@@ -27,5 +30,10 @@ public class EnergyMobEffect extends MobEffect {
 		this.addAttributeModifier(Attributes.FALL_DAMAGE_MULTIPLIER, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_11"), -0.1, AttributeModifier.Operation.ADD_VALUE);
 		this.addAttributeModifier(Attributes.BLOCK_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_12"), 0.3, AttributeModifier.Operation.ADD_VALUE);
 		this.addAttributeModifier(Attributes.ENTITY_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "effect.energy_13"), 0.3, AttributeModifier.Operation.ADD_VALUE);
+	}
+
+	@Override
+	public void onMobHurt(LivingEntity entity, int amplifier, DamageSource damagesource, float damage) {
+		WALOVIProcedure.execute(damagesource, entity);
 	}
 }
