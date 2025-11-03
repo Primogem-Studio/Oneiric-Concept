@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
@@ -12,11 +10,9 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
@@ -34,17 +30,16 @@ public class ExtractWoodProcedure {
 				block = (world.getBlockState(BlockPos.containing(x + sx, y, z + sz)));
 				if (!(block.getBlock() == Blocks.AIR) && -1 != world.getBlockState(BlockPos.containing(x + sx, y, z + sz)).getDestroySpeed(world, BlockPos.containing(x + sx, y, z + sz))
 						&& block.is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
+					if (world instanceof ServerLevel _level)
+						_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + sx), y, (z + sz), 10, 0.5, 0.5, 0.5, 1);
 					if (RandomProcedure.execute(world, 0.2)) {
 						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), (new ItemStack(block.getBlock())));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
+									(block.is(BlockTags.create(ResourceLocation.parse("oneiricconcept:blockblocklist"))) ? new ItemStack(Blocks.OAK_LOG) : new ItemStack(block.getBlock())));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3((x + sx), y, (z + sz)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"particle minecraft:happy_villager ~ ~ ~ 0.5 0.5 0.5 1 10 force");
 				}
 				sz = sz + 1;
 			}

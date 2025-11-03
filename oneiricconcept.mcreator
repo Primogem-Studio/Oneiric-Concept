@@ -16887,6 +16887,9 @@
     "ITEMS:mod:crystals4": [
       "EXTERNAL:primogemcraft:zuishengzijing",
       "CUSTOM:HonkaiShard"
+    ],
+    "BLOCKS:mod:blockblocklist": [
+      "CUSTOM:TheAnotherWorldLog"
     ]
   },
   "tab_element_order": {
