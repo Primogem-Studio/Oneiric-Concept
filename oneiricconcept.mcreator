@@ -16890,7 +16890,8 @@
       "CUSTOM:HonkaiShard"
     ],
     "BLOCKS:mod:blockblocklist": [
-      "CUSTOM:TheAnotherWorldLog"
+      "CUSTOM:TheAnotherWorldLog",
+      "CUSTOM:StrippedTheAnotherWorldLog"
     ]
   },
   "tab_element_order": {
