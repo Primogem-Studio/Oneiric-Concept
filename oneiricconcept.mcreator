@@ -1759,7 +1759,8 @@
             "name": "world",
             "type": "world"
           }
-        ]
+        ],
+        "return_type": "actionresulttype"
       },
       "path": "~/process"
     },
