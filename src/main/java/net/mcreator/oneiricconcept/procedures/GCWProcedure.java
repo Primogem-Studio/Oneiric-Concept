@@ -12,6 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.nbt.StringTag;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
@@ -49,18 +50,28 @@ public class GCWProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.Configurationreminder").getString())), false);
 		}
-		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(OneiricconceptModItems.ADEPTUSTOOL.get()).copy();
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(OneiricconceptModItems.ADEPTUS_GUN.get()).copy();
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		if (!world.isClientSide()) {
+			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)
+					&& !(hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.ADEPTUSTOOL.get())) || hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.ADEPTUS_GUN.get())))
+					&& (entity.getStringUUID()).equals((OneiricconceptModVariables.MapVariables.get(world).PlayerUUID.get(0)) instanceof StringTag _stringTag ? _stringTag.getAsString() : "")) {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(OneiricconceptModItems.ADEPTUSTOOL.get()).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(OneiricconceptModItems.ADEPTUS_GUN.get()).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
 			}
 		}
 		world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OCINITIALLOAD).set(false, world.getServer());
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }
