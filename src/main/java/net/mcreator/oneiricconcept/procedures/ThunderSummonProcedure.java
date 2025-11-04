@@ -14,5 +14,10 @@ public class ThunderSummonProcedure {
 			entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y + 1, z)));;
 			_level.addFreshEntity(entityToSpawn);
 		}
+		if (world instanceof ServerLevel _level) {
+			LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+			entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
+			_level.addFreshEntity(entityToSpawn);
+		}
 	}
 }

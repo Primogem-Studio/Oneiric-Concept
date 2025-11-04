@@ -1,0 +1,9 @@
+{
+  "type": "oneiricconcept:structure_feature",
+  "config": {
+    "structure": "oneiricconcept:thunder_relic",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:air"
+  }
+}

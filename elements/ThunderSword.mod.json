@@ -12,7 +12,7 @@
     "customModelName": "thundersword:default",
     "rotationMode": 1,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animations": [],
     "itemTexture": "",
@@ -32,6 +32,33 @@
         "Mx": 16.0,
         "My": 16.0,
         "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.0,
+        "my": 16.0,
+        "mz": 7.5,
+        "Mx": 13.0,
+        "My": 21.0,
+        "Mz": 8.5,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 21.0,
+        "mz": 7.5,
+        "Mx": 10.0,
+        "My": 26.0,
+        "Mz": 8.5,
+        "subtract": false
+      },
+      {
+        "mx": 3.0,
+        "my": 26.0,
+        "mz": 7.5,
+        "Mx": 7.0,
+        "My": 32.0,
+        "Mz": 8.5,
         "subtract": false
       }
     ],
@@ -71,7 +98,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "STONE",
     "noteBlockInstrument": "harp",
     "creativePickItem": {
       "value": ""
@@ -112,6 +139,9 @@
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -128,6 +158,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "ThunderSummon"
+    },
     "onRedstoneOn": {
       "name": "ThunderSummon"
     },

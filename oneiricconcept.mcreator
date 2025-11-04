@@ -4231,11 +4231,11 @@
       "registry_name": "thunder_sword",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/ThunderSwordBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/thunder_sword.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/thunder_sword.json",
           "src/main/resources/assets/oneiricconcept/blockstates/thunder_sword.json",
-          "src/main/resources/assets/oneiricconcept/models/block/thunder_sword.json"
+          "src/main/resources/assets/oneiricconcept/models/item/thunder_sword.json",
+          "src/main/resources/assets/oneiricconcept/models/block/thunder_sword.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ThunderSwordBlock.java"
         ]
       },
       "path": "~/block"
@@ -16172,6 +16172,22 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "ThunderRelic",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_relic",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/thunder_relic.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/thunder_relic.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/thunder_relic_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [
