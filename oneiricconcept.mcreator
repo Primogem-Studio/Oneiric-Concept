@@ -16188,6 +16188,19 @@
         ]
       },
       "path": "~/Feature"
+    },
+    {
+      "name": "HelloWorld",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hello_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/hello_world.json"
+        ]
+      },
+      "path": "~/Advancement"
     }
   ],
   "variable_elements": [
@@ -17504,7 +17517,9 @@
       "block.oneiricconcept.chenyu_adeptea_tree": "Chenyu Adeptea Tree",
       "item.oneiricconcept.the_boon_of_the_elder_tree": "The Boon Of The Elder Tree",
       "advancements.drink_walovi_to_prevent_heatiness.descr": "Fire-resistant functional beverage",
-      "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness"
+      "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness",
+      "advancements.hello_world.descr": "It\u0027s a peach, it\u0027s love.",
+      "advancements.hello_world.title": "Hello,World!"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -17909,7 +17924,9 @@
       "block.oneiricconcept.chenyu_adeptea_tree": "沉玉茶树",
       "item.oneiricconcept.the_boon_of_the_elder_tree": "王树瑞佑",
       "advancements.drink_walovi_to_prevent_heatiness.descr": "抗火功能饮料",
-      "advancements.drink_walovi_to_prevent_heatiness.title": "怕上火，就喝王老吉"
+      "advancements.drink_walovi_to_prevent_heatiness.title": "怕上火，就喝王老吉",
+      "advancements.hello_world.descr": "是桃子，是爱。",
+      "advancements.hello_world.title": "你好，世界！"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18315,7 +18332,9 @@
       "block.oneiricconcept.chenyu_adeptea_tree": "Chenyu Adeptea Tree",
       "item.oneiricconcept.the_boon_of_the_elder_tree": "The Boon Of The Elder Tree",
       "advancements.drink_walovi_to_prevent_heatiness.descr": "Fire-resistant functional beverage",
-      "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness"
+      "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness",
+      "advancements.hello_world.descr": "It\u0027s a peach, it\u0027s love.",
+      "advancements.hello_world.title": "こんにちは、世界！"
     }
   },
   "metadata": {

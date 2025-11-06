@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:primogemcraftwiki"
+    },
+    "title": {
+      "translate": "advancements.hello_world.title"
+    },
+    "description": {
+      "translate": "advancements.hello_world.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hello_world_0": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 13
+  },
+  "parent": "oneiricconcept:oneiric_concept_advancement"
+}
