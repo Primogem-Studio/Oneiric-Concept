@@ -70,6 +70,15 @@
                   6,
                   0
                 ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "#c:ambrosialarbor",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
               }
             ]
           },

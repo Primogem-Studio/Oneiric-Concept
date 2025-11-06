@@ -15,7 +15,7 @@ public class IsBoughProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		BlockState blkst = Blocks.AIR.defaultBlockState();
 		blkst = (world.getBlockState(BlockPos.containing(x, y - 1, z)));
-		return blkst.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && !((getDirectionFromBlockState(blkst)).getAxis() == Direction.Axis.Y);
+		return blkst.is(BlockTags.create(ResourceLocation.parse("minecraft:logs"))) && !((getDirectionFromBlockState(blkst)).getAxis() == Direction.Axis.Y) || blkst.is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor")));
 	}
 
 	private static Direction getDirectionFromBlockState(BlockState blockState) {

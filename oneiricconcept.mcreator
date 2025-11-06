@@ -14559,9 +14559,9 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest.json",
-          "src/main/java/net/mcreator/oneiricconcept/world/features/PlaceNestFeature.java",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest.json",
+          "src/main/java/net/mcreator/oneiricconcept/world/features/PlaceNestFeature.java"
         ],
         "has_nbt_structure": true
       },
@@ -14602,9 +14602,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest_below_leave.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest_below_leave.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_below_leave_biome_modifier.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_below_leave_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest_below_leave.json"
         ]
       },
       "path": "~/Feature"
