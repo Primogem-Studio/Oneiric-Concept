@@ -5,6 +5,7 @@
     "renderType": 1,
     "texture": "sustenance_anchor",
     "customModelName": "sustenance_anchor_off_item:default",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Sustenanceanchor",
