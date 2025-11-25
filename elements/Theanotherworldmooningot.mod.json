@@ -115,6 +115,9 @@
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -131,8 +134,14 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Blockmode"
+    },
     "onNeighbourBlockChanges": {
       "name": "Supportdown"
+    },
+    "onDestroyedByPlayer": {
+      "name": "BreakDrops"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

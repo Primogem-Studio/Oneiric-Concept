@@ -1,12 +1,16 @@
 package net.mcreator.oneiricconcept.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -25,17 +29,44 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.SupportdownProcedure;
+import net.mcreator.oneiricconcept.procedures.BreakDropsProcedure;
+import net.mcreator.oneiricconcept.procedures.BlockmodeProcedure;
 
 public class TheanotherworldmooningotBlock extends Block implements SimpleWaterloggedBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 9);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public TheanotherworldmooningotBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).sound(SoundType.METAL).strength(1f, 10f).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_BLUE).sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 2)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 3)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 4)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 5)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 6)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 7)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 8)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 9)
+					return 0;
+				return 0;
+			}
+		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -56,6 +87,78 @@ public class TheanotherworldmooningotBlock extends Block implements SimpleWaterl
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(BLOCKSTATE) == 1) {
+			return switch (state.getValue(FACING)) {
+				default -> box(3.5, 0, 4.5, 12.5, 2, 11.5);
+				case NORTH -> box(3.5, 0, 4.5, 12.5, 2, 11.5);
+				case EAST -> box(4.5, 0, 3.5, 11.5, 2, 12.5);
+				case WEST -> box(4.5, 0, 3.5, 11.5, 2, 12.5);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 2) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 4.5, 15, 2, 11.5);
+				case NORTH -> box(1, 0, 4.5, 15, 2, 11.5);
+				case EAST -> box(4.5, 0, 1, 11.5, 2, 15);
+				case WEST -> box(4.5, 0, 1, 11.5, 2, 15);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 3) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 0.5, 15, 2, 15.5);
+				case NORTH -> box(1, 0, 0.5, 15, 2, 15.5);
+				case EAST -> box(0.5, 0, 1, 15.5, 2, 15);
+				case WEST -> box(0.5, 0, 1, 15.5, 2, 15);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 4) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 0.5, 15, 2, 15.5);
+				case NORTH -> box(1, 0, 0.5, 15, 2, 15.5);
+				case EAST -> box(0.5, 0, 1, 15.5, 2, 15);
+				case WEST -> box(0.5, 0, 1, 15.5, 2, 15);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 5) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 0.5, 15, 2, 15.5);
+				case NORTH -> box(1, 0, 0.5, 15, 2, 15.5);
+				case EAST -> box(0.5, 0, 1, 15.5, 2, 15);
+				case WEST -> box(0.5, 0, 1, 15.5, 2, 15);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 6) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 0.5, 15, 4, 15.5);
+				case NORTH -> box(1, 0, 0.5, 15, 4, 15.5);
+				case EAST -> box(0.5, 0, 1, 15.5, 4, 15);
+				case WEST -> box(0.5, 0, 1, 15.5, 4, 15);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 7) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 0.5, 15, 4, 15.5);
+				case NORTH -> box(1, 0, 0.5, 15, 4, 15.5);
+				case EAST -> box(0.5, 0, 1, 15.5, 4, 15);
+				case WEST -> box(0.5, 0, 1, 15.5, 4, 15);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 8) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 0.5, 15, 4, 15.5);
+				case NORTH -> box(1, 0, 0.5, 15, 4, 15.5);
+				case EAST -> box(0.5, 0, 1, 15.5, 4, 15);
+				case WEST -> box(0.5, 0, 1, 15.5, 4, 15);
+			};
+		}
+		if (state.getValue(BLOCKSTATE) == 9) {
+			return switch (state.getValue(FACING)) {
+				default -> box(1, 0, 0.5, 15, 4, 15.5);
+				case NORTH -> box(1, 0, 0.5, 15, 4, 15.5);
+				case EAST -> box(0.5, 0, 1, 15.5, 4, 15);
+				case WEST -> box(0.5, 0, 1, 15.5, 4, 15);
+			};
+		}
 		return switch (state.getValue(FACING)) {
 			default -> box(6, 0, 4.5, 10, 2, 11.5);
 			case NORTH -> box(6, 0, 4.5, 10, 2, 11.5);
@@ -67,7 +170,7 @@ public class TheanotherworldmooningotBlock extends Block implements SimpleWaterl
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, WATERLOGGED);
+		builder.add(FACING, WATERLOGGED, BLOCKSTATE);
 	}
 
 	@Override
@@ -112,5 +215,26 @@ public class TheanotherworldmooningotBlock extends Block implements SimpleWaterl
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 		SupportdownProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		BreakDropsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		return retval;
+	}
+
+	@Override
+	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player entity, BlockHitResult hit) {
+		super.useWithoutItem(blockstate, world, pos, entity, hit);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+		BlockmodeProcedure.execute(world, x, y, z, blockstate, entity);
+		return InteractionResult.SUCCESS;
 	}
 }

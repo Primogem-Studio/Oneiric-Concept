@@ -65,6 +65,12 @@
         "1": "new_moon_ingot"
       },
       "name": "newmonn"
+    },
+    "tawmoon": {
+      "map": {
+        "1": "the_another_world_moon_ingot"
+      },
+      "name": "tawmoon"
     }
   }
 }

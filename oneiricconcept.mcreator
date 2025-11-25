@@ -4926,10 +4926,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/block/redmoon_metal.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Redmo1Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/redmoon_metal.json",
           "src/main/resources/assets/oneiricconcept/models/item/redmoon_metal.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoon_metal.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoon_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/redmoon_metal.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Redmo1Block.java"
         ]
       },
       "path": "~/Per/block/red_moon"
@@ -15281,11 +15281,11 @@
       "registry_name": "theanotherworldmooningot",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/TheanotherworldmooningotBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/theanotherworldmooningot.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/theanotherworldmooningot.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/TheanotherworldmooningotBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/theanotherworldmooningot.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/theanotherworldmooningot.json",
-          "src/main/resources/assets/oneiricconcept/models/block/theanotherworldmooningot.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/theanotherworldmooningot.json"
         ]
       },
       "path": "~/Per/block"
@@ -16205,6 +16205,27 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "TawMoonMetal",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taw_moon_metal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_8.json"
+        ]
+      },
+      "path": "~/Per/block"
     }
   ],
   "variable_elements": [

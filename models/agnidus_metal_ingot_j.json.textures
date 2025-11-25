@@ -65,6 +65,12 @@
         "1": "prithiva_metal_ingot"
       },
       "name": "geo_yan"
+    },
+    "tawmoon": {
+      "map": {
+        "1": "the_another_world_moon_ingot"
+      },
+      "name": "tawmoon"
     }
   }
 }
