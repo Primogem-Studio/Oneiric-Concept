@@ -16280,6 +16280,29 @@
         "files": []
       },
       "path": "~/Per"
+    },
+    {
+      "name": "FallingMeatset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "falling_meatset",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "zhi",
+            "type": "logic"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/FallingMeatsetProcedure.java"
+        ]
+      },
+      "path": "~/Per"
     }
   ],
   "variable_elements": [
