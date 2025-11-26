@@ -25,7 +25,7 @@ public class EventPGCProcedure {
         // 注册事件组 包含 事件 ID至少1000+
         EventGroupProcedure.registerGroup(1000, (entity, world) -> {
             // 这里可以使用原石的事件+自己的事件
-            return EventGroupProcedure.zu(entity, 2000, 2001, 7, "§a附属模组事件");
+            return EventGroupProcedure.zu(entity, 2000, 2001, 7, "§e我不吃牛肉...吗？");
         });
         //示例
 //        EventGroupProcedure.registerGroup(1001, (entity, world) -> {return EventGroupProcedure.zu(entity, 999, 4, 0, "§a附属模组事件");});
