@@ -1,6 +1,6 @@
 plugins {
     id 'eclipse'
-    id 'net.neoforged.moddev' version '2.0.95'
+    id 'net.neoforged.moddev' version '2.0.107'
 }
 
 version = '1.0'
@@ -9,7 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.176"
+    version = "21.1.190"
 
     parchment {
         mappingsVersion = "2024.11.17"
@@ -59,7 +59,7 @@ repositories {
 
 dependencies {
     compileOnly "maven.modrinth:genshincraft:2.11.0"
-    implementation "maven.modrinth:2primogem-craft:25w40a"
+    implementation "maven.modrinth:2primogem-craft:25w48a"
     api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.799"
 }
 
