@@ -1,18 +1,18 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
+import net.mcreator.oneiricconcept.OneiricconceptMod;
+
 public class BoomBlossomsPyroBoomProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
-		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, y, z, 7, Level.ExplosionInteraction.BLOCK);
-		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-		entity.igniteForSeconds(15);
+	public static boolean execute(LevelAccessor world, double x, double y, double z) {
+		OneiricconceptMod.queueServerWork(60, () -> {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get()) {
+				ExplosionIgnitesProcedure.execute(world, x, y + 2, z, 9);
+			}
+		});
+		return true;
 	}
 }

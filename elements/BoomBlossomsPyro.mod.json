@@ -2,20 +2,30 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "boomblossoms",
+    "texture": "boom_blossoms",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 2,
-    "customModelName": "boomblossoms:default",
+    "renderType": 4,
+    "customModelName": "Modelboom_blossoms",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animations": [],
-    "itemTexture": "",
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:boom_blossomsAnimation.bomb"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "BoomBlossomsPyroBoom"
+        }
+      }
+    ],
+    "itemTexture": "minecraft:carrot",
     "particleTexture": "",
     "blockSetType": "OAK",
     "tintType": "No tint",
@@ -23,13 +33,13 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "disableOffset": false,
+    "disableOffset": true,
     "boundingBoxes": [
       {
         "mx": 0.0,
         "my": 0.0,
         "mz": 0.0,
-        "Mx": 16.0,
+        "Mx": 9.0,
         "My": 6.0,
         "Mz": 16.0,
         "subtract": false
@@ -40,7 +50,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
+    "hardness": 4.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": true,
@@ -48,7 +58,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
     "destroyTool": "hoe",
     "customDrop": {
       "value": ""
@@ -111,7 +125,7 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -127,10 +141,13 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityCollides": {
-      "name": "BoomBlossomsPyroBoom"
+    "onDestroyedByPlayer": {
+      "name": "SilkEleseBomb"
     },
-    "onEntityWalksOn": {
+    "onDestroyedByExplosion": {
+      "name": "Induceddetonation"
+    },
+    "onEntityCollides": {
       "name": "BoomBlossomsPyroBoom"
     },
     "onHitByProjectile": {

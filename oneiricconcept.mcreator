@@ -438,10 +438,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -457,7 +453,8 @@
             "name": "world",
             "type": "world"
           }
-        ]
+        ],
+        "return_type": "logic"
       },
       "path": "~/process"
     },
@@ -469,11 +466,13 @@
       "registry_name": "boom_blossoms_pyro",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_pyro.json",
           "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_pyro.json",
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsPyroBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsPyroRenderer.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java"
         ]
       },
       "path": "~/block"
@@ -15288,7 +15287,7 @@
           "src/main/resources/assets/oneiricconcept/blockstates/theanotherworldmooningot.json"
         ]
       },
-      "path": "~/Per/block"
+      "path": "~/Per/block/tawmoon"
     },
     {
       "name": "Antimatterbomb",
@@ -16225,7 +16224,7 @@
           "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_8.json"
         ]
       },
-      "path": "~/Per/block"
+      "path": "~/Per/block/tawmoon"
     },
     {
       "name": "Event",
@@ -16303,6 +16302,41 @@
         ]
       },
       "path": "~/Per"
+    },
+    {
+      "name": "SilkEleseBomb",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silk_elese_bomb",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SilkEleseBombProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -17131,7 +17165,8 @@
       "Rawfullmoonore",
       "WhiteMoonlightAbsorber",
       "ChenyuAdepteaSeedling",
-      "TheBoonOfTheElderTree"
+      "TheBoonOfTheElderTree",
+      "BoomBlossomsPyro"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -18447,28 +18482,28 @@
   },
   "metadata": {
     "files": [
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/assets/oneiricconcept/sounds.json",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
-      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
       "src/main/java/net/mcreator/oneiricconcept/OneiricconceptMod.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
+      "src/main/resources/assets/oneiricconcept/sounds.json",
+      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMenus.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
       "src/main/java/net/mcreator/oneiricconcept/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/oneiricconcept/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
       "src/main/java/net/mcreator/oneiricconcept/world/features/StructureFeature.java",
+      "src/main/java/net/mcreator/oneiricconcept/world/features/configurations/StructureFeatureConfiguration.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluids.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluidTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModGameRules.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFuels.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMobEffects.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticleTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticles.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticleTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModPotions.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlocks.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlockEntities.java",
@@ -18592,6 +18627,10 @@
               },
               {
                 "name": "sealing wax",
+                "children": []
+              },
+              {
+                "name": "tawmoon",
                 "children": []
               }
             ]
