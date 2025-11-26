@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "§d梦华构想 掉落肉",
+    "description": "禁用后，生物将不会掉落任何肉馅",
+    "category": "DROPS",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

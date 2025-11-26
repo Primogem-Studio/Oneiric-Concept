@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
@@ -29,6 +30,7 @@ import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
 import javax.annotation.Nullable;
 
@@ -50,8 +52,10 @@ public class EntityDeadProcedure {
 			return;
 		Entity e1 = null;
 		ItemStack i1 = ItemStack.EMPTY;
+		boolean gz = false;
 		e1 = entity;
-		if (e1 instanceof Player) {
+		gz = world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.FALLING_MEAT);
+		if (gz && e1 instanceof Player) {
 			i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
 			{
 				final String _tagName = "entitysname";
@@ -63,7 +67,7 @@ public class EntityDeadProcedure {
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
-			if (entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(OneiricconceptModMobEffects.B_2SAUSAGE)) {
+			if (entity instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(OneiricconceptModMobEffects.B_2SAUSAGE)) {
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("oneiricconcept:diseasename_gastriccancer"));
 					if (_adv != null) {
@@ -78,9 +82,9 @@ public class EntityDeadProcedure {
 		}
 		if (RandomProcedure.execute(world, 0.1)) {
 			if (e1.getType().is(EntityTypeTags.UNDEAD)) {
-				i1 = new ItemStack(OneiricconceptModItems.S_2TUFFING.get());
+				i1 = (gz ? new ItemStack(OneiricconceptModItems.S_2TUFFING.get()) : new ItemStack(Blocks.AIR));
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:human")))) {
-				i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
+				i1 = (gz ? new ItemStack(OneiricconceptModItems.OY_STUFFING.get()) : new ItemStack(Blocks.AIR));
 				{
 					final String _tagName = "entitysname";
 					final String _tagValue = (entity.getDisplayName().getString());
@@ -99,7 +103,7 @@ public class EntityDeadProcedure {
 			} else if (entity instanceof MagmaCube) {
 				i1 = new ItemStack(OneiricconceptModItems.PHLOGISTON.get());
 			} else {
-				i1 = new ItemStack(OneiricconceptModItems.STUFFING.get());
+				i1 = (gz ? new ItemStack(OneiricconceptModItems.STUFFING.get()) : new ItemStack(Blocks.AIR));
 			}
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);

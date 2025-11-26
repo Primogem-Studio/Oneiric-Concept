@@ -16268,6 +16268,18 @@
         ]
       },
       "path": "~/Per/event"
+    },
+    {
+      "name": "FallingMeat",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "falling_meat",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/Per"
     }
   ],
   "variable_elements": [
@@ -17586,7 +17598,9 @@
       "advancements.drink_walovi_to_prevent_heatiness.descr": "Fire-resistant functional beverage",
       "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness",
       "advancements.hello_world.descr": "It\u0027s a peach, it\u0027s love.",
-      "advancements.hello_world.title": "Hello,World!"
+      "advancements.hello_world.title": "Hello,World!",
+      "gamerule.fallingMeat": "§d梦华构想 掉落肉",
+      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -17993,7 +18007,9 @@
       "advancements.drink_walovi_to_prevent_heatiness.descr": "抗火功能饮料",
       "advancements.drink_walovi_to_prevent_heatiness.title": "怕上火，就喝王老吉",
       "advancements.hello_world.descr": "是桃子，是爱。",
-      "advancements.hello_world.title": "你好，世界！"
+      "advancements.hello_world.title": "你好，世界！",
+      "gamerule.fallingMeat": "§d梦华构想 掉落肉",
+      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18401,7 +18417,9 @@
       "advancements.drink_walovi_to_prevent_heatiness.descr": "Fire-resistant functional beverage",
       "advancements.drink_walovi_to_prevent_heatiness.title": "Drink WALOVI To Prevent Heatiness",
       "advancements.hello_world.descr": "It\u0027s a peach, it\u0027s love.",
-      "advancements.hello_world.title": "こんにちは、世界！"
+      "advancements.hello_world.title": "こんにちは、世界！",
+      "gamerule.fallingMeat": "§d梦华构想 掉落肉",
+      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅"
     }
   },
   "metadata": {
