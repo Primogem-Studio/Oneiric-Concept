@@ -9179,12 +9179,12 @@
       "registry_name": "phlogistontank",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/phlogistontank.json",
           "src/main/resources/assets/oneiricconcept/models/block/phlogistontank.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/phlogistontank.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/phlogistontank.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/PhlogistontankBlockEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/PhlogistontankBlock.java"
+          "src/main/java/net/mcreator/oneiricconcept/block/PhlogistontankBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/phlogistontank.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/phlogistontank.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/phlogistontank.json"
         ]
       },
       "path": "~/block"
@@ -13685,12 +13685,12 @@
       "registry_name": "primogemstormglass",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/primogemstormglass.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogemstormglass.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/PrimogemstormglassBlock.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/PrimogemstormglassBlockEntity.java",
           "src/main/resources/assets/oneiricconcept/models/block/primogemstormglass.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/primogemstormglass.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/primogemstormglass.json",
+          "src/main/resources/assets/oneiricconcept/models/item/primogemstormglass.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PrimogemstormglassBlockEntity.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogemstormglass.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/PrimogemstormglassBlock.java"
         ]
       },
       "path": "~/block"
