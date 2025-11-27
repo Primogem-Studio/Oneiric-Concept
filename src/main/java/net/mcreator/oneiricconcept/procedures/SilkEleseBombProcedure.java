@@ -1,7 +1,6 @@
 package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,8 +13,7 @@ public class SilkEleseBombProcedure {
 			return;
 		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0
 				|| world.getLevelData().isRaining())) {
-			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.BLOCK);
+			OverlimitExplosionProcedure.execute(world, x, y, z, 1);
 		}
 	}
 }

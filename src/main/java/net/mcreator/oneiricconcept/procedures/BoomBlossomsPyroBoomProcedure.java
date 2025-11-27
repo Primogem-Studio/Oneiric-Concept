@@ -2,6 +2,7 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
@@ -13,7 +14,8 @@ public class BoomBlossomsPyroBoomProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		OneiricconceptMod.queueServerWork(60, () -> {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get()) {
-				OverlimitExplosionProcedure.execute(world, x, y + 2, z, 9);
+				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+				OverlimitExplosionProcedure.execute(world, x, y + 2, z, 2);
 			}
 		});
 		if (!world.isClientSide()) {

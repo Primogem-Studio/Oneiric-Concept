@@ -40,7 +40,7 @@ public class BoomBlossomsPyroBlock extends Block implements SimpleWaterloggedBlo
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public BoomBlossomsPyroBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(4f, 10f).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(4f, 0f).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
