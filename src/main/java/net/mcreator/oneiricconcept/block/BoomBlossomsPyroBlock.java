@@ -40,7 +40,7 @@ public class BoomBlossomsPyroBlock extends Block implements SimpleWaterloggedBlo
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public BoomBlossomsPyroBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(4f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(4f, 10f).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -66,7 +66,7 @@ public class BoomBlossomsPyroBlock extends Block implements SimpleWaterloggedBlo
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(0, 0, 0, 9, 6, 16);
+		return box(0, 0, 0, 16, 9, 16);
 	}
 
 	@Override

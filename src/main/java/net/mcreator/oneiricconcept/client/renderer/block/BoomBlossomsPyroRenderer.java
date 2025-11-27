@@ -14,7 +14,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HierarchicalModel;
 
-import net.mcreator.oneiricconcept.procedures.BoomBlossomsPyroBoomProcedure;
+import net.mcreator.oneiricconcept.procedures.IsInBlockProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlockEntities;
 import net.mcreator.oneiricconcept.client.model.animations.boom_blossomsAnimation;
 import net.mcreator.oneiricconcept.client.model.Modelboom_blossoms;
@@ -35,7 +35,7 @@ public class BoomBlossomsPyroRenderer implements BlockEntityRenderer<BoomBlossom
 
 	private void updateRenderState(BoomBlossomsPyroBlockEntity blockEntity) {
 		int tickCount = (int) blockEntity.getLevel().getGameTime();
-		blockEntity.animationState0.animateWhen(BoomBlossomsPyroBoomProcedure.execute(blockEntity.getLevel(), blockEntity.getBlockPos().getX(), blockEntity.getBlockPos().getY(), blockEntity.getBlockPos().getZ()), tickCount);
+		blockEntity.animationState0.animateWhen(IsInBlockProcedure.execute(blockEntity.getLevel(), blockEntity.getBlockPos().getX(), blockEntity.getBlockPos().getY(), blockEntity.getBlockPos().getZ()), tickCount);
 	}
 
 	@Override

@@ -128,6 +128,7 @@ import net.mcreator.oneiricconcept.item.ChenyuAdepteaItem;
 import net.mcreator.oneiricconcept.item.CamoPaintItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunPlusItem;
 import net.mcreator.oneiricconcept.item.BossStoneCoinGunItem;
+import net.mcreator.oneiricconcept.item.BoomyampyroItem;
 import net.mcreator.oneiricconcept.item.BelobogSausageItem;
 import net.mcreator.oneiricconcept.item.B2elobogSausageItem;
 import net.mcreator.oneiricconcept.item.AureliaeSwordItem;
@@ -344,6 +345,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> CHENYU_ADEPTEA_TREE = block(OneiricconceptModBlocks.CHENYU_ADEPTEA_TREE);
 	public static final DeferredItem<Item> CHENYU_ADEPTEA_SEEDLING = block(OneiricconceptModBlocks.CHENYU_ADEPTEA_SEEDLING);
 	public static final DeferredItem<Item> THE_BOON_OF_THE_ELDER_TREE = REGISTRY.register("the_boon_of_the_elder_tree", TheBoonOfTheElderTreeItem::new);
+	public static final DeferredItem<Item> BOOMYAMPYRO = REGISTRY.register("boomyampyro", BoomyampyroItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

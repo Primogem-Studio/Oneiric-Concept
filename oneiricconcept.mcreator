@@ -453,8 +453,7 @@
             "name": "world",
             "type": "world"
           }
-        ],
-        "return_type": "logic"
+        ]
       },
       "path": "~/process"
     },
@@ -466,13 +465,12 @@
       "registry_name": "boom_blossoms_pyro",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_pyro.json",
           "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_pyro.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsPyroBlockEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsPyroRenderer.java",
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
           "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java"
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsPyroRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsPyroBlockEntity.java"
         ]
       },
       "path": "~/block"
@@ -15878,10 +15876,10 @@
       "registry_name": "chenyu_adeptea_tree",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json",
           "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_tree.json",
           "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaTreeBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_tree.json",
-          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_tree.json"
         ]
       },
       "path": "~/block"
@@ -16337,6 +16335,121 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "IsInBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_in_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsInBlockProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ReturnFalse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_false",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ReturnFalseProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Boomyampyro",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomyampyro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/BoomyampyroItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boomyampyro.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "BoomYam1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_yam_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/recipe/brewing/BoomYam1BrewingRecipe.java"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Boomblossomsyampyro",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomblossomsyampyro",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_pyro.json"
+        ]
+      },
+      "path": "~/loot"
+    },
+    {
+      "name": "BoomblossomspyroF",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomblossomspyro_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossomspyro_f.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossomspyro_f.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossomspyro_f_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "BlazerPowder1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blazer_powder_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/blazer_powder_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -17218,7 +17331,8 @@
       "EnergyDrinkPrimogem",
       "DreamyCone",
       "FineTeaFullMoon",
-      "ChenyuAdeptea"
+      "ChenyuAdeptea",
+      "Boomyampyro"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPresent",
@@ -17658,7 +17772,8 @@
       "advancements.hello_world.descr": "It\u0027s a peach, it\u0027s love.",
       "advancements.hello_world.title": "Hello,World!",
       "gamerule.fallingMeat": "§d梦华构想 掉落肉",
-      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅"
+      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
+      "item.oneiricconcept.boomyampyro": "Pyro Boom Yam"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18067,7 +18182,8 @@
       "advancements.hello_world.descr": "是桃子，是爱。",
       "advancements.hello_world.title": "你好，世界！",
       "gamerule.fallingMeat": "§d梦华构想 掉落肉",
-      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅"
+      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
+      "item.oneiricconcept.boomyampyro": "火焰爆爆薯"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18477,33 +18593,34 @@
       "advancements.hello_world.descr": "It\u0027s a peach, it\u0027s love.",
       "advancements.hello_world.title": "こんにちは、世界！",
       "gamerule.fallingMeat": "§d梦华构想 掉落肉",
-      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅"
+      "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
+      "item.oneiricconcept.boomyampyro": "Pyro Boom Yam"
     }
   },
   "metadata": {
     "files": [
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
+      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
+      "src/main/java/net/mcreator/oneiricconcept/OneiricconceptMod.java",
+      "src/main/resources/assets/oneiricconcept/sounds.json",
       "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/oneiricconcept/OneiricconceptMod.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
-      "src/main/resources/assets/oneiricconcept/sounds.json",
-      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMenus.java",
       "src/main/java/net/mcreator/oneiricconcept/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
-      "src/main/java/net/mcreator/oneiricconcept/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/oneiricconcept/world/features/configurations/StructureFeatureConfiguration.java",
+      "src/main/java/net/mcreator/oneiricconcept/world/features/StructureFeature.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluids.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluidTypes.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModGameRules.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFuels.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMobEffects.java",
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticles.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticleTypes.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModParticles.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModPotions.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlocks.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModBlockEntities.java",
