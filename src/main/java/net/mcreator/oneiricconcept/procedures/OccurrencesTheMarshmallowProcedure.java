@@ -15,7 +15,6 @@ public class OccurrencesTheMarshmallowProcedure {
 			return;
 		double enx = 0;
 		double enz = 0;
-		double time = 0;
 		enx = entity.getX();
 		enz = entity.getZ();
 		if (world.canSeeSkyFromBelowWater(BlockPos.containing(enx, entity.getY(), enz))) {
@@ -33,11 +32,6 @@ public class OccurrencesTheMarshmallowProcedure {
 			_vars.PlayerLife = true;
 			_vars.syncPlayerVariables(entity);
 		}
-		time = world.dayTime();
-		while (!entity.onGround() && entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).PlayerLife) {
-			if (entity.onGround() && entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).PlayerLife) {
-				net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, 1);
-			}
-		}
+		OccurrencesTheMarshmallowIterationProcedure.execute(world, entity);
 	}
 }

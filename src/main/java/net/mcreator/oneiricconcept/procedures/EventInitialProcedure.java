@@ -19,6 +19,6 @@ public class EventInitialProcedure {
 	}
 
 	private static void execute(@Nullable Event event) {
-		EventPGCProcedure.init();
+		EventPGCProcedure.execute();
 	}
 }
