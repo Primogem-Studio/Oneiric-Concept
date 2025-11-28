@@ -7,6 +7,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
@@ -18,7 +19,7 @@ public class OccurrencesTheMarshmallowProcedure {
 		double enz = 0;
 		enx = entity.getX();
 		enz = entity.getZ();
-		if (!true) {
+		if (!world.canSeeSkyFromBelowWater(BlockPos.containing(enx, entity.getY(), enz)) || entity.isInWaterOrBubble()) {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + Life * 160), enz);
@@ -27,7 +28,7 @@ public class OccurrencesTheMarshmallowProcedure {
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (Life * 40), 100, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (Life * 40), 160, false, false));
 		}
 		entity.getPersistentData().putDouble("PlayerLife", Life);
 		OneiricconceptMod.queueServerWork(5, () -> {

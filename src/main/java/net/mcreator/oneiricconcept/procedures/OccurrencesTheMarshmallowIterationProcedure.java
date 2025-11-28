@@ -20,10 +20,11 @@ public class OccurrencesTheMarshmallowIterationProcedure {
 		double enz = 0;
 		a = entity.getPersistentData().getDouble("PlayerLife");
 		L = a > 0;
+		enx = entity.getX();
+		eny = entity.getY();
+		enz = entity.getZ();
 		for (int index0 = 0; index0 < 10; index0++) {
-			enx = entity.getX();
-			eny = entity.getY() + index0;
-			enz = entity.getZ();
+			eny = eny + index0;
 			if (-1 != world.getBlockState(BlockPos.containing(enx, eny, enz)).getDestroySpeed(world, BlockPos.containing(enx, eny, enz))) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, enx, eny, enz, (new ItemStack((world.getBlockState(BlockPos.containing(enx, eny, enz))).getBlock())));
@@ -36,7 +37,7 @@ public class OccurrencesTheMarshmallowIterationProcedure {
 		if (entity.onGround() && L) {
 			imp(entity, world, (int) a);
 		} else if (!entity.onGround() && L) {
-			OneiricconceptMod.queueServerWork(2, () -> {
+			OneiricconceptMod.queueServerWork(1, () -> {
 				OccurrencesTheMarshmallowIterationProcedure.execute(world, entity);
 			});
 		}
