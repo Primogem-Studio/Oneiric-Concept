@@ -1,13 +1,16 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
+import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OccurrencesTheMarshmallowProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -18,7 +21,8 @@ public class OccurrencesTheMarshmallowProcedure {
 		enx = entity.getX();
 		enz = entity.getZ();
 		if (world.canSeeSkyFromBelowWater(BlockPos.containing(enx, entity.getY(), enz))) {
-			entity.setDeltaMovement(new Vec3(0, 10, 0));
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 90, 50, false, false));
 		} else {
 			{
 				Entity _ent = entity;
@@ -32,6 +36,8 @@ public class OccurrencesTheMarshmallowProcedure {
 			_vars.PlayerLife = true;
 			_vars.syncPlayerVariables(entity);
 		}
-		OccurrencesTheMarshmallowIterationProcedure.execute(world, entity);
+		OneiricconceptMod.queueServerWork(5, () -> {
+			OccurrencesTheMarshmallowIterationProcedure.execute(world, entity);
+		});
 	}
 }
