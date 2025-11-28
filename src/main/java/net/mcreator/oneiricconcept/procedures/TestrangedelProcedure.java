@@ -48,6 +48,8 @@ public class TestrangedelProcedure {
 							entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(111)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ())));
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((blocksae + "\n" + getDirectionFromBlockState(blocksae))), false);
+		} else if (4 == mode) {
+			net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, 1001);
 		}
 	}
 

@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "testtool",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {
       "test": {
         "name": "Textures"
@@ -56,6 +57,22 @@
               "type": "number"
             },
             "value": 3.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "minecraft:firework_rocket",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:test",
+              "type": "number"
+            },
+            "value": 4.0
           }
         ]
       }
