@@ -34,15 +34,19 @@ public class OccurrencesTheMarshmallowIterationProcedure {
 			}
 		}
 		if (entity.onGround() && L) {
-			OneiricconceptMod.queueServerWork(2, () -> {
-				if (entity.isAlive()) {
-					net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, (int) (1001 + a));
-				}
-			});
+			imp(entity, world, (int) a);
 		} else if (!entity.onGround() && L) {
 			OneiricconceptMod.queueServerWork(2, () -> {
 				OccurrencesTheMarshmallowIterationProcedure.execute(world, entity);
 			});
 		}
+	}
+
+	public static void imp(Entity entity, LevelAccessor world, int a) {
+		OneiricconceptMod.queueServerWork(2, () -> {
+			if (entity.isAlive()) {
+				net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, (int) (1001 + a));
+			}
+		});
 	}
 }
