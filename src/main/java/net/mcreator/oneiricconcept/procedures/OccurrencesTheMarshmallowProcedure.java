@@ -9,11 +9,10 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OccurrencesTheMarshmallowProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity, double Life) {
 		if (entity == null)
 			return;
 		double enx = 0;
@@ -22,7 +21,7 @@ public class OccurrencesTheMarshmallowProcedure {
 		enz = entity.getZ();
 		if (world.canSeeSkyFromBelowWater(BlockPos.containing(enx, entity.getY(), enz))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 90, 50, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (Life * 90), 50, false, false));
 		} else {
 			{
 				Entity _ent = entity;
@@ -31,11 +30,7 @@ public class OccurrencesTheMarshmallowProcedure {
 					_serverPlayer.connection.teleport(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + 60), enz, _ent.getYRot(), _ent.getXRot());
 			}
 		}
-		{
-			OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
-			_vars.PlayerLife = true;
-			_vars.syncPlayerVariables(entity);
-		}
+		entity.getPersistentData().putDouble("PlayerLife", Life);
 		OneiricconceptMod.queueServerWork(5, () -> {
 			OccurrencesTheMarshmallowIterationProcedure.execute(world, entity);
 		});
