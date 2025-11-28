@@ -73,7 +73,6 @@ public class OneiricconceptModVariables {
 			if (!event.isWasDeath()) {
 				clone.ListOrder = original.ListOrder;
 				clone.targetOffset = original.targetOffset;
-				clone.PlayerLife = original.PlayerLife;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -226,7 +225,6 @@ public class OneiricconceptModVariables {
 		public double ListOrder = 0.0;
 		public boolean targetOffset = false;
 		public double EquilibriumLevel = 0;
-		public boolean PlayerLife = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -236,7 +234,6 @@ public class OneiricconceptModVariables {
 			nbt.putDouble("ListOrder", ListOrder);
 			nbt.putBoolean("targetOffset", targetOffset);
 			nbt.putDouble("EquilibriumLevel", EquilibriumLevel);
-			nbt.putBoolean("PlayerLife", PlayerLife);
 			return nbt;
 		}
 
@@ -247,7 +244,6 @@ public class OneiricconceptModVariables {
 			ListOrder = nbt.getDouble("ListOrder");
 			targetOffset = nbt.getBoolean("targetOffset");
 			EquilibriumLevel = nbt.getDouble("EquilibriumLevel");
-			PlayerLife = nbt.getBoolean("PlayerLife");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

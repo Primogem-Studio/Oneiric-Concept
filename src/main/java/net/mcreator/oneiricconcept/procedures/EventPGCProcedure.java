@@ -21,5 +21,6 @@ public class EventPGCProcedure {
         EventitemmssxrProcedure.registerDescription(2000, () -> "§d梦华构想§e模组的肉馅§c将不再掉落");
         EventitemmssxrProcedure.registerDescription(2001, () -> "§d梦华构想§e模组的肉馅§a将继续掉落");
         EventitemmssxrProcedure.registerDescription(2002, () -> Component.translatable("translation.oneiricconcept.marshmallow").getString());
+        EventitemmssxrProcedure.registerDescription(2003, () -> Component.translatable("translation.oneiricconcept.marshmallow2").getString());
     }
 }
