@@ -25,9 +25,9 @@ public class OccurrencesTheMarshmallowProcedure {
 		} else {
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + 60), enz);
+				_ent.teleportTo(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + Life * 60), enz);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + 60), enz, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + Life * 60), enz, _ent.getYRot(), _ent.getXRot());
 			}
 		}
 		entity.getPersistentData().putDouble("PlayerLife", Life);
