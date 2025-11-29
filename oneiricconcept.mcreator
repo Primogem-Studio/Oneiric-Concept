@@ -16501,6 +16501,25 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "DispellingNegativity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dispelling_negativity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/DispellingNegativityProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [

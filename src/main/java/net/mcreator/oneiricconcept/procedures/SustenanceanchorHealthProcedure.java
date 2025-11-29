@@ -53,8 +53,9 @@ public class SustenanceanchorHealthProcedure {
 			}
 			if (fight) {
 				txt = Component.translatable("translation.oneiricconcept.fight").getString();
-			}
-			if (!fight) {
+				ErrorerrProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5);
+			} else {
+				DispellingNegativityProcedure.execute(entity);
 				if (health / maxhealth < 0.35) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.setHealth((float) (0.35 * maxhealth));
@@ -83,8 +84,6 @@ public class SustenanceanchorHealthProcedure {
 						}
 					}
 				}
-			} else {
-				ErrorerrProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5);
 			}
 			hreserve = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
 			if (hreserve < sav) {

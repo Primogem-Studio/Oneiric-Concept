@@ -1,6 +1,6 @@
 plugins {
     id 'eclipse'
-    id 'net.neoforged.moddev' version '2.0.107'
+    id 'net.neoforged.moddev' version '2.0.95'
 }
 
 version = '1.0'
@@ -9,12 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.190"
-
-    parchment {
-        mappingsVersion = "2024.11.17"
-        minecraftVersion = "1.21.1"
-    }
+    version = "21.1.176"
 
     runs {
         client {
@@ -22,7 +17,8 @@ neoForge {
 
             def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
             if (mcreatorJvmOptions) {
-                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg -> jvmArgument(arg)
+                mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg ->
+                    jvmArgument(arg)
                 }
             }
         }
@@ -43,28 +39,8 @@ neoForge {
     }
 }
 
-repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                url "https://api.modrinth.com/maven"
-            }
-        }
-        filter {
-            includeGroup "maven.modrinth"
-        }
-    }
-    maven { url "https://maven.shedaniel.me/" }
-}
-
-dependencies {
-    compileOnly "maven.modrinth:genshincraft:2.11.0"
-    implementation "maven.modrinth:2primogem-craft:25w48a"
-    api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.799"
-}
-
 tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
 
 apply from: 'mcreator.gradle'
