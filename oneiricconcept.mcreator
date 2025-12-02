@@ -4232,7 +4232,8 @@
           "src/main/resources/assets/oneiricconcept/models/item/thunder_sword.json",
           "src/main/resources/assets/oneiricconcept/blockstates/thunder_sword.json",
           "src/main/resources/assets/oneiricconcept/models/block/thunder_sword.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/ThunderSwordBlock.java"
+          "src/main/java/net/mcreator/oneiricconcept/block/ThunderSwordBlock.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/ThunderSwordBlockEntity.java"
         ]
       },
       "path": "~/block"
