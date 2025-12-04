@@ -59,7 +59,7 @@ repositories {
 
 dependencies {
     compileOnly "maven.modrinth:genshincraft:2.11.0"
-    implementation "maven.modrinth:2primogem-craft:25w49.1a"
+    implementation "maven.modrinth:2primogem-craft:25w49b"
     api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.799"
 }
 

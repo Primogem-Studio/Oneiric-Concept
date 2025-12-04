@@ -15733,7 +15733,7 @@
       "name": "Examplexs",
       "type": "procedure",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "examplexs",
       "metadata": {
         "dependencies": [

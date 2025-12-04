@@ -9,8 +9,10 @@ public class ExamplexsProcedure {
 			return;
 		boolean o = false;
 		Entity e = null;
+		double n = 0;
 		o = world.getLevelData().isRaining();
 		e = entity;
-		net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, (int) (1001));
+		n = 1004;
+		net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, (int) (n));
 	}
 }
