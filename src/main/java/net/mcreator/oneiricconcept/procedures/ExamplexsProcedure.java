@@ -12,7 +12,7 @@ public class ExamplexsProcedure {
 		double n = 0;
 		o = world.getLevelData().isRaining();
 		e = entity;
-		n = 1004;
+		n = 1005;
 		net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, (int) (n));
 	}
 }
