@@ -15742,18 +15742,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -16532,6 +16520,37 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "WhiteDiamondFake",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_diamond_fake",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/WhiteDiamondFakeProcedure.java"
+        ]
+      },
+      "path": "~/Per/PER"
     }
   ],
   "variable_elements": [

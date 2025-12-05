@@ -7,6 +7,8 @@ import net.mcreator.ceshi.procedures.EventGroupProcedure;
 import net.mcreator.ceshi.procedures.Event_item_sxRProcedure;
 import net.mcreator.ceshi.procedures.EventitemmssxrProcedure;
 import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.functions.CommandFunction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -15,8 +17,11 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 
 import javax.naming.event.EventContext;
+
+import java.util.Optional;
 
 import static net.mcreator.oneiricconcept.init.OneiricconceptModEntities.BARYON;
 
@@ -27,11 +32,8 @@ public class EventPGCProcedure {
         EventRegistry.registerEvent(2001, ctx -> {FallingMeatsetProcedure.execute(ctx.getWorld(), true);return true;});
         EventRegistry.registerEvent(2002, ctx -> {OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),1);return true;});
         EventRegistry.registerEvent(2003, ctx -> { OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),2);return true;});
-        EventRegistry.registerEvent(2004, ctx -> ctx.spawnEntitiesInRange(BARYON.get(), 3, 20, null, false, entity -> {
-            ctx.applyEntityModifier(entity, livingEntity -> {ctx.invokeKillAll(livingEntity, 2, _true -> {ctx.createSimpleGroup(8, EventGroupProcedure.getRandomRegisteredEventId(ctx.getWorld()), 2000, "§a奖励");});});}));
-        EventRegistry.registerEvent(2005, ctx -> {
-            ctx.getPlayer().getServer().getPlayerList().broadcastSystemMessage(Component.literal((ctx.getPlayer().getDisplayName().getString())+"完成了挑战§5[一颗永流传]"), false);
-            ctx.setGuiItem(new ItemStack(PrimogemcraftModItems.QWYZZM.get()), 1,1,4);return true;});
+        EventRegistry.registerEvent(2004, ctx -> ctx.spawnEntitiesInRange(BARYON.get(), 3, 20, null, false, entity -> {ctx.applyEntityModifier(entity, livingEntity -> {ctx.invokeKillAll(livingEntity, 2, _true -> {ctx.createSimpleGroup(8, EventGroupProcedure.getRandomRegisteredEventId(ctx.getWorld()), 2000, "§a奖励");});});}));
+        EventRegistry.registerEvent(2005, ctx -> {WhiteDiamondFakeProcedure.execute(ctx.getWorld(),ctx.getPlayer().getX(),ctx.getPlayer().getY(),ctx.getPlayer().getZ());ctx.setGuiItem(new ItemStack(PrimogemcraftModItems.QWYZZM.get()), 1, 1, 4);return true;});
         //事件组
         EventRegistry.registerGroup(1000, ctx -> ctx.zu(2000, 2001, 7, "§e我不吃牛肉...吗？"));
         EventRegistry.registerGroup(1001, ctx -> ctx.zu(2002, 2003, 0, "§c飞向高天"));
