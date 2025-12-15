@@ -1,0 +1,18 @@
+{
+  "type": "apothic_enchanting:log_stats",
+  "conditions": [
+    {
+      "type": "neoforge:load_conditions",
+      "conditions": [
+        {
+          "type": "neoforge:file",
+          "path": "META-INF/neoforge/conditions/apothic_enchanting_present.json"
+        }
+      ]
+    }
+  ],
+  "eterna": 1,
+  "max_eterna": 35,
+  "quanta": 1,
+  "arcana": 1
+}

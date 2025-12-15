@@ -16555,6 +16555,19 @@
         ]
       },
       "path": "~/Per/PER"
+    },
+    {
+      "name": "ApothicE",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "apothic_e",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/ApothicE.java"
+        ]
+      },
+      "path": "~/custom"
     }
   ],
   "variable_elements": [
