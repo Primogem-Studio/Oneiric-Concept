@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+	"block": "oneiricconcept:propaganda_army_block",
+	"stats": {
+		"maxEterna": 100,
+		"eterna": 20,
+		"quanta": 100,
+		"arcana": 30,
+		"clues": 18
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+	"block": "oneiricconcept:the_another_world_leave",
+	"stats": {
+		"maxEterna": 35,
+		"eterna": 2,
+		"quanta": 0,
+		"arcana": 0
+	}
+}

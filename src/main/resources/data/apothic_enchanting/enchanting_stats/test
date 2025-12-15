@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+	"block": "oneiricconcept:white_moonlight_absorber",
+	"stats": {
+		"maxEterna": 100,
+		"eterna": 100,
+		"quanta": 100,
+		"arcana": 100,
+		"clues": 10
+	}
+}

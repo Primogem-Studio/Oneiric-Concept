@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "apothic_enchanting"
+    }
+  ],
+	"block": "oneiricconcept:crystalgenerator",
+	"stats": {
+		"maxEterna": 60,
+		"eterna": 10,
+		"quanta": 0,
+		"arcana": 3,
+		"clues": 1
+	}
+}
