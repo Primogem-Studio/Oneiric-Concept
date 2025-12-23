@@ -102,8 +102,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.DAWNLEAVES.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PHLOGISTONTANK.get().asItem());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON_CRYSTAL.get());
-				tabData.accept(OneiricconceptModItems.PHLOGISTON_CONTROLLER.get());
-				tabData.accept(OneiricconceptModItems.PHLOGISTON_WING_CHESTPLATE.get());
 				tabData.accept(OneiricconceptModItems.PHLOGISTON.get());
 				tabData.accept(OneiricconceptModItems.WILDERNESS_ROD.get());
 				tabData.accept(OneiricconceptModItems.MORA_BOW.get());
@@ -220,7 +218,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.ADEPTUS_GUN.get());
 				tabData.accept(OneiricconceptModItems.EXAMPLE.get());
 				tabData.accept(OneiricconceptModBlocks.FLOATING_CLOUD.get().asItem());
-				tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
 				tabData.accept(OneiricconceptModItems.PRIMOGEMCRAFTWIKI.get());
 				tabData.accept(OneiricconceptModItems.ADEPTUSTOOL.get());
 			}
@@ -228,8 +225,6 @@ public class OneiricconceptModTabs {
 			tabData.accept(OneiricconceptModItems.CRYSTAL_TURTLE_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(OneiricconceptModItems.EXAMPLE.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(OneiricconceptModItems.PHLOGISTON_CORE.get());
 		}
 	}
 }

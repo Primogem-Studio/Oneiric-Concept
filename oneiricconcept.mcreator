@@ -9393,20 +9393,6 @@
       "path": "~/Recipes"
     },
     {
-      "name": "PhlogistonCore",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phlogiston_core",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonCoreItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_core.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "PhlogistonCoreFill",
       "type": "procedure",
       "compiles": true,
@@ -9432,103 +9418,6 @@
           {
             "name": "world",
             "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "PhlogistonWing",
-      "type": "armor",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phlogiston_wing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonWingItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_wing_chestplate.json"
-        ]
-      }
-    },
-    {
-      "name": "PhlogistonWingFly",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phlogiston_wing_fly",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/PhlogistonWingFlyProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "ChestplateFly",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chestplate_fly",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/ChestplateFlyProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic"
-      },
-      "path": "~/process"
-    },
-    {
-      "name": "PhlogistonController",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phlogiston_controller",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonControllerItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_controller.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
-      "name": "Phlogistoncontrolle",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phlogistoncontrolle",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/PhlogistoncontrolleProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
           }
         ]
       },
@@ -9579,32 +9468,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/recipe/phlogiston_crystal_1.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "Phlogistonwing1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phlogistonwing_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/phlogistonwing_1.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "Phlogistoncontroller1",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "phlogistoncontroller_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/recipe/phlogistoncontroller_1.json"
         ]
       },
       "path": "~/Recipes"
@@ -9926,17 +9789,6 @@
         ]
       },
       "path": "~/item"
-    },
-    {
-      "name": "Ocfly",
-      "type": "gamerule",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ocfly",
-      "metadata": {
-        "files": [],
-        "type": "logic"
-      }
     },
     {
       "name": "CrystalTurtleTick",
@@ -16656,9 +16508,6 @@
     }
   ],
   "tag_elements": {
-    "ITEMS:minecraft:chest_armor": [
-      "~CUSTOM:PhlogistonWing.body"
-    ],
     "ENTITIES:mod:divinearrow": [
       "CUSTOM:SkyShatteringLuxArrow"
     ],
@@ -17360,8 +17209,6 @@
       "Dawnleaves",
       "Phlogistontank",
       "PhlogistonCrystal",
-      "PhlogistonController",
-      "PhlogistonWing",
       "Phlogiston",
       "WildernessRod",
       "MoraBow",
@@ -17558,13 +17405,11 @@
       "item.oneiricconcept.s_2ausage": "Sausage",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "Gactus",
-      "item.oneiricconcept.phlogiston_wing_chestplate": "phlogiston wing",
       "item.oneiricconcept.mora_magazine": "Mora Magazine",
       "effect.oneiricconcept.b_2sausage.description": "Continuously causing damage with a health multiplier of 0.8 and a state effect level",
       "block.oneiricconcept.wayfareblessing": "Wayfare blessing",
       "block.oneiricconcept.propaganda_army_block": "Propaganda Army Server",
       "translation.oneiricconcept.patchouli_landing_oc": "This manual introduces the items/blocks, creatures/entities, enchantments/spells of \u0027oneiricconcept\u0027 BUFF/DEBUFF、 Natural generation and game settings For more detailed content, please refer to MCMOD.cnSynchronized introduction from MCmod.cn, added by oneiricconcept",
-      "gamerule.ocfly.description": "Set as false to eliminate conflicts",
       "item.oneiricconcept.oy_stuffing.description_0": "§7Right... right?",
       "block.oneiricconcept.hertabond": "Herta bond",
       "enchantment.oneiricconcept.sharp_hook.desc": "Eliminate obstacles encountered while fishing in the water; Fish hooks can cause damage to undead creatures in the water, so retrieve the hooked items.",
@@ -17593,7 +17438,6 @@
       "block.oneiricconcept.fullmoon_metal": "full moon ingot",
       "block.oneiricconcept.electrosealingwax": "Electro sealing wax",
       "item.oneiricconcept.aureliae_pickaxe": "Aureliae Pickaxe",
-      "gamerule.ocfly": "ocfly",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§dOne of the cores of Herrscher of Legion, which can be used to create Divine Keys",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "advancements.power_of_herrschers.title": "Power Of Herrschers",
@@ -17603,16 +17447,12 @@
       "item.oneiricconcept.mora_magazine_e_1": "Extended Mora Magazine",
       "item.oneiricconcept.fish": "Fish",
       "item.oneiricconcept.molten_metal": "Molten Metal Gem",
-      "item.oneiricconcept.phlogiston_core.description_0": "only Creative",
-      "item.oneiricconcept.phlogiston_core.description_1": "It is recommended to charge no more than three groups",
       "block.oneiricconcept.cryo_metal": "cryo metal ingot",
-      "item.oneiricconcept.phlogiston_core.description_2": "as it may cause significant lag",
       "item.oneiricconcept.memoria_piece.description_0": "§7It\u0027s indeed just a condensed memory",
       "advancements.aftertheiceturnsintowater.descr": "……the sea I hang upside down will be your sky",
       "block.oneiricconcept.ambrosial_arbor_leave": "Ambrosial Arbor Leave",
       "gui.oneiricconcept.lib_gui.label_player_not_connected": "Player not connected",
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
-      "item.oneiricconcept.phlogiston_core": "Phlogiston Core",
       "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
       "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "Big Rock",
@@ -17649,7 +17489,6 @@
       "block.oneiricconcept.crescentmoonore": "Crescent moon ore",
       "death.attack.b_2.item": "%1$s was killed by %2$s using %3$s",
       "item.oneiricconcept.primogems_sausage": "Primogems Sausage",
-      "item.oneiricconcept.phlogiston_controller": "Phlogiston Controller",
       "block.oneiricconcept.big_rock.description_0": "§7Stones rich in coarse minerals",
       "item.oneiricconcept.boss_stone_coin_gun": "Coin Gun",
       "block.oneiricconcept.c_cactus": "Cactus",
@@ -17969,13 +17808,11 @@
       "item.oneiricconcept.s_2ausage": "香肠",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "仙士掌",
-      "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
       "item.oneiricconcept.mora_magazine": "摩拉弹匣",
       "effect.oneiricconcept.b_2sausage.description": "持续造成生命倍率×0.8×状态效果等级的伤害，击飞玩家",
       "block.oneiricconcept.wayfareblessing": "巡游的祝福",
       "block.oneiricconcept.propaganda_army_block": "水军服务器",
       "translation.oneiricconcept.patchouli_landing_oc": "这本手册介绍了梦华构想的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/17477.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
-      "gamerule.ocfly.description": "设为假以提高兼容",
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
       "block.oneiricconcept.hertabond": "黑塔债券",
       "enchantment.oneiricconcept.sharp_hook.desc": "排除在水中钓鱼时受到的阻碍；鱼钩会对水中的亡灵生物造成伤害，将勾到的物品回收。",
@@ -18004,7 +17841,6 @@
       "block.oneiricconcept.fullmoon_metal": "满月金属锭",
       "block.oneiricconcept.electrosealingwax": "雷之印",
       "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
-      "gamerule.ocfly": "燃素翼飞行",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "advancements.power_of_herrschers.title": "律者之力",
@@ -18013,17 +17849,13 @@
       "block.oneiricconcept.cloud": "云",
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
-      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
       "item.oneiricconcept.molten_metal": "铄金",
-      "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "block.oneiricconcept.cryo_metal": "§k怜爱§r金属锭",
-      "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
       "gui.oneiricconcept.lib_gui.label_player_not_connected": "玩家未连接",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
-      "item.oneiricconcept.phlogiston_core": "燃素核心",
       "gui.oneiricconcept.lib_gui.button_getuid": "UID查询",
       "block.oneiricconcept.redmoon_metal": "赤月金属锭",
       "block.oneiricconcept.big_rock": "大石头块",
@@ -18060,7 +17892,6 @@
       "block.oneiricconcept.crescentmoonore": "新月金属矿石",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.primogems_sausage": "原石香肠",
-      "item.oneiricconcept.phlogiston_controller": "燃素控制器",
       "block.oneiricconcept.big_rock.description_0": "§7蕴含丰富粗矿的石块",
       "item.oneiricconcept.boss_stone_coin_gun": "撒币枪",
       "block.oneiricconcept.c_cactus": "仙灵掌",
@@ -18381,13 +18212,11 @@
       "item.oneiricconcept.s_2ausage": "香肠",
       "advancements.power_of_herrschers.descr": "1‰",
       "block.oneiricconcept.gactus": "仙士掌",
-      "item.oneiricconcept.phlogiston_wing_chestplate": "燃素翼",
       "item.oneiricconcept.mora_magazine": "摩拉弹匣",
       "effect.oneiricconcept.b_2sausage.description": "持续造成生命倍率×0.8×状态效果等级的伤害，击飞玩家",
       "block.oneiricconcept.wayfareblessing": "巡游的祝福",
       "block.oneiricconcept.propaganda_army_block": "水军服务器",
       "translation.oneiricconcept.patchouli_landing_oc": "这本手册介绍了梦华构想的物品/方块、生物/实体、附魔/魔咒、BUFF/DEBUFF、自然生成和游戏设定$(br)更多详细内容参照$(l:https://www.mcmod.cn/class/17477.html)使用脚本从MCmod.cn同步介绍，由oneiricconcept添加",
-      "gamerule.ocfly.description": "设为假以提高兼容",
       "item.oneiricconcept.oy_stuffing.description_0": "§7对……对吗？",
       "block.oneiricconcept.hertabond": "Herta bond",
       "enchantment.oneiricconcept.sharp_hook.desc": "",
@@ -18416,7 +18245,6 @@
       "block.oneiricconcept.fullmoon_metal": "full moon ingot",
       "block.oneiricconcept.electrosealingwax": "雷之印",
       "item.oneiricconcept.aureliae_pickaxe": "铄金镐",
-      "gamerule.ocfly": "燃素翼飞行",
       "item.oneiricconcept.legion_pseudo_core.description_0": "§d千人之律者的核心之一，可以用来打造神之键",
       "item.oneiricconcept.surpriseboxforgoodorbad.desc": "Hoyo-Mix",
       "advancements.power_of_herrschers.title": "律者之力",
@@ -18426,16 +18254,12 @@
       "item.oneiricconcept.mora_magazine_e_1": "摩拉扩容弹匣",
       "item.oneiricconcept.fish": "鱼肉",
       "item.oneiricconcept.molten_metal": "铄金",
-      "item.oneiricconcept.phlogiston_core.description_0": "仅创造",
-      "item.oneiricconcept.phlogiston_core.description_1": "建议装药不超过三组",
       "block.oneiricconcept.cryo_metal": "crescent ingot",
-      "item.oneiricconcept.phlogiston_core.description_2": "会造成显著卡顿",
       "item.oneiricconcept.memoria_piece.description_0": "§7虽然看起来像纹饰板，但这确实只是浓缩的忆质",
       "advancements.aftertheiceturnsintowater.descr": "……我倒悬过来的海会成为你的天",
       "block.oneiricconcept.ambrosial_arbor_leave": "建木树叶",
       "gui.oneiricconcept.lib_gui.label_player_not_connected": "Player not connected",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
-      "item.oneiricconcept.phlogiston_core": "燃素核心",
       "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
       "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "大石头块",
@@ -18472,7 +18296,6 @@
       "block.oneiricconcept.crescentmoonore": "Crescent moon ore",
       "death.attack.b_2.item": "%1$s 被 %2$s 用 %3$s 熏肠打死了",
       "item.oneiricconcept.primogems_sausage": "原石香肠",
-      "item.oneiricconcept.phlogiston_controller": "燃素控制器",
       "block.oneiricconcept.big_rock.description_0": "§7蕴含丰富粗矿的石块",
       "item.oneiricconcept.boss_stone_coin_gun": "撒币枪",
       "block.oneiricconcept.c_cactus": "仙灵掌",
