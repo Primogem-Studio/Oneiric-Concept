@@ -2775,11 +2775,11 @@
       "registry_name": "tnt_dispenser",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/tnt_dispenser.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/TNTDispenserBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/tnt_dispenser.json",
           "src/main/resources/assets/oneiricconcept/models/block/tnt_dispenser.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/tnt_dispenser.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/TNTDispenserBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/tnt_dispenser.json",
+          "src/main/resources/assets/oneiricconcept/models/item/tnt_dispenser.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/tnt_dispenser.json"
         ]
       },
       "path": "~/block"
@@ -2795,6 +2795,10 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/TNTlaunchProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"

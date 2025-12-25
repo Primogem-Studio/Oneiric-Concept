@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "oneiricconcept:block/tnt_dispenser"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/tnt_dispenser",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/tnt_dispenser",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/tnt_dispenser",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "oneiricconcept:block/tnt_dispenser",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "oneiricconcept:block/tnt_dispenser",
+      "x": 90
     }
   }
 }
