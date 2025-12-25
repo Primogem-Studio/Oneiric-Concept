@@ -15,7 +15,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.oneiricconcept.procedures.InfinitMMProcedure;
 import net.mcreator.oneiricconcept.procedures.ExamplexsProcedure;
 import net.mcreator.oneiricconcept.procedures.ExampledescribeProcedure;
 
@@ -50,15 +49,5 @@ public class ExampleItem extends Item {
 		entity.startUsingItem(hand);
 		ExamplexsProcedure.execute(world, entity);
 		return ar;
-	}
-
-	@Override
-	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		InfinitMMProcedure.execute();
-		return retval;
 	}
 }

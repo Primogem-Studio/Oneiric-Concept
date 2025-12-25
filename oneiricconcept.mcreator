@@ -3455,8 +3455,8 @@
       "registry_name": "example",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/example.json"
+          "src/main/resources/assets/oneiricconcept/models/item/example.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java"
         ]
       },
       "path": "~/Per/PER"
@@ -3878,20 +3878,6 @@
         ]
       },
       "path": "~/Recipes"
-    },
-    {
-      "name": "InfinitMM",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "infinit_mm",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/InfinitMMProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/process"
     },
     {
       "name": "Railgun",
