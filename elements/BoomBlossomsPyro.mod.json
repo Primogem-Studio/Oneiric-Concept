@@ -145,7 +145,7 @@
       "name": "SilkEleseBomb"
     },
     "onDestroyedByExplosion": {
-      "name": "Induceddetonation"
+      "name": "BoomBlossomsBoom"
     },
     "onEntityCollides": {
       "name": "BoomBlossomsPyroBoom"

@@ -32,8 +32,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.SilkEleseBombProcedure;
-import net.mcreator.oneiricconcept.procedures.InduceddetonationProcedure;
 import net.mcreator.oneiricconcept.procedures.BoomBlossomsPyroBoomProcedure;
+import net.mcreator.oneiricconcept.procedures.BoomBlossomsBoomProcedure;
 import net.mcreator.oneiricconcept.block.entity.BoomBlossomsPyroBlockEntity;
 
 public class BoomBlossomsPyroBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
@@ -104,7 +104,7 @@ public class BoomBlossomsPyroBlock extends Block implements SimpleWaterloggedBlo
 	@Override
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
-		InduceddetonationProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		BoomBlossomsBoomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
