@@ -14709,8 +14709,8 @@
       "registry_name": "engineering_antimatter_bomb",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/EngineeringAntimatterBombRenderer.java",
-          "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java"
+          "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/EngineeringAntimatterBombRenderer.java"
         ]
       }
     },

@@ -21,7 +21,17 @@
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
-    "modelLayers": [],
+    "modelLayers": [
+      {
+        "model": "Default",
+        "texture": "white.png",
+        "disableHurtOverlay": true,
+        "glow": true,
+        "condition": {
+          "name": "IfTime5"
+        }
+      }
+    ],
     "animations": [],
     "modelWidth": 1.0,
     "modelHeight": 1.0,
@@ -154,6 +164,9 @@
       2
     ],
     "sensitiveToVibration": false,
-    "vibrationalEvents": []
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    }
   }
 }
