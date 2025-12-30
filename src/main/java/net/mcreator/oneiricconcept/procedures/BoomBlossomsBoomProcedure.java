@@ -11,7 +11,7 @@ public class BoomBlossomsBoomProcedure {
 			world.setBlock(BlockPos.containing(x, y, z), OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().defaultBlockState(), 3);
 			BoomBlossomsPyroBoomProcedure.execute(world, x, y, z);
 		} else {
-			OverlimitExplosionProcedure.execute(world, x, y, z, 2);
+			OverlimitExplosionProcedure.execute(world, x, y, z, 3);
 		}
 	}
 }

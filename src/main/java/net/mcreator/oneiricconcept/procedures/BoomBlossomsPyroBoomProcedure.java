@@ -15,7 +15,7 @@ public class BoomBlossomsPyroBoomProcedure {
 		OneiricconceptMod.queueServerWork(60, () -> {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get()) {
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				OverlimitExplosionProcedure.execute(world, x, y + 2, z, 2);
+				OverlimitExplosionProcedure.execute(world, x, y + 2, z, 3);
 			}
 		});
 		if (!world.isClientSide()) {
