@@ -32,7 +32,7 @@ public class EventPGCProcedure {
         EventRegistry.registerEvent(2000, ctx -> {FallingMeatsetProcedure.execute(ctx.getWorld(), false);return true;});
         EventRegistry.registerEvent(2001, ctx -> {FallingMeatsetProcedure.execute(ctx.getWorld(), true);return true;});
         EventRegistry.registerEvent(2002, ctx -> {OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),1);return true;});
-        EventRegistry.registerEvent(2003, ctx -> { OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),2);return true;});
+        EventRegistry.registerEvent(2003, ctx -> {OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),2);return true;});
         EventRegistry.registerEvent(2004, ctx -> ctx.TimelimitedCombat(BARYON.get(),3,2,8,2000,ctx.getRandomEvemtID(),"奖励"));
         EventRegistry.registerEvent(2005, ctx -> {WhiteDiamondFakeProcedure.execute(ctx.getWorld(), ctx.x(), ctx.y(), ctx.z(), ctx.getPlayer());ctx.setGuiItem(new ItemStack(PrimogemcraftModItems.QWYZZM.get()), 1, 1, 4);return true;});
         //事件组
