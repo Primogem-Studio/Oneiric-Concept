@@ -18,7 +18,6 @@ public class SkiplifeProcedure {
 		if (entity == null)
 			return;
 		ItemStack zpitem = ItemStack.EMPTY;
-		double ktime = 0;
 		double index1 = 0;
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
@@ -28,9 +27,9 @@ public class SkiplifeProcedure {
 			zpitem = (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler3 ? _modHandler3.getStackInSlot((int) index0).copy() : ItemStack.EMPTY);
 			if (zpitem.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:canskip")))) {
 				if (zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("dai_kai_jiang")) {
-					SkipingProcedure.execute(world, entity, zpitem, index0, 24000, "k1");
-				} else if (zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("sun_huai")) {
-					SkipingProcedure.execute(world, entity, zpitem, index0, 6000, "wzsw");
+					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, index0, 24000, "k1");
+				} else if (!zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("sun_huai")) {
+					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, index0, 6000, "wzsw");
 				}
 			}
 		}
