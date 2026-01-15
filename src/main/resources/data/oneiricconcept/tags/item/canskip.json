@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "primogemcraft:qwxydsw",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:qwwzsw",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:xyzp",
+      "required": false
+    }
+  ]
+}

@@ -16428,6 +16428,46 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Skiping",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skiping",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "index",
+            "type": "number"
+          },
+          {
+            "name": "times",
+            "type": "number"
+          },
+          {
+            "name": "tagname",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SkipingProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -17145,6 +17185,11 @@
     "BLOCKS:mod:blockblocklist": [
       "CUSTOM:TheAnotherWorldLog",
       "CUSTOM:StrippedTheAnotherWorldLog"
+    ],
+    "ITEMS:mod:canskip": [
+      "EXTERNAL:primogemcraft:xyzp",
+      "EXTERNAL:primogemcraft:qwwzsw",
+      "EXTERNAL:primogemcraft:qwxydsw"
     ]
   },
   "tab_element_order": {
