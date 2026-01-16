@@ -17,7 +17,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.oneiricconcept.block.entity.WhiteMoonlightAbsorberBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.ThunderSwordBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchoroffBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.SustenanceanchorBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.PropagandaArmyBlockBlockEntity;
@@ -35,7 +34,6 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, OneiricconceptMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsPyroBlockEntity>> BOOM_BLOSSOMS_PYRO = register("boom_blossoms_pyro", OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO, BoomBlossomsPyroBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PropagandaArmyBlockBlockEntity>> PROPAGANDA_ARMY_BLOCK = register("propaganda_army_block", OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK, PropagandaArmyBlockBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ThunderSwordBlockEntity>> THUNDER_SWORD = register("thunder_sword", OneiricconceptModBlocks.THUNDER_SWORD, ThunderSwordBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PgcPresentBlockEntity>> PGC_PRESENT = register("pgc_present", OneiricconceptModBlocks.PGC_PRESENT, PgcPresentBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SustenanceanchoroffBlockEntity>> SUSTENANCEANCHOROFF = register("sustenanceanchoroff", OneiricconceptModBlocks.SUSTENANCEANCHOROFF, SustenanceanchoroffBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SustenanceanchorBlockEntity>> SUSTENANCEANCHOR = register("sustenanceanchor", OneiricconceptModBlocks.SUSTENANCEANCHOR, SustenanceanchorBlockEntity::new);
@@ -57,7 +55,6 @@ public class OneiricconceptModBlockEntities {
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_PYRO.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PROPAGANDA_ARMY_BLOCK.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, THUNDER_SWORD.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PGC_PRESENT.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUSTENANCEANCHOROFF.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUSTENANCEANCHOR.get(), SidedInvWrapper::new);
