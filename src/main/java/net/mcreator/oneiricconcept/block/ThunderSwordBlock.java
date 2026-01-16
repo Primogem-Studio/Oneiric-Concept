@@ -55,10 +55,10 @@ public class ThunderSwordBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(3, 16, 7.5, 7, 21, 8.5), box(6, 21, 7.5, 10, 26, 8.5), box(9, 26, 7.5, 13, 32, 8.5));
-			case NORTH -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(9, 16, 7.5, 13, 21, 8.5), box(6, 21, 7.5, 10, 26, 8.5), box(3, 26, 7.5, 7, 32, 8.5));
-			case EAST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(7.5, 16, 9, 8.5, 21, 13), box(7.5, 21, 6, 8.5, 26, 10), box(7.5, 26, 3, 8.5, 32, 7));
-			case WEST -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(7.5, 16, 3, 8.5, 21, 7), box(7.5, 21, 6, 8.5, 26, 10), box(7.5, 26, 9, 8.5, 32, 13));
+			default -> Shapes.or(box(3, 0, 7.5, 7, 5, 8.5), box(6, 5, 7.5, 10, 10, 8.5), box(9, 10, 7.5, 13, 16, 8.5));
+			case NORTH -> Shapes.or(box(9, 0, 7.5, 13, 5, 8.5), box(6, 5, 7.5, 10, 10, 8.5), box(3, 10, 7.5, 7, 16, 8.5));
+			case EAST -> Shapes.or(box(7.5, 0, 9, 8.5, 5, 13), box(7.5, 5, 6, 8.5, 10, 10), box(7.5, 10, 3, 8.5, 16, 7));
+			case WEST -> Shapes.or(box(7.5, 0, 3, 8.5, 5, 7), box(7.5, 5, 6, 8.5, 10, 10), box(7.5, 10, 9, 8.5, 16, 13));
 		};
 	}
 
