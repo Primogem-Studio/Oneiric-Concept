@@ -2,6 +2,7 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LightningBolt;
@@ -11,6 +12,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
@@ -30,7 +32,12 @@ public class ThunderSummonProcedure {
 			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				if (!(entityiterator instanceof ItemEntity)) {
 					entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT)),
-							(float) (6 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) * (entityiterator.getType().is(EntityTypeTags.AQUATIC) ? 2 : 1) * (world.getLevelData().isThundering() ? 2 : 1)));
+							(float) (6 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) * (world.getLevelData().isThundering() ? 2 : 1) * (entityiterator.getType().is(EntityTypeTags.AQUATIC) ? 2 : 1)
+									* ((world.getFluidState(BlockPos.containing(x, y, z)).createLegacyBlock()).getBlock() instanceof LiquidBlock ? 2 : 1) * (entityiterator.isInWaterRainOrBubble() ? 3 : 1)));
+				}
+				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+					if (!world.isClientSide() && world.getServer() != null)
+						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + ((world.getFluidState(BlockPos.containing(x, y, z)).createLegacyBlock()).getBlock() instanceof LiquidBlock))), false);
 				}
 			}
 		}
