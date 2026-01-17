@@ -16878,7 +16878,8 @@
       "CUSTOM:AureliaeHoe"
     ],
     "ITEMS:minecraft:shovels": [
-      "~CUSTOM:AureliaeShovel"
+      "~CUSTOM:AureliaeShovel",
+      "CUSTOM:Testtool"
     ],
     "BLOCKS:mod:topblock": [
       "Blocks.GRASS",
@@ -17093,10 +17094,12 @@
       "CUSTOM:Primogemfruit"
     ],
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:AureliaePickaxe"
+      "~CUSTOM:AureliaePickaxe",
+      "CUSTOM:Testtool"
     ],
     "ITEMS:minecraft:hoes": [
-      "~CUSTOM:AureliaeHoe"
+      "~CUSTOM:AureliaeHoe",
+      "CUSTOM:Testtool"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
       "~CUSTOM:Fullmoonore",
@@ -17131,7 +17134,8 @@
       "TAG:c:foods/cheese"
     ],
     "ITEMS:minecraft:axes": [
-      "~CUSTOM:AureliaeAxe"
+      "~CUSTOM:AureliaeAxe",
+      "CUSTOM:Testtool"
     ],
     "ITEMS:c:b2sausage": [
       "CUSTOM:BelobogSausage",
