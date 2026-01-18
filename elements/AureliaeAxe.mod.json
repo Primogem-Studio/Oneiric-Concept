@@ -5,9 +5,10 @@
     "toolType": "Axe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "aureliaeaxe",
+    "texture": "aureliaeaxe_nf",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "aureliaeaxe",
     "name": "Aureliae Axe",
     "specialInformation": {
       "fixedValue": [],

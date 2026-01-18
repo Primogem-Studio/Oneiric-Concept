@@ -5,9 +5,10 @@
     "toolType": "Hoe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "aureliaehoe",
+    "texture": "aureliaehoe_nf",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "aureliaehoe",
     "name": "Aureliae Hoe",
     "specialInformation": {
       "fixedValue": [],

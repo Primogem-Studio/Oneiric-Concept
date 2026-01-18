@@ -5,9 +5,10 @@
     "toolType": "Pickaxe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "aureliaepickaxe",
+    "texture": "aureliaepickaxe_nf",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "aureliaepickaxe",
     "name": "Aureliae Pickaxe",
     "specialInformation": {
       "fixedValue": [],

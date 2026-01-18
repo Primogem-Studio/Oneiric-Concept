@@ -1,6 +1,30 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "oneiricconcept:item/aureliaepickaxe"
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "item/handheld",
+    "textures": {
+      "layer0": "oneiricconcept:item/aureliaepickaxe_nf"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "oneiricconcept:item/aureliaepickaxe"
+      }
+    },
+    "fixed": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "oneiricconcept:item/aureliaepickaxe"
+      }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "oneiricconcept:item/aureliaepickaxe"
+      }
+    }
   }
 }

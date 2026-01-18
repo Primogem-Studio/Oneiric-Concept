@@ -5,9 +5,10 @@
     "toolType": "Sword",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "aureliaesword",
+    "texture": "aureliaesword_nf",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "aureliaesword",
     "name": "Aureliae Sword",
     "specialInformation": {
       "fixedValue": [],

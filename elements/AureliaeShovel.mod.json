@@ -5,9 +5,10 @@
     "toolType": "Spade",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "aureliaeshovel",
+    "texture": "aureliaeshovel_nf",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "aureliaeshovel",
     "name": "Aureliae Shovel",
     "specialInformation": {
       "fixedValue": [],
