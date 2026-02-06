@@ -209,6 +209,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

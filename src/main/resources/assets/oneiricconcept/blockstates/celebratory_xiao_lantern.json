@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/celebratory_xiao_lantern"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/celebratory_xiao_lantern",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/celebratory_xiao_lantern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/celebratory_xiao_lantern",
+      "y": 270
+    }
+  }
+}

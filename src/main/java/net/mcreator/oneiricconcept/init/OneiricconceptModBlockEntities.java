@@ -26,6 +26,7 @@ import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.NestBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.Geooo1BlockEntity;
 import net.mcreator.oneiricconcept.block.entity.CrystalgeneratorBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.CelebratoryXiaoLanternBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.BoomBlossomsPyroBlockEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
@@ -44,6 +45,8 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<NestBlockEntity>> NEST = register("nest", OneiricconceptModBlocks.NEST, NestBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<WhiteMoonlightAbsorberBlockEntity>> WHITE_MOONLIGHT_ABSORBER = register("white_moonlight_absorber", OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER,
 			WhiteMoonlightAbsorberBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CelebratoryXiaoLanternBlockEntity>> CELEBRATORY_XIAO_LANTERN = register("celebratory_xiao_lantern", OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN,
+			CelebratoryXiaoLanternBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -66,5 +69,6 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.EnergyStorage.BLOCK, CRYSTALGENERATOR.get(), (blockEntity, side) -> blockEntity.getEnergyStorage());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEST.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WHITE_MOONLIGHT_ABSORBER.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CELEBRATORY_XIAO_LANTERN.get(), SidedInvWrapper::new);
 	}
 }

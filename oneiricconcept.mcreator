@@ -16467,6 +16467,56 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "CelebratoryXiaoLantern",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "celebratory_xiao_lantern",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/CelebratoryXiaoLanternBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/celebratory_xiao_lantern.json",
+          "src/main/resources/assets/oneiricconcept/models/block/celebratory_xiao_lantern.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/celebratory_xiao_lantern.json",
+          "src/main/resources/assets/oneiricconcept/models/item/celebratory_xiao_lantern.json",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/CelebratoryXiaoLanternRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/CelebratoryXiaoLanternBlock.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "XiaolanternPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xiaolantern_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XiaolanternPlaceProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -17004,6 +17054,7 @@
       "~CUSTOM:SharpHook"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:CelebratoryXiaoLantern",
       "~CUSTOM:ChenyuAdepteaTree",
       "~CUSTOM:Nest",
       "~CUSTOM:AmbrosialArborWood",
@@ -17382,7 +17433,8 @@
       "Fulmo1",
       "RainbowCactusBall",
       "Primogemstormglass",
-      "Theanotherworldmooningot"
+      "Theanotherworldmooningot",
+      "CelebratoryXiaoLantern"
     ]
   },
   "language_map": {
@@ -17787,7 +17839,8 @@
       "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
       "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
       "translation.oneiricconcept.marshmallow": "§cFly to the sky §eand receive rewards after surviving",
-      "translation.oneiricconcept.marshmallow2": "§cFly to the sky, §4fly higher and §bearn better rewards"
+      "translation.oneiricconcept.marshmallow2": "§cFly to the sky, §4fly higher and §bearn better rewards",
+      "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18190,7 +18243,8 @@
       "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
       "item.oneiricconcept.boomyampyro": "火焰爆爆薯",
       "translation.oneiricconcept.marshmallow": "§c飞向高天，§e存活后获得奖励",
-      "translation.oneiricconcept.marshmallow2": "§c飞向高天，§4飞得更高§e且能够获得§b更好的奖励"
+      "translation.oneiricconcept.marshmallow2": "§c飞向高天，§4飞得更高§e且能够获得§b更好的奖励",
+      "block.oneiricconcept.celebratory_xiao_lantern": "节庆霄灯"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18594,7 +18648,8 @@
       "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
       "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
       "translation.oneiricconcept.marshmallow": "",
-      "translation.oneiricconcept.marshmallow2": ""
+      "translation.oneiricconcept.marshmallow2": "",
+      "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern"
     }
   },
   "metadata": {

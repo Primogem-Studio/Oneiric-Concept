@@ -399,5 +399,6 @@
   "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
   "item.oneiricconcept.boomyampyro": "火焰爆爆薯",
   "translation.oneiricconcept.marshmallow": "§c飞向高天，§e存活后获得奖励",
-  "translation.oneiricconcept.marshmallow2": "§c飞向高天，§4飞得更高§e且能够获得§b更好的奖励"
+  "translation.oneiricconcept.marshmallow2": "§c飞向高天，§4飞得更高§e且能够获得§b更好的奖励",
+  "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern"
 }
