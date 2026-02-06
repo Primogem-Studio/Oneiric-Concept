@@ -10,6 +10,11 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternMenu;
+import net.mcreator.oneiricconcept.procedures.IsTextWhiteProcedure;
+import net.mcreator.oneiricconcept.procedures.IsTextBrownProcedure;
+import net.mcreator.oneiricconcept.procedures.GetLantern3Procedure;
+import net.mcreator.oneiricconcept.procedures.GetLantern2Procedure;
+import net.mcreator.oneiricconcept.procedures.GetLantern1Procedure;
 import net.mcreator.oneiricconcept.procedures.GetLantarnBackGrandProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
@@ -65,6 +70,18 @@ public class GUIcelebratoryxiaolanternScreen extends AbstractContainerScreen<GUI
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		if (IsTextBrownProcedure.execute(world, x, y, z))
+			guiGraphics.drawString(this.font, GetLantern1Procedure.execute(world, x, y, z), 234, 59, -8101827, false);
+		if (IsTextBrownProcedure.execute(world, x, y, z))
+			guiGraphics.drawString(this.font, GetLantern2Procedure.execute(world, x, y, z), 234, 79, -8101827, false);
+		if (IsTextBrownProcedure.execute(world, x, y, z))
+			guiGraphics.drawString(this.font, GetLantern3Procedure.execute(world, x, y, z), 234, 98, -8101827, false);
+		if (IsTextWhiteProcedure.execute(world, x, y, z))
+			guiGraphics.drawString(this.font, GetLantern1Procedure.execute(world, x, y, z), 166, 79, -395036, false);
+		if (IsTextWhiteProcedure.execute(world, x, y, z))
+			guiGraphics.drawString(this.font, GetLantern2Procedure.execute(world, x, y, z), 167, 98, -395036, false);
+		if (IsTextWhiteProcedure.execute(world, x, y, z))
+			guiGraphics.drawString(this.font, GetLantern3Procedure.execute(world, x, y, z), 168, 116, -395036, false);
 	}
 
 	@Override

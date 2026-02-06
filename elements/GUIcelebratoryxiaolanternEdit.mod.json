@@ -14,7 +14,7 @@
         "type": "textfield",
         "data": {
           "placeholder": "",
-          "name": "frist",
+          "name": "first",
           "width": 120,
           "height": 20,
           "x": 208,
@@ -89,6 +89,38 @@
           "height": 20,
           "x": 361,
           "y": 27,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_switch_background_image",
+          "text": {
+            "fixedValue": "Switch background image"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 204,
+          "y": 31,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_save",
+          "text": "save",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LanternSave"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 345,
+          "y": 189,
           "locked": false
         }
       }

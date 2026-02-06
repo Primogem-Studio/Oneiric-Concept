@@ -23,6 +23,126 @@
           "y": 12,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_lantern_1",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLantern1"
+          },
+          "color": {
+            "value": -8101827,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsTextBrown"
+          },
+          "x": 248,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_lantern_2",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLantern2"
+          },
+          "color": {
+            "value": -8101827,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsTextBrown"
+          },
+          "x": 248,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_lantern_3",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLantern3"
+          },
+          "color": {
+            "value": -8101827,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsTextBrown"
+          },
+          "x": 248,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_lantern_11",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLantern1"
+          },
+          "color": {
+            "value": -395036,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsTextWhite"
+          },
+          "x": 180,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_lantern_21",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLantern2"
+          },
+          "color": {
+            "value": -395036,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsTextWhite"
+          },
+          "x": 181,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_lantern_31",
+          "text": {
+            "fixedValue": "",
+            "name": "GetLantern3"
+          },
+          "color": {
+            "value": -395036,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "IsTextWhite"
+          },
+          "x": 182,
+          "y": 128,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

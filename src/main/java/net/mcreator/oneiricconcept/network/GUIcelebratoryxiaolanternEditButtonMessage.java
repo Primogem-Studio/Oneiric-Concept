@@ -17,6 +17,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.PlusLantrenListorderProcedure;
 import net.mcreator.oneiricconcept.procedures.MinusUIDLIstorderProcedure;
+import net.mcreator.oneiricconcept.procedures.LanternSaveProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -55,6 +56,10 @@ public record GUIcelebratoryxiaolanternEditButtonMessage(int buttonID, int x, in
 		if (buttonID == 1) {
 
 			PlusLantrenListorderProcedure.execute(world, entity);
+		}
+		if (buttonID == 2) {
+
+			LanternSaveProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

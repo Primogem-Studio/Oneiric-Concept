@@ -26,11 +26,12 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	EditBox frist;
+	EditBox first;
 	EditBox second;
 	EditBox third;
 	Button button_empty;
 	Button button_empty1;
+	Button button_save;
 
 	public GUIcelebratoryxiaolanternEditScreen(GUIcelebratoryxiaolanternEditMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -47,8 +48,8 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 	public void updateMenuState(int elementType, String name, Object elementState) {
 		menuStateUpdateActive = true;
 		if (elementType == 0 && elementState instanceof String stringState) {
-			if (name.equals("frist"))
-				frist.setValue(stringState);
+			if (name.equals("first"))
+				first.setValue(stringState);
 			else if (name.equals("second"))
 				second.setValue(stringState);
 			else if (name.equals("third"))
@@ -60,7 +61,7 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		frist.render(guiGraphics, mouseX, mouseY, partialTicks);
+		first.render(guiGraphics, mouseX, mouseY, partialTicks);
 		second.render(guiGraphics, mouseX, mouseY, partialTicks);
 		third.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
@@ -82,8 +83,8 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-		if (frist.isFocused())
-			return frist.keyPressed(key, b, c);
+		if (first.isFocused())
+			return first.keyPressed(key, b, c);
 		if (second.isFocused())
 			return second.keyPressed(key, b, c);
 		if (third.isFocused())
@@ -93,29 +94,30 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 
 	@Override
 	public void resize(Minecraft minecraft, int width, int height) {
-		String fristValue = frist.getValue();
+		String firstValue = first.getValue();
 		String secondValue = second.getValue();
 		String thirdValue = third.getValue();
 		super.resize(minecraft, width, height);
-		frist.setValue(fristValue);
+		first.setValue(firstValue);
 		second.setValue(secondValue);
 		third.setValue(thirdValue);
 	}
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image"), 190, 19, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		frist = new EditBox(this.font, this.leftPos + 195, this.topPos + 46, 118, 18, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist"));
-		frist.setMaxLength(8192);
-		frist.setResponder(content -> {
+		first = new EditBox(this.font, this.leftPos + 195, this.topPos + 46, 118, 18, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first"));
+		first.setMaxLength(8192);
+		first.setResponder(content -> {
 			if (!menuStateUpdateActive)
-				menu.sendMenuStateUpdate(entity, 0, "frist", content, false);
+				menu.sendMenuStateUpdate(entity, 0, "first", content, false);
 		});
-		this.addWidget(this.frist);
+		this.addWidget(this.first);
 		second = new EditBox(this.font, this.leftPos + 195, this.topPos + 70, 118, 18, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second"));
 		second.setMaxLength(8192);
 		second.setResponder(content -> {
@@ -148,5 +150,14 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 			}
 		}).bounds(this.leftPos + 347, this.topPos + 15, 30, 20).build();
 		this.addRenderableWidget(button_empty1);
+		button_save = Button.builder(Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save"), e -> {
+			int x = GUIcelebratoryxiaolanternEditScreen.this.x;
+			int y = GUIcelebratoryxiaolanternEditScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new GUIcelebratoryxiaolanternEditButtonMessage(2, x, y, z));
+				GUIcelebratoryxiaolanternEditButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}).bounds(this.leftPos + 331, this.topPos + 177, 46, 20).build();
+		this.addRenderableWidget(button_save);
 	}
 }

@@ -16757,6 +16757,221 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "GetLantern1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_lantern_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetLantern1Procedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetLantern2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_lantern_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetLantern2Procedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetLantern3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_lantern_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetLantern3Procedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LanternSave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lantern_save",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LanternSaveProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "IsTextBrown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_text_brown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsTextBrownProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "IsTextWhite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_text_white",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsTextWhiteProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetDebug",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_debug",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetDebugProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -18087,7 +18302,11 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e"
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e",
+      "translation.oneiricconcept.lantrentip": "Switch background image",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": ""
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18498,7 +18717,11 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e"
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e",
+      "translation.oneiricconcept.lantren": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": ""
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18910,7 +19133,11 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e"
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e",
+      "translation.oneiricconcept.lantren": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": ""
     }
   },
   "metadata": {
