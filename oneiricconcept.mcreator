@@ -16516,6 +16516,7 @@
       "registry_name": "gu_icelebratoryxiaolantern_edit",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/network/GUIcelebratoryxiaolanternEditButtonMessage.java",
           "src/main/java/net/mcreator/oneiricconcept/world/inventory/GUIcelebratoryxiaolanternEditMenu.java",
           "src/main/java/net/mcreator/oneiricconcept/client/gui/GUIcelebratoryxiaolanternEditScreen.java"
         ]
@@ -16607,7 +16608,8 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/PlusUIDListorderProcedure.java"
         ]
-      }
+      },
+      "path": "~/process"
     },
     {
       "name": "PlusListorder",
@@ -16633,7 +16635,8 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/PlusListorderProcedure.java"
         ]
-      }
+      },
+      "path": "~/process"
     },
     {
       "name": "MinusUIDLIstorder",
@@ -16655,7 +16658,105 @@
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/MinusUIDLIstorderProcedure.java"
         ]
-      }
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PlusLantrenListorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plus_lantren_listorder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlusLantrenListorderProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "MinusLantrenLIstorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minus_lantren_l_istorder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MinusLantrenLIstorderProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ResetListorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_listorder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ResetListorderProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetLantarnBackGrand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_lantarn_back_grand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetLantarnBackGrandProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -17983,7 +18084,10 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18391,7 +18495,10 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18800,7 +18907,10 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e"
     }
   },
   "metadata": {

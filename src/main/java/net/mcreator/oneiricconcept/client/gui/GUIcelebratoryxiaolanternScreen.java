@@ -3,12 +3,14 @@ package net.mcreator.oneiricconcept.client.gui;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.util.Mth;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternMenu;
+import net.mcreator.oneiricconcept.procedures.GetLantarnBackGrandProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -47,7 +49,8 @@ public class GUIcelebratoryxiaolanternScreen extends AbstractContainerScreen<GUI
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/celebratory1.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 400, 216, 2400, 216);
+		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/celebratory1.png"), this.leftPos + 0, this.topPos + 0, Mth.clamp((int) GetLantarnBackGrandProcedure.execute(world, x, y, z, entity) * 400, 0, 2000), 0, 400, 216, 2400,
+				216);
 		RenderSystem.disableBlend();
 	}
 

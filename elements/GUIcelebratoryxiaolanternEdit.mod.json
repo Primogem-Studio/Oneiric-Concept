@@ -35,15 +35,60 @@
         }
       },
       {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "third",
+          "width": 120,
+          "height": 20,
+          "x": 208,
+          "y": 105,
+          "locked": false
+        }
+      },
+      {
         "type": "sprite",
         "data": {
           "sprite": "celebratory1.png",
           "spritesCount": 6,
           "spriteIndex": {
-            "fixedValue": 0.0
+            "fixedValue": 0.0,
+            "name": "GetLantarnBackGrand"
           },
           "x": 14,
           "y": 12,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "<",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MinusUIDLIstorder"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 329,
+          "y": 27,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": ">",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PlusLantrenListorder"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 361,
+          "y": 27,
           "locked": false
         }
       }

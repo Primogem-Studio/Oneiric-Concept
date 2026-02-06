@@ -15,7 +15,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.procedures.XiaolanternOpenGuiProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModMenus;
 
 import java.util.function.Supplier;
@@ -56,7 +55,6 @@ public class GUIcelebratoryxiaolanternMenu extends AbstractContainerMenu impleme
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
-		XiaolanternOpenGuiProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

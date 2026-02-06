@@ -405,5 +405,8 @@
   "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
   "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
   "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
-  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e"
 }

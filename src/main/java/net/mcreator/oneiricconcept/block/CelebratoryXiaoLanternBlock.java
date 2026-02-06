@@ -5,6 +5,7 @@ import org.checkerframework.checker.units.qual.s;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
@@ -31,13 +32,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.util.FastColor;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.XiaolanternPlaceProcedure;
+import net.mcreator.oneiricconcept.procedures.XiaolanternOpenGuiProcedure;
 import net.mcreator.oneiricconcept.block.entity.CelebratoryXiaoLanternBlockEntity;
 
 public class CelebratoryXiaoLanternBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
@@ -127,6 +131,20 @@ public class CelebratoryXiaoLanternBlock extends Block implements SimpleWaterlog
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		XiaolanternPlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player entity, BlockHitResult hit) {
+		super.useWithoutItem(blockstate, world, pos, entity, hit);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+		XiaolanternOpenGuiProcedure.execute(world, x, y, z, entity);
+		return InteractionResult.SUCCESS;
 	}
 
 	@Override
