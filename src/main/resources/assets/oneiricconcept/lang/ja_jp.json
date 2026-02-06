@@ -401,5 +401,9 @@
   "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
   "translation.oneiricconcept.marshmallow": "",
   "translation.oneiricconcept.marshmallow2": "",
-  "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern"
+  "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
 }

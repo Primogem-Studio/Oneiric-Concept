@@ -19,6 +19,8 @@ import net.mcreator.oneiricconcept.client.gui.WhiteMoonlightAbsorberGUIScreen;
 import net.mcreator.oneiricconcept.client.gui.PhlogistontankGuiScreen;
 import net.mcreator.oneiricconcept.client.gui.NestGUIScreen;
 import net.mcreator.oneiricconcept.client.gui.LibGuiScreen;
+import net.mcreator.oneiricconcept.client.gui.GUIcelebratoryxiaolanternScreen;
+import net.mcreator.oneiricconcept.client.gui.GUIcelebratoryxiaolanternEditScreen;
 import net.mcreator.oneiricconcept.client.gui.FishingScreen;
 import net.mcreator.oneiricconcept.client.gui.CrystalgeneratorGUIScreen;
 
@@ -32,6 +34,8 @@ public class OneiricconceptModScreens {
 		event.register(OneiricconceptModMenus.CRYSTALGENERATOR_GUI.get(), CrystalgeneratorGUIScreen::new);
 		event.register(OneiricconceptModMenus.NEST_GUI.get(), NestGUIScreen::new);
 		event.register(OneiricconceptModMenus.WHITE_MOONLIGHT_ABSORBER_GUI.get(), WhiteMoonlightAbsorberGUIScreen::new);
+		event.register(OneiricconceptModMenus.GU_ICELEBRATORYXIAOLANTERN.get(), GUIcelebratoryxiaolanternScreen::new);
+		event.register(OneiricconceptModMenus.GU_ICELEBRATORYXIAOLANTERN_EDIT.get(), GUIcelebratoryxiaolanternEditScreen::new);
 	}
 
 	public interface ScreenAccessor {

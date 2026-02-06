@@ -400,5 +400,9 @@
   "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
   "translation.oneiricconcept.marshmallow": "§cFly to the sky §eand receive rewards after surviving",
   "translation.oneiricconcept.marshmallow2": "§cFly to the sky, §4fly higher and §bearn better rewards",
-  "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern"
+  "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
+  "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
 }

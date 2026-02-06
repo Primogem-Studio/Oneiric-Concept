@@ -19,6 +19,8 @@ import net.mcreator.oneiricconcept.world.inventory.WhiteMoonlightAbsorberGUIMenu
 import net.mcreator.oneiricconcept.world.inventory.PhlogistontankGuiMenu;
 import net.mcreator.oneiricconcept.world.inventory.NestGUIMenu;
 import net.mcreator.oneiricconcept.world.inventory.LibGuiMenu;
+import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternMenu;
+import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternEditMenu;
 import net.mcreator.oneiricconcept.world.inventory.FishingMenu;
 import net.mcreator.oneiricconcept.world.inventory.CrystalgeneratorGUIMenu;
 import net.mcreator.oneiricconcept.network.MenuStateUpdateMessage;
@@ -34,6 +36,9 @@ public class OneiricconceptModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<CrystalgeneratorGUIMenu>> CRYSTALGENERATOR_GUI = REGISTRY.register("crystalgenerator_gui", () -> IMenuTypeExtension.create(CrystalgeneratorGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<NestGUIMenu>> NEST_GUI = REGISTRY.register("nest_gui", () -> IMenuTypeExtension.create(NestGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WhiteMoonlightAbsorberGUIMenu>> WHITE_MOONLIGHT_ABSORBER_GUI = REGISTRY.register("white_moonlight_absorber_gui", () -> IMenuTypeExtension.create(WhiteMoonlightAbsorberGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUIcelebratoryxiaolanternMenu>> GU_ICELEBRATORYXIAOLANTERN = REGISTRY.register("gu_icelebratoryxiaolantern", () -> IMenuTypeExtension.create(GUIcelebratoryxiaolanternMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<GUIcelebratoryxiaolanternEditMenu>> GU_ICELEBRATORYXIAOLANTERN_EDIT = REGISTRY.register("gu_icelebratoryxiaolantern_edit",
+			() -> IMenuTypeExtension.create(GUIcelebratoryxiaolanternEditMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

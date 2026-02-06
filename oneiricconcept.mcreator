@@ -16517,6 +16517,98 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "GUIcelebratoryxiaolantern",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_icelebratoryxiaolantern",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/GUIcelebratoryxiaolanternMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/GUIcelebratoryxiaolanternScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "GUIcelebratoryxiaolanternEdit",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gu_icelebratoryxiaolantern_edit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/GUIcelebratoryxiaolanternEditMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/GUIcelebratoryxiaolanternEditScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "XiaolanternOpenGui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xiaolantern_open_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XiaolanternOpenGuiProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Edited",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "edited",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/EditedProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -17840,7 +17932,11 @@
       "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
       "translation.oneiricconcept.marshmallow": "§cFly to the sky §eand receive rewards after surviving",
       "translation.oneiricconcept.marshmallow2": "§cFly to the sky, §4fly higher and §bearn better rewards",
-      "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern"
+      "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18244,7 +18340,11 @@
       "item.oneiricconcept.boomyampyro": "火焰爆爆薯",
       "translation.oneiricconcept.marshmallow": "§c飞向高天，§e存活后获得奖励",
       "translation.oneiricconcept.marshmallow2": "§c飞向高天，§4飞得更高§e且能够获得§b更好的奖励",
-      "block.oneiricconcept.celebratory_xiao_lantern": "节庆霄灯"
+      "block.oneiricconcept.celebratory_xiao_lantern": "节庆霄灯",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -18649,7 +18749,11 @@
       "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
       "translation.oneiricconcept.marshmallow": "",
       "translation.oneiricconcept.marshmallow2": "",
-      "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern"
+      "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern.second": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern.frist": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second": "",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.frist": ""
     }
   },
   "metadata": {
