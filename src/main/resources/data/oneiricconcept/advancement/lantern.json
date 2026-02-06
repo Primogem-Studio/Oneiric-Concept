@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:celebratory_xiao_lantern"
+    },
+    "title": {
+      "translate": "advancements.lantern.title"
+    },
+    "description": {
+      "translate": "advancements.lantern.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lantern_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oneiricconcept:celebratory_xiao_lantern"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "oneiricconcept:oneiric_concept_advancement"
+}

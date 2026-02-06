@@ -17008,6 +17008,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Lantern",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lantern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/lantern.json"
+        ]
+      },
+      "path": "~/Advancement"
     }
   ],
   "variable_elements": [
@@ -18343,7 +18356,9 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
-      "translation.oneiricconcept.from": "from"
+      "translation.oneiricconcept.from": "from",
+      "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
+      "advancements.lantern.descr": "create a celebratory xiao lantern"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18759,7 +18774,9 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "切换背景图片",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "保存",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
-      "translation.oneiricconcept.from": "来自"
+      "translation.oneiricconcept.from": "来自",
+      "advancements.lantern.title": "东边劈竹旅行者，再拿桑麻做派蒙",
+      "advancements.lantern.descr": "获得一个节庆霄灯"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -19176,7 +19193,9 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
-      "translation.oneiricconcept.from": ""
+      "translation.oneiricconcept.from": "",
+      "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
+      "advancements.lantern.descr": "create a celebratory xiao lantern"
     }
   },
   "metadata": {
