@@ -16972,6 +16972,38 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "GetPlaceInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_place_information",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetPlaceInformationProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -18306,7 +18338,8 @@
       "translation.oneiricconcept.lantrentip": "Switch background image",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": ""
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
+      "translation.oneiricconcept.from": "from"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18719,9 +18752,10 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty": "\u003c",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_empty1": "\u003e",
       "translation.oneiricconcept.lantren": "",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": ""
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "切换背景图片",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "保存",
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
+      "translation.oneiricconcept.from": "来自"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -19137,7 +19171,8 @@
       "translation.oneiricconcept.lantren": "",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
-      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": ""
+      "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
+      "translation.oneiricconcept.from": ""
     }
   },
   "metadata": {

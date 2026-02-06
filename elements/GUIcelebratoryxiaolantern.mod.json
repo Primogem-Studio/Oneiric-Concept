@@ -143,6 +143,23 @@
           "y": 128,
           "locked": false
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_place_information",
+          "text": {
+            "fixedValue": "",
+            "name": "GetPlaceInformation"
+          },
+          "color": {
+            "value": -395036,
+            "falpha": 0.0
+          },
+          "x": 213,
+          "y": 228,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

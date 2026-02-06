@@ -12,6 +12,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternMenu;
 import net.mcreator.oneiricconcept.procedures.IsTextWhiteProcedure;
 import net.mcreator.oneiricconcept.procedures.IsTextBrownProcedure;
+import net.mcreator.oneiricconcept.procedures.GetPlaceInformationProcedure;
 import net.mcreator.oneiricconcept.procedures.GetLantern3Procedure;
 import net.mcreator.oneiricconcept.procedures.GetLantern2Procedure;
 import net.mcreator.oneiricconcept.procedures.GetLantern1Procedure;
@@ -82,6 +83,7 @@ public class GUIcelebratoryxiaolanternScreen extends AbstractContainerScreen<GUI
 			guiGraphics.drawString(this.font, GetLantern2Procedure.execute(world, x, y, z), 167, 98, -395036, false);
 		if (IsTextWhiteProcedure.execute(world, x, y, z))
 			guiGraphics.drawString(this.font, GetLantern3Procedure.execute(world, x, y, z), 168, 116, -395036, false);
+		guiGraphics.drawString(this.font, GetPlaceInformationProcedure.execute(world, x, y, z), 199, 216, -395036, false);
 	}
 
 	@Override
