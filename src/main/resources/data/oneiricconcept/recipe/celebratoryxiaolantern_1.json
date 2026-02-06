@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:cloud"
+    },
+    "b": {
+      "item": "minecraft:bamboo_hanging_sign"
+    },
+    "c": {
+      "item": "primogemcraft:xiaodengwupin"
+    },
+    "d": {
+      "item": "primogemcraft:mmola_01"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:celebratory_xiao_lantern",
+    "count": 1
+  }
+}

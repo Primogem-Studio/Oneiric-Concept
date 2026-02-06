@@ -412,5 +412,7 @@
   "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "切换背景图片",
   "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "保存",
   "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
-  "translation.oneiricconcept.from": "来自"
+  "translation.oneiricconcept.from": "来自",
+  "advancements.lantern.title": "东边劈竹旅行者，再拿桑麻做派蒙",
+  "advancements.lantern.descr": "获得一个节庆霄灯"
 }

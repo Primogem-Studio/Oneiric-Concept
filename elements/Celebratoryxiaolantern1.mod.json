@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "Blocks.BAMBOO_HANGING_SIGN"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:HonkaiSliver"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      },
+      {
+        "value": "CUSTOM:MoraSausage"
+      },
+      {
+        "value": "CUSTOM:Cloud"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CelebratoryXiaoLantern"
+    },
+    "name": "celebratoryxiaolantern_1",
+    "namespace": "mod"
+  }
+}

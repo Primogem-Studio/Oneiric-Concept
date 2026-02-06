@@ -412,5 +412,7 @@
   "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.label_switch_background_image": "Switch background image",
   "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.button_save": "save",
   "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
-  "translation.oneiricconcept.from": "from"
+  "translation.oneiricconcept.from": "from",
+  "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
+  "advancements.lantern.descr": "create a celebratory xiao lantern"
 }
