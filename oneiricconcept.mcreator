@@ -13156,29 +13156,6 @@
       "path": "~/process"
     },
     {
-      "name": "BackUIDListorder",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "back_uid_listorder",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/BackUIDListorderProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/process"
-    },
-    {
       "name": "MinusLIstorder",
       "type": "procedure",
       "compiles": true,
@@ -13194,8 +13171,8 @@
             "type": "entity"
           },
           {
-            "name": "world",
-            "type": "world"
+            "name": "max",
+            "type": "number"
           }
         ]
       },
@@ -16609,6 +16586,76 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "PlusUIDListorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plus_uid_listorder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlusUIDListorderProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "PlusListorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plus_listorder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "max",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlusListorderProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "MinusUIDLIstorder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minus_uidl_istorder",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/MinusUIDLIstorderProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

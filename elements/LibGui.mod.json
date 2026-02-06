@@ -51,7 +51,7 @@
           "text": "<",
           "isUndecorated": false,
           "onClick": {
-            "name": "MinusLIstorder"
+            "name": "MinusUIDLIstorder"
           },
           "width": 30,
           "height": 20,
@@ -67,7 +67,7 @@
           "text": ">",
           "isUndecorated": false,
           "onClick": {
-            "name": "BackUIDListorder"
+            "name": "PlusUIDListorder"
           },
           "width": 30,
           "height": 20,

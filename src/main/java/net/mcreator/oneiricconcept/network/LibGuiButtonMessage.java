@@ -15,9 +15,9 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.procedures.MinusLIstorderProcedure;
+import net.mcreator.oneiricconcept.procedures.PlusUIDListorderProcedure;
+import net.mcreator.oneiricconcept.procedures.MinusUIDLIstorderProcedure;
 import net.mcreator.oneiricconcept.procedures.LibQueryProcedure;
-import net.mcreator.oneiricconcept.procedures.BackUIDListorderProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -51,11 +51,11 @@ public record LibGuiButtonMessage(int buttonID, int x, int y, int z) implements 
 			return;
 		if (buttonID == 0) {
 
-			MinusLIstorderProcedure.execute(world, entity);
+			MinusUIDLIstorderProcedure.execute(world, entity);
 		}
 		if (buttonID == 1) {
 
-			BackUIDListorderProcedure.execute(world, entity);
+			PlusUIDListorderProcedure.execute(world, entity);
 		}
 		if (buttonID == 2) {
 
