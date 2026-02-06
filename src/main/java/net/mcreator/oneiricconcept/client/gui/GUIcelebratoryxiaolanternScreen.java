@@ -83,7 +83,7 @@ public class GUIcelebratoryxiaolanternScreen extends AbstractContainerScreen<GUI
 			guiGraphics.drawString(this.font, GetLantern2Procedure.execute(world, x, y, z), 167, 98, -395036, false);
 		if (IsTextWhiteProcedure.execute(world, x, y, z))
 			guiGraphics.drawString(this.font, GetLantern3Procedure.execute(world, x, y, z), 168, 116, -395036, false);
-		guiGraphics.drawString(this.font, GetPlaceInformationProcedure.execute(world, x, y, z), 199, 216, -395036, false);
+		guiGraphics.drawString(this.font, GetPlaceInformationProcedure.execute(world, x, y, z, entity), 199, 216, -395036, false);
 	}
 
 	@Override
