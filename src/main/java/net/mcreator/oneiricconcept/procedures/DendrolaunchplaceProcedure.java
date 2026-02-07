@@ -31,10 +31,10 @@ public class DendrolaunchplaceProcedure {
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
 				if (!projectileLevel.isClientSide()) {
-					Projectile _entityToSpawn = initArrowProjectile(new DendroCoreEntity(OneiricconceptModEntities.DENDRO_CORE.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 3)), entity, 5, true, false, false,
+					Projectile _entityToSpawn = initArrowProjectile(new DendroCoreEntity(OneiricconceptModEntities.DENDRO_CORE.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 3)), entity, 2, true, false, false,
 							AbstractArrow.Pickup.DISALLOWED);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}
@@ -46,7 +46,7 @@ public class DendrolaunchplaceProcedure {
 					Projectile _entityToSpawn = initArrowProjectile(new ExplosiveEntity(OneiricconceptModEntities.EXPLOSIVE.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), entity, 5, true, false, false,
 							AbstractArrow.Pickup.DISALLOWED);
 					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 2, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}
