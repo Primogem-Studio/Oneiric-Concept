@@ -30,16 +30,14 @@ public class ExplodeBoomBlossomsNoLoadProcedure {
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.FREEZE)), 20, 21);
 			ExplosionIgnitesProcedure.execute(world, x, y, z, 2, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO.get() == blockstate.getBlock()) {
-			for (int index0 = 0; index0 < 5; index0++) {
-				ExplosionIgnitesProcedure.execute(world, x, y, z, 3, 21);
-			}
+			ExplosionIgnitesProcedure.execute(world, x, y, z, 3, 21);
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.WITHER)), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO.get() == blockstate.getBlock()) {
 			ExplosionIgnitesProcedure.execute(world, x, y, z, 1, 21);
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO.get() == blockstate.getBlock()) {
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT)), 20, 21);
-			for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 5, 10); index1++) {
+			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 5, 10); index0++) {
 				rx = x + Mth.nextInt(RandomSource.create(), -10, 10);
 				rz = z + Mth.nextInt(RandomSource.create(), -10, 10);
 				if (world instanceof ServerLevel _level) {
