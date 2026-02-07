@@ -24,6 +24,7 @@ import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
 import net.mcreator.oneiricconcept.entity.InvalidEntity;
 import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
 import net.mcreator.oneiricconcept.entity.EngineeringAntimatterBombEntity;
+import net.mcreator.oneiricconcept.entity.DendroCoreEntity;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
 import net.mcreator.oneiricconcept.entity.BaryonEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
@@ -59,6 +60,8 @@ public class OneiricconceptModEntities {
 			EntityType.Builder.<EngineeringAntimatterBombEntity>of(EngineeringAntimatterBombEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(1f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<DendroCoreEntity>> DENDRO_CORE = register("dendro_core",
+			EntityType.Builder.<DendroCoreEntity>of(DendroCoreEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

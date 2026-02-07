@@ -31,5 +31,6 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.BARYON.get(), BaryonRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.ON_LASER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.ENGINEERING_ANTIMATTER_BOMB.get(), EngineeringAntimatterBombRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.DENDRO_CORE.get(), ThrownItemRenderer::new);
 	}
 }

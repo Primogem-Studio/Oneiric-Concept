@@ -17062,6 +17062,85 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "TraverseBackPac",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "traverse_back_pac",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "items",
+            "type": "itemstack"
+          },
+          {
+            "name": "itemtag",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "itemstack",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TraverseBackPacProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Dendrolaunchplace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dendrolaunchplace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/DendrolaunchplaceProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "DendroCore",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dendro_core",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/entity/DendroCoreEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -17789,6 +17868,10 @@
       "EXTERNAL:primogemcraft:xyzp",
       "EXTERNAL:primogemcraft:qwwzsw",
       "EXTERNAL:primogemcraft:qwxydsw"
+    ],
+    "ITEMS:mod:dendrolunch": [
+      "CUSTOM:Boomyampyro",
+      "EXTERNAL:primogemcraft:caoyuanhe"
     ]
   },
   "tab_element_order": {

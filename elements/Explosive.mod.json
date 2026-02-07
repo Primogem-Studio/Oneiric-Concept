@@ -7,7 +7,7 @@
     },
     "showParticles": false,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "entity.generic.explode"
     },
     "igniteFire": true,
     "disableGravity": false,

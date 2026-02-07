@@ -2,7 +2,6 @@ package net.mcreator.oneiricconcept.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -13,7 +12,8 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 
-import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
+import net.mcreator.oneiricconcept.procedures.DendrolaunchplaceProcedure;
+import net.mcreator.oneiricconcept.entity.InvalidEntity;
 
 public class DendroLaunchItem extends Item {
 	public DendroLaunchItem() {
@@ -50,7 +50,7 @@ public class DendroLaunchItem extends Item {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-				ExplosiveEntity projectile = ExplosiveEntity.shoot(world, entity, world.getRandom());
+				InvalidEntity projectile = InvalidEntity.shoot(world, entity, world.getRandom());
 				if (player.getAbilities().instabuild) {
 					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 				} else {
@@ -62,21 +62,12 @@ public class DendroLaunchItem extends Item {
 						stack.shrink(1);
 					}
 				}
+				DendrolaunchplaceProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 			}
 		}
 	}
 
 	private ItemStack findAmmo(Player player) {
-		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == ExplosiveEntity.PROJECTILE_ITEM.getItem());
-		if (stack == ItemStack.EMPTY) {
-			for (int i = 0; i < player.getInventory().items.size(); i++) {
-				ItemStack teststack = player.getInventory().items.get(i);
-				if (teststack != null && teststack.getItem() == ExplosiveEntity.PROJECTILE_ITEM.getItem()) {
-					stack = teststack;
-					break;
-				}
-			}
-		}
-		return stack;
+		return new ItemStack(InvalidEntity.PROJECTILE_ITEM.getItem());
 	}
 }

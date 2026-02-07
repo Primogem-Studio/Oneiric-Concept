@@ -4,7 +4,6 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -22,28 +21,28 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.oneiricconcept.procedures.SetexplosiveProcedure;
-import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
+import net.mcreator.oneiricconcept.procedures.ArborProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
+import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 import javax.annotation.Nullable;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get());
+public class DendroCoreEntity extends AbstractArrow implements ItemSupplier {
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(OneiricconceptModBlocks.DAWNLEAVES.get());
 	private int knockback = 0;
 
-	public ExplosiveEntity(EntityType<? extends ExplosiveEntity> type, Level world) {
+	public DendroCoreEntity(EntityType<? extends DendroCoreEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public ExplosiveEntity(EntityType<? extends ExplosiveEntity> type, double x, double y, double z, Level world, @Nullable ItemStack firedFromWeapon) {
+	public DendroCoreEntity(EntityType<? extends DendroCoreEntity> type, double x, double y, double z, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, x, y, z, world, PROJECTILE_ITEM, firedFromWeapon);
 		if (firedFromWeapon != null)
 			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
 	}
 
-	public ExplosiveEntity(EntityType<? extends ExplosiveEntity> type, LivingEntity entity, Level world, @Nullable ItemStack firedFromWeapon) {
+	public DendroCoreEntity(EntityType<? extends DendroCoreEntity> type, LivingEntity entity, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, entity, world, PROJECTILE_ITEM, firedFromWeapon);
 		if (firedFromWeapon != null)
 			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
@@ -57,7 +56,7 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getDefaultPickupItem() {
-		return new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get());
+		return new ItemStack(OneiricconceptModBlocks.DAWNLEAVES.get());
 	}
 
 	@Override
@@ -84,15 +83,9 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		SetexplosiveProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		SetexplosiveProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		ArborProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -102,40 +95,38 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 			this.discard();
 	}
 
-	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 2f, 1, 0);
+	public static DendroCoreEntity shoot(Level world, LivingEntity entity, RandomSource source) {
+		return shoot(world, entity, source, 1f, 5, 5);
 	}
 
-	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 2f, 1, 0);
+	public static DendroCoreEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 1f, 5, 5);
 	}
 
-	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		ExplosiveEntity entityarrow = new ExplosiveEntity(OneiricconceptModEntities.EXPLOSIVE.get(), entity, world, null);
+	public static DendroCoreEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
+		DendroCoreEntity entityarrow = new DendroCoreEntity(OneiricconceptModEntities.DENDRO_CORE.get(), entity, world, null);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
-		entityarrow.igniteForSeconds(100);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.explode")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.bamboo.break")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
-	public static ExplosiveEntity shoot(LivingEntity entity, LivingEntity target) {
-		ExplosiveEntity entityarrow = new ExplosiveEntity(OneiricconceptModEntities.EXPLOSIVE.get(), entity, entity.level(), null);
+	public static DendroCoreEntity shoot(LivingEntity entity, LivingEntity target) {
+		DendroCoreEntity entityarrow = new DendroCoreEntity(OneiricconceptModEntities.DENDRO_CORE.get(), entity, entity.level(), null);
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(1);
-		entityarrow.setKnockback(0);
+		entityarrow.setBaseDamage(5);
+		entityarrow.setKnockback(5);
 		entityarrow.setCritArrow(false);
-		entityarrow.igniteForSeconds(100);
 		entity.level().addFreshEntity(entityarrow);
-		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.explode")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.bamboo.break")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }
