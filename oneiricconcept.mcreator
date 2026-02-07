@@ -18377,7 +18377,11 @@
     ],
     "ITEMS:mod:dendrolunch": [
       "CUSTOM:Boomyampyro",
-      "EXTERNAL:primogemcraft:caoyuanhe"
+      "EXTERNAL:primogemcraft:caoyuanhe",
+      "CUSTOM:CryoBoomyam",
+      "CUSTOM:DendroBoomyam",
+      "CUSTOM:ElectroBoomyam",
+      "CUSTOM:HydroBoomyam"
     ]
   },
   "tab_element_order": {

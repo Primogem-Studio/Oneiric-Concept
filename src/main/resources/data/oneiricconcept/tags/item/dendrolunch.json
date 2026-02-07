@@ -1,10 +1,14 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:hydro_boomyam",
     {
       "id": "primogemcraft:caoyuanhe",
       "required": false
     },
-    "oneiricconcept:boomyampyro"
+    "oneiricconcept:boomyampyro",
+    "oneiricconcept:electro_boomyam",
+    "oneiricconcept:cryo_boomyam",
+    "oneiricconcept:dendro_boomyam"
   ]
 }
