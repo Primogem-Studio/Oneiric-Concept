@@ -6,7 +6,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -24,13 +23,14 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.oneiricconcept.procedures.SetexplosiveProcedure;
+import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 
 import javax.annotation.Nullable;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Blocks.TNT);
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get());
 	private int knockback = 0;
 
 	public ExplosiveEntity(EntityType<? extends ExplosiveEntity> type, Level world) {
@@ -57,7 +57,7 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getDefaultPickupItem() {
-		return new ItemStack(Blocks.TNT);
+		return new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get());
 	}
 
 	@Override
@@ -103,11 +103,11 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 3f, 1, 0);
+		return shoot(world, entity, source, 2f, 1, 0);
 	}
 
 	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
-		return shoot(world, entity, source, pullingPower * 3f, 1, 0);
+		return shoot(world, entity, source, pullingPower * 2f, 1, 0);
 	}
 
 	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -117,6 +117,7 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
+		entityarrow.igniteForSeconds(100);
 		world.addFreshEntity(entityarrow);
 		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
@@ -127,11 +128,12 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 3f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(1);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
+		entityarrow.igniteForSeconds(100);
 		entity.level().addFreshEntity(entityarrow);
 		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;

@@ -9593,6 +9593,7 @@
       "registry_name": "explosive",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/ExplosiveRenderer.java",
           "src/main/java/net/mcreator/oneiricconcept/entity/ExplosiveEntity.java"
         ]
       }
