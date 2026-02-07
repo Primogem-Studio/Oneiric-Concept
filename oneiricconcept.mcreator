@@ -17637,6 +17637,66 @@
         ]
       },
       "path": "~/loot"
+    },
+    {
+      "name": "BoomblossomsCryoF",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomblossoms_cryo_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_cryo_f.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_cryo_f.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_cryo_f_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "BoomblossomsDendroF",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomblossoms_dendro_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_dendro_f.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_dendro_f.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_dendro_f_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "BoomblossomsElectroF",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomblossoms_electro_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_electro_f.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_electro_f_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_electro_f.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "BoomblossomsHydroF",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomblossoms_hydro_f",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_hydro_f.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_hydro_f_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_hydro_f.json"
+        ]
+      },
+      "path": "~/Feature"
     }
   ],
   "variable_elements": [
