@@ -1,7 +1,6 @@
 package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.util.Mth;
 import net.minecraft.core.BlockPos;
@@ -29,7 +28,7 @@ public class SetexplosiveProcedure {
 					rx = x + sx;
 					ry = y + sy;
 					rz = z + sz;
-					if (!!((world.getBlockState(BlockPos.containing(rx, ry, rz))).getBlock() == Blocks.AIR) && world.getBlockFloorHeight(BlockPos.containing(rx, ry - 1, rz)) > 0) {
+					if ((world.getBlockState(BlockPos.containing(rx, ry, rz))).canBeReplaced() && world.getBlockFloorHeight(BlockPos.containing(rx, ry - 1, rz)) > 0) {
 						if (RandomProcedure.execute(world, Mth.clamp(((range / 2) / new Vec3(x, y, z).distanceTo(new Vec3(rx, ry, rz)) - 1), 0, 1) * 0.2)) {
 							world.setBlock(BlockPos.containing(rx, ry, rz), OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().defaultBlockState(), 3);
 							BoomBlossomsPyroBoomProcedure.execute(world, rx, ry, rz);
