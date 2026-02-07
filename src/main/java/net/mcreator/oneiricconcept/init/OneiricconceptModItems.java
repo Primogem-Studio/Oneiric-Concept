@@ -113,6 +113,7 @@ import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamyConeItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
 import net.mcreator.oneiricconcept.item.DivineArrowEmbersItem;
+import net.mcreator.oneiricconcept.item.DendroLaunchItem;
 import net.mcreator.oneiricconcept.item.DeepMarrowRockSaltItem;
 import net.mcreator.oneiricconcept.item.DarkXuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.DXuanyuanItem;
@@ -340,6 +341,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> THE_BOON_OF_THE_ELDER_TREE = REGISTRY.register("the_boon_of_the_elder_tree", TheBoonOfTheElderTreeItem::new);
 	public static final DeferredItem<Item> BOOMYAMPYRO = REGISTRY.register("boomyampyro", BoomyampyroItem::new);
 	public static final DeferredItem<Item> CELEBRATORY_XIAO_LANTERN = block(OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN);
+	public static final DeferredItem<Item> DENDRO_LAUNCH = REGISTRY.register("dendro_launch", DendroLaunchItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

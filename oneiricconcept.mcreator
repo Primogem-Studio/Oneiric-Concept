@@ -17035,6 +17035,20 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "DendroLaunch",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dendro_launch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/DendroLaunchItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/dendro_launch.json"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [
@@ -17869,7 +17883,8 @@
       "WhiteMoonlightAbsorber",
       "ChenyuAdepteaSeedling",
       "TheBoonOfTheElderTree",
-      "BoomBlossomsPyro"
+      "BoomBlossomsPyro",
+      "DendroLaunch"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -18372,7 +18387,8 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
       "translation.oneiricconcept.from": "from",
       "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
-      "advancements.lantern.descr": "create a celebratory xiao lantern"
+      "advancements.lantern.descr": "create a celebratory xiao lantern",
+      "item.oneiricconcept.dendro_launch": "Dendro Launch"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18790,7 +18806,8 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
       "translation.oneiricconcept.from": "来自",
       "advancements.lantern.title": "东边劈竹旅行者，再拿桑麻做派蒙",
-      "advancements.lantern.descr": "获得一个节庆霄灯"
+      "advancements.lantern.descr": "获得一个节庆霄灯",
+      "item.oneiricconcept.dendro_launch": "Dendro Launch"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -19209,7 +19226,8 @@
       "gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first": "",
       "translation.oneiricconcept.from": "",
       "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
-      "advancements.lantern.descr": "create a celebratory xiao lantern"
+      "advancements.lantern.descr": "create a celebratory xiao lantern",
+      "item.oneiricconcept.dendro_launch": "Dendro Launch"
     }
   },
   "metadata": {

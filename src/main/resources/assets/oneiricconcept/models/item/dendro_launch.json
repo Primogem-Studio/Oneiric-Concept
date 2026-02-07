@@ -1,0 +1,7 @@
+{
+  "parent": "oneiricconcept:custom/caopao",
+  "textures": {
+    "1": "oneiricconcept:block/dendro_launch",
+    "particle": "oneiricconcept:item/dendro_launch"
+  }
+}

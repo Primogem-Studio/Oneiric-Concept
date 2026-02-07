@@ -125,6 +125,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.CHENYU_ADEPTEA_SEEDLING.get().asItem());
 				tabData.accept(OneiricconceptModItems.THE_BOON_OF_THE_ELDER_TREE.get());
 				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().asItem());
+				tabData.accept(OneiricconceptModItems.DENDRO_LAUNCH.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
