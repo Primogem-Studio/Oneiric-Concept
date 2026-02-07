@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab ",
+    "bcd",
+    " dd"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:dendro_metal"
+    },
+    "b": {
+      "item": "oneiricconcept:boomyampyro"
+    },
+    "c": {
+      "item": "oneiricconcept:dendrosealingwax"
+    },
+    "d": {
+      "item": "oneiricconcept:ambrosial_arbor_wood"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:dendro_launch",
+    "count": 1
+  }
+}
