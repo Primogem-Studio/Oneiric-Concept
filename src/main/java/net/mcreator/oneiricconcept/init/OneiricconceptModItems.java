@@ -342,6 +342,10 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> BOOMYAMPYRO = REGISTRY.register("boomyampyro", BoomyampyroItem::new);
 	public static final DeferredItem<Item> CELEBRATORY_XIAO_LANTERN = block(OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN);
 	public static final DeferredItem<Item> DENDRO_LAUNCH = REGISTRY.register("dendro_launch", DendroLaunchItem::new);
+	public static final DeferredItem<Item> BOOM_BLOSSOMS_CRYO = block(OneiricconceptModBlocks.BOOM_BLOSSOMS_CRYO);
+	public static final DeferredItem<Item> BOOM_BLOSSOMS_DENDRO = block(OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO);
+	public static final DeferredItem<Item> BOOM_BLOSSOMS_ELECTRO = block(OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO);
+	public static final DeferredItem<Item> BOOM_BLOSSOMS_HYDRO = block(OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO);
 
 	// Start of user code block custom items
 	// End of user code block custom items

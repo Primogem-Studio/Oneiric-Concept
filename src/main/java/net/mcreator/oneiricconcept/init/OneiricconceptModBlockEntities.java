@@ -28,6 +28,10 @@ import net.mcreator.oneiricconcept.block.entity.Geooo1BlockEntity;
 import net.mcreator.oneiricconcept.block.entity.CrystalgeneratorBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.CelebratoryXiaoLanternBlockEntity;
 import net.mcreator.oneiricconcept.block.entity.BoomBlossomsPyroBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.BoomBlossomsHydroBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.BoomBlossomsElectroBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.BoomBlossomsDendroBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.BoomBlossomsCryoBlockEntity;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -47,6 +51,10 @@ public class OneiricconceptModBlockEntities {
 			WhiteMoonlightAbsorberBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CelebratoryXiaoLanternBlockEntity>> CELEBRATORY_XIAO_LANTERN = register("celebratory_xiao_lantern", OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN,
 			CelebratoryXiaoLanternBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsCryoBlockEntity>> BOOM_BLOSSOMS_CRYO = register("boom_blossoms_cryo", OneiricconceptModBlocks.BOOM_BLOSSOMS_CRYO, BoomBlossomsCryoBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsDendroBlockEntity>> BOOM_BLOSSOMS_DENDRO = register("boom_blossoms_dendro", OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO, BoomBlossomsDendroBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsElectroBlockEntity>> BOOM_BLOSSOMS_ELECTRO = register("boom_blossoms_electro", OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO, BoomBlossomsElectroBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsHydroBlockEntity>> BOOM_BLOSSOMS_HYDRO = register("boom_blossoms_hydro", OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO, BoomBlossomsHydroBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -70,5 +78,9 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, NEST.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, WHITE_MOONLIGHT_ABSORBER.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CELEBRATORY_XIAO_LANTERN.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_CRYO.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_DENDRO.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_ELECTRO.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_HYDRO.get(), SidedInvWrapper::new);
 	}
 }

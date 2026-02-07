@@ -1,9 +1,13 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:boom_blossoms_electro",
     "oneiricconcept:boom_blossoms_pyro",
     "oneiricconcept:banana_mushroom_bock",
     "oneiricconcept:nagadus_emerald_ore",
+    "oneiricconcept:boom_blossoms_hydro",
+    "oneiricconcept:boom_blossoms_dendro",
+    "oneiricconcept:boom_blossoms_cryo",
     "oneiricconcept:wayfareblessing"
   ]
 }

@@ -83,6 +83,10 @@ import net.mcreator.oneiricconcept.block.CamerapinkBlock;
 import net.mcreator.oneiricconcept.block.CameraBlock;
 import net.mcreator.oneiricconcept.block.CCactusBlock;
 import net.mcreator.oneiricconcept.block.BoomBlossomsPyroBlock;
+import net.mcreator.oneiricconcept.block.BoomBlossomsHydroBlock;
+import net.mcreator.oneiricconcept.block.BoomBlossomsElectroBlock;
+import net.mcreator.oneiricconcept.block.BoomBlossomsDendroBlock;
+import net.mcreator.oneiricconcept.block.BoomBlossomsCryoBlock;
 import net.mcreator.oneiricconcept.block.BigStoneBlock;
 import net.mcreator.oneiricconcept.block.BigRockBlock;
 import net.mcreator.oneiricconcept.block.BananaMushroomBockBlock;
@@ -186,6 +190,10 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> CHENYU_ADEPTEA_TREE = REGISTRY.register("chenyu_adeptea_tree", ChenyuAdepteaTreeBlock::new);
 	public static final DeferredBlock<Block> CHENYU_ADEPTEA_SEEDLING = REGISTRY.register("chenyu_adeptea_seedling", ChenyuAdepteaSeedlingBlock::new);
 	public static final DeferredBlock<Block> CELEBRATORY_XIAO_LANTERN = REGISTRY.register("celebratory_xiao_lantern", CelebratoryXiaoLanternBlock::new);
+	public static final DeferredBlock<Block> BOOM_BLOSSOMS_CRYO = REGISTRY.register("boom_blossoms_cryo", BoomBlossomsCryoBlock::new);
+	public static final DeferredBlock<Block> BOOM_BLOSSOMS_DENDRO = REGISTRY.register("boom_blossoms_dendro", BoomBlossomsDendroBlock::new);
+	public static final DeferredBlock<Block> BOOM_BLOSSOMS_ELECTRO = REGISTRY.register("boom_blossoms_electro", BoomBlossomsElectroBlock::new);
+	public static final DeferredBlock<Block> BOOM_BLOSSOMS_HYDRO = REGISTRY.register("boom_blossoms_hydro", BoomBlossomsHydroBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

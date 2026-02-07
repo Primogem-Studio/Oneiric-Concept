@@ -126,6 +126,10 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.THE_BOON_OF_THE_ELDER_TREE.get());
 				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().asItem());
 				tabData.accept(OneiricconceptModItems.DENDRO_LAUNCH.get());
+				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_CRYO.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO.get().asItem());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {

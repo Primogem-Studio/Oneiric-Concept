@@ -415,5 +415,9 @@
   "translation.oneiricconcept.from": "from",
   "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
   "advancements.lantern.descr": "create a celebratory xiao lantern",
-  "item.oneiricconcept.dendro_launch": "Dendro Launch"
+  "item.oneiricconcept.dendro_launch": "Dendro Launch",
+  "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Cryo",
+  "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Dendro",
+  "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Electro",
+  "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro"
 }

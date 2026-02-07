@@ -17141,6 +17141,78 @@
           "src/main/java/net/mcreator/oneiricconcept/entity/DendroCoreEntity.java"
         ]
       }
+    },
+    {
+      "name": "BoomBlossomsCryo",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_blossoms_cryo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsCryoBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_cryo.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_cryo.json",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsCryoRenderer.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_cryo.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsCryoBlock.java"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BoomBlossomsDendro",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_blossoms_dendro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsDendroRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsDendroBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_dendro.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsDendroBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_dendro.json",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_dendro.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BoomBlossomsElectro",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_blossoms_electro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsElectroBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_electro.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_electro.json",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsElectroRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsElectroBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_electro.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "BoomBlossomsHydro",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_blossoms_hydro",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_hydro.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsHydroBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsHydroRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsHydroBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_hydro.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_hydro.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [
@@ -17444,6 +17516,10 @@
       "TAG:c:foods/cooked_fish"
     ],
     "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:BoomBlossomsHydro",
+      "~CUSTOM:BoomBlossomsElectro",
+      "~CUSTOM:BoomBlossomsDendro",
+      "~CUSTOM:BoomBlossomsCryo",
       "~CUSTOM:Texturewayfareblessing",
       "~CUSTOM:NagadusEmeraldOre",
       "~CUSTOM:BananaMushroomBock",
@@ -17980,7 +18056,11 @@
       "ChenyuAdepteaSeedling",
       "TheBoonOfTheElderTree",
       "BoomBlossomsPyro",
-      "DendroLaunch"
+      "DendroLaunch",
+      "BoomBlossomsCryo",
+      "BoomBlossomsDendro",
+      "BoomBlossomsElectro",
+      "BoomBlossomsHydro"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -18484,7 +18564,11 @@
       "translation.oneiricconcept.from": "from",
       "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
       "advancements.lantern.descr": "create a celebratory xiao lantern",
-      "item.oneiricconcept.dendro_launch": "Dendro Launch"
+      "item.oneiricconcept.dendro_launch": "Dendro Launch",
+      "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Cryo",
+      "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Dendro",
+      "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Electro",
+      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Hydro"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -18903,7 +18987,11 @@
       "translation.oneiricconcept.from": "来自",
       "advancements.lantern.title": "东边劈竹旅行者，再拿桑麻做派蒙",
       "advancements.lantern.descr": "获得一个节庆霄灯",
-      "item.oneiricconcept.dendro_launch": "Dendro Launch"
+      "item.oneiricconcept.dendro_launch": "Dendro Launch",
+      "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Pyro",
+      "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Pyro",
+      "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Dendro",
+      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -19323,7 +19411,11 @@
       "translation.oneiricconcept.from": "",
       "advancements.lantern.title": "East side bamboo chopping traveler, then use mulberry and hemp to make paimon",
       "advancements.lantern.descr": "create a celebratory xiao lantern",
-      "item.oneiricconcept.dendro_launch": "Dendro Launch"
+      "item.oneiricconcept.dendro_launch": "Dendro Launch",
+      "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Pyro",
+      "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Pyro",
+      "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Dendro",
+      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro"
     }
   },
   "metadata": {

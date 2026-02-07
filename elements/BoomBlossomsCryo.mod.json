@@ -1,0 +1,173 @@
+{
+  "_fv": 79,
+  "_type": "block",
+  "definition": {
+    "texture": "boom_blossoms_cryo",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 4,
+    "customModelName": "Modelboom_blossoms",
+    "rotationMode": 0,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:boom_blossomsAnimation.bomb"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "IsInBlock"
+        }
+      }
+    ],
+    "itemTexture": "boom_blossoms_cryo_item",
+    "particleTexture": "",
+    "blockSetType": "OAK",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": true,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 9.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "customProperties": [],
+    "name": "Boom Blossoms Cryo",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 4.0,
+    "resistance": 0.0,
+    "hasGravity": false,
+    "isWaterloggable": true,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:OneiricConcept"
+      }
+    ],
+    "destroyTool": "hoe",
+    "customDrop": {
+      "value": "CUSTOM:BoomBlossomsDendro"
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": true,
+    "requiresCorrectTool": true,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
+    "tickRate": 0,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "ICE",
+    "noteBlockInstrument": "harp",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "ignitedByLava": false,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": true,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
+    "sensitiveToVibration": false,
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
+    "hasInventory": true,
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "SilkEleseBomb"
+    },
+    "onDestroyedByExplosion": {
+      "name": "BoomBlossomsBoom"
+    },
+    "onEntityCollides": {
+      "name": "BoomBlossomsPyroBoom"
+    },
+    "onHitByProjectile": {
+      "name": "BoomBlossomsPyroBoom"
+    },
+    "generateFeature": false,
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_overworld"
+      }
+    ],
+    "blocksToReplace": [
+      {
+        "value": "TAG:minecraft:replaceable_by_mushrooms"
+      }
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 1,
+    "minGenerateHeight": 64,
+    "maxGenerateHeight": 128
+  }
+}
