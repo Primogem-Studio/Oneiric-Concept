@@ -19434,14 +19434,14 @@
       "advancements.lantern.title": "东边劈竹旅行者，再拿桑麻做派蒙",
       "advancements.lantern.descr": "获得一个节庆霄灯",
       "item.oneiricconcept.dendro_launch": "Dendro Launch",
-      "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Pyro",
-      "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Pyro",
-      "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Dendro",
-      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro",
-      "item.oneiricconcept.cryo_boomyam": "Pyro Boom Yam",
-      "item.oneiricconcept.dendro_boomyam": "Cryo Boom Yam",
-      "item.oneiricconcept.electro_boomyam": "Dendro Boom Yam",
-      "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam"
+      "block.oneiricconcept.boom_blossoms_cryo": "寒冰爆爆瓜",
+      "block.oneiricconcept.boom_blossoms_dendro": "蔓草爆爆瓜",
+      "block.oneiricconcept.boom_blossoms_electro": "激雷爆爆瓜",
+      "block.oneiricconcept.boom_blossoms_hydro": "净水爆爆瓜",
+      "item.oneiricconcept.cryo_boomyam": "寒冰爆爆薯",
+      "item.oneiricconcept.dendro_boomyam": "蔓草爆爆薯",
+      "item.oneiricconcept.electro_boomyam": "激雷爆爆薯",
+      "item.oneiricconcept.hydro_boomyam": "净水爆爆薯"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
