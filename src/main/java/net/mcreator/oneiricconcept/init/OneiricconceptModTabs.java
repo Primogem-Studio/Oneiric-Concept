@@ -124,8 +124,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CHENYU_ADEPTEA_SEEDLING.get().asItem());
 				tabData.accept(OneiricconceptModItems.THE_BOON_OF_THE_ELDER_TREE.get());
-				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().asItem());
 				tabData.accept(OneiricconceptModItems.DENDRO_LAUNCH.get());
+				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_CRYO.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO.get().asItem());
@@ -183,11 +183,11 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.DREAMY_CONE.get());
 				tabData.accept(OneiricconceptModItems.FINE_TEA_FULL_MOON.get());
 				tabData.accept(OneiricconceptModItems.CHENYU_ADEPTEA.get());
+				tabData.accept(OneiricconceptModItems.PYRO_BOOMYAM.get());
 				tabData.accept(OneiricconceptModItems.CRYO_BOOMYAM.get());
 				tabData.accept(OneiricconceptModItems.DENDRO_BOOMYAM.get());
 				tabData.accept(OneiricconceptModItems.ELECTRO_BOOMYAM.get());
 				tabData.accept(OneiricconceptModItems.HYDRO_BOOMYAM.get());
-				tabData.accept(OneiricconceptModItems.PYRO_BOOMYAM.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HERTABOND.get())).displayItems((parameters, tabData) -> {

@@ -414,7 +414,7 @@
   "translation.oneiricconcept.from": "来自",
   "advancements.lantern.title": "东边劈竹旅行者，再拿桑麻做派蒙",
   "advancements.lantern.descr": "获得一个节庆霄灯",
-  "item.oneiricconcept.dendro_launch": "Dendro Launch",
+  "item.oneiricconcept.dendro_launch": "草元素发射器",
   "block.oneiricconcept.boom_blossoms_cryo": "寒冰爆爆瓜",
   "block.oneiricconcept.boom_blossoms_dendro": "蔓草爆爆瓜",
   "block.oneiricconcept.boom_blossoms_electro": "激雷爆爆瓜",
@@ -423,5 +423,5 @@
   "item.oneiricconcept.dendro_boomyam": "蔓草爆爆薯",
   "item.oneiricconcept.electro_boomyam": "激雷爆爆薯",
   "item.oneiricconcept.hydro_boomyam": "净水爆爆薯",
-  "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
+  "item.oneiricconcept.pyro_boomyam": "火焰爆爆薯"
 }
