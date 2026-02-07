@@ -97,7 +97,7 @@ public class BoomBlossomsPyroBlock extends Block implements SimpleWaterloggedBlo
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		SilkEleseBombProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		SilkEleseBombProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate, entity);
 		return retval;
 	}
 
