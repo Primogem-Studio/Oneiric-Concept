@@ -419,5 +419,9 @@
   "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Cryo",
   "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Dendro",
   "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Electro",
-  "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Hydro"
+  "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Hydro",
+  "item.oneiricconcept.cryo_boomyam": "Cryo Boom Yam",
+  "item.oneiricconcept.dendro_boomyam": "Dendro Boom Yam",
+  "item.oneiricconcept.electro_boomyam": "Electro Boom Yam",
+  "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam"
 }

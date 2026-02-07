@@ -90,6 +90,7 @@ import net.mcreator.oneiricconcept.item.LegionPseudoSliverItem;
 import net.mcreator.oneiricconcept.item.LegionPseudoCoreItem;
 import net.mcreator.oneiricconcept.item.IgnisAureliaeItem;
 import net.mcreator.oneiricconcept.item.IceFreshRawFrostweaveSalmonSlicesItem;
+import net.mcreator.oneiricconcept.item.HydroBoomyamItem;
 import net.mcreator.oneiricconcept.item.HungerItem;
 import net.mcreator.oneiricconcept.item.HonkaiSliverItem;
 import net.mcreator.oneiricconcept.item.HonkaiShardItem;
@@ -109,15 +110,18 @@ import net.mcreator.oneiricconcept.item.ExampleItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkSugarFreeItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkPrimogemItem;
 import net.mcreator.oneiricconcept.item.EnergyDrinkItem;
+import net.mcreator.oneiricconcept.item.ElectroBoomyamItem;
 import net.mcreator.oneiricconcept.item.DumplingItem;
 import net.mcreator.oneiricconcept.item.DreamyConeItem;
 import net.mcreator.oneiricconcept.item.DreamdiveCanItem;
 import net.mcreator.oneiricconcept.item.DivineArrowEmbersItem;
 import net.mcreator.oneiricconcept.item.DendroLaunchItem;
+import net.mcreator.oneiricconcept.item.DendroBoomyamItem;
 import net.mcreator.oneiricconcept.item.DeepMarrowRockSaltItem;
 import net.mcreator.oneiricconcept.item.DarkXuanyuanSwordItem;
 import net.mcreator.oneiricconcept.item.DXuanyuanItem;
 import net.mcreator.oneiricconcept.item.CullinanItem;
+import net.mcreator.oneiricconcept.item.CryoBoomyamItem;
 import net.mcreator.oneiricconcept.item.ConquerorSWillItem;
 import net.mcreator.oneiricconcept.item.CondensedMemoriaPieceItem;
 import net.mcreator.oneiricconcept.item.CompressTotemlootItem;
@@ -346,6 +350,10 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> BOOM_BLOSSOMS_DENDRO = block(OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO);
 	public static final DeferredItem<Item> BOOM_BLOSSOMS_ELECTRO = block(OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO);
 	public static final DeferredItem<Item> BOOM_BLOSSOMS_HYDRO = block(OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO);
+	public static final DeferredItem<Item> CRYO_BOOMYAM = REGISTRY.register("cryo_boomyam", CryoBoomyamItem::new);
+	public static final DeferredItem<Item> DENDRO_BOOMYAM = REGISTRY.register("dendro_boomyam", DendroBoomyamItem::new);
+	public static final DeferredItem<Item> ELECTRO_BOOMYAM = REGISTRY.register("electro_boomyam", ElectroBoomyamItem::new);
+	public static final DeferredItem<Item> HYDRO_BOOMYAM = REGISTRY.register("hydro_boomyam", HydroBoomyamItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

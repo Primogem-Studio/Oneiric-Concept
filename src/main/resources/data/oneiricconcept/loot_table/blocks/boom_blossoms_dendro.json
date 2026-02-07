@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:boomyampyro",
+          "name": "oneiricconcept:dendro_boomyam",
           "weight": 1,
           "conditions": [
             {
@@ -44,5 +44,5 @@
       ]
     }
   ],
-  "random_sequence": "oneiricconcept:blocks/boom_blossoms_pyro"
+  "random_sequence": "oneiricconcept:blocks/boom_blossoms_dendro"
 }

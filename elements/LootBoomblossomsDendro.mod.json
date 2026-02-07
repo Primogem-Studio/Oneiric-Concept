@@ -14,7 +14,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Boomyampyro"
+              "value": "CUSTOM:DendroBoomyam"
             },
             "weight": 1,
             "minCount": 1,
@@ -28,7 +28,7 @@
         ]
       }
     ],
-    "name": "blocks/boom_blossoms_pyro",
+    "name": "blocks/boom_blossoms_dendro",
     "namespace": "mod"
   }
 }

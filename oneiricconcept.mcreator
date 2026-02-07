@@ -16202,8 +16202,8 @@
       "registry_name": "boomyampyro",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/BoomyampyroItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/boomyampyro.json"
+          "src/main/resources/assets/oneiricconcept/models/item/boomyampyro.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/BoomyampyroItem.java"
         ]
       },
       "path": "~/item"
@@ -17535,6 +17535,114 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "CryoBoomyam",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cryo_boomyam",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/cryo_boomyam.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/CryoBoomyamItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "DendroBoomyam",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dendro_boomyam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/DendroBoomyamItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/dendro_boomyam.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "ElectroBoomyam",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electro_boomyam",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/electro_boomyam.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/ElectroBoomyamItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "HydroBoomyam",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hydro_boomyam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/HydroBoomyamItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/hydro_boomyam.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "LootBoomblossomsCryo",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_boomblossoms_cryo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_cryo.json"
+        ]
+      },
+      "path": "~/loot"
+    },
+    {
+      "name": "LootBoomblossomsDendro",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_boomblossoms_dendro",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_dendro.json"
+        ]
+      },
+      "path": "~/loot"
+    },
+    {
+      "name": "LootBoomblossomsElectro",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_boomblossoms_electro",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_electro.json"
+        ]
+      },
+      "path": "~/loot"
+    },
+    {
+      "name": "LootBoomblossomsHydro",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot_boomblossoms_hydro",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/boom_blossoms_hydro.json"
+        ]
+      },
+      "path": "~/loot"
     }
   ],
   "variable_elements": [
@@ -18435,7 +18543,11 @@
       "DreamyCone",
       "FineTeaFullMoon",
       "ChenyuAdeptea",
-      "Boomyampyro"
+      "Boomyampyro",
+      "CryoBoomyam",
+      "DendroBoomyam",
+      "ElectroBoomyam",
+      "HydroBoomyam"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPresent",
@@ -18890,7 +19002,11 @@
       "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Cryo",
       "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Dendro",
       "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Electro",
-      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Hydro"
+      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Hydro",
+      "item.oneiricconcept.cryo_boomyam": "Cryo Boom Yam",
+      "item.oneiricconcept.dendro_boomyam": "Dendro Boom Yam",
+      "item.oneiricconcept.electro_boomyam": "Electro Boom Yam",
+      "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19313,7 +19429,11 @@
       "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Pyro",
       "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Pyro",
       "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Dendro",
-      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro"
+      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro",
+      "item.oneiricconcept.cryo_boomyam": "Pyro Boom Yam",
+      "item.oneiricconcept.dendro_boomyam": "Cryo Boom Yam",
+      "item.oneiricconcept.electro_boomyam": "Dendro Boom Yam",
+      "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -19737,7 +19857,11 @@
       "block.oneiricconcept.boom_blossoms_cryo": "Boom Blossoms Pyro",
       "block.oneiricconcept.boom_blossoms_dendro": "Boom Blossoms Pyro",
       "block.oneiricconcept.boom_blossoms_electro": "Boom Blossoms Dendro",
-      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro"
+      "block.oneiricconcept.boom_blossoms_hydro": "Boom Blossoms Electro",
+      "item.oneiricconcept.cryo_boomyam": "Pyro Boom Yam",
+      "item.oneiricconcept.dendro_boomyam": "Cryo Boom Yam",
+      "item.oneiricconcept.electro_boomyam": "Dendro Boom Yam",
+      "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam"
     }
   },
   "metadata": {

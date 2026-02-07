@@ -184,6 +184,10 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.FINE_TEA_FULL_MOON.get());
 				tabData.accept(OneiricconceptModItems.CHENYU_ADEPTEA.get());
 				tabData.accept(OneiricconceptModItems.BOOMYAMPYRO.get());
+				tabData.accept(OneiricconceptModItems.CRYO_BOOMYAM.get());
+				tabData.accept(OneiricconceptModItems.DENDRO_BOOMYAM.get());
+				tabData.accept(OneiricconceptModItems.ELECTRO_BOOMYAM.get());
+				tabData.accept(OneiricconceptModItems.HYDRO_BOOMYAM.get());
 			}).withTabsBefore(ONEIRIC_CONCEPT.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPT_DECORATION = REGISTRY.register("oneiric_concept_decoration",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_concept_decoration")).icon(() -> new ItemStack(OneiricconceptModBlocks.HERTABOND.get())).displayItems((parameters, tabData) -> {
