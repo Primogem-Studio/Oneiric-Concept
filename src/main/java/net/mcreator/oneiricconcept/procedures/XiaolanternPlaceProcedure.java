@@ -7,19 +7,19 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class XiaolanternPlaceProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		OneiricconceptMod.queueServerWork(1, () -> {
 			if (!getBlockNBTLogic(world, BlockPos.containing(x, y, z), "up")) {
 				if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).canBeReplaced()) {
 					{
 						BlockPos _bp = BlockPos.containing(x, y + 1, z);
-						BlockState _bs = OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN.get().defaultBlockState();
+						BlockState _bs = blockstate;
 						BlockState _bso = world.getBlockState(_bp);
 						for (Property<?> _propertyOld : _bso.getProperties()) {
 							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
@@ -29,7 +29,22 @@ public class XiaolanternPlaceProcedure {
 								} catch (Exception e) {
 								}
 						}
+						BlockEntity _be = world.getBlockEntity(_bp);
+						CompoundTag _bnbt = null;
+						if (_be != null) {
+							_bnbt = _be.saveWithFullMetadata(world.registryAccess());
+							_be.setRemoved();
+						}
 						world.setBlock(_bp, _bs, 3);
+						if (_bnbt != null) {
+							_be = world.getBlockEntity(_bp);
+							if (_be != null) {
+								try {
+									_be.loadWithComponents(_bnbt, world.registryAccess());
+								} catch (Exception ignored) {
+								}
+							}
+						}
 					}
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y + 1, z);

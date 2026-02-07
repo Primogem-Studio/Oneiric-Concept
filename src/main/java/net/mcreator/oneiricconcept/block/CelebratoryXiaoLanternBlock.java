@@ -130,7 +130,7 @@ public class CelebratoryXiaoLanternBlock extends Block implements SimpleWaterlog
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		XiaolanternPlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		XiaolanternPlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override
