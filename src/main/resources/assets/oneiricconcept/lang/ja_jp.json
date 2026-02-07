@@ -398,7 +398,6 @@
   "advancements.hello_world.title": "こんにちは、世界！",
   "gamerule.fallingMeat": "§d梦华构想 掉落肉",
   "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
-  "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
   "translation.oneiricconcept.marshmallow": "",
   "translation.oneiricconcept.marshmallow2": "",
   "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
@@ -424,5 +423,6 @@
   "item.oneiricconcept.cryo_boomyam": "Pyro Boom Yam",
   "item.oneiricconcept.dendro_boomyam": "Cryo Boom Yam",
   "item.oneiricconcept.electro_boomyam": "Dendro Boom Yam",
-  "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam"
+  "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam",
+  "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
 }

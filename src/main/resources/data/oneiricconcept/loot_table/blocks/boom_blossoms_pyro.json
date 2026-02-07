@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:boomyampyro",
+          "name": "oneiricconcept:pyro_boomyam",
           "weight": 1,
           "conditions": [
             {

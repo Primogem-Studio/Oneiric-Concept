@@ -27,7 +27,7 @@ public class BoomYam1BrewingRecipe implements IBrewingRecipe {
 
 	@Override
 	public boolean isIngredient(ItemStack ingredient) {
-		return Ingredient.of(new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get())).test(ingredient);
+		return Ingredient.of(new ItemStack(OneiricconceptModItems.PYRO_BOOMYAM.get())).test(ingredient);
 	}
 
 	@Override

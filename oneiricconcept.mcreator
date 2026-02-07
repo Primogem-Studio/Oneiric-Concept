@@ -2746,11 +2746,11 @@
       "registry_name": "tnt_dispenser",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/tnt_dispenser.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/tnt_dispenser.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TNTDispenserBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/tnt_dispenser.json",
           "src/main/resources/assets/oneiricconcept/models/item/tnt_dispenser.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/tnt_dispenser.json"
+          "src/main/resources/assets/oneiricconcept/models/block/tnt_dispenser.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/tnt_dispenser.json"
         ]
       },
       "path": "~/block"
@@ -3430,8 +3430,8 @@
       "registry_name": "example",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/example.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/ExampleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/example.json"
         ]
       },
       "path": "~/Per/PER"
@@ -4886,10 +4886,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/block/redmoon_metal.json",
-          "src/main/resources/assets/oneiricconcept/models/item/redmoon_metal.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoon_metal.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Redmo1Block.java",
           "src/main/resources/assets/oneiricconcept/blockstates/redmoon_metal.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Redmo1Block.java"
+          "src/main/resources/assets/oneiricconcept/models/item/redmoon_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoon_metal.json"
         ]
       },
       "path": "~/Per/block/red_moon"
@@ -6762,8 +6762,8 @@
       "registry_name": "heartofthefrozensea",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthefrozensea.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefrozenseaItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefrozenseaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthefrozensea.json"
         ]
       },
       "path": "~/item"
@@ -6879,12 +6879,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_4.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_4.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json"
         ]
       },
       "path": "~/item"
@@ -9133,8 +9133,8 @@
       "registry_name": "heartofthefish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthefish.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefishItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefishItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthefish.json"
         ]
       },
       "path": "~/item"
@@ -12033,8 +12033,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/baryon_biome_modifier.json",
-          "src/main/java/net/mcreator/oneiricconcept/entity/BaryonEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/BaryonRenderer.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/BaryonRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/BaryonEntity.java"
         ]
       }
     },
@@ -14366,9 +14366,9 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest.json",
+          "src/main/java/net/mcreator/oneiricconcept/world/features/PlaceNestFeature.java",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest.json",
-          "src/main/java/net/mcreator/oneiricconcept/world/features/PlaceNestFeature.java"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest.json"
         ],
         "has_nbt_structure": true
       },
@@ -14409,9 +14409,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest_below_leave.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest_below_leave.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_below_leave_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest_below_leave.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_below_leave_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -14676,8 +14676,8 @@
       "registry_name": "engineering_antimatter_bomb",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/EngineeringAntimatterBombRenderer.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/EngineeringAntimatterBombRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java"
         ]
       }
     },
@@ -15088,11 +15088,11 @@
       "registry_name": "theanotherworldmooningot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/theanotherworldmooningot.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/theanotherworldmooningot.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TheanotherworldmooningotBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/theanotherworldmooningot.json",
           "src/main/resources/assets/oneiricconcept/models/item/theanotherworldmooningot.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/theanotherworldmooningot.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/theanotherworldmooningot.json",
+          "src/main/resources/assets/oneiricconcept/models/block/theanotherworldmooningot.json"
         ]
       },
       "path": "~/Per/block/tawmoon"
@@ -15687,10 +15687,10 @@
       "registry_name": "chenyu_adeptea_tree",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json",
-          "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_tree.json",
           "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaTreeBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_tree.json"
+          "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_tree.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_tree.json",
+          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json"
         ]
       },
       "path": "~/block"
@@ -15860,8 +15860,8 @@
       "registry_name": "the_boon_of_the_elder_tree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/TheBoonOfTheElderTreeItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/the_boon_of_the_elder_tree.json"
+          "src/main/resources/assets/oneiricconcept/models/item/the_boon_of_the_elder_tree.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/TheBoonOfTheElderTreeItem.java"
         ]
       },
       "path": "~/item"
@@ -15995,8 +15995,8 @@
         "has_nbt_structure": true,
         "files": [
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/thunder_relic.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/thunder_relic.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/thunder_relic_biome_modifier.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/thunder_relic_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/thunder_relic.json"
         ]
       },
       "path": "~/Feature"
@@ -16022,32 +16022,18 @@
       "registry_name": "taw_moon_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_6.json",
           "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_2.json",
           "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_7.json",
           "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_8.json"
         ]
       },
       "path": "~/Per/block/tawmoon"
-    },
-    {
-      "name": "Event",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "event",
-      "metadata": {
-        "dependencies": [],
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/EventProcedure.java"
-        ]
-      },
-      "path": "~/Per/Event"
     },
     {
       "name": "EventPGC",
@@ -16203,10 +16189,10 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "boomyampyro",
+      "registry_name": "pyro_boomyam",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/boomyampyro.json",
+          "src/main/resources/assets/oneiricconcept/models/item/pyro_boomyam.json",
           "src/main/java/net/mcreator/oneiricconcept/item/BoomyampyroItem.java"
         ]
       },
@@ -16246,9 +16232,9 @@
       "registry_name": "boomblossomspyro_f",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossomspyro_f.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossomspyro_f_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossomspyro_f.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossomspyro_f_biome_modifier.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossomspyro_f.json"
         ]
       },
       "path": "~/Feature"
@@ -18551,11 +18537,11 @@
       "DreamyCone",
       "FineTeaFullMoon",
       "ChenyuAdeptea",
-      "Boomyampyro",
       "CryoBoomyam",
       "DendroBoomyam",
       "ElectroBoomyam",
-      "HydroBoomyam"
+      "HydroBoomyam",
+      "Boomyampyro"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPresent",
@@ -18988,7 +18974,6 @@
       "advancements.hello_world.title": "Hello,World!",
       "gamerule.fallingMeat": "§d梦华构想 掉落肉",
       "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
-      "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
       "translation.oneiricconcept.marshmallow": "§cFly to the sky §eand receive rewards after surviving",
       "translation.oneiricconcept.marshmallow2": "§cFly to the sky, §4fly higher and §bearn better rewards",
       "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
@@ -19014,7 +18999,8 @@
       "item.oneiricconcept.cryo_boomyam": "Cryo Boom Yam",
       "item.oneiricconcept.dendro_boomyam": "Dendro Boom Yam",
       "item.oneiricconcept.electro_boomyam": "Electro Boom Yam",
-      "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam"
+      "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam",
+      "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19415,7 +19401,6 @@
       "advancements.hello_world.title": "你好，世界！",
       "gamerule.fallingMeat": "§d梦华构想 掉落肉",
       "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
-      "item.oneiricconcept.boomyampyro": "火焰爆爆薯",
       "translation.oneiricconcept.marshmallow": "§c飞向高天，§e存活后获得奖励",
       "translation.oneiricconcept.marshmallow2": "§c飞向高天，§4飞得更高§e且能够获得§b更好的奖励",
       "block.oneiricconcept.celebratory_xiao_lantern": "节庆霄灯",
@@ -19441,7 +19426,8 @@
       "item.oneiricconcept.cryo_boomyam": "寒冰爆爆薯",
       "item.oneiricconcept.dendro_boomyam": "蔓草爆爆薯",
       "item.oneiricconcept.electro_boomyam": "激雷爆爆薯",
-      "item.oneiricconcept.hydro_boomyam": "净水爆爆薯"
+      "item.oneiricconcept.hydro_boomyam": "净水爆爆薯",
+      "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -19843,7 +19829,6 @@
       "advancements.hello_world.title": "こんにちは、世界！",
       "gamerule.fallingMeat": "§d梦华构想 掉落肉",
       "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
-      "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
       "translation.oneiricconcept.marshmallow": "",
       "translation.oneiricconcept.marshmallow2": "",
       "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
@@ -19869,7 +19854,8 @@
       "item.oneiricconcept.cryo_boomyam": "Pyro Boom Yam",
       "item.oneiricconcept.dendro_boomyam": "Cryo Boom Yam",
       "item.oneiricconcept.electro_boomyam": "Dendro Boom Yam",
-      "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam"
+      "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam",
+      "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
     }
   },
   "metadata": {

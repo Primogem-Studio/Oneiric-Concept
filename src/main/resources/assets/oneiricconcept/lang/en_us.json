@@ -397,7 +397,6 @@
   "advancements.hello_world.title": "Hello,World!",
   "gamerule.fallingMeat": "§d梦华构想 掉落肉",
   "gamerule.fallingMeat.description": "禁用后，生物将不会掉落任何肉馅",
-  "item.oneiricconcept.boomyampyro": "Pyro Boom Yam",
   "translation.oneiricconcept.marshmallow": "§cFly to the sky §eand receive rewards after surviving",
   "translation.oneiricconcept.marshmallow2": "§cFly to the sky, §4fly higher and §bearn better rewards",
   "block.oneiricconcept.celebratory_xiao_lantern": "Celebratory Xiao Lantern",
@@ -423,5 +422,6 @@
   "item.oneiricconcept.cryo_boomyam": "Cryo Boom Yam",
   "item.oneiricconcept.dendro_boomyam": "Dendro Boom Yam",
   "item.oneiricconcept.electro_boomyam": "Electro Boom Yam",
-  "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam"
+  "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam",
+  "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
 }

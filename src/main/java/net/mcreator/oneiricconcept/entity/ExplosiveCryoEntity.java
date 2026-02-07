@@ -30,7 +30,7 @@ import javax.annotation.Nullable;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class ExplosiveCryoEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get());
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(OneiricconceptModItems.PYRO_BOOMYAM.get());
 	private int knockback = 0;
 
 	public ExplosiveCryoEntity(EntityType<? extends ExplosiveCryoEntity> type, Level world) {
@@ -57,7 +57,7 @@ public class ExplosiveCryoEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getDefaultPickupItem() {
-		return new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get());
+		return new ItemStack(OneiricconceptModItems.PYRO_BOOMYAM.get());
 	}
 
 	@Override
