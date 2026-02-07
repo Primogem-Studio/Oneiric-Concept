@@ -12,6 +12,10 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.oneiricconcept.client.renderer.SkyShatteringLuxArrowRenderer;
 import net.mcreator.oneiricconcept.client.renderer.ExplosiveRenderer;
+import net.mcreator.oneiricconcept.client.renderer.ExplosiveHydroRenderer;
+import net.mcreator.oneiricconcept.client.renderer.ExplosiveElectroRenderer;
+import net.mcreator.oneiricconcept.client.renderer.ExplosiveDendroRenderer;
+import net.mcreator.oneiricconcept.client.renderer.ExplosiveCryoRenderer;
 import net.mcreator.oneiricconcept.client.renderer.EngineeringAntimatterBombRenderer;
 import net.mcreator.oneiricconcept.client.renderer.CrystalTurtleRenderer;
 import net.mcreator.oneiricconcept.client.renderer.BaryonRenderer;
@@ -32,5 +36,9 @@ public class OneiricconceptModEntityRenderers {
 		event.registerEntityRenderer(OneiricconceptModEntities.ON_LASER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.ENGINEERING_ANTIMATTER_BOMB.get(), EngineeringAntimatterBombRenderer::new);
 		event.registerEntityRenderer(OneiricconceptModEntities.DENDRO_CORE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.EXPLOSIVE_CRYO.get(), ExplosiveCryoRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.EXPLOSIVE_DENDRO.get(), ExplosiveDendroRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.EXPLOSIVE_ELECTRO.get(), ExplosiveElectroRenderer::new);
+		event.registerEntityRenderer(OneiricconceptModEntities.EXPLOSIVE_HYDRO.get(), ExplosiveHydroRenderer::new);
 	}
 }

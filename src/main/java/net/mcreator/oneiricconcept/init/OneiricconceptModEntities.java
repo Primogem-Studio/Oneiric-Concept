@@ -22,7 +22,11 @@ import net.mcreator.oneiricconcept.entity.SkyShatteringLuxArrowEntity;
 import net.mcreator.oneiricconcept.entity.OnLaserEntity;
 import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
 import net.mcreator.oneiricconcept.entity.InvalidEntity;
+import net.mcreator.oneiricconcept.entity.ExplosiveHydroEntity;
 import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
+import net.mcreator.oneiricconcept.entity.ExplosiveElectroEntity;
+import net.mcreator.oneiricconcept.entity.ExplosiveDendroEntity;
+import net.mcreator.oneiricconcept.entity.ExplosiveCryoEntity;
 import net.mcreator.oneiricconcept.entity.EngineeringAntimatterBombEntity;
 import net.mcreator.oneiricconcept.entity.DendroCoreEntity;
 import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
@@ -62,6 +66,14 @@ public class OneiricconceptModEntities {
 					.sized(1f, 1f));
 	public static final DeferredHolder<EntityType<?>, EntityType<DendroCoreEntity>> DENDRO_CORE = register("dendro_core",
 			EntityType.Builder.<DendroCoreEntity>of(DendroCoreEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ExplosiveCryoEntity>> EXPLOSIVE_CRYO = register("explosive_cryo",
+			EntityType.Builder.<ExplosiveCryoEntity>of(ExplosiveCryoEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ExplosiveDendroEntity>> EXPLOSIVE_DENDRO = register("explosive_dendro",
+			EntityType.Builder.<ExplosiveDendroEntity>of(ExplosiveDendroEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ExplosiveElectroEntity>> EXPLOSIVE_ELECTRO = register("explosive_electro",
+			EntityType.Builder.<ExplosiveElectroEntity>of(ExplosiveElectroEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ExplosiveHydroEntity>> EXPLOSIVE_HYDRO = register("explosive_hydro",
+			EntityType.Builder.<ExplosiveHydroEntity>of(ExplosiveHydroEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

@@ -22,7 +22,7 @@ public class OverlimitExplosionProcedure {
 					_level.explode(null, (x + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (y + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)),
 							(z + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (float) Math.min(100, lvl), Level.ExplosionInteraction.BLOCK);
 			}
-			ExplosionIgnitesProcedure.execute(world, x, y, z, Math.min(333, 15 + lvl * 2));
+			ExplosionIgnitesProcedure.execute(world, x, y, z, 0, Math.min(333, 15 + lvl * 2));
 		}
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 			if (!world.isClientSide() && world.getServer() != null)

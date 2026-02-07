@@ -36,7 +36,7 @@ public class WeatherStatusUpdateProcedure {
 					}
 				}
 			}
-			ExplosionIgnitesProcedure.execute(world, x, y, z, 20);
+			ExplosionIgnitesProcedure.execute(world, x, y, z, 0, 20);
 		} else if (world.getLevelData().isRaining()) {
 			wethermode = (world.getLevelData() instanceof ServerLevelData _levelData5 ? _levelData5.getRainTime() : 0) < 3600 ? 0 : 1;
 		} else if (world instanceof Level _lvl6 && _lvl6.isDay()) {

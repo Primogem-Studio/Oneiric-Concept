@@ -2,22 +2,14 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-public class BoomBlossomsPyroBoomProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
-		OneiricconceptMod.queueServerWork(60, () -> {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get()) {
-				world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-				OverlimitExplosionProcedure.execute(world, x, y + 2, z, 3);
-			}
-		});
+public class ExplodeBoomBlossomsProcedure {
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -27,5 +19,10 @@ public class BoomBlossomsPyroBoomProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
+		OneiricconceptMod.queueServerWork(60, () -> {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == blockstate.getBlock()) {
+				ExplodeBoomBlossomsNoLoadProcedure.execute(world, x, y, z, blockstate);
+			}
+		});
 	}
 }

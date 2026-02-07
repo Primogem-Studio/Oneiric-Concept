@@ -20,7 +20,6 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -33,8 +32,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.SilkEleseBombProcedure;
-import net.mcreator.oneiricconcept.procedures.BoomBlossomsPyroBoomProcedure;
-import net.mcreator.oneiricconcept.procedures.BoomBlossomsBoomProcedure;
+import net.mcreator.oneiricconcept.procedures.ExplodeBoomBlossomsProcedure;
 import net.mcreator.oneiricconcept.block.entity.BoomBlossomsElectroBlockEntity;
 
 public class BoomBlossomsElectroBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
@@ -103,20 +101,14 @@ public class BoomBlossomsElectroBlock extends Block implements SimpleWaterlogged
 	}
 
 	@Override
-	public void wasExploded(Level world, BlockPos pos, Explosion e) {
-		super.wasExploded(world, pos, e);
-		BoomBlossomsBoomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		BoomBlossomsPyroBoomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		ExplodeBoomBlossomsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override
 	public void onProjectileHit(Level world, BlockState blockstate, BlockHitResult hit, Projectile entity) {
-		BoomBlossomsPyroBoomProcedure.execute(world, hit.getBlockPos().getX(), hit.getBlockPos().getY(), hit.getBlockPos().getZ());
+		ExplodeBoomBlossomsProcedure.execute(world, hit.getBlockPos().getX(), hit.getBlockPos().getY(), hit.getBlockPos().getZ(), blockstate);
 	}
 
 	@Override

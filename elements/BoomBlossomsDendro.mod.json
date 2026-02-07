@@ -144,14 +144,11 @@
     "onDestroyedByPlayer": {
       "name": "SilkEleseBomb"
     },
-    "onDestroyedByExplosion": {
-      "name": "BoomBlossomsBoom"
-    },
     "onEntityCollides": {
-      "name": "BoomBlossomsPyroBoom"
+      "name": "ExplodeBoomBlossoms"
     },
     "onHitByProjectile": {
-      "name": "BoomBlossomsPyroBoom"
+      "name": "ExplodeBoomBlossoms"
     },
     "generateFeature": false,
     "restrictionBiomes": [

@@ -1,17 +1,16 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
-
 public class BoomBlossomsBoomProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (world.getBlockFloorHeight(BlockPos.containing(x, y - 1, z)) > 0) {
-			world.setBlock(BlockPos.containing(x, y, z), OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get().defaultBlockState(), 3);
-			BoomBlossomsPyroBoomProcedure.execute(world, x, y, z);
+			world.setBlock(BlockPos.containing(x, y, z), blockstate, 3);
+			ExplodeBoomBlossomsProcedure.execute(world, x, y, z, blockstate);
 		} else {
-			OverlimitExplosionProcedure.execute(world, x, y, z, 3);
+			ExplodeBoomBlossomsNoLoadProcedure.execute(world, x, y, z, blockstate);
 		}
 	}
 }

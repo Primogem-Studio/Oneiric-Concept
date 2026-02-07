@@ -15,7 +15,7 @@
     "damage": 1.0,
     "knockback": 0,
     "entityModel": "Modelboom_blossoms",
-    "customModelTexture": "boom_blossoms.png",
+    "customModelTexture": "boom_blossoms_dendro.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
     "onHitsBlock": {

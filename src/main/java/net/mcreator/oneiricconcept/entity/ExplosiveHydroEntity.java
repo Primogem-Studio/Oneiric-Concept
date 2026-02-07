@@ -29,21 +29,21 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 import javax.annotation.Nullable;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
+public class ExplosiveHydroEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(OneiricconceptModItems.BOOMYAMPYRO.get());
 	private int knockback = 0;
 
-	public ExplosiveEntity(EntityType<? extends ExplosiveEntity> type, Level world) {
+	public ExplosiveHydroEntity(EntityType<? extends ExplosiveHydroEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public ExplosiveEntity(EntityType<? extends ExplosiveEntity> type, double x, double y, double z, Level world, @Nullable ItemStack firedFromWeapon) {
+	public ExplosiveHydroEntity(EntityType<? extends ExplosiveHydroEntity> type, double x, double y, double z, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, x, y, z, world, PROJECTILE_ITEM, firedFromWeapon);
 		if (firedFromWeapon != null)
 			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
 	}
 
-	public ExplosiveEntity(EntityType<? extends ExplosiveEntity> type, LivingEntity entity, Level world, @Nullable ItemStack firedFromWeapon) {
+	public ExplosiveHydroEntity(EntityType<? extends ExplosiveHydroEntity> type, LivingEntity entity, Level world, @Nullable ItemStack firedFromWeapon) {
 		super(type, entity, world, PROJECTILE_ITEM, firedFromWeapon);
 		if (firedFromWeapon != null)
 			setKnockback(EnchantmentHelper.getItemEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), firedFromWeapon));
@@ -102,16 +102,16 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 			this.discard();
 	}
 
-	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource source) {
+	public static ExplosiveHydroEntity shoot(Level world, LivingEntity entity, RandomSource source) {
 		return shoot(world, entity, source, 2f, 1, 0);
 	}
 
-	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+	public static ExplosiveHydroEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
 		return shoot(world, entity, source, pullingPower * 2f, 1, 0);
 	}
 
-	public static ExplosiveEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		ExplosiveEntity entityarrow = new ExplosiveEntity(OneiricconceptModEntities.EXPLOSIVE.get(), entity, world, null);
+	public static ExplosiveHydroEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
+		ExplosiveHydroEntity entityarrow = new ExplosiveHydroEntity(OneiricconceptModEntities.EXPLOSIVE_HYDRO.get(), entity, world, null);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
@@ -122,8 +122,8 @@ public class ExplosiveEntity extends AbstractArrow implements ItemSupplier {
 		return entityarrow;
 	}
 
-	public static ExplosiveEntity shoot(LivingEntity entity, LivingEntity target) {
-		ExplosiveEntity entityarrow = new ExplosiveEntity(OneiricconceptModEntities.EXPLOSIVE.get(), entity, entity.level(), null);
+	public static ExplosiveHydroEntity shoot(LivingEntity entity, LivingEntity target) {
+		ExplosiveHydroEntity entityarrow = new ExplosiveHydroEntity(OneiricconceptModEntities.EXPLOSIVE_HYDRO.get(), entity, entity.level(), null);
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
