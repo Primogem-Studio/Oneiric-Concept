@@ -15,6 +15,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.ResetListorderProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModMenus;
 
 import java.util.function.Supplier;
@@ -55,6 +56,7 @@ public class GUIcelebratoryxiaolanternEditMenu extends AbstractContainerMenu imp
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
+		ResetListorderProcedure.execute(entity);
 	}
 
 	@Override
