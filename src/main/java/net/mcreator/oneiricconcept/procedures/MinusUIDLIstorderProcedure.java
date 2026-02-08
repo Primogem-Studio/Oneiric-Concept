@@ -10,6 +10,6 @@ public class MinusUIDLIstorderProcedure {
 		if (entity == null)
 			return;
 		double listoder = 0;
-		MinusLIstorderProcedure.execute(entity, OneiricconceptModVariables.MapVariables.get(world).playername.size());
+		MinusLIstorderProcedure.execute(world, entity, OneiricconceptModVariables.MapVariables.get(world).playername.size());
 	}
 }

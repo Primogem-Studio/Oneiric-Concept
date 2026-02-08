@@ -2,8 +2,10 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
 public class PlusListorderProcedure {
 	public static void execute(LevelAccessor world, Entity entity, double max) {
@@ -24,6 +26,10 @@ public class PlusListorderProcedure {
 					_vars.ListOrder = 0;
 					_vars.syncPlayerVariables(entity);
 				}
+			}
+			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + listoder)), false);
 			}
 		}
 	}
