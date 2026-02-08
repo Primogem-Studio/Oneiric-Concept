@@ -29,6 +29,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -40,6 +41,7 @@ import net.minecraft.util.FastColor;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.XiaolanternUnPlaceProcedure;
 import net.mcreator.oneiricconcept.procedures.XiaolanternPlaceProcedure;
 import net.mcreator.oneiricconcept.procedures.XiaolanternOpenGuiProcedure;
 import net.mcreator.oneiricconcept.block.entity.CelebratoryXiaoLanternBlockEntity;
@@ -131,6 +133,19 @@ public class CelebratoryXiaoLanternBlock extends Block implements SimpleWaterlog
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		XiaolanternPlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		XiaolanternUnPlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return retval;
+	}
+
+	@Override
+	public void wasExploded(Level world, BlockPos pos, Explosion e) {
+		super.wasExploded(world, pos, e);
+		XiaolanternUnPlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

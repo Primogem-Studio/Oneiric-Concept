@@ -155,6 +155,12 @@
     "onBlockAdded": {
       "name": "XiaolanternPlace"
     },
+    "onDestroyedByPlayer": {
+      "name": "XiaolanternUnPlace"
+    },
+    "onDestroyedByExplosion": {
+      "name": "XiaolanternUnPlace"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -17699,15 +17699,32 @@
       "path": "~/Feature"
     },
     {
-      "name": "XiaolanternTitle",
+      "name": "XiaolanternUnPlace",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xiaolantern_title",
+      "registry_name": "xiaolantern_un_place",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/XiaolanternTitleProcedure.java"
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XiaolanternUnPlaceProcedure.java"
         ]
       },
       "path": "~/process"
