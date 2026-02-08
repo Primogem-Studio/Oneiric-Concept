@@ -17697,6 +17697,20 @@
         ]
       },
       "path": "~/Feature"
+    },
+    {
+      "name": "XiaolanternTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xiaolantern_title",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/XiaolanternTitleProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
