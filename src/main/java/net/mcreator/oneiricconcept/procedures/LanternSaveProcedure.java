@@ -63,7 +63,7 @@ public class LanternSaveProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("txt1", T1);
+				_blockEntity.getPersistentData().putString("txt1", ("\u00A7l" + T1));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -72,7 +72,7 @@ public class LanternSaveProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("txt2", T2);
+				_blockEntity.getPersistentData().putString("txt2", ("\u00A7l" + T2));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -81,7 +81,7 @@ public class LanternSaveProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("txt3", T3);
+				_blockEntity.getPersistentData().putString("txt3", ("\u00A7l" + T3));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
