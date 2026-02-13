@@ -3,7 +3,7 @@
   "_type": "projectile",
   "definition": {
     "projectileItem": {
-      "value": "CUSTOM:Boomyampyro"
+      "value": "CUSTOM:DendroBoomyam"
     },
     "showParticles": false,
     "actionSound": {
