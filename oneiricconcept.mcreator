@@ -16200,7 +16200,7 @@
           "src/main/java/net/mcreator/oneiricconcept/item/BoomyampyroItem.java"
         ]
       },
-      "path": "~/item"
+      "path": "~/item/item_food"
     },
     {
       "name": "BoomYam1",
@@ -17550,7 +17550,7 @@
           "src/main/java/net/mcreator/oneiricconcept/item/CryoBoomyamItem.java"
         ]
       },
-      "path": "~/item"
+      "path": "~/item/item_food"
     },
     {
       "name": "DendroBoomyam",
@@ -17564,7 +17564,7 @@
           "src/main/resources/assets/oneiricconcept/models/item/dendro_boomyam.json"
         ]
       },
-      "path": "~/item"
+      "path": "~/item/item_food"
     },
     {
       "name": "ElectroBoomyam",
@@ -17578,7 +17578,7 @@
           "src/main/java/net/mcreator/oneiricconcept/item/ElectroBoomyamItem.java"
         ]
       },
-      "path": "~/item"
+      "path": "~/item/item_food"
     },
     {
       "name": "HydroBoomyam",
@@ -17592,7 +17592,7 @@
           "src/main/resources/assets/oneiricconcept/models/item/hydro_boomyam.json"
         ]
       },
-      "path": "~/item"
+      "path": "~/item/item_food"
     },
     {
       "name": "LootBoomblossomsCryo",
@@ -17736,6 +17736,93 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Delight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "delight",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/DelightProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "Toastpizza",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toastpizza",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/ToastpizzaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/toastpizza.json"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "ToastToastPizza",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toast_toast_pizza",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/toast_toast_pizza.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/ToastToastPizzaItem.java"
+        ]
+      },
+      "path": "~/item/item_food"
+    },
+    {
+      "name": "Toastpizza1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "toastpizza_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/toastpizza_1.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Toastpizza2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toastpizza_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/toastpizza_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Toasttoastpizza1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toasttoastpizza_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/recipes/toasttoastpizza_1.json",
+          "src/main/resources/data/oneiricconcept/recipe/toasttoastpizza_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -18240,6 +18327,8 @@
       "CUSTOM:SunStartCan"
     ],
     "ITEMS:minecraft:meat": [
+      "~CUSTOM:ToastToastPizza",
+      "~CUSTOM:Toastpizza",
       "~CUSTOM:PlumpFish",
       "~CUSTOM:Sweetflowermedaka",
       "~CUSTOM:IceFreshRawFrostweaveSalmonSlices",
@@ -18644,7 +18733,9 @@
       "CryoBoomyam",
       "DendroBoomyam",
       "ElectroBoomyam",
-      "HydroBoomyam"
+      "HydroBoomyam",
+      "Toastpizza",
+      "ToastToastPizza"
     ],
     "CUSTOM:OneiricConceptDecoration": [
       "PgcPresent",
@@ -19103,7 +19194,9 @@
       "item.oneiricconcept.dendro_boomyam": "Dendro Boom Yam",
       "item.oneiricconcept.electro_boomyam": "Electro Boom Yam",
       "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam",
-      "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
+      "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam",
+      "item.oneiricconcept.toastpizza": "Toast pizza",
+      "item.oneiricconcept.toast_toast_pizza": "Toast toast pizza"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19530,7 +19623,9 @@
       "item.oneiricconcept.dendro_boomyam": "蔓草爆爆薯",
       "item.oneiricconcept.electro_boomyam": "激雷爆爆薯",
       "item.oneiricconcept.hydro_boomyam": "净水爆爆薯",
-      "item.oneiricconcept.pyro_boomyam": "火焰爆爆薯"
+      "item.oneiricconcept.pyro_boomyam": "火焰爆爆薯",
+      "item.oneiricconcept.toastpizza": "吐司披萨",
+      "item.oneiricconcept.toast_toast_pizza": "烤吐司披萨"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -19958,7 +20053,9 @@
       "item.oneiricconcept.dendro_boomyam": "Cryo Boom Yam",
       "item.oneiricconcept.electro_boomyam": "Dendro Boom Yam",
       "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam",
-      "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam"
+      "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam",
+      "item.oneiricconcept.toastpizza": "Toastpizza",
+      "item.oneiricconcept.toast_toast_pizza": "Toastpizza"
     }
   },
   "metadata": {

@@ -32,6 +32,8 @@ import net.mcreator.oneiricconcept.item.VirtualParticleItem;
 import net.mcreator.oneiricconcept.item.UsurperSSchemeItem;
 import net.mcreator.oneiricconcept.item.TreeBarkofEruditionItem;
 import net.mcreator.oneiricconcept.item.TotemlootItem;
+import net.mcreator.oneiricconcept.item.ToastpizzaItem;
+import net.mcreator.oneiricconcept.item.ToastToastPizzaItem;
 import net.mcreator.oneiricconcept.item.ThiefSInstinctItem;
 import net.mcreator.oneiricconcept.item.TheBoonOfTheElderTreeItem;
 import net.mcreator.oneiricconcept.item.TesttoolItem;
@@ -354,6 +356,8 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> DENDRO_BOOMYAM = REGISTRY.register("dendro_boomyam", DendroBoomyamItem::new);
 	public static final DeferredItem<Item> ELECTRO_BOOMYAM = REGISTRY.register("electro_boomyam", ElectroBoomyamItem::new);
 	public static final DeferredItem<Item> HYDRO_BOOMYAM = REGISTRY.register("hydro_boomyam", HydroBoomyamItem::new);
+	public static final DeferredItem<Item> TOASTPIZZA = REGISTRY.register("toastpizza", ToastpizzaItem::new);
+	public static final DeferredItem<Item> TOAST_TOAST_PIZZA = REGISTRY.register("toast_toast_pizza", ToastToastPizzaItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:toast_toast_pizza",
     "oneiricconcept:s_2tuffing",
+    "oneiricconcept:toastpizza",
     "oneiricconcept:oy_stuffing",
     "oneiricconcept:grilled_dumpling",
     "oneiricconcept:smoke_sausage",
