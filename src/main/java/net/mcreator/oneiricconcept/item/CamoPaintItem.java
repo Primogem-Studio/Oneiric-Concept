@@ -22,13 +22,18 @@ public class CamoPaintItem extends Item {
 	}
 
 	@Override
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
+		return 10;
+	}
+
+	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = new ItemStack(Items.BUCKET);
 		super.finishUsingItem(itemstack, world, entity);
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		UsecamoProcedure.execute(world, x, y, z, entity);
+		UsecamoProcedure.execute(world, x, y, z, entity, itemstack);
 		if (itemstack.isEmpty()) {
 			return retval;
 		} else {

@@ -6707,7 +6707,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "OcDamagemultiplier",
@@ -6718,7 +6719,8 @@
       "metadata": {
         "files": [],
         "type": "number"
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "OcHealthmultiplier",
@@ -6729,7 +6731,8 @@
       "metadata": {
         "files": [],
         "type": "number"
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "GCW",
@@ -8214,7 +8217,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "Summonzombie",
@@ -11106,6 +11110,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -11701,7 +11709,8 @@
       "metadata": {
         "files": [],
         "type": "number"
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "MoraBow",
@@ -13632,7 +13641,8 @@
       "metadata": {
         "files": [],
         "type": "logic"
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "Phlogiston1",
@@ -14581,7 +14591,8 @@
       "metadata": {
         "files": [],
         "type": "number"
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "HealthLoseTick",
@@ -17823,6 +17834,29 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "CamoAtk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "camo_atk",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/CamoAtkProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -20262,6 +20296,10 @@
       },
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "GameRule",
         "children": []
       }
     ]

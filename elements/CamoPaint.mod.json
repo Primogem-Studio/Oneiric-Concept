@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "camo_paint",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "name": "Camo Paint",
@@ -16,7 +17,7 @@
     ],
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 32,
+    "useDuration": 10,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {

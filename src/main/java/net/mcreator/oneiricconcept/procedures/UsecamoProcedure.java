@@ -2,8 +2,11 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
@@ -13,7 +16,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
 
 public class UsecamoProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		if (world instanceof Level _level) {
@@ -23,7 +26,11 @@ public class UsecamoProcedure {
 				_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.bucket.empty")), SoundSource.PLAYERS, 2, 1, false);
 			}
 		}
+		if (entity instanceof Player _player)
+			_player.getCooldowns().addCooldown(itemstack.getItem(), 32);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.CAMO, 75 * 20, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.CAMO, 75 * 20, 0, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 75 * 20, 0, false, false));
 	}
 }

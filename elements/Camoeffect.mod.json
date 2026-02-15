@@ -9,12 +9,12 @@
       "falpha": 0.0
     },
     "onAddedSound": {
-      "value": ""
+      "value": "item.bucket.empty"
     },
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
-    "renderStatusInHUD": false,
+    "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
     "onStarted": {

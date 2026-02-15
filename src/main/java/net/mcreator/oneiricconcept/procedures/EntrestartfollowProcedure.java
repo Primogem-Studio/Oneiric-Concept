@@ -17,7 +17,7 @@ public class EntrestartfollowProcedure {
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((entity + "\u7B49\u5F85\u56DE\u590D\u6570\u503C")), false);
 		}
-		OneiricconceptMod.queueServerWork(19, () -> {
+		OneiricconceptMod.queueServerWork(20, () -> {
 			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.FOLLOW_RANGE))
 				_livingEntity2.getAttribute(Attributes.FOLLOW_RANGE).setBaseValue(folrange);
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
