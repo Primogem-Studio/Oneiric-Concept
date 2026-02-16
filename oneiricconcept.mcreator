@@ -17857,6 +17857,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "RiceCake",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rice_cake",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/advancement/rice_cake.json"
+        ]
+      },
+      "path": "~/Advancement"
     }
   ],
   "variable_elements": [
@@ -19230,7 +19243,9 @@
       "item.oneiricconcept.hydro_boomyam": "Hydro Boom Yam",
       "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam",
       "item.oneiricconcept.toastpizza": "Toast pizza",
-      "item.oneiricconcept.toast_toast_pizza": "Toast toast pizza"
+      "item.oneiricconcept.toast_toast_pizza": "Toast toast pizza",
+      "advancements.rice_cake.title": "Rice Cake",
+      "advancements.rice_cake.descr": "Countdown: To Sweet Dreams! "
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19659,7 +19674,9 @@
       "item.oneiricconcept.hydro_boomyam": "净水爆爆薯",
       "item.oneiricconcept.pyro_boomyam": "火焰爆爆薯",
       "item.oneiricconcept.toastpizza": "吐司披萨",
-      "item.oneiricconcept.toast_toast_pizza": "烤吐司披萨"
+      "item.oneiricconcept.toast_toast_pizza": "烤吐司披萨",
+      "advancements.rice_cake.title": "年糕",
+      "advancements.rice_cake.descr": "过年吃的东西，不就是年糕吗？"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20089,7 +20106,9 @@
       "item.oneiricconcept.hydro_boomyam": "Electro Boom Yam",
       "item.oneiricconcept.pyro_boomyam": "Pyro Boom Yam",
       "item.oneiricconcept.toastpizza": "Toastpizza",
-      "item.oneiricconcept.toast_toast_pizza": "Toastpizza"
+      "item.oneiricconcept.toast_toast_pizza": "Toastpizza",
+      "advancements.rice_cake.title": "Rice Cake",
+      "advancements.rice_cake.descr": "Countdown: To Sweet Dreams! "
     }
   },
   "metadata": {
@@ -20307,7 +20326,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "1.9.78",
+    "version": "26.8",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",

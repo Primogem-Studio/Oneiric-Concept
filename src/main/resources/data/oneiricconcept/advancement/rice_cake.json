@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "oneiricconcept:toast_toast_pizza"
+    },
+    "title": {
+      "translate": "advancements.rice_cake.title"
+    },
+    "description": {
+      "translate": "advancements.rice_cake.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rice_cake_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oneiricconcept:toast_toast_pizza"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "oneiricconcept:the_seriousness_of_breakfast"
+}
