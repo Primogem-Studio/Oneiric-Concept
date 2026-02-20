@@ -1,0 +1,39 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_fluid",
+  "catalyst": {
+    "item": "primogemcraft:jianshijingban"
+  },
+  "output": {
+    "amount": 10,
+    "fluid": "oneiricconcept:memoria"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": [
+            "minecraft:has_structure/village_desert",
+            "minecraft:has_structure/village_plains",
+            "minecraft:has_structure/village_savanna",
+            "minecraft:has_structure/village_taiga",
+            "minecraft:has_structure/village_snowy"
+        ]
+      },
+      "depth_max": 160,
+      "depth_min": 63,
+      "dimension_filter": {
+        "blacklist": [],
+        "whitelist": [
+          "minecraft:overworld"
+        ]
+      },
+      "weight": 1
+    }
+  ]
+}

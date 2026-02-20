@@ -17870,6 +17870,19 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "MemoryDrill",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "memory_drill",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/memory_drill.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
