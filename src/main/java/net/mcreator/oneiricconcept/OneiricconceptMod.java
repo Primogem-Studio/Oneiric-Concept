@@ -1,6 +1,5 @@
 package net.mcreator.oneiricconcept;
 
-import net.mcreator.oneiricconcept.procedures.EventPGCProcedure;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -20,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.oneiricconcept.world.features.StructureFeature;
+import net.mcreator.oneiricconcept.procedures.EventPGCProcedure;
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.*;
 
