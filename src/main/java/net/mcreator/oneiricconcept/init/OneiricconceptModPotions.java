@@ -3,7 +3,6 @@
  */
 package net.mcreator.oneiricconcept.init;
 
-import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.item.alchemy.Potion;
