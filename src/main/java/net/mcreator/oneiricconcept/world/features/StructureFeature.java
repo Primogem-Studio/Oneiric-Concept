@@ -1,6 +1,5 @@
 package net.mcreator.oneiricconcept.world.features;
 
-import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager;
