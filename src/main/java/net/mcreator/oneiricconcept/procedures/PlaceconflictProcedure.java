@@ -1,6 +1,7 @@
 package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 
@@ -21,8 +22,9 @@ public class PlaceconflictProcedure {
 			wsen = Direction.NORTH;
 		}
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A7b" + y1 + wsen)), false);
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A7b" + y1 + wsen)), false);
+			}
 		}
 		if (wsen == Direction.SOUTH) {
 			return PlacexyzProcedure.execute(world, x, y, z, maxx, maxy, maxz, minx, miny, minz);

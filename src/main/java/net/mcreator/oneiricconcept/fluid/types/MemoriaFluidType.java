@@ -13,7 +13,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModFluidTypes;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class MemoriaFluidType extends FluidType {
 	public MemoriaFluidType() {
 		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0D).lightLevel(15).density(1).viscosity(1).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)

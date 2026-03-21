@@ -20,19 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.oneiricconcept.world.features.StructureFeature;
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
-import net.mcreator.oneiricconcept.init.OneiricconceptModTabs;
-import net.mcreator.oneiricconcept.init.OneiricconceptModSounds;
-import net.mcreator.oneiricconcept.init.OneiricconceptModPotions;
-import net.mcreator.oneiricconcept.init.OneiricconceptModParticleTypes;
-import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
-import net.mcreator.oneiricconcept.init.OneiricconceptModMenus;
-import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
-import net.mcreator.oneiricconcept.init.OneiricconceptModFluids;
-import net.mcreator.oneiricconcept.init.OneiricconceptModFluidTypes;
-import net.mcreator.oneiricconcept.init.OneiricconceptModFeatures;
-import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlockEntities;
+import net.mcreator.oneiricconcept.init.*;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;

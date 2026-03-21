@@ -12,7 +12,7 @@ public class ResetListorderProcedure {
 		{
 			OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 			_vars.ListOrder = 0;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 	}
 }

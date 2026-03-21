@@ -77,7 +77,7 @@ public class UID18Procedure {
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 				_vars.UID = UUIDstr + "\u00A7e" + "10X98765432".substring((int) (checkk % 11), (int) (checkk % 11));
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			OneiricconceptModVariables.MapVariables.get(world).playerUID.addTag(OneiricconceptModVariables.MapVariables.get(world).playerUID.size(), StringTag.valueOf(entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).UID));
 		}

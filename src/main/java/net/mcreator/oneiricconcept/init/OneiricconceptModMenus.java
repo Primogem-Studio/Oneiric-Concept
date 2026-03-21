@@ -15,14 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.oneiricconcept.world.inventory.WhiteMoonlightAbsorberGUIMenu;
-import net.mcreator.oneiricconcept.world.inventory.PhlogistontankGuiMenu;
-import net.mcreator.oneiricconcept.world.inventory.NestGUIMenu;
-import net.mcreator.oneiricconcept.world.inventory.LibGuiMenu;
-import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternMenu;
-import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternEditMenu;
-import net.mcreator.oneiricconcept.world.inventory.FishingMenu;
-import net.mcreator.oneiricconcept.world.inventory.CrystalgeneratorGUIMenu;
+import net.mcreator.oneiricconcept.world.inventory.*;
 import net.mcreator.oneiricconcept.network.MenuStateUpdateMessage;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 

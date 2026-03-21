@@ -18,23 +18,23 @@ public class CrystalgeneratorpowerProcedure {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null)
+			if (_blockEntity != null) {
 				_blockEntity.getPersistentData().putDouble("time", (world.getLevelData().getGameTime()));
+			}
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
 		new Object() {
-			void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
+			void timedLoop(int _timedLoopIterator, int _timedLoopTotal, int _timedLoopTicks) {
 				if (world instanceof ILevelExtension _ext) {
 					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y, z), null);
 					if (_entityStorage != null)
 						_entityStorage.receiveEnergy((int) power, false);
 				}
-				final int tick2 = ticks;
-				OneiricconceptMod.queueServerWork(tick2, () -> {
-					if (timedlooptotal > timedloopiterator + 1) {
-						timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
-					}
+				final int _timedLoopFinalTick = _timedLoopTicks;
+				OneiricconceptMod.queueServerWork(_timedLoopFinalTick, () -> {
+					if (_timedLoopTotal > _timedLoopIterator + 1)
+						timedLoop(_timedLoopIterator + 1, _timedLoopTotal, _timedLoopFinalTick);
 				});
 			}
 		}.timedLoop(0, 100, 1);
@@ -43,8 +43,9 @@ public class CrystalgeneratorpowerProcedure {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null)
+				if (_blockEntity != null) {
 					_blockEntity.getPersistentData().putBoolean("running", false);
+				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

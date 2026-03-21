@@ -8,14 +8,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.oneiricconcept.client.model.Modelxiao_lantern;
-import net.mcreator.oneiricconcept.client.model.Modelsky_shattering_lux_arrow;
-import net.mcreator.oneiricconcept.client.model.Modelcrystal_turtle;
-import net.mcreator.oneiricconcept.client.model.Modelboom_blossoms;
-import net.mcreator.oneiricconcept.client.model.Modelblock;
-import net.mcreator.oneiricconcept.client.model.ModelBaryon;
+import net.mcreator.oneiricconcept.client.model.*;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class OneiricconceptModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {

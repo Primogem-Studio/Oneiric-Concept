@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -25,16 +26,18 @@ public class CrystalgeneratoritemProcedure {
 		double crystal_power = 0;
 		double copyindex0 = 0;
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u88AB\u8C03\u7528\uFF0C\u5224\u5B9A" + !getBlockNBTLogic(world, BlockPos.containing(x, y, z), "running"))), false);
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u88AB\u8C03\u7528\uFF0C\u5224\u5B9A" + !getBlockNBTLogic(world, BlockPos.containing(x, y, z), "running"))), false);
+			}
 		}
 		if (!getBlockNBTLogic(world, BlockPos.containing(x, y, z), "running")) {
 			pgc = "primogemcraft:";
 			for (int index0 = 0; index0 < 7; index0++) {
 				crystal = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy());
 				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u7B2C" + index0 + "\u683C\u7684\u7269\u54C1\uFF1A" + crystal)), false);
+					if (world instanceof ServerLevel _level) {
+						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u7B2C" + index0 + "\u683C\u7684\u7269\u54C1\uFF1A" + crystal)), false);
+					}
 				}
 				if (!(crystal == ItemStack.EMPTY)) {
 					copyindex0 = index0;
@@ -43,17 +46,19 @@ public class CrystalgeneratoritemProcedure {
 			}
 			crystal_power = CrystalgeneratorListProcedure.execute(crystal);
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5411\u53D1\u7535\u6D41\u7A0B\u4F20\u8F93\u7535\u529B\uFF1A" + crystal_power + "\u7269\u54C1\uFF1A" + crystal + "\u5F53\u524D\u80FD\u91CF\uFF1A"
+				if (world instanceof ServerLevel _level) {
+					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5411\u53D1\u7535\u6D41\u7A0B\u4F20\u8F93\u7535\u529B\uFF1A" + crystal_power + "\u7269\u54C1\uFF1A" + crystal + "\u5F53\u524D\u80FD\u91CF\uFF1A"
 							+ getEnergyStored(world, BlockPos.containing(x, y, z), null) + "\u80FD\u91CF\u4E0A\u9650\uFF1A" + getMaxEnergyStored(world, BlockPos.containing(x, y, z), null))), false);
+				}
 			}
 			if (0 < crystal_power && getEnergyStored(world, BlockPos.containing(x, y, z), null) < getMaxEnergyStored(world, BlockPos.containing(x, y, z), null)) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
+					if (_blockEntity != null) {
 						_blockEntity.getPersistentData().putBoolean("running", true);
+					}
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}

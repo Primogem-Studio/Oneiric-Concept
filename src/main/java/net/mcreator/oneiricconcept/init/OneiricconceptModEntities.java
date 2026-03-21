@@ -15,25 +15,10 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.oneiricconcept.entity.XuanyuanSwordQEntity;
-import net.mcreator.oneiricconcept.entity.XuanyuanQ2Entity;
-import net.mcreator.oneiricconcept.entity.XuanYuanArrowArrowEntity;
-import net.mcreator.oneiricconcept.entity.SkyShatteringLuxArrowEntity;
-import net.mcreator.oneiricconcept.entity.OnLaserEntity;
-import net.mcreator.oneiricconcept.entity.MoraCoinEntity;
-import net.mcreator.oneiricconcept.entity.InvalidEntity;
-import net.mcreator.oneiricconcept.entity.ExplosiveHydroEntity;
-import net.mcreator.oneiricconcept.entity.ExplosiveEntity;
-import net.mcreator.oneiricconcept.entity.ExplosiveElectroEntity;
-import net.mcreator.oneiricconcept.entity.ExplosiveDendroEntity;
-import net.mcreator.oneiricconcept.entity.ExplosiveCryoEntity;
-import net.mcreator.oneiricconcept.entity.EngineeringAntimatterBombEntity;
-import net.mcreator.oneiricconcept.entity.DendroCoreEntity;
-import net.mcreator.oneiricconcept.entity.CrystalTurtleEntity;
-import net.mcreator.oneiricconcept.entity.BaryonEntity;
+import net.mcreator.oneiricconcept.entity.*;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class OneiricconceptModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, OneiricconceptMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<XuanyuanSwordQEntity>> XUANYUAN_SWORD_Q = register("xuanyuan_sword_q",

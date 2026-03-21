@@ -26,7 +26,7 @@ import com.mojang.math.Axis;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class CelebratoryXiaoLanternRenderer implements BlockEntityRenderer<CelebratoryXiaoLanternBlockEntity> {
 	private final CustomHierarchicalModel model;
 	private final ResourceLocation texture;
@@ -81,10 +81,6 @@ public class CelebratoryXiaoLanternRenderer implements BlockEntityRenderer<Celeb
 		public void setupBlockEntityAnim(CelebratoryXiaoLanternBlockEntity blockEntity, float ageInTicks) {
 			animator.setupBlockEntityAnim(blockEntity, ageInTicks);
 			super.setupAnim(null, 0, 0, ageInTicks, 0, 0);
-		}
-
-		public ModelPart getRoot() {
-			return root;
 		}
 
 		private class BlockEntityHierarchicalModel extends HierarchicalModel<Entity> {

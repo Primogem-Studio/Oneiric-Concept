@@ -2,6 +2,7 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
@@ -18,18 +19,19 @@ public class MinusLIstorderProcedure {
 				{
 					OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 					_vars.ListOrder = max - 1;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			} else {
 				{
 					OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 					_vars.ListOrder = listoder - 1;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			}
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + listoder)), false);
+				if (world instanceof ServerLevel _level) {
+					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + listoder)), false);
+				}
 			}
 		}
 	}

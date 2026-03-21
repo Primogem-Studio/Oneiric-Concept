@@ -15,16 +15,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-import net.mcreator.oneiricconcept.client.gui.WhiteMoonlightAbsorberGUIScreen;
-import net.mcreator.oneiricconcept.client.gui.PhlogistontankGuiScreen;
-import net.mcreator.oneiricconcept.client.gui.NestGUIScreen;
-import net.mcreator.oneiricconcept.client.gui.LibGuiScreen;
-import net.mcreator.oneiricconcept.client.gui.GUIcelebratoryxiaolanternScreen;
-import net.mcreator.oneiricconcept.client.gui.GUIcelebratoryxiaolanternEditScreen;
-import net.mcreator.oneiricconcept.client.gui.FishingScreen;
-import net.mcreator.oneiricconcept.client.gui.CrystalgeneratorGUIScreen;
+import net.mcreator.oneiricconcept.client.gui.*;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class OneiricconceptModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {

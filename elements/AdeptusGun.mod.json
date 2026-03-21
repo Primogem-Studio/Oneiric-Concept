@@ -92,6 +92,7 @@
         ]
       }
     ],
+    "animations": [],
     "name": "Adeptus Gun",
     "rarity": "EPIC",
     "creativeTabs": [
@@ -109,6 +110,7 @@
     },
     "destroyAnyBlock": true,
     "immuneToFire": true,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,

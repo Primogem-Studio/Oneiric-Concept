@@ -10,17 +10,9 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.oneiricconcept.client.renderer.SkyShatteringLuxArrowRenderer;
-import net.mcreator.oneiricconcept.client.renderer.ExplosiveRenderer;
-import net.mcreator.oneiricconcept.client.renderer.ExplosiveHydroRenderer;
-import net.mcreator.oneiricconcept.client.renderer.ExplosiveElectroRenderer;
-import net.mcreator.oneiricconcept.client.renderer.ExplosiveDendroRenderer;
-import net.mcreator.oneiricconcept.client.renderer.ExplosiveCryoRenderer;
-import net.mcreator.oneiricconcept.client.renderer.EngineeringAntimatterBombRenderer;
-import net.mcreator.oneiricconcept.client.renderer.CrystalTurtleRenderer;
-import net.mcreator.oneiricconcept.client.renderer.BaryonRenderer;
+import net.mcreator.oneiricconcept.client.renderer.*;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class OneiricconceptModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {

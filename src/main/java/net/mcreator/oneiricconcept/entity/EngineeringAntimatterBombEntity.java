@@ -70,11 +70,6 @@ public class EngineeringAntimatterBombEntity extends Monster {
 	}
 
 	@Override
-	public boolean fireImmune() {
-		return true;
-	}
-
-	@Override
 	public void baseTick() {
 		super.baseTick();
 		HealthLoseTickProcedure.execute(this.level(), this.getX(), this.getZ(), this);

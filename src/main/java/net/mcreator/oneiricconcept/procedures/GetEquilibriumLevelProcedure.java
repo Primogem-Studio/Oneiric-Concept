@@ -11,7 +11,7 @@ public class GetEquilibriumLevelProcedure {
 		{
 			OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 			_vars.ListOrder = JunHengDengJiProcedure.execute(entity) / 5 - 1;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 	}
 }

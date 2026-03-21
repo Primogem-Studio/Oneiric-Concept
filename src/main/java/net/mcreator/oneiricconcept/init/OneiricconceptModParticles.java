@@ -10,7 +10,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.oneiricconcept.client.particle.AmbrosialArborFireParticle;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class OneiricconceptModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {

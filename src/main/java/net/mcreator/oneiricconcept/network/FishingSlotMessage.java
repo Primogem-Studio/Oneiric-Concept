@@ -18,7 +18,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.oneiricconcept.procedures.BaitProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record FishingSlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
 
 	public static final Type<FishingSlotMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "fishing_slots"));

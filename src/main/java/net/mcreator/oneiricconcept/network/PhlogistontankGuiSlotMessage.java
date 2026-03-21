@@ -18,7 +18,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.oneiricconcept.procedures.TankAddLvaTagProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record PhlogistontankGuiSlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
 
 	public static final Type<PhlogistontankGuiSlotMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "phlogistontank_gui_slots"));

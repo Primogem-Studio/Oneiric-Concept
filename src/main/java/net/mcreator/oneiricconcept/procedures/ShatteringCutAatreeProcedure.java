@@ -46,11 +46,11 @@ public class ShatteringCutAatreeProcedure {
 			sz = z + Mth.nextInt(RandomSource.create(), -7, 7);
 		}
 		OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux - 1;
-		OneiricconceptModVariables.MapVariables.get(world).syncData(world);
+		OneiricconceptModVariables.MapVariables.get(world).markSyncDirty();
 		if (OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux < 60) {
 			DivineArrowProcedure.execute(world, x, y, z);
 			OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux + 1;
-			OneiricconceptModVariables.MapVariables.get(world).syncData(world);
+			OneiricconceptModVariables.MapVariables.get(world).markSyncDirty();
 		}
 	}
 }

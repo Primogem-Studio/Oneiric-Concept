@@ -35,7 +35,7 @@ public class ExitWorldProcedure {
 			{
 				OneiricconceptModVariables.PlayerVariables _vars = entityiterator.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 				_vars.ListOrder = 0;
-				_vars.syncPlayerVariables(entityiterator);
+				_vars.markSyncDirty();
 			}
 			if (entityiterator instanceof Player _plr0 && _plr0.containerMenu instanceof LibGuiMenu) {
 				if (entityiterator instanceof Player _player)

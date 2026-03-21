@@ -52,11 +52,12 @@ public class TurtleDamageProcedure {
 			if (entity instanceof CrystalTurtleEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(CrystalTurtleEntity.DATA_IsShrinking, true);
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList()
+				if (world instanceof ServerLevel _level) {
+					_level.getServer().getPlayerList()
 							.broadcastSystemMessage(Component.literal(("\u6C34\u6676\u65F6\u95F4\uFF1A\u00A7b" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0)
 									+ "\u00A7r\u7F29\u58F3\u65F6\u95F4\uFF1A\u00A79" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0)
 									+ "\u00A7r\u4F24\u5BB3\u903B\u8F91\uFF1A\u00A7a" + Damagetyplgc + "\u00A7r\u4F24\u5BB3\uFF1A\u00A74" + damagesource)), false);
+				}
 			}
 			return Times <= 0 || Damagetyplgc;
 		}
@@ -65,11 +66,12 @@ public class TurtleDamageProcedure {
 		if (entity instanceof CrystalTurtleEntity _datEntSetL)
 			_datEntSetL.getEntityData().set(CrystalTurtleEntity.DATA_IsShrinking, true);
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList()
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList()
 						.broadcastSystemMessage(Component.literal(("\u6C34\u6676\u65F6\u95F4\uFF1A\u00A7b" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_crystal) : 0)
 								+ "\u00A7r\u7F29\u58F3\u65F6\u95F4\uFF1A\u00A79" + (entity instanceof CrystalTurtleEntity _datEntI ? _datEntI.getEntityData().get(CrystalTurtleEntity.DATA_ShrinkingShellTime) : 0)
 								+ "\u00A7r\u4F24\u5BB3\u903B\u8F91\uFF1A\u00A7a" + Damagetyplgc + "\u00A7r\u4F24\u5BB3\uFF1A\u00A74" + damagesource)), false);
+			}
 		}
 		return Damagetyplgc || !ShrinkingShellSuoKeProcedure.execute(entity);
 	}

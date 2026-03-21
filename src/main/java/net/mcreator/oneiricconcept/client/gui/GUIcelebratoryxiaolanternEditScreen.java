@@ -26,12 +26,12 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	EditBox first;
-	EditBox second;
-	EditBox third;
-	Button button_empty;
-	Button button_empty1;
-	Button button_save;
+	private EditBox first;
+	private EditBox second;
+	private EditBox third;
+	private Button button_empty;
+	private Button button_empty1;
+	private Button button_save;
 
 	public GUIcelebratoryxiaolanternEditScreen(GUIcelebratoryxiaolanternEditMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);

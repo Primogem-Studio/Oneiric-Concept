@@ -40,9 +40,9 @@ public class TankAddLvaTagProcedure {
 					}
 				} else {
 					if (entity instanceof Player _player && _player.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu) {
-						ItemStack _setstack = new ItemStack(Items.BUCKET).copy();
-						_setstack.setCount((int) (itms2 + 1));
-						_menu.getSlots().get(1).set(_setstack);
+						ItemStack _setstack6 = new ItemStack(Items.BUCKET).copy();
+						_setstack6.setCount((int) (itms2 + 1));
+						_menu.getSlots().get(1).set(_setstack6);
 						_player.containerMenu.broadcastChanges();
 					}
 				}
@@ -68,12 +68,9 @@ public class TankAddLvaTagProcedure {
 							.getItem() == (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu18 ? _menu18.getSlots().get(1).getItem() : ItemStack.EMPTY).getItem()
 							&& getAmountInGUISlot(entity, 1) <= 64 || getAmountInGUISlot(entity, 1) <= 0) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu) {
-							ItemStack _setstack = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu23 ? _menu23.getSlots().get(0).getItem() : ItemStack.EMPTY).copy();
-							_setstack.setCount(getAmountInGUISlot(entity, 0));
-							_menu.getSlots().get(1).set(_setstack);
-							_player.containerMenu.broadcastChanges();
-						}
-						if (entity instanceof Player _player && _player.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu) {
+							ItemStack _setstack24 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu23 ? _menu23.getSlots().get(0).getItem() : ItemStack.EMPTY).copy();
+							_setstack24.setCount(getAmountInGUISlot(entity, 0));
+							_menu.getSlots().get(1).set(_setstack24);
 							_menu.getSlots().get(0).remove(getAmountInGUISlot(entity, 0));
 							_player.containerMenu.broadcastChanges();
 						}

@@ -10,13 +10,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.oneiricconcept.world.inventory.GUIcelebratoryxiaolanternMenu;
-import net.mcreator.oneiricconcept.procedures.IsTextWhiteProcedure;
-import net.mcreator.oneiricconcept.procedures.IsTextBrownProcedure;
-import net.mcreator.oneiricconcept.procedures.GetPlaceInformationProcedure;
-import net.mcreator.oneiricconcept.procedures.GetLantern3Procedure;
-import net.mcreator.oneiricconcept.procedures.GetLantern2Procedure;
-import net.mcreator.oneiricconcept.procedures.GetLantern1Procedure;
-import net.mcreator.oneiricconcept.procedures.GetLantarnBackGrandProcedure;
+import net.mcreator.oneiricconcept.procedures.*;
 import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;

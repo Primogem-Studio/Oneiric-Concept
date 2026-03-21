@@ -3,6 +3,7 @@ package net.mcreator.oneiricconcept.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.projectile.FishingHook;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
@@ -21,8 +22,9 @@ public class HookFallingProcedure {
 			if (hook.getHookedIn() != null) {
 				HookHitProcedure.execute(world, x, y, z, HookEntity, hook.getHookedIn(), entity, EnchantLevel, 0);
 				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A74\u8C03\u7528\u4F24\u5BB3\uFF0C\u76EE\u6807\uFF1A" + hook.getHookedIn() + Calendar.getInstance().getTime().toString())), false);
+					if (world instanceof ServerLevel _level) {
+						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u00A74\u8C03\u7528\u4F24\u5BB3\uFF0C\u76EE\u6807\uFF1A" + hook.getHookedIn() + Calendar.getInstance().getTime().toString())), false);
+					}
 				}
 			}
 		} else {
@@ -32,8 +34,9 @@ public class HookFallingProcedure {
 				});
 			} else {
 				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u4E0B\u843D\u8D85\u65F6" + Calendar.getInstance().getTime().toString())), false);
+					if (world instanceof ServerLevel _level) {
+						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u4E0B\u843D\u8D85\u65F6" + Calendar.getInstance().getTime().toString())), false);
+					}
 				}
 			}
 		}

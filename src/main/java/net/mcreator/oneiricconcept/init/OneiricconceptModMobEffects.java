@@ -9,12 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.oneiricconcept.potion.TargetoffsetMobEffect;
-import net.mcreator.oneiricconcept.potion.OcHungerMobEffect;
-import net.mcreator.oneiricconcept.potion.EnergyMobEffect;
-import net.mcreator.oneiricconcept.potion.CamoeffectMobEffect;
-import net.mcreator.oneiricconcept.potion.B2sausageMobEffect;
-import net.mcreator.oneiricconcept.potion.ATKBuffMobEffect;
+import net.mcreator.oneiricconcept.potion.*;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModMobEffects {

@@ -2,6 +2,7 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
@@ -41,12 +42,13 @@ public class PlacexyzProcedure {
 			sx = sx + 1;
 		}
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList()
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList()
 						.broadcastSystemMessage(
 								Component.literal((("\u00A7dmin|x:" + minx + "\uFF0Cy:" + miny + "\uFF0Cz:" + minz) + "" + ("\u00A76max|x:" + maxx + "\uFF0Cy:" + maxy + "\uFF0Cz:" + maxz) + ("\u00A72x\u6267\u884C\u6B21\u6570\uFF1A\u00A73"
 										+ (Math.abs(maxx - minx) + 1) + "\u00A72y\u6267\u884C\u6B21\u6570\uFF1A\u00A73" + (Math.abs(maxy - miny) + 1) + "\u00A72z\u6267\u884C\u6B21\u6570\uFF1A\u00A73" + (Math.abs(maxz - minz) + 1)) + debugtst)),
 								false);
+			}
 		}
 		return found;
 	}

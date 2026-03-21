@@ -4,6 +4,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
@@ -25,8 +26,10 @@ public class OverlimitExplosionProcedure {
 			ExplosionIgnitesProcedure.execute(world, x, y, z, 0, Math.min(333, 15 + lvl * 2));
 		}
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("lvl:" + lvl + "minlvl\u00A7a:" + Math.min(100, lvl) + "\u00A7rfire:" + (15 + lvl / 1.6) + "\u00A76minfire:\u00A7e" + Math.min(333, 15 + lvl / 1.6))), false);
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("lvl:" + lvl + "minlvl\u00A7a:" + Math.min(100, lvl) + "\u00A7rfire:" + (15 + lvl / 1.6) + "\u00A76minfire:\u00A7e" + Math.min(333, 15 + lvl / 1.6))),
+						false);
+			}
 		}
 	}
 }

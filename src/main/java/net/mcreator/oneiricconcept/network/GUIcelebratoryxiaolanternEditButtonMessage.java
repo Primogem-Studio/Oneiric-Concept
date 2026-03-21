@@ -20,7 +20,7 @@ import net.mcreator.oneiricconcept.procedures.MinusUIDLIstorderProcedure;
 import net.mcreator.oneiricconcept.procedures.LanternSaveProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record GUIcelebratoryxiaolanternEditButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<GUIcelebratoryxiaolanternEditButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "gu_icelebratoryxiaolantern_edit_buttons"));

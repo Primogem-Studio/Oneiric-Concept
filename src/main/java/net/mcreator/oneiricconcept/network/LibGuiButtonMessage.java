@@ -20,7 +20,7 @@ import net.mcreator.oneiricconcept.procedures.MinusUIDLIstorderProcedure;
 import net.mcreator.oneiricconcept.procedures.LibQueryProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record LibGuiButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
 
 	public static final Type<LibGuiButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "lib_gui_buttons"));

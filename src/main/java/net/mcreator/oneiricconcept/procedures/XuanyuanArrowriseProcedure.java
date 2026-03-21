@@ -31,8 +31,9 @@ public class XuanyuanArrowriseProcedure {
 					entityToSpawn.setVisualOnly(true);
 					_level.addFreshEntity(entityToSpawn);
 				}
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((Component.translatable("translation.oneiricconcept.fallingsun").getString())), false);
+				if (world instanceof ServerLevel _level) {
+					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((Component.translatable("translation.oneiricconcept.fallingsun").getString())), false);
+				}
 				if (!immediatesourceentity.level().isClientSide())
 					immediatesourceentity.discard();
 			} else {

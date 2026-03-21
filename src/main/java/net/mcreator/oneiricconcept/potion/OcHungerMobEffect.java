@@ -13,7 +13,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.mcreator.oneiricconcept.procedures.HungereffectProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class OcHungerMobEffect extends MobEffect {
 	public OcHungerMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -256);

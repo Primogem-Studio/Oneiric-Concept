@@ -12,9 +12,9 @@ public class BaitProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && _player.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu) {
-			ItemStack _setstack = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(0).getItem() : ItemStack.EMPTY).copy();
-			_setstack.setCount(getAmountInGUISlot(entity, 0) - 1);
-			_menu.getSlots().get(0).set(_setstack);
+			ItemStack _setstack2 = (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(0).getItem() : ItemStack.EMPTY).copy();
+			_setstack2.setCount(getAmountInGUISlot(entity, 0) - 1);
+			_menu.getSlots().get(0).set(_setstack2);
 			_player.containerMenu.broadcastChanges();
 		}
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu3 ? _menu3.getSlots().get(0).getItem() : ItemStack.EMPTY).getItem() == OneiricconceptModItems.FRUITPASTEBAIT.get()) {

@@ -8,6 +8,7 @@
     "guiTexture": "",
     "customProperties": {},
     "states": [],
+    "animations": [],
     "name": "Heart of the frozen sea",
     "rarity": "UNCOMMON",
     "creativeTabs": [
@@ -25,6 +26,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,

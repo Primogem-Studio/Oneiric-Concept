@@ -63,10 +63,11 @@ public class DivineArrowProcedure {
 								projectileLevel.addFreshEntity(_entityToSpawn);
 							}
 							OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux + 1;
-							OneiricconceptModVariables.MapVariables.get(world).syncData(world);
+							OneiricconceptModVariables.MapVariables.get(world).markSyncDirty();
 							if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-								if (!world.isClientSide() && world.getServer() != null)
-									world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((Calendar.getInstance().getTime().toString() + "\u989D\u5916")), false);
+								if (world instanceof ServerLevel _level) {
+									_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((Calendar.getInstance().getTime().toString() + "\u989D\u5916")), false);
+								}
 							}
 						}
 					}
@@ -78,7 +79,7 @@ public class DivineArrowProcedure {
 		}
 		if (found) {
 			OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux + 1;
-			OneiricconceptModVariables.MapVariables.get(world).syncData(world);
+			OneiricconceptModVariables.MapVariables.get(world).markSyncDirty();
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = initArrowProjectile(new SkyShatteringLuxArrowEntity(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), null, 5,
 						true, false, false, AbstractArrow.Pickup.DISALLOWED);

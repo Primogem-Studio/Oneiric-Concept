@@ -16,25 +16,10 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.oneiricconcept.block.entity.WhiteMoonlightAbsorberBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.SustenanceanchoroffBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.SustenanceanchorBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.PropagandaArmyBlockBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.PrimogemstormglassBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.PhlogistontankBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.PgcPresentBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.NestBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.Geooo1BlockEntity;
-import net.mcreator.oneiricconcept.block.entity.CrystalgeneratorBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.CelebratoryXiaoLanternBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.BoomBlossomsPyroBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.BoomBlossomsHydroBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.BoomBlossomsElectroBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.BoomBlossomsDendroBlockEntity;
-import net.mcreator.oneiricconcept.block.entity.BoomBlossomsCryoBlockEntity;
+import net.mcreator.oneiricconcept.block.entity.*;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class OneiricconceptModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, OneiricconceptMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsPyroBlockEntity>> BOOM_BLOSSOMS_PYRO = register("boom_blossoms_pyro", OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO, BoomBlossomsPyroBlockEntity::new);

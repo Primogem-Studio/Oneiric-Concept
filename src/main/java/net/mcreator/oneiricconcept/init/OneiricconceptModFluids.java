@@ -24,7 +24,7 @@ public class OneiricconceptModFluids {
 	public static final DeferredHolder<Fluid, FlowingFluid> MEMORIA = REGISTRY.register("memoria", () -> new MemoriaFluid.Source());
 	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MEMORIA = REGISTRY.register("flowing_memoria", () -> new MemoriaFluid.Flowing());
 
-	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	@EventBusSubscriber(Dist.CLIENT)
 	public static class FluidsClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {

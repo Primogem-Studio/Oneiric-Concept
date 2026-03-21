@@ -5,6 +5,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.projectile.FishingHook;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
@@ -27,8 +28,9 @@ public class HookLoadingProcedure {
 					HookLoadingProcedure.execute(world, x, y, z, entity, EnchantLevel, LoadingTime + 1);
 				});
 			} else if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u7B49\u5F85\u8D85\u65F6" + Calendar.getInstance().getTime().toString())), false);
+				if (world instanceof ServerLevel _level) {
+					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u7B49\u5F85\u8D85\u65F6" + Calendar.getInstance().getTime().toString())), false);
+				}
 			}
 		}
 	}

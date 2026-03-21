@@ -7,6 +7,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 
@@ -18,8 +19,9 @@ public class SkipdamageProcedure {
 		if (entity == null)
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG) && db) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u63A5\u6536\u5230\u8DF3\u8FC7\u503C" + indexx)), false);
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u63A5\u6536\u5230\u8DF3\u8FC7\u503C" + indexx)), false);
+			}
 		}
 		if (0 < indexx) {
 			if (0 < (entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0)) {

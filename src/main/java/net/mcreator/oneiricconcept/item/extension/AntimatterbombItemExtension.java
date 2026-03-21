@@ -14,7 +14,7 @@ import net.minecraft.core.Direction;
 import net.mcreator.oneiricconcept.procedures.TntPlaceProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class AntimatterbombItemExtension {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {

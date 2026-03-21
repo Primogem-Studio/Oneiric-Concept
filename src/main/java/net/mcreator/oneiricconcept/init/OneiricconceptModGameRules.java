@@ -9,7 +9,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.GameRules;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class OneiricconceptModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> OCINITIALLOAD;
 	public static GameRules.Key<GameRules.IntegerValue> OC_DAMAGEMULTIPLIER;

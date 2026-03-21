@@ -37,10 +37,10 @@ public class GCWProcedure {
 		{
 			OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
 			_vars.ListOrder = 0;
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = 0;
-		OneiricconceptModVariables.MapVariables.get(world).syncData(world);
+		OneiricconceptModVariables.MapVariables.get(world).markSyncDirty();
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCINITIALLOAD) && ModList.get().isLoaded("genshincraft")) {
 			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER).set(4, world.getServer());
 			world.getLevelData().getGameRules().getRule(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER).set(32, world.getServer());

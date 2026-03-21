@@ -93,6 +93,7 @@
         ]
       }
     ],
+    "animations": [],
     "name": "Heart of the vast sea",
     "rarity": "RARE",
     "creativeTabs": [
@@ -110,6 +111,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,

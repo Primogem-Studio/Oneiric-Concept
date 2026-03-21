@@ -7,6 +7,7 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
@@ -33,8 +34,9 @@ public class HookHitProcedure {
 			} else {
 				if ((Damageent.getType().is(EntityTypeTags.UNDEAD) || Damageent.getType().is(EntityTypeTags.AQUATIC)) && Damageent.isAlive()) {
 					if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u94A9\u5B50\u4F24\u5BB3" + Calendar.getInstance().getTime().toString())), false);
+						if (world instanceof ServerLevel _level) {
+							_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u94A9\u5B50\u4F24\u5BB3" + Calendar.getInstance().getTime().toString())), false);
+						}
 					}
 					Damageent.hurt(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), (float) (5 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)) * EnchantLevel));
 					if (LoadingTime <= 10) {

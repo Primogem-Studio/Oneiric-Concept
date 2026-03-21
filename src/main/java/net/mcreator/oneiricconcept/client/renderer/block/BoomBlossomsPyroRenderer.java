@@ -23,7 +23,7 @@ import net.mcreator.oneiricconcept.block.entity.BoomBlossomsPyroBlockEntity;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class BoomBlossomsPyroRenderer implements BlockEntityRenderer<BoomBlossomsPyroBlockEntity> {
 	private final CustomHierarchicalModel model;
 	private final ResourceLocation texture;
@@ -68,10 +68,6 @@ public class BoomBlossomsPyroRenderer implements BlockEntityRenderer<BoomBlossom
 		public void setupBlockEntityAnim(BoomBlossomsPyroBlockEntity blockEntity, float ageInTicks) {
 			animator.setupBlockEntityAnim(blockEntity, ageInTicks);
 			super.setupAnim(null, 0, 0, ageInTicks, 0, 0);
-		}
-
-		public ModelPart getRoot() {
-			return root;
 		}
 
 		private class BlockEntityHierarchicalModel extends HierarchicalModel<Entity> {

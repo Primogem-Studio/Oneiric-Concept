@@ -117,9 +117,8 @@ public class EntityHurtProcedure {
 				_player.displayClientMessage(Component.literal(Changetxt), true);
 		}
 		if ((BuiltInRegistries.ITEM.getKey(hitItem.getItem()).toString()).equals("oneiricconcept:stardust_baseballer") && hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged_R")) {
-			if (event instanceof LivingIncomingDamageEvent _hurt) {
-				_hurt.setAmount((float) (amount * (3 + Refinement * 0.75)));
-			}
+			if (event instanceof LivingIncomingDamageEvent _hurt25)
+				_hurt25.setAmount((float) (amount * (3 + Refinement * 0.75)));
 			{
 				final String _tagName = "textures";
 				final double _tagValue = 0;

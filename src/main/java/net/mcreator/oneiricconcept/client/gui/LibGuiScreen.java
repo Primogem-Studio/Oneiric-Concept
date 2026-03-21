@@ -31,9 +31,9 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> implements
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	Button button_empty;
-	Button button_empty1;
-	Button button_getuid;
+	private Button button_empty;
+	private Button button_empty1;
+	private Button button_getuid;
 
 	public LibGuiScreen(LibGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);

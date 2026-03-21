@@ -7,6 +7,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 
@@ -20,8 +21,9 @@ public class SkipingProcedure {
 		double index1 = 0;
 		ktime = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble(tagname);
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u683C\uFF1A" + index + "\u6709\u53EF\u8DF3\u8FC7\u7269\u54C1\u65F6\u95F4\u4E3A\uFF1A" + ktime)), false);
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u683C\uFF1A" + index + "\u6709\u53EF\u8DF3\u8FC7\u7269\u54C1\u65F6\u95F4\u4E3A\uFF1A" + ktime)), false);
+			}
 		}
 		while (ktime < times) {
 			ktime = ktime + 1200;

@@ -18,7 +18,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.oneiricconcept.procedures.CrystalgeneratoritemProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record CrystalgeneratorGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
 
 	public static final Type<CrystalgeneratorGUISlotMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "crystalgenerator_gui_slots"));

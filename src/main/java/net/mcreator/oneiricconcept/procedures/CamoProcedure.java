@@ -7,6 +7,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
@@ -41,8 +42,9 @@ public class CamoProcedure {
 		}
 		if (entity.isAlive() && entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(OneiricconceptModMobEffects.CAMO)) {
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + debugtxt)), false);
+				if (world instanceof ServerLevel _level) {
+					_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("" + debugtxt)), false);
+				}
 			}
 			OneiricconceptMod.queueServerWork(20, () -> {
 				CamoProcedure.execute(world, entity);
