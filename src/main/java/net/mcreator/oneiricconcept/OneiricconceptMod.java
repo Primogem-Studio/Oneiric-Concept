@@ -1,5 +1,6 @@
 package net.mcreator.oneiricconcept;
 
+import net.mcreator.oneiricconcept.procedures.EventPGCProcedure;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -56,6 +57,7 @@ public class OneiricconceptMod {
 		OneiricconceptModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		PGCApi.init();
+		EventPGCProcedure.execute();
 		// End of user code block mod init
 	}
 
