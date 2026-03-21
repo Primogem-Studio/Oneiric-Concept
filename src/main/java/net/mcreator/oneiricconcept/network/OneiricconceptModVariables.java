@@ -1,10 +1,12 @@
 package net.mcreator.oneiricconcept.network;
 
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.common.util.INBTSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;

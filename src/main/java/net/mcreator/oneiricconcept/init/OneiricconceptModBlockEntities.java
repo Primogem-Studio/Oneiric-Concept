@@ -3,6 +3,7 @@
  */
 package net.mcreator.oneiricconcept.init;
 
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;

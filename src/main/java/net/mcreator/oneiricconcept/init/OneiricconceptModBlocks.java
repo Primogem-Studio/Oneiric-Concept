@@ -3,6 +3,7 @@
  */
 package net.mcreator.oneiricconcept.init;
 
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
