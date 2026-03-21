@@ -39,7 +39,7 @@ public class CrystalgeneratoritemProcedure {
 						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u7B2C" + index0 + "\u683C\u7684\u7269\u54C1\uFF1A" + crystal)), false);
 					}
 				}
-				if (!(crystal == ItemStack.EMPTY)) {
+				if (!(crystal.getItem() == ItemStack.EMPTY.getItem())) {
 					copyindex0 = index0;
 					break;
 				}

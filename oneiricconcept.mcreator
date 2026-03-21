@@ -8,8 +8,8 @@
       "registry_name": "sausage",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/SausageItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/sausage.json"
+          "src/main/resources/assets/oneiricconcept/models/item/sausage.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SausageItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -158,8 +158,8 @@
       "registry_name": "s_2tuffing",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/s_2tuffing.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/S2tuffingItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/S2tuffingItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/s_2tuffing.json"
         ]
       },
       "path": "~/item/item_food"
@@ -276,11 +276,11 @@
       "registry_name": "geomarrow_radiator",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/GeomarrowRadiatorBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geomarrow_radiator.json",
           "src/main/resources/assets/oneiricconcept/blockstates/geomarrow_radiator.json",
-          "src/main/resources/assets/oneiricconcept/models/item/geomarrow_radiator.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geomarrow_radiator.json"
+          "src/main/resources/assets/oneiricconcept/models/block/geomarrow_radiator.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/geomarrow_radiator.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/GeomarrowRadiatorBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/geomarrow_radiator.json"
         ]
       },
       "path": "~/block"
@@ -366,8 +366,8 @@
       "registry_name": "oneiric_shard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/oneiric_shard.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/OneiricShardItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/OneiricShardItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/oneiric_shard.json"
         ]
       },
       "path": "~/item"
@@ -434,12 +434,12 @@
       "registry_name": "boom_blossoms_pyro",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
           "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsPyroRenderer.java",
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsPyroBlockEntity.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_pyro.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_pyro.json",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json"
         ]
       },
       "path": "~/block"
@@ -452,14 +452,14 @@
       "registry_name": "banana_mushroom",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/banana_mushroom.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/banana_mushroom.json",
-          "src/main/resources/assets/oneiricconcept/models/item/banana_mushroom.json",
-          "src/main/resources/assets/oneiricconcept/models/block/banana_mushroom.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/banana_mushroom_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/banana_mushroom.json",
           "src/main/java/net/mcreator/oneiricconcept/block/BananaMushroomBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/banana_mushroom.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/banana_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/models/item/banana_mushroom.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/banana_mushroom.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/banana_mushroom_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/banana_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/models/block/banana_mushroom.json"
         ]
       },
       "path": "~/block"
@@ -472,11 +472,11 @@
       "registry_name": "banana_mushroom_bock",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/banana_mushroom_bock.json",
+          "src/main/resources/assets/oneiricconcept/models/block/banana_mushroom_bock.json",
           "src/main/resources/assets/oneiricconcept/models/item/banana_mushroom_bock.json",
           "src/main/resources/assets/oneiricconcept/blockstates/banana_mushroom_bock.json",
-          "src/main/resources/assets/oneiricconcept/models/block/banana_mushroom_bock.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/BananaMushroomBockBlock.java"
+          "src/main/java/net/mcreator/oneiricconcept/block/BananaMushroomBockBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/banana_mushroom_bock.json"
         ]
       },
       "path": "~/block"
@@ -490,8 +490,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2anana_mushroom.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/b_2anana_mushroom.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2anana_mushroom_biome_modifier.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2anana_mushroom_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/b_2anana_mushroom.json"
         ]
       },
       "path": "~/Feature"
@@ -556,13 +556,13 @@
       "registry_name": "elements_crystal_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/ElementsCrystalOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/elements_crystal_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/elements_crystal_ore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/elements_crystal_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/elements_crystal_ore.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/elements_crystal_ore.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/elements_crystal_ore_biome_modifier.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/elements_crystal_ore.json",
-          "src/main/resources/assets/oneiricconcept/models/item/elements_crystal_ore.json",
-          "src/main/resources/assets/oneiricconcept/models/block/elements_crystal_ore.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/elements_crystal_ore.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/ElementsCrystalOreBlock.java"
         ]
       },
       "path": "~/block/ore"
@@ -575,12 +575,12 @@
       "registry_name": "nagadus_emerald_ore",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/nagadus_emerald_ore_biome_modifier.json",
+          "src/main/resources/assets/oneiricconcept/models/item/nagadus_emerald_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/nagadus_emerald_ore.json",
           "src/main/java/net/mcreator/oneiricconcept/block/NagadusEmeraldOreBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/nagadus_emerald_ore.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/nagadus_emerald_ore_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/nagadus_emerald_ore.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/nagadus_emerald_ore.json",
-          "src/main/resources/assets/oneiricconcept/models/item/nagadus_emerald_ore.json",
           "src/main/resources/assets/oneiricconcept/models/block/nagadus_emerald_ore.json"
         ]
       },
@@ -594,13 +594,13 @@
       "registry_name": "shivada_jade_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/shivada_jade_ore.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/shivada_jade_ore.json",
-          "src/main/resources/assets/oneiricconcept/models/item/shivada_jade_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/shivada_jade_ore.json",
           "src/main/resources/assets/oneiricconcept/blockstates/shivada_jade_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/shivada_jade_ore_biome_modifier.json",
+          "src/main/resources/assets/oneiricconcept/models/item/shivada_jade_ore.json",
           "src/main/resources/assets/oneiricconcept/models/block/shivada_jade_ore.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/ShivadaJadeOreBlock.java",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/shivada_jade_ore_biome_modifier.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/ShivadaJadeOreBlock.java"
         ]
       },
       "path": "~/block/ore"
@@ -613,13 +613,13 @@
       "registry_name": "vajrada_amethyst_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/vajrada_amethyst_ore_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/vajrada_amethyst_ore.json",
           "src/main/resources/assets/oneiricconcept/models/block/vajrada_amethyst_ore.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/vajrada_amethyst_ore.json",
           "src/main/java/net/mcreator/oneiricconcept/block/VajradaAmethystOreBlock.java",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/vajrada_amethyst_ore.json",
           "src/main/resources/assets/oneiricconcept/blockstates/vajrada_amethyst_ore.json",
-          "src/main/resources/assets/oneiricconcept/models/item/vajrada_amethyst_ore.json"
+          "src/main/resources/assets/oneiricconcept/models/item/vajrada_amethyst_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/vajrada_amethyst_ore_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/vajrada_amethyst_ore.json"
         ]
       },
       "path": "~/block/ore"
@@ -632,13 +632,13 @@
       "registry_name": "varunada_lazurite_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/varunada_lazurite_ore_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/varunada_lazurite_ore.json",
-          "src/main/resources/assets/oneiricconcept/models/item/varunada_lazurite_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/varunada_lazurite_ore.json",
           "src/main/resources/assets/oneiricconcept/blockstates/varunada_lazurite_ore.json",
-          "src/main/resources/assets/oneiricconcept/models/block/varunada_lazurite_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/varunada_lazurite_ore_biome_modifier.json",
+          "src/main/resources/assets/oneiricconcept/models/item/varunada_lazurite_ore.json",
           "src/main/java/net/mcreator/oneiricconcept/block/VarunadaLazuriteOreBlock.java",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/varunada_lazurite_ore.json"
+          "src/main/resources/assets/oneiricconcept/models/block/varunada_lazurite_ore.json"
         ]
       },
       "path": "~/block/ore"
@@ -664,11 +664,11 @@
       "registry_name": "cloud",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/cloud.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/cloud.json",
           "src/main/resources/assets/oneiricconcept/models/item/cloud.json",
           "src/main/resources/assets/oneiricconcept/models/block/cloud.json",
           "src/main/java/net/mcreator/oneiricconcept/block/CloudBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cloud.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/cloud.json"
         ]
       },
       "path": "~/block"
@@ -681,13 +681,13 @@
       "registry_name": "prithiva_topaz_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/prithiva_topaz_ore.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/prithiva_topaz_ore.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/prithiva_topaz_ore.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/prithiva_topaz_ore_biome_modifier.json",
-          "src/main/resources/assets/oneiricconcept/models/block/prithiva_topaz_ore.json",
           "src/main/resources/assets/oneiricconcept/models/item/prithiva_topaz_ore.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/PrithivaTopazOreBlock.java"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/prithiva_topaz_ore_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/prithiva_topaz_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/PrithivaTopazOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/prithiva_topaz_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/prithiva_topaz_ore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/prithiva_topaz_ore.json"
         ]
       },
       "path": "~/block/ore"
@@ -700,8 +700,8 @@
       "registry_name": "vayuda_turquoise_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/vayuda_turquoise_ore.json",
           "src/main/java/net/mcreator/oneiricconcept/block/VayudaTurquoiseOreBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/vayuda_turquoise_ore.json",
           "src/main/resources/assets/oneiricconcept/blockstates/vayuda_turquoise_ore.json",
           "src/main/resources/assets/oneiricconcept/models/item/vayuda_turquoise_ore.json"
         ]
@@ -716,13 +716,13 @@
       "registry_name": "agnidus_agate_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/agnidus_agate_ore.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/AgnidusAgateOreBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/agnidus_agate_ore.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/agnidus_agate_ore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/agnidus_agate_ore_biome_modifier.json",
           "src/main/resources/assets/oneiricconcept/models/block/agnidus_agate_ore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/AgnidusAgateOreBlock.java",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/agnidus_agate_ore.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/agnidus_agate_ore.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/agnidus_agate_ore_biome_modifier.json"
+          "src/main/resources/assets/oneiricconcept/models/item/agnidus_agate_ore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/agnidus_agate_ore.json"
         ]
       },
       "path": "~/block/ore"
@@ -827,8 +827,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/cloud_feature_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/cloud_feature.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/cloud_feature.json"
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/cloud_feature.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/cloud_feature.json"
         ],
         "has_nbt_structure": true
       },
@@ -1022,13 +1022,13 @@
       "registry_name": "memoria",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/fluid/types/MemoriaFluidType.java",
           "src/main/java/net/mcreator/oneiricconcept/fluid/MemoriaFluid.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/memoria.json",
-          "src/main/resources/assets/oneiricconcept/models/block/memoria.json",
           "src/main/resources/assets/oneiricconcept/models/item/memoria_bucket.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/memoria.json",
           "src/main/java/net/mcreator/oneiricconcept/block/MemoriaBlock.java",
           "src/main/java/net/mcreator/oneiricconcept/item/MemoriaItem.java",
-          "src/main/java/net/mcreator/oneiricconcept/fluid/types/MemoriaFluidType.java"
+          "src/main/resources/assets/oneiricconcept/models/block/memoria.json"
         ]
       }
     },
@@ -1211,8 +1211,8 @@
       "registry_name": "xuanyuan_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/xuanyuan_sword.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/XuanyuanSwordItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/XuanyuanSwordItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/xuanyuan_sword.json"
         ]
       },
       "path": "~/item"
@@ -1329,12 +1329,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun.json",
-          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_3.json",
           "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_2.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_1.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_3.json",
           "src/main/java/net/mcreator/oneiricconcept/item/AdeptusGunItem.java",
           "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_4.json",
-          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_1.json"
+          "src/main/resources/assets/oneiricconcept/models/item/adeptus_gun_4.json"
         ]
       },
       "path": "~/item"
@@ -1348,9 +1348,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/block/BigStoneBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/big_stone.json",
           "src/main/resources/assets/oneiricconcept/models/item/big_stone.json",
-          "src/main/resources/assets/oneiricconcept/models/block/big_stone.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/big_stone.json"
+          "src/main/resources/assets/oneiricconcept/models/block/big_stone.json"
         ]
       },
       "path": "~/block"
@@ -1363,10 +1363,10 @@
       "registry_name": "big_rock",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/BigRockBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/big_rock.json",
           "src/main/resources/assets/oneiricconcept/models/item/big_rock.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/big_rock.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/BigRockBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/big_rock.json",
+          "src/main/resources/assets/oneiricconcept/models/block/big_rock.json"
         ]
       },
       "path": "~/block"
@@ -1477,8 +1477,8 @@
       "registry_name": "legion_pseudo_sliver",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/legion_pseudo_sliver.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/LegionPseudoSliverItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/LegionPseudoSliverItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/legion_pseudo_sliver.json"
         ]
       },
       "path": "~/item"
@@ -1504,8 +1504,8 @@
       "registry_name": "honkai_sliver",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/honkai_sliver.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HonkaiSliverItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HonkaiSliverItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/honkai_sliver.json"
         ]
       },
       "path": "~/item"
@@ -1571,9 +1571,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2ig_stone.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/b_2ig_stone.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2ig_stone_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2ig_stone.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2ig_stone_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -1587,9 +1587,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2g_stone_chest_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/b_2g_stone_chest.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2g_stone_chest.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/b_2g_stone_chest.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/b_2g_stone_chest_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -1670,10 +1670,10 @@
       "registry_name": "the_another_world_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_log.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_log.json",
           "src/main/resources/assets/oneiricconcept/models/block/the_another_world_log.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldLogBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_log.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_log.json",
           "src/main/resources/assets/oneiricconcept/models/item/the_another_world_log.json"
         ]
       },
@@ -1687,10 +1687,10 @@
       "registry_name": "stripped_the_another_world_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/stripped_the_another_world_log.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/StrippedTheAnotherWorldLogBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/stripped_the_another_world_log.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/StrippedTheAnotherWorldLogBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/stripped_the_another_world_log.json",
+          "src/main/resources/assets/oneiricconcept/models/item/stripped_the_another_world_log.json",
           "src/main/resources/assets/oneiricconcept/models/block/stripped_the_another_world_log.json"
         ]
       },
@@ -1740,11 +1740,11 @@
       "registry_name": "the_another_world_sapling",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_sapling.json",
           "src/main/resources/assets/oneiricconcept/models/item/the_another_world_sapling.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldSaplingBlock.java",
           "src/main/resources/assets/oneiricconcept/models/block/the_another_world_sapling.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_sapling.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_sapling.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_sapling.json"
         ]
       },
       "path": "~/block"
@@ -1757,8 +1757,8 @@
       "registry_name": "the_another_world_tree",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/the_another_world_tree.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/the_another_world_tree_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/the_another_world_tree.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/the_another_world_tree.json"
         ]
       },
@@ -1858,11 +1858,11 @@
       "registry_name": "the_another_world_wood",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/the_another_world_wood.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldWoodBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_wood.json",
+          "src/main/resources/assets/oneiricconcept/models/item/the_another_world_wood.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_wood.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/the_another_world_wood.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_wood.json"
+          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_wood.json"
         ]
       },
       "path": "~/block"
@@ -1971,8 +1971,8 @@
       "registry_name": "memoria_loot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/memoria_loot.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/MemoriaLootItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/MemoriaLootItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/memoria_loot.json"
         ]
       },
       "path": "~/item"
@@ -2060,15 +2060,15 @@
       "registry_name": "mm_mushroom",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/mm_mushroom.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/mm_mushroom_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/mm_mushroom.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/mm_mushroom.json",
-          "src/main/resources/assets/oneiricconcept/models/item/mm_mushroom.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/MmMushroomBlock.java",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/mm_mushroom.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/mm_mushroom.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/MmMushroomBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/mm_mushroom.json",
+          "src/main/resources/assets/oneiricconcept/models/block/mm_mushroom.json",
           "src/main/resources/assets/oneiricconcept/models/block/mm_mushroom_bottom.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/mm_mushroom.json"
+          "src/main/resources/assets/oneiricconcept/models/item/mm_mushroom.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/mm_mushroom_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/mm_mushroom.json"
         ]
       },
       "path": "~/block"
@@ -2120,8 +2120,8 @@
       "registry_name": "mmmhit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/MmmhitItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/mmmhit.json"
+          "src/main/resources/assets/oneiricconcept/models/item/mmmhit.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MmmhitItem.java"
         ]
       },
       "path": "~/item"
@@ -2269,10 +2269,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/bactus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BactusBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/bactus.json",
-          "src/main/resources/assets/oneiricconcept/models/block/bactus.json",
           "src/main/resources/assets/oneiricconcept/blockstates/bactus.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/BactusBlock.java"
+          "src/main/resources/assets/oneiricconcept/models/block/bactus.json"
         ]
       },
       "path": "~/block"
@@ -2285,11 +2285,11 @@
       "registry_name": "c_cactus",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/c_cactus.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/c_cactus.json",
           "src/main/java/net/mcreator/oneiricconcept/block/CCactusBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/c_cactus.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/c_cactus.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/c_cactus.json",
-          "src/main/resources/assets/oneiricconcept/models/block/c_cactus.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/c_cactus.json"
         ]
       },
       "path": "~/block"
@@ -2302,11 +2302,11 @@
       "registry_name": "gactus",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/gactus.json",
+          "src/main/resources/assets/oneiricconcept/models/item/gactus.json",
           "src/main/java/net/mcreator/oneiricconcept/block/GactusBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/gactus.json",
           "src/main/resources/assets/oneiricconcept/models/block/gactus.json",
-          "src/main/resources/assets/oneiricconcept/models/item/gactus.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/gactus.json"
         ]
       },
       "path": "~/block"
@@ -2319,11 +2319,11 @@
       "registry_name": "mactus",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/mactus.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/mactus.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/MactusBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/mactus.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/mactus.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/MactusBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/mactus.json",
+          "src/main/resources/assets/oneiricconcept/models/block/mactus.json"
         ]
       },
       "path": "~/block"
@@ -2336,11 +2336,11 @@
       "registry_name": "ractus",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/ractus.json",
           "src/main/resources/assets/oneiricconcept/blockstates/ractus.json",
+          "src/main/resources/assets/oneiricconcept/models/block/ractus.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/ractus.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/RactusBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/ractus.json"
+          "src/main/resources/assets/oneiricconcept/models/item/ractus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/RactusBlock.java"
         ]
       },
       "path": "~/block"
@@ -2353,11 +2353,11 @@
       "registry_name": "yactus",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/yactus.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/yactus.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/yactus.json",
           "src/main/resources/assets/oneiricconcept/models/item/yactus.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/YactusBlock.java"
+          "src/main/resources/assets/oneiricconcept/blockstates/yactus.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/YactusBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/yactus.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/yactus.json"
         ]
       },
       "path": "~/block"
@@ -2703,8 +2703,8 @@
       "registry_name": "the_another_world_leave",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_leave.json",
           "src/main/resources/assets/oneiricconcept/blockstates/the_another_world_leave.json",
+          "src/main/resources/assets/oneiricconcept/models/block/the_another_world_leave.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TheAnotherWorldLeaveBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/the_another_world_leave.json"
         ]
@@ -2731,10 +2731,10 @@
       "registry_name": "crystal_turtle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/entity/CrystalTurtleEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/CrystalTurtleRenderer.java",
           "src/main/resources/assets/oneiricconcept/models/item/crystal_turtle_spawn_egg.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/crystal_turtle_biome_modifier.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/crystal_turtle_biome_modifier.json",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/CrystalTurtleRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/CrystalTurtleEntity.java"
         ]
       }
     },
@@ -2746,11 +2746,11 @@
       "registry_name": "tnt_dispenser",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/tnt_dispenser.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/tnt_dispenser.json",
-          "src/main/resources/assets/oneiricconcept/models/item/tnt_dispenser.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TNTDispenserBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/tnt_dispenser.json"
+          "src/main/resources/assets/oneiricconcept/models/item/tnt_dispenser.json",
+          "src/main/resources/assets/oneiricconcept/models/block/tnt_dispenser.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/tnt_dispenser.json"
         ]
       },
       "path": "~/block"
@@ -2853,8 +2853,8 @@
       "registry_name": "waffle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/WaffleItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/waffle.json"
+          "src/main/resources/assets/oneiricconcept/models/item/waffle.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/WaffleItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -2867,8 +2867,8 @@
       "registry_name": "primogem_waffle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/primogem_waffle.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/PrimogemWaffleItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/PrimogemWaffleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/primogem_waffle.json"
         ]
       },
       "path": "~/item/item_food"
@@ -3064,8 +3064,8 @@
       "registry_name": "small_herta_core",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/small_herta_core.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/SmallHertaCoreItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/SmallHertaCoreItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/small_herta_core.json"
         ]
       },
       "path": "~/item"
@@ -3078,8 +3078,8 @@
       "registry_name": "sky_waffle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/sky_waffle.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/SkyWaffleItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/SkyWaffleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/sky_waffle.json"
         ]
       },
       "path": "~/item/item_food"
@@ -3207,8 +3207,8 @@
       "registry_name": "resurrection_pellet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/resurrection_pellet.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/ResurrectionPelletItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/ResurrectionPelletItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/resurrection_pellet.json"
         ]
       },
       "path": "~/item/item_food"
@@ -3340,9 +3340,9 @@
       "registry_name": "surpriseboxforgoodorbad",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/surpriseboxforgoodorbad.json",
           "src/main/java/net/mcreator/oneiricconcept/item/SurpriseboxforgoodorbadItem.java",
-          "src/main/resources/data/oneiricconcept/jukebox_song/surpriseboxforgoodorbad.json",
-          "src/main/resources/assets/oneiricconcept/models/item/surpriseboxforgoodorbad.json"
+          "src/main/resources/data/oneiricconcept/jukebox_song/surpriseboxforgoodorbad.json"
         ]
       }
     },
@@ -3545,8 +3545,8 @@
       "registry_name": "totemloot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/totemloot.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/TotemlootItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/TotemlootItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/totemloot.json"
         ]
       },
       "path": "~/item"
@@ -3665,11 +3665,11 @@
       "registry_name": "mora_magazine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_2.json",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_1.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineItem.java",
           "src/main/resources/assets/oneiricconcept/models/item/mora_magazine.json",
           "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_1.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineItem.java"
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_2.json"
         ]
       },
       "path": "~/item"
@@ -3759,11 +3759,11 @@
       "registry_name": "mora_magazine_e_1",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1.json",
           "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1_1.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineE1Item.java",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1_2.json",
           "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1.json"
+          "src/main/resources/assets/oneiricconcept/models/item/mora_magazine_e_1_2.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MoraMagazineE1Item.java"
         ]
       },
       "path": "~/item"
@@ -3940,12 +3940,12 @@
       "registry_name": "propaganda_army_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/propaganda_army_block.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/PropagandaArmyBlockBlockEntity.java",
-          "src/main/resources/assets/oneiricconcept/models/block/propaganda_army_block.json",
-          "src/main/resources/assets/oneiricconcept/models/item/propaganda_army_block.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/PropagandaArmyBlockBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/propaganda_army_block.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/propaganda_army_block.json"
+          "src/main/resources/assets/oneiricconcept/models/block/propaganda_army_block.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/PropagandaArmyBlockBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/propaganda_army_block.json"
         ]
       },
       "path": "~/block"
@@ -4191,11 +4191,11 @@
       "registry_name": "thunder_sword",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/thunder_sword.json",
-          "src/main/resources/assets/oneiricconcept/models/block/thunder_sword.json",
           "src/main/java/net/mcreator/oneiricconcept/block/ThunderSwordBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/thunder_sword.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/thunder_sword.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/thunder_sword.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/thunder_sword.json",
+          "src/main/resources/assets/oneiricconcept/models/block/thunder_sword.json"
         ]
       },
       "path": "~/block"
@@ -4233,12 +4233,12 @@
       "registry_name": "pgc_present",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/PgcPresentBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/pgc_present.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pgc_present.json",
           "src/main/resources/assets/oneiricconcept/models/item/pgc_present.json",
           "src/main/java/net/mcreator/oneiricconcept/block/PgcPresentBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/pgc_present.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/pgc_present.json",
-          "src/main/resources/assets/oneiricconcept/models/block/pgc_present.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PgcPresentBlockEntity.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/pgc_present.json"
         ]
       },
       "path": "~/Per/block"
@@ -4262,11 +4262,11 @@
       "registry_name": "primogem",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogem.json",
           "src/main/resources/assets/oneiricconcept/models/item/primogem.json",
-          "src/main/resources/assets/oneiricconcept/models/block/primogem.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/PgcPgBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/primogem.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/primogem.json"
+          "src/main/resources/assets/oneiricconcept/models/block/primogem.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/PgcPgBlock.java"
         ]
       },
       "path": "~/Per/block/primogem"
@@ -4491,11 +4491,11 @@
       "registry_name": "pyro_metal",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/pyro_metal.json",
           "src/main/resources/assets/oneiricconcept/models/block/pyro_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Agnid1Block.java",
           "src/main/resources/assets/oneiricconcept/models/item/pyro_metal.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/pyro_metal.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/pyro_metal.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/pyro_metal.json"
         ]
       },
       "path": "~/Per/block/agnidus_metal_ingot"
@@ -4552,11 +4552,11 @@
       "registry_name": "camera",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/camera.json",
           "src/main/resources/assets/oneiricconcept/models/block/camera.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/CameraBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/camera.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/camera.json"
+          "src/main/resources/assets/oneiricconcept/models/item/camera.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/camera.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CameraBlock.java"
         ]
       },
       "path": "~/block"
@@ -4608,8 +4608,8 @@
       "registry_name": "sustenanceanchoritem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchoritem.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/SustenanceanchoritemItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/SustenanceanchoritemItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchoritem.json"
         ]
       },
       "path": "~/item"
@@ -4661,12 +4661,12 @@
       "registry_name": "sustenanceanchoroff",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchoroff.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchoroffBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/sustenanceanchoroff.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchoroffBlockEntity.java",
           "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchoroff.json",
-          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchoroff.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchoroff.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchoroffBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchoroff.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchoroffBlock.java"
         ]
       },
       "path": "~/block"
@@ -4714,12 +4714,12 @@
       "registry_name": "sustenanceanchor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchor.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchorBlockEntity.java",
           "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchor.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchorBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchor.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/sustenanceanchor.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchor.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchorBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchorBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchor.json"
         ]
       },
       "path": "~/block"
@@ -4868,11 +4868,11 @@
       "registry_name": "crescent_metal",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/crescent_metal.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/crescent_metal.json",
-          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Newmo1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/crescent_metal.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/crescent_metal.json"
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/crescent_metal.json"
         ]
       },
       "path": "~/Per/block/crescent_moon_ingot"
@@ -4887,9 +4887,9 @@
         "files": [
           "src/main/resources/assets/oneiricconcept/models/block/redmoon_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Redmo1Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoon_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/redmoon_metal.json",
           "src/main/resources/assets/oneiricconcept/models/item/redmoon_metal.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/redmoon_metal.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoon_metal.json"
         ]
       },
       "path": "~/Per/block/red_moon"
@@ -4902,11 +4902,11 @@
       "registry_name": "fullmoon_metal",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/fullmoon_metal.json",
           "src/main/resources/assets/oneiricconcept/blockstates/fullmoon_metal.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo1Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fullmoon_metal.json",
           "src/main/resources/assets/oneiricconcept/models/block/fullmoon_metal.json",
-          "src/main/resources/assets/oneiricconcept/models/item/fullmoon_metal.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/Fulmo1Block.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/fullmoon_metal.json"
         ]
       },
       "path": "~/Per/block/full_moon_ingot"
@@ -4919,11 +4919,11 @@
       "registry_name": "trashmetal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/trashmetal.json",
           "src/main/resources/assets/oneiricconcept/blockstates/trashmetal.json",
+          "src/main/resources/assets/oneiricconcept/models/item/trashmetal.json",
           "src/main/resources/assets/oneiricconcept/models/block/trashmetal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Liron1Block.java",
-          "src/main/resources/assets/oneiricconcept/models/item/trashmetal.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/trashmetal.json"
         ]
       },
       "path": "~/Per/block/ironLaji"
@@ -4936,10 +4936,10 @@
       "registry_name": "electro_metal",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/Elect1Block.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/electro_metal.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/electro_metal.json",
           "src/main/resources/assets/oneiricconcept/models/item/electro_metal.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/electro_metal.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Elect1Block.java",
           "src/main/resources/assets/oneiricconcept/models/block/electro_metal.json"
         ]
       },
@@ -4954,10 +4954,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/blockstates/hydro_metal.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Hydro1Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_metal.json",
           "src/main/resources/assets/oneiricconcept/models/block/hydro_metal.json",
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_metal.json"
+          "src/main/resources/assets/oneiricconcept/models/item/hydro_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/hydro_metal.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Hydro1Block.java"
         ]
       },
       "path": "~/Per/block/Hydro_shui"
@@ -4972,9 +4972,9 @@
         "files": [
           "src/main/resources/data/oneiricconcept/loot_table/blocks/cryo_metal.json",
           "src/main/resources/assets/oneiricconcept/models/block/cryo_metal.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo1Block.java",
           "src/main/resources/assets/oneiricconcept/models/item/cryo_metal.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/cryo_metal.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/Cryoo1Block.java"
+          "src/main/resources/assets/oneiricconcept/blockstates/cryo_metal.json"
         ]
       },
       "path": "~/Per/block/Cryo_Bing"
@@ -5004,11 +5004,11 @@
       "registry_name": "anemo_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/anemo_metal.json",
           "src/main/resources/assets/oneiricconcept/models/item/anemo_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/anemo_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Anemo1Block.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_metal.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_metal.json"
         ]
       },
       "path": "~/Per/block/Anemo_Feng"
@@ -5021,12 +5021,12 @@
       "registry_name": "geo_metal",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/geo_metal.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/Geooo1BlockEntity.java",
-          "src/main/resources/assets/oneiricconcept/models/item/geo_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Geooo1Block.java",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/geo_metal.json",
           "src/main/resources/assets/oneiricconcept/blockstates/geo_metal.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geo_metal.json"
+          "src/main/resources/assets/oneiricconcept/models/item/geo_metal.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/Geooo1BlockEntity.java"
         ]
       },
       "path": "~/Per/block/Geo_Yan"
@@ -5291,11 +5291,11 @@
       "registry_name": "superimposer_custommade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/superimposer_custommade.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/superimposer_custommade.json",
+          "src/main/resources/assets/oneiricconcept/models/item/superimposer_custommade.json",
           "src/main/resources/assets/oneiricconcept/models/block/superimposer_custommade.json",
           "src/main/java/net/mcreator/oneiricconcept/block/SuperimposerCustommadeBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/superimposer_custommade.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/superimposer_custommade.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/superimposer_custommade.json"
         ]
       },
       "path": "~/Per/block"
@@ -5334,11 +5334,11 @@
       "registry_name": "hertabond",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/hertabond.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/HertabondBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/hertabond.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/hertabond.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/HertabondBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/hertabond.json"
+          "src/main/resources/assets/oneiricconcept/models/block/hertabond.json",
+          "src/main/resources/assets/oneiricconcept/models/item/hertabond.json"
         ]
       },
       "path": "~/Per/block/herta_bond"
@@ -5396,10 +5396,10 @@
       "registry_name": "pyrosealingwax",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/pyrosealingwax.json",
           "src/main/resources/assets/oneiricconcept/models/block/pyrosealingwax.json",
-          "src/main/resources/assets/oneiricconcept/models/item/pyrosealingwax.json",
           "src/main/resources/assets/oneiricconcept/blockstates/pyrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/pyrosealingwax.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/pyrosealingwax.json",
           "src/main/java/net/mcreator/oneiricconcept/block/PyrosealingwaxBlock.java"
         ]
       },
@@ -5413,11 +5413,11 @@
       "registry_name": "electrosealingwax",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/electrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrosealingwax.json",
           "src/main/java/net/mcreator/oneiricconcept/block/ElectrosealingwaxBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/electrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/electrosealingwax.json",
           "src/main/resources/assets/oneiricconcept/models/item/electrosealingwax.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrosealingwax.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/electrosealingwax.json"
         ]
       },
       "path": "~/Per/block/sealing wax"
@@ -5431,10 +5431,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/loot_table/blocks/hydrosealingwax.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/HydrosealingwaxBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/hydrosealingwax.json",
           "src/main/resources/assets/oneiricconcept/models/block/hydrosealingwax.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/hydrosealingwax.json"
+          "src/main/resources/assets/oneiricconcept/models/item/hydrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/hydrosealingwax.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/HydrosealingwaxBlock.java"
         ]
       },
       "path": "~/Per/block/sealing wax"
@@ -5447,11 +5447,11 @@
       "registry_name": "cryosealingwax",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/CryosealingwaxBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/cryosealingwax.json",
           "src/main/resources/assets/oneiricconcept/blockstates/cryosealingwax.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CryosealingwaxBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/cryosealingwax.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryosealingwax.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/cryosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryosealingwax.json"
         ]
       },
       "path": "~/Per/block/sealing wax"
@@ -5464,11 +5464,11 @@
       "registry_name": "dendrosealingwax",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendrosealingwax.json",
-          "src/main/resources/assets/oneiricconcept/models/item/dendrosealingwax.json",
           "src/main/resources/assets/oneiricconcept/blockstates/dendrosealingwax.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/DendrosealingwaxBlock.java",
           "src/main/resources/assets/oneiricconcept/models/block/dendrosealingwax.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/DendrosealingwaxBlock.java"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/dendrosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/dendrosealingwax.json"
         ]
       },
       "path": "~/Per/block/sealing wax"
@@ -5482,10 +5482,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/loot_table/blocks/anemo_sealingwax.json",
-          "src/main/resources/assets/oneiricconcept/models/item/anemo_sealingwax.json",
           "src/main/resources/assets/oneiricconcept/blockstates/anemo_sealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_sealingwax.json",
           "src/main/java/net/mcreator/oneiricconcept/block/AnemoSealingwaxBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_sealingwax.json"
+          "src/main/resources/assets/oneiricconcept/models/item/anemo_sealingwax.json"
         ]
       },
       "path": "~/Per/block/sealing wax"
@@ -5498,10 +5498,10 @@
       "registry_name": "geosealingwax",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/geosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/models/item/geosealingwax.json",
           "src/main/resources/assets/oneiricconcept/models/block/geosealingwax.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/geosealingwax.json",
-          "src/main/resources/assets/oneiricconcept/models/item/geosealingwax.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/geosealingwax.json",
           "src/main/java/net/mcreator/oneiricconcept/block/GeosealingwaxBlock.java"
         ]
       },
@@ -5903,10 +5903,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_log.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborLogBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_log.json",
           "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_log.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_log.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborLogBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_log.json",
+          "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_log.json"
         ]
       },
       "path": "~/block"
@@ -5979,9 +5979,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborLeaveBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_leave.json",
           "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_leave.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_leave.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_leave.json",
+          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_leave.json"
         ]
       },
       "path": "~/block"
@@ -6092,8 +6092,8 @@
       "registry_name": "aureliae_axe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/aureliae_axe.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/AureliaeAxeItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/AureliaeAxeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/aureliae_axe.json"
         ]
       },
       "path": "~/item"
@@ -6134,8 +6134,8 @@
       "registry_name": "aureliae_hoe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/aureliae_hoe.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/AureliaeHoeItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/AureliaeHoeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/aureliae_hoe.json"
         ]
       },
       "path": "~/item"
@@ -6228,9 +6228,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/molten_metal_block.json",
-          "src/main/resources/assets/oneiricconcept/models/block/molten_metal_block.json",
           "src/main/java/net/mcreator/oneiricconcept/block/MoltenMetalBlockBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/molten_metal_block.json",
+          "src/main/resources/assets/oneiricconcept/models/block/molten_metal_block.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/molten_metal_block.json"
         ]
       },
@@ -6489,10 +6489,10 @@
       "registry_name": "primogemfruitblock",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/primogemfruitblock.json",
           "src/main/resources/assets/oneiricconcept/models/item/primogemfruitblock.json",
           "src/main/resources/assets/oneiricconcept/models/block/primogemfruitblock.json",
           "src/main/java/net/mcreator/oneiricconcept/block/PrimogemfruitblockBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/primogemfruitblock.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/primogemfruitblock.json"
         ]
       },
@@ -6506,8 +6506,8 @@
       "registry_name": "primogemfruit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/PrimogemfruitItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/primogemfruit.json"
+          "src/main/resources/assets/oneiricconcept/models/item/primogemfruit.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/PrimogemfruitItem.java"
         ]
       },
       "path": "~/item"
@@ -6552,10 +6552,10 @@
       "registry_name": "ambrosial_arbor_sapling",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_sapling.json",
+          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_sapling.json",
           "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborSaplingBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_sapling.json",
-          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_sapling.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_sapling.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_sapling.json"
         ]
       },
@@ -6588,9 +6588,9 @@
       "registry_name": "ambrosial_arbor_plank",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_plank.json",
           "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_plank.json",
           "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborPlankBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_plank.json",
           "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_plank.json",
           "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_plank.json"
         ]
@@ -6689,11 +6689,11 @@
       "registry_name": "wayfareblessing",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/wayfareblessing.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/TexturewayfareblessingBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/wayfareblessing.json",
           "src/main/resources/assets/oneiricconcept/models/item/wayfareblessing.json",
-          "src/main/resources/assets/oneiricconcept/models/block/wayfareblessing.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/TexturewayfareblessingBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/wayfareblessing.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/wayfareblessing.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/wayfareblessing.json"
         ]
       },
       "path": "~/block"
@@ -6779,8 +6779,8 @@
       "registry_name": "heartoftheskysea",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartoftheskyseaItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/heartoftheskysea.json"
+          "src/main/resources/assets/oneiricconcept/models/item/heartoftheskysea.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartoftheskyseaItem.java"
         ]
       },
       "path": "~/item"
@@ -6881,13 +6881,13 @@
       "registry_name": "heartofthevastsea",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_4.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_4.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json"
         ]
       },
       "path": "~/item"
@@ -6991,9 +6991,9 @@
       "registry_name": "frozen_sea_collection",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/frozen_sea_collection.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/frozen_sea_collection.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/frozen_sea_collection_biome_modifier.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/frozen_sea_collection_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/frozen_sea_collection.json"
         ],
         "has_nbt_structure": true
       },
@@ -7008,9 +7008,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/warm_sea_collection_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/warm_sea_collection.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/warm_sea_collection.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/warm_sea_collection.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/warm_sea_collection_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -7024,9 +7024,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/sky_sea_collection.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/sky_sea_collection_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sky_sea_collection.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/sky_sea_collection.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sky_sea_collection.json"
         ]
       },
       "path": "~/Feature"
@@ -7170,11 +7170,11 @@
       "registry_name": "floating_cloud",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/FloatingCloudBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/floating_cloud.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/floating_cloud.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/floating_cloud.json",
-          "src/main/resources/assets/oneiricconcept/models/block/floating_cloud.json"
+          "src/main/resources/assets/oneiricconcept/models/item/floating_cloud.json",
+          "src/main/resources/assets/oneiricconcept/models/block/floating_cloud.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/FloatingCloudBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/floating_cloud.json"
         ]
       },
       "path": "~/block"
@@ -7367,8 +7367,8 @@
       "registry_name": "salt",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/SaltItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/salt.json"
+          "src/main/resources/assets/oneiricconcept/models/item/salt.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SaltItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -7409,8 +7409,8 @@
       "registry_name": "sweet_sesame_filling_yuan_xiao",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/SweetSesameFillingYuanXiaoItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/sweet_sesame_filling_yuan_xiao.json"
+          "src/main/resources/assets/oneiricconcept/models/item/sweet_sesame_filling_yuan_xiao.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SweetSesameFillingYuanXiaoItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -7515,8 +7515,8 @@
       "registry_name": "grilled_oy_dumpling",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/GrilledOyDumplingItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/grilled_oy_dumpling.json"
+          "src/main/resources/assets/oneiricconcept/models/item/grilled_oy_dumpling.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/GrilledOyDumplingItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -7529,8 +7529,8 @@
       "registry_name": "grilled_dumpling",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/GrilledDumplingItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/grilled_dumpling.json"
+          "src/main/resources/assets/oneiricconcept/models/item/grilled_dumpling.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/GrilledDumplingItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -7667,8 +7667,8 @@
       "registry_name": "salt_dust",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/SaltDustItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/salt_dust.json"
+          "src/main/resources/assets/oneiricconcept/models/item/salt_dust.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/SaltDustItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -8317,10 +8317,10 @@
       "registry_name": "ambrosial_arbor_wood",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_wood.json",
-          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_wood.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborWoodBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_wood.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_wood.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborWoodBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_wood.json",
           "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_wood.json"
         ]
       },
@@ -8455,9 +8455,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/trash_cans.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/trash_cans.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/trash_cans_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/trash_cans.json"
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/trash_cans.json"
         ]
       },
       "path": "~/Feature"
@@ -8470,8 +8470,8 @@
       "registry_name": "ambergris_cheese_sliver",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/AmbergrisCheeseSliverItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/ambergris_cheese_sliver.json"
+          "src/main/resources/assets/oneiricconcept/models/item/ambergris_cheese_sliver.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/AmbergrisCheeseSliverItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -8811,8 +8811,8 @@
       "registry_name": "sky_shattering_lux_arrow",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/entity/SkyShatteringLuxArrowEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/SkyShatteringLuxArrowRenderer.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/SkyShatteringLuxArrowRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/SkyShatteringLuxArrowEntity.java"
         ]
       },
       "path": "~/Projectile"
@@ -8937,11 +8937,11 @@
       "registry_name": "fresh_seedof_dawn",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/fresh_seedof_dawn.json",
           "src/main/java/net/mcreator/oneiricconcept/block/FreshSeedofDawnBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/fresh_seedof_dawn.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/fresh_seedof_dawn.json",
           "src/main/resources/assets/oneiricconcept/models/item/fresh_seedof_dawn.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fresh_seedof_dawn.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/fresh_seedof_dawn.json"
+          "src/main/resources/assets/oneiricconcept/models/block/fresh_seedof_dawn.json"
         ]
       },
       "path": "~/block"
@@ -8955,9 +8955,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/blockstates/dawnleaves.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/DawnleavesBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/dawnleaves.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dawnleaves.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/DawnleavesBlock.java"
+          "src/main/resources/assets/oneiricconcept/models/block/dawnleaves.json"
         ]
       },
       "path": "~/block"
@@ -8983,9 +8983,9 @@
       "registry_name": "dawntree",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/dawntree_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/dawntree.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/dawntree.json"
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/dawntree.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/dawntree_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -9033,11 +9033,11 @@
       "registry_name": "xiao_lantern_recycler",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/xiao_lantern_recycler.json",
           "src/main/resources/assets/oneiricconcept/blockstates/xiao_lantern_recycler.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/XiaoLanternRecyclerBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/xiao_lantern_recycler.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/xiao_lantern_recycler.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/XiaoLanternRecyclerBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/xiao_lantern_recycler.json",
+          "src/main/resources/assets/oneiricconcept/models/block/xiao_lantern_recycler.json"
         ]
       },
       "path": "~/block"
@@ -9137,8 +9137,8 @@
       "registry_name": "heartofthefish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthefish.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefishItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthefishItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthefish.json"
         ]
       },
       "path": "~/item"
@@ -9151,11 +9151,11 @@
       "registry_name": "phlogistontank",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/phlogistontank.json",
-          "src/main/resources/assets/oneiricconcept/models/block/phlogistontank.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/PhlogistontankBlockEntity.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/phlogistontank.json",
           "src/main/resources/assets/oneiricconcept/models/item/phlogistontank.json",
+          "src/main/resources/assets/oneiricconcept/models/block/phlogistontank.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/phlogistontank.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/phlogistontank.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PhlogistontankBlockEntity.java",
           "src/main/java/net/mcreator/oneiricconcept/block/PhlogistontankBlock.java"
         ]
       },
@@ -9169,9 +9169,9 @@
       "registry_name": "phlogistontank_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/world/inventory/PhlogistontankGuiMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/PhlogistontankGuiScreen.java",
           "src/main/java/net/mcreator/oneiricconcept/network/PhlogistontankGuiSlotMessage.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/gui/PhlogistontankGuiScreen.java"
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/PhlogistontankGuiMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -9314,8 +9314,8 @@
       "registry_name": "phlogiston_crystal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_crystal.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonCrystalItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonCrystalItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/phlogiston_crystal.json"
         ]
       },
       "path": "~/item"
@@ -9403,8 +9403,8 @@
       "registry_name": "phlogiston",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/phlogiston.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/PhlogistonItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/phlogiston.json"
         ]
       },
       "path": "~/item"
@@ -9580,8 +9580,8 @@
       "registry_name": "explosive",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/entity/ExplosiveEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/ExplosiveRenderer.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/ExplosiveRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/ExplosiveEntity.java"
         ]
       },
       "path": "~/Projectile"
@@ -9594,8 +9594,8 @@
       "registry_name": "fishcake",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/fishcake.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/FishcakeItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/FishcakeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/fishcake.json"
         ]
       },
       "path": "~/item/item_food"
@@ -9660,8 +9660,8 @@
       "registry_name": "wayfare_cake_slices",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/WayfareCakeSlicesItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/wayfare_cake_slices.json"
+          "src/main/resources/assets/oneiricconcept/models/item/wayfare_cake_slices.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/WayfareCakeSlicesItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -9895,8 +9895,8 @@
       "registry_name": "wilderness_rod",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/WildernessRodItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/wilderness_rod.json"
+          "src/main/resources/assets/oneiricconcept/models/item/wilderness_rod.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/WildernessRodItem.java"
         ]
       },
       "path": "~/item"
@@ -10127,8 +10127,8 @@
           "src/main/resources/assets/oneiricconcept/models/item/camerapink.json",
           "src/main/resources/assets/oneiricconcept/blockstates/camerapink.json",
           "src/main/resources/assets/oneiricconcept/models/block/camerapink.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/CamerapinkBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/camerapink.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/camerapink.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CamerapinkBlock.java"
         ]
       },
       "path": "~/block"
@@ -10309,11 +10309,11 @@
       "registry_name": "sweetflower",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/sweetflower.json",
           "src/main/resources/assets/oneiricconcept/models/block/sweetflower.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/SweetflowerBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/sweetflower.json",
+          "src/main/resources/assets/oneiricconcept/models/item/sweetflower.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/sweetflower.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/sweetflower.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/SweetflowerBlock.java"
         ]
       },
       "path": "~/block"
@@ -10412,9 +10412,9 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/sweet_flowers.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/sweet_flowers_biome_modifier.json",
           "src/main/java/net/mcreator/oneiricconcept/world/features/SweetFlowersFeature.java",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sweet_flowers.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/sweet_flowers_biome_modifier.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/sweet_flowers.json"
         ]
       },
       "path": "~/Feature"
@@ -10459,8 +10459,8 @@
       "registry_name": "xuanyuan_arrow",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/xuanyuan_arrow.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/XuanyuanArrowItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/XuanyuanArrowItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/xuanyuan_arrow.json"
         ]
       },
       "path": "~/item"
@@ -10649,9 +10649,9 @@
       "registry_name": "fishing",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/world/inventory/FishingMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/network/FishingSlotMessage.java",
           "src/main/java/net/mcreator/oneiricconcept/client/gui/FishingScreen.java",
-          "src/main/java/net/mcreator/oneiricconcept/network/FishingSlotMessage.java"
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/FishingMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -10664,8 +10664,8 @@
       "registry_name": "fruitpastebait",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/fruitpastebait.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/FruitpastebaitItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/FruitpastebaitItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/fruitpastebait.json"
         ]
       },
       "path": "~/item/item_food"
@@ -10970,8 +10970,8 @@
       "registry_name": "glazemedaka",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/glazemedaka.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/GlazemedakaItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/GlazemedakaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/glazemedaka.json"
         ]
       },
       "path": "~/item/item_food"
@@ -10984,8 +10984,8 @@
       "registry_name": "aizenmedaka",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/AizenmedakaItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/aizenmedaka.json"
+          "src/main/resources/assets/oneiricconcept/models/item/aizenmedaka.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/AizenmedakaItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -11037,8 +11037,8 @@
       "registry_name": "virtual_particle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/virtual_particle.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/VirtualParticleItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/VirtualParticleItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/virtual_particle.json"
         ]
       },
       "path": "~/item/item_food"
@@ -11065,8 +11065,8 @@
       "registry_name": "camo_paint",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/camo_paint.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/CamoPaintItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/CamoPaintItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/camo_paint.json"
         ]
       },
       "path": "~/item/item_food"
@@ -11285,8 +11285,8 @@
       "registry_name": "energy_drink",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/energy_drink.json"
+          "src/main/resources/assets/oneiricconcept/models/item/energy_drink.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -11365,8 +11365,8 @@
       "registry_name": "energy_drink_primogem",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkPrimogemItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/energy_drink_primogem.json"
+          "src/main/resources/assets/oneiricconcept/models/item/energy_drink_primogem.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkPrimogemItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -11379,8 +11379,8 @@
       "registry_name": "energy_drink_sugar_free",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/energy_drink_sugar_free.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkSugarFreeItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/EnergyDrinkSugarFreeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/energy_drink_sugar_free.json"
         ]
       },
       "path": "~/item/item_food"
@@ -11721,10 +11721,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/mora_bow_1.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/MoraBowItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_bow.json",
           "src/main/resources/assets/oneiricconcept/models/item/mora_bow_2.json",
-          "src/main/resources/assets/oneiricconcept/models/item/mora_bow_0.json"
+          "src/main/resources/assets/oneiricconcept/models/item/mora_bow_0.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/MoraBowItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/mora_bow.json"
         ]
       },
       "path": "~/item"
@@ -12013,8 +12013,8 @@
       "registry_name": "usurper_s_scheme",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/usurper_s_scheme.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/UsurperSSchemeItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/UsurperSSchemeItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/usurper_s_scheme.json"
         ]
       },
       "path": "~/item"
@@ -12164,10 +12164,10 @@
       "registry_name": "adeptustool",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/adeptustool.json",
           "src/main/resources/assets/oneiricconcept/models/item/adeptustool_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/adeptustool_3.json",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool.json",
           "src/main/java/net/mcreator/oneiricconcept/item/TesttoolItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/adeptustool_3.json",
           "src/main/resources/assets/oneiricconcept/models/item/adeptustool_2.json",
           "src/main/resources/assets/oneiricconcept/models/item/adeptustool_1.json"
         ]
@@ -12335,11 +12335,11 @@
       "registry_name": "rainbow_cactus_ball",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/rainbow_cactus_ball.json",
           "src/main/resources/assets/oneiricconcept/models/block/rainbow_cactus_ball.json",
           "src/main/resources/assets/oneiricconcept/blockstates/rainbow_cactus_ball.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/rainbow_cactus_ball.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/RainbowCactusBallBlock.java"
+          "src/main/java/net/mcreator/oneiricconcept/block/RainbowCactusBallBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/rainbow_cactus_ball.json"
         ]
       },
       "path": "~/block"
@@ -12446,11 +12446,11 @@
       "registry_name": "primogem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_2.json",
           "src/main/resources/assets/oneiricconcept/models/block/primogem_blockstate_4.json"
         ]
       },
@@ -12503,15 +12503,15 @@
       "registry_name": "redmoon_meatal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_2.json",
           "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_7.json",
           "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_4.json"
+          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/redmoon_meatal_blockstate_8.json"
         ]
       },
       "path": "~/Per/block/red_moon"
@@ -12559,15 +12559,15 @@
       "registry_name": "fullmoon_meatal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_4.json",
           "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_2.json",
           "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_5.json",
           "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_4.json"
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoon_meatal_blockstate_3.json"
         ]
       },
       "path": "~/Per/block/full_moon_ingot"
@@ -12580,13 +12580,13 @@
       "registry_name": "geo_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_6.json",
           "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/geo_metal_blockstate_7.json"
         ]
@@ -12601,15 +12601,15 @@
       "registry_name": "anemo_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_4.json",
           "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_8.json",
           "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_4.json"
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/anemo_metal_blockstate_6.json"
         ]
       },
       "path": "~/Per/block/Anemo_Feng"
@@ -12622,15 +12622,15 @@
       "registry_name": "dendrometal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_6.json",
           "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_7.json",
           "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_0.json",
           "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_7.json"
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/dendrometal_blockstate_4.json"
         ]
       },
       "path": "~/Per/block/Dendro_Cao"
@@ -12643,15 +12643,15 @@
       "registry_name": "cryometal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_4.json",
           "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_8.json"
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/cryometal_blockstate_4.json"
         ]
       },
       "path": "~/Per/block/Cryo_Bing"
@@ -12664,15 +12664,15 @@
       "registry_name": "hydrometal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_6.json",
           "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_0.json",
           "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_7.json"
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hydrometal_blockstate_3.json"
         ]
       },
       "path": "~/Per/block/Hydro_shui"
@@ -12686,14 +12686,14 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_1.json",
           "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_5.json"
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/electrometal_blockstate_7.json"
         ]
       },
       "path": "~/Per/block/Electro_Lei"
@@ -12706,14 +12706,14 @@
       "registry_name": "pyrometal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_7.json",
           "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_5.json",
           "src/main/resources/assets/oneiricconcept/models/block/pyrometal_blockstate_1.json"
         ]
       },
@@ -12727,15 +12727,15 @@
       "registry_name": "trash_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_8.json",
           "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_4.json"
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_4.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/trash_metal_blockstate_5.json"
         ]
       },
       "path": "~/Per/block/ironLaji"
@@ -12748,15 +12748,15 @@
       "registry_name": "crescent_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_3.json",
           "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_6.json",
-          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_7.json",
           "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_2.json",
           "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_0.json",
           "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_4.json",
-          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_3.json"
+          "src/main/resources/assets/oneiricconcept/models/block/crescent_metal_blockstate_8.json"
         ]
       },
       "path": "~/Per/block/crescent_moon_ingot"
@@ -12769,16 +12769,16 @@
       "registry_name": "hertabondstate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_7.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_2.json",
           "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_6.json",
           "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_4.json",
           "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_9.json",
-          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_5.json"
+          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_3.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_8.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/hertabondstate_blockstate_4.json"
         ]
       },
       "path": "~/Per/block/herta_bond"
@@ -13187,9 +13187,9 @@
       "registry_name": "lib_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/LibGuiScreen.java",
           "src/main/java/net/mcreator/oneiricconcept/network/LibGuiButtonMessage.java",
-          "src/main/java/net/mcreator/oneiricconcept/world/inventory/LibGuiMenu.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/gui/LibGuiScreen.java"
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/LibGuiMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -13304,8 +13304,8 @@
       "registry_name": "dreamy_cone",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/DreamyConeItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/dreamy_cone.json"
+          "src/main/resources/assets/oneiricconcept/models/item/dreamy_cone.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/DreamyConeItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -13425,11 +13425,11 @@
       "registry_name": "exhaustedprimogem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/exhaustedprimogem.json",
-          "src/main/resources/assets/oneiricconcept/models/item/exhaustedprimogem.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/exhaustedprimogem.json",
           "src/main/resources/assets/oneiricconcept/models/block/exhaustedprimogem.json",
           "src/main/java/net/mcreator/oneiricconcept/block/ExhaustedprimogemBlock.java",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/exhaustedprimogem.json"
+          "src/main/resources/assets/oneiricconcept/models/item/exhaustedprimogem.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/exhaustedprimogem.json"
         ]
       },
       "path": "~/block"
@@ -13507,11 +13507,11 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/oneiricconcept/models/item/primogemstormglass.json",
-          "src/main/resources/assets/oneiricconcept/models/block/primogemstormglass.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/primogemstormglass.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/primogemstormglass.json",
           "src/main/java/net/mcreator/oneiricconcept/block/PrimogemstormglassBlock.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/PrimogemstormglassBlockEntity.java"
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/PrimogemstormglassBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/block/primogemstormglass.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/primogemstormglass.json"
         ]
       },
       "path": "~/block"
@@ -13665,10 +13665,10 @@
       "registry_name": "stardust_baseballer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_1.json",
           "src/main/java/net/mcreator/oneiricconcept/item/StardustBaseballerItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer.json",
           "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer.json"
+          "src/main/resources/assets/oneiricconcept/models/item/stardust_baseballer_1.json"
         ]
       },
       "path": "~/item"
@@ -13993,12 +13993,12 @@
       "registry_name": "crystalgenerator",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/blockstates/crystalgenerator.json",
+          "src/main/resources/assets/oneiricconcept/models/item/crystalgenerator.json",
           "src/main/resources/assets/oneiricconcept/models/block/crystalgenerator.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/CrystalgeneratorBlockEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/CrystalgeneratorBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/crystalgenerator.json",
-          "src/main/resources/assets/oneiricconcept/models/item/crystalgenerator.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/crystalgenerator.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/CrystalgeneratorBlock.java"
         ]
       },
       "path": "~/block"
@@ -14011,9 +14011,9 @@
       "registry_name": "crystalgenerator_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/client/gui/CrystalgeneratorGUIScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/network/CrystalgeneratorGUISlotMessage.java",
           "src/main/java/net/mcreator/oneiricconcept/world/inventory/CrystalgeneratorGUIMenu.java",
-          "src/main/java/net/mcreator/oneiricconcept/network/CrystalgeneratorGUISlotMessage.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/CrystalgeneratorGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -14227,11 +14227,11 @@
       "registry_name": "nest",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/nest.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/nest.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/NestBlockEntity.java",
           "src/main/java/net/mcreator/oneiricconcept/block/NestBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/nest.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/nest.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/nest.json",
           "src/main/resources/assets/oneiricconcept/models/block/nest.json"
         ]
       },
@@ -14276,8 +14276,8 @@
       "registry_name": "nest_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/world/inventory/NestGUIMenu.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/gui/NestGUIScreen.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/NestGUIScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/NestGUIMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -14379,10 +14379,10 @@
       "registry_name": "place_nest",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest.json",
           "src/main/java/net/mcreator/oneiricconcept/world/features/PlaceNestFeature.java",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest.json"
         ],
         "has_nbt_structure": true
       },
@@ -14423,9 +14423,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_below_leave_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/place_nest_below_leave.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest_below_leave.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/place_nest_below_leave.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/place_nest_below_leave_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -14691,8 +14691,8 @@
       "registry_name": "engineering_antimatter_bomb",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/EngineeringAntimatterBombRenderer.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/EngineeringAntimatterBombRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/entity/EngineeringAntimatterBombEntity.java"
         ]
       }
     },
@@ -14723,11 +14723,11 @@
       "registry_name": "engineeringantimatterbombblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/engineeringantimatterbombblock.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/EngineeringantimatterbombblockBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/engineeringantimatterbombblock.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/engineeringantimatterbombblock.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/engineeringantimatterbombblock.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/engineeringantimatterbombblock.json"
+          "src/main/resources/assets/oneiricconcept/models/item/engineeringantimatterbombblock.json",
+          "src/main/resources/assets/oneiricconcept/models/block/engineeringantimatterbombblock.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/EngineeringantimatterbombblockBlock.java"
         ]
       },
       "path": "~/block"
@@ -15004,13 +15004,13 @@
       "registry_name": "crescentmoonore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/CrescentmoonoreBlock.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/crescentmoonore.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/crescentmoonore_biome_modifier.json",
-          "src/main/resources/assets/oneiricconcept/models/item/crescentmoonore.json",
-          "src/main/resources/assets/oneiricconcept/models/block/crescentmoonore.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/crescentmoonore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/crescentmoonore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/CrescentmoonoreBlock.java",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/crescentmoonore.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/crescentmoonore.json"
+          "src/main/resources/assets/oneiricconcept/models/block/crescentmoonore.json"
         ]
       },
       "path": "~/block/ore"
@@ -15023,13 +15023,13 @@
       "registry_name": "redmoonore",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/redmoonore.json",
           "src/main/resources/assets/oneiricconcept/models/block/redmoonore.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/redmoonore_biome_modifier.json",
-          "src/main/resources/assets/oneiricconcept/models/item/redmoonore.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/redmoonore.json",
           "src/main/java/net/mcreator/oneiricconcept/block/RedmoonoreBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/redmoonore.json"
+          "src/main/resources/assets/oneiricconcept/models/item/redmoonore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/redmoonore.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/redmoonore.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/redmoonore_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/redmoonore.json"
         ]
       },
       "path": "~/block/ore"
@@ -15042,13 +15042,13 @@
       "registry_name": "fullmoonore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/FullmoonoreBlock.java",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/fullmoonore_biome_modifier.json",
-          "src/main/resources/assets/oneiricconcept/models/block/fullmoonore.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/fullmoonore.json",
-          "src/main/resources/assets/oneiricconcept/models/item/fullmoonore.json",
           "src/main/resources/assets/oneiricconcept/blockstates/fullmoonore.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/fullmoonore.json"
+          "src/main/resources/assets/oneiricconcept/models/block/fullmoonore.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/fullmoonore.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/FullmoonoreBlock.java",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/fullmoonore.json",
+          "src/main/resources/assets/oneiricconcept/models/item/fullmoonore.json"
         ]
       },
       "path": "~/block/ore"
@@ -15061,8 +15061,8 @@
       "registry_name": "rawcrescentmoonore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/rawcrescentmoonore.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/RawcrescentmoonoreItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/RawcrescentmoonoreItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/rawcrescentmoonore.json"
         ]
       },
       "path": "~/item"
@@ -15075,8 +15075,8 @@
       "registry_name": "rawredmoonore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/rawredmoonore.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/RawredmoonoreItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/RawredmoonoreItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/rawredmoonore.json"
         ]
       },
       "path": "~/item"
@@ -15103,11 +15103,11 @@
       "registry_name": "theanotherworldmooningot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/theanotherworldmooningot.json",
           "src/main/java/net/mcreator/oneiricconcept/block/TheanotherworldmooningotBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/theanotherworldmooningot.json",
           "src/main/resources/assets/oneiricconcept/models/item/theanotherworldmooningot.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/theanotherworldmooningot.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/theanotherworldmooningot.json",
+          "src/main/resources/assets/oneiricconcept/models/block/theanotherworldmooningot.json"
         ]
       },
       "path": "~/Per/block/tawmoon"
@@ -15302,9 +15302,9 @@
       "registry_name": "abandoned_wither_transport_box",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/abandoned_wither_transport_box.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/abandoned_wither_transport_box.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/abandoned_wither_transport_box_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/abandoned_wither_transport_box.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/abandoned_wither_transport_box_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -15318,8 +15318,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/container_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/container.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/container.json"
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/container.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/container.json"
         ],
         "has_nbt_structure": true
       },
@@ -15333,11 +15333,11 @@
       "registry_name": "white_moonlight_absorber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/white_moonlight_absorber.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/white_moonlight_absorber.json",
           "src/main/java/net/mcreator/oneiricconcept/block/WhiteMoonlightAbsorberBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/white_moonlight_absorber.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/white_moonlight_absorber.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/WhiteMoonlightAbsorberBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/white_moonlight_absorber.json",
           "src/main/resources/assets/oneiricconcept/models/block/white_moonlight_absorber.json"
         ]
       },
@@ -15351,8 +15351,8 @@
       "registry_name": "white_moonlight_absorber_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/world/inventory/WhiteMoonlightAbsorberGUIMenu.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/gui/WhiteMoonlightAbsorberGUIScreen.java"
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/WhiteMoonlightAbsorberGUIScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/WhiteMoonlightAbsorberGUIMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -15702,10 +15702,10 @@
       "registry_name": "chenyu_adeptea_tree",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaTreeBlock.java",
           "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_tree.json",
-          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json",
           "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_tree.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaTreeBlock.java"
+          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_tree.json"
         ]
       },
       "path": "~/block"
@@ -15745,13 +15745,13 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/chenyu_adeptea_seedling.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/chenyu_adeptea_seedling.json",
-          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_seedling.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/chenyu_adeptea_seedling_biome_modifier.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_seedling.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/chenyu_adeptea_seedling.json",
           "src/main/resources/assets/oneiricconcept/models/block/chenyu_adeptea_seedling.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaSeedlingBlock.java"
+          "src/main/resources/assets/oneiricconcept/models/item/chenyu_adeptea_seedling.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/chenyu_adeptea_seedling.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/ChenyuAdepteaSeedlingBlock.java",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/chenyu_adeptea_seedling.json"
         ]
       },
       "path": "~/block"
@@ -16009,9 +16009,9 @@
       "metadata": {
         "has_nbt_structure": true,
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/thunder_relic.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/thunder_relic.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/thunder_relic_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/thunder_relic.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/thunder_relic.json"
         ]
       },
       "path": "~/Feature"
@@ -16037,15 +16037,15 @@
       "registry_name": "taw_moon_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_0.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_2.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_8.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_5.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_1.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_4.json",
           "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_6.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_1.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_5.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_2.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_4.json",
           "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_3.json",
-          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_7.json"
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_7.json",
+          "src/main/resources/assets/oneiricconcept/models/block/taw_moon_metal_blockstate_8.json"
         ]
       },
       "path": "~/Per/block/tawmoon"
@@ -16247,9 +16247,9 @@
       "registry_name": "boomblossomspyro_f",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossomspyro_f.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossomspyro_f_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossomspyro_f.json"
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossomspyro_f.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossomspyro_f.json"
         ]
       },
       "path": "~/Feature"
@@ -16454,13 +16454,13 @@
       "registry_name": "celebratory_xiao_lantern",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/CelebratoryXiaoLanternBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/celebratory_xiao_lantern.json",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/CelebratoryXiaoLanternRenderer.java",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/CelebratoryXiaoLanternBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/celebratory_xiao_lantern.json",
           "src/main/resources/assets/oneiricconcept/models/block/celebratory_xiao_lantern.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/celebratory_xiao_lantern.json",
           "src/main/resources/assets/oneiricconcept/models/item/celebratory_xiao_lantern.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/celebratory_xiao_lantern.json"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/CelebratoryXiaoLanternRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/CelebratoryXiaoLanternBlock.java"
         ]
       },
       "path": "~/block"
@@ -16522,9 +16522,9 @@
       "registry_name": "gu_icelebratoryxiaolantern_edit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/client/gui/GUIcelebratoryxiaolanternEditScreen.java",
           "src/main/java/net/mcreator/oneiricconcept/network/GUIcelebratoryxiaolanternEditButtonMessage.java",
-          "src/main/java/net/mcreator/oneiricconcept/world/inventory/GUIcelebratoryxiaolanternEditMenu.java"
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/GUIcelebratoryxiaolanternEditMenu.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/GUIcelebratoryxiaolanternEditScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -17054,8 +17054,8 @@
       "registry_name": "dendro_launch",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/dendro_launch.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/DendroLaunchItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/DendroLaunchItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/dendro_launch.json"
         ]
       },
       "path": "~/item"
@@ -17162,11 +17162,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsCryoBlockEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsCryoRenderer.java",
           "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_cryo.json",
           "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_cryo.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsCryoBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_cryo.json"
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsCryoRenderer.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_cryo.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsCryoBlock.java"
         ]
       },
       "path": "~/block"
@@ -17179,12 +17179,12 @@
       "registry_name": "boom_blossoms_dendro",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsDendroRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsDendroBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_dendro.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsDendroBlockEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsDendroBlock.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsDendroRenderer.java",
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_dendro.json",
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_dendro.json"
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_dendro.json",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_dendro.json"
         ]
       },
       "path": "~/block"
@@ -17197,12 +17197,12 @@
       "registry_name": "boom_blossoms_electro",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_electro.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsElectroBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_electro.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsElectroBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_electro.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_electro.json",
           "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsElectroRenderer.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_electro.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsElectroBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_electro.json"
         ]
       },
       "path": "~/block"
@@ -17215,12 +17215,12 @@
       "registry_name": "boom_blossoms_hydro",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_hydro.json",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsHydroBlockEntity.java",
           "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsHydroRenderer.java",
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_hydro.json",
           "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsHydroBlock.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_hydro.json",
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_hydro.json"
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_hydro.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_hydro.json"
         ]
       },
       "path": "~/block"
@@ -17451,8 +17451,8 @@
       "registry_name": "explosive_electro",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/ExplosiveElectroRenderer.java",
-          "src/main/java/net/mcreator/oneiricconcept/entity/ExplosiveElectroEntity.java"
+          "src/main/java/net/mcreator/oneiricconcept/entity/ExplosiveElectroEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/ExplosiveElectroRenderer.java"
         ]
       },
       "path": "~/Projectile"
@@ -17571,8 +17571,8 @@
       "registry_name": "dendro_boomyam",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/dendro_boomyam.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/DendroBoomyamItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/DendroBoomyamItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/dendro_boomyam.json"
         ]
       },
       "path": "~/item/item_food"
@@ -17599,8 +17599,8 @@
       "registry_name": "hydro_boomyam",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/hydro_boomyam.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HydroBoomyamItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/HydroBoomyamItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/hydro_boomyam.json"
         ]
       },
       "path": "~/item/item_food"
@@ -17665,9 +17665,9 @@
       "registry_name": "boomblossoms_cryo_f",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_cryo_f_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_cryo_f.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_cryo_f.json"
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_cryo_f.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_cryo_f_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -17680,9 +17680,9 @@
       "registry_name": "boomblossoms_dendro_f",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_dendro_f_biome_modifier.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_dendro_f.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_dendro_f.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_dendro_f.json"
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_dendro_f_biome_modifier.json"
         ]
       },
       "path": "~/Feature"
@@ -17695,9 +17695,9 @@
       "registry_name": "boomblossoms_electro_f",
       "metadata": {
         "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_electro_f.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_electro_f_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_electro_f.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_electro_f.json"
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_electro_f.json"
         ]
       },
       "path": "~/Feature"
@@ -17710,9 +17710,9 @@
       "registry_name": "boomblossoms_hydro_f",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_hydro_f.json",
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_hydro_f.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_hydro_f_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_hydro_f.json"
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_hydro_f.json"
         ]
       },
       "path": "~/Feature"
@@ -17775,8 +17775,8 @@
       "registry_name": "toastpizza",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/toastpizza.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/ToastpizzaItem.java"
+          "src/main/java/net/mcreator/oneiricconcept/item/ToastpizzaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/toastpizza.json"
         ]
       },
       "path": "~/item/item_food"
@@ -17789,8 +17789,8 @@
       "registry_name": "toast_toast_pizza",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/ToastToastPizzaItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/toast_toast_pizza.json"
+          "src/main/resources/assets/oneiricconcept/models/item/toast_toast_pizza.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/ToastToastPizzaItem.java"
         ]
       },
       "path": "~/item/item_food"
@@ -20126,13 +20126,13 @@
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMenus.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModScreens.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMenus.java",
       "src/main/java/net/mcreator/oneiricconcept/network/MenuStateUpdateMessage.java",
-      "src/main/java/net/mcreator/oneiricconcept/world/features/configurations/StructureFeatureConfiguration.java",
       "src/main/java/net/mcreator/oneiricconcept/world/features/StructureFeature.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluids.java",
+      "src/main/java/net/mcreator/oneiricconcept/world/features/configurations/StructureFeatureConfiguration.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluidTypes.java",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFluids.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModGameRules.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFuels.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModMobEffects.java",
@@ -20146,16 +20146,15 @@
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModEntityRenderers.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModEntities.java",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModFeatures.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java",
       "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/META-INF/accesstransformer.cfg",
-      "src/main/resources/assets/oneiricconcept/sounds.json",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModModels.java",
+      "src/main/resources/assets/oneiricconcept/sounds.json",
       "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModSounds.java",
-      "src/main/java/net/mcreator/oneiricconcept/network/NbtArrayLists.java",
-      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java",
       "src/main/java/net/mcreator/oneiricconcept/OneiricconceptMod.java",
-      "src/main/java/net/mcreator/oneiricconcept/init/OneiricconceptModTabs.java"
+      "src/main/java/net/mcreator/oneiricconcept/network/OneiricconceptModVariables.java"
     ]
   },
   "foldersRoot": {
