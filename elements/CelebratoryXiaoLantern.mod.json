@@ -31,6 +31,9 @@
     "itemTexture": "xiao_lantern_item",
     "particleTexture": "",
     "blockSetType": "OAK",
+    "pottedPlant": {
+      "value": ""
+    },
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -96,6 +99,9 @@
     "beaconColorModifier": {
       "value": -26317,
       "falpha": 0.0
+    },
+    "strippingResult": {
+      "value": ""
     },
     "ignitedByLava": false,
     "flammability": 0,

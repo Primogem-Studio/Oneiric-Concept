@@ -16993,10 +16993,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -17883,6 +17879,72 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "PropagandaArmyOrder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propaganda_army_order",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "is1",
+            "type": "logic"
+          },
+          {
+            "name": "exp",
+            "type": "number"
+          },
+          {
+            "name": "nu",
+            "type": "number"
+          },
+          {
+            "name": "sec",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PropagandaArmyOrderProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PlayerMassage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_massage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlayerMassageProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -17939,6 +18001,18 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "orderMassage",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "OrderNu",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
     }
   ],
   "sound_elements": [

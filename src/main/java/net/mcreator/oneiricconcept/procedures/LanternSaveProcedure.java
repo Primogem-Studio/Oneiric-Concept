@@ -36,12 +36,13 @@ public class LanternSaveProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null) {
-				_blockEntity.getPersistentData().putString("year", ("" + Calendar.getInstance().get(Calendar.YEAR)));
-				_blockEntity.getPersistentData().putString("moon", ("" + Calendar.getInstance().get(Calendar.MONTH)));
-				_blockEntity.getPersistentData().putString("day", ("" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
 				_blockEntity.getPersistentData().putString("txt1", ("\u00A7l" + T1));
 				_blockEntity.getPersistentData().putString("txt2", ("\u00A7l" + T2));
 				_blockEntity.getPersistentData().putString("txt3", ("\u00A7l" + T3));
+				_blockEntity.getPersistentData().putString("year", ("" + Calendar.getInstance().get(Calendar.YEAR)));
+				_blockEntity.getPersistentData().putString("moon", ("" + Calendar.getInstance().get(Calendar.MONTH)));
+				_blockEntity.getPersistentData().putString("day", ("" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
+				_blockEntity.getPersistentData().putString("name", (entity.getDisplayName().getString()));
 				_blockEntity.getPersistentData().putDouble("BG", entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).ListOrder);
 				_blockEntity.getPersistentData().putBoolean("edited", true);
 			}

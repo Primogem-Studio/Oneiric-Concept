@@ -35,6 +35,7 @@ public class EventPGCProcedure {
         EventRegistry.registerEvent(2003, ctx -> {OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),2);return true;});
         EventRegistry.registerEvent(2004, ctx -> ctx.TimelimitedCombat(BARYON.get(),3,2,8,2000,ctx.getRandomEvemtID(),"奖励"));
         EventRegistry.registerEvent(2005, ctx -> {WhiteDiamondFakeProcedure.execute(ctx.getWorld(), ctx.x(), ctx.y(), ctx.z(), ctx.getPlayer());ctx.setGuiItem(new ItemStack(PrimogemcraftModItems.QWYZZM.get()), 1, 1, 4);return true;});
+        EventRegistry.registerEvent(2006, ctx -> {PropagandaArmyOrderProcedure.execute(ctx.getWorld(),ctx.getPlayer(),true,100,-1,30);return true;});
         //事件组
         EventRegistry.registerGroup(1000, ctx -> ctx.zu(2000, 2001, 7, "§e我不吃牛肉...吗？"));
         EventRegistry.registerGroup(1001, ctx -> ctx.zu(2002, 2003, 0, "§c飞向高天"));
@@ -49,5 +50,6 @@ public class EventPGCProcedure {
         EventRegistry.registerDescription(2003, () -> Component.translatable("translation.oneiricconcept.marshmallow2").getString());
         EventRegistry.registerDescription(2004, () -> "§d与3个重子战斗，击杀两只即可获得奖励");
         EventRegistry.registerDescription(2005, () -> "§6你将获得非洲之心");
+        EventRegistry.registerDescription(2006, () -> "§6你将为火花花的直播间刷人气");
     }
 }
