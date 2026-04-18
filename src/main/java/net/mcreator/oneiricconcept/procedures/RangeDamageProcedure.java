@@ -21,7 +21,7 @@ public class RangeDamageProcedure {
 			final Vec3 _center = new Vec3(x, y, z);
 			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(range / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 				entityiterator.hurt(damagesource,
-						(float) ((world.getDifficulty() == Difficulty.HARD && !(entityiterator instanceof Player || (entityiterator instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player) ? damage : damage * 0.5)
+						(float) ((world.getDifficulty() == Difficulty.HARD || !(entityiterator instanceof Player || (entityiterator instanceof TamableAnimal _tamEnt ? (Entity) _tamEnt.getOwner() : null) instanceof Player) ? damage : damage * 0.5)
 								* (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER))));
 			}
 		}
