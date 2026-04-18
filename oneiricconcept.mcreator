@@ -17909,6 +17909,18 @@
             "type": "number"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -19332,7 +19344,9 @@
       "item.oneiricconcept.toastpizza": "Toast pizza",
       "item.oneiricconcept.toast_toast_pizza": "Toast toast pizza",
       "advancements.rice_cake.title": "Rice Cake",
-      "advancements.rice_cake.descr": "Countdown: To Sweet Dreams! "
+      "advancements.rice_cake.descr": "Countdown: To Sweet Dreams! ",
+      "translation.oneiricconcept.propagandatip": "",
+      "death.attack.propaganda": ""
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19763,7 +19777,9 @@
       "item.oneiricconcept.toastpizza": "吐司披萨",
       "item.oneiricconcept.toast_toast_pizza": "烤吐司披萨",
       "advancements.rice_cake.title": "年糕",
-      "advancements.rice_cake.descr": "过年吃的东西，不就是年糕吗？"
+      "advancements.rice_cake.descr": "过年吃的东西，不就是年糕吗？",
+      "translation.oneiricconcept.propagandatip": "你需要按照给出的示例发送消息，按绩效获得奖励，不达标会遭到惩罚。",
+      "death.attack.propaganda": "%1$s 被优化了"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20195,7 +20211,9 @@
       "item.oneiricconcept.toastpizza": "Toastpizza",
       "item.oneiricconcept.toast_toast_pizza": "Toastpizza",
       "advancements.rice_cake.title": "Rice Cake",
-      "advancements.rice_cake.descr": "Countdown: To Sweet Dreams! "
+      "advancements.rice_cake.descr": "Countdown: To Sweet Dreams! ",
+      "translation.oneiricconcept.propagandatip": "",
+      "death.attack.propaganda": ""
     }
   },
   "metadata": {

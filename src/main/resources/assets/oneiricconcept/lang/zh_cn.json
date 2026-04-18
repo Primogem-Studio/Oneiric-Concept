@@ -427,5 +427,7 @@
   "item.oneiricconcept.toastpizza": "吐司披萨",
   "item.oneiricconcept.toast_toast_pizza": "烤吐司披萨",
   "advancements.rice_cake.title": "年糕",
-  "advancements.rice_cake.descr": "过年吃的东西，不就是年糕吗？"
+  "advancements.rice_cake.descr": "过年吃的东西，不就是年糕吗？",
+  "translation.oneiricconcept.propagandatip": "你需要按照给出的示例发送消息，按绩效获得奖励，不达标会遭到惩罚。",
+  "death.attack.propaganda": "%1$s 被优化了"
 }

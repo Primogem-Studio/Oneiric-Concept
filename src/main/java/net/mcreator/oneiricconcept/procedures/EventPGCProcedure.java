@@ -35,14 +35,16 @@ public class EventPGCProcedure {
         EventRegistry.registerEvent(2003, ctx -> {OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),2);return true;});
         EventRegistry.registerEvent(2004, ctx -> ctx.TimelimitedCombat(BARYON.get(),3,2,8,2000,ctx.getRandomEvemtID(),"奖励"));
         EventRegistry.registerEvent(2005, ctx -> {WhiteDiamondFakeProcedure.execute(ctx.getWorld(), ctx.x(), ctx.y(), ctx.z(), ctx.getPlayer());ctx.setGuiItem(new ItemStack(PrimogemcraftModItems.QWYZZM.get()), 1, 1, 4);return true;});
-        EventRegistry.registerEvent(2006, ctx -> {PropagandaArmyOrderProcedure.execute(ctx.getWorld(),ctx.getPlayer(),true,100,-1,30);return true;});
+        EventRegistry.registerEvent(2006, ctx -> {PropagandaArmyOrderProcedure.execute(ctx.getWorld(), ctx.x(), ctx.y(), ctx.z(), ctx.getPlayer(),true,100,-1,60);return true;});
+        EventRegistry.registerEvent(2007, ctx -> {PropagandaArmyOrderProcedure.execute(ctx.getWorld(), ctx.x(), ctx.y(), ctx.z(), ctx.getPlayer(),true,200,-1,90);return true;});
         //事件组
         EventRegistry.registerGroup(1000, ctx -> ctx.zu(2000, 2001, 7, "§e我不吃牛肉...吗？"));
-        EventRegistry.registerGroup(1001, ctx -> ctx.zu(2002, 2003, 0, "§c飞向高天"));
+        EventRegistry.registerGroup(1001, ctx -> ctx.zu(2002, 2003, 0, "§c棉花糖号"));
         EventRegistry.registerGroup(1002, ctx -> ctx.zu(7, 13, 0, "§a奖励"));
         EventRegistry.registerGroup(1003, ctx -> ctx.zu(8, 14, 0, "§a奖励"));
         EventRegistry.registerGroup(1004, ctx -> ctx.zu(2004, 2004, 2004, "§d与重子搏斗！！！"));
         EventRegistry.registerGroup(1005, ctx -> ctx.zu(2005, 7, 13, "§c至高奖励！"));
+        EventRegistry.registerGroup(1006, ctx -> ctx.zu(2006, 2007, 0, "§c超级直播矩阵"));
         //事件描述
         EventRegistry.registerDescription(2000, () -> "§d梦华构想§e模组的肉馅§c将不再掉落");
         EventRegistry.registerDescription(2001, () -> "§d梦华构想§e模组的肉馅§a将继续掉落");
@@ -51,5 +53,6 @@ public class EventPGCProcedure {
         EventRegistry.registerDescription(2004, () -> "§d与3个重子战斗，击杀两只即可获得奖励");
         EventRegistry.registerDescription(2005, () -> "§6你将获得非洲之心");
         EventRegistry.registerDescription(2006, () -> "§6你将为火花花的直播间刷人气");
+        EventRegistry.registerDescription(2007, () -> "§6你将为火花花的直播间刷很多人气");
     }
 }
