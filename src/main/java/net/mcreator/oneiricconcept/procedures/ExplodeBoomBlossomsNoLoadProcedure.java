@@ -21,19 +21,20 @@ public class ExplodeBoomBlossomsNoLoadProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		double rx = 0;
 		double rz = 0;
+		double mode = 0;
 		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, (y + 2), z, 3, Level.ExplosionInteraction.BLOCK);
+			_level.explode(null, x, (y + 2), z, 3, Level.ExplosionInteraction.TNT);
 		if (OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get() == blockstate.getBlock()) {
-			ExplosionIgnitesProcedure.execute(world, x, y, z, 0, 21);
+			mode = 0;
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_CRYO.get() == blockstate.getBlock()) {
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.FREEZE)), 20, 21);
-			ExplosionIgnitesProcedure.execute(world, x, y, z, 2, 21);
+			mode = 2;
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO.get() == blockstate.getBlock()) {
-			ExplosionIgnitesProcedure.execute(world, x, y, z, 3, 21);
+			mode = 3;
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.WITHER)), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO.get() == blockstate.getBlock()) {
-			ExplosionIgnitesProcedure.execute(world, x, y, z, 1, 21);
+			mode = 1;
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO.get() == blockstate.getBlock()) {
 			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT)), 20, 21);
@@ -47,5 +48,6 @@ public class ExplodeBoomBlossomsNoLoadProcedure {
 				}
 			}
 		}
+		ExplosionIgnitesProcedure.execute(world, x, y, z, mode, 21);
 	}
 }
