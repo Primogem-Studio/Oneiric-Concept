@@ -82,6 +82,7 @@ public class OneiricconceptModVariables {
 		if (!event.isWasDeath()) {
 			clone.ListOrder = original.ListOrder;
 			clone.targetOffset = original.targetOffset;
+			clone.shuhu = original.shuhu;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -252,6 +253,7 @@ public class OneiricconceptModVariables {
 		public double EquilibriumLevel = 0;
 		public String orderMassage = "\"\"";
 		public double OrderNu = 0.0;
+		public double shuhu = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -263,6 +265,7 @@ public class OneiricconceptModVariables {
 			nbt.putDouble("EquilibriumLevel", EquilibriumLevel);
 			nbt.putString("orderMassage", orderMassage);
 			nbt.putDouble("OrderNu", OrderNu);
+			nbt.putDouble("shuhu", shuhu);
 			return nbt;
 		}
 
@@ -275,6 +278,7 @@ public class OneiricconceptModVariables {
 			EquilibriumLevel = nbt.getDouble("EquilibriumLevel");
 			orderMassage = nbt.getString("orderMassage");
 			OrderNu = nbt.getDouble("OrderNu");
+			shuhu = nbt.getDouble("shuhu");
 		}
 
 		public void markSyncDirty() {

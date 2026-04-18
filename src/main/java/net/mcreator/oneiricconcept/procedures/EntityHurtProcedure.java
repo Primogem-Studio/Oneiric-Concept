@@ -23,6 +23,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
 
+import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
@@ -61,6 +62,11 @@ public class EntityHurtProcedure {
 		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		Refinement = GetDoubleNBTTagProcedure.execute(hitItem, "jing_lian");
 		if (sworditem.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("oneiricconcept:shuhu_gift")))) != 0) {
+			{
+				OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
+				_vars.shuhu = amount + entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).shuhu;
+				_vars.markSyncDirty();
+			}
 			swordEnchant = sworditem.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("oneiricconcept:shuhu_gift"))));
 			Charge = sworditem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("ShuhuCharge") + 1;
 			range = 5 + swordEnchant * 2;
@@ -86,8 +92,13 @@ public class EntityHurtProcedure {
 				Changetxt = Changetxt + "\u25C7";
 			}
 			if (Charge >= MaxCharge) {
+				{
+					OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
+					_vars.shuhu = 0;
+					_vars.markSyncDirty();
+				}
 				if (entity instanceof LivingEntity _entity)
-					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * swordEnchant * 0.5 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
+					_entity.setHealth((float) (entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).shuhu * swordEnchant * 0.5 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
 				Changetxt = Component.translatable("translation.oneiricconcept.shuhu").getString();
 				{
 					final Vec3 _center = new Vec3(sx, sy, sz);
@@ -98,10 +109,8 @@ public class EntityHurtProcedure {
 										(world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)));
 							});
 							DelayedDamageProcedure.execute(world, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), entityiterator,
-									(entity instanceof LivingEntity _livingEntity17 && _livingEntity17.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity17.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
-											* (0.2 + swordEnchant * 0.068)
-											+ (entity instanceof LivingEntity _livingEntity18 && _livingEntity18.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity18.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)
-													* (0.33 + swordEnchant * 0.07),
+									(entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity16.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
+											* (0.2 + swordEnchant * 0.068) + entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).shuhu * (0.33 + swordEnchant * 0.07),
 									40);
 						}
 					}
@@ -117,8 +126,8 @@ public class EntityHurtProcedure {
 				_player.displayClientMessage(Component.literal(Changetxt), true);
 		}
 		if ((BuiltInRegistries.ITEM.getKey(hitItem.getItem()).toString()).equals("oneiricconcept:stardust_baseballer") && hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged_R")) {
-			if (event instanceof LivingIncomingDamageEvent _hurt25)
-				_hurt25.setAmount((float) (amount * (3 + Refinement * 0.75)));
+			if (event instanceof LivingIncomingDamageEvent _hurt23)
+				_hurt23.setAmount((float) (amount * (3 + Refinement * 0.75)));
 			{
 				final String _tagName = "textures";
 				final double _tagValue = 0;
