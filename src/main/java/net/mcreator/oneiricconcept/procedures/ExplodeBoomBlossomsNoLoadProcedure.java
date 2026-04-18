@@ -23,21 +23,20 @@ public class ExplodeBoomBlossomsNoLoadProcedure {
 		double rz = 0;
 		double mode = 0;
 		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, (y + 2), z, 3, Level.ExplosionInteraction.TNT);
 		if (OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO.get() == blockstate.getBlock()) {
 			mode = 0;
+			RangeDamageProcedure.execute(world, x, y, z, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), true, false, true, false, 1, 1), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_CRYO.get() == blockstate.getBlock()) {
-			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.FREEZE)), 20, 21);
+			RangeDamageProcedure.execute(world, x, y, z, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.FREEZE)), true, false, true, false, 4, 1), 20, 21);
 			mode = 2;
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO.get() == blockstate.getBlock()) {
 			mode = 3;
-			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.WITHER)), 20, 21);
+			RangeDamageProcedure.execute(world, x, y, z, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.WITHER)), true, false, true, false, 5, 1), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO.get() == blockstate.getBlock()) {
 			mode = 1;
-			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), 20, 21);
+			RangeDamageProcedure.execute(world, x, y, z, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), true, false, true, false, 2, 1), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO.get() == blockstate.getBlock()) {
-			RangeDamageProcedure.execute(world, x, y, z, new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT)), 20, 21);
+			RangeDamageProcedure.execute(world, x, y, z, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT)), true, false, true, false, 3, 1), 20, 21);
 			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 5, 10); index0++) {
 				rx = x + Mth.nextInt(RandomSource.create(), -10, 10);
 				rz = z + Mth.nextInt(RandomSource.create(), -10, 10);
@@ -48,6 +47,8 @@ public class ExplodeBoomBlossomsNoLoadProcedure {
 				}
 			}
 		}
+		if (world instanceof Level _level && !_level.isClientSide())
+			_level.explode(null, x, (y + 2), z, 3, Level.ExplosionInteraction.TNT);
 		ExplosionIgnitesProcedure.execute(world, x, y, z, mode, 21);
 	}
 }
