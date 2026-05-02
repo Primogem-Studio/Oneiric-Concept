@@ -20,18 +20,24 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class PropagandaArmyOrderProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, boolean is1, double exp, double nu, double sec) {
+	public static void execute(LevelAccessor world, Entity entity, boolean is1, double exp, double nu, double sec) {
 		if (entity == null)
 			return;
 		String txt = "";
 		double Nu = 0;
 		double NuE = 0;
+		double ex = 0;
+		double ey = 0;
+		double ez = 0;
+		ex = entity.getX();
+		ey = entity.getY();
+		ez = entity.getZ();
 		if (hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.PROPAGANDA_ARMY.get())) || hasEntityInInventory(entity, new ItemStack(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK.get()))) {
-			for (int index0 = 0; index0 < (int) (exp / 20); index0++) {
+			for (int index0 = 0; index0 < (int) (exp / 10); index0++) {
 				if (entity instanceof Player _player)
 					_player.giveExperiencePoints((int) exp);
 				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.HONKAI_SHARD.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, ex, ey, ez, new ItemStack(OneiricconceptModItems.HONKAI_SHARD.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -39,8 +45,9 @@ public class PropagandaArmyOrderProcedure {
 		} else {
 			if (!world.isClientSide()) {
 				Nu = nu;
+				NuE = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).OrderNu;
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal((sec + "s")), true);
+					_player.displayClientMessage(Component.literal((sec + "" + (exp / 50 <= NuE ? "s|\u00A7a" : "s|\u00A74") + exp / 50 + "/" + NuE)), true);
 				txt = Component.translatable(("translation.oneiricconcept.propaganda" + Mth.nextInt(RandomSource.create(), 1, 5))).getString();
 				if (is1) {
 					{
@@ -51,7 +58,6 @@ public class PropagandaArmyOrderProcedure {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal((Component.translatable("translation.oneiricconcept.propagandatip").getString())), false);
 				}
-				NuE = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).OrderNu;
 				if (0 < sec) {
 					if (Nu < NuE) {
 						Nu = NuE;
@@ -63,25 +69,31 @@ public class PropagandaArmyOrderProcedure {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
 							_player.displayClientMessage(Component.literal(txt), false);
 						OneiricconceptMod.queueServerWork(20, () -> {
-							PropagandaArmyOrderProcedure.execute(world, x, y, z, entity, false, exp, nu + 1, sec - 1);
+							PropagandaArmyOrderProcedure.execute(world, entity, false, exp, nu + 1, sec - 1);
 						});
 					} else {
 						OneiricconceptMod.queueServerWork(20, () -> {
-							PropagandaArmyOrderProcedure.execute(world, x, y, z, entity, false, exp, nu, sec - 1);
+							PropagandaArmyOrderProcedure.execute(world, entity, false, exp, nu, sec - 1);
 						});
 					}
 				} else {
-					if (exp / 50 < NuE) {
+					if (exp / 50 <= NuE) {
+						if (world instanceof ServerLevel _level) {
+							_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u4F60\u8FC7\u5173").withColor(0x00ff33), false);
+						}
 						for (int index1 = 0; index1 < (int) NuE; index1++) {
 							if (entity instanceof Player _player)
 								_player.giveExperiencePoints((int) exp);
 							if (world instanceof ServerLevel _level) {
-								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(OneiricconceptModItems.HONKAI_SHARD.get()));
+								ItemEntity entityToSpawn = new ItemEntity(_level, ex, ey, ez, new ItemStack(OneiricconceptModItems.HONKAI_SHARD.get()));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
 					} else {
+						if (world instanceof ServerLevel _level) {
+							_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u8BE5\u7F5A").withColor(0xff0000), false);
+						}
 						if (entity instanceof LivingEntity _entity) {
 							DamageSource _dmgsource = new DamageSource(world.holderOrThrow(DamageTypes.GENERIC));
 							_entity.hurt(new DamageSource(_dmgsource.typeHolder(), _dmgsource.getEntity(), _dmgsource.getDirectEntity()) {
