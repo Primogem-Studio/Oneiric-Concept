@@ -241,6 +241,7 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> HYDRO_BOOMYAM;
 	public static final DeferredItem<Item> TOASTPIZZA;
 	public static final DeferredItem<Item> TOAST_TOAST_PIZZA;
+	public static final DeferredItem<Item> HUMAN_HEIGHT_AUSPICIOUS_CROPS;
 	static {
 		SAUSAGE = REGISTRY.register("sausage", SausageItem::new);
 		SMOKE_SAUSAGE = REGISTRY.register("smoke_sausage", SmokeSausageItem::new);
@@ -452,6 +453,7 @@ public class OneiricconceptModItems {
 		HYDRO_BOOMYAM = REGISTRY.register("hydro_boomyam", HydroBoomyamItem::new);
 		TOASTPIZZA = REGISTRY.register("toastpizza", ToastpizzaItem::new);
 		TOAST_TOAST_PIZZA = REGISTRY.register("toast_toast_pizza", ToastToastPizzaItem::new);
+		HUMAN_HEIGHT_AUSPICIOUS_CROPS = REGISTRY.register("human_height_auspicious_crops", HumanHeightAuspiciousCropsItem::new);
 	}
 
 	// Start of user code block custom items

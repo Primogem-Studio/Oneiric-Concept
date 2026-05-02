@@ -17945,6 +17945,20 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "HumanHeightAuspiciousCrops",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "human_height_auspicious_crops",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/human_height_auspicious_crops.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/HumanHeightAuspiciousCropsItem.java"
+        ]
+      },
+      "path": "~/item"
     }
   ],
   "variable_elements": [
@@ -18704,6 +18718,12 @@
       "CUSTOM:DendroBoomyam",
       "CUSTOM:ElectroBoomyam",
       "CUSTOM:HydroBoomyam"
+    ],
+    "ITEMS:c:crops/grain": [
+      "CUSTOM:HumanHeightAuspiciousCrops"
+    ],
+    "ITEMS:c:crops/wheat": [
+      "CUSTOM:HumanHeightAuspiciousCrops"
     ]
   },
   "tab_element_order": {
@@ -18816,7 +18836,8 @@
       "BoomBlossomsCryo",
       "BoomBlossomsDendro",
       "BoomBlossomsElectro",
-      "BoomBlossomsHydro"
+      "BoomBlossomsHydro",
+      "HumanHeightAuspiciousCrops"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -19339,13 +19360,38 @@
       "item.oneiricconcept.toast_toast_pizza": "Toast toast pizza",
       "advancements.rice_cake.title": "Rice Cake",
       "advancements.rice_cake.descr": "Countdown: To Sweet Dreams! ",
-      "translation.oneiricconcept.propagandatip": "",
-      "death.attack.propaganda": "",
+      "translation.oneiricconcept.propagandatip": "You need to send messages according to the given example and receive rewards based on performance. Failure to meet the standards will result in punishment.",
+      "death.attack.propaganda": "%1$s fired",
       "translation.oneiricconcept.propaganda1": "",
       "translation.oneiricconcept.propaganda2": "",
       "translation.oneiricconcept.propaganda3": "",
       "translation.oneiricconcept.propaganda4": "",
-      "translation.oneiricconcept.propaganda5": ""
+      "translation.oneiricconcept.propaganda5": "",
+      "translation.oneiricconcept.propaganda6": "",
+      "translation.oneiricconcept.propaganda7": "",
+      "translation.oneiricconcept.propaganda8": "",
+      "translation.oneiricconcept.propaganda9": "",
+      "translation.oneiricconcept.propaganda10": "",
+      "translation.oneiricconcept.propaganda11": "",
+      "translation.oneiricconcept.propaganda12": "",
+      "translation.oneiricconcept.propaganda13": "",
+      "translation.oneiricconcept.propaganda14": "",
+      "translation.oneiricconcept.propaganda15": "",
+      "translation.oneiricconcept.propaganda16": "",
+      "translation.oneiricconcept.propaganda17": "",
+      "translation.oneiricconcept.propaganda18": "",
+      "translation.oneiricconcept.propaganda19": "",
+      "translation.oneiricconcept.propaganda20": "",
+      "translation.oneiricconcept.propaganda21": "",
+      "translation.oneiricconcept.propaganda22": "",
+      "translation.oneiricconcept.propaganda23": "",
+      "translation.oneiricconcept.propaganda24": "",
+      "translation.oneiricconcept.propaganda25": "",
+      "translation.oneiricconcept.propaganda26": "",
+      "translation.oneiricconcept.propaganda27": "",
+      "translation.oneiricconcept.propaganda28": "",
+      "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
+      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19783,7 +19829,32 @@
       "translation.oneiricconcept.propaganda2": "肚皮饱饱心情好，看火花花看到老！",
       "translation.oneiricconcept.propaganda3": "火花花！火花花！",
       "translation.oneiricconcept.propaganda4": "狂欢直到世界尽头！",
-      "translation.oneiricconcept.propaganda5": "火花花好好好"
+      "translation.oneiricconcept.propaganda5": "火花花好好好",
+      "translation.oneiricconcept.propaganda6": "喝水提醒bot路过",
+      "translation.oneiricconcept.propaganda7": "主播可爱捏",
+      "translation.oneiricconcept.propaganda8": "来支持了",
+      "translation.oneiricconcept.propaganda9": "主播你坐多久了",
+      "translation.oneiricconcept.propaganda10": "别说了我正在上课",
+      "translation.oneiricconcept.propaganda11": "是什么呀？",
+      "translation.oneiricconcept.propaganda12": "懂的都懂",
+      "translation.oneiricconcept.propaganda13": "坐等名场面",
+      "translation.oneiricconcept.propaganda14": "比心心",
+      "translation.oneiricconcept.propaganda15": "我每天都要来看",
+      "translation.oneiricconcept.propaganda16": "每天都有直播吗",
+      "translation.oneiricconcept.propaganda17": "我早就是花粉了啊",
+      "translation.oneiricconcept.propaganda18": "好像做火花花的兔子啊",
+      "translation.oneiricconcept.propaganda19": "火花大人万岁",
+      "translation.oneiricconcept.propaganda20": "火花花说什么都对",
+      "translation.oneiricconcept.propaganda21": "是火花天下第一可爱",
+      "translation.oneiricconcept.propaganda22": "旧型号退散！",
+      "translation.oneiricconcept.propaganda23": "谁能拒绝火花呢",
+      "translation.oneiricconcept.propaganda24": "这个BGM好怀念啊",
+      "translation.oneiricconcept.propaganda25": "BGM很对味",
+      "translation.oneiricconcept.propaganda26": "要逛二相乐园吗",
+      "translation.oneiricconcept.propaganda27": "太有节目效果了",
+      "translation.oneiricconcept.propaganda28": "老资历我敬你",
+      "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
+      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20222,7 +20293,32 @@
       "translation.oneiricconcept.propaganda2": "",
       "translation.oneiricconcept.propaganda3": "",
       "translation.oneiricconcept.propaganda4": "",
-      "translation.oneiricconcept.propaganda5": ""
+      "translation.oneiricconcept.propaganda5": "",
+      "translation.oneiricconcept.propaganda6": "",
+      "translation.oneiricconcept.propaganda7": "",
+      "translation.oneiricconcept.propaganda8": "",
+      "translation.oneiricconcept.propaganda9": "",
+      "translation.oneiricconcept.propaganda10": "",
+      "translation.oneiricconcept.propaganda11": "",
+      "translation.oneiricconcept.propaganda12": "",
+      "translation.oneiricconcept.propaganda13": "",
+      "translation.oneiricconcept.propaganda14": "",
+      "translation.oneiricconcept.propaganda15": "",
+      "translation.oneiricconcept.propaganda16": "",
+      "translation.oneiricconcept.propaganda17": "",
+      "translation.oneiricconcept.propaganda18": "",
+      "translation.oneiricconcept.propaganda19": "",
+      "translation.oneiricconcept.propaganda20": "",
+      "translation.oneiricconcept.propaganda21": "",
+      "translation.oneiricconcept.propaganda22": "",
+      "translation.oneiricconcept.propaganda23": "",
+      "translation.oneiricconcept.propaganda24": "",
+      "translation.oneiricconcept.propaganda25": "",
+      "translation.oneiricconcept.propaganda26": "",
+      "translation.oneiricconcept.propaganda27": "",
+      "translation.oneiricconcept.propaganda28": "",
+      "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
+      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops"
     }
   },
   "metadata": {
@@ -20440,7 +20536,7 @@
   "workspaceSettings": {
     "modid": "oneiricconcept",
     "modName": "梦华构想OneiricConcept",
-    "version": "26.8",
+    "version": "26.81",
     "description": "原石工艺的附属模组",
     "author": "GlowStar, Pepper某人，MCreator",
     "websiteURL": "https://mcreator.net",

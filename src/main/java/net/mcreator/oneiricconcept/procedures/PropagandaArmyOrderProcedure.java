@@ -48,7 +48,7 @@ public class PropagandaArmyOrderProcedure {
 				NuE = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).OrderNu;
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal((sec + "" + (exp / 50 <= NuE ? "s|\u00A7a" : "s|\u00A74") + exp / 50 + "/" + NuE)), true);
-				txt = Component.translatable(("translation.oneiricconcept.propaganda" + Mth.nextInt(RandomSource.create(), 1, 5))).getString();
+				txt = Component.translatable(("translation.oneiricconcept.propaganda" + Mth.nextInt(RandomSource.create(), 1, 28))).getString();
 				if (is1) {
 					{
 						OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
