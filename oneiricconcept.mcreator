@@ -17959,6 +17959,80 @@
         ]
       },
       "path": "~/item"
+    },
+    {
+      "name": "Auspiciouscrops",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auspiciouscrops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "dire",
+            "type": "direction"
+          },
+          {
+            "name": "main",
+            "type": "logic"
+          },
+          {
+            "name": "min",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AuspiciouscropsProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "AuspiciouscropsStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auspiciouscrops_start",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AuspiciouscropsStartProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
