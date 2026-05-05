@@ -64,10 +64,10 @@ public class AuspiciouscropsProcedure {
 				if (_bs.getBlock().getStateDefinition().getProperty("moisture") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
-			if (!(dire == Direction.UP) && RandomProcedure.execute(world, 0.8) || 0 < min) {
+			if (!(dire == Direction.UP) && RandomProcedure.execute(world, 0.3) || 0 < min) {
 				AuspiciouscropsProcedure.execute(world, xx, y, zz, dire, main, min - 1);
 				if (main) {
-					AuspiciouscropsProcedure.execute(world, xx, y, zz, dire.getCounterClockWise(Direction.Axis.Y), false, 2);
+					AuspiciouscropsProcedure.execute(world, xx, y, zz, dire.getCounterClockWise(Direction.Axis.Y), false, min - 1);
 				}
 			}
 		}
