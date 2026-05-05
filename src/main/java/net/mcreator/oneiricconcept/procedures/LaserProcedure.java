@@ -62,7 +62,7 @@ public class LaserProcedure {
 						_level.sendParticles(ParticleTypes.WAX_OFF, (x1 + ratio * dx), (y1 + ratio * dy), (z1 + ratio * dz), 1, 0, 0, 0, 0);
 				}
 				isGc = ModList.get().isLoaded("genshincraft");
-				target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, true, 1),
+				target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_PROJECTILE), immediatesourceentity, entity), false, true, false, 1),
 						(float) Math.max(isGc ? 32 : 2, (isGc ? 40 : 4) * JunHengDengJiProcedure.execute(target) * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER))));
 			}
 		}
