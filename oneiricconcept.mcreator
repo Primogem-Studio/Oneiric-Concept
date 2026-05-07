@@ -16240,21 +16240,6 @@
       "path": "~/loot"
     },
     {
-      "name": "BoomblossomspyroF",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boomblossomspyro_f",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossomspyro_f_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossomspyro_f.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossomspyro_f.json"
-        ]
-      },
-      "path": "~/Feature"
-    },
-    {
       "name": "BlazerPowder1",
       "type": "recipe",
       "compiles": true,
@@ -17654,51 +17639,6 @@
       "path": "~/loot"
     },
     {
-      "name": "BoomblossomsCryoF",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boomblossoms_cryo_f",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_cryo_f.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_cryo_f.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_cryo_f_biome_modifier.json"
-        ]
-      },
-      "path": "~/Feature"
-    },
-    {
-      "name": "BoomblossomsDendroF",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boomblossoms_dendro_f",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_dendro_f.json",
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_dendro_f.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_dendro_f_biome_modifier.json"
-        ]
-      },
-      "path": "~/Feature"
-    },
-    {
-      "name": "BoomblossomsElectroF",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "boomblossoms_electro_f",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_electro_f.json",
-          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_electro_f_biome_modifier.json",
-          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_electro_f.json"
-        ]
-      },
-      "path": "~/Feature"
-    },
-    {
       "name": "BoomblossomsHydroF",
       "type": "feature",
       "compiles": true,
@@ -18086,6 +18026,32 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "BoomblossomsNH",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boomblossoms_nh",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_nh.json",
+          "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_nh.json",
+          "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_nh_biome_modifier.json"
+        ]
+      },
+      "path": "~/Feature"
+    },
+    {
+      "name": "OcBoomblossoms",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oc_boomblossoms",
+      "metadata": {
+        "type": "number",
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -19519,7 +19485,9 @@
       "translation.oneiricconcept.propaganda28": "",
       "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
       "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops",
-      "item.oneiricconcept.human_height_auspicious_crops.description_1": "However, it still requires more raw materials to activate"
+      "item.oneiricconcept.human_height_auspicious_crops.description_1": "However, it still requires more raw materials to activate",
+      "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
+      "gamerule.ocBoomblossoms": "generate BoomBlossoms"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19983,7 +19951,9 @@
       "translation.oneiricconcept.propaganda28": "老资历我敬你",
       "item.oneiricconcept.human_height_auspicious_crops.description_0": "「栽下它的学者希望人们永远不用再体会饥饿的感觉。」",
       "item.oneiricconcept.human_height_auspicious_crops": "一人嘉禾",
-      "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活"
+      "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活",
+      "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
+      "gamerule.ocBoomblossoms": "generate BoomBlossoms"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20448,7 +20418,9 @@
       "translation.oneiricconcept.propaganda28": "",
       "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
       "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops",
-      "item.oneiricconcept.human_height_auspicious_crops.description_1": ""
+      "item.oneiricconcept.human_height_auspicious_crops.description_1": "",
+      "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
+      "gamerule.ocBoomblossoms": "generate BoomBlossoms"
     }
   },
   "metadata": {

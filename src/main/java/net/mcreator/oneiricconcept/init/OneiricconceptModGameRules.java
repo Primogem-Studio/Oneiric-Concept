@@ -19,6 +19,7 @@ public class OneiricconceptModGameRules {
 	public static GameRules.Key<GameRules.BooleanValue> FRIENDSHIP_MODE;
 	public static GameRules.Key<GameRules.IntegerValue> BARYON_SPAWN;
 	public static GameRules.Key<GameRules.BooleanValue> FALLING_MEAT;
+	public static GameRules.Key<GameRules.IntegerValue> OC_BOOMBLOSSOMS;
 
 	@SubscribeEvent
 	public static void registerGameRules(FMLCommonSetupEvent event) {
@@ -30,5 +31,6 @@ public class OneiricconceptModGameRules {
 		FRIENDSHIP_MODE = GameRules.register("friendshipMode", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
 		BARYON_SPAWN = GameRules.register("baryonSpawn", GameRules.Category.MOBS, GameRules.IntegerValue.create(10));
 		FALLING_MEAT = GameRules.register("fallingMeat", GameRules.Category.DROPS, GameRules.BooleanValue.create(true));
+		OC_BOOMBLOSSOMS = GameRules.register("ocBoomblossoms", GameRules.Category.UPDATES, GameRules.IntegerValue.create(2));
 	}
 }

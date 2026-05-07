@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "generate BoomBlossoms",
+    "description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
+    "category": "UPDATES",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 2
+  }
+}

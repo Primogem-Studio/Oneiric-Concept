@@ -460,5 +460,7 @@
   "translation.oneiricconcept.propaganda28": "",
   "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
   "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops",
-  "item.oneiricconcept.human_height_auspicious_crops.description_1": "However, it still requires more raw materials to activate"
+  "item.oneiricconcept.human_height_auspicious_crops.description_1": "However, it still requires more raw materials to activate",
+  "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
+  "gamerule.ocBoomblossoms": "generate BoomBlossoms"
 }

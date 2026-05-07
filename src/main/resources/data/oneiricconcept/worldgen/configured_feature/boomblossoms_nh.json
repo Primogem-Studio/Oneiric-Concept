@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "oneiricconcept:boom_blossoms_pyro"
+          },
+          "weight": 3
+        },
+        {
+          "data": {
+            "Name": "oneiricconcept:boom_blossoms_dendro"
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "oneiricconcept:boom_blossoms_electro"
+          },
+          "weight": 2
+        },
+        {
+          "data": {
+            "Name": "oneiricconcept:boom_blossoms_cryo"
+          },
+          "weight": 1
+        }
+      ]
+    }
+  }
+}
