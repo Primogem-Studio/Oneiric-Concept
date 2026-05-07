@@ -17985,10 +17985,6 @@
             "type": "number"
           },
           {
-            "name": "y",
-            "type": "number"
-          },
-          {
             "name": "z",
             "type": "number"
           },
@@ -18012,11 +18008,15 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
-            "name": "y",
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
             "type": "number"
           },
           {
@@ -18030,6 +18030,46 @@
         ],
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/AuspiciouscropsStartProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "AuspiciouscropsEnchantLight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auspiciouscrops_enchant_light",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AuspiciouscropsEnchantLightProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "AuspiciouscropsTip",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auspiciouscrops_tip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/AuspiciouscropsTipProcedure.java"
         ]
       },
       "path": "~/process"
@@ -19465,7 +19505,8 @@
       "translation.oneiricconcept.propaganda27": "",
       "translation.oneiricconcept.propaganda28": "",
       "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
-      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops"
+      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops",
+      "item.oneiricconcept.human_height_auspicious_crops.description_1": "However, it still requires more raw materials to activate"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19927,8 +19968,9 @@
       "translation.oneiricconcept.propaganda26": "要逛二相乐园吗",
       "translation.oneiricconcept.propaganda27": "太有节目效果了",
       "translation.oneiricconcept.propaganda28": "老资历我敬你",
-      "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
-      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops"
+      "item.oneiricconcept.human_height_auspicious_crops.description_0": "「栽下它的学者希望人们永远不用再体会饥饿的感觉。」",
+      "item.oneiricconcept.human_height_auspicious_crops": "一人嘉禾",
+      "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20392,7 +20434,8 @@
       "translation.oneiricconcept.propaganda27": "",
       "translation.oneiricconcept.propaganda28": "",
       "item.oneiricconcept.human_height_auspicious_crops.description_0": "The scholars who planted them hoped that people would never have to experience the feeling of hunger again.",
-      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops"
+      "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops",
+      "item.oneiricconcept.human_height_auspicious_crops.description_1": ""
     }
   },
   "metadata": {

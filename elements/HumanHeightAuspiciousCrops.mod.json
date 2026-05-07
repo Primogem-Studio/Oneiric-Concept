@@ -34,10 +34,12 @@
     "specialInformation": {
       "fixedValue": [
         "The scholars who planted them hoped that people would never have to experience the feeling of hunger again."
-      ]
+      ],
+      "name": "AuspiciouscropsTip"
     },
     "glowCondition": {
-      "fixedValue": false
+      "fixedValue": false,
+      "name": "AuspiciouscropsEnchantLight"
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,

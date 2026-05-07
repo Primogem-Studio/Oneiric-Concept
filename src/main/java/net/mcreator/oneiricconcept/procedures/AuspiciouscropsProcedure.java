@@ -18,7 +18,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class AuspiciouscropsProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Direction dire, boolean main, double min) {
+	public static void execute(LevelAccessor world, double x, double z, Direction dire, boolean main, double min) {
 		if (dire == null)
 			return;
 		BlockState farmblock = Blocks.AIR.defaultBlockState();
@@ -41,10 +41,18 @@ public class AuspiciouscropsProcedure {
 		} else if (dire == Direction.WEST) {
 			xx = x - 1;
 		}
-		yy = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) xx, (int) zz) - 1;
+		yy = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) xx, (int) zz);
+		farmblock = (world.getBlockState(BlockPos.containing(xx, yy, zz)));
+		if (farmblock.canBeReplaced()) {
+			yy = yy - 1;
+		} else if ((world.getBlockState(BlockPos.containing(xx, yy - 1, zz))).canBeReplaced()) {
+			yy = yy - 2;
+		} else if (!(world.getBlockState(BlockPos.containing(xx, yy + 1, zz))).canBeReplaced() && farmblock.is(BlockTags.create(ResourceLocation.parse("minecraft:dirt")))) {
+			yy = yy + 1;
+		}
 		farmblock = (world.getBlockState(BlockPos.containing(xx, yy, zz)));
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			OneiricconceptMod.LOGGER.info((tstxt + "" + farmblock));
+			OneiricconceptMod.LOGGER.info((tstxt + "" + farmblock + "|||" + xx + "/" + yy + "/" + zz));
 		}
 		if ((world.getBlockState(BlockPos.containing(xx, yy + 1, zz))).canBeReplaced() && (farmblock.is(BlockTags.create(ResourceLocation.parse("minecraft:grass_blocks"))) || farmblock.is(BlockTags.create(ResourceLocation.parse("minecraft:sand")))
 				|| farmblock.is(BlockTags.create(ResourceLocation.parse("minecraft:dirt"))))) {
@@ -64,11 +72,11 @@ public class AuspiciouscropsProcedure {
 				if (_bs.getBlock().getStateDefinition().getProperty("moisture") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
-			if (!(dire == Direction.UP) && RandomProcedure.execute(world, 0.3) || 0 < min) {
-				AuspiciouscropsProcedure.execute(world, xx, y, zz, dire, main, min - 1);
-				if (main) {
-					AuspiciouscropsProcedure.execute(world, xx, y, zz, dire.getCounterClockWise(Direction.Axis.Y), false, min - 1);
-				}
+		}
+		if (!(dire == Direction.UP) && RandomProcedure.execute(world, 0.3) || 0 < min) {
+			AuspiciouscropsProcedure.execute(world, xx, zz, dire, main, min - 1);
+			if (main) {
+				AuspiciouscropsProcedure.execute(world, xx, zz, dire.getCounterClockWise(Direction.Axis.Y), false, min - 1);
 			}
 		}
 	}
