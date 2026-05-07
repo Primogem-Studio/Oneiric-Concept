@@ -434,12 +434,12 @@
       "registry_name": "boom_blossoms_pyro",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsPyroRenderer.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsPyroBlockEntity.java",
           "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_pyro.json",
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json"
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_pyro.json",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_pyro.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsPyroBlock.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsPyroRenderer.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsPyroBlockEntity.java"
         ]
       },
       "path": "~/block"
@@ -17143,11 +17143,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsCryoBlockEntity.java",
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_cryo.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_cryo.json",
           "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsCryoRenderer.java",
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_cryo.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsCryoBlock.java"
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_cryo.json",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_cryo.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsCryoBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_cryo.json"
         ]
       },
       "path": "~/block"
@@ -17160,11 +17160,11 @@
       "registry_name": "boom_blossoms_dendro",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsDendroBlockEntity.java",
           "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsDendroRenderer.java",
+          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_dendro.json",
           "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsDendroBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_dendro.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsDendroBlockEntity.java",
-          "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_dendro.json",
           "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_dendro.json"
         ]
       },
@@ -17178,11 +17178,11 @@
       "registry_name": "boom_blossoms_electro",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsElectroRenderer.java",
           "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsElectroBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsElectroBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_electro.json",
           "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_electro.json",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsElectroRenderer.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsElectroBlock.java",
           "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_electro.json"
         ]
       },
@@ -17196,12 +17196,12 @@
       "registry_name": "boom_blossoms_hydro",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_hydro.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsHydroBlockEntity.java",
-          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsHydroRenderer.java",
           "src/main/java/net/mcreator/oneiricconcept/block/BoomBlossomsHydroBlock.java",
           "src/main/resources/assets/oneiricconcept/models/item/boom_blossoms_hydro.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_hydro.json"
+          "src/main/resources/assets/oneiricconcept/blockstates/boom_blossoms_hydro.json",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/BoomBlossomsHydroRenderer.java",
+          "src/main/resources/assets/oneiricconcept/models/block/boom_blossoms_hydro.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/BoomBlossomsHydroBlockEntity.java"
         ]
       },
       "path": "~/block"
