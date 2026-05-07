@@ -40,12 +40,13 @@ public class AuspiciouscropsStartProcedure {
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((pow + "/6400")), true);
-		} else {
+		} else if (!itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("enable")) {
 			{
 				final String _tagName = "enable";
 				final boolean _tagValue = true;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 			}
+		} else {
 			for (Direction directioniterator : Direction.Plane.HORIZONTAL) {
 				AuspiciouscropsProcedure.execute(world, x, z, directioniterator, true, 42);
 			}
