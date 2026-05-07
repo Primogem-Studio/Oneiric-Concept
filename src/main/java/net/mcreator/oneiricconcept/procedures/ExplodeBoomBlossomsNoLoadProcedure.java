@@ -15,6 +15,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class ExplodeBoomBlossomsNoLoadProcedure {
@@ -47,8 +48,10 @@ public class ExplodeBoomBlossomsNoLoadProcedure {
 				}
 			}
 		}
-		if (world instanceof Level _level && !_level.isClientSide())
-			_level.explode(null, x, (y + 2), z, 3, Level.ExplosionInteraction.TNT);
+		if ((world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_BOOMBLOSSOMS)) == 2) {
+			if (world instanceof Level _level && !_level.isClientSide())
+				_level.explode(null, x, (y + 2), z, 3, Level.ExplosionInteraction.TNT);
+		}
 		ExplosionIgnitesProcedure.execute(world, x, y, z, mode, 21);
 	}
 }

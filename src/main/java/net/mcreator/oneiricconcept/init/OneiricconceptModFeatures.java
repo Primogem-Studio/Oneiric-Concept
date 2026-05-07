@@ -11,10 +11,14 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.oneiricconcept.world.features.SweetFlowersFeature;
 import net.mcreator.oneiricconcept.world.features.PlaceNestFeature;
+import net.mcreator.oneiricconcept.world.features.BoomblossomsNHFeature;
+import net.mcreator.oneiricconcept.world.features.BoomblossomsHydroFFeature;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(Registries.FEATURE, OneiricconceptMod.MODID);
 	public static final DeferredHolder<Feature<?>, Feature<?>> SWEET_FLOWERS = REGISTRY.register("sweet_flowers", SweetFlowersFeature::new);
 	public static final DeferredHolder<Feature<?>, Feature<?>> PLACE_NEST = REGISTRY.register("place_nest", PlaceNestFeature::new);
+	public static final DeferredHolder<Feature<?>, Feature<?>> BOOMBLOSSOMS_HYDRO_F = REGISTRY.register("boomblossoms_hydro_f", BoomblossomsHydroFFeature::new);
+	public static final DeferredHolder<Feature<?>, Feature<?>> BOOMBLOSSOMS_NH = REGISTRY.register("boomblossoms_nh", BoomblossomsNHFeature::new);
 }

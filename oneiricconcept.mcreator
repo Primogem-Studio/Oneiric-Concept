@@ -17647,6 +17647,7 @@
       "metadata": {
         "files": [
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_hydro_f.json",
+          "src/main/java/net/mcreator/oneiricconcept/world/features/BoomblossomsHydroFFeature.java",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_hydro_f_biome_modifier.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_hydro_f.json"
         ]
@@ -18035,6 +18036,7 @@
       "registry_name": "boomblossoms_nh",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/world/features/BoomblossomsNHFeature.java",
           "src/main/resources/data/oneiricconcept/worldgen/configured_feature/boomblossoms_nh.json",
           "src/main/resources/data/oneiricconcept/worldgen/placed_feature/boomblossoms_nh.json",
           "src/main/resources/data/oneiricconcept/neoforge/biome_modifier/boomblossoms_nh_biome_modifier.json"
@@ -18052,6 +18054,26 @@
         "type": "number",
         "files": []
       }
+    },
+    {
+      "name": "IsBoomBlossomsGenerate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_boom_blossoms_generate",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsBoomBlossomsGenerateProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
