@@ -18073,6 +18073,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Auspiciouscrops1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auspiciouscrops_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/auspiciouscrops_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "b": {
+      "item": "oneiricconcept:ambrosial_arbor_sapling"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:human_height_auspicious_crops",
+    "count": 1
+  }
+}
