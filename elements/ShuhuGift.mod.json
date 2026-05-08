@@ -4,11 +4,15 @@
   "definition": {
     "name": "Shuhu's Gift",
     "supportedSlots": "any",
-    "weight": 5,
+    "weight": 1,
     "anvilCost": 3,
     "maxLevel": 5,
     "damageModifier": 0,
-    "incompatibleEnchantments": [],
+    "incompatibleEnchantments": [
+      {
+        "value": "#primogemcraft:hunt"
+      }
+    ],
     "supportedItems": [
       {
         "value": "TAG:minecraft:enchantable/sword"

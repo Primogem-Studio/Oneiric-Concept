@@ -3,7 +3,7 @@
     "translate": "enchantment.oneiricconcept.shuhu_gift"
   },
   "supported_items": "#minecraft:enchantable/sword",
-  "weight": 5,
+  "weight": 1,
   "max_level": 5,
   "min_cost": {
     "base": 1,
@@ -17,5 +17,5 @@
   "slots": [
     "any"
   ],
-  "exclusive_set": []
+  "exclusive_set": "#primogemcraft:hunt"
 }
