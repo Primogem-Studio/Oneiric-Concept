@@ -18053,7 +18053,8 @@
       "metadata": {
         "type": "number",
         "files": []
-      }
+      },
+      "path": "~/GameRule"
     },
     {
       "name": "IsBoomBlossomsGenerate",
