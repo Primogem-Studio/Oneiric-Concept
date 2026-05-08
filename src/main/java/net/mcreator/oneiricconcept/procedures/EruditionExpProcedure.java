@@ -21,7 +21,7 @@ public class EruditionExpProcedure {
 		double N_number = 0;
 		double C_cycle = 0;
 		if (!world.isClientSide()) {
-			exp = entity instanceof Player _plr ? _plr.getXpNeededForNextLevel() : 0;
+			exp = Math.min(entity instanceof Player _plr ? _plr.getXpNeededForNextLevel() : 0, 280);
 			BlockparticeProcedure.execute(world, x, y + 2.5, z, Blocks.LIGHT.defaultBlockState(), false, 0.01, 0.01, 0.01, 1, 0.01, "@p");
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -36,7 +36,7 @@ public class EruditionExpProcedure {
 			for (int index0 = 0; index0 < (int) N_number; index0++) {
 				T_theta = C_cycle * D_delta_theta;
 				C_cycle = C_cycle + 1;
-				ExporbProcedure.execute(world, x + R_radius * Math.sin(T_theta), y, z + R_radius * Math.cos(T_theta), Math.min(Math.ceil(exp / 42), 17));
+				ExporbProcedure.execute(world, x + R_radius * Math.sin(T_theta), y, z + R_radius * Math.cos(T_theta), Math.ceil(exp / 42));
 			}
 		}
 	}
