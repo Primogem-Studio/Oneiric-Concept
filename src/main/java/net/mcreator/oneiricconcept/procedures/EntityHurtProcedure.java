@@ -58,6 +58,8 @@ public class EntityHurtProcedure {
 		double sy = 0;
 		double sz = 0;
 		double Refinement = 0;
+		double atk = 0;
+		double hel = 0;
 		sworditem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		Refinement = GetDoubleNBTTagProcedure.execute(hitItem, "jing_lian");
@@ -92,13 +94,6 @@ public class EntityHurtProcedure {
 				Changetxt = Changetxt + "\u25C7";
 			}
 			if (Charge >= MaxCharge) {
-				{
-					OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
-					_vars.shuhu = 0;
-					_vars.markSyncDirty();
-				}
-				if (entity instanceof LivingEntity _entity)
-					_entity.setHealth((float) (entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).shuhu * swordEnchant * 0.5 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
 				Changetxt = Component.translatable("translation.oneiricconcept.shuhu").getString();
 				{
 					final Vec3 _center = new Vec3(sx, sy, sz);
@@ -108,14 +103,21 @@ public class EntityHurtProcedure {
 								entityiterator.hurt(ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1),
 										(world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)));
 							});
-							DelayedDamageProcedure.execute(world, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), entityiterator,
-									(entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity16.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
-											* (0.2 + swordEnchant * 0.068) + entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).shuhu * (0.33 + swordEnchant * 0.07),
-									40);
+							atk = (entity instanceof LivingEntity _livingEntity14 && _livingEntity14.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity14.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0)
+									* (0.2 + swordEnchant * 0.1);
+							hel = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).shuhu * swordEnchant * 0.3;
+							if (entity instanceof LivingEntity _entity)
+								_entity.setHealth((float) (hel + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
+							DelayedDamageProcedure.execute(world, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.PLAYER_ATTACK), entity), true, false, true, true, 6, 1), entityiterator, atk + hel, 40);
 						}
 					}
 				}
 				ParticleSweepProcedure.execute(world, sx, sy, sz, 20, 5, range * 2);
+				{
+					OneiricconceptModVariables.PlayerVariables _vars = entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES);
+					_vars.shuhu = 0;
+					_vars.markSyncDirty();
+				}
 				{
 					final String _tagName = "ShuhuCharge";
 					final double _tagValue = 0;
@@ -123,11 +125,14 @@ public class EntityHurtProcedure {
 				}
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(Changetxt), true);
+				_player.displayClientMessage(
+						Component.literal((Changetxt + ""
+								+ (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG) ? "\u00A7r|" + entity.getData(OneiricconceptModVariables.PLAYER_VARIABLES).shuhu + "|\u00A7c" + atk + "|\u00A7e" + hel : ""))),
+						true);
 		}
 		if ((BuiltInRegistries.ITEM.getKey(hitItem.getItem()).toString()).equals("oneiricconcept:stardust_baseballer") && hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged_R")) {
-			if (event instanceof LivingIncomingDamageEvent _hurt23)
-				_hurt23.setAmount((float) (amount * (3 + Refinement * 0.75)));
+			if (event instanceof LivingIncomingDamageEvent _hurt24)
+				_hurt24.setAmount((float) (amount * (3 + Refinement * 0.75)));
 			{
 				final String _tagName = "textures";
 				final double _tagValue = 0;
