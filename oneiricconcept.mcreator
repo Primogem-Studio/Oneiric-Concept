@@ -5902,10 +5902,10 @@
       "registry_name": "ambrosial_arbor_log",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_log.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_log.json",
           "src/main/java/net/mcreator/oneiricconcept/block/AmbrosialArborLogBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/ambrosial_arbor_log.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/ambrosial_arbor_log.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/ambrosial_arbor_log.json",
           "src/main/resources/assets/oneiricconcept/models/item/ambrosial_arbor_log.json"
         ]
       },
