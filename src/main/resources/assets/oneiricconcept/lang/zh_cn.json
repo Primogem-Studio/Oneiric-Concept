@@ -462,5 +462,6 @@
   "item.oneiricconcept.human_height_auspicious_crops": "一人嘉禾",
   "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活",
   "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
-  "gamerule.ocBoomblossoms": "generate BoomBlossoms"
+  "gamerule.ocBoomblossoms": "generate BoomBlossoms",
+  "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law"
 }

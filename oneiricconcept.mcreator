@@ -18075,6 +18075,62 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "SpirtbranchofTureLaw",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirtbranchof_ture_law",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/item/SpirtbranchofTureLawItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/spirtbranchof_ture_law.json"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "TureLaw",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ture_law",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TureLawProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "PointTureLaw",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "point_ture_law",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PointTureLawProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -18553,6 +18609,7 @@
       "TAG:mod:fish"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:SpirtbranchofTureLaw",
       "~CUSTOM:AureliaeSword",
       "~CUSTOM:DXuanyuan",
       "~CUSTOM:SwordOfBrilliantValor",
@@ -18953,7 +19010,8 @@
       "BoomBlossomsDendro",
       "BoomBlossomsElectro",
       "BoomBlossomsHydro",
-      "HumanHeightAuspiciousCrops"
+      "HumanHeightAuspiciousCrops",
+      "SpirtbranchofTureLaw"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -19510,7 +19568,8 @@
       "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops",
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "However, it still requires more raw materials to activate",
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
-      "gamerule.ocBoomblossoms": "generate BoomBlossoms"
+      "gamerule.ocBoomblossoms": "generate BoomBlossoms",
+      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -19976,7 +20035,8 @@
       "item.oneiricconcept.human_height_auspicious_crops": "一人嘉禾",
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活",
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
-      "gamerule.ocBoomblossoms": "generate BoomBlossoms"
+      "gamerule.ocBoomblossoms": "generate BoomBlossoms",
+      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20443,7 +20503,8 @@
       "item.oneiricconcept.human_height_auspicious_crops": "Human-Height Auspicious Crops",
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "",
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
-      "gamerule.ocBoomblossoms": "generate BoomBlossoms"
+      "gamerule.ocBoomblossoms": "generate BoomBlossoms",
+      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law"
     }
   },
   "metadata": {
