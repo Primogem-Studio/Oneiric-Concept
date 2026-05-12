@@ -18112,30 +18112,6 @@
         ]
       },
       "path": "~/process"
-    },
-    {
-      "name": "PointTureLaw",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "point_ture_law",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/PointTureLawProcedure.java"
-        ]
-      },
-      "path": "~/process"
     }
   ],
   "variable_elements": [

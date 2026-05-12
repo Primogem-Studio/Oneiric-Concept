@@ -18,8 +18,8 @@
         "value": "CUSTOM:OneiricConcept"
       }
     ],
-    "efficiency": 4.0,
-    "attackSpeed": 1.0,
+    "efficiency": 42.0,
+    "attackSpeed": 5.0,
     "enchantability": 42,
     "damageVsEntity": 9.0,
     "usageCount": 23426,
@@ -38,9 +38,6 @@
     "damageOnCrafting": false,
     "onEntityHitWith": {
       "name": "TureLaw"
-    },
-    "onEntitySwing": {
-      "name": "PointTureLaw"
     }
   }
 }
