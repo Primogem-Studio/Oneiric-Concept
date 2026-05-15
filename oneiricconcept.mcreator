@@ -9110,6 +9110,10 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -18109,6 +18113,29 @@
         ],
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/procedures/TureLawProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "ExpStr",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exp_str",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/ExpStrProcedure.java"
         ]
       },
       "path": "~/process"
