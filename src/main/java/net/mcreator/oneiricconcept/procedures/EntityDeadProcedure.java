@@ -5,14 +5,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.BoneMealItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Slime;
 import net.minecraft.world.entity.monster.Shulker;
@@ -29,7 +25,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
@@ -58,7 +53,6 @@ public class EntityDeadProcedure {
 		Entity e1 = null;
 		ItemStack i1 = ItemStack.EMPTY;
 		boolean gz = false;
-		double yy = 0;
 		e1 = entity;
 		gz = world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.FALLING_MEAT);
 		if (gz && e1 instanceof Player) {
@@ -117,20 +111,8 @@ public class EntityDeadProcedure {
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
-		if (((sourceentity instanceof LivingEntity _entity) ? _entity.isHolding(OneiricconceptModItems.SPIRTBRANCHOF_TURE_LAW.get()) : false) && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
-			yy = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z);
-			if (Blocks.CHERRY_SAPLING.defaultBlockState().canSurvive(world, BlockPos.containing(x, yy, z))) {
-				world.setBlock(BlockPos.containing(x, yy, z), Blocks.CHERRY_SAPLING.defaultBlockState(), 3);
-				for (int index0 = 0; index0 < 10; index0++) {
-					if (world instanceof Level _level) {
-						BlockPos _bp = BlockPos.containing(x, yy, z);
-						if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
-							if (!_level.isClientSide())
-								_level.levelEvent(2005, _bp, 0);
-						}
-					}
-				}
-			}
+		if ((sourceentity instanceof LivingEntity _entity) ? _entity.isHolding(OneiricconceptModItems.SPIRTBRANCHOF_TURE_LAW.get()) : false) {
+			SakuraTreeProcedure.execute(world, x, y, z);
 		}
 	}
 }
