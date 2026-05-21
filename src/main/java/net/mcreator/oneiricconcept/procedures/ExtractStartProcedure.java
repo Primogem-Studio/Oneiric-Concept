@@ -10,8 +10,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
-
 public class ExtractStartProcedure {
 	public static void execute(LevelAccessor world, double x, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
@@ -20,7 +18,7 @@ public class ExtractStartProcedure {
 		double sz = 0;
 		double maxy = 0;
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (getEntityGameType(entity) == GameType.CREATIVE || world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG) ? 10 : 3600));
+			_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (getEntityGameType(entity) == GameType.CREATIVE || entity.hasPermissions(4) ? 10 : 100));
 		sx = -20;
 		for (int index0 = 0; index0 < 41; index0++) {
 			sz = -20;
