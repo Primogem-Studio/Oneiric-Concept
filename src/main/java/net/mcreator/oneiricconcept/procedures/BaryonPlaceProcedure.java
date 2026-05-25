@@ -26,6 +26,6 @@ public class BaryonPlaceProcedure {
 			}
 		}
 		return RandomProcedure.execute(world, (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.BARYON_SPAWN)) / 10)
-				&& (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("oneiricconcept:topblock")));
+				&& (world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("oneiricconcept:topblock"))) && !world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mushroom_fields"));
 	}
 }
