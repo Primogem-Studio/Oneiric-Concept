@@ -40,6 +40,7 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsDendroBlockEntity>> BOOM_BLOSSOMS_DENDRO = register("boom_blossoms_dendro", OneiricconceptModBlocks.BOOM_BLOSSOMS_DENDRO, BoomBlossomsDendroBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsElectroBlockEntity>> BOOM_BLOSSOMS_ELECTRO = register("boom_blossoms_electro", OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO, BoomBlossomsElectroBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsHydroBlockEntity>> BOOM_BLOSSOMS_HYDRO = register("boom_blossoms_hydro", OneiricconceptModBlocks.BOOM_BLOSSOMS_HYDRO, BoomBlossomsHydroBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<LY1BlockEntity>> LY_1 = register("ly_1", OneiricconceptModBlocks.LY_1, LY1BlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -67,5 +68,6 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_DENDRO.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_ELECTRO.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_HYDRO.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, LY_1.get(), SidedInvWrapper::new);
 	}
 }

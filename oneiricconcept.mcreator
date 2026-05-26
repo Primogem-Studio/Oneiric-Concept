@@ -18261,6 +18261,98 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Laserhurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laserhurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "tgt",
+            "type": "entity"
+          },
+          {
+            "name": "dmg",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LaserhurtProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LYAAA",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lyaaa",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYAAAProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LY1",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/LY1Block.java",
+          "src/main/resources/assets/oneiricconcept/models/item/ly_1.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/ly_1.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/ly_1.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/LY1BlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/block/ly_1.json"
+        ]
+      },
+      "path": "~/block"
     }
   ],
   "variable_elements": [
@@ -18400,6 +18492,7 @@
       "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:LY1",
       "~CUSTOM:WhiteMoonlightAbsorber",
       "~CUSTOM:Theanotherworldmooningot",
       "~CUSTOM:Fullmoonore",
@@ -19141,7 +19234,8 @@
       "BoomBlossomsElectro",
       "BoomBlossomsHydro",
       "HumanHeightAuspiciousCrops",
-      "SpirtbranchofTureLaw"
+      "SpirtbranchofTureLaw",
+      "LY1"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -19699,7 +19793,8 @@
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "However, it still requires more raw materials to activate",
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
       "gamerule.ocBoomblossoms": "generate BoomBlossoms",
-      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law"
+      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law",
+      "block.oneiricconcept.ly_1": "LY-1"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20166,7 +20261,8 @@
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活",
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
       "gamerule.ocBoomblossoms": "generate BoomBlossoms",
-      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law"
+      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law",
+      "block.oneiricconcept.ly_1": "LY-1"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20634,7 +20730,8 @@
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "",
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
       "gamerule.ocBoomblossoms": "generate BoomBlossoms",
-      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law"
+      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law",
+      "block.oneiricconcept.ly_1": "LY-1"
     }
   },
   "metadata": {
