@@ -13997,12 +13997,12 @@
       "registry_name": "crystalgenerator",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/CrystalgeneratorBlockEntity.java",
           "src/main/resources/assets/oneiricconcept/blockstates/crystalgenerator.json",
           "src/main/resources/assets/oneiricconcept/models/item/crystalgenerator.json",
-          "src/main/resources/assets/oneiricconcept/models/block/crystalgenerator.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/CrystalgeneratorBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/CrystalgeneratorBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/crystalgenerator.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/CrystalgeneratorBlock.java"
+          "src/main/resources/assets/oneiricconcept/models/block/crystalgenerator.json"
         ]
       },
       "path": "~/block"
