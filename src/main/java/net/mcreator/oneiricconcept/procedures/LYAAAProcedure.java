@@ -10,8 +10,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.vehicle.MinecartTNT;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
@@ -29,17 +31,23 @@ public class LYAAAProcedure {
 		double dx = 0;
 		double dz = 0;
 		double scope = 0;
+		String UUIDstr = "";
 		Entity target = null;
 		Entity playr = null;
-		String UUIDstr = "";
+		Entity owner = null;
 		if (1600 < getEnergyStored(world, BlockPos.containing(x, y - 1, z), null)) {
 			UUIDstr = getBlockNBTString(world, BlockPos.containing(x, y, z), "tgtUUID");
 			scope = 64;
 			{
 				final Vec3 _center = new Vec3(x, (y + scope / 2), z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(scope / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					if ((((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
-							&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune"))) || entityiterator instanceof Projectile) && !UUIDstr.contains(entityiterator.getStringUUID())) {
+					if (entityiterator instanceof Projectile) {
+						owner = ((net.minecraft.world.entity.projectile.Projectile) entityiterator).getOwner();
+					}
+					if ((entityiterator instanceof MinecartTNT || entityiterator instanceof PrimedTnt
+							|| ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
+									&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune")))
+							|| entityiterator instanceof Projectile && !(owner instanceof Player || owner == null)) && !UUIDstr.contains(entityiterator.getStringUUID())) {
 						target = entityiterator;
 						fire = true;
 					}
@@ -61,7 +69,7 @@ public class LYAAAProcedure {
 					if (_entityStorage != null)
 						_entityStorage.extractEnergy(1600, false);
 				}
-				if (target instanceof Projectile) {
+				if (target instanceof Projectile || target instanceof PrimedTnt) {
 					if (!target.level().isClientSide())
 						target.discard();
 				} else {
