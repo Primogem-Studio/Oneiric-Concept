@@ -27,13 +27,14 @@ import java.util.ArrayList;
 public class LYAAAProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		boolean fire = false;
-		double dx = 0;
-		double dz = 0;
-		double scope = 0;
 		String UUIDstr = "";
 		Entity target = null;
 		Entity playr = null;
 		Entity owner = null;
+		double scope = 0;
+		double distance = 0;
+		double distanceEnt = 0;
+		distance = 100;
 		if (1600 < getEnergyStored(world, BlockPos.containing(x, y - 1, z), null)) {
 			scope = 64;
 			{
@@ -48,8 +49,12 @@ public class LYAAAProcedure {
 							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isProj") && entityiterator instanceof Projectile
 									&& (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isPlayProj") || !(owner instanceof Player || owner == null)))
 							&& !((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0)) {
-						target = entityiterator;
-						fire = true;
+						distanceEnt = new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())));
+						if (distanceEnt < distance) {
+							distance = distanceEnt;
+							target = entityiterator;
+							fire = true;
+						}
 					}
 				}
 			}
