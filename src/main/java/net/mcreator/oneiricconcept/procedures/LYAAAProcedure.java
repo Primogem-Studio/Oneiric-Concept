@@ -35,6 +35,18 @@ public class LYAAAProcedure {
 		Entity target = null;
 		Entity playr = null;
 		Entity owner = null;
+		if ((world.getLevelData().getGameTime()) % 10 == 0) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null) {
+					_blockEntity.getPersistentData().putString("tgtUUID", "");
+				}
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		}
 		if (1600 < getEnergyStored(world, BlockPos.containing(x, y - 1, z), null)) {
 			UUIDstr = getBlockNBTString(world, BlockPos.containing(x, y, z), "tgtUUID");
 			scope = 64;
@@ -52,9 +64,6 @@ public class LYAAAProcedure {
 						fire = true;
 					}
 				}
-			}
-			if ((world.getLevelData().getGameTime()) % 10 == 0) {
-				UUIDstr = "";
 			}
 			if (fire) {
 				playr = findEntityInWorldRange(world, Player.class, x, y, z, 64);
