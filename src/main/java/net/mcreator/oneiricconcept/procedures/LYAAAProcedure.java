@@ -45,8 +45,8 @@ public class LYAAAProcedure {
 					if ((getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isTnt") && (entityiterator instanceof MinecartTNT || entityiterator instanceof PrimedTnt)
 							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isMob") && ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
 									&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune")))
-							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isProj") && entityiterator instanceof Projectile && getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isPlayProj")
-									&& !(owner instanceof Player || owner == null))
+							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isProj") && entityiterator instanceof Projectile
+									&& (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isPlayProj") || !(owner instanceof Player || owner == null)))
 							&& !((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0)) {
 						target = entityiterator;
 						fire = true;
