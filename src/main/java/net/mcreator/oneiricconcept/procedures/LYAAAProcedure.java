@@ -6,15 +6,13 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.vehicle.MinecartTNT;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.resources.ResourceLocation;
@@ -35,20 +33,7 @@ public class LYAAAProcedure {
 		Entity target = null;
 		Entity playr = null;
 		Entity owner = null;
-		if ((world.getLevelData().getGameTime()) % 10 == 0) {
-			if (!world.isClientSide()) {
-				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockEntity _blockEntity = world.getBlockEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_blockEntity != null) {
-					_blockEntity.getPersistentData().putString("tgtUUID", "");
-				}
-				if (world instanceof Level _level)
-					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-			}
-		}
 		if (1600 < getEnergyStored(world, BlockPos.containing(x, y - 1, z), null)) {
-			UUIDstr = getBlockNBTString(world, BlockPos.containing(x, y, z), "tgtUUID");
 			scope = 64;
 			{
 				final Vec3 _center = new Vec3(x, (y + scope / 2), z);
@@ -59,7 +44,7 @@ public class LYAAAProcedure {
 					if ((entityiterator instanceof MinecartTNT || entityiterator instanceof PrimedTnt
 							|| ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
 									&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune")))
-							|| entityiterator instanceof Projectile && !(owner instanceof Player || owner == null)) && !UUIDstr.contains(entityiterator.getStringUUID())) {
+							|| entityiterator instanceof Projectile && !(owner instanceof Player || owner == null)) && !((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0)) {
 						target = entityiterator;
 						fire = true;
 					}
@@ -81,17 +66,6 @@ public class LYAAAProcedure {
 				if (target instanceof Projectile || target instanceof PrimedTnt) {
 					if (!target.level().isClientSide())
 						target.discard();
-				} else {
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null) {
-							_blockEntity.getPersistentData().putString("tgtUUID", (UUIDstr + "/" + target.getStringUUID()));
-						}
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
 				}
 			}
 		}
@@ -104,13 +78,6 @@ public class LYAAAProcedure {
 				return energyStorage.getEnergyStored();
 		}
 		return 0;
-	}
-
-	private static String getBlockNBTString(LevelAccessor world, BlockPos pos, String tag) {
-		BlockEntity blockEntity = world.getBlockEntity(pos);
-		if (blockEntity != null)
-			return blockEntity.getPersistentData().getString(tag);
-		return "";
 	}
 
 	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
