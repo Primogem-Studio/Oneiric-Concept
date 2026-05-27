@@ -1,0 +1,65 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 280,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "isProj",
+          "text": "intercept projectiles",
+          "x": 90,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "isPlayProj",
+          "text": "intercept Player projectiles",
+          "x": 90,
+          "y": 91,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "isTnt",
+          "text": "intercept Tnt(minecraft)",
+          "x": 90,
+          "y": 129,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "isMob",
+          "text": "intercept FlyMob",
+          "x": 90,
+          "y": 167,
+          "locked": false
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "LYcheck"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

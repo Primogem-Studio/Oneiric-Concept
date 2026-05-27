@@ -465,5 +465,9 @@
   "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
   "gamerule.ocBoomblossoms": "generate BoomBlossoms",
   "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law",
-  "block.oneiricconcept.ly_1": "LY-1"
+  "block.oneiricconcept.ly_1": "LY-1",
+  "gui.oneiricconcept.lygui.isProj": "intercept projectiles",
+  "gui.oneiricconcept.lygui.isTnt": "intercept Tnt(minecraft)",
+  "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
+  "gui.oneiricconcept.lygui.isMob": "intercept FlyMob"
 }

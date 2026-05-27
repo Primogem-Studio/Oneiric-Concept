@@ -124,7 +124,8 @@
       "fixedValue": 7.0
     },
     "hasInventory": true,
-    "openGUIOnRightClick": false,
+    "guiBoundTo": "LYGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
@@ -139,6 +140,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "LYPlace"
+    },
     "onTickUpdate": {
       "name": "LYAAA"
     },

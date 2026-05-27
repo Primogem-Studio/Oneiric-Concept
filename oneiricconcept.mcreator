@@ -18353,6 +18353,86 @@
         ]
       },
       "path": "~/block"
+    },
+    {
+      "name": "LYcheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "l_ycheck",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYcheckProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LYGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lygui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/LYGUIScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/LYGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "LYPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYPlaceProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -19794,7 +19874,11 @@
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
       "gamerule.ocBoomblossoms": "generate BoomBlossoms",
       "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law",
-      "block.oneiricconcept.ly_1": "LY-1"
+      "block.oneiricconcept.ly_1": "LY-1",
+      "gui.oneiricconcept.lygui.isProj": "intercept projectiles",
+      "gui.oneiricconcept.lygui.isTnt": "intercept Tnt(minecraft)",
+      "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
+      "gui.oneiricconcept.lygui.isMob": "intercept FlyMob"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20261,8 +20345,12 @@
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活",
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
       "gamerule.ocBoomblossoms": "generate BoomBlossoms",
-      "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law",
-      "block.oneiricconcept.ly_1": "LY-1"
+      "item.oneiricconcept.spirtbranchof_ture_law": "真律灵枝",
+      "block.oneiricconcept.ly_1": "燎原-1",
+      "gui.oneiricconcept.lygui.isProj": "拦截弹射物",
+      "gui.oneiricconcept.lygui.isTnt": "拦截TNT（矿车）",
+      "gui.oneiricconcept.lygui.isPlayProj": "拦截玩家发射的弹射物",
+      "gui.oneiricconcept.lygui.isMob": "拦截飞行敌对生物"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20731,7 +20819,11 @@
       "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
       "gamerule.ocBoomblossoms": "generate BoomBlossoms",
       "item.oneiricconcept.spirtbranchof_ture_law": "Spirtbranchof Ture Law",
-      "block.oneiricconcept.ly_1": "LY-1"
+      "block.oneiricconcept.ly_1": "LY-1",
+      "gui.oneiricconcept.lygui.isProj": "intercept projectiles",
+      "gui.oneiricconcept.lygui.isTnt": "intercept Tnt(minecraft)",
+      "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
+      "gui.oneiricconcept.lygui.isMob": "intercept FlyMob"
     }
   },
   "metadata": {

@@ -6,6 +6,7 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.vehicle.MinecartTNT;
 import net.minecraft.world.entity.projectile.Projectile;
@@ -41,10 +42,12 @@ public class LYAAAProcedure {
 					if (entityiterator instanceof Projectile) {
 						owner = ((net.minecraft.world.entity.projectile.Projectile) entityiterator).getOwner();
 					}
-					if ((entityiterator instanceof MinecartTNT || entityiterator instanceof PrimedTnt
-							|| ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
+					if ((getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isTnt") && (entityiterator instanceof MinecartTNT || entityiterator instanceof PrimedTnt)
+							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isMob") && ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
 									&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune")))
-							|| entityiterator instanceof Projectile && !(owner instanceof Player || owner == null)) && !((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0)) {
+							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isProj") && entityiterator instanceof Projectile && getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isPlayProj")
+									&& !(owner instanceof Player || owner == null))
+							&& !((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0)) {
 						target = entityiterator;
 						fire = true;
 					}
@@ -78,6 +81,13 @@ public class LYAAAProcedure {
 				return energyStorage.getEnergyStored();
 		}
 		return 0;
+	}
+
+	private static boolean getBlockNBTLogic(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getBoolean(tag);
+		return false;
 	}
 
 	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {

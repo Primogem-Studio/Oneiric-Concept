@@ -29,6 +29,7 @@ public class OneiricconceptModScreens {
 		event.register(OneiricconceptModMenus.WHITE_MOONLIGHT_ABSORBER_GUI.get(), WhiteMoonlightAbsorberGUIScreen::new);
 		event.register(OneiricconceptModMenus.GU_ICELEBRATORYXIAOLANTERN.get(), GUIcelebratoryxiaolanternScreen::new);
 		event.register(OneiricconceptModMenus.GU_ICELEBRATORYXIAOLANTERN_EDIT.get(), GUIcelebratoryxiaolanternEditScreen::new);
+		event.register(OneiricconceptModMenus.LYGUI.get(), LYGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

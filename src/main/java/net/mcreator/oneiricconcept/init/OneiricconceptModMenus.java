@@ -32,6 +32,7 @@ public class OneiricconceptModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<GUIcelebratoryxiaolanternMenu>> GU_ICELEBRATORYXIAOLANTERN = REGISTRY.register("gu_icelebratoryxiaolantern", () -> IMenuTypeExtension.create(GUIcelebratoryxiaolanternMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GUIcelebratoryxiaolanternEditMenu>> GU_ICELEBRATORYXIAOLANTERN_EDIT = REGISTRY.register("gu_icelebratoryxiaolantern_edit",
 			() -> IMenuTypeExtension.create(GUIcelebratoryxiaolanternEditMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<LYGUIMenu>> LYGUI = REGISTRY.register("lygui", () -> IMenuTypeExtension.create(LYGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
