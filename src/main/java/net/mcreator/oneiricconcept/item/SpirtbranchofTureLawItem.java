@@ -1,8 +1,5 @@
 package net.mcreator.oneiricconcept.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -71,11 +68,5 @@ public class SpirtbranchofTureLawItem extends SwordItem {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		SakuraPlaceProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
 	}
 }

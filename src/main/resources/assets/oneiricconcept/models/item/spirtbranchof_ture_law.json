@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "oneiricconcept:custom/spirtbranch_of_ture_law",
   "textures": {
-    "layer0": "minecraft:item/breeze_rod"
+    "": "oneiricconcept:block/texture",
+    "particle": "oneiricconcept:item/texture"
   }
 }
