@@ -18433,6 +18433,218 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "JanussHiddenPassage",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "januss_hidden_passage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/januss_hidden_passage.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/JanussHiddenPassageBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/blockstates/januss_hidden_passage.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/JanussHiddenPassageBlock.java",
+          "src/main/resources/assets/oneiricconcept/models/block/januss_hidden_passage.json",
+          "src/main/resources/assets/oneiricconcept/models/item/januss_hidden_passage.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "JanusHiddenPassage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "janus_hidden_passage",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/JanusHiddenPassageProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "JanusGet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "janus_get",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/JanusGetProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "JanusSlate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "janus_slate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/janus_slate.json",
+          "src/main/java/net/mcreator/oneiricconcept/item/JanusSlateItem.java"
+        ]
+      },
+      "path": "~/item"
+    },
+    {
+      "name": "IsJanusFalse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_janus_false",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/IsJanusFalseProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "JanusData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "janus_data",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/JanusDataProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "GetJanusData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_janus_data",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetJanusDataProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "JanusGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "janus_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/JanusGUIScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/network/JanusGUISlotMessage.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/JanusGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "GetJanusItemData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_janus_item_data",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/GetJanusItemDataProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -18572,6 +18784,7 @@
       "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:JanussHiddenPassage",
       "~CUSTOM:LY1",
       "~CUSTOM:WhiteMoonlightAbsorber",
       "~CUSTOM:Theanotherworldmooningot",
@@ -19315,7 +19528,9 @@
       "BoomBlossomsHydro",
       "HumanHeightAuspiciousCrops",
       "SpirtbranchofTureLaw",
-      "LY1"
+      "LY1",
+      "JanussHiddenPassage",
+      "JanusSlate"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -19878,7 +20093,10 @@
       "gui.oneiricconcept.lygui.isProj": "intercept projectiles",
       "gui.oneiricconcept.lygui.isTnt": "intercept Tnt(minecraft)",
       "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
-      "gui.oneiricconcept.lygui.isMob": "intercept FlyMob"
+      "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
+      "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
+      "item.oneiricconcept.janus_slate": "Janus Slate",
+      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20350,7 +20568,10 @@
       "gui.oneiricconcept.lygui.isProj": "拦截弹射物",
       "gui.oneiricconcept.lygui.isTnt": "拦截TNT（矿车）",
       "gui.oneiricconcept.lygui.isPlayProj": "拦截玩家发射的弹射物",
-      "gui.oneiricconcept.lygui.isMob": "拦截飞行敌对生物"
+      "gui.oneiricconcept.lygui.isMob": "拦截飞行敌对生物",
+      "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
+      "item.oneiricconcept.janus_slate": "Janus Slate",
+      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20823,7 +21044,10 @@
       "gui.oneiricconcept.lygui.isProj": "intercept projectiles",
       "gui.oneiricconcept.lygui.isTnt": "intercept Tnt(minecraft)",
       "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
-      "gui.oneiricconcept.lygui.isMob": "intercept FlyMob"
+      "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
+      "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
+      "item.oneiricconcept.janus_slate": "Janus Slate",
+      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
     }
   },
   "metadata": {

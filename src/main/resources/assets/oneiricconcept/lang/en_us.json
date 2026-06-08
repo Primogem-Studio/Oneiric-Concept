@@ -468,5 +468,8 @@
   "gui.oneiricconcept.lygui.isProj": "intercept projectiles",
   "gui.oneiricconcept.lygui.isTnt": "intercept Tnt(minecraft)",
   "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
-  "gui.oneiricconcept.lygui.isMob": "intercept FlyMob"
+  "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
+  "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
+  "item.oneiricconcept.janus_slate": "Janus Slate",
+  "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
 }

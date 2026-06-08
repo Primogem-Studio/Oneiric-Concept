@@ -107,6 +107,7 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> BOOM_BLOSSOMS_ELECTRO;
 	public static final DeferredBlock<Block> BOOM_BLOSSOMS_HYDRO;
 	public static final DeferredBlock<Block> LY_1;
+	public static final DeferredBlock<Block> JANUSS_HIDDEN_PASSAGE;
 	static {
 		GEOMARROW_RADIATOR = REGISTRY.register("geomarrow_radiator", GeomarrowRadiatorBlock::new);
 		BOOM_BLOSSOMS_PYRO = REGISTRY.register("boom_blossoms_pyro", BoomBlossomsPyroBlock::new);
@@ -198,6 +199,7 @@ public class OneiricconceptModBlocks {
 		BOOM_BLOSSOMS_ELECTRO = REGISTRY.register("boom_blossoms_electro", BoomBlossomsElectroBlock::new);
 		BOOM_BLOSSOMS_HYDRO = REGISTRY.register("boom_blossoms_hydro", BoomBlossomsHydroBlock::new);
 		LY_1 = REGISTRY.register("ly_1", LY1Block::new);
+		JANUSS_HIDDEN_PASSAGE = REGISTRY.register("januss_hidden_passage", JanussHiddenPassageBlock::new);
 	}
 
 	// Start of user code block custom blocks

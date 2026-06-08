@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/bamboo_trapdoor",
+    "up": "minecraft:block/bamboo_trapdoor",
+    "north": "minecraft:block/bamboo_trapdoor",
+    "east": "minecraft:block/bamboo_trapdoor",
+    "south": "minecraft:block/bamboo_trapdoor",
+    "west": "minecraft:block/bamboo_trapdoor",
+    "particle": "minecraft:block/bamboo_trapdoor"
+  },
+  "render_type": "solid"
+}

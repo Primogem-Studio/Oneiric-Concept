@@ -133,6 +133,8 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.HUMAN_HEIGHT_AUSPICIOUS_CROPS.get());
 				tabData.accept(OneiricconceptModItems.SPIRTBRANCHOF_TURE_LAW.get());
 				tabData.accept(OneiricconceptModBlocks.LY_1.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE.get().asItem());
+				tabData.accept(OneiricconceptModItems.JANUS_SLATE.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {

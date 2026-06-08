@@ -468,5 +468,8 @@
   "gui.oneiricconcept.lygui.isProj": "拦截弹射物",
   "gui.oneiricconcept.lygui.isTnt": "拦截TNT（矿车）",
   "gui.oneiricconcept.lygui.isPlayProj": "拦截玩家发射的弹射物",
-  "gui.oneiricconcept.lygui.isMob": "拦截飞行敌对生物"
+  "gui.oneiricconcept.lygui.isMob": "拦截飞行敌对生物",
+  "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
+  "item.oneiricconcept.janus_slate": "Janus Slate",
+  "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
 }
