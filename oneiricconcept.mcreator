@@ -18308,7 +18308,7 @@
     {
       "name": "LYAAA",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "lyaaa",
       "metadata": {

@@ -56,7 +56,7 @@ public class LYAAAProcedure {
 					if ((getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isTnt") && (entityiterator instanceof MinecartTNT || entityiterator instanceof PrimedTnt)
 							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isMob") && ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
 									&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune")))
-							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isProj") && entityiterator instanceof Projectile
+							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isProj") && entityiterator instanceof Projectile && !entityiterator.getPersistentData().getBoolean("sTrident")
 									&& (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isPlayProj") || !(owner instanceof Player || owner == null)))
 							&& !((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0) && entityiterator.isAlive() && !entityiterator.onGround()) {
 						distanceEnt = new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())));
@@ -85,8 +85,9 @@ public class LYAAAProcedure {
 						_entityStorage.extractEnergy(1600, false);
 				}
 				if (target instanceof Projectile || target instanceof PrimedTnt) {
-					if (target instanceof ThrownTrident) {
+					if (target instanceof ThrownTrident && owner instanceof Player) {
 						target.setDeltaMovement(new Vec3(0, 0, 0));
+						target.getPersistentData().putBoolean("sTrident", true);
 					} else {
 						if (!target.level().isClientSide())
 							target.discard();
