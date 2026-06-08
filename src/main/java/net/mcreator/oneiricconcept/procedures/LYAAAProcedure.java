@@ -8,7 +8,9 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.vehicle.MinecartTNT;
+import net.minecraft.world.entity.projectile.ThrownTrident;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.PrimedTnt;
@@ -23,6 +25,8 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
+
 import java.util.Comparator;
 import java.util.ArrayList;
 
@@ -33,9 +37,13 @@ public class LYAAAProcedure {
 		Entity target = null;
 		Entity playr = null;
 		Entity owner = null;
+		ItemStack getTrident = ItemStack.EMPTY;
 		double scope = 0;
 		double distance = 0;
 		double distanceEnt = 0;
+		double tx = 0;
+		double ty = 0;
+		double tz = 0;
 		distance = 100;
 		if (1600 < getEnergyStored(world, BlockPos.containing(x, y - 1, z), null)) {
 			scope = 64;
@@ -61,26 +69,33 @@ public class LYAAAProcedure {
 				}
 			}
 			if (fire) {
+				tx = target.getX();
+				ty = target.getY();
+				tz = target.getZ();
 				playr = findEntityInWorldRange(world, Player.class, x, y, z, 64);
 				if (playr == null) {
 					for (Entity entityiterator : new ArrayList<>(world.players())) {
 						playr = entityiterator;
 					}
 				}
-				LaserhurtProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5, playr, target, 20);
+				LaserhurtProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5, playr, target, 20 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)));
 				if (world instanceof ILevelExtension _ext) {
 					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y - 1, z), null);
 					if (_entityStorage != null)
 						_entityStorage.extractEnergy(1600, false);
 				}
 				if (target instanceof Projectile || target instanceof PrimedTnt) {
-					if (!target.level().isClientSide())
-						target.discard();
+					if (target instanceof ThrownTrident) {
+						target.setDeltaMovement(new Vec3(0, 0, 0));
+					} else {
+						if (!target.level().isClientSide())
+							target.discard();
+					}
 				}
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.FLASH, (target.getX()), (target.getY()), (target.getZ()), 1, 0, 0, 0, 1);
+					_level.sendParticles(ParticleTypes.FLASH, tx, ty, tz, 1, 0, 0, 0, 1);
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.FLAME, (target.getX()), (target.getY()), (target.getZ()), 20, 0, 0, 0, 0.2);
+					_level.sendParticles(ParticleTypes.FLAME, tx, ty, tz, 20, 0, 0, 0, 0.2);
 			}
 		}
 	}
