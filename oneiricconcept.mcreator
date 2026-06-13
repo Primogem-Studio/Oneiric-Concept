@@ -20561,7 +20561,7 @@
       "item.oneiricconcept.human_height_auspicious_crops.description_0": "「栽下它的学者希望人们永远不用再体会饥饿的感觉。」",
       "item.oneiricconcept.human_height_auspicious_crops": "一人嘉禾",
       "item.oneiricconcept.human_height_auspicious_crops.description_1": "不过，它还需要更多原料来激活",
-      "gamerule.ocBoomblossoms.description": "0-Do not generate, 1-Do not explode, 2-Explode and place blocks",
+      "gamerule.ocBoomblossoms.description": "0-不在世界生成, 1-不爆炸，但有特殊效果，可能引燃方块, 2-爆炸并有特殊效果。",
       "gamerule.ocBoomblossoms": "generate BoomBlossoms",
       "item.oneiricconcept.spirtbranchof_ture_law": "真律灵枝",
       "block.oneiricconcept.ly_1": "燎原-1",
