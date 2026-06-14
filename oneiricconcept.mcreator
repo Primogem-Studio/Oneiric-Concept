@@ -6881,13 +6881,13 @@
       "registry_name": "heartofthevastsea",
       "metadata": {
         "files": [
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea.json",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_1.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java",
           "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_4.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_0.json",
-          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_3.json"
+          "src/main/java/net/mcreator/oneiricconcept/item/HeartofthevastseaItem.java",
+          "src/main/resources/assets/oneiricconcept/models/item/heartofthevastsea_2.json"
         ]
       },
       "path": "~/item"
@@ -7256,6 +7256,10 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/CloudheartmodeProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "itemstack",
             "type": "itemstack"
@@ -18645,6 +18649,58 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "VastSeaGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vast_sea_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/client/gui/VastSeaGUIScreen.java",
+          "src/main/java/net/mcreator/oneiricconcept/world/inventory/VastSeaGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "VastseaCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vastsea_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/VastseaCheckProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "VastSet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vast_set",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/VastSetProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -20096,7 +20152,16 @@
       "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
       "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
       "item.oneiricconcept.janus_slate": "Janus Slate",
-      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
+      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
+      "gui.oneiricconcept.vast_sea_gui.jump": "jump boost",
+      "gui.oneiricconcept.vast_sea_gui.energy": "energy",
+      "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
+      "gui.oneiricconcept.vast_sea_gui.conduit": "Conduit Power",
+      "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
+      "gui.oneiricconcept.vast_sea_gui.energy_suffix": "",
+      "gui.oneiricconcept.vast_sea_gui.energy_prefix": "energy",
+      "gui.oneiricconcept.vast_sea_gui.fire": "Fire Resistance",
+      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20571,7 +20636,16 @@
       "gui.oneiricconcept.lygui.isMob": "拦截飞行敌对生物",
       "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
       "item.oneiricconcept.janus_slate": "Janus Slate",
-      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
+      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
+      "gui.oneiricconcept.vast_sea_gui.jump": "jump boost",
+      "gui.oneiricconcept.vast_sea_gui.energy": "energy",
+      "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
+      "gui.oneiricconcept.vast_sea_gui.conduit": "Conduit Power",
+      "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
+      "gui.oneiricconcept.vast_sea_gui.energy_suffix": "",
+      "gui.oneiricconcept.vast_sea_gui.energy_prefix": "energy",
+      "gui.oneiricconcept.vast_sea_gui.fire": "Fire Resistance",
+      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -21047,7 +21121,16 @@
       "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
       "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
       "item.oneiricconcept.janus_slate": "Janus Slate",
-      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
+      "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
+      "gui.oneiricconcept.vast_sea_gui.jump": "jump boost",
+      "gui.oneiricconcept.vast_sea_gui.energy": "energy",
+      "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
+      "gui.oneiricconcept.vast_sea_gui.conduit": "Conduit Power",
+      "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
+      "gui.oneiricconcept.vast_sea_gui.energy_suffix": "",
+      "gui.oneiricconcept.vast_sea_gui.energy_prefix": "energy",
+      "gui.oneiricconcept.vast_sea_gui.fire": "Fire Resistance",
+      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit"
     }
   },
   "metadata": {

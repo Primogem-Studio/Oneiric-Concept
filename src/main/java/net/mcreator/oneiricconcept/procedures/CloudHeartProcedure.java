@@ -6,7 +6,10 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
@@ -22,6 +25,8 @@ public class CloudHeartProcedure {
 		double x1 = 0;
 		double y1 = 0;
 		double z1 = 0;
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 0, false, false));
 		if (itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("cloudmode")) {
 			if (!(entity.isShiftKeyDown() && entity.onGround())) {
 				if (1 < itemstack.getMaxDamage() - itemstack.getDamageValue()) {

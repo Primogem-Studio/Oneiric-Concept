@@ -31,6 +31,7 @@ public class OneiricconceptModScreens {
 		event.register(OneiricconceptModMenus.GU_ICELEBRATORYXIAOLANTERN_EDIT.get(), GUIcelebratoryxiaolanternEditScreen::new);
 		event.register(OneiricconceptModMenus.LYGUI.get(), LYGUIScreen::new);
 		event.register(OneiricconceptModMenus.JANUS_GUI.get(), JanusGUIScreen::new);
+		event.register(OneiricconceptModMenus.VAST_SEA_GUI.get(), VastSeaGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

@@ -131,6 +131,9 @@
     "onRightClickedOnBlock": {
       "name": "Vastheart"
     },
+    "onCrafted": {
+      "name": "VastSet"
+    },
     "onItemInInventoryTick": {
       "name": "Curiovastsea"
     },

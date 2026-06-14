@@ -471,5 +471,14 @@
   "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
   "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
   "item.oneiricconcept.janus_slate": "Janus Slate",
-  "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse"
+  "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
+  "gui.oneiricconcept.vast_sea_gui.jump": "jump boost",
+  "gui.oneiricconcept.vast_sea_gui.energy": "energy",
+  "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
+  "gui.oneiricconcept.vast_sea_gui.conduit": "Conduit Power",
+  "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
+  "gui.oneiricconcept.vast_sea_gui.energy_suffix": "",
+  "gui.oneiricconcept.vast_sea_gui.energy_prefix": "energy",
+  "gui.oneiricconcept.vast_sea_gui.fire": "Fire Resistance",
+  "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit"
 }

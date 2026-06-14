@@ -1,0 +1,79 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "slider",
+        "data": {
+          "name": "conduit",
+          "min": 0.0,
+          "max": 5.0,
+          "value": 5.0,
+          "step": 1.0,
+          "prefix": "conduit",
+          "suffix": "",
+          "width": 77,
+          "height": 20,
+          "x": 177,
+          "y": 57,
+          "locked": false
+        }
+      },
+      {
+        "type": "slider",
+        "data": {
+          "name": "energy",
+          "min": 0.0,
+          "max": 5.0,
+          "value": 3.0,
+          "step": 1.0,
+          "prefix": "energy",
+          "suffix": "",
+          "width": 72,
+          "height": 20,
+          "x": 177,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "dolphin",
+          "text": "Dolphin's Grace",
+          "x": 177,
+          "y": 118,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "fire",
+          "text": "Fire Resistance",
+          "x": 177,
+          "y": 144,
+          "locked": false
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "VastseaCheck"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -19,11 +19,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.oneiricconcept.procedures.VastheartProcedure;
-import net.mcreator.oneiricconcept.procedures.Vastheart2Procedure;
-import net.mcreator.oneiricconcept.procedures.ModevastProcedure;
-import net.mcreator.oneiricconcept.procedures.CuriovastseaProcedure;
-import net.mcreator.oneiricconcept.procedures.ByzxmsProcedure;
+import net.mcreator.oneiricconcept.procedures.*;
 
 import java.util.List;
 
@@ -91,6 +87,12 @@ public class HeartofthevastseaItem extends Item {
 		boolean retval = super.onEntitySwing(itemstack, entity, hand);
 		ModevastProcedure.execute(entity.level(), entity, itemstack);
 		return retval;
+	}
+
+	@Override
+	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
+		super.onCraftedBy(itemstack, world, entity);
+		VastSetProcedure.execute(itemstack);
 	}
 
 	@Override
