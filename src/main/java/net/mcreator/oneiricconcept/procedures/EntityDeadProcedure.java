@@ -16,6 +16,7 @@ import net.minecraft.world.entity.monster.MagmaCube;
 import net.minecraft.world.entity.monster.Endermite;
 import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
@@ -91,7 +92,8 @@ public class EntityDeadProcedure {
 					CustomData.update(DataComponents.CUSTOM_DATA, i1, tag -> tag.putString(_tagName, _tagValue));
 				}
 			} else if (entity.getType().is(EntityTypeTags.AQUATIC) && !entity.getPersistentData().getBoolean("fishheart")) {
-				if (RandomProcedure.execute(world, 0.1)) {
+				if (RandomProcedure.execute(world, 0.1) && (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER))
+						* 30 <= (entity instanceof LivingEntity _livingEntity14 && _livingEntity14.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity14.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)) {
 					i1 = new ItemStack(OneiricconceptModItems.HEARTOFTHEFISH.get());
 				} else {
 					i1 = new ItemStack(OneiricconceptModItems.FISH.get());
