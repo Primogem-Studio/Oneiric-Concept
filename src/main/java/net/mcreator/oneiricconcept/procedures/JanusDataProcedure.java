@@ -27,6 +27,7 @@ public class JanusDataProcedure {
 					_blockEntity.getPersistentData().putDouble("tx", (slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STX")));
 					_blockEntity.getPersistentData().putDouble("ty", (slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STY")));
 					_blockEntity.getPersistentData().putDouble("tz", (slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STZ")));
+					_blockEntity.getPersistentData().putBoolean("isData", true);
 				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);

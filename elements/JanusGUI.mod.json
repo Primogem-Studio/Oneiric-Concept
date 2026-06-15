@@ -59,6 +59,9 @@
           "onClick": {
             "name": "JanusHiddenPassage"
           },
+          "displayCondition": {
+            "name": "IsJanusData"
+          },
           "width": 108,
           "height": 20,
           "x": 162,
