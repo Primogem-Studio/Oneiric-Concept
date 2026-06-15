@@ -56,6 +56,9 @@
           "name": "button_quickly_traverse",
           "text": "quickly traverse",
           "isUndecorated": false,
+          "onClick": {
+            "name": "JanusHiddenPassage"
+          },
           "width": 108,
           "height": 20,
           "x": 162,

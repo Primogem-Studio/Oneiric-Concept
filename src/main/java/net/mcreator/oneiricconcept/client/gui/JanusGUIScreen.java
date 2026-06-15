@@ -1,5 +1,7 @@
 package net.mcreator.oneiricconcept.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -11,6 +13,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.oneiricconcept.world.inventory.JanusGUIMenu;
 import net.mcreator.oneiricconcept.procedures.GetJanusDataProcedure;
+import net.mcreator.oneiricconcept.network.JanusGUIButtonMessage;
 import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -74,6 +77,12 @@ public class JanusGUIScreen extends AbstractContainerScreen<JanusGUIMenu> implem
 	public void init() {
 		super.init();
 		button_quickly_traverse = Button.builder(Component.translatable("gui.oneiricconcept.janus_gui.button_quickly_traverse"), e -> {
+			int x = JanusGUIScreen.this.x;
+			int y = JanusGUIScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new JanusGUIButtonMessage(0, x, y, z));
+				JanusGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 36, this.topPos + 51, 108, 20).build();
 		this.addRenderableWidget(button_quickly_traverse);
 	}
