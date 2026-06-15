@@ -3,7 +3,7 @@
     "default": {
       "name": "default",
       "map": {
-        "": "texture"
+        "1": "spirtbranch_of_ture_law"
       }
     }
   }
