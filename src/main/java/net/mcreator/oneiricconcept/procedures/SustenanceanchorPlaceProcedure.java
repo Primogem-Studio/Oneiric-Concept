@@ -1,41 +1,34 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
-import net.mcreator.oneiricconcept.OneiricconceptMod;
-
 public class SustenanceanchorPlaceProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
-		if (entity == null)
-			return;
-		Direction wsen = Direction.NORTH;
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		double nu = 0;
 		double y1 = 0;
 		if (!world.isClientSide()) {
 			if (world.isEmptyBlock(BlockPos.containing(x, y + 1, z)) && world.isEmptyBlock(BlockPos.containing(x, y + 2, z)) && world.isEmptyBlock(BlockPos.containing(x, y + 3, z))) {
-				if (entity instanceof Player _player) {
-					ItemStack _stktoremove = itemstack;
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, (x + 0.5), (y + 2), (z + 0.5), 100, 0.2, 0.2, 0.2, 2);
+				PlacePlus1Procedure.execute(world, x, y, z, new Object() {
+					public BlockState with(BlockState _bs, String _property, int _newValue) {
+						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
+						return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
+					}
+				}.with(blockstate, "blockstate", 1));
+			} else {
+				{
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+					world.destroyBlock(_pos, false);
 				}
-				WesnProcedure.execute(world, x, y, z, entity.getYRot());
-				for (int index0 = 0; index0 < 10; index0++) {
-					nu = nu + 2;
-					OneiricconceptMod.queueServerWork((int) nu, () -> {
-						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.TOTEM_OF_UNDYING, (x + 0.5), (y + 3), (z + 0.5), 10, 0.2, 0.6, 0.2, 0.1);
-					});
-				}
-				OneiricconceptMod.queueServerWork(20, () -> {
-					world.setBlock(BlockPos.containing(x, y + 2, z), OneiricconceptModBlocks.SUSTENANCEANCHOROFF.get().defaultBlockState(), 3);
-				});
 			}
 		}
 	}

@@ -4601,20 +4601,6 @@
       "path": "~/Per/pgcrecipes"
     },
     {
-      "name": "Sustenanceanchoritem",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sustenanceanchoritem",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/item/SustenanceanchoritemItem.java",
-          "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchoritem.json"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "SustenanceanchorPlace",
       "type": "procedure",
       "compiles": true,
@@ -4626,12 +4612,8 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
+            "name": "blockstate",
+            "type": "blockstate"
           },
           {
             "name": "x",
@@ -4652,24 +4634,6 @@
         ]
       },
       "path": "~/process"
-    },
-    {
-      "name": "Sustenanceanchoroff",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sustenanceanchoroff",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/sustenanceanchoroff.json",
-          "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchoroff.json",
-          "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchoroff.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchoroffBlockEntity.java",
-          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchoroff.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchoroffBlock.java"
-        ]
-      },
-      "path": "~/block"
     },
     {
       "name": "SustenanceanchorOn",
@@ -4717,9 +4681,9 @@
           "src/main/resources/assets/oneiricconcept/models/item/sustenanceanchor.json",
           "src/main/resources/assets/oneiricconcept/blockstates/sustenanceanchor.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/sustenanceanchor.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchorBlockEntity.java",
+          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchor.json",
           "src/main/java/net/mcreator/oneiricconcept/block/SustenanceanchorBlock.java",
-          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchor.json"
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/SustenanceanchorBlockEntity.java"
         ]
       },
       "path": "~/block"
@@ -16447,13 +16411,13 @@
       "registry_name": "celebratory_xiao_lantern",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/oneiricconcept/block/entity/CelebratoryXiaoLanternBlockEntity.java",
+          "src/main/java/net/mcreator/oneiricconcept/block/CelebratoryXiaoLanternBlock.java",
           "src/main/resources/assets/oneiricconcept/blockstates/celebratory_xiao_lantern.json",
-          "src/main/resources/assets/oneiricconcept/models/block/celebratory_xiao_lantern.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/celebratory_xiao_lantern.json",
           "src/main/resources/assets/oneiricconcept/models/item/celebratory_xiao_lantern.json",
+          "src/main/resources/assets/oneiricconcept/models/block/celebratory_xiao_lantern.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/entity/CelebratoryXiaoLanternBlockEntity.java",
           "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/CelebratoryXiaoLanternRenderer.java",
-          "src/main/java/net/mcreator/oneiricconcept/block/CelebratoryXiaoLanternBlock.java"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/celebratory_xiao_lantern.json"
         ]
       },
       "path": "~/block"
@@ -18734,6 +18698,55 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "SustenanceanchorState",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sustenanceanchor_state",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchor_state_blockstate_0.json",
+          "src/main/resources/assets/oneiricconcept/models/block/sustenanceanchor_state_blockstate_1.json"
+        ]
+      },
+      "path": "~/block"
+    },
+    {
+      "name": "PlacePlus1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_plus_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/PlacePlus1Procedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -18893,7 +18906,6 @@
       "~CUSTOM:Redmo1",
       "~CUSTOM:Newmo1",
       "~CUSTOM:Sustenanceanchor",
-      "~CUSTOM:Sustenanceanchoroff",
       "~CUSTOM:Agnid1",
       "~CUSTOM:PgcPg",
       "~CUSTOM:ThunderSword",
@@ -19562,7 +19574,6 @@
       "PropagandaArmyBlock",
       "PropagandaArmy",
       "APropagandaArmy",
-      "Sustenanceanchoritem",
       "AmbrosialArborSapling",
       "AmbrosialArborLeave",
       "AmbrosialArborPlank",
@@ -19619,7 +19630,8 @@
       "SpirtbranchofTureLaw",
       "LY1",
       "JanussHiddenPassage",
-      "JanusSlate"
+      "JanusSlate",
+      "Sustenanceanchor"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -19751,7 +19763,6 @@
       "advancements.gossipisafearfulthing.descr": "Once my report is accepted as \"fact,\" no one can accuse me of making \"false claims.",
       "translation.oneiricconcept.sustenance2": "current remaining reserves:",
       "block.oneiricconcept.prithiva_topaz_ore": "Prithiva Topaz Ore",
-      "item.oneiricconcept.sustenanceanchoritem.description_0": "§7Consuming gold ingots to activate",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "Coin Gun Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "睡蕉小猴真是好",
       "item.oneiricconcept.sky_waffle.description_0": "§7To the legendary pancake SRSH",
@@ -19827,7 +19838,6 @@
       "effect.oneiricconcept.energy.description": "Enhance overall athletic ability.",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "Red Bean Soup Filling Yuan Xiao",
       "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
-      "item.oneiricconcept.sustenanceanchoritem": "Sustenanceanchor",
       "block.oneiricconcept.camera.description_0": "§7The meaning of \u0027相机 is to see through the key points",
       "item.oneiricconcept.virtual_particle": "Virtual Particle",
       "block.oneiricconcept.fullmoon_metal": "full moon ingot",
@@ -19876,7 +19886,6 @@
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
       "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
       "item.oneiricconcept.ignis_aureliae": "Ignis Aureliae",
-      "block.oneiricconcept.sustenanceanchoroff": "Sustenanceanchor",
       "subtitles.shuhu_kr": "Shuhu\u0027s Gift",
       "block.oneiricconcept.banana_mushroom_bock": "Banana Mushroom Bock",
       "advancements.feed_on_illusions.descr": "Gaseous purified water, it seems like I\u0027ve eaten it, but it also seems like I haven\u0027t eaten anything.",
@@ -20232,7 +20241,6 @@
       "item.oneiricconcept.aizenmedaka": "蓝染花鳉",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
-      "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
@@ -20308,7 +20316,6 @@
       "effect.oneiricconcept.energy.description": "全方位提升运动能力。",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
       "block.oneiricconcept.hydro_metal": "正义金属锭",
-      "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.virtual_particle": "虚粒子",
       "block.oneiricconcept.fullmoon_metal": "满月金属锭",
@@ -20357,7 +20364,6 @@
       "block.oneiricconcept.rainbow_cactus_ball": "六彩炫人球",
       "block.oneiricconcept.primogemstormglass": "原石天气瓶",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
-      "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",
       "subtitles.shuhu_kr": "倏忽恩赐",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",
@@ -20713,7 +20719,6 @@
       "advancements.gossipisafearfulthing.descr": "一旦我出版的内容成为被广泛接受的事实，还有谁能指责我虚假宣传？",
       "translation.oneiricconcept.sustenance2": "当前剩余储备：",
       "block.oneiricconcept.prithiva_topaz_ore": "坚牢黄玉矿石",
-      "item.oneiricconcept.sustenanceanchoritem.description_0": "§7消耗金锭以激活",
       "item.oneiricconcept.boss_stone_coin_gun_plus": "撒币枪Plus",
       "block.oneiricconcept.banana_mushroom.description_4": "§7睡蕉小猴真是好",
       "item.oneiricconcept.sky_waffle.description_0": "§7敬传说中的画饼仙人",
@@ -20790,7 +20795,6 @@
       "effect.oneiricconcept.energy.description": "",
       "item.oneiricconcept.red_bean_soup_filling_yuan_xiao": "豆沙馅元宵",
       "block.oneiricconcept.hydro_metal": "Varunada metal ingot",
-      "item.oneiricconcept.sustenanceanchoritem": "维生定锚",
       "block.oneiricconcept.camera.description_0": "§7「相机」者，洞见要害也",
       "item.oneiricconcept.virtual_particle": "虚粒子",
       "block.oneiricconcept.fullmoon_metal": "full moon ingot",
@@ -20839,7 +20843,6 @@
       "block.oneiricconcept.rainbow_cactus_ball": "Rainbow Cactus Ball",
       "block.oneiricconcept.primogemstormglass": "Primogem storm glass",
       "item.oneiricconcept.ignis_aureliae": "天火熔金",
-      "block.oneiricconcept.sustenanceanchoroff": "维生定锚（未激活）",
       "subtitles.shuhu_kr": "倏忽恩赐",
       "block.oneiricconcept.banana_mushroom_bock": "香蕉菌块",
       "advancements.feed_on_illusions.descr": "气态净水，好像吃下去了，又好像啥也没吃。",

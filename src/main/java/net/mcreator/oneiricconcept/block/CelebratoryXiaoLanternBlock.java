@@ -30,8 +30,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.oneiricconcept.procedures.XiaolanternUnPlaceProcedure;
-import net.mcreator.oneiricconcept.procedures.XiaolanternPlaceProcedure;
 import net.mcreator.oneiricconcept.procedures.XiaolanternOpenGuiProcedure;
+import net.mcreator.oneiricconcept.procedures.PlacePlus1Procedure;
 import net.mcreator.oneiricconcept.block.entity.CelebratoryXiaoLanternBlockEntity;
 
 public class CelebratoryXiaoLanternBlock extends Block implements SimpleWaterloggedBlock, EntityBlock {
@@ -120,7 +120,7 @@ public class CelebratoryXiaoLanternBlock extends Block implements SimpleWaterlog
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		XiaolanternPlaceProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		PlacePlus1Procedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

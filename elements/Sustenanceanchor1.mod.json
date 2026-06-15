@@ -41,7 +41,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Sustenanceanchoritem"
+      "value": "CUSTOM:Sustenanceanchor"
     },
     "name": "sustenanceanchor_1",
     "namespace": "mod"

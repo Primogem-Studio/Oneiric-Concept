@@ -52,7 +52,6 @@ public class OneiricconceptModBlocks {
 	public static final DeferredBlock<Block> PRIMOGEM;
 	public static final DeferredBlock<Block> PYRO_METAL;
 	public static final DeferredBlock<Block> CAMERA;
-	public static final DeferredBlock<Block> SUSTENANCEANCHOROFF;
 	public static final DeferredBlock<Block> SUSTENANCEANCHOR;
 	public static final DeferredBlock<Block> CRESCENT_METAL;
 	public static final DeferredBlock<Block> REDMOON_METAL;
@@ -144,7 +143,6 @@ public class OneiricconceptModBlocks {
 		PRIMOGEM = REGISTRY.register("primogem", PgcPgBlock::new);
 		PYRO_METAL = REGISTRY.register("pyro_metal", Agnid1Block::new);
 		CAMERA = REGISTRY.register("camera", CameraBlock::new);
-		SUSTENANCEANCHOROFF = REGISTRY.register("sustenanceanchoroff", SustenanceanchoroffBlock::new);
 		SUSTENANCEANCHOR = REGISTRY.register("sustenanceanchor", SustenanceanchorBlock::new);
 		CRESCENT_METAL = REGISTRY.register("crescent_metal", Newmo1Block::new);
 		REDMOON_METAL = REGISTRY.register("redmoon_metal", Redmo1Block::new);

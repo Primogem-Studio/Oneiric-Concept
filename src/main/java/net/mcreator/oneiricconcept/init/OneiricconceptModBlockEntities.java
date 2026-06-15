@@ -25,7 +25,6 @@ public class OneiricconceptModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BoomBlossomsPyroBlockEntity>> BOOM_BLOSSOMS_PYRO = register("boom_blossoms_pyro", OneiricconceptModBlocks.BOOM_BLOSSOMS_PYRO, BoomBlossomsPyroBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PropagandaArmyBlockBlockEntity>> PROPAGANDA_ARMY_BLOCK = register("propaganda_army_block", OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK, PropagandaArmyBlockBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PgcPresentBlockEntity>> PGC_PRESENT = register("pgc_present", OneiricconceptModBlocks.PGC_PRESENT, PgcPresentBlockEntity::new);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SustenanceanchoroffBlockEntity>> SUSTENANCEANCHOROFF = register("sustenanceanchoroff", OneiricconceptModBlocks.SUSTENANCEANCHOROFF, SustenanceanchoroffBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SustenanceanchorBlockEntity>> SUSTENANCEANCHOR = register("sustenanceanchor", OneiricconceptModBlocks.SUSTENANCEANCHOR, SustenanceanchorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<Geooo1BlockEntity>> GEO_METAL = register("geo_metal", OneiricconceptModBlocks.GEO_METAL, Geooo1BlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PhlogistontankBlockEntity>> PHLOGISTONTANK = register("phlogistontank", OneiricconceptModBlocks.PHLOGISTONTANK, PhlogistontankBlockEntity::new);
@@ -54,7 +53,6 @@ public class OneiricconceptModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BOOM_BLOSSOMS_PYRO.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PROPAGANDA_ARMY_BLOCK.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PGC_PRESENT.get(), SidedInvWrapper::new);
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUSTENANCEANCHOROFF.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SUSTENANCEANCHOR.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, GEO_METAL.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PHLOGISTONTANK.get(), SidedInvWrapper::new);

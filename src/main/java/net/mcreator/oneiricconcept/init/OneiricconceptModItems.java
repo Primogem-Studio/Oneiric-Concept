@@ -116,8 +116,6 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> PRIMOGEM;
 	public static final DeferredItem<Item> PYRO_METAL;
 	public static final DeferredItem<Item> CAMERA;
-	public static final DeferredItem<Item> SUSTENANCEANCHORITEM;
-	public static final DeferredItem<Item> SUSTENANCEANCHOROFF;
 	public static final DeferredItem<Item> SUSTENANCEANCHOR;
 	public static final DeferredItem<Item> CRESCENT_METAL;
 	public static final DeferredItem<Item> REDMOON_METAL;
@@ -332,8 +330,6 @@ public class OneiricconceptModItems {
 		PRIMOGEM = block(OneiricconceptModBlocks.PRIMOGEM);
 		PYRO_METAL = block(OneiricconceptModBlocks.PYRO_METAL);
 		CAMERA = block(OneiricconceptModBlocks.CAMERA);
-		SUSTENANCEANCHORITEM = REGISTRY.register("sustenanceanchoritem", SustenanceanchoritemItem::new);
-		SUSTENANCEANCHOROFF = block(OneiricconceptModBlocks.SUSTENANCEANCHOROFF);
 		SUSTENANCEANCHOR = block(OneiricconceptModBlocks.SUSTENANCEANCHOR);
 		CRESCENT_METAL = block(OneiricconceptModBlocks.CRESCENT_METAL);
 		REDMOON_METAL = block(OneiricconceptModBlocks.REDMOON_METAL);

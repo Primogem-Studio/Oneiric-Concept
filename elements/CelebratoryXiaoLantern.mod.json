@@ -161,7 +161,7 @@
       "name": "XiaolanternOpenGui"
     },
     "onBlockAdded": {
-      "name": "XiaolanternPlace"
+      "name": "PlacePlus1"
     },
     "onDestroyedByPlayer": {
       "name": "XiaolanternUnPlace"

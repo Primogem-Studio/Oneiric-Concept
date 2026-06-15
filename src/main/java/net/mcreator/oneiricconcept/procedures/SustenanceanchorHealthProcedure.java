@@ -2,6 +2,7 @@ package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
@@ -36,64 +37,68 @@ public class SustenanceanchorHealthProcedure {
 		double hreserve = 0;
 		double sav = 0;
 		if (!world.isClientSide()) {
-			txt = "";
-			health = entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1;
-			maxhealth = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
-			hreserve = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
-			Magnification = (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER));
-			sav = 200 * Magnification;
-			fight = false;
-			{
-				final Vec3 _center = new Vec3(x, y, z);
-				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(13 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					if (entity == (entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) {
-						fight = true;
-					}
-				}
-			}
-			if (fight) {
-				txt = Component.translatable("translation.oneiricconcept.fight").getString();
-				ErrorerrProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5);
+			if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip2 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip2) : -1) <= 1) {
+				SustenanceanchorOnProcedure.execute(world, x, y, z, entity);
 			} else {
-				DispellingNegativityProcedure.execute(entity);
-				if (health / maxhealth < 0.35) {
-					if (entity instanceof LivingEntity _entity)
-						_entity.setHealth((float) (0.35 * maxhealth));
-					txt = Component.translatable("translation.oneiricconcept.sustenance").getString();
-				}
-				if (hreserve < sav && health < maxhealth) {
-					rehealth = maxhealth - health;
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null) {
-							_blockEntity.getPersistentData().putDouble("healthreserve", (hreserve + rehealth));
-						}
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (entity instanceof LivingEntity _entity)
-						_entity.setHealth((float) maxhealth);
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.HEART, (entity.getX()), (entity.getY() + 1), (entity.getZ()), 20, 0.2, 0.4, 0.2, 0.1);
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.BLOCKS, 1, 1);
-						} else {
-							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.BLOCKS, 1, 1, false);
+				txt = "";
+				health = entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1;
+				maxhealth = entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1;
+				hreserve = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
+				Magnification = (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER));
+				sav = 200 * Magnification;
+				fight = false;
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(13 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+						if (entity == (entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) {
+							fight = true;
 						}
 					}
 				}
+				if (fight) {
+					txt = Component.translatable("translation.oneiricconcept.fight").getString();
+					ErrorerrProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5);
+				} else {
+					DispellingNegativityProcedure.execute(entity);
+					if (health / maxhealth < 0.35) {
+						if (entity instanceof LivingEntity _entity)
+							_entity.setHealth((float) (0.35 * maxhealth));
+						txt = Component.translatable("translation.oneiricconcept.sustenance").getString();
+					}
+					if (hreserve < sav && health < maxhealth) {
+						rehealth = maxhealth - health;
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null) {
+								_blockEntity.getPersistentData().putDouble("healthreserve", (hreserve + rehealth));
+							}
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (entity instanceof LivingEntity _entity)
+							_entity.setHealth((float) maxhealth);
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.HEART, (entity.getX()), (entity.getY() + 1), (entity.getZ()), 20, 0.2, 0.4, 0.2, 0.1);
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.BLOCKS, 1, 1);
+							} else {
+								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.levelup")), SoundSource.BLOCKS, 1, 1, false);
+							}
+						}
+					}
+				}
+				hreserve = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
+				if (hreserve < sav) {
+					hre = "\u00A72" + new java.text.DecimalFormat("##.##").format(sav - hreserve);
+				} else {
+					hre = "\u00A74" + new java.text.DecimalFormat("##.##").format(sav - hreserve);
+				}
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal((txt + "" + Component.translatable("translation.oneiricconcept.sustenance2").getString() + hre)), true);
 			}
-			hreserve = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "healthreserve");
-			if (hreserve < sav) {
-				hre = "\u00A72" + new java.text.DecimalFormat("##.##").format(sav - hreserve);
-			} else {
-				hre = "\u00A74" + new java.text.DecimalFormat("##.##").format(sav - hreserve);
-			}
-			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal((txt + "" + Component.translatable("translation.oneiricconcept.sustenance2").getString() + hre)), true);
 		}
 	}
 

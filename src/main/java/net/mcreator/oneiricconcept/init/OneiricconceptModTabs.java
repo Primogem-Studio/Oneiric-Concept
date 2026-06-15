@@ -77,7 +77,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK.get().asItem());
 				tabData.accept(OneiricconceptModItems.PROPAGANDA_ARMY.get());
 				tabData.accept(OneiricconceptModItems.A_PROPAGANDA_ARMY.get());
-				tabData.accept(OneiricconceptModItems.SUSTENANCEANCHORITEM.get());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_SAPLING.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.AMBROSIAL_ARBOR_PLANK.get().asItem());
@@ -135,6 +134,7 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.LY_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE.get().asItem());
 				tabData.accept(OneiricconceptModItems.JANUS_SLATE.get());
+				tabData.accept(OneiricconceptModBlocks.SUSTENANCEANCHOR.get().asItem());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
