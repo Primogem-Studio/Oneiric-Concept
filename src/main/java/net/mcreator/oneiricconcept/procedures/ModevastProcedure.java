@@ -27,6 +27,9 @@ public class ModevastProcedure {
 								(entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.BLOCK_INTERACTION_RANGE) ? _livingEntity1.getAttribute(Attributes.BLOCK_INTERACTION_RANGE).getValue() : 0))),
 								ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity))
 						.getType() == HitResult.Type.BLOCK)) {
+			if (entity instanceof LivingEntity _entity) {
+				_entity.getAttribute(Attributes.FALL_DAMAGE_MULTIPLIER).removeModifier(ResourceLocation.parse("oneiricconcept:skysea"));
+			}
 			itemmode = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("mode");
 			if (itemmode < 4) {
 				itemmode = itemmode + 1;
