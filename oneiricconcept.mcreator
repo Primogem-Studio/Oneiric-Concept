@@ -4700,6 +4700,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -4734,6 +4738,10 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/SustenanceanchorParticleProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
           {
             "name": "x",
             "type": "number"

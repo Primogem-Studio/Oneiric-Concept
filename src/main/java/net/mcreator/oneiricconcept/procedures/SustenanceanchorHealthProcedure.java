@@ -24,7 +24,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 import java.util.Comparator;
 
 public class SustenanceanchorHealthProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
 		String txt = "";
@@ -37,7 +37,7 @@ public class SustenanceanchorHealthProcedure {
 		double hreserve = 0;
 		double sav = 0;
 		if (!world.isClientSide()) {
-			if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip2 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip2) : -1) <= 1) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip2 ? blockstate.getValue(_getip2) : -1) <= 1) {
 				SustenanceanchorOnProcedure.execute(world, x, y, z, entity);
 			} else {
 				txt = "";

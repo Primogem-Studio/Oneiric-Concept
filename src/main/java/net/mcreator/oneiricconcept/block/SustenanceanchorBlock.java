@@ -120,7 +120,7 @@ public class SustenanceanchorBlock extends Block implements EntityBlock {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		SustenanceanchorParticleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		SustenanceanchorParticleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		world.scheduleTick(pos, this, 20);
 	}
 
@@ -134,7 +134,7 @@ public class SustenanceanchorBlock extends Block implements EntityBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		SustenanceanchorHealthProcedure.execute(world, x, y, z, entity);
+		SustenanceanchorHealthProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 
