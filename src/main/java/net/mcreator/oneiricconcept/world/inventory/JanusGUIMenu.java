@@ -35,7 +35,7 @@ public class JanusGUIMenu extends AbstractContainerMenu implements Oneiricconcep
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 3)
+			if (!this.containsKey(key) && this.size() >= 4)
 				return null;
 			return super.put(key, value);
 		}
@@ -55,7 +55,7 @@ public class JanusGUIMenu extends AbstractContainerMenu implements Oneiricconcep
 		super(OneiricconceptModMenus.JANUS_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(1);
+		this.internal = new ItemStackHandler(2);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -92,7 +92,7 @@ public class JanusGUIMenu extends AbstractContainerMenu implements Oneiricconcep
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 13, 16) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 13, 14) {
 			private final int slot = 0;
 			private int x = JanusGUIMenu.this.x;
 			private int y = JanusGUIMenu.this.y;
@@ -106,6 +106,16 @@ public class JanusGUIMenu extends AbstractContainerMenu implements Oneiricconcep
 			@Override
 			public boolean mayPlace(ItemStack itemstack) {
 				return !IsJanusFalseProcedure.execute(itemstack);
+			}
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 13, 32) {
+			private final int slot = 1;
+			private int x = JanusGUIMenu.this.x;
+			private int y = JanusGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
@@ -135,16 +145,16 @@ public class JanusGUIMenu extends AbstractContainerMenu implements Oneiricconcep
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 1) {
-				if (!this.moveItemStackTo(itemstack1, 1, this.slots.size(), true))
+			if (index < 2) {
+				if (!this.moveItemStackTo(itemstack1, 2, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-				if (index < 1 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 1 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 2, false)) {
+				if (index < 2 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 2 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 1, 1 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 2, 2 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

@@ -29,7 +29,7 @@
             "name": "JanusData"
           },
           "x": 138,
-          "y": 52,
+          "y": 50,
           "locked": false
         }
       },
@@ -46,7 +46,7 @@
             "falpha": 0.0
           },
           "x": 161,
-          "y": 56,
+          "y": 54,
           "locked": false
         }
       },
@@ -60,6 +60,19 @@
           "height": 20,
           "x": 162,
           "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 138,
+          "y": 68,
           "locked": false
         }
       }

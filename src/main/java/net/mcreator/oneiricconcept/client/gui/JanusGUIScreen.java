@@ -67,7 +67,7 @@ public class JanusGUIScreen extends AbstractContainerScreen<JanusGUIMenu> implem
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, GetJanusDataProcedure.execute(world, x, y, z), 35, 19, -12829636, false);
+		guiGraphics.drawString(this.font, GetJanusDataProcedure.execute(world, x, y, z), 35, 17, -12829636, false);
 	}
 
 	@Override

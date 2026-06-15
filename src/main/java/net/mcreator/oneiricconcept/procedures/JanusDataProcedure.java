@@ -1,5 +1,6 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
@@ -15,17 +16,28 @@ import net.minecraft.core.BlockPos;
 
 public class JanusDataProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (!world.isClientSide()) {
-			BlockPos _bp = BlockPos.containing(x, y, z);
-			BlockEntity _blockEntity = world.getBlockEntity(_bp);
-			BlockState _bs = world.getBlockState(_bp);
-			if (_blockEntity != null) {
-				_blockEntity.getPersistentData().putDouble("tx", ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STX")));
-				_blockEntity.getPersistentData().putDouble("ty", ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STY")));
-				_blockEntity.getPersistentData().putDouble("tz", ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STZ")));
+		ItemStack slate = ItemStack.EMPTY;
+		slate = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
+		if (!(slate.getItem() == ItemStack.EMPTY.getItem())) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null) {
+					_blockEntity.getPersistentData().putDouble("tx", (slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STX")));
+					_blockEntity.getPersistentData().putDouble("ty", (slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STY")));
+					_blockEntity.getPersistentData().putDouble("tz", (slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STZ")));
+				}
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			if (world instanceof Level _level)
-				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable)
+				_itemHandlerModifiable.setStackInSlot(0, ItemStack.EMPTY);
+			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+				ItemStack _setstack = slate.copy();
+				_setstack.setCount(1);
+				_itemHandlerModifiable.setStackInSlot(1, _setstack);
+			}
 		}
 	}
 

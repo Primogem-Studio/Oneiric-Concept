@@ -9,5 +9,5 @@
     "west": "minecraft:block/bamboo_trapdoor",
     "particle": "minecraft:block/bamboo_trapdoor"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

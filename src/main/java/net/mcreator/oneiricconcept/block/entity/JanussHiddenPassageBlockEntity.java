@@ -26,7 +26,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class JanussHiddenPassageBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(1, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(2, ItemStack.EMPTY);
 
 	public JanussHiddenPassageBlockEntity(BlockPos position, BlockState state) {
 		super(OneiricconceptModBlockEntities.JANUSS_HIDDEN_PASSAGE.get(), position, state);

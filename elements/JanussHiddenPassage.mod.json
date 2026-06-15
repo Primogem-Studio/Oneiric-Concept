@@ -25,7 +25,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -126,7 +126,7 @@
     "hasInventory": true,
     "guiBoundTo": "JanusGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 1,
+    "inventorySize": 2,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
