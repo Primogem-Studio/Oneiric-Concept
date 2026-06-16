@@ -14703,11 +14703,11 @@
       "registry_name": "engineeringantimatterbombblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/blockstates/engineeringantimatterbombblock.json",
+          "src/main/java/net/mcreator/oneiricconcept/block/EngineeringantimatterbombblockBlock.java",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/engineeringantimatterbombblock.json",
-          "src/main/resources/assets/oneiricconcept/models/item/engineeringantimatterbombblock.json",
           "src/main/resources/assets/oneiricconcept/models/block/engineeringantimatterbombblock.json",
-          "src/main/java/net/mcreator/oneiricconcept/block/EngineeringantimatterbombblockBlock.java"
+          "src/main/resources/assets/oneiricconcept/blockstates/engineeringantimatterbombblock.json",
+          "src/main/resources/assets/oneiricconcept/models/item/engineeringantimatterbombblock.json"
         ]
       },
       "path": "~/block"

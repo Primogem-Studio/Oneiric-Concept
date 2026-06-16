@@ -31,7 +31,7 @@ public class AntimatterLegionLootProcedure {
 			if (0 < EquilibriumLevel) {
 				for (int index0 = 0; index0 < (int) Math.ceil(lootingAndLuck * (EquilibriumLevel + 1)); index0++) {
 					if (RandomProcedure.execute(world, 0.2 * EquilibriumLevel)) {
-						itmsstk = (RandomProcedure.execute(world, 0.1 * EquilibriumLevel) ? new ItemStack(OneiricconceptModItems.CONQUEROR_S_WILL.get()) : new ItemStack(OneiricconceptModItems.USURPER_S_SCHEME.get()));
+						itmsstk = (1 < EquilibriumLevel && RandomProcedure.execute(world, 0.1 * EquilibriumLevel) ? new ItemStack(OneiricconceptModItems.CONQUEROR_S_WILL.get()) : new ItemStack(OneiricconceptModItems.USURPER_S_SCHEME.get()));
 					} else {
 						if (!world.isClientSide() && world.getServer() != null) {
 							for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse("oneiricconcept:entities/baryon")))

@@ -12,6 +12,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.procedures.TntActProcedure;
 import net.mcreator.oneiricconcept.procedures.FlintProcedure;
 import net.mcreator.oneiricconcept.procedures.FireTntProcedure;
 
@@ -28,6 +29,9 @@ public class EngineeringantimatterbombblockBlock extends Block {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		if (world.getBestNeighborSignal(pos) > 0) {
+			TntActProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		}
 		FireTntProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
