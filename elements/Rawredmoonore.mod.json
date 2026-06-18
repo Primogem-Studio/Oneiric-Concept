@@ -5,10 +5,11 @@
     "renderType": 0,
     "texture": "cuchiyue_kuang",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Raw red moon ore",
+    "name": "Raw Irismoon ore",
     "rarity": "COMMON",
     "creativeTabs": [
       {

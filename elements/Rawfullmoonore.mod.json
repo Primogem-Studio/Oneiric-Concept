@@ -5,10 +5,11 @@
     "renderType": 0,
     "texture": "cumanyue_kuang",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Raw full moon ore",
+    "name": "Raw Evermoon ore",
     "rarity": "COMMON",
     "creativeTabs": [
       {

@@ -468,11 +468,11 @@
   "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit",
   "block.oneiricconcept.irismoon_metal": "Irismoon ingot",
   "block.oneiricconcept.irismoon_ore": "Red moon ore",
-  "item.oneiricconcept.raw_evermoon_ore": "Raw full moon ore",
-  "block.oneiricconcept.evermoon_ore": "Full moon ore",
-  "block.oneiricconcept.evermoon_metal": "full moon ingot",
-  "block.oneiricconcept.frostmoon_metal": "crescent ingot",
-  "block.oneiricconcept.frostmoon_ore": "Crescent moon ore",
-  "item.oneiricconcept.raw_frostmoon_ore": "Raw crescent moon ore",
-  "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore"
+  "item.oneiricconcept.raw_evermoon_ore": "Raw Evermoon ore",
+  "block.oneiricconcept.evermoon_ore": "Evermoon ore",
+  "block.oneiricconcept.evermoon_metal": "Evermoon ingot",
+  "block.oneiricconcept.frostmoon_metal": "Frostmoon ingot",
+  "block.oneiricconcept.frostmoon_ore": "Frostmoon ore",
+  "item.oneiricconcept.raw_frostmoon_ore": "Raw Frostmoon ore",
+  "item.oneiricconcept.raw_irismoon_ore": "Raw Irismoon ore"
 }
