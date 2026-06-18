@@ -4,9 +4,9 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "oneiricconcept:rawcrescentmoonore"
+    "item": "oneiricconcept:raw_frostmoon_ore"
   },
   "result": {
-    "id": "oneiricconcept:crescent_metal"
+    "id": "oneiricconcept:frostmoon_metal"
   }
 }

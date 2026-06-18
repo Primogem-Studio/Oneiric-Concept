@@ -1,5 +1,5 @@
 {
-  "feature": "oneiricconcept:redmoonore",
+  "feature": "oneiricconcept:evermoon_ore",
   "placement": [
     {
       "type": "minecraft:count",
@@ -16,7 +16,7 @@
           "absolute": 1
         },
         "max_inclusive": {
-          "absolute": 3
+          "absolute": 128
         }
       }
     },

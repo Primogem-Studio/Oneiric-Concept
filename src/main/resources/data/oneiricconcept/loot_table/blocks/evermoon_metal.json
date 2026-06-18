@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "oneiricconcept:blocks/redmoon_metal",
+  "random_sequence": "oneiricconcept:blocks/evermoon_metal",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:redmoon_metal"
+          "name": "oneiricconcept:evermoon_metal"
         }
       ]
     }

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "oneiricconcept:redmoonore",
-    "oneiricconcept:fullmoonore",
-    "oneiricconcept:crescentmoonore"
+    "oneiricconcept:irismoon_ore",
+    "oneiricconcept:evermoon_ore",
+    "oneiricconcept:frostmoon_ore"
   ]
 }

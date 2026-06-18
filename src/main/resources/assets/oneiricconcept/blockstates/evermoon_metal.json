@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north,blockstate=0": {
-      "model": "oneiricconcept:block/fullmoon_metal"
+      "model": "oneiricconcept:block/evermoon_metal"
     },
     "facing=east,blockstate=0": {
-      "model": "oneiricconcept:block/fullmoon_metal",
+      "model": "oneiricconcept:block/evermoon_metal",
       "y": 90
     },
     "facing=south,blockstate=0": {
-      "model": "oneiricconcept:block/fullmoon_metal",
+      "model": "oneiricconcept:block/evermoon_metal",
       "y": 180
     },
     "facing=west,blockstate=0": {
-      "model": "oneiricconcept:block/fullmoon_metal",
+      "model": "oneiricconcept:block/evermoon_metal",
       "y": 270
     },
     "facing=north,blockstate=1": {

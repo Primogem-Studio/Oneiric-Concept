@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:fullmoonore",
+          "name": "oneiricconcept:evermoon_ore",
           "weight": 1,
           "conditions": [
             {
@@ -42,7 +42,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:rawfullmoonore",
+          "name": "oneiricconcept:raw_evermoon_ore",
           "weight": 1,
           "conditions": [
             {

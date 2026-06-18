@@ -4,9 +4,9 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "oneiricconcept:rawfullmoonore"
+    "item": "oneiricconcept:raw_evermoon_ore"
   },
   "result": {
-    "id": "oneiricconcept:fullmoon_metal"
+    "id": "oneiricconcept:evermoon_metal"
   }
 }

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "oneiricconcept:blocks/crescent_metal",
+  "random_sequence": "oneiricconcept:blocks/irismoon_metal",
   "pools": [
     {
       "rolls": 1.0,
@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:crescent_metal"
+          "name": "oneiricconcept:irismoon_metal"
         }
       ]
     }

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:rawredmoonore",
+          "name": "oneiricconcept:raw_irismoon_ore",
           "weight": 1,
           "conditions": [
             {
@@ -50,7 +50,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oneiricconcept:redmoonore",
+          "name": "oneiricconcept:irismoon_ore",
           "weight": 1,
           "conditions": [
             {

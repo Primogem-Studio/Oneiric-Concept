@@ -1,18 +1,21 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 4,
+    "size": 16,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {
           "predicate_type": "blockstate_match",
           "block_state": {
-            "Name": "minecraft:netherrack"
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
           }
         },
         "state": {
-          "Name": "oneiricconcept:redmoonore"
+          "Name": "oneiricconcept:frostmoon_ore"
         }
       }
     ]

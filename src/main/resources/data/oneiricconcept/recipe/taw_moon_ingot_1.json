@@ -6,13 +6,13 @@
   ],
   "key": {
     "a": {
-      "item": "oneiricconcept:crescent_metal"
+      "item": "oneiricconcept:frostmoon_metal"
     },
     "b": {
-      "item": "oneiricconcept:redmoon_metal"
+      "item": "oneiricconcept:irismoon_metal"
     },
     "c": {
-      "item": "oneiricconcept:fullmoon_metal"
+      "item": "oneiricconcept:evermoon_metal"
     }
   },
   "result": {

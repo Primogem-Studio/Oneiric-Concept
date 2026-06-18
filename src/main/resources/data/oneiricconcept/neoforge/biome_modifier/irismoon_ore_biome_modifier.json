@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
   "biomes": "#minecraft:is_nether",
-  "features": "oneiricconcept:redmoonore",
+  "features": "oneiricconcept:irismoon_ore",
   "step": "underground_ores"
 }

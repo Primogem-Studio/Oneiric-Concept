@@ -4,9 +4,9 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "item": "oneiricconcept:rawredmoonore"
+    "item": "oneiricconcept:raw_irismoon_ore"
   },
   "result": {
-    "id": "oneiricconcept:redmoon_metal"
+    "id": "oneiricconcept:irismoon_metal"
   }
 }

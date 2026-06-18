@@ -114,12 +114,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.CULLINAN.get());
 				tabData.accept(OneiricconceptModBlocks.NEST.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.ENGINEERINGANTIMATTERBOMBBLOCK.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.CRESCENTMOONORE.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.REDMOONORE.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.FULLMOONORE.get().asItem());
-				tabData.accept(OneiricconceptModItems.RAWCRESCENTMOONORE.get());
-				tabData.accept(OneiricconceptModItems.RAWREDMOONORE.get());
-				tabData.accept(OneiricconceptModItems.RAWFULLMOONORE.get());
 				tabData.accept(OneiricconceptModBlocks.WHITE_MOONLIGHT_ABSORBER.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CHENYU_ADEPTEA_SEEDLING.get().asItem());
 				tabData.accept(OneiricconceptModItems.THE_BOON_OF_THE_ELDER_TREE.get());
@@ -135,6 +129,12 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE.get().asItem());
 				tabData.accept(OneiricconceptModItems.JANUS_SLATE.get());
 				tabData.accept(OneiricconceptModBlocks.SUSTENANCEANCHOR.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.IRISMOON_ORE.get().asItem());
+				tabData.accept(OneiricconceptModItems.RAW_EVERMOON_ORE.get());
+				tabData.accept(OneiricconceptModBlocks.EVERMOON_ORE.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FROSTMOON_ORE.get().asItem());
+				tabData.accept(OneiricconceptModItems.RAW_FROSTMOON_ORE.get());
+				tabData.accept(OneiricconceptModItems.RAW_IRISMOON_ORE.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -219,13 +219,13 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.CRYO_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.GEO_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.TRASHMETAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.CRESCENT_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.REDMOON_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.FULLMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.IRISMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.EVERMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FROSTMOON_METAL.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

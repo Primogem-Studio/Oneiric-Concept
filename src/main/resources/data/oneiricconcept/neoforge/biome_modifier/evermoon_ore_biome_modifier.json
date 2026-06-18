@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
   "biomes": "#minecraft:is_end",
-  "features": "oneiricconcept:fullmoonore",
+  "features": "oneiricconcept:evermoon_ore",
   "step": "underground_ores"
 }

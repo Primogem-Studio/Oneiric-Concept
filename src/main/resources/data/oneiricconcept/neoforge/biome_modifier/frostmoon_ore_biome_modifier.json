@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "oneiricconcept:crescentmoonore",
+  "features": "oneiricconcept:frostmoon_ore",
   "step": "underground_ores"
 }
