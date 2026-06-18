@@ -129,12 +129,12 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE.get().asItem());
 				tabData.accept(OneiricconceptModItems.JANUS_SLATE.get());
 				tabData.accept(OneiricconceptModBlocks.SUSTENANCEANCHOR.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.IRISMOON_ORE.get().asItem());
-				tabData.accept(OneiricconceptModItems.RAW_EVERMOON_ORE.get());
-				tabData.accept(OneiricconceptModBlocks.EVERMOON_ORE.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.FROSTMOON_ORE.get().asItem());
 				tabData.accept(OneiricconceptModItems.RAW_FROSTMOON_ORE.get());
+				tabData.accept(OneiricconceptModBlocks.IRISMOON_ORE.get().asItem());
 				tabData.accept(OneiricconceptModItems.RAW_IRISMOON_ORE.get());
+				tabData.accept(OneiricconceptModBlocks.EVERMOON_ORE.get().asItem());
+				tabData.accept(OneiricconceptModItems.RAW_EVERMOON_ORE.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ONEIRIC_CONCEPTFOOD = REGISTRY.register("oneiric_conceptfood",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.oneiricconcept.oneiric_conceptfood")).icon(() -> new ItemStack(OneiricconceptModItems.BELOBOG_SAUSAGE.get())).displayItems((parameters, tabData) -> {
@@ -221,11 +221,11 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModBlocks.TRASHMETAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.RAINBOW_CACTUS_BALL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.PRIMOGEMSTORMGLASS.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.CELEBRATORY_XIAO_LANTERN.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.FROSTMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.IRISMOON_METAL.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.EVERMOON_METAL.get().asItem());
-				tabData.accept(OneiricconceptModBlocks.FROSTMOON_METAL.get().asItem());
+				tabData.accept(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT.get().asItem());
 			}).withTabsBefore(ONEIRIC_CONCEPTFOOD.getId()).build());
 
 	@SubscribeEvent

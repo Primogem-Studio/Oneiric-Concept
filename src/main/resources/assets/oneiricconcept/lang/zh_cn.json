@@ -466,13 +466,13 @@
   "gui.oneiricconcept.vast_sea_gui.energy_prefix": "能量",
   "gui.oneiricconcept.vast_sea_gui.fire": "抗火",
   "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "潮涌能量",
-  "block.oneiricconcept.irismoon_metal": "red moon ingot",
-  "block.oneiricconcept.irismoon_ore": "Red moon ore",
-  "item.oneiricconcept.raw_evermoon_ore": "Raw full moon ore",
-  "block.oneiricconcept.evermoon_ore": "Full moon ore",
-  "block.oneiricconcept.evermoon_metal": "full moon ingot",
-  "block.oneiricconcept.frostmoon_metal": "crescent ingot",
-  "block.oneiricconcept.frostmoon_ore": "Crescent moon ore",
-  "item.oneiricconcept.raw_frostmoon_ore": "Raw crescent moon ore",
-  "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore"
+  "block.oneiricconcept.irismoon_metal": "虹月金属锭",
+  "block.oneiricconcept.irismoon_ore": "虹月矿石",
+  "item.oneiricconcept.raw_evermoon_ore": "粗虹月矿石",
+  "block.oneiricconcept.evermoon_ore": "恒月矿石",
+  "block.oneiricconcept.evermoon_metal": "恒月金属锭",
+  "block.oneiricconcept.frostmoon_metal": "霜月金属锭",
+  "block.oneiricconcept.frostmoon_ore": "霜月矿石",
+  "item.oneiricconcept.raw_frostmoon_ore": "粗霜月矿石",
+  "item.oneiricconcept.raw_irismoon_ore": "粗虹月矿石"
 }

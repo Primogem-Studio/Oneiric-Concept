@@ -19620,12 +19620,12 @@
       "JanussHiddenPassage",
       "JanusSlate",
       "Sustenanceanchor",
-      "Redmoonore",
-      "Rawfullmoonore",
-      "Fullmoonore",
       "Crescentmoonore",
       "Rawcrescentmoonore",
-      "Rawredmoonore"
+      "Redmoonore",
+      "Rawredmoonore",
+      "Fullmoonore",
+      "Rawfullmoonore"
     ],
     "CUSTOM:OneiricConceptfood": [
       "Stuffing",
@@ -19710,11 +19710,11 @@
       "Liron1",
       "RainbowCactusBall",
       "Primogemstormglass",
-      "Theanotherworldmooningot",
       "CelebratoryXiaoLantern",
+      "Newmo1",
       "Redmo1",
       "Fulmo1",
-      "Newmo1"
+      "Theanotherworldmooningot"
     ]
   },
   "language_map": {
