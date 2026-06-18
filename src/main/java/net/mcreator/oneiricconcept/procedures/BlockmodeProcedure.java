@@ -44,7 +44,7 @@ public class BlockmodeProcedure {
 					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-				item.shrink(1);
+				item.shrink((int) ((entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) ? 0 : 1));
 			} else {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal((Component.translatable("translation.key.fail").getString())), true);

@@ -4854,14 +4854,14 @@
       "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "redmoon_metal",
+      "registry_name": "irismoon_metal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/oneiricconcept/models/block/redmoon_metal.json",
+          "src/main/resources/assets/oneiricconcept/models/block/irismoon_metal.json",
           "src/main/java/net/mcreator/oneiricconcept/block/Redmo1Block.java",
-          "src/main/resources/assets/oneiricconcept/blockstates/redmoon_metal.json",
-          "src/main/resources/assets/oneiricconcept/models/item/redmoon_metal.json",
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/redmoon_metal.json"
+          "src/main/resources/assets/oneiricconcept/models/item/irismoon_metal.json",
+          "src/main/resources/assets/oneiricconcept/blockstates/irismoon_metal.json",
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/irismoon_metal.json"
         ]
       },
       "path": "~/Per/block/red_moon"
@@ -18894,6 +18894,7 @@
       "TAG:c:b2sausage"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Redmo1",
       "~CUSTOM:JanussHiddenPassage",
       "~CUSTOM:LY1",
       "~CUSTOM:WhiteMoonlightAbsorber",
@@ -18911,7 +18912,6 @@
       "~CUSTOM:Elect1",
       "~CUSTOM:Liron1",
       "~CUSTOM:Fulmo1",
-      "~CUSTOM:Redmo1",
       "~CUSTOM:Newmo1",
       "~CUSTOM:Sustenanceanchor",
       "~CUSTOM:Agnid1",
@@ -19723,12 +19723,12 @@
       "Geooo1",
       "Liron1",
       "Newmo1",
-      "Redmo1",
       "Fulmo1",
       "RainbowCactusBall",
       "Primogemstormglass",
       "Theanotherworldmooningot",
-      "CelebratoryXiaoLantern"
+      "CelebratoryXiaoLantern",
+      "Redmo1"
     ]
   },
   "language_map": {
@@ -19867,7 +19867,6 @@
       "gui.oneiricconcept.lib_gui.label_player_not_connected": "Player not connected",
       "gamerule.ocDamagemultiplier.description": "Control the multiplier of partial damage",
       "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
-      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "Big Rock",
       "item.oneiricconcept.sword_of_brilliant_valor": "Sword Of Brilliant Valor",
       "block.oneiricconcept.ambrosial_arbor_plank": "Ambrosial Arbor Plank",
@@ -20208,7 +20207,8 @@
       "gui.oneiricconcept.vast_sea_gui.energy_suffix": "",
       "gui.oneiricconcept.vast_sea_gui.energy_prefix": "energy",
       "gui.oneiricconcept.vast_sea_gui.fire": "Fire Resistance",
-      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit"
+      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit",
+      "block.oneiricconcept.irismoon_metal": "red moon ingot"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20345,7 +20345,6 @@
       "gui.oneiricconcept.lib_gui.label_player_not_connected": "玩家未连接",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "gui.oneiricconcept.lib_gui.button_getuid": "UID查询",
-      "block.oneiricconcept.redmoon_metal": "赤月金属锭",
       "block.oneiricconcept.big_rock": "大石头块",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
       "block.oneiricconcept.ambrosial_arbor_plank": "建木木板",
@@ -20686,7 +20685,8 @@
       "gui.oneiricconcept.vast_sea_gui.energy_suffix": "",
       "gui.oneiricconcept.vast_sea_gui.energy_prefix": "能量",
       "gui.oneiricconcept.vast_sea_gui.fire": "抗火",
-      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "潮涌能量"
+      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "潮涌能量",
+      "block.oneiricconcept.irismoon_metal": "red moon ingot"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -20824,7 +20824,6 @@
       "gui.oneiricconcept.lib_gui.label_player_not_connected": "Player not connected",
       "gamerule.ocDamagemultiplier.description": "控制部分伤害的倍率",
       "gui.oneiricconcept.lib_gui.button_getuid": "GetUID",
-      "block.oneiricconcept.redmoon_metal": "red moon ingot",
       "block.oneiricconcept.big_rock": "大石头块",
       "item.oneiricconcept.sword_of_brilliant_valor": "辉煌勇气之剑",
       "block.oneiricconcept.ambrosial_arbor_plank": "建木木板",
@@ -21165,7 +21164,8 @@
       "gui.oneiricconcept.vast_sea_gui.energy_suffix": "",
       "gui.oneiricconcept.vast_sea_gui.energy_prefix": "energy",
       "gui.oneiricconcept.vast_sea_gui.fire": "Fire Resistance",
-      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit"
+      "gui.oneiricconcept.vast_sea_gui.conduit_prefix": "conduit",
+      "block.oneiricconcept.irismoon_metal": "red moon ingot"
     }
   },
   "metadata": {
