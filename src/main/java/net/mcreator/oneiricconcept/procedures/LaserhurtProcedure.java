@@ -44,6 +44,6 @@ public class LaserhurtProcedure {
 				_level.sendParticles(ParticleTypes.WAX_OFF, (x + ratio * dx), (y + ratio * dy), (z + ratio * dz), 1, 0, 0, 0, 0);
 		}
 		isGc = ModList.get().isLoaded("genshincraft");
-		target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.FALLING_ANVIL), entity), false, true, false, 1), (float) dmg);
+		target.hurt(TypeDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.MOB_ATTACK), entity), false, true, false, 1), (float) dmg);
 	}
 }
