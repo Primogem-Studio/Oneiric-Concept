@@ -18705,6 +18705,41 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "RarainbowDye",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rarainbow_dye",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/RarainbowDyeProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -19472,6 +19507,9 @@
     ],
     "ITEMS:c:crops/wheat": [
       "CUSTOM:HumanHeightAuspiciousCrops"
+    ],
+    "ITEMS:c:fertilizers": [
+      "CUSTOM:HiltwoodFromTheArbor"
     ]
   },
   "tab_element_order": {
