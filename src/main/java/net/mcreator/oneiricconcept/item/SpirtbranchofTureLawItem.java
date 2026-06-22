@@ -12,12 +12,11 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.TagKey;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.oneiricconcept.procedures.TureLawProcedure;
 import net.mcreator.oneiricconcept.procedures.SakuraPlaceProcedure;
+import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 public class SpirtbranchofTureLawItem extends SwordItem {
 	private static final Tier TOOL_TIER = new Tier() {
@@ -48,7 +47,7 @@ public class SpirtbranchofTureLawItem extends SwordItem {
 
 		@Override
 		public Ingredient getRepairIngredient() {
-			return Ingredient.of(ItemTags.create(ResourceLocation.parse("c:ambrosialarbor")));
+			return Ingredient.of(new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()));
 		}
 	};
 

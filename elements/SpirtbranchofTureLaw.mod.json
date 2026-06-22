@@ -28,7 +28,7 @@
     },
     "repairItems": [
       {
-        "value": "TAG:c:ambrosialarbor"
+        "value": "CUSTOM:AmbrosialArborLog"
       }
     ],
     "immuneToFire": true,
