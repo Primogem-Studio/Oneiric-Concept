@@ -1697,42 +1697,6 @@
       "path": "~/block"
     },
     {
-      "name": "Stripped",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stripped",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/oneiricconcept/procedures/StrippedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "actionresulttype"
-      },
-      "path": "~/process"
-    },
-    {
       "name": "TheAnotherWorldSapling",
       "type": "plant",
       "compiles": true,
