@@ -85,7 +85,7 @@ public class Geooo1BlockEntity extends RandomizableContainerBlockEntity implemen
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Prithiva_metal_ingot");
+		return Component.literal("Prithiva Metal Ingot");
 	}
 
 	@Override
