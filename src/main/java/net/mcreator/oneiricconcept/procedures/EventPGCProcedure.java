@@ -1,28 +1,9 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.hacker.genshincraft.advancement.CustomTriggers;
 import net.mcreator.ceshi.api.EventRegistry;
 import net.mcreator.ceshi.init.PrimogemcraftModItems;
-import net.mcreator.ceshi.procedures.EventGroupProcedure;
-import net.mcreator.ceshi.procedures.Event_item_sxRProcedure;
-import net.mcreator.ceshi.procedures.EventitemmssxrProcedure;
-import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
-import net.minecraft.advancements.AdvancementProgress;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.functions.CommandFunction;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
-
-import javax.naming.event.EventContext;
-
-import java.util.Optional;
 
 import static net.mcreator.oneiricconcept.init.OneiricconceptModEntities.BARYON;
 

@@ -12,7 +12,7 @@ import net.neoforged.neoforge.fluids.FluidInteractionRegistry.InteractionInforma
 
 import static net.mcreator.oneiricconcept.OneiricconceptMod.MODID;
 
-@EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = MODID)
 public class EventHandler {
     @SubscribeEvent
     private static void init(FMLCommonSetupEvent event) {
