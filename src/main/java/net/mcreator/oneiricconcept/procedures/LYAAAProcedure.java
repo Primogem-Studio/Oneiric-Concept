@@ -6,6 +6,10 @@ import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -31,7 +35,7 @@ import java.util.Comparator;
 import java.util.ArrayList;
 
 public class LYAAAProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		boolean fire = false;
 		String UUIDstr = "";
 		Entity target = null;
@@ -97,7 +101,7 @@ public class LYAAAProcedure {
 					_level.sendParticles(ParticleTypes.FLASH, tx, ty, tz, 1, 0, 0, 0, 1);
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.FLAME, tx, ty, tz, 20, 0, 0, 0, 0.2);
-				Ly1TurnProcedure.execute(world, new Vec3((tx - x), (tz - y), (ty - z)));
+				Ly1TurnProcedure.execute(world, getDirectionFromBlockState(blockstate), new Vec3((tx - x), (ty - y), (tz - z)));
 			}
 		}
 	}
@@ -120,5 +124,13 @@ public class LYAAAProcedure {
 
 	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {
 		return (Entity) world.getEntitiesOfClass(clazz, AABB.ofSize(new Vec3(x, y, z), range, range, range), e -> true).stream().sorted(Comparator.comparingDouble(e -> e.distanceToSqr(x, y, z))).findFirst().orElse(null);
+	}
+
+	private static Direction getDirectionFromBlockState(BlockState blockState) {
+		Property<?> prop = blockState.getBlock().getStateDefinition().getProperty("facing");
+		if (prop instanceof DirectionProperty dp)
+			return blockState.getValue(dp);
+		prop = blockState.getBlock().getStateDefinition().getProperty("axis");
+		return prop instanceof EnumProperty ep && ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) blockState.getValue(ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
 	}
 }

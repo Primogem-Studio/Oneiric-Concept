@@ -2,20 +2,45 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:beacon",
+    "texture": "ly1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
-    "rotationMode": 0,
+    "renderType": 4,
+    "customModelName": "Modelly_1",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animations": [],
-    "itemTexture": "",
+    "animations": [
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.left"
+        },
+        "speed": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.right"
+        },
+        "speed": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.up"
+        },
+        "speed": 1.0
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.down"
+        },
+        "speed": 1.0
+      }
+    ],
+    "itemTexture": "minecraft:nether_star",
     "particleTexture": "",
     "blockSetType": "OAK",
     "pottedPlant": {
@@ -23,7 +48,7 @@
     },
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -68,7 +93,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,

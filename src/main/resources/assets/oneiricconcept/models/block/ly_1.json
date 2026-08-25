@@ -1,13 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "minecraft:block/beacon",
-    "up": "minecraft:block/beacon",
-    "north": "minecraft:block/beacon",
-    "east": "minecraft:block/beacon",
-    "south": "minecraft:block/beacon",
-    "west": "minecraft:block/beacon",
-    "particle": "minecraft:block/beacon"
+    "all": "oneiricconcept:block/ly1",
+    "particle": "oneiricconcept:block/ly1"
   },
   "render_type": "solid"
 }

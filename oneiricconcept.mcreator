@@ -18240,6 +18240,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -18271,6 +18275,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/oneiricconcept/block/LY1Block.java",
+          "src/main/java/net/mcreator/oneiricconcept/client/renderer/block/LY1Renderer.java",
           "src/main/resources/assets/oneiricconcept/models/item/ly_1.json",
           "src/main/resources/data/oneiricconcept/loot_table/blocks/ly_1.json",
           "src/main/resources/assets/oneiricconcept/blockstates/ly_1.json",
@@ -18749,6 +18754,10 @@
       "registry_name": "ly_1_turn",
       "metadata": {
         "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
           {
             "name": "targetV",
             "type": "vector"
