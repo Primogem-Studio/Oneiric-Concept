@@ -17,27 +17,165 @@
     "animations": [
       {
         "animation": {
-          "value": "CUSTOM:ly_1Animation.left"
+          "value": "CUSTOM:ly_1Animation.y180"
         },
-        "speed": 1.0
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis180"
+        }
       },
       {
         "animation": {
-          "value": "CUSTOM:ly_1Animation.right"
+          "value": "CUSTOM:ly_1Animation.y90"
         },
-        "speed": 1.0
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis90"
+        }
       },
       {
         "animation": {
-          "value": "CUSTOM:ly_1Animation.up"
+          "value": "CUSTOM:ly_1Animation.y40"
         },
-        "speed": 1.0
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis40"
+        }
       },
       {
         "animation": {
-          "value": "CUSTOM:ly_1Animation.down"
+          "value": "CUSTOM:ly_1Animation.y30"
         },
-        "speed": 1.0
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis30"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.y20"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis20"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.y10"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis10"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.y8"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis8"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.y4"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis4"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.y2"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis2"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.y1"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1YAxis1"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x80"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis80"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x40"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis40"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x20"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis20"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x10"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis10"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x8"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis8"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x4"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis4"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x2"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis2"
+        }
+      },
+      {
+        "animation": {
+          "value": "CUSTOM:ly_1Animation.x1"
+        },
+        "speed": 1.0,
+        "condition": {
+          "name": "Ly1XAxis1"
+        }
       }
     ],
     "itemTexture": "minecraft:nether_star",

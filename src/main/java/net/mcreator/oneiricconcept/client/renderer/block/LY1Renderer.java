@@ -16,6 +16,7 @@ import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HierarchicalModel;
 
+import net.mcreator.oneiricconcept.procedures.*;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlockEntities;
 import net.mcreator.oneiricconcept.client.model.animations.ly_1Animation;
 import net.mcreator.oneiricconcept.client.model.Modelly_1;
@@ -38,10 +39,24 @@ public class LY1Renderer implements BlockEntityRenderer<LY1BlockEntity> {
 
 	private void updateRenderState(LY1BlockEntity blockEntity) {
 		int tickCount = (int) blockEntity.getLevel().getGameTime();
-		blockEntity.animationState0.animateWhen(true, tickCount);
-		blockEntity.animationState1.animateWhen(true, tickCount);
-		blockEntity.animationState2.animateWhen(true, tickCount);
-		blockEntity.animationState3.animateWhen(true, tickCount);
+		blockEntity.animationState0.animateWhen(Ly1YAxis180Procedure.execute(), tickCount);
+		blockEntity.animationState1.animateWhen(Ly1YAxis90Procedure.execute(), tickCount);
+		blockEntity.animationState2.animateWhen(Ly1YAxis40Procedure.execute(), tickCount);
+		blockEntity.animationState3.animateWhen(Ly1YAxis30Procedure.execute(), tickCount);
+		blockEntity.animationState4.animateWhen(Ly1YAxis20Procedure.execute(), tickCount);
+		blockEntity.animationState5.animateWhen(Ly1YAxis10Procedure.execute(), tickCount);
+		blockEntity.animationState6.animateWhen(Ly1YAxis8Procedure.execute(), tickCount);
+		blockEntity.animationState7.animateWhen(Ly1YAxis4Procedure.execute(), tickCount);
+		blockEntity.animationState8.animateWhen(Ly1YAxis2Procedure.execute(), tickCount);
+		blockEntity.animationState9.animateWhen(Ly1YAxis1Procedure.execute(), tickCount);
+		blockEntity.animationState10.animateWhen(Ly1XAxis80Procedure.execute(), tickCount);
+		blockEntity.animationState11.animateWhen(Ly1XAxis40Procedure.execute(), tickCount);
+		blockEntity.animationState12.animateWhen(Ly1XAxis20Procedure.execute(), tickCount);
+		blockEntity.animationState13.animateWhen(Ly1XAxis10Procedure.execute(), tickCount);
+		blockEntity.animationState14.animateWhen(Ly1XAxis8Procedure.execute(), tickCount);
+		blockEntity.animationState15.animateWhen(Ly1XAxis4Procedure.execute(), tickCount);
+		blockEntity.animationState16.animateWhen(Ly1XAxis2Procedure.execute(), tickCount);
+		blockEntity.animationState17.animateWhen(Ly1XAxis1Procedure.execute(), tickCount);
 	}
 
 	@Override
@@ -97,10 +112,24 @@ public class LY1Renderer implements BlockEntityRenderer<LY1BlockEntity> {
 
 			public void setupBlockEntityAnim(LY1BlockEntity blockEntity, float ageInTicks) {
 				animator.root().getAllParts().forEach(ModelPart::resetPose);
-				animator.animate(blockEntity.animationState0, ly_1Animation.left, ageInTicks, 1f);
-				animator.animate(blockEntity.animationState1, ly_1Animation.right, ageInTicks, 1f);
-				animator.animate(blockEntity.animationState2, ly_1Animation.up, ageInTicks, 1f);
-				animator.animate(blockEntity.animationState3, ly_1Animation.down, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState0, ly_1Animation.y180, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState1, ly_1Animation.y90, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState2, ly_1Animation.y40, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState3, ly_1Animation.y30, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState4, ly_1Animation.y20, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState5, ly_1Animation.y10, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState6, ly_1Animation.y8, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState7, ly_1Animation.y4, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState8, ly_1Animation.y2, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState9, ly_1Animation.y1, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState10, ly_1Animation.x80, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState11, ly_1Animation.x40, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState12, ly_1Animation.x20, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState13, ly_1Animation.x10, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState14, ly_1Animation.x8, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState15, ly_1Animation.x4, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState16, ly_1Animation.x2, ageInTicks, 1f);
+				animator.animate(blockEntity.animationState17, ly_1Animation.x1, ageInTicks, 1f);
 			}
 		}
 	}

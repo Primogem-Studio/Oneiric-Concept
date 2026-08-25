@@ -18264,7 +18264,7 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/LYAAAProcedure.java"
         ]
       },
-      "path": "~/process"
+      "path": "~/process/LY1"
     },
     {
       "name": "LY1",
@@ -18318,7 +18318,7 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/LYcheckProcedure.java"
         ]
       },
-      "path": "~/process"
+      "path": "~/process/LY1"
     },
     {
       "name": "LYGUI",
@@ -18363,7 +18363,7 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/LYPlaceProcedure.java"
         ]
       },
-      "path": "~/process"
+      "path": "~/process/LY1"
     },
     {
       "name": "JanussHiddenPassage",
@@ -18771,7 +18771,277 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1TurnProcedure.java"
         ]
       },
-      "path": "~/process"
+      "path": "~/process/LY1"
+    },
+    {
+      "name": "Ly1XAxis1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_1",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis1Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1XAxis2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_2",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis2Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1XAxis4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_4",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis4Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1XAxis8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_8",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis8Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1XAxis10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_10",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis10Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1XAxis20",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_20",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis20Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1XAxis40",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_40",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis40Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1XAxis80",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_x_axis_80",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1XAxis80Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/xAxis"
+    },
+    {
+      "name": "Ly1YAxis1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_1",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis1Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_2",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis2Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_4",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis4Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_8",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis8Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_10",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis10Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis20",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_20",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis20Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis30",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_30",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis30Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis40",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_40",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis40Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis90",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_90",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis90Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
+    },
+    {
+      "name": "Ly1YAxis180",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_y_axis_180",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1YAxis180Procedure.java"
+        ]
+      },
+      "path": "~/process/LY1/yAxis"
     }
   ],
   "variable_elements": [
@@ -21234,6 +21504,19 @@
           {
             "name": "text",
             "children": []
+          },
+          {
+            "name": "LY1",
+            "children": [
+              {
+                "name": "xAxis",
+                "children": []
+              },
+              {
+                "name": "yAxis",
+                "children": []
+              }
+            ]
           }
         ]
       },
