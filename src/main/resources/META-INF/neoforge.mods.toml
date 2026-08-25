@@ -48,7 +48,7 @@ side="BOTH"
 [[dependencies.oneiricconcept]]
 modId="genshincraft"
 type="optional"
-versionRange="[2.5.0,)"
+versionRange="[3.0.0,)"
 ordering="AFTER"
 side="BOTH"
 # End of user code block dependencies configuration

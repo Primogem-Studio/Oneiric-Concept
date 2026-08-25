@@ -1,7 +1,7 @@
 package net.hackermdch.oc.mixin.compat;
 
-import net.hacker.genshincraft.element.Element;
-import net.hacker.genshincraft.element.ElementDamageSource;
+import net.hackermdch.genshincraft.element.Element;
+import net.hackermdch.genshincraft.element.ElementDamageSource;
 import net.mcreator.oneiricconcept.procedures.ElementDamageProcedure;
 import net.minecraft.world.damagesource.DamageSource;
 import org.spongepowered.asm.mixin.Mixin;
