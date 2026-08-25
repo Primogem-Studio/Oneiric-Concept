@@ -18740,6 +18740,29 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "Ly1Turn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_1_turn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "targetV",
+            "type": "vector"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1TurnProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [

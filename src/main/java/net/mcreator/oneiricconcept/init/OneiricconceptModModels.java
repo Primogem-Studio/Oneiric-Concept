@@ -18,6 +18,7 @@ public class OneiricconceptModModels {
 		event.registerLayerDefinition(Modelxiao_lantern.LAYER_LOCATION, Modelxiao_lantern::createBodyLayer);
 		event.registerLayerDefinition(Modelboom_blossoms.LAYER_LOCATION, Modelboom_blossoms::createBodyLayer);
 		event.registerLayerDefinition(ModelBaryon.LAYER_LOCATION, ModelBaryon::createBodyLayer);
+		event.registerLayerDefinition(Modelly_1.LAYER_LOCATION, Modelly_1::createBodyLayer);
 		event.registerLayerDefinition(Modelcrystal_turtle.LAYER_LOCATION, Modelcrystal_turtle::createBodyLayer);
 		event.registerLayerDefinition(Modelblock.LAYER_LOCATION, Modelblock::createBodyLayer);
 	}
