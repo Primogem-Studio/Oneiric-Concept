@@ -18235,7 +18235,7 @@
       "name": "LYAAA",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "lyaaa",
       "metadata": {
         "dependencies": [
@@ -18750,7 +18750,7 @@
       "name": "Ly1Turn",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ly_1_turn",
       "metadata": {
         "dependencies": [
