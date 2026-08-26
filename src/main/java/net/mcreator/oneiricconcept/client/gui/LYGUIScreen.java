@@ -9,6 +9,9 @@ import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.oneiricconcept.world.inventory.LYGUIMenu;
+import net.mcreator.oneiricconcept.procedures.LYchecktntProcedure;
+import net.mcreator.oneiricconcept.procedures.LYcheckPlProjProcedure;
+import net.mcreator.oneiricconcept.procedures.LYcheckMobProcedure;
 import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -85,25 +88,37 @@ public class LYGUIScreen extends AbstractContainerScreen<LYGUIMenu> implements O
 	@Override
 	public void init() {
 		super.init();
+		boolean isProjSelected = LYcheckPlProjProcedure.execute(world, x, y, z);
 		isProj = Checkbox.builder(Component.translatable("gui.oneiricconcept.lygui.isProj"), this.font).pos(this.leftPos + 16, this.topPos + 15).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "isProj", value, false);
-		}).build();
+		}).selected(isProjSelected).build();
+		if (isProjSelected)
+			menu.sendMenuStateUpdate(entity, 1, "isProj", true, false);
 		this.addRenderableWidget(isProj);
+		boolean isPlayProjSelected = LYcheckPlProjProcedure.execute(world, x, y, z);
 		isPlayProj = Checkbox.builder(Component.translatable("gui.oneiricconcept.lygui.isPlayProj"), this.font).pos(this.leftPos + 16, this.topPos + 54).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "isPlayProj", value, false);
-		}).build();
+		}).selected(isPlayProjSelected).build();
+		if (isPlayProjSelected)
+			menu.sendMenuStateUpdate(entity, 1, "isPlayProj", true, false);
 		this.addRenderableWidget(isPlayProj);
+		boolean isTntSelected = LYcheckMobProcedure.execute(world, x, y, z);
 		isTnt = Checkbox.builder(Component.translatable("gui.oneiricconcept.lygui.isTnt"), this.font).pos(this.leftPos + 16, this.topPos + 92).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "isTnt", value, false);
-		}).build();
+		}).selected(isTntSelected).build();
+		if (isTntSelected)
+			menu.sendMenuStateUpdate(entity, 1, "isTnt", true, false);
 		this.addRenderableWidget(isTnt);
+		boolean isMobSelected = LYchecktntProcedure.execute(world, x, y, z);
 		isMob = Checkbox.builder(Component.translatable("gui.oneiricconcept.lygui.isMob"), this.font).pos(this.leftPos + 16, this.topPos + 130).onValueChange((checkbox, value) -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 1, "isMob", value, false);
-		}).build();
+		}).selected(isMobSelected).build();
+		if (isMobSelected)
+			menu.sendMenuStateUpdate(entity, 1, "isMob", true, false);
 		this.addRenderableWidget(isMob);
 	}
 }

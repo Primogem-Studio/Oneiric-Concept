@@ -15,6 +15,9 @@
         "data": {
           "name": "isProj",
           "text": "intercept projectiles",
+          "isCheckedProcedure": {
+            "name": "LYcheckPlProj"
+          },
           "x": 90,
           "y": 52,
           "locked": false
@@ -25,6 +28,9 @@
         "data": {
           "name": "isPlayProj",
           "text": "intercept Player projectiles",
+          "isCheckedProcedure": {
+            "name": "LYcheckPlProj"
+          },
           "x": 90,
           "y": 91,
           "locked": false
@@ -35,6 +41,9 @@
         "data": {
           "name": "isTnt",
           "text": "intercept Tnt(minecraft)",
+          "isCheckedProcedure": {
+            "name": "LYcheckMob"
+          },
           "x": 90,
           "y": 129,
           "locked": false
@@ -45,6 +54,9 @@
         "data": {
           "name": "isMob",
           "text": "intercept FlyMob",
+          "isCheckedProcedure": {
+            "name": "LYchecktnt"
+          },
           "x": 90,
           "y": 167,
           "locked": false

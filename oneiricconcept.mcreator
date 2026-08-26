@@ -18264,7 +18264,7 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/LYAAAProcedure.java"
         ]
       },
-      "path": "~/process/LY1"
+      "path": "~/process"
     },
     {
       "name": "LY1",
@@ -18318,7 +18318,7 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/LYcheckProcedure.java"
         ]
       },
-      "path": "~/process/LY1"
+      "path": "~/process"
     },
     {
       "name": "LYGUI",
@@ -18363,7 +18363,7 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/LYPlaceProcedure.java"
         ]
       },
-      "path": "~/process/LY1"
+      "path": "~/process"
     },
     {
       "name": "JanussHiddenPassage",
@@ -18767,7 +18767,135 @@
           "src/main/java/net/mcreator/oneiricconcept/procedures/Ly1TurnProcedure.java"
         ]
       },
-      "path": "~/process/LY1"
+      "path": "~/process"
+    },
+    {
+      "name": "LYcheckProj",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "l_ycheck_proj",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYcheckProjProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LYcheckPlProj",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "l_ycheck_pl_proj",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYcheckPlProjProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LYcheckMob",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "l_ycheck_mob",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYcheckMobProcedure.java"
+        ]
+      },
+      "path": "~/process"
+    },
+    {
+      "name": "LYchecktnt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "l_ychecktnt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYchecktntProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
@@ -21229,10 +21357,6 @@
         "children": [
           {
             "name": "text",
-            "children": []
-          },
-          {
-            "name": "LY1",
             "children": []
           }
         ]
