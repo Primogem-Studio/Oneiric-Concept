@@ -18896,6 +18896,19 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "LY11",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_11",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/oneiricconcept/recipe/ly_1.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [

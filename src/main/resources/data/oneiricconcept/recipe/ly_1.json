@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "dfd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:beacon"
+    },
+    "b": {
+      "item": "oneiricconcept:camerapink"
+    },
+    "c": {
+      "item": "oneiricconcept:theanotherworldmooningot"
+    },
+    "d": {
+      "item": "minecraft:iron_ingot"
+    },
+    "e": {
+      "item": "oneiricconcept:camera"
+    },
+    "f": {
+      "item": "oneiricconcept:electro_metal"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:ly_1",
+    "count": 1
+  }
+}
