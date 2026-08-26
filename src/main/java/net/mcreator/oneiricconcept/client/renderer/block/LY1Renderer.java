@@ -67,14 +67,17 @@ public class LY1Renderer implements BlockEntityRenderer<LY1BlockEntity> {
 		/**
 		 * 直接读取方块实体NBT中 Ly1TurnProcedure 写入的 ly1Pitch(俯仰) / ly1Yaw(偏航)，
 		 * 连续旋转模型部件，替代原来的离散动画方案：
-		 * - 偏航：bone.yRot = -yaw（与旧 yN 动画的负号方向一致）
-		 * - 俯仰：body.xRot = -20 + pitch（与旧 xN 动画的 -20+N 映射一致）
+		 * - 偏航：bone.yRot = (yaw - 180)。推导：Ly1Turn 的 yAxis 实际是
+		 *   "目标相对方块正面的顺时针角 + 180°"（(A + 720 - directionFix) % 360，
+		 *   A 为世界系 MC 偏航，directionFix 为方块正面罗盘方位），因此显示时要减去 180°。
+		 *   镜像(scale -1,-1,1)后 bone.yRot 正值 = 视觉顺时针，与"本地角"方向一致。
+		 * - 俯仰：body.xRot = -20 + pitch（与旧 xN 动画的 -20+N 映射一致，正值上抬）
 		 * 注意：此处刻意不调用 ModelPart.resetPose()，以保留模型烘焙时的默认姿态。
 		 */
 		public void setupBlockEntityAnim(LY1BlockEntity blockEntity, float ageInTicks) {
 			double pitch = blockEntity.getPersistentData().getDouble("ly1Pitch");
 			double yaw = blockEntity.getPersistentData().getDouble("ly1Yaw");
-			bone.yRot = (float) Math.toRadians(-yaw);
+			bone.yRot = (float) Math.toRadians(yaw - 180.0D);
 			body.xRot = (float) Math.toRadians(-20.0D + pitch);
 		}
 	}
