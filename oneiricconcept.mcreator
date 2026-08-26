@@ -18270,7 +18270,7 @@
       "name": "LY1",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ly_1",
       "metadata": {
         "files": [
