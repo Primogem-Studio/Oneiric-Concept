@@ -1,19 +1,19 @@
 package net.mcreator.oneiricconcept.procedures;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.Level;
 import net.minecraft.core.Direction;
-
-import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
+import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.ArrayList;
 
 public class Ly1TurnProcedure {
-	public static void execute(LevelAccessor world, Direction direction, Vec3 targetV) {
-		if (direction == null || targetV == null)
+	public static void execute(LevelAccessor world, double x, double y, double z, Direction direction, Vec3 targetV) {
+		if (world == null || direction == null || targetV == null)
 			return;
 		double directionFix = 0;
 		double xAxis = 0;
@@ -32,51 +32,16 @@ public class Ly1TurnProcedure {
 				return Math.toDegrees(Math.acos(vec3.multiply(1.0D, 0.0D, 1.0D).normalize().z())) * (vec3.x() >= 0.0D ? -1.0D : 1.0D);
 			}
 		}).get(targetV) + 720) - directionFix) % 360);
-		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
-			if (world instanceof ServerLevel _level) {
-				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal((yAxis + "|\u00A7e" + xAxis)), false);
-			}
-		}
-		for (int index0 = 0; index0 < 8; index0++) {
-			if (xAxis >= 80) {
-				xAxis = xAxis - 80;
-			} else if (xAxis >= 40) {
-				xAxis = xAxis - 40;
-			} else if (xAxis >= 20) {
-				xAxis = xAxis - 20;
-			} else if (xAxis >= 10) {
-				xAxis = xAxis - 10;
-			} else if (xAxis >= 8) {
-				xAxis = xAxis - 8;
-			} else if (xAxis >= 4) {
-				xAxis = xAxis - 4;
-			} else if (xAxis >= 2) {
-				xAxis = xAxis - 2;
-			} else if (xAxis >= 1) {
-				xAxis = xAxis - 1;
-			}
-		}
-		for (int index1 = 0; index1 < 10; index1++) {
-			if (yAxis >= 180) {
-				yAxis = yAxis - 180;
-			} else if (yAxis >= 90) {
-				yAxis = yAxis - 90;
-			} else if (yAxis >= 40) {
-				yAxis = yAxis - 40;
-			} else if (yAxis >= 30) {
-				yAxis = yAxis - 30;
-			} else if (yAxis >= 20) {
-				yAxis = yAxis - 20;
-			} else if (yAxis >= 10) {
-				yAxis = yAxis - 10;
-			} else if (yAxis >= 8) {
-				yAxis = yAxis - 8;
-			} else if (yAxis >= 4) {
-				yAxis = yAxis - 4;
-			} else if (yAxis >= 2) {
-				yAxis = yAxis - 2;
-			} else if (yAxis >= 1) {
-				yAxis = yAxis - 1;
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			if (_blockEntity != null) {
+				_blockEntity.getPersistentData().putDouble("ly1Pitch", xAxis);
+				_blockEntity.getPersistentData().putDouble("ly1Yaw", yAxis);
+				_blockEntity.setChanged();
+				BlockState _bs = world.getBlockState(_bp);
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
 	}

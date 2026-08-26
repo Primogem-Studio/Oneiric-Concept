@@ -101,7 +101,7 @@ public class LYAAAProcedure {
 					_level.sendParticles(ParticleTypes.FLASH, tx, ty, tz, 1, 0, 0, 0, 1);
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.FLAME, tx, ty, tz, 20, 0, 0, 0, 0.2);
-				Ly1TurnProcedure.execute(world, getDirectionFromBlockState(blockstate), new Vec3((tx - x), (ty - y), (tz - z)));
+				Ly1TurnProcedure.execute(world, x, y, z, getDirectionFromBlockState(blockstate), new Vec3((tx - x), (ty - y), (tz - z)));
 			}
 		}
 	}
