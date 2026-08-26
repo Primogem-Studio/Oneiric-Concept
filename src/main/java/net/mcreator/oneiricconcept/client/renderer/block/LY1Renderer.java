@@ -77,8 +77,8 @@ public class LY1Renderer implements BlockEntityRenderer<LY1BlockEntity> {
 		public void setupBlockEntityAnim(LY1BlockEntity blockEntity, float ageInTicks) {
 			double pitch = blockEntity.getPersistentData().getDouble("ly1Pitch");
 			double yaw = blockEntity.getPersistentData().getDouble("ly1Yaw");
-			bone.yRot = (float) Math.toRadians(yaw - 180.0D);
-			body.xRot = (float) Math.toRadians(-20.0D + pitch);
+			bone.yRot = (float) Math.toRadians(yaw);
+			body.xRot = (float) Math.toRadians(pitch);
 		}
 	}
 }
