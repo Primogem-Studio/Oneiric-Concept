@@ -10,7 +10,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
@@ -32,15 +34,21 @@ public class SakuraPlaceProcedure {
 		double zz = 0;
 		double rang = 0;
 		double cyc = 0;
+		double refinement = 0;
+		double damage = 0;
+		refinement = WuqijinglianupProcedure.execute(entity, itemstack);
+		damage = ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity0.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0) * 1.2
+				+ 5 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER))) * refinement;
 		if (entity.isShiftKeyDown()) {
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 2000);
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) Math.max(0, 2000 - 200 * refinement));
 			rang = 32;
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(33 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (entity instanceof Mob) {
 						SakuraTreeProcedure.execute(world, entityiterator.getX(), entityiterator.getY(), entityiterator.getZ(), entity);
+						cyc = cyc + 1;
 					}
 				}
 			}
@@ -54,16 +62,16 @@ public class SakuraPlaceProcedure {
 			});
 		} else {
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 1200);
-			for (int index1 = 0; index1 < 10; index1++) {
+				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) Math.max(0, 1200 - 100 * refinement));
+			for (int index1 = 0; index1 < (int) (10 * refinement); index1++) {
 				{
 					Entity _shootFrom = entity;
 					Level projectileLevel = _shootFrom.level();
 					if (!projectileLevel.isClientSide()) {
 						Projectile _entityToSpawn = initArrowProjectile(new XuanyuanQ2Entity(OneiricconceptModEntities.XUANYUAN_Q_2.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 10)), entity,
-								(world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) * 5, true, false, false, AbstractArrow.Pickup.DISALLOWED);
+								(float) ((world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)) * 5 * refinement), true, false, false, AbstractArrow.Pickup.DISALLOWED);
 						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 10);
+						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 3, 30);
 						projectileLevel.addFreshEntity(_entityToSpawn);
 					}
 				}
