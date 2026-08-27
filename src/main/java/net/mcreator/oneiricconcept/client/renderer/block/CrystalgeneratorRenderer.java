@@ -54,18 +54,12 @@ public class CrystalgeneratorRenderer implements BlockEntityRenderer<Crystalgene
 		BakedModel bakedmodel = this.itemRenderer.getModel(itemstack, level, null, 0);
 		boolean isGui3d = bakedmodel.isGui3d();
 
-		// 原版掉落物的上下浮动
-		boolean shouldBob = IClientItemExtensions.of(itemstack).shouldBobAsEntity(itemstack);
-		float bob = shouldBob ? Mth.sin(((float) gameTime + partialTick) / 10.0F + bobOffs) * 0.1F + 0.1F : 0;
-		float groundScaleY = bakedmodel.getTransforms().getTransform(ItemDisplayContext.GROUND).scale.y();
-		poseStack.translate(0.0F, bob + 0.25F * groundScaleY, 0.0F);
-
 		// 原版掉落物的绕 Y 轴旋转
 		float spin = ((float) gameTime + partialTick) / 20.0F + bobOffs;
 		poseStack.mulPose(Axis.YP.rotation(spin));
 
 		// 适度放大，让方块内的物品更清晰可见（3D 物品保持接近原尺寸）
-		float size = isGui3d ? 0.8F : 1.5F;
+		float size = isGui3d ? 0.4F : 0.6F;
 		poseStack.scale(size, size, size);
 
 		// 按数量渲染 1/2/3/4/5 份物品（与原版掉落物一致）
