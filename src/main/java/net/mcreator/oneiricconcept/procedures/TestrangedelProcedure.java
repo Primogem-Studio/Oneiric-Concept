@@ -1,5 +1,8 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.capabilities.Capabilities;
+
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.state.properties.Property;
@@ -49,7 +52,15 @@ public class TestrangedelProcedure {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal((blocksae + "\n" + getDirectionFromBlockState(blocksae))), false);
 		} else if (4 == mode) {
-			net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, 1001);
+			if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
+				for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
+					ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
+					if (entity instanceof Player _plrCldCheck12 && _plrCldCheck12.getCooldowns().isOnCooldown(itemstackiterator.getItem())) {
+						if (entity instanceof Player _player)
+							_player.getCooldowns().addCooldown(itemstackiterator.getItem(), 0);
+					}
+				}
+			}
 		}
 	}
 
