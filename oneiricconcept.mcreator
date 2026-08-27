@@ -18446,20 +18446,6 @@
       "path": "~/process"
     },
     {
-      "name": "JanusSlate",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "janus_slate",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/oneiricconcept/models/item/janus_slate.json",
-          "src/main/java/net/mcreator/oneiricconcept/item/JanusSlateItem.java"
-        ]
-      },
-      "path": "~/item"
-    },
-    {
       "name": "IsJanusFalse",
       "type": "procedure",
       "compiles": true,
@@ -19789,7 +19775,6 @@
       "SpirtbranchofTureLaw",
       "LY1",
       "JanussHiddenPassage",
-      "JanusSlate",
       "Sustenanceanchor",
       "Crescentmoonore",
       "Rawcrescentmoonore",
@@ -19988,7 +19973,7 @@
       "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
       "block.oneiricconcept.ambrosial_arbor_wood": "Ambrosial Arbor Wood",
       "translation.oneiricconcept.check": "en",
-      "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
+      "item.oneiricconcept.a_propaganda_army": "A Phone",
       "block.oneiricconcept.thunder_sword": "Thunder Sword",
       "item.oneiricconcept.mora_bow": "Mora Bow",
       "translation.key.fail": "Don\u0027t confuse it",
@@ -20349,7 +20334,6 @@
       "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
       "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
       "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
-      "item.oneiricconcept.janus_slate": "Janus Slate",
       "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
       "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
       "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
@@ -20365,7 +20349,8 @@
       "block.oneiricconcept.frostmoon_metal": "Frostmoon Ingot",
       "block.oneiricconcept.frostmoon_ore": "Frostmoon ore",
       "item.oneiricconcept.raw_frostmoon_ore": "Raw Frostmoon ore",
-      "item.oneiricconcept.raw_irismoon_ore": "Raw Irismoon ore"
+      "item.oneiricconcept.raw_irismoon_ore": "Raw Irismoon ore",
+      "translation.oneiricconcept.janus_slate": "Janus slate"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20466,7 +20451,7 @@
       "item_group.oneiricconcept.oneiric_conceptfood": "梦华构想 食物",
       "block.oneiricconcept.ambrosial_arbor_wood": "建木",
       "translation.oneiricconcept.check": "cn",
-      "item.oneiricconcept.a_propaganda_army": "一个水军",
+      "item.oneiricconcept.a_propaganda_army": "手机",
       "block.oneiricconcept.thunder_sword": "雷霆旧剑",
       "item.oneiricconcept.mora_bow": "摩拉弓",
       "translation.key.fail": "别搞混了",
@@ -20827,7 +20812,6 @@
       "gui.oneiricconcept.lygui.isPlayProj": "拦截玩家发射的弹射物",
       "gui.oneiricconcept.lygui.isMob": "拦截飞行敌对生物",
       "block.oneiricconcept.januss_hidden_passage": "雅努斯密径",
-      "item.oneiricconcept.janus_slate": "雅努斯石板",
       "gui.oneiricconcept.janus_gui.button_quickly_traverse": "跨入密径",
       "gui.oneiricconcept.vast_sea_gui.dolphin": "海豚的恩惠",
       "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
@@ -20843,7 +20827,8 @@
       "block.oneiricconcept.frostmoon_metal": "霜月金属锭",
       "block.oneiricconcept.frostmoon_ore": "霜月矿石",
       "item.oneiricconcept.raw_frostmoon_ore": "粗霜月矿石",
-      "item.oneiricconcept.raw_irismoon_ore": "粗虹月矿石"
+      "item.oneiricconcept.raw_irismoon_ore": "粗虹月矿石",
+      "translation.oneiricconcept.janus_slate": "雅努斯石板"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -21306,7 +21291,6 @@
       "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
       "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
       "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
-      "item.oneiricconcept.janus_slate": "Janus Slate",
       "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
       "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
       "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
@@ -21322,7 +21306,8 @@
       "block.oneiricconcept.frostmoon_metal": "crescent ingot",
       "block.oneiricconcept.frostmoon_ore": "Crescent moon ore",
       "item.oneiricconcept.raw_frostmoon_ore": "Raw crescent moon ore",
-      "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore"
+      "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore",
+      "translation.oneiricconcept.janus_slate": ""
     }
   },
   "metadata": {

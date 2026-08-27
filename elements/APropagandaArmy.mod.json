@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "apropagandaarmy",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -33,13 +34,17 @@
     "specialInformation": {
       "fixedValue": [
         "§7A phone loaded with fully automated programs... using this, your moral bottom line seems a bit low "
-      ]
+      ],
+      "name": "GetJanusItemData"
     },
     "glowCondition": {
       "fixedValue": false
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "JanusGet"
+    },
     "onFinishUsingItem": {
       "name": "Propagandaarmy1"
     },

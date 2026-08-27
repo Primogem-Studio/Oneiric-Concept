@@ -459,7 +459,6 @@
   "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
   "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
   "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
-  "item.oneiricconcept.janus_slate": "Janus Slate",
   "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
   "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
   "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
@@ -475,5 +474,6 @@
   "block.oneiricconcept.frostmoon_metal": "crescent ingot",
   "block.oneiricconcept.frostmoon_ore": "Crescent moon ore",
   "item.oneiricconcept.raw_frostmoon_ore": "Raw crescent moon ore",
-  "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore"
+  "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore",
+  "translation.oneiricconcept.janus_slate": ""
 }

@@ -243,7 +243,6 @@ public class OneiricconceptModItems {
 	public static final DeferredItem<Item> SPIRTBRANCHOF_TURE_LAW;
 	public static final DeferredItem<Item> LY_1;
 	public static final DeferredItem<Item> JANUSS_HIDDEN_PASSAGE;
-	public static final DeferredItem<Item> JANUS_SLATE;
 	static {
 		SAUSAGE = REGISTRY.register("sausage", SausageItem::new);
 		SMOKE_SAUSAGE = REGISTRY.register("smoke_sausage", SmokeSausageItem::new);
@@ -457,7 +456,6 @@ public class OneiricconceptModItems {
 		SPIRTBRANCHOF_TURE_LAW = REGISTRY.register("spirtbranchof_ture_law", SpirtbranchofTureLawItem::new);
 		LY_1 = block(OneiricconceptModBlocks.LY_1);
 		JANUSS_HIDDEN_PASSAGE = block(OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE);
-		JANUS_SLATE = REGISTRY.register("janus_slate", JanusSlateItem::new);
 	}
 
 	// Start of user code block custom items

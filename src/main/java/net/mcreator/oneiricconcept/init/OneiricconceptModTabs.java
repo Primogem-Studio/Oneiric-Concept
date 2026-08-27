@@ -127,7 +127,6 @@ public class OneiricconceptModTabs {
 				tabData.accept(OneiricconceptModItems.SPIRTBRANCHOF_TURE_LAW.get());
 				tabData.accept(OneiricconceptModBlocks.LY_1.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE.get().asItem());
-				tabData.accept(OneiricconceptModItems.JANUS_SLATE.get());
 				tabData.accept(OneiricconceptModBlocks.SUSTENANCEANCHOR.get().asItem());
 				tabData.accept(OneiricconceptModBlocks.FROSTMOON_ORE.get().asItem());
 				tabData.accept(OneiricconceptModItems.RAW_FROSTMOON_ORE.get());

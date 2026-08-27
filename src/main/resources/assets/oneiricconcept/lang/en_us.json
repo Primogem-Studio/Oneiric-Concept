@@ -97,7 +97,7 @@
   "item_group.oneiricconcept.oneiric_conceptfood": "OneiricConcept:Food",
   "block.oneiricconcept.ambrosial_arbor_wood": "Ambrosial Arbor Wood",
   "translation.oneiricconcept.check": "en",
-  "item.oneiricconcept.a_propaganda_army": "A Propaganda Army",
+  "item.oneiricconcept.a_propaganda_army": "A Phone",
   "block.oneiricconcept.thunder_sword": "Thunder Sword",
   "item.oneiricconcept.mora_bow": "Mora Bow",
   "translation.key.fail": "Don\u0027t confuse it",
@@ -458,7 +458,6 @@
   "gui.oneiricconcept.lygui.isPlayProj": "intercept Player projectiles",
   "gui.oneiricconcept.lygui.isMob": "intercept FlyMob",
   "block.oneiricconcept.januss_hidden_passage": "Janus\u0027s Hidden Passage",
-  "item.oneiricconcept.janus_slate": "Janus Slate",
   "gui.oneiricconcept.janus_gui.button_quickly_traverse": "quickly traverse",
   "gui.oneiricconcept.vast_sea_gui.dolphin": "Dolphin\u0027s Grace",
   "gui.oneiricconcept.vast_sea_gui.conduit_suffix": "",
@@ -474,5 +473,6 @@
   "block.oneiricconcept.frostmoon_metal": "Frostmoon Ingot",
   "block.oneiricconcept.frostmoon_ore": "Frostmoon ore",
   "item.oneiricconcept.raw_frostmoon_ore": "Raw Frostmoon ore",
-  "item.oneiricconcept.raw_irismoon_ore": "Raw Irismoon ore"
+  "item.oneiricconcept.raw_irismoon_ore": "Raw Irismoon ore",
+  "translation.oneiricconcept.janus_slate": "Janus slate"
 }

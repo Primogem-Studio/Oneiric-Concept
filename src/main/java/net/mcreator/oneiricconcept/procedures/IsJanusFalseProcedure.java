@@ -6,6 +6,6 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 
 public class IsJanusFalseProcedure {
 	public static boolean execute(ItemStack itemstack) {
-		return !(OneiricconceptModItems.JANUS_SLATE.get() == itemstack.getItem());
+		return !(OneiricconceptModItems.A_PROPAGANDA_ARMY.get() == itemstack.getItem());
 	}
 }

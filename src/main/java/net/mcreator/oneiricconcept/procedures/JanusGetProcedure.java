@@ -1,13 +1,12 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
@@ -17,7 +16,6 @@ public class JanusGetProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		BlockState TJanusBlock = Blocks.AIR.defaultBlockState();
 		double tx = 0;
 		double ty = 0;
 		double tz = 0;
@@ -26,8 +24,8 @@ public class JanusGetProcedure {
 		tx = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(160)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getX();
 		ty = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(160)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getY();
 		tz = entity.level().clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(160)), ClipContext.Block.OUTLINE, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ();
-		TJanusBlock = (world.getBlockState(BlockPos.containing(tx, ty, tz)));
-		if (OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE.get() == TJanusBlock.getBlock()) {
+		if (OneiricconceptModBlocks.JANUSS_HIDDEN_PASSAGE.get() == (world.getBlockState(BlockPos.containing(tx, ty, tz))).getBlock()) {
+			itemstack.set(DataComponents.CUSTOM_NAME, Component.literal((Component.translatable("translation.oneiricconcept.janus_slate").getString())));
 			{
 				final String _tagName = "STX";
 				final double _tagValue = tx;
@@ -42,6 +40,11 @@ public class JanusGetProcedure {
 				final String _tagName = "STZ";
 				final double _tagValue = tz;
 				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
+			{
+				final String _tagName = "data";
+				final boolean _tagValue = true;
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putBoolean(_tagName, _tagValue));
 			}
 		}
 	}
