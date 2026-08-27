@@ -7,7 +7,7 @@
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
@@ -79,6 +79,52 @@
           "dropItemsWhenNotBound": true,
           "x": 138,
           "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "janusgui.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_use_your_phone_to_aim_the_crossh",
+          "text": {
+            "fixedValue": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates"
+          },
+          "displayCondition": {
+            "name": "AntiIsJanusData"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 135,
+          "y": 90,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "AntiIsJanusData"
+          },
+          "x": 144,
+          "y": 96,
           "locked": false
         }
       }

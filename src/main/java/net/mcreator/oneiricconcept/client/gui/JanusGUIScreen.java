@@ -14,6 +14,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.oneiricconcept.world.inventory.JanusGUIMenu;
 import net.mcreator.oneiricconcept.procedures.IsJanusDataProcedure;
 import net.mcreator.oneiricconcept.procedures.GetJanusDataProcedure;
+import net.mcreator.oneiricconcept.procedures.AntiIsJanusDataProcedure;
 import net.mcreator.oneiricconcept.network.JanusGUIButtonMessage;
 import net.mcreator.oneiricconcept.init.OneiricconceptModScreens;
 
@@ -43,12 +44,17 @@ public class JanusGUIScreen extends AbstractContainerScreen<JanusGUIMenu> implem
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/janus_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		boolean customTooltipShown = false;
+		if (AntiIsJanusDataProcedure.execute(world, x, y, z))
+			if (mouseX > leftPos + 9 && mouseX < leftPos + 33 && mouseY > topPos + 53 && mouseY < topPos + 77) {
+				guiGraphics.renderTooltip(font, Component.translatable("gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh"), mouseX, mouseY);
+				customTooltipShown = true;
+			}
+		if (!customTooltipShown)
+			this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
@@ -56,7 +62,7 @@ public class JanusGUIScreen extends AbstractContainerScreen<JanusGUIMenu> implem
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/janusgui.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		RenderSystem.disableBlend();
 	}
 
@@ -72,6 +78,8 @@ public class JanusGUIScreen extends AbstractContainerScreen<JanusGUIMenu> implem
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, GetJanusDataProcedure.execute(world, x, y, z), 35, 17, -12829636, false);
+		if (AntiIsJanusDataProcedure.execute(world, x, y, z))
+			guiGraphics.drawString(this.font, Component.translatable("gui.oneiricconcept.janus_gui.label_empty"), 18, 59, -12829636, false);
 	}
 
 	@Override
