@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "stardust_baseballer",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {
       "textures": {
         "name": "Textures"

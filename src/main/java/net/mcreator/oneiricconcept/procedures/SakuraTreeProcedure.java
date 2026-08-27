@@ -20,6 +20,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
+
 import java.util.Comparator;
 
 public class SakuraTreeProcedure {
@@ -29,32 +31,35 @@ public class SakuraTreeProcedure {
 		double yy = 0;
 		if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			yy = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z);
-			if (Blocks.CHERRY_SAPLING.defaultBlockState().canSurvive(world, BlockPos.containing(x, yy, z))) {
-				if (world instanceof ServerLevel _level)
-					_level.holderOrThrow(ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse("oneiricconcept:light_sakura"))).value().place(_level, _level.getChunkSource().getGenerator(), _level.getRandom(),
-							BlockPos.containing(x, yy, z));
-				if ((findEntityInWorldRange(world, Mob.class, x, yy, z, 5)) instanceof LivingEntity _entity) {
-					DamageSource _dmgsource = new DamageSource(world.holderOrThrow(DamageTypes.GENERIC));
-					_entity.hurt(new DamageSource(_dmgsource.typeHolder(), _dmgsource.getEntity(), _dmgsource.getDirectEntity()) {
-						@Override
-						public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
-							String _translatekey = "death.attack.sakuratree";
-							if (this.getEntity() == null && this.getDirectEntity() == null) {
-								return _msgEntity.getKillCredit() != null
-										? Component.translatable(_translatekey + ".player", _msgEntity.getDisplayName(), _msgEntity.getKillCredit().getDisplayName())
-										: Component.translatable(_translatekey, _msgEntity.getDisplayName());
-							} else {
-								Component _component = this.getEntity() == null ? this.getDirectEntity().getDisplayName() : this.getEntity().getDisplayName();
-								ItemStack _itemstack = ItemStack.EMPTY;
-								if (this.getEntity() instanceof LivingEntity _livingentity)
-									_itemstack = _livingentity.getMainHandItem();
-								return !_itemstack.isEmpty() && _itemstack.get(DataComponents.CUSTOM_NAME) != null
-										? Component.translatable(_translatekey + ".item", _msgEntity.getDisplayName(), _component, _itemstack.getDisplayName())
-										: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
-							}
+		} else {
+			yy = y;
+		}
+		if (Blocks.CHERRY_SAPLING.defaultBlockState().canSurvive(world, BlockPos.containing(x, yy, z))) {
+			if (world instanceof ServerLevel _level)
+				_level.holderOrThrow(ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse("oneiricconcept:light_sakura"))).value().place(_level, _level.getChunkSource().getGenerator(), _level.getRandom(),
+						BlockPos.containing(x, yy, z));
+			if ((findEntityInWorldRange(world, Mob.class, x, yy, z, 5)) instanceof LivingEntity _entity) {
+				DamageSource _dmgsource = new DamageSource(world.holderOrThrow(DamageTypes.GENERIC));
+				_entity.hurt(new DamageSource(_dmgsource.typeHolder(), _dmgsource.getEntity(), _dmgsource.getDirectEntity()) {
+					@Override
+					public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
+						String _translatekey = "death.attack.sakuratree";
+						if (this.getEntity() == null && this.getDirectEntity() == null) {
+							return _msgEntity.getKillCredit() != null
+									? Component.translatable(_translatekey + ".player", _msgEntity.getDisplayName(), _msgEntity.getKillCredit().getDisplayName())
+									: Component.translatable(_translatekey, _msgEntity.getDisplayName());
+						} else {
+							Component _component = this.getEntity() == null ? this.getDirectEntity().getDisplayName() : this.getEntity().getDisplayName();
+							ItemStack _itemstack = ItemStack.EMPTY;
+							if (this.getEntity() instanceof LivingEntity _livingentity)
+								_itemstack = _livingentity.getMainHandItem();
+							return !_itemstack.isEmpty() && _itemstack.get(DataComponents.CUSTOM_NAME) != null
+									? Component.translatable(_translatekey + ".item", _msgEntity.getDisplayName(), _component, _itemstack.getDisplayName())
+									: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
 						}
-					}, (float) ((entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity4.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0) * 1.2));
-				}
+					}
+				}, (float) ((entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity4.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0) * 1.2
+						+ (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)) * 20));
 			}
 		}
 	}
