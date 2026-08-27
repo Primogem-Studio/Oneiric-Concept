@@ -1,6 +1,9 @@
 package net.mcreator.oneiricconcept.procedures;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.commands.CommandSourceStack;
@@ -18,6 +21,11 @@ public class TureLawProcedure {
 							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("kick @p " + "\u4F60\u4F3C\u4E4E\u88AB\u5927\u8FD0\u521B\u98DE\u4E86\uFF01"));
 				}
 			}
+		} else {
+			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
+			if (entity instanceof LivingEntity _entity)
+				_entity.stopUsingItem();
+			entity.setDeltaMovement(new Vec3(0, 0, 0));
 		}
 	}
 }

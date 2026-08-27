@@ -114,7 +114,7 @@ public class EntityDeadProcedure {
 			}
 		}
 		if ((sourceentity instanceof LivingEntity _entity) ? _entity.isHolding(OneiricconceptModItems.SPIRTBRANCHOF_TURE_LAW.get()) : false) {
-			SakuraTreeProcedure.execute(world, x, y, z);
+			SakuraTreeProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

@@ -477,5 +477,6 @@
   "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore",
   "translation.oneiricconcept.janus_slate": "",
   "gui.oneiricconcept.janus_gui.label_empty": "？",
-  "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates"
+  "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates",
+  "death.attack.sakuratree": ""
 }

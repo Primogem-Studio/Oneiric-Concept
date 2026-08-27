@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animations": [],
-    "itemTexture": "minecraft:nether_star",
+    "itemTexture": "ly1item",
     "particleTexture": "",
     "blockSetType": "OAK",
     "pottedPlant": {

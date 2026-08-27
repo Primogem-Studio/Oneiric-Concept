@@ -18114,6 +18114,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -18927,6 +18931,30 @@
         ]
       },
       "path": "~/process"
+    },
+    {
+      "name": "SpirtbranchofTureLawText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spirtbranchof_ture_law_text",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SpirtbranchofTureLawTextProcedure.java"
+        ]
+      },
+      "path": "~/Per/PER"
     }
   ],
   "variable_elements": [
@@ -20384,7 +20412,8 @@
       "item.oneiricconcept.raw_irismoon_ore": "Raw Irismoon ore",
       "translation.oneiricconcept.janus_slate": "Janus slate",
       "gui.oneiricconcept.janus_gui.label_empty": "?",
-      "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates"
+      "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates",
+      "death.attack.sakuratree": "%1 $s was blown away by the background board of% 2 $s"
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20864,7 +20893,8 @@
       "item.oneiricconcept.raw_irismoon_ore": "粗虹月矿石",
       "translation.oneiricconcept.janus_slate": "雅努斯石板",
       "gui.oneiricconcept.janus_gui.label_empty": "？",
-      "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "将准星对准160格以内的雅努斯密径，点击右键使用传讯石板以获得坐标"
+      "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "将准星对准160格以内的雅努斯密径，点击右键使用传讯石板以获得坐标",
+      "death.attack.sakuratree": "%1$s 被 %2$s 的背景板创飞了"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -21345,7 +21375,8 @@
       "item.oneiricconcept.raw_irismoon_ore": "Raw red moon ore",
       "translation.oneiricconcept.janus_slate": "",
       "gui.oneiricconcept.janus_gui.label_empty": "？",
-      "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates"
+      "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates",
+      "death.attack.sakuratree": ""
     }
   },
   "metadata": {
