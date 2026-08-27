@@ -5,5 +5,5 @@
     "particle": "oneiricconcept:block/janus_passage",
     "0": "oneiricconcept:block/janus_passage"
   },
-  "render_type": "solid"
+  "render_type": "translucent"
 }
