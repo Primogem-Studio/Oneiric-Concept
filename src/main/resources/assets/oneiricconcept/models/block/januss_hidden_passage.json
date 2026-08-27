@@ -1,13 +1,9 @@
 {
-  "parent": "block/cube",
+  "parent": "oneiricconcept:custom/janus_passage",
   "textures": {
-    "down": "minecraft:block/bamboo_trapdoor",
-    "up": "minecraft:block/bamboo_trapdoor",
-    "north": "minecraft:block/bamboo_trapdoor",
-    "east": "minecraft:block/bamboo_trapdoor",
-    "south": "minecraft:block/bamboo_trapdoor",
-    "west": "minecraft:block/bamboo_trapdoor",
-    "particle": "minecraft:block/bamboo_trapdoor"
+    "all": "oneiricconcept:block/janus_passage",
+    "particle": "oneiricconcept:block/janus_passage",
+    "0": "oneiricconcept:block/janus_passage"
   },
   "render_type": "cutout"
 }

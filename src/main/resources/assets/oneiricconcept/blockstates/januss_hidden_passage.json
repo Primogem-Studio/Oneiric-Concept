@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "oneiricconcept:block/januss_hidden_passage"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/januss_hidden_passage",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/januss_hidden_passage",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/januss_hidden_passage",
+      "y": 270
     }
   }
 }
