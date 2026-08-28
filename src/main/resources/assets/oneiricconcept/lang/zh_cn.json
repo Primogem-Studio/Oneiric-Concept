@@ -477,5 +477,7 @@
   "translation.oneiricconcept.janus_slate": "雅努斯石板",
   "gui.oneiricconcept.janus_gui.label_empty": "？",
   "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "将准星对准160格以内的雅努斯密径，点击右键使用传讯石板以获得坐标",
-  "death.attack.sakuratree": "%1$s 被 %2$s 的背景板创飞了"
+  "death.attack.sakuratree": "%1$s 被 %2$s 的背景板创飞了",
+  "translation.oneiricconcept.spirtbranchof_ture_law_1": "攻击命中时使目标停顿，并停止使用物品。",
+  "translation.oneiricconcept.spirtbranchof_ture_law_2": "如果是玩家，则将其暂时踢出游戏。"
 }
