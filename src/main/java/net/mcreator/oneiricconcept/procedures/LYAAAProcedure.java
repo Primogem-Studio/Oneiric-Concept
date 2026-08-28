@@ -14,7 +14,6 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.vehicle.MinecartTNT;
-import net.minecraft.world.entity.projectile.ThrownTrident;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.PrimedTnt;
@@ -88,14 +87,11 @@ public class LYAAAProcedure {
 					if (_entityStorage != null)
 						_entityStorage.extractEnergy(1600, false);
 				}
-				if (target instanceof Projectile || target instanceof PrimedTnt) {
-					if (target instanceof ThrownTrident && owner instanceof Player) {
-						target.setDeltaMovement(new Vec3(0, 0, 0));
-						target.getPersistentData().putBoolean("sTrident", true);
-					} else {
-						if (!target.level().isClientSide())
-							target.discard();
-					}
+				if (owner instanceof Player && target instanceof Projectile && target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("oneiricconcept:player_projectile")))) {
+					LYProjToItemEntityProcedure.execute(world, tx, ty, tz, target);
+				} else {
+					if (!target.level().isClientSide())
+						target.discard();
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.FLASH, tx, ty, tz, 1, 0, 0, 0, 1);

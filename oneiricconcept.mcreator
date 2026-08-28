@@ -18975,6 +18975,41 @@
         ]
       },
       "path": "~/Per/PER"
+    },
+    {
+      "name": "LYProjToItemEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ly_proj_to_item_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "target",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/LYProjToItemEntityProcedure.java"
+        ]
+      },
+      "path": "~/extra-process"
     }
   ],
   "variable_elements": [
@@ -19746,6 +19781,10 @@
     ],
     "ITEMS:c:fertilizers": [
       "CUSTOM:HiltwoodFromTheArbor"
+    ],
+    "ENTITIES:mod:player_projectile": [
+      "EntityTrident",
+      "EXTERNAL:elixir:elixir"
     ]
   },
   "tab_element_order": {
