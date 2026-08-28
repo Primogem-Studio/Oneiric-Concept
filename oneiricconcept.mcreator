@@ -18239,7 +18239,7 @@
       "name": "LYAAA",
       "type": "procedure",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "lyaaa",
       "metadata": {
         "dependencies": [
@@ -18749,8 +18749,24 @@
             "type": "direction"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "targetV",
             "type": "vector"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
