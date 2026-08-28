@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HonkaiShard"
+      },
+      {
+        "value": "CUSTOM:HiltwoodFromTheArbor"
+      },
+      {
+        "value": "CUSTOM:Theanotherworldmooningot"
+      },
+      {
+        "value": "CUSTOM:HiltwoodFromTheArbor"
+      },
+      {
+        "value": "Blocks.CHERRY_LEAVES"
+      },
+      {
+        "value": "CUSTOM:HiltwoodFromTheArbor"
+      },
+      {
+        "value": "Blocks.PINK_PETALS"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SpirtbranchofTureLaw"
+    },
+    "name": "spirtbranchof_ture_law",
+    "namespace": "mod"
+  }
+}

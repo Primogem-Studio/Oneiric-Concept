@@ -18,6 +18,9 @@ public class SpirtbranchofTureLawTextProcedure {
 		double Refinement = 0;
 		double xx = 0;
 		double zz = 0;
+		double damage = 0;
+		double cyc = 0;
+		double rang = 0;
 		Refinement = WuqijinglianupProcedure.execute(entity, itemstack) + 1;
 		tran = "translation.oneiricconcept.";
 		itemname = "spirtbranchof_ture_law";
@@ -32,7 +35,7 @@ public class SpirtbranchofTureLawTextProcedure {
 						+ ("\u00A7e" + Component.translatable((itemname + "5")).getString() + "\u00A7b"
 								+ (new java.text.DecimalFormat("##.##")
 										.format(((entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity10.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0) * 1.2
-												+ 5 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER))) * Refinement))
+												+ 10 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER))) * (Refinement + 1)))
 								+ "\u00A7e" + Component.translatable((itemname + "6")).getString() + "\u00A7b" + new java.text.DecimalFormat("##.##").format(Math.max(0, 2000 - 200 * Refinement) / 20) + "\u00A7e"
 								+ Component.translatable((tran + "second")).getString())));
 	}

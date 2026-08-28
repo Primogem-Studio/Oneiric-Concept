@@ -32,6 +32,7 @@ import net.minecraft.advancements.AdvancementHolder;
 import net.mcreator.oneiricconcept.init.OneiricconceptModMobEffects;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
+import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 import javax.annotation.Nullable;
 
@@ -114,7 +115,10 @@ public class EntityDeadProcedure {
 			}
 		}
 		if ((sourceentity instanceof LivingEntity _entity) ? _entity.isHolding(OneiricconceptModItems.SPIRTBRANCHOF_TURE_LAW.get()) : false) {
-			SakuraTreeProcedure.execute(world, x, y, z, entity);
+			OneiricconceptMod.queueServerWork(21, () -> {
+				SakuraTreeProcedure.execute(world, x, y, z, sourceentity,
+						sourceentity instanceof LivingEntity _livingEntity22 && _livingEntity22.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity22.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0);
+			});
 		}
 	}
 }

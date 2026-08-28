@@ -4,12 +4,12 @@ license="MIT License"
 
 [[mods]]
 modId="oneiricconcept"
-version="26.81"
+version="26.88"
 displayName="\u68A6\u534E\u6784\u60F3OneiricConcept"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="GlowStar, Pepper\u67D0\u4EBA\uFF0CMCreator"
+authors="GlowStar, Pepper\u67D0\u4EBA\uFF0CMCreator\uFF0Cdeepseek"
 description="\u539F\u77F3\u5DE5\u827A\u7684\u9644\u5C5E\u6A21\u7EC4"
 
 # Start of user code block mod configuration

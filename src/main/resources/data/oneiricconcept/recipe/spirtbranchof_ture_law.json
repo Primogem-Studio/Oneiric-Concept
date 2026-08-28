@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ab",
+    "cbd",
+    "be "
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:honkai_shard"
+    },
+    "b": {
+      "item": "oneiricconcept:hiltwood_from_the_arbor"
+    },
+    "c": {
+      "item": "oneiricconcept:theanotherworldmooningot"
+    },
+    "d": {
+      "item": "minecraft:cherry_leaves"
+    },
+    "e": {
+      "item": "minecraft:pink_petals"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:spirtbranchof_ture_law",
+    "count": 1
+  }
+}

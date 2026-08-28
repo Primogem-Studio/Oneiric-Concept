@@ -6,7 +6,6 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -20,12 +19,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
-
 import java.util.Comparator;
 
 public class SakuraTreeProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double damage) {
 		if (entity == null)
 			return;
 		double yy = 0;
@@ -38,8 +35,8 @@ public class SakuraTreeProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.holderOrThrow(ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse("oneiricconcept:light_sakura"))).value().place(_level, _level.getChunkSource().getGenerator(), _level.getRandom(),
 						BlockPos.containing(x, yy, z));
-			if ((findEntityInWorldRange(world, Mob.class, x, yy, z, 5)) instanceof LivingEntity _entity) {
-				DamageSource _dmgsource = new DamageSource(world.holderOrThrow(DamageTypes.GENERIC));
+			if ((findEntityInWorldRange(world, Mob.class, x, yy, z, 11)) instanceof LivingEntity _entity) {
+				DamageSource _dmgsource = new DamageSource(world.holderOrThrow(DamageTypes.GENERIC), entity);
 				_entity.hurt(new DamageSource(_dmgsource.typeHolder(), _dmgsource.getEntity(), _dmgsource.getDirectEntity()) {
 					@Override
 					public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
@@ -58,8 +55,7 @@ public class SakuraTreeProcedure {
 									: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
 						}
 					}
-				}, (float) ((entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(Attributes.ATTACK_DAMAGE) ? _livingEntity4.getAttribute(Attributes.ATTACK_DAMAGE).getValue() : 0) * 1.2
-						+ (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER)) * 20));
+				}, (float) damage);
 			}
 		}
 	}
