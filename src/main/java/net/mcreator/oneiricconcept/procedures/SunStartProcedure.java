@@ -45,5 +45,6 @@ public class SunStartProcedure {
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"gamerule doDaylightCycle true");
 		SleepProcedure.execute(world, x, y, z);
+		TimesincerestSet0Procedure.execute(entity);
 	}
 }

@@ -54,6 +54,7 @@ public class DreamdiveProcedure {
 					_player.getCooldowns().addCooldown(OneiricconceptModItems.DREAMDIVE_CAN.get(), 600);
 				world.getLevelData().setRaining(false);
 				SleepProcedure.execute(world, x, y, z);
+				TimesincerestSet0Procedure.execute(entity);
 			});
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
