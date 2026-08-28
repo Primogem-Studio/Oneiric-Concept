@@ -19027,6 +19027,25 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "TimesincerestSet0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "timesincerest_set_0",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/TimesincerestSet0Procedure.java"
+        ]
+      },
+      "path": "~/extra-process"
     }
   ],
   "variable_elements": [
