@@ -11,7 +11,8 @@
     "guiTexture": "",
     "name": "Spirtbranchof Ture Law",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "SpirtbranchofTureLawText"
     },
     "creativeTabs": [
       {

@@ -18948,6 +18948,10 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -20416,9 +20420,13 @@
       "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates",
       "death.attack.sakuratree": "%1 $s was blown away by the background board of% 2 $s",
       "translation.oneiricconcept.spirtbranchof_ture_law_1": "When the attack hits, pause the target and stop using items.",
-      "translation.oneiricconcept.spirtbranchof_ture_law_2": "If it is a player, temporarily kick them out of the game.",
+      "translation.oneiricconcept.spirtbranchof_ture_law_2": "[opLV4]If it is a player, temporarily kick them out of the game.",
       "translation.oneiricconcept.sneaking_rightclick": "Sneaking right click effect",
-      "translation.oneiricconcept.sneaking_leftclick": "Sneaking left click effect"
+      "translation.oneiricconcept.sneaking_leftclick": "Sneaking left click effect",
+      "translation.oneiricconcept.spirtbranchof_ture_law_3": "Launch",
+      "translation.oneiricconcept.spirtbranchof_ture_law_4": "sword energies into the forward fan-shaped range, causing damage that increases with level and cooldown for ",
+      "translation.oneiricconcept.spirtbranchof_ture_law_5": "Grow a large number of cherry blossom trees within a diameter of 65 meters, deal ",
+      "translation.oneiricconcept.spirtbranchof_ture_law_6": " damage to a single monster within 7 meters of the growth location, automatically absorb fallen objects, and cool down for "
     },
     "zh_cn": {
       "translation.oneiricconcept.magazine": "§7右键填充副手弹药，放在副手生效",
@@ -20901,7 +20909,13 @@
       "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "将准星对准160格以内的雅努斯密径，点击右键使用传讯石板以获得坐标",
       "death.attack.sakuratree": "%1$s 被 %2$s 的背景板创飞了",
       "translation.oneiricconcept.spirtbranchof_ture_law_1": "攻击命中时使目标停顿，并停止使用物品。",
-      "translation.oneiricconcept.spirtbranchof_ture_law_2": "如果是玩家，则将其暂时踢出游戏。"
+      "translation.oneiricconcept.spirtbranchof_ture_law_2": "[opLV4]如果是玩家，则将其暂时踢出游戏。",
+      "translation.oneiricconcept.sneaking_rightclick": "潜行右键效果",
+      "translation.oneiricconcept.sneaking_leftclick": "潜行左键效果",
+      "translation.oneiricconcept.spirtbranchof_ture_law_3": "向前方扇形范围发射",
+      "translation.oneiricconcept.spirtbranchof_ture_law_4": "道剑气，造成伤害随精炼等级提升，冷却",
+      "translation.oneiricconcept.spirtbranchof_ture_law_5": "在直径65格范围内生长大量樱花树，对生长位置7格内的单个怪物造成",
+      "translation.oneiricconcept.spirtbranchof_ture_law_6": "伤害，自动吸取掉落物，冷却"
     },
     "ja_jp": {
       "translation.oneiricconcept.magazine": "§7放在副手生效",
@@ -21385,7 +21399,13 @@
       "gui.oneiricconcept.janus_gui.tooltip_use_your_phone_to_aim_the_crossh": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates",
       "death.attack.sakuratree": "",
       "translation.oneiricconcept.spirtbranchof_ture_law_1": "",
-      "translation.oneiricconcept.spirtbranchof_ture_law_2": ""
+      "translation.oneiricconcept.spirtbranchof_ture_law_2": "",
+      "translation.oneiricconcept.sneaking_rightclick": "",
+      "translation.oneiricconcept.sneaking_leftclick": "",
+      "translation.oneiricconcept.spirtbranchof_ture_law_3": "",
+      "translation.oneiricconcept.spirtbranchof_ture_law_4": "",
+      "translation.oneiricconcept.spirtbranchof_ture_law_5": "",
+      "translation.oneiricconcept.spirtbranchof_ture_law_6": ""
     }
   },
   "metadata": {
