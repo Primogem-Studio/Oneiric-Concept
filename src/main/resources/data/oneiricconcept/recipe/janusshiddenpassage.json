@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "oneiricconcept:oneiric_shard"
+    },
+    "b": {
+      "item": "minecraft:end_crystal"
+    },
+    "c": {
+      "item": "minecraft:deepslate_bricks"
+    }
+  },
+  "result": {
+    "id": "oneiricconcept:januss_hidden_passage",
+    "count": 1
+  }
+}
