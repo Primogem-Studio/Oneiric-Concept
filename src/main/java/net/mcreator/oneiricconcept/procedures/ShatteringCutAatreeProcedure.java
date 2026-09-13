@@ -15,7 +15,6 @@ import net.minecraft.commands.functions.CommandFunction;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModBlocks;
 
 import java.util.Optional;
@@ -44,13 +43,6 @@ public class ShatteringCutAatreeProcedure {
 			}
 			sx = x + Mth.nextInt(RandomSource.create(), -7, 7);
 			sz = z + Mth.nextInt(RandomSource.create(), -7, 7);
-		}
-		OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux - 1;
-		OneiricconceptModVariables.MapVariables.get(world).markSyncDirty();
-		if (OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux < 60) {
-			DivineArrowProcedure.execute(world, x, y, z);
-			OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux = OneiricconceptModVariables.MapVariables.get(world).skyshatteringlux + 1;
-			OneiricconceptModVariables.MapVariables.get(world).markSyncDirty();
 		}
 	}
 }

@@ -39,7 +39,7 @@ public class DivineArrowEmbersItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		DivineArrowProcedure.execute(world, x, y, z);
+		DivineArrowProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 }

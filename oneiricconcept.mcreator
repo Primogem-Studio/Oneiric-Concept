@@ -8769,6 +8769,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -19059,6 +19063,41 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "SkyArrow",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_arrow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "time",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/oneiricconcept/procedures/SkyArrowProcedure.java"
+        ]
+      },
+      "path": "~/process"
     }
   ],
   "variable_elements": [
