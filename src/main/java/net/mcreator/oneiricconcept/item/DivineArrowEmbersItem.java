@@ -13,12 +13,17 @@ import net.mcreator.oneiricconcept.procedures.DivineArrowProcedure;
 
 public class DivineArrowEmbersItem extends Item {
 	public DivineArrowEmbersItem() {
-		super(new Item.Properties().durability(160).fireResistant());
+		super(new Item.Properties().durability(7).fireResistant());
 	}
 
 	@Override
 	public UseAnim getUseAnimation(ItemStack itemstack) {
 		return UseAnim.BOW;
+	}
+
+	@Override
+	public int getEnchantmentValue() {
+		return 42;
 	}
 
 	@Override
@@ -39,7 +44,7 @@ public class DivineArrowEmbersItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		DivineArrowProcedure.execute(world, x, y, z, entity);
+		DivineArrowProcedure.execute(world, x, y, z, entity, itemstack);
 		return retval;
 	}
 }

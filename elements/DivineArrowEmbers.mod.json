@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "divine_arrow_embers",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -16,10 +17,10 @@
       }
     ],
     "stackSize": 1,
-    "enchantability": 0,
+    "enchantability": 42,
     "useDuration": 20,
     "toolType": 1.0,
-    "damageCount": 160,
+    "damageCount": 7,
     "recipeRemainder": {
       "value": ""
     },
