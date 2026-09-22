@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 1000,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLD_NUGGET"
-            },
+            "item": "Items.GOLD_NUGGET",
             "weight": 10,
             "minCount": 1,
             "maxCount": 16,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLDEN_APPLE#0"
-            },
+            "item": "Items.GOLDEN_APPLE#0",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLDEN_APPLE#1"
-            },
+            "item": "Items.GOLDEN_APPLE#1",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.APPLE"
-            },
+            "item": "Items.APPLE",
             "weight": 10,
             "minCount": 1,
             "maxCount": 1,
@@ -92,9 +82,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Dawnleaves"
-            },
+            "item": "CUSTOM:Dawnleaves",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

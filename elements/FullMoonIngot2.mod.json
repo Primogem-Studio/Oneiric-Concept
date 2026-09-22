@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:Rawfullmoonore"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:Fulmo1"
-    },
+    "blastingInputStack": "CUSTOM:Rawfullmoonore",
+    "blastingReturnStack": "CUSTOM:Fulmo1",
     "name": "full_moon_ingot_2",
     "namespace": "mod"
   }

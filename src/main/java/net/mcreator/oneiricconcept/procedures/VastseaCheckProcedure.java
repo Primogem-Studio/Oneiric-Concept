@@ -14,7 +14,7 @@ public class VastseaCheckProcedure {
 		if (entity == null)
 			return;
 		ItemStack vastsea = ItemStack.EMPTY;
-		vastsea = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		vastsea = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		{
 			final String _tagName = "dolphin";
 			final boolean _tagValue = ((entity instanceof Player _entity1 && _entity1.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu1) && _menu1.getMenuState(1, "dolphin", false));

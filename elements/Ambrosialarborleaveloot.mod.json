@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 1000,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AmbrosialArborSapling"
-            },
+            "item": "CUSTOM:AmbrosialArborSapling",
             "weight": 10,
             "minCount": 1,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:S2tuffing"
-            },
+            "item": "CUSTOM:S2tuffing",
             "weight": 30,
             "minCount": 1,
             "maxCount": 7,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.ROTTEN_FLESH"
-            },
+            "item": "Items.ROTTEN_FLESH",
             "weight": 30,
             "minCount": 1,
             "maxCount": 7,
@@ -78,9 +70,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AmbrosialArborLeave"
-            },
+            "item": "CUSTOM:AmbrosialArborLeave",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

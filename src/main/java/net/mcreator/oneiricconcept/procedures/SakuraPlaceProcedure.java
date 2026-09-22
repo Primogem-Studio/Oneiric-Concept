@@ -52,7 +52,7 @@ public class SakuraPlaceProcedure {
 					}
 				}
 			}
-			for (int index0 = 0; index0 < (int) (100 - cyc); index0++) {
+			for (int _i1 = 0; _i1 < (int) (100 - cyc); _i1++) {
 				xx = x + Mth.nextInt(RandomSource.create(), (int) (0 - rang), (int) rang);
 				zz = z + Mth.nextInt(RandomSource.create(), (int) (0 - rang), (int) rang);
 				SakuraTreeProcedure.execute(world, xx, y, zz, entity, damage);
@@ -63,7 +63,7 @@ public class SakuraPlaceProcedure {
 		} else {
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), (int) Math.max(0, 1200 - 100 * refinement));
-			for (int index1 = 0; index1 < (int) (10 * refinement); index1++) {
+			for (int _i1 = 0; _i1 < (int) (10 * refinement); _i1++) {
 				{
 					Entity _shootFrom = entity;
 					Level projectileLevel = _shootFrom.level();

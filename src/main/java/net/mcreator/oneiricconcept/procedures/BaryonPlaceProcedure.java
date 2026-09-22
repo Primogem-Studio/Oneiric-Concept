@@ -16,7 +16,7 @@ import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 public class BaryonPlaceProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		if (10 < (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.BARYON_SPAWN))) {
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, (int) Math.max(10, (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.BARYON_SPAWN)) / 10)); index0++) {
+			for (int _i1 = 0; _i1 < Mth.nextInt(RandomSource.create(), 1, (int) Math.max(10, (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.BARYON_SPAWN)) / 10)); _i1++) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = OneiricconceptModEntities.BARYON.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {

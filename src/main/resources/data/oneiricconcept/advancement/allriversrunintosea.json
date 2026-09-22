@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "allriversrunintosea_0": {
+    "allriversrunintosea_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "oneiricconcept:heartofthevastsea"
-            ],
+            "items": "oneiricconcept:heartofthevastsea",
             "count": {
               "min": 1,
               "max": 64

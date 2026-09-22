@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.CARPET#6"
-      },
-      {
-        "value": "Blocks.CARPET#6"
-      },
-      {
-        "value": "Blocks.CARPET#6"
-      },
-      {
-        "value": "Items.PAPER"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.PAPER"
-      },
-      {
-        "value": "Items.PAPER"
-      },
-      {
-        "value": "Items.PAPER"
-      },
-      {
-        "value": "Items.PAPER"
-      }
+      "Blocks.CARPET#6",
+      "Blocks.CARPET#6",
+      "Blocks.CARPET#6",
+      "Items.PAPER",
+      "",
+      "Items.PAPER",
+      "Items.PAPER",
+      "Items.PAPER",
+      "Items.PAPER"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PgcPresent"
-    },
+    "recipeReturnStack": "CUSTOM:PgcPresent",
     "name": "present_1",
     "namespace": "mod"
   }

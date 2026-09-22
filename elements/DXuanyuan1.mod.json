@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:DarkXuanyuanSword"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:HonkaiSliver"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:MemoriaPiece"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:DXuanyuan"
-    },
+    "smithingInputStack": "CUSTOM:DarkXuanyuanSword",
+    "smithingInputAdditionStack": "CUSTOM:HonkaiSliver",
+    "smithingInputTemplateStack": "CUSTOM:MemoriaPiece",
+    "smithingReturnStack": "CUSTOM:DXuanyuan",
     "name": "d_xuanyuan_1",
     "namespace": "mod"
   }

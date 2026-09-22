@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -24,9 +24,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "TankAddLvaTag"
-          },
+          "onSlotChanged": "TankAddLvaTag",
           "x": 84,
           "y": 58,
           "locked": false
@@ -44,6 +42,7 @@
             "value": -52480,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 84,
           "y": 47,
           "locked": false
@@ -87,6 +86,7 @@
             "value": -39424,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 83,
           "y": 79,
           "locked": false

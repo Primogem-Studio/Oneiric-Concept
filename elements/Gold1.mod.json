@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      }
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:HonkaiSliver",
+      "",
+      "",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:HonkaiSliver"
     ],
-    "recipeReturnStack": {
-      "value": "Items.GUNPOWDER"
-    },
+    "recipeReturnStack": "Items.GUNPOWDER",
     "name": "gold_1",
     "namespace": "mod"
   }

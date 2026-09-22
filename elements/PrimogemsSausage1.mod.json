@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "TAG:c:smokesausage"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SaltDust"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "TAG:c:smokesausage",
+      "CUSTOM:PgcPg",
+      "",
+      "CUSTOM:SaltDust",
+      "",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PrimogemsSausage"
-    },
+    "recipeReturnStack": "CUSTOM:PrimogemsSausage",
     "name": "primogems_sausage_1",
     "namespace": "mod"
   }

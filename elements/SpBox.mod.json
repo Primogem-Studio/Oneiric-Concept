@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:Cloud"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:HonkaiSliver"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:MemoriaPiece"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:Surpriseboxforgoodorbad"
-    },
+    "smithingInputStack": "CUSTOM:Cloud",
+    "smithingInputAdditionStack": "CUSTOM:HonkaiSliver",
+    "smithingInputTemplateStack": "CUSTOM:MemoriaPiece",
+    "smithingReturnStack": "CUSTOM:Surpriseboxforgoodorbad",
     "name": "sp_box",
     "namespace": "mod"
   }

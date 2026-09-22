@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "Blocks.GOLD_BLOCK"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:LegionPseudoCore"
-      },
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "Items.DIAMOND_SWORD"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:CondensedMemoriaPiece",
+      "Blocks.GOLD_BLOCK",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:LegionPseudoCore",
+      "CUSTOM:CondensedMemoriaPiece",
+      "Items.DIAMOND_SWORD",
+      "CUSTOM:HonkaiShard",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:XuanyuanSword"
-    },
+    "recipeReturnStack": "CUSTOM:XuanyuanSword",
     "name": "xuan_yuan_sword_1",
     "namespace": "mod"
   }

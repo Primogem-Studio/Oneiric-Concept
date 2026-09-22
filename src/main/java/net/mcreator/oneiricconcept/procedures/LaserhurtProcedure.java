@@ -29,7 +29,7 @@ public class LaserhurtProcedure {
 		boolean isGc = false;
 		target = tgt;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.FLASH, x, y, z, 1, 0, 0, 0, 0);
+			_level.sendParticles(ParticleTypes.CRIT, x, y, z, 1, 0, 0, 0, 0);
 		x2 = target.getX();
 		y2 = target.getY() + target.getBbHeight() / 2;
 		z2 = target.getZ();
@@ -38,7 +38,7 @@ public class LaserhurtProcedure {
 		dz = z2 - z;
 		total_distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
 		steps = total_distance / 0.1;
-		for (int index0 = 0; index0 < (int) steps; index0++) {
+		for (int _i1 = 0; _i1 < (int) steps; _i1++) {
 			ratio = (index0 * 0.1) / total_distance;
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.WAX_OFF, (x + ratio * dx), (y + ratio * dy), (z + ratio * dz), 1, 0, 0, 0, 0);

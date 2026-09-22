@@ -27,7 +27,7 @@ public class MagazinelevelProcedure {
 		String bullename = "";
 		boolean itemlogic = false;
 		level = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("level");
-		bulletitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		bulletitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		bullename = BuiltInRegistries.ITEM.getKey(bulletitem.getItem()).toString();
 		Primogem = "primogemcraft:";
 		mora1 = Primogem + "mmola_01";
@@ -69,7 +69,7 @@ public class MagazinelevelProcedure {
 					});
 				}
 			} else {
-				bulletitem = (bulletitem.copy());
+				bulletitem = (bulletitem.copy()).copy();
 				bulletitem.setCount(1);
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, bulletitem);

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SkyWaffle"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PrimogemWaffle"
-      },
-      {
-        "value": "Blocks.HONEY_BLOCK"
-      },
-      {
-        "value": "CUSTOM:PrimogemWaffle"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SkyWaffle"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:SkyWaffle",
+      "",
+      "CUSTOM:PrimogemWaffle",
+      "Blocks.HONEY_BLOCK",
+      "CUSTOM:PrimogemWaffle",
+      "",
+      "CUSTOM:SkyWaffle",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ResurrectionPellet"
-    },
+    "recipeReturnStack": "CUSTOM:ResurrectionPellet",
     "name": "resurrection_pellet_2",
     "namespace": "mod"
   }

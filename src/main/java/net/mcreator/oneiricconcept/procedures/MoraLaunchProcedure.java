@@ -29,7 +29,7 @@ public class MoraLaunchProcedure {
 		ItemStack SecondaryHand = ItemStack.EMPTY;
 		String lvl = "";
 		String primogem = "";
-		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		lvl = SecondaryHand.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("level");
 		primogem = "primogemcraft:";
 		if ((lvl).equals(primogem + "mmola_01")) {

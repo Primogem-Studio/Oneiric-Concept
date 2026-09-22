@@ -1,16 +1,13 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:HonkaiSliver"
-    },
+    "projectileItem": "CUSTOM:HonkaiSliver",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.arrow.shoot"
-    },
+    "actionSound": "entity.arrow.shoot",
     "igniteFire": false,
     "disableGravity": false,
+    "disableDiscarding": false,
     "power": 0.0,
     "damage": 5.0,
     "knockback": 0,
@@ -18,8 +15,6 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onFlyingTick": {
-      "name": "Laser"
-    }
+    "onFlyingTick": "Laser"
   }
 }

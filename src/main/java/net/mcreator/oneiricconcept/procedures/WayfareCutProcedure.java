@@ -20,7 +20,7 @@ public class WayfareCutProcedure {
 			return;
 		ItemStack itmstk = ItemStack.EMPTY;
 		boolean lgc = false;
-		itmstk = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		itmstk = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (ModList.get().isLoaded("farmersdelight")) {
 			lgc = itmstk.is(ItemTags.create(ResourceLocation.parse("c:tools/knife"))) || itmstk.is(ItemTags.create(ResourceLocation.parse("minecraft:swords")));
 		} else {

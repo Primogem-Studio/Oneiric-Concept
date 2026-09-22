@@ -22,9 +22,12 @@ public class OccurrencesTheMarshmallowProcedure {
 		if (!world.canSeeSkyFromBelowWater(BlockPos.containing(enx, entity.getY(), enz)) || entity.isInWaterOrBubble()) {
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + Life * 160), enz);
+				double _tx = enx;
+				double _ty = (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + Life * 160);
+				double _tz = enz;
+				_ent.teleportTo(_tx, _ty, _tz);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(enx, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) enx, (int) enz) + Life * 160), enz, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

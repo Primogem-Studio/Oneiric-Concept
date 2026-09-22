@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "Items.BREAD"
-      },
-      {
-        "value": "Items.CARROT"
-      },
-      {
-        "value": "Items.GLOW_BERRIES"
-      },
-      {
-        "value": "Items.COOKED_PORKCHOP"
-      },
-      {
-        "value": "CUSTOM:AmbergrisCheeseSliver"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "Items.BREAD",
+      "Items.CARROT",
+      "Items.GLOW_BERRIES",
+      "Items.COOKED_PORKCHOP",
+      "CUSTOM:AmbergrisCheeseSliver",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Toastpizza"
-    },
+    "recipeReturnStack": "CUSTOM:Toastpizza",
     "name": "toastpizza_2",
     "namespace": "mod"
   }

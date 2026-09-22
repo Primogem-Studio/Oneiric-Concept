@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      },
-      {
-        "value": "CUSTOM:ThiefSInstinct"
-      }
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct",
+      "CUSTOM:ThiefSInstinct"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:UsurperSScheme"
-    },
+    "recipeReturnStack": "CUSTOM:UsurperSScheme",
     "name": "usurper_s_scheme_1",
     "namespace": "mod"
   }

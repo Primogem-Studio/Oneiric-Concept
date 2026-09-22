@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:HiltwoodFromTheArbor"
-      },
-      {
-        "value": "CUSTOM:ResurrectionPellet"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:foods/milk"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:OneiricShard",
+      "CUSTOM:HiltwoodFromTheArbor",
+      "CUSTOM:ResurrectionPellet",
+      "",
+      "TAG:c:foods/milk",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Texturewayfareblessing"
-    },
+    "recipeReturnStack": "CUSTOM:Texturewayfareblessing",
     "name": "wayfareblessing_1",
     "namespace": "mod"
   }

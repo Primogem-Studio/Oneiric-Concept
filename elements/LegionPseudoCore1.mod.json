@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:LegionPseudoSliver"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      }
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:LegionPseudoSliver",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:HonkaiShard"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:LegionPseudoCore"
-    },
+    "recipeReturnStack": "CUSTOM:LegionPseudoCore",
     "name": "legion_pseudo_core_1",
     "namespace": "mod"
   }

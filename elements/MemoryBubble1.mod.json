@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:MemoriaPiece"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:MemoryBubble"
-    },
+    "stoneCuttingInputStack": "CUSTOM:MemoriaPiece",
+    "stoneCuttingReturnStack": "CUSTOM:MemoryBubble",
     "name": "memory_bubble_1",
     "namespace": "mod"
   }

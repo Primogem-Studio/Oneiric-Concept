@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:c:glass_blocks"
-      },
-      {
-        "value": "CUSTOM:TAWWoodBox"
-      },
-      {
-        "value": "TAG:c:glass_blocks"
-      },
-      {
-        "value": "CUSTOM:TAWWoodBox"
-      },
-      {
-        "value": "TAG:c:glass_blocks"
-      },
-      {
-        "value": "CUSTOM:TAWWoodBox"
-      },
-      {
-        "value": "TAG:c:glass_blocks"
-      },
-      {
-        "value": "CUSTOM:TAWWoodBox"
-      },
-      {
-        "value": "TAG:c:glass_blocks"
-      }
+      "TAG:c:glass_blocks",
+      "CUSTOM:TAWWoodBox",
+      "TAG:c:glass_blocks",
+      "CUSTOM:TAWWoodBox",
+      "TAG:c:glass_blocks",
+      "CUSTOM:TAWWoodBox",
+      "TAG:c:glass_blocks",
+      "CUSTOM:TAWWoodBox",
+      "TAG:c:glass_blocks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:TAWWoodLoot"
-    },
+    "recipeReturnStack": "CUSTOM:TAWWoodLoot",
     "name": "taw_wood_loot_1",
     "namespace": "mod"
   }

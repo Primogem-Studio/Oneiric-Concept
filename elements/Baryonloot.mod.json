@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SolidWater"
-            },
+            "item": "CUSTOM:SolidWater",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:VirtualParticle"
-            },
+            "item": "CUSTOM:VirtualParticle",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -50,9 +46,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.ENDER_PEARL"
-            },
+            "item": "Items.ENDER_PEARL",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,

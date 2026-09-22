@@ -22,11 +22,11 @@ public class WaterradiatorProcedure {
 		double sz = 0;
 		BlockState waterblock = Blocks.AIR.defaultBlockState();
 		sx = -3;
-		for (int index0 = 0; index0 < 7; index0++) {
+		for (int _i1 = 0; _i1 < 7; _i1++) {
 			sy = -3;
-			for (int index1 = 0; index1 < 7; index1++) {
+			for (int _i2 = 0; _i2 < 7; _i2++) {
 				sz = -3;
-				for (int index2 = 0; index2 < 7; index2++) {
+				for (int _i3 = 0; _i3 < 7; _i3++) {
 					waterblock = (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz)));
 					if (waterblock.getBlock() == Blocks.AIR || waterblock.getBlock() == Blocks.WATER) {
 						world.setBlock(BlockPos.containing(x + sx, y + sy, z + sz), Blocks.AIR.defaultBlockState(), 3);

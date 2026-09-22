@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Blocks.DOUBLE_PLANT#0"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      }
+      "Items.GOLD_INGOT",
+      "Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT",
+      "CUSTOM:CondensedMemoriaPiece",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT",
+      "Blocks.DOUBLE_PLANT#0",
+      "Items.GOLD_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SunStartCan"
-    },
+    "recipeReturnStack": "CUSTOM:SunStartCan",
     "name": "sun_start_can_1",
     "namespace": "mod"
   }

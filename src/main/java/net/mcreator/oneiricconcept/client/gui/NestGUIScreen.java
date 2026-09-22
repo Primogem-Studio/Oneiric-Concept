@@ -18,6 +18,7 @@ public class NestGUIScreen extends AbstractContainerScreen<NestGUIMenu> implemen
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("oneiricconcept:textures/screens/nest_gui.png");
 
 	public NestGUIScreen(NestGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -36,8 +37,6 @@ public class NestGUIScreen extends AbstractContainerScreen<NestGUIMenu> implemen
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/nest_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
@@ -49,7 +48,7 @@ public class NestGUIScreen extends AbstractContainerScreen<NestGUIMenu> implemen
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 

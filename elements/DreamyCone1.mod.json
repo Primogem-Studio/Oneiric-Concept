@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GLOW_BERRIES"
-      },
-      {
-        "value": "CUSTOM:ChenyuAdeptea"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.SNOWBALL"
-      },
-      {
-        "value": "Items.MELON"
-      },
-      {
-        "value": "CUSTOM:Waffle"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.GLOW_BERRIES",
+      "CUSTOM:ChenyuAdeptea",
+      "",
+      "Items.SNOWBALL",
+      "Items.MELON",
+      "CUSTOM:Waffle",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DreamyCone"
-    },
+    "recipeReturnStack": "CUSTOM:DreamyCone",
     "name": "dreamy_cone_1",
     "namespace": "mod"
   }

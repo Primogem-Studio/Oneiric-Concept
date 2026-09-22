@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "Blocks.BEACON"
-      },
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "Blocks.BEACON"
-      },
-      {
-        "value": "CUSTOM:PropagandaArmy"
-      },
-      {
-        "value": "Blocks.BEACON"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "Blocks.ENCHANTING_TABLE"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      }
+      "CUSTOM:CondensedMemoriaPiece",
+      "Blocks.BEACON",
+      "CUSTOM:CondensedMemoriaPiece",
+      "Blocks.BEACON",
+      "CUSTOM:PropagandaArmy",
+      "Blocks.BEACON",
+      "CUSTOM:HonkaiShard",
+      "Blocks.ENCHANTING_TABLE",
+      "CUSTOM:HonkaiShard"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PropagandaArmyBlock"
-    },
+    "recipeReturnStack": "CUSTOM:PropagandaArmyBlock",
     "name": "propagandaarmyblock_1",
     "namespace": "mod"
   }

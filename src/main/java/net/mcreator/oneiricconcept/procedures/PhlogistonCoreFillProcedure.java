@@ -17,7 +17,7 @@ public class PhlogistonCoreFillProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double fil = 0;
 		fil = 2;
-		for (int index0 = 0; index0 < 9; index0++) {
+		for (int _i1 = 0; _i1 < 9; _i1++) {
 			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 				ItemStack _setstack = new ItemStack(OneiricconceptModItems.PHLOGISTON.get()).copy();
 				_setstack.setCount(64);

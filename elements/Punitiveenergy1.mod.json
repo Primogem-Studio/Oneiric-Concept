@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:LessRedstonePowder"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:LessRedstonePowder",
+      "Items.GLASS_BOTTLE",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PunitiveEnergy"
-    },
+    "recipeReturnStack": "CUSTOM:PunitiveEnergy",
     "name": "punitiveenergy_1",
     "namespace": "mod"
   }

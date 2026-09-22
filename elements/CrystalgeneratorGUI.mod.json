@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,9 +25,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Crystalgeneratoritem"
-          },
+          "onSlotChanged": "Crystalgeneratoritem",
           "x": 133,
           "y": 98,
           "locked": false
@@ -48,9 +46,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Crystalgeneratoritem"
-          },
+          "onSlotChanged": "Crystalgeneratoritem",
           "x": 151,
           "y": 98,
           "locked": false
@@ -71,9 +67,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Crystalgeneratoritem"
-          },
+          "onSlotChanged": "Crystalgeneratoritem",
           "x": 169,
           "y": 98,
           "locked": false
@@ -94,9 +88,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Crystalgeneratoritem"
-          },
+          "onSlotChanged": "Crystalgeneratoritem",
           "x": 187,
           "y": 98,
           "locked": false
@@ -117,9 +109,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Crystalgeneratoritem"
-          },
+          "onSlotChanged": "Crystalgeneratoritem",
           "x": 205,
           "y": 98,
           "locked": false
@@ -140,9 +130,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Crystalgeneratoritem"
-          },
+          "onSlotChanged": "Crystalgeneratoritem",
           "x": 223,
           "y": 98,
           "locked": false
@@ -163,9 +151,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Crystalgeneratoritem"
-          },
+          "onSlotChanged": "Crystalgeneratoritem",
           "x": 241,
           "y": 98,
           "locked": false

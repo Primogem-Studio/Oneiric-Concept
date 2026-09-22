@@ -60,8 +60,8 @@ public class EntityHurtProcedure {
 		double Refinement = 0;
 		double atk = 0;
 		double hel = 0;
-		sworditem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		sworditem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
+		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		Refinement = GetDoubleNBTTagProcedure.execute(hitItem, "jing_lian");
 		if (sworditem.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("oneiricconcept:shuhu_gift")))) != 0) {
 			{
@@ -86,11 +86,11 @@ public class EntityHurtProcedure {
 				MaxCharge = 4;
 			}
 			Changetxt = "\u00A72";
-			for (int index0 = 0; index0 < (int) Charge; index0++) {
+			for (int _i1 = 0; _i1 < (int) Charge; _i1++) {
 				Changetxt = Changetxt + "\u25C6";
 			}
 			Changetxt = Changetxt + "\u00A7r";
-			for (int index1 = 0; index1 < (int) (MaxCharge - Charge); index1++) {
+			for (int _i1 = 0; _i1 < (int) (MaxCharge - Charge); _i1++) {
 				Changetxt = Changetxt + "\u25C7";
 			}
 			if (Charge >= MaxCharge) {
@@ -131,8 +131,6 @@ public class EntityHurtProcedure {
 						true);
 		}
 		if ((BuiltInRegistries.ITEM.getKey(hitItem.getItem()).toString()).equals("oneiricconcept:stardust_baseballer") && hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged_R")) {
-			if (event instanceof LivingIncomingDamageEvent _hurt24)
-				_hurt24.setAmount((float) (amount * (3 + Refinement * 0.75)));
 			{
 				final String _tagName = "textures";
 				final double _tagValue = 0;

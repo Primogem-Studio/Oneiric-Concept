@@ -26,6 +26,7 @@ public class JanusGUIScreen extends AbstractContainerScreen<JanusGUIMenu> implem
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private Button button_quickly_traverse;
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("oneiricconcept:textures/screens/janusgui.png");
 
 	public JanusGUIScreen(JanusGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -62,7 +63,7 @@ public class JanusGUIScreen extends AbstractContainerScreen<JanusGUIMenu> implem
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/janusgui.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
+		guiGraphics.blit(IMAGE_0, this.leftPos + 0, this.topPos + 0, 0, 0, 176, 166, 176, 166);
 		RenderSystem.disableBlend();
 	}
 

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 50,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HonkaiShard"
-            },
+            "item": "CUSTOM:HonkaiShard",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LegionPseudoCore"
-            },
+            "item": "CUSTOM:LegionPseudoCore",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Texturewayfareblessing"
-            },
+            "item": "CUSTOM:Texturewayfareblessing",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Heartofthevastsea"
-            },
+            "item": "CUSTOM:Heartofthevastsea",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -83,9 +73,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PropagandaArmyBlock"
-            },
+            "item": "CUSTOM:PropagandaArmyBlock",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -97,9 +85,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PhlogistonCrystal"
-            },
+            "item": "CUSTOM:PhlogistonCrystal",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,

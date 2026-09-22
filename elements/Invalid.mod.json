@@ -1,16 +1,13 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:Mmmhit"
-    },
+    "projectileItem": "CUSTOM:Mmmhit",
     "showParticles": false,
-    "actionSound": {
-      "value": "block.chain.hit"
-    },
+    "actionSound": "block.chain.hit",
     "igniteFire": false,
     "disableGravity": false,
+    "disableDiscarding": false,
     "power": 0.0,
     "damage": 0.0,
     "knockback": 0,

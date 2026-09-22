@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "Items.MILK_BUCKET"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      }
+      "Items.GLASS_BOTTLE",
+      "Items.GLASS_BOTTLE",
+      "Items.GLASS_BOTTLE",
+      "Items.GLASS_BOTTLE",
+      "Items.MILK_BUCKET",
+      "Items.GLASS_BOTTLE",
+      "Items.GLASS_BOTTLE",
+      "Items.GLASS_BOTTLE",
+      "Items.GLASS_BOTTLE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Milk"
-    },
+    "recipeReturnStack": "CUSTOM:Milk",
     "name": "milk_1",
     "namespace": "mod"
   }

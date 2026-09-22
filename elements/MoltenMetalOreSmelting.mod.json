@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      },
-      {
-        "value": "CUSTOM:PublicClamor"
-      }
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor",
+      "CUSTOM:PublicClamor"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MoltenMetal"
-    },
+    "recipeReturnStack": "CUSTOM:MoltenMetal",
     "name": "molten_metal_ore_smelting",
     "namespace": "mod"
   }

@@ -22,7 +22,7 @@ public class AuspiciouscropsStartProcedure {
 		double seeds = 0;
 		pow = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("power");
 		if (pow < 6400) {
-			seed = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+			seed = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 			seeds = seed.getCount();
 			if (Items.WHEAT_SEEDS == seed.getItem()) {
 				pow = pow + seeds;

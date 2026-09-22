@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:OyStuffing"
-      },
-      {
-        "value": "CUSTOM:OyStuffing"
-      },
-      {
-        "value": "CUSTOM:MmMushroom"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BossStoneCoinGun"
-      },
-      {
-        "value": "CUSTOM:OyStuffing"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:OyStuffing",
+      "CUSTOM:OyStuffing",
+      "CUSTOM:MmMushroom",
+      "",
+      "CUSTOM:BossStoneCoinGun",
+      "CUSTOM:OyStuffing",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BossStoneCoinGunPlus"
-    },
+    "recipeReturnStack": "CUSTOM:BossStoneCoinGunPlus",
     "name": "boss_stone_sb_gun_plus",
     "namespace": "mod"
   }

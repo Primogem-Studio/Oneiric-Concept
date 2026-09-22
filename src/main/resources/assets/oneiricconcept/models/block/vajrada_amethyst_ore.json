@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/vajradaamethystore",
-    "particle": "oneiricconcept:block/vajradaamethystore"
-  },
-  "render_type": "solid"
-}

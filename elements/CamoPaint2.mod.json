@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:SolidWater"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "Items.BUCKET"
-      },
-      {
-        "value": "CUSTOM:SolidWater"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:SolidWater"
-      },
-      {
-        "value": "CUSTOM:SolidWater"
-      }
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:SolidWater",
+      "CUSTOM:VirtualParticle",
+      "Items.BUCKET",
+      "CUSTOM:SolidWater",
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:SolidWater",
+      "CUSTOM:SolidWater"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CamoPaint"
-    },
+    "recipeReturnStack": "CUSTOM:CamoPaint",
     "name": "camo_paint_2",
     "namespace": "mod"
   }

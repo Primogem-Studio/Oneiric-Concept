@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "Items.WHEAT"
-      },
-      {
-        "value": "CUSTOM:Stuffing"
-      },
-      {
-        "value": "Items.WHEAT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "Items.WHEAT",
+      "CUSTOM:Stuffing",
+      "Items.WHEAT",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Dumpling"
-    },
+    "recipeReturnStack": "CUSTOM:Dumpling",
     "name": "dumpling_1",
     "namespace": "mod"
   }

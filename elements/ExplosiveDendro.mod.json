@@ -1,16 +1,13 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:DendroBoomyam"
-    },
+    "projectileItem": "CUSTOM:DendroBoomyam",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.generic.explode"
-    },
+    "actionSound": "entity.generic.explode",
     "igniteFire": false,
     "disableGravity": false,
+    "disableDiscarding": false,
     "power": 2.0,
     "damage": 1.0,
     "knockback": 0,
@@ -18,11 +15,7 @@
     "customModelTexture": "boom_blossoms_dendro.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsBlock": {
-      "name": "Setexplosive"
-    },
-    "onHitsEntity": {
-      "name": "Setexplosive"
-    }
+    "onHitsBlock": "Setexplosive",
+    "onHitsEntity": "Setexplosive"
   }
 }

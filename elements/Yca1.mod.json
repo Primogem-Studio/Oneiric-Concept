@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.CACTUS"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DYE#11"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "Blocks.CACTUS",
+      "",
+      "",
+      "Items.DYE#11",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Yactus"
-    },
+    "recipeReturnStack": "CUSTOM:Yactus",
     "name": "yca_1",
     "namespace": "mod"
   }

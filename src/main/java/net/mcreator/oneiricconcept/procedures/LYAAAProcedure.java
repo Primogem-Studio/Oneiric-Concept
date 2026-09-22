@@ -34,73 +34,35 @@ import java.util.Comparator;
 import java.util.ArrayList;
 
 public class LYAAAProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		boolean fire = false;
-		String UUIDstr = "";
-		Entity target = null;
-		Entity playr = null;
-		Entity owner = null;
-		ItemStack getTrident = ItemStack.EMPTY;
-		double scope = 0;
-		double distance = 0;
-		double distanceEnt = 0;
-		double tx = 0;
-		double ty = 0;
-		double tz = 0;
-		distance = 100;
-		if (1600 < getEnergyStored(world, BlockPos.containing(x, y - 1, z), null)) {
-			scope = 64;
-			{
-				final Vec3 _center = new Vec3(x, (y + scope / 2), z);
-				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(scope / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					if (entityiterator instanceof Projectile) {
-						owner = ((net.minecraft.world.entity.projectile.Projectile) entityiterator).getOwner();
-					}
-					if ((getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isTnt") && (entityiterator instanceof MinecartTNT || entityiterator instanceof PrimedTnt)
-							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isMob") && ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player || entityiterator instanceof Mob)
-									&& entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune")))
-							|| getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isProj") && entityiterator instanceof Projectile && !entityiterator.getPersistentData().getBoolean("sTrident")
-									&& (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "isPlayProj") || !(owner instanceof Player || owner == null)))
-							&& !((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0) && entityiterator.isAlive() && !entityiterator.onGround()) {
-						distanceEnt = new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())));
-						if (distanceEnt < distance) {
-							distance = distanceEnt;
-							target = entityiterator;
-							fire = true;
-						}
-					}
-				}
-			}
-			if (fire) {
-				tx = target.getX();
-				ty = target.getY();
-				tz = target.getZ();
-				playr = findEntityInWorldRange(world, Player.class, x, y, z, 64);
-				if (playr == null) {
-					for (Entity entityiterator : new ArrayList<>(world.players())) {
-						playr = entityiterator;
-					}
-				}
-				LaserhurtProcedure.execute(world, x + 0.5, y + 0.5, z + 0.5, playr, target, 20 * (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)));
-				if (world instanceof ILevelExtension _ext) {
-					IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x, y - 1, z), null);
-					if (_entityStorage != null)
-						_entityStorage.extractEnergy(1600, false);
-				}
-				if (owner instanceof Player && target instanceof Projectile && target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("oneiricconcept:player_projectile")))) {
-					LYProjToItemEntityProcedure.execute(world, tx, ty, tz, target);
-				} else {
-					if (!target.level().isClientSide())
-						target.discard();
-				}
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.FLASH, tx, ty, tz, 1, 0, 0, 0, 1);
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.FLAME, tx, ty, tz, 20, 0, 0, 0, 0.2);
-				Ly1TurnProcedure.execute(world, x, y, z, getDirectionFromBlockState(blockstate), new Vec3((tx - x), (ty - y), (tz - z)));
-			}
-		}
-	}
+public static void execute(
+LevelAccessor world, double x, double y, double z, BlockState blockstate) {
+boolean fire = false;String UUIDstr = "";Entity target = null;Entity playr = null;Entity owner = null;ItemStack getTrident = ItemStack.EMPTY;double scope = 0;double distance = 0;double distanceEnt = 0;double tx = 0;double ty = 0;double tz = 0;
+distance = 100;if (1600<getEnergyStored(world, BlockPos.containing(x,y-1,z), null)) {scope = 64;{
+final Vec3 _center = new Vec3(x, (y+scope/ 2), z);
+for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(scope / 2d), e -> true)
+.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+if (entityiterator instanceof Projectile) {owner = ((net.minecraft.world.entity.projectile.Projectile) entityiterator).getOwner();}if ((getBlockNBTLogic(world, BlockPos.containing(x,y,z), "isTnt")&&(entityiterator instanceof MinecartTNT||entityiterator instanceof PrimedTnt)||getBlockNBTLogic(world, BlockPos.containing(x,y,z), "isMob")&&((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget():null) instanceof Player||entityiterator instanceof Mob)&&entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:fall_damage_immune")))||getBlockNBTLogic(world, BlockPos.containing(x,y,z), "isProj")&&entityiterator instanceof Projectile&&!entityiterator.getPersistentData().getBoolean("sTrident")&&(getBlockNBTLogic(world, BlockPos.containing(x,y,z), "isPlayProj")||!(owner instanceof Player||owner==null)))&&!((entityiterator instanceof LivingEntity _livEnt ? _livEnt.hurtTime : 0) != 0)&&entityiterator.isAlive()&&!entityiterator.onGround()) {distanceEnt = ;if (distanceEnt<distance) {distance = distanceEnt;target = entityiterator;fire = true;}}
+}
+}if (fire) {tx = target.getX();ty = target.getY();tz = target.getZ();playr = findEntityInWorldRange(world, Player.class, x, y, z, 64);if (playr==null) {for (Entity entityiterator : new ArrayList<>(world.players())) {
+playr = entityiterator;
+}}
+LaserhurtProcedure.execute(world,x+0.5,y+0.5,z+0.5,playr,target,20*
+(world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_DAMAGEMULTIPLIER)))
+;
+if (world instanceof ILevelExtension _ext) {
+IEnergyStorage _entityStorage = _ext.getCapability(Capabilities.EnergyStorage.BLOCK, BlockPos.containing(x,y-1,z), null);
+if (_entityStorage != null)
+_entityStorage.extractEnergy(1600, false);
+}if (owner instanceof Player&&target instanceof Projectile&&target.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("oneiricconcept:player_projectile")))) {
+LYProjToItemEntityProcedure.execute(world,tx,ty,tz,target)
+;
+}else{if(!target.level().isClientSide()) target.discard();}if (world instanceof ServerLevel _level)
+_level.sendParticles(ParticleTypes.CRIT, tx, ty, tz, 1, 0, 0, 0, 1);if (world instanceof ServerLevel _level)
+_level.sendParticles(ParticleTypes.FLAME, tx, ty, tz, 20, 0, 0, 0, 0.2);
+Ly1TurnProcedure.execute(world,x,y,z,getDirectionFromBlockState(blockstate),new Vec3((tx-x), (ty-y), (tz-z)))
+;
+}}
+}
 
 	public static int getEnergyStored(LevelAccessor level, BlockPos pos, Direction direction) {
 		if (level instanceof ILevelExtension levelExtension) {
@@ -123,10 +85,19 @@ public class LYAAAProcedure {
 	}
 
 	private static Direction getDirectionFromBlockState(BlockState blockState) {
-		Property<?> prop = blockState.getBlock().getStateDefinition().getProperty("facing");
+		Property<?> prop = getPropertyByName(blockState, "facing");
 		if (prop instanceof DirectionProperty dp)
 			return blockState.getValue(dp);
-		prop = blockState.getBlock().getStateDefinition().getProperty("axis");
+		prop = getPropertyByName(blockState, "axis");
 		return prop instanceof EnumProperty ep && ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ? Direction.fromAxisAndDirection((Direction.Axis) blockState.getValue(ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

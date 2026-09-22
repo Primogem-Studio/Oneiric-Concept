@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Campfire cooking",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "campfireCookingInputStack": {
-      "value": "CUSTOM:S2ausage"
-    },
-    "campfireCookingReturnStack": {
-      "value": "CUSTOM:S2mokeSausage"
-    },
+    "campfireCookingInputStack": "CUSTOM:S2ausage",
+    "campfireCookingReturnStack": "CUSTOM:S2mokeSausage",
     "name": "s_2moke_sausage_2",
     "namespace": "mod"
   }

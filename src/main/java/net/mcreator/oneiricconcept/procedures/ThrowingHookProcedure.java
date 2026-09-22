@@ -34,7 +34,7 @@ public class ThrowingHookProcedure {
 		Entity hookent = null;
 		Entity Damageent = null;
 		ItemStack itmstk = ItemStack.EMPTY;
-		itmstk = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		itmstk = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (itmstk.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("oneiricconcept:sharp_hook")))) != 0) {
 			HookLoadingProcedure.execute(world, x, y, z, entity,
 					itmstk.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("oneiricconcept:sharp_hook")))), 0);

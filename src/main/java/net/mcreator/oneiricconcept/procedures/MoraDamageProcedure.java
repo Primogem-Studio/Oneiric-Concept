@@ -26,7 +26,7 @@ public class MoraDamageProcedure {
 		if (entity == null)
 			return;
 		ItemStack magazineitem = ItemStack.EMPTY;
-		magazineitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		magazineitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		if (magazineitem.getMaxDamage() - magazineitem.getDamageValue() <= 1) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse(((BuiltInRegistries.ITEM.getKey(magazineitem.getItem()).toString())).toLowerCase(java.util.Locale.ENGLISH)))).copy();

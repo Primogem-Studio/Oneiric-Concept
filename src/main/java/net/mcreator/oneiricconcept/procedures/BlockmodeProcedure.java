@@ -26,7 +26,7 @@ public class BlockmodeProcedure {
 		ItemStack item = ItemStack.EMPTY;
 		double maxmdoe = 0;
 		double blockmode = 0;
-		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		blockmode = blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip2 ? blockstate.getValue(_getip2) : -1;
 		if (blockstate.getBlock() == OneiricconceptModBlocks.PRIMOGEM.get()) {
 			maxmdoe = 6;

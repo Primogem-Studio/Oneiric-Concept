@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Camo",
@@ -8,17 +8,13 @@
       "value": -10066177,
       "falpha": 0.0
     },
-    "onAddedSound": {
-      "value": "item.bucket.empty"
-    },
+    "onAddedSound": "item.bucket.empty",
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "Camo"
-    }
+    "onStarted": "Camo"
   }
 }

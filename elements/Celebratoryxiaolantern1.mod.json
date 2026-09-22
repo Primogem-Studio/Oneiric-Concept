@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "Blocks.BAMBOO_HANGING_SIGN"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      }
+      "CUSTOM:Cloud",
+      "Blocks.BAMBOO_HANGING_SIGN",
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:Cloud"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CelebratoryXiaoLantern"
-    },
+    "recipeReturnStack": "CUSTOM:CelebratoryXiaoLantern",
     "name": "celebratoryxiaolantern_1",
     "namespace": "mod"
   }

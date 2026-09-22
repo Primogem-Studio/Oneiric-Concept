@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -11,15 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "brewingInputStack": {
-      "value": "CUSTOM:Milk"
-    },
-    "brewingIngredientStack": {
-      "value": "CUSTOM:Hunger"
-    },
-    "brewingReturnStack": {
-      "value": "POTION:CUSTOM:HungerPotion"
-    },
+    "brewingInputStack": "CUSTOM:Milk",
+    "brewingIngredientStack": "CUSTOM:Hunger",
+    "brewingReturnStack": "POTION:CUSTOM:HungerPotion",
     "name": "potion_of_hunger_1",
     "namespace": "mod"
   }

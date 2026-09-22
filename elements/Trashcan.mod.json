@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MemoryBubble"
-            },
+            "item": "CUSTOM:MemoryBubble",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SaltDust"
-            },
+            "item": "CUSTOM:SaltDust",
             "weight": 3,
             "minCount": 1,
             "maxCount": 16,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HonkaiSliver"
-            },
+            "item": "CUSTOM:HonkaiSliver",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.BROWN_MUSHROOM"
-            },
+            "item": "Blocks.BROWN_MUSHROOM",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.RED_MUSHROOM"
-            },
+            "item": "Blocks.RED_MUSHROOM",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -83,9 +73,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GLASS_BOTTLE"
-            },
+            "item": "Items.GLASS_BOTTLE",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -97,9 +85,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.IRON_NUGGET"
-            },
+            "item": "Items.IRON_NUGGET",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -111,9 +97,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.ROTTEN_FLESH"
-            },
+            "item": "Items.ROTTEN_FLESH",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -125,9 +109,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.SPIDER_EYE"
-            },
+            "item": "Items.SPIDER_EYE",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -139,9 +121,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.WEB"
-            },
+            "item": "Blocks.WEB",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -153,9 +133,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.STRING"
-            },
+            "item": "Items.STRING",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -167,9 +145,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.FEATHER"
-            },
+            "item": "Items.FEATHER",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -181,9 +157,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GUNPOWDER"
-            },
+            "item": "Items.GUNPOWDER",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -195,9 +169,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.DYE#0"
-            },
+            "item": "Items.DYE#0",
             "weight": 3,
             "minCount": 1,
             "maxCount": 7,
@@ -209,9 +181,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PublicClamor"
-            },
+            "item": "CUSTOM:PublicClamor",
             "weight": 3,
             "minCount": 1,
             "maxCount": 16,
@@ -223,9 +193,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.SLIME_BALL"
-            },
+            "item": "Items.SLIME_BALL",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -237,9 +205,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.AMETHYST_SHARD"
-            },
+            "item": "Items.AMETHYST_SHARD",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -251,9 +217,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.ENDER_PEARL"
-            },
+            "item": "Items.ENDER_PEARL",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -265,9 +229,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.BONE"
-            },
+            "item": "Items.BONE",
             "weight": 3,
             "minCount": 1,
             "maxCount": 1,
@@ -288,9 +250,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HonkaiShard"
-            },
+            "item": "CUSTOM:HonkaiShard",
             "weight": 3,
             "minCount": 1,
             "maxCount": 3,
@@ -302,9 +262,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:LegionPseudoSliver"
-            },
+            "item": "CUSTOM:LegionPseudoSliver",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -316,9 +274,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HonkaiSliver"
-            },
+            "item": "CUSTOM:HonkaiSliver",
             "weight": 5,
             "minCount": 1,
             "maxCount": 7,
@@ -330,9 +286,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PgcPg"
-            },
+            "item": "CUSTOM:PgcPg",
             "weight": 3,
             "minCount": 1,
             "maxCount": 3,
@@ -344,9 +298,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AmbrosialArborSapling"
-            },
+            "item": "CUSTOM:AmbrosialArborSapling",
             "weight": 3,
             "minCount": 1,
             "maxCount": 3,
@@ -358,9 +310,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 200,
             "minCount": 1,
             "maxCount": 1,
@@ -381,9 +331,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Hunger"
-            },
+            "item": "CUSTOM:Hunger",
             "weight": 5,
             "minCount": 1,
             "maxCount": 16,
@@ -395,9 +343,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DeepMarrowRockSalt"
-            },
+            "item": "CUSTOM:DeepMarrowRockSalt",
             "weight": 5,
             "minCount": 1,
             "maxCount": 16,
@@ -409,9 +355,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FreshSeedofDawn"
-            },
+            "item": "CUSTOM:FreshSeedofDawn",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -423,9 +367,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Phlogiston"
-            },
+            "item": "CUSTOM:Phlogiston",
             "weight": 15,
             "minCount": 1,
             "maxCount": 1,
@@ -437,9 +379,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:VirtualParticle"
-            },
+            "item": "CUSTOM:VirtualParticle",
             "weight": 5,
             "minCount": 1,
             "maxCount": 16,
@@ -451,9 +391,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SolidWater"
-            },
+            "item": "CUSTOM:SolidWater",
             "weight": 15,
             "minCount": 1,
             "maxCount": 32,

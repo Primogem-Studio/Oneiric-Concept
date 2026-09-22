@@ -18,7 +18,7 @@ public class OverlimitExplosionProcedure {
 		if (0 < lvl) {
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.explode(null, x, y, z, (float) Math.min(100, lvl), Level.ExplosionInteraction.BLOCK);
-			for (int index0 = 0; index0 < (int) Math.max(1, Math.ceil(lvl - 9)); index0++) {
+			for (int _i1 = 0; _i1 < (int) Math.max(1, Math.ceil(lvl - 9)); _i1++) {
 				if (world instanceof Level _level && !_level.isClientSide())
 					_level.explode(null, (x + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (y + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)),
 							(z + Mth.nextDouble(RandomSource.create(), 0 - Inventorynu, Inventorynu)), (float) Math.min(100, lvl), Level.ExplosionInteraction.BLOCK);

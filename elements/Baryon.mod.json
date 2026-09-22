@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Baryon",
@@ -27,16 +27,12 @@
         "texture": "antibaryon.png",
         "disableHurtOverlay": false,
         "glow": false,
-        "condition": {
-          "name": "Entitytextures"
-        }
+        "condition": "Entitytextures"
       }
     ],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:BaryonAnimation.animation"
-        },
+        "animation": "CUSTOM:BaryonAnimation.animation",
         "speed": 1.0,
         "walking": false,
         "amplitude": 1.0
@@ -56,31 +52,17 @@
       "falpha": 0.0
     },
     "creativeTabs": [
-      {
-        "value": "MISC"
-      }
+      "MISC"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
@@ -120,24 +102,12 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": ""
-    },
-    "hurtSound": {
-      "value": "entity.generic.hurt"
-    },
-    "deathSound": {
-      "value": "entity.generic.death"
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "",
+    "hurtSound": "entity.generic.hurt",
+    "deathSound": "entity.generic.death",
+    "stepSound": "",
+    "raidCelebrationSound": "",
     "entityDataEntries": [
       {
         "min": -2147483648,
@@ -147,12 +117,8 @@
         "value": 0
       }
     ],
-    "whenMobDies": {
-      "name": "AntimatterLegionLoot"
-    },
-    "onInitialSpawn": {
-      "name": "Baryonmode"
-    },
+    "whenMobDies": "AntimatterLegionLoot",
+    "onInitialSpawn": "Baryonmode",
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">0.7</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander_avoid_water\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
@@ -160,17 +126,13 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": true,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "OnLaser",
     "rangedAttackInterval": 80,
     "rangedAttackRadius": 12.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningCondition": {
-      "name": "BaryonPlace"
-    },
+    "spawningCondition": "BaryonPlace",
     "spawningProbability": 4,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,

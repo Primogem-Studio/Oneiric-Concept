@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 50,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SmokeSausage"
-            },
+            "item": "CUSTOM:SmokeSausage",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BelobogSausage"
-            },
+            "item": "CUSTOM:BelobogSausage",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:B2elobogSausage"
-            },
+            "item": "CUSTOM:B2elobogSausage",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:S2mokeSausage"
-            },
+            "item": "CUSTOM:S2mokeSausage",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -83,9 +73,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Waffle"
-            },
+            "item": "CUSTOM:Waffle",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -97,9 +85,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PrimogemWaffle"
-            },
+            "item": "CUSTOM:PrimogemWaffle",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -111,9 +97,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SkyWaffle"
-            },
+            "item": "CUSTOM:SkyWaffle",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -125,9 +109,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Dumpling"
-            },
+            "item": "CUSTOM:Dumpling",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -139,9 +121,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DreamdiveCan"
-            },
+            "item": "CUSTOM:DreamdiveCan",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -153,9 +133,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MemoryBubble"
-            },
+            "item": "CUSTOM:MemoryBubble",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -167,9 +145,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BananaMushroom"
-            },
+            "item": "CUSTOM:BananaMushroom",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -181,9 +157,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PublicClamor"
-            },
+            "item": "CUSTOM:PublicClamor",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -195,9 +169,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Phlogiston"
-            },
+            "item": "CUSTOM:Phlogiston",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -209,9 +181,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SaltDust"
-            },
+            "item": "CUSTOM:SaltDust",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -223,9 +193,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Hunger"
-            },
+            "item": "CUSTOM:Hunger",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -237,9 +205,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DeepMarrowRockSalt"
-            },
+            "item": "CUSTOM:DeepMarrowRockSalt",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -251,9 +217,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:IceFreshRawFrostweaveSalmonSlices"
-            },
+            "item": "CUSTOM:IceFreshRawFrostweaveSalmonSlices",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -265,9 +229,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Sweetflower"
-            },
+            "item": "CUSTOM:Sweetflower",
             "weight": 1,
             "minCount": 1,
             "maxCount": 16,
@@ -279,9 +241,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SolidWater"
-            },
+            "item": "CUSTOM:SolidWater",
             "weight": 1,
             "minCount": 1,
             "maxCount": 71,
@@ -293,9 +253,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:VirtualParticle"
-            },
+            "item": "CUSTOM:VirtualParticle",
             "weight": 1,
             "minCount": 1,
             "maxCount": 71,
@@ -307,9 +265,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DreamyCone"
-            },
+            "item": "CUSTOM:DreamyCone",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -321,9 +277,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TreeBarkofErudition"
-            },
+            "item": "CUSTOM:TreeBarkofErudition",
             "weight": 1,
             "minCount": 1,
             "maxCount": 71,
@@ -335,9 +289,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AmbrosialArborSapling"
-            },
+            "item": "CUSTOM:AmbrosialArborSapling",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

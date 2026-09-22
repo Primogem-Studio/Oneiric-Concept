@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:APropagandaArmy"
-      },
-      {
-        "value": "CUSTOM:OyStuffing"
-      },
-      {
-        "value": "CUSTOM:APropagandaArmy"
-      },
-      {
-        "value": "CUSTOM:APropagandaArmy"
-      },
-      {
-        "value": "CUSTOM:APropagandaArmy"
-      },
-      {
-        "value": "CUSTOM:APropagandaArmy"
-      },
-      {
-        "value": "CUSTOM:APropagandaArmy"
-      },
-      {
-        "value": "CUSTOM:OyStuffing"
-      },
-      {
-        "value": "CUSTOM:APropagandaArmy"
-      }
+      "CUSTOM:APropagandaArmy",
+      "CUSTOM:OyStuffing",
+      "CUSTOM:APropagandaArmy",
+      "CUSTOM:APropagandaArmy",
+      "CUSTOM:APropagandaArmy",
+      "CUSTOM:APropagandaArmy",
+      "CUSTOM:APropagandaArmy",
+      "CUSTOM:OyStuffing",
+      "CUSTOM:APropagandaArmy"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PropagandaArmy"
-    },
+    "recipeReturnStack": "CUSTOM:PropagandaArmy",
     "name": "propagandaarm_2",
     "namespace": "mod"
   }

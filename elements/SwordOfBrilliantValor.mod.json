@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -9,6 +9,7 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Sword Of Brilliant Valor",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": [
         "当你身处绝境，勇气就是令你奋起抗争、走出绝境的唯一之光",
@@ -16,9 +17,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
+      "CUSTOM:OneiricConcept"
     ],
     "efficiency": 4.0,
     "attackSpeed": 6.0,
@@ -29,20 +28,15 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:MemoryBubble"
-      }
+      "CUSTOM:MemoryBubble"
     ],
     "immuneToFire": true,
     "blockDropsTier": "IRON",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "BrilliantValor"
-    },
-    "onItemInUseTick": {
-      "name": "BrilliantValorBuff"
-    }
+    "onRightClickedInAir": "BrilliantValor",
+    "onItemInUseTick": "BrilliantValorBuff"
   }
 }

@@ -20,6 +20,8 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BaryonRenderer extends MobRenderer<BaryonEntity, ModelBaryon<BaryonEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("oneiricconcept:textures/entities/baryon.png");
+
 	public BaryonRenderer(EntityRendererProvider.Context context) {
 		super(context, new AnimatedModel(context.bakeLayer(ModelBaryon.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new RenderLayer<BaryonEntity, ModelBaryon<BaryonEntity>>(this) {
@@ -41,7 +43,7 @@ public class BaryonRenderer extends MobRenderer<BaryonEntity, ModelBaryon<Baryon
 
 	@Override
 	public ResourceLocation getTextureLocation(BaryonEntity entity) {
-		return ResourceLocation.parse("oneiricconcept:textures/entities/baryon.png");
+		return entityTexture;
 	}
 
 	private static final class AnimatedModel extends ModelBaryon<BaryonEntity> {

@@ -27,8 +27,8 @@ public class EnchantLureProcedure {
 		double lurelevel = 0;
 		double levelupdemand = 0;
 		double delitem = 0;
-		roditem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
-		baitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		roditem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
+		baitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		enchantlevel = roditem.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LURE));
 		if (roditem.is(ItemTags.create(ResourceLocation.parse("minecraft:enchantable/fishing"))) && entity.isShiftKeyDown()
 				&& !(entity.level()

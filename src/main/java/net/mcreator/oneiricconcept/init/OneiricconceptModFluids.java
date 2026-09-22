@@ -21,8 +21,8 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModFluids {
 	public static final DeferredRegister<Fluid> REGISTRY = DeferredRegister.create(BuiltInRegistries.FLUID, OneiricconceptMod.MODID);
-	public static final DeferredHolder<Fluid, FlowingFluid> MEMORIA = REGISTRY.register("memoria", () -> new MemoriaFluid.Source());
-	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MEMORIA = REGISTRY.register("flowing_memoria", () -> new MemoriaFluid.Flowing());
+	public static final DeferredHolder<Fluid, FlowingFluid> MEMORIA = REGISTRY.register("memoria", MemoriaFluid.Source::new);
+	public static final DeferredHolder<Fluid, FlowingFluid> FLOWING_MEMORIA = REGISTRY.register("flowing_memoria", MemoriaFluid.Flowing::new);
 
 	@EventBusSubscriber(Dist.CLIENT)
 	public static class FluidsClientSideHandler {

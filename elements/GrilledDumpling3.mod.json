@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Campfire cooking",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "campfireCookingInputStack": {
-      "value": "CUSTOM:Dumpling"
-    },
-    "campfireCookingReturnStack": {
-      "value": "CUSTOM:GrilledDumpling"
-    },
+    "campfireCookingInputStack": "CUSTOM:Dumpling",
+    "campfireCookingReturnStack": "CUSTOM:GrilledDumpling",
     "name": "grilled_dumpling_3",
     "namespace": "mod"
   }

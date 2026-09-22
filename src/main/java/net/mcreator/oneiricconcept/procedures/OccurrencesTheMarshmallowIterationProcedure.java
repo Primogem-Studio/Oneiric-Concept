@@ -23,7 +23,7 @@ public class OccurrencesTheMarshmallowIterationProcedure {
 		enx = entity.getX();
 		eny = entity.getY();
 		enz = entity.getZ();
-		for (int index0 = 0; index0 < 10; index0++) {
+		for (int _i1 = 0; _i1 < 10; _i1++) {
 			eny = eny + index0;
 			if (-1 != world.getBlockState(BlockPos.containing(enx, eny, enz)).getDestroySpeed(world, BlockPos.containing(enx, eny, enz))) {
 				if (world instanceof ServerLevel _level) {

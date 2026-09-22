@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Brewing",
@@ -11,15 +11,9 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "brewingInputStack": {
-      "value": "POTION:WATER"
-    },
-    "brewingIngredientStack": {
-      "value": "CUSTOM:SaltDust"
-    },
-    "brewingReturnStack": {
-      "value": "CUSTOM:Salt"
-    },
+    "brewingInputStack": "POTION:WATER",
+    "brewingIngredientStack": "CUSTOM:SaltDust",
+    "brewingReturnStack": "CUSTOM:Salt",
     "name": "salt_1",
     "namespace": "mod"
   }

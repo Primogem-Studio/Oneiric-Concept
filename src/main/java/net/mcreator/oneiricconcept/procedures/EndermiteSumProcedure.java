@@ -20,7 +20,7 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 public class EndermiteSumProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double tic = 0;
-		for (int index0 = 0; index0 < 30; index0++) {
+		for (int _i1 = 0; _i1 < 30; _i1++) {
 			OneiricconceptMod.queueServerWork((int) tic, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

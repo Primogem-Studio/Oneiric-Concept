@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.BEACON"
-      },
-      {
-        "value": "CUSTOM:Camerapink"
-      },
-      {
-        "value": "CUSTOM:Theanotherworldmooningot"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:Camera"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:Elect1"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Blocks.BEACON",
+      "CUSTOM:Camerapink",
+      "CUSTOM:Theanotherworldmooningot",
+      "Items.IRON_INGOT",
+      "CUSTOM:Camera",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "CUSTOM:Elect1",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:LY1"
-    },
+    "recipeReturnStack": "CUSTOM:LY1",
     "name": "ly_1",
     "namespace": "mod"
   }

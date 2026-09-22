@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:ResurrectionPellet"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:ResurrectionPellet"
-    },
+    "smeltingInputStack": "CUSTOM:ResurrectionPellet",
+    "smeltingReturnStack": "CUSTOM:ResurrectionPellet",
     "name": "bigstone_2",
     "namespace": "mod"
   }

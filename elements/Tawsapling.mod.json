@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "TAG:minecraft:saplings"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      }
+      "CUSTOM:OneiricShard",
+      "CUSTOM:OneiricShard",
+      "CUSTOM:OneiricShard",
+      "CUSTOM:OneiricShard",
+      "TAG:minecraft:saplings",
+      "CUSTOM:OneiricShard",
+      "CUSTOM:OneiricShard",
+      "CUSTOM:OneiricShard",
+      "CUSTOM:OneiricShard"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:TheAnotherWorldSapling"
-    },
+    "recipeReturnStack": "CUSTOM:TheAnotherWorldSapling",
     "name": "tawsapling",
     "namespace": "mod"
   }

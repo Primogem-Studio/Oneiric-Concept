@@ -16,7 +16,7 @@ public class ZiRanProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 100, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(OneiricconceptModMobEffects.B_2SAUSAGE, 1200, 2, false, false));
-		for (int index0 = 0; index0 < 3; index0++) {
+		for (int _i1 = 0; _i1 < 3; _i1++) {
 			BebuffplusProcedure.execute(world, entity);
 		}
 	}

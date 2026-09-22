@@ -29,8 +29,6 @@ public class BombknockbackProcedure {
 		if (entity == null)
 			return;
 		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("oneiricconcept:bomb")))) {
-			if (event instanceof LivingIncomingDamageEvent _hurt1)
-				_hurt1.setAmount(0);
 		}
 	}
 }

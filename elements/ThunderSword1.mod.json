@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "TAG:c:stone"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:SwordOfBrilliantValor"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:MemoriaPiece"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:ThunderSword"
-    },
+    "smithingInputStack": "TAG:c:stone",
+    "smithingInputAdditionStack": "CUSTOM:SwordOfBrilliantValor",
+    "smithingInputTemplateStack": "CUSTOM:MemoriaPiece",
+    "smithingReturnStack": "CUSTOM:ThunderSword",
     "name": "thunder_sword_1",
     "namespace": "mod"
   }

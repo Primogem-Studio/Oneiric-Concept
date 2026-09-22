@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:AdeptusGun"
-      },
-      {
-        "value": "CUSTOM:Primogemfruit"
-      },
-      {
-        "value": "CUSTOM:AdeptusGun"
-      }
+      "",
+      "CUSTOM:PgcPg",
+      "",
+      "CUSTOM:PgcPg",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:PgcPg",
+      "CUSTOM:AdeptusGun",
+      "CUSTOM:Primogemfruit",
+      "CUSTOM:AdeptusGun"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Primogemstormglass"
-    },
+    "recipeReturnStack": "CUSTOM:Primogemstormglass",
     "name": "primogemstormglass_1",
     "namespace": "mod"
   }

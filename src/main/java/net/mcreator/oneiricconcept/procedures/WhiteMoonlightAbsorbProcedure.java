@@ -40,25 +40,25 @@ public class WhiteMoonlightAbsorbProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 			if (30 <= getBlockNBTNumber(world, BlockPos.containing(x, y, z), "moonlight") && 1 <= itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount()) {
-				input = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
+				input = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).copy();
 				if (Items.NETHERITE_INGOT == input.getItem()) {
-					output = new ItemStack(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT.get());
+					output = new ItemStack(OneiricconceptModBlocks.THEANOTHERWORLDMOONINGOT.get()).copy();
 				} else if (OneiricconceptModItems.MILK.get() == input.getItem()) {
-					output = new ItemStack(OneiricconceptModItems.DREAMY_CONE.get());
+					output = new ItemStack(OneiricconceptModItems.DREAMY_CONE.get()).copy();
 				} else if (Blocks.DEEPSLATE_REDSTONE_ORE.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ranyuanduanpian"))) : new ItemStack(OneiricconceptModItems.MOLTEN_METAL.get()));
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ranyuanduanpian"))) : new ItemStack(OneiricconceptModItems.MOLTEN_METAL.get())).copy();
 				} else if (Blocks.DEEPSLATE_GOLD_ORE.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:jianlaoduanpian"))) : new ItemStack(Items.RAW_GOLD));
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:jianlaoduanpian"))) : new ItemStack(Items.RAW_GOLD)).copy();
 				} else if (Blocks.AMETHYST_BLOCK.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:zuishengduanpian"))) : new ItemStack(OneiricconceptModItems.VIRTUAL_PARTICLE.get()));
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:zuishengduanpian"))) : new ItemStack(OneiricconceptModItems.VIRTUAL_PARTICLE.get())).copy();
 				} else if (Blocks.DEEPSLATE_LAPIS_ORE.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:dijingduanpian"))) : new ItemStack(OneiricconceptModItems.MEMORY_BUBBLE.get()));
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:dijingduanpian"))) : new ItemStack(OneiricconceptModItems.MEMORY_BUBBLE.get())).copy();
 				} else if (OneiricconceptModBlocks.THE_ANOTHER_WORLD_SAPLING.get().asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(OneiricconceptModItems.PRIMOGEMFRUIT.get()) : new ItemStack(OneiricconceptModItems.PRIMOGEM_WAFFLE.get()));
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(OneiricconceptModItems.PRIMOGEMFRUIT.get()) : new ItemStack(OneiricconceptModItems.PRIMOGEM_WAFFLE.get())).copy();
 				} else if (OneiricconceptModItems.ENERGY_DRINK.get() == input.getItem()) {
-					output = new ItemStack(OneiricconceptModItems.ENERGY_DRINK_SUGAR_FREE.get());
+					output = new ItemStack(OneiricconceptModItems.ENERGY_DRINK_SUGAR_FREE.get()).copy();
 				} else if (Items.BOOK == input.getItem()) {
-					output = new ItemStack(OneiricconceptModItems.TREE_BARKOF_ERUDITION.get());
+					output = new ItemStack(OneiricconceptModItems.TREE_BARKOF_ERUDITION.get()).copy();
 				}
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);

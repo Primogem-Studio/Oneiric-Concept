@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ConquerorSWill"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ConquerorSWill"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HiltwoodFromTheArbor"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "CUSTOM:ConquerorSWill",
+      "",
+      "CUSTOM:ConquerorSWill",
+      "",
+      "CUSTOM:HiltwoodFromTheArbor",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:StardustBaseballer"
-    },
+    "recipeReturnStack": "CUSTOM:StardustBaseballer",
     "name": "stardustbaseballer_1",
     "namespace": "mod"
   }

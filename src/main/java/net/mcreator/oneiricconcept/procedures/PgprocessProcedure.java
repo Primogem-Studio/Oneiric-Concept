@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
@@ -29,7 +27,7 @@ public class PgprocessProcedure {
 		blockeman = (world.getBlockState(BlockPos.containing(x, y, z)));
 		block = BuiltInRegistries.BLOCK.getKey(blockeman.getBlock()).toString();
 		block21 = block.substring(0, 21);
-		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (item.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:dec")))) {
 			if ((block21).equals((BuiltInRegistries.ITEM.getKey(item.getItem()).toString()).substring(0, 21))) {
 				{

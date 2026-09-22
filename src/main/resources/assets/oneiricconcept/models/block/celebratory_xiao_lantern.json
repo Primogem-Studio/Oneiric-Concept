@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/xiao_lantern",
-    "particle": "oneiricconcept:block/xiao_lantern"
-  },
-  "render_type": "solid"
-}

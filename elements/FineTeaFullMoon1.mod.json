@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ChenyuAdeptea"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ChenyuAdeptea"
-      },
-      {
-        "value": "TAG:c:eggs"
-      },
-      {
-        "value": "CUSTOM:ChenyuAdeptea"
-      },
-      {
-        "value": "Items.WHEAT"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "Items.WHEAT"
-      }
+      "",
+      "CUSTOM:ChenyuAdeptea",
+      "",
+      "CUSTOM:ChenyuAdeptea",
+      "TAG:c:eggs",
+      "CUSTOM:ChenyuAdeptea",
+      "Items.WHEAT",
+      "Items.SUGAR",
+      "Items.WHEAT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:FineTeaFullMoon"
-    },
+    "recipeReturnStack": "CUSTOM:FineTeaFullMoon",
     "name": "fine_tea_full_moon_1",
     "namespace": "mod"
   }

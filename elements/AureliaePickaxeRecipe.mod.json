@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      },
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      },
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HiltwoodFromTheArbor"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HiltwoodFromTheArbor"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:IgnisAureliae",
+      "CUSTOM:IgnisAureliae",
+      "CUSTOM:IgnisAureliae",
+      "",
+      "CUSTOM:HiltwoodFromTheArbor",
+      "",
+      "",
+      "CUSTOM:HiltwoodFromTheArbor",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AureliaePickaxe"
-    },
+    "recipeReturnStack": "CUSTOM:AureliaePickaxe",
     "name": "aureliae_pickaxe_recipe",
     "namespace": "mod"
   }

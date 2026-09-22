@@ -37,17 +37,17 @@ public class DivineArrowProcedure {
 		xyz = Math.round(0 - (range - 1) / 2);
 		sx = xyz;
 		found = false;
-		for (int index0 = 0; index0 < (int) range; index0++) {
+		for (int _i1 = 0; _i1 < (int) range; _i1++) {
 			if (found) {
 				break;
 			}
 			sy = xyz;
-			for (int index1 = 0; index1 < (int) range; index1++) {
+			for (int _i2 = 0; _i2 < (int) range; _i2++) {
 				if (found) {
 					break;
 				}
 				sz = xyz;
-				for (int index2 = 0; index2 < (int) range; index2++) {
+				for (int _i3 = 0; _i3 < (int) range; _i3++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == OneiricconceptModBlocks.AMBROSIAL_ARBOR_LEAVE.get()
 							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()) {
 						found = true;
@@ -61,9 +61,9 @@ public class DivineArrowProcedure {
 		}
 		sx = xyz;
 		if (found) {
-			for (int index3 = 0; index3 < (int) range; index3++) {
+			for (int _i1 = 0; _i1 < (int) range; _i1++) {
 				sz = xyz;
-				for (int index4 = 0; index4 < (int) range; index4++) {
+				for (int _i2 = 0; _i2 < (int) range; _i2++) {
 					if ((index3 + 1) % 3 == 0 && (index4 + 1) % 3 == 0) {
 						if (world instanceof ServerLevel projectileLevel) {
 							Projectile _entityToSpawn = initArrowProjectile(new SkyShatteringLuxArrowEntity(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)),

@@ -17,6 +17,8 @@ import net.mcreator.oneiricconcept.client.model.Modelcrystal_turtle;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Modelcrystal_turtle<CrystalTurtleEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("oneiricconcept:textures/entities/crystal_turtle.png");
+
 	public CrystalTurtleRenderer(EntityRendererProvider.Context context) {
 		super(context, new AnimatedModel(context.bakeLayer(Modelcrystal_turtle.LAYER_LOCATION)), 1f);
 	}
@@ -28,7 +30,7 @@ public class CrystalTurtleRenderer extends MobRenderer<CrystalTurtleEntity, Mode
 
 	@Override
 	public ResourceLocation getTextureLocation(CrystalTurtleEntity entity) {
-		return ResourceLocation.parse("oneiricconcept:textures/entities/crystal_turtle.png");
+		return entityTexture;
 	}
 
 	@Override

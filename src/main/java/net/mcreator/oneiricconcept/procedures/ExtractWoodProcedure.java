@@ -24,9 +24,9 @@ public class ExtractWoodProcedure {
 		double sz = 0;
 		BlockState block = Blocks.AIR.defaultBlockState();
 		sx = -20;
-		for (int index0 = 0; index0 < 41; index0++) {
+		for (int _i1 = 0; _i1 < 41; _i1++) {
 			sz = -20;
-			for (int index1 = 0; index1 < 41; index1++) {
+			for (int _i2 = 0; _i2 < 41; _i2++) {
 				block = (world.getBlockState(BlockPos.containing(x + sx, y, z + sz)));
 				if (!(block.getBlock() == Blocks.AIR) && -1 != world.getBlockState(BlockPos.containing(x + sx, y, z + sz)).getDestroySpeed(world, BlockPos.containing(x + sx, y, z + sz))
 						&& block.is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:Rawredmoonore"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:Redmo1"
-    },
+    "blastingInputStack": "CUSTOM:Rawredmoonore",
+    "blastingReturnStack": "CUSTOM:Redmo1",
     "name": "red_moon_ingot_1",
     "namespace": "mod"
   }

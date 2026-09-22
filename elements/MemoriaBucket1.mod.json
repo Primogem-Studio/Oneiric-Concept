@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MemoryBubble"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.BUCKET"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:MemoryBubble",
+      "",
+      "",
+      "Items.BUCKET",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DreamdiveCan"
-    },
+    "recipeReturnStack": "CUSTOM:DreamdiveCan",
     "name": "memoria_bucket_1",
     "namespace": "mod"
   }

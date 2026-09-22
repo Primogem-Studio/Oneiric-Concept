@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "TAG:minecraft:logs"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "TAG:minecraft:logs"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldLog"
-      },
-      {
-        "value": "TAG:minecraft:logs"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "TAG:minecraft:logs"
-      },
-      {
-        "value": "Items.STICK"
-      }
+      "Items.STICK",
+      "TAG:minecraft:logs",
+      "Items.STICK",
+      "TAG:minecraft:logs",
+      "CUSTOM:TheAnotherWorldLog",
+      "TAG:minecraft:logs",
+      "Items.STICK",
+      "TAG:minecraft:logs",
+      "Items.STICK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:TheBoonOfTheElderTree"
-    },
+    "recipeReturnStack": "CUSTOM:TheBoonOfTheElderTree",
     "name": "the_boonofthe_elder_tree_1",
     "namespace": "mod"
   }

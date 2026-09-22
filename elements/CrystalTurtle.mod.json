@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Crystal Turtle",
@@ -25,57 +25,37 @@
     "modelLayers": [],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:crystal_turtleAnimation.walk_XingZou"
-        },
+        "animation": "CUSTOM:crystal_turtleAnimation.walk_XingZou",
         "speed": 1.0,
-        "condition": {
-          "name": "Uncrystal"
-        },
+        "condition": "Uncrystal",
         "walking": true,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:crystal_turtleAnimation.walk_XingZou_crystal"
-        },
+        "animation": "CUSTOM:crystal_turtleAnimation.walk_XingZou_crystal",
         "speed": 1.0,
-        "condition": {
-          "name": "TurtleCrystal"
-        },
+        "condition": "TurtleCrystal",
         "walking": true,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:crystal_turtleAnimation.ShrinkingShell_SuoKe"
-        },
+        "animation": "CUSTOM:crystal_turtleAnimation.ShrinkingShell_SuoKe",
         "speed": 1.0,
-        "condition": {
-          "name": "ShrinkingShellSuoKe"
-        },
+        "condition": "ShrinkingShellSuoKe",
         "walking": false,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:crystal_turtleAnimation.ExtendHead_Shentou"
-        },
+        "animation": "CUSTOM:crystal_turtleAnimation.ExtendHead_Shentou",
         "speed": 1.0,
-        "condition": {
-          "name": "UnShrinkingShell"
-        },
+        "condition": "UnShrinkingShell",
         "walking": false,
         "amplitude": 1.0
       },
       {
-        "animation": {
-          "value": "CUSTOM:crystal_turtleAnimation.ExtendHead_Shentou_crystal"
-        },
+        "animation": "CUSTOM:crystal_turtleAnimation.ExtendHead_Shentou_crystal",
         "speed": 1.0,
-        "condition": {
-          "name": "CrystalHead"
-        },
+        "condition": "CrystalHead",
         "walking": false,
         "amplitude": 1.0
       }
@@ -94,31 +74,17 @@
       "falpha": 0.0
     },
     "creativeTabs": [
-      {
-        "value": "MISC"
-      }
+      "MISC"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Creature",
     "mobCreatureType": "WATER",
     "attackStrength": 3,
@@ -158,24 +124,12 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": ""
-    },
-    "hurtSound": {
-      "value": "entity.generic.hurt"
-    },
-    "deathSound": {
-      "value": "entity.generic.death"
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "",
+    "hurtSound": "entity.generic.hurt",
+    "deathSound": "entity.generic.death",
+    "stepSound": "",
+    "raidCelebrationSound": "",
     "entityDataEntries": [
       {
         "min": -2147483648,
@@ -207,29 +161,19 @@
         "value": false
       }
     ],
-    "whenMobDies": {
-      "name": "TurtleDamage"
-    },
-    "whenMobIsHurt": {
-      "name": "TurtleDamage"
-    },
-    "onMobTickUpdate": {
-      "name": "CrystalTurtleTick"
-    },
+    "whenMobDies": "TurtleDamage",
+    "whenMobIsHurt": "TurtleDamage",
+    "onMobTickUpdate": "CrystalTurtleTick",
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_parent\"><field name=\"speed\">0.8</field><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field><next><block type=\"look_around\"><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field><next><block type=\"try_and_find_water\"><field name=\"condition\">UnShrinkingShell,UnShrinkingShell</field></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": true,
     "tameable": false,
     "breedTriggerItems": [
-      {
-        "value": "CUSTOM:PgcPg"
-      }
+      "CUSTOM:PgcPg"
     ],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
@@ -240,15 +184,9 @@
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
-      {
-        "value": "stone_beach"
-      },
-      {
-        "value": "beaches"
-      },
-      {
-        "value": "cold_beach"
-      }
+      "stone_beach",
+      "beaches",
+      "cold_beach"
     ],
     "spawnInDungeons": false,
     "raidSpawnsCount": [

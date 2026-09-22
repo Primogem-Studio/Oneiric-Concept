@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,9 +25,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "Bait"
-          },
+          "onSlotChanged": "Bait",
           "x": 74,
           "y": 108,
           "locked": false

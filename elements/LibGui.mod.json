@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,12 +13,8 @@
       {
         "type": "entitymodel",
         "data": {
-          "entityModel": {
-            "name": "GetPlayerEntity"
-          },
-          "displayCondition": {
-            "name": "IsUUIDTrue"
-          },
+          "entityModel": "GetPlayerEntity",
+          "displayCondition": "IsUUIDTrue",
           "scale": 42,
           "rotationX": 0,
           "followMouseMovement": false,
@@ -39,6 +35,7 @@
             "value": -13408513,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 137,
           "y": 152,
           "locked": false
@@ -50,9 +47,7 @@
           "name": "button_empty",
           "text": "<",
           "isUndecorated": false,
-          "onClick": {
-            "name": "MinusUIDLIstorder"
-          },
+          "onClick": "MinusUIDLIstorder",
           "width": 30,
           "height": 20,
           "x": 139,
@@ -66,9 +61,7 @@
           "name": "button_empty1",
           "text": ">",
           "isUndecorated": false,
-          "onClick": {
-            "name": "PlusUIDListorder"
-          },
+          "onClick": "PlusUIDListorder",
           "width": 30,
           "height": 20,
           "x": 197,
@@ -82,9 +75,7 @@
           "name": "button_getuid",
           "text": "GetUID",
           "isUndecorated": false,
-          "onClick": {
-            "name": "LibQuery"
-          },
+          "onClick": "LibQuery",
           "width": 56,
           "height": 20,
           "x": 232,
@@ -103,9 +94,8 @@
             "value": -52480,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsUUIDFalse"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsUUIDFalse",
           "x": 190,
           "y": 108,
           "locked": false
@@ -122,9 +112,8 @@
             "value": -26368,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsUUIDFalse"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsUUIDFalse",
           "x": 190,
           "y": 89,
           "locked": false
@@ -138,9 +127,7 @@
             "fixedValue": "",
             "name": "Getplayerposition"
           },
-          "displayCondition": {
-            "name": "IsUUIDTrue"
-          },
+          "displayCondition": "IsUUIDTrue",
           "width": 24,
           "height": 24,
           "x": 189,
@@ -156,9 +143,7 @@
             "fixedValue": "",
             "name": "Getplayerposition"
           },
-          "displayCondition": {
-            "name": "IsUUIDTrue"
-          },
+          "displayCondition": "IsUUIDTrue",
           "width": 24,
           "height": 24,
           "x": 213,
@@ -174,9 +159,7 @@
             "fixedValue": "",
             "name": "Getplayerposition"
           },
-          "displayCondition": {
-            "name": "IsUUIDTrue"
-          },
+          "displayCondition": "IsUUIDTrue",
           "width": 24,
           "height": 24,
           "x": 189,
@@ -192,9 +175,7 @@
             "fixedValue": "",
             "name": "Getplayerposition"
           },
-          "displayCondition": {
-            "name": "IsUUIDTrue"
-          },
+          "displayCondition": "IsUUIDTrue",
           "width": 24,
           "height": 24,
           "x": 213,
@@ -210,9 +191,7 @@
             "fixedValue": "",
             "name": "Getplayerposition"
           },
-          "displayCondition": {
-            "name": "IsUUIDTrue"
-          },
+          "displayCondition": "IsUUIDTrue",
           "width": 24,
           "height": 24,
           "x": 189,
@@ -228,9 +207,7 @@
             "fixedValue": "",
             "name": "Getplayerposition"
           },
-          "displayCondition": {
-            "name": "IsUUIDTrue"
-          },
+          "displayCondition": "IsUUIDTrue",
           "width": 24,
           "height": 24,
           "x": 213,
@@ -239,9 +216,7 @@
         }
       }
     ],
-    "onOpen": {
-      "name": "ResetListorder"
-    },
+    "onOpen": "ResetListorder",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

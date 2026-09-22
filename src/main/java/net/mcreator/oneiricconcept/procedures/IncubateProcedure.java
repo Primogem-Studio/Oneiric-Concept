@@ -26,8 +26,8 @@ public class IncubateProcedure {
 		ItemStack egg = ItemStack.EMPTY;
 		boolean stop = false;
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "mode") == 1) {
-			for (int index0 = 0; index0 < 16; index0++) {
-				egg = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy());
+			for (int _i1 = 0; _i1 < 16; _i1++) {
+				egg = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy()).copy();
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": "CUSTOM:Milk"
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.SUGAR"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.SUGAR",
+      "",
+      "Items.SUGAR",
+      "CUSTOM:Milk",
+      "Items.SUGAR",
+      "",
+      "Items.SUGAR",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RedBeanSoupFillingYuanXiao"
-    },
+    "recipeReturnStack": "CUSTOM:RedBeanSoupFillingYuanXiao",
     "name": "red_bean_soup_filling_yuan_xiao_1",
     "namespace": "mod"
   }

@@ -38,7 +38,7 @@ public class ParticleSweepProcedure {
 					_level.sendParticles(ParticleTypes.ANGRY_VILLAGER, x, y, z, 300, (rangge / 4), (rangge / 4), (rangge / 4), 0.1);
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.CRIMSON_SPORE, x, y, z, 1600, (rangge / 4), (rangge / 4), (rangge / 4), 0.3);
-				for (int index0 = 0; index0 < 30; index0++) {
+				for (int _i1 = 0; _i1 < 30; _i1++) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.player.attack.sweep")), SoundSource.PLAYERS, 20, 2);
@@ -47,7 +47,7 @@ public class ParticleSweepProcedure {
 						}
 					}
 				}
-				for (int index1 = 0; index1 < 5; index1++) {
+				for (int _i1 = 0; _i1 < 5; _i1++) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.grindstone.use")), SoundSource.PLAYERS, 10, 2);

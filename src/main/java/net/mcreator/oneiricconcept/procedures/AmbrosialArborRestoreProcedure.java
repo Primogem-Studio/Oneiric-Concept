@@ -37,7 +37,7 @@ public class AmbrosialArborRestoreProcedure {
 		if (entity == null)
 			return;
 		ItemStack axe = ItemStack.EMPTY;
-		axe = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		axe = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (!(getEntityGameType(entity) == GameType.CREATIVE) && !axe.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:ignisaureliae"))) && blockstate.is(BlockTags.create(ResourceLocation.parse("c:ambrosialarbor")))) {
 			if (Math.random() < 0.75) {
 				world.setBlock(BlockPos.containing(x, y, z), blockstate, 3);

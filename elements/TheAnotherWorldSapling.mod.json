@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -15,18 +15,12 @@
     "suspiciousStewDuration": 1600,
     "secondaryTreeChance": 0.05,
     "trees": [
-      {
-        "value": "CUSTOM:TheAnotherWorldTree"
-      },
+      "CUSTOM:TheAnotherWorldTree",
       null
     ],
     "flowerTrees": [
-      {
-        "value": "CUSTOM:TheAnotherWorldTree"
-      },
-      {
-        "value": "CUSTOM:Taw2"
-      }
+      "CUSTOM:TheAnotherWorldTree",
+      "CUSTOM:Taw2"
     ],
     "megaTrees": [
       null,
@@ -52,9 +46,7 @@
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
+      "CUSTOM:OneiricConcept"
     ],
     "hardness": 0.0,
     "resistance": 0.0,
@@ -66,29 +58,15 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
+    "soundOnStep": "PLANT",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "PLANT"
-    },
-    "breakSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
+    "breakSound": "",
+    "stepSound": "",
+    "placeSound": "",
+    "hitSound": "",
+    "fallSound": "",
     "useLootTableForDrops": false,
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -97,9 +75,7 @@
     "hasTileEntity": false,
     "isReplaceable": false,
     "colorOnMap": "DIAMOND",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "ignitedByLava": false,
@@ -108,59 +84,27 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [
-      {
-        "value": "CUSTOM:NagadusEmeraldOre"
-      },
-      {
-        "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.DIRT#2"
-      },
-      {
-        "value": "Blocks.ROOTED_DIRT"
-      },
-      {
-        "value": "Blocks.GRASS"
-      },
-      {
-        "value": "Blocks.SAND#0"
-      },
-      {
-        "value": "Blocks.SAND#1"
-      },
-      {
-        "value": "Blocks.CLAY"
-      },
-      {
-        "value": "Blocks.MYCELIUM"
-      },
-      {
-        "value": "Blocks.SOUL_SAND"
-      },
-      {
-        "value": "Blocks.SOUL_SOIL"
-      },
-      {
-        "value": "Blocks.MOSS_BLOCK"
-      },
-      {
-        "value": "Blocks.GRAVEL"
-      }
+      "CUSTOM:NagadusEmeraldOre",
+      "Blocks.DIRT#0",
+      "Blocks.DIRT#2",
+      "Blocks.ROOTED_DIRT",
+      "Blocks.GRASS",
+      "Blocks.SAND#0",
+      "Blocks.SAND#1",
+      "Blocks.CLAY",
+      "Blocks.MYCELIUM",
+      "Blocks.SOUL_SAND",
+      "Blocks.SOUL_SOIL",
+      "Blocks.MOSS_BLOCK",
+      "Blocks.GRAVEL"
     ],
     "isBonemealable": true,
-    "bonemealSuccessCondition": {
-      "name": "BananaMushroombone"
-    },
-    "onBonemealSuccess": {
-      "name": "XSaplingNagadus"
-    },
+    "bonemealSuccessCondition": "BananaMushroombone",
+    "onBonemealSuccess": "XSaplingNagadus",
     "frequencyOnChunks": 1,
     "generateFeature": false,
     "restrictionBiomes": [
-      {
-        "value": "#minecraft:is_forest"
-      }
+      "#minecraft:is_forest"
     ],
     "generationType": "Flower",
     "patchSize": 1,

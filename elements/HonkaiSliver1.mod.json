@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Items.AMETHYST_SHARD"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      },
-      {
-        "value": "Blocks.REDSTONE_BLOCK"
-      }
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Items.AMETHYST_SHARD",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.REDSTONE_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HonkaiSliver"
-    },
+    "recipeReturnStack": "CUSTOM:HonkaiSliver",
     "name": "honkai_sliver_1",
     "namespace": "mod"
   }

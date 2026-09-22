@@ -23,6 +23,7 @@ public class VastSeaGUIScreen extends AbstractContainerScreen<VastSeaGUIMenu> im
 	private boolean menuStateUpdateActive = false;
 	private Checkbox dolphin;
 	private Checkbox fire;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("oneiricconcept:textures/screens/vast_sea_gui.png");
 	private ExtendedSlider conduit;
 	private ExtendedSlider energy;
 
@@ -58,8 +59,6 @@ public class VastSeaGUIScreen extends AbstractContainerScreen<VastSeaGUIMenu> im
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/vast_sea_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
@@ -71,7 +70,7 @@ public class VastSeaGUIScreen extends AbstractContainerScreen<VastSeaGUIMenu> im
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 

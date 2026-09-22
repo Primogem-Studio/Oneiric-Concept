@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smoking",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smokingInputStack": {
-      "value": "CUSTOM:Sausage"
-    },
-    "smokingReturnStack": {
-      "value": "CUSTOM:SmokeSausage"
-    },
+    "smokingInputStack": "CUSTOM:Sausage",
+    "smokingReturnStack": "CUSTOM:SmokeSausage",
     "name": "smoke_sausage_recipes_1",
     "namespace": "mod"
   }

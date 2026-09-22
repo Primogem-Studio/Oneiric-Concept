@@ -33,7 +33,7 @@ public class EruditionExpProcedure {
 			N_number = 42;
 			R_radius = 3;
 			D_delta_theta = (2 * Math.PI) / N_number;
-			for (int index0 = 0; index0 < (int) N_number; index0++) {
+			for (int _i1 = 0; _i1 < (int) N_number; _i1++) {
 				T_theta = C_cycle * D_delta_theta;
 				C_cycle = C_cycle + 1;
 				ExporbProcedure.execute(world, x + R_radius * Math.sin(T_theta), y, z + R_radius * Math.cos(T_theta), Math.ceil(exp / 42));

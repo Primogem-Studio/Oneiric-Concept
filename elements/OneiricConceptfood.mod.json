@@ -1,11 +1,9 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tab",
   "definition": {
     "name": "OneiricConcept:Food",
-    "icon": {
-      "value": "CUSTOM:BelobogSausage"
-    },
+    "icon": "CUSTOM:BelobogSausage",
     "showSearch": false
   }
 }

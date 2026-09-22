@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:OyStuffing"
-    },
-    "blastingReturnStack": {
-      "value": "Items.REDSTONE"
-    },
+    "blastingInputStack": "CUSTOM:OyStuffing",
+    "blastingReturnStack": "Items.REDSTONE",
     "name": "redstone_1",
     "namespace": "mod"
   }

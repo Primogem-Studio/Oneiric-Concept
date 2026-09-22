@@ -46,10 +46,10 @@ public class BlockBreakProcedure {
 		ItemStack item = ItemStack.EMPTY;
 		ItemStack tool = ItemStack.EMPTY;
 		double enchantlevel = 0;
-		tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		tool = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		enchantlevel = Math.max(1, tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)));
 		if (tool.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:ignisaureliae")))) {
-			item = (new ItemStack(blockstate.getBlock()));
+			item = (new ItemStack(blockstate.getBlock())).copy();
 			if (world instanceof Level _level5 && _level5.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _level5).isPresent()) {
 				if (event instanceof ICancellableEvent _cancellable) {
 					_cancellable.setCanceled(true);
@@ -59,19 +59,19 @@ public class BlockBreakProcedure {
 					item = (world instanceof Level _lvlSmeltResult
 							? _lvlSmeltResult.getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SingleRecipeInput(item), _lvlSmeltResult).map(recipe -> recipe.value().getResultItem(_lvlSmeltResult.registryAccess()).copy())
 									.orElse(ItemStack.EMPTY)
-							: ItemStack.EMPTY);
+							: ItemStack.EMPTY).copy();
 				} else {
-					item = new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get());
+					item = new ItemStack(OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()).copy();
 				}
 			} else {
-				item = new ItemStack(Blocks.AIR);
+				item = new ItemStack(Blocks.AIR).copy();
 			}
 		} else if (RandomProcedure.execute(world, Math.min(1, 0.1 * enchantlevel)) && !(tool.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.SILK_TOUCH)) != 0)) {
 			if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:ice_blocks")))) {
-				item = new ItemStack(OneiricconceptModItems.SOLID_WATER.get());
+				item = new ItemStack(OneiricconceptModItems.SOLID_WATER.get()).copy();
 				item.grow((int) RandomintProcedure.execute(world, 3, Math.min(3, 0 + enchantlevel)));
 			} else if (blockstate.is(BlockTags.create(ResourceLocation.parse("c:bookshelves")))) {
-				item = new ItemStack(OneiricconceptModItems.TREE_BARKOF_ERUDITION.get());
+				item = new ItemStack(OneiricconceptModItems.TREE_BARKOF_ERUDITION.get()).copy();
 				item.grow((int) RandomintProcedure.execute(world, 2 + enchantlevel, 0));
 			}
 		}

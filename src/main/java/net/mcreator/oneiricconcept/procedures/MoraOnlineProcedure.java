@@ -15,7 +15,7 @@ public class MoraOnlineProcedure {
 		ItemStack Litm = ItemStack.EMPTY;
 		String lvl = "";
 		String primogem = "";
-		Litm = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY);
+		Litm = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		lvl = Litm.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("level");
 		primogem = "primogemcraft:";
 		return (lvl).equals(primogem + "mmola_01") || (lvl).equals(primogem + "jinzhimola")

@@ -1,9 +1,0 @@
-{
-  "parent": "oneiricconcept:custom/pgc_pg",
-  "textures": {
-    "all": "oneiricconcept:block/pgc_pg",
-    "particle": "oneiricconcept:block/pgc_pg",
-    "0": "oneiricconcept:block/pgc_pg"
-  },
-  "render_type": "solid"
-}

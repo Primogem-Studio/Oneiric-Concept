@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.neoforged.neoforge.common.util.DeferredSoundType;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
@@ -38,7 +36,7 @@ public class MmMushroomBlock extends DoublePlantBlock {
 				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:mmm")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:mmm")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.grass.place")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.grass.hit")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("oneiricconcept:mmm"))))
-				.instabreak().lightLevel(s -> 3).noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+				.instabreak().lightLevel(state -> 3).noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

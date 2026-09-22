@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "TAG:c:glass_panes"
-      },
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "TAG:c:glass_panes"
-      },
-      {
-        "value": "Blocks.EMERALD_BLOCK"
-      },
-      {
-        "value": "TAG:c:glass_panes"
-      },
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      },
-      {
-        "value": "TAG:c:glass_panes"
-      },
-      {
-        "value": "CUSTOM:CondensedMemoriaPiece"
-      }
+      "CUSTOM:CondensedMemoriaPiece",
+      "TAG:c:glass_panes",
+      "CUSTOM:CondensedMemoriaPiece",
+      "TAG:c:glass_panes",
+      "Blocks.EMERALD_BLOCK",
+      "TAG:c:glass_panes",
+      "CUSTOM:CondensedMemoriaPiece",
+      "TAG:c:glass_panes",
+      "CUSTOM:CondensedMemoriaPiece"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MemoriaLoot"
-    },
+    "recipeReturnStack": "CUSTOM:MemoriaLoot",
     "name": "memoria_loot_1",
     "namespace": "mod"
   }

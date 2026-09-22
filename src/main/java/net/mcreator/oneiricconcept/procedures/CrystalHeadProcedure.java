@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import org.checkerframework.checker.units.qual.Time;
-
 import net.minecraft.world.entity.Entity;
 
 public class CrystalHeadProcedure {

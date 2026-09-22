@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Cullinan"
-            },
+            "item": "CUSTOM:Cullinan",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.EGG"
-            },
+            "item": "Items.EGG",
             "weight": 999,
             "minCount": 0,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PgcPg"
-            },
+            "item": "CUSTOM:PgcPg",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:OneiricShard"
-            },
+            "item": "CUSTOM:OneiricShard",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -69,9 +61,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PhlogistonCrystal"
-            },
+            "item": "CUSTOM:PhlogistonCrystal",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -83,9 +73,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Primogemfruit"
-            },
+            "item": "CUSTOM:Primogemfruit",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -97,9 +85,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.EMERALD"
-            },
+            "item": "Items.EMERALD",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -111,9 +97,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.NETHERITE_SCRAP"
-            },
+            "item": "Items.NETHERITE_SCRAP",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -125,9 +109,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.NETHER_STAR"
-            },
+            "item": "Items.NETHER_STAR",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -139,9 +121,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.HEART_OF_THE_SEA"
-            },
+            "item": "Items.HEART_OF_THE_SEA",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -153,9 +133,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.TOTEM_OF_UNDYING"
-            },
+            "item": "Items.TOTEM_OF_UNDYING",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -167,9 +145,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLDEN_APPLE#1"
-            },
+            "item": "Items.GOLDEN_APPLE#1",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -181,9 +157,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.DIAMOND"
-            },
+            "item": "Items.DIAMOND",
             "weight": 1,
             "minCount": 1,
             "maxCount": 7,
@@ -195,9 +169,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Theanotherworldmooningot"
-            },
+            "item": "CUSTOM:Theanotherworldmooningot",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -218,9 +190,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.EGG"
-            },
+            "item": "Items.EGG",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -241,9 +211,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLD_NUGGET"
-            },
+            "item": "Items.GOLD_NUGGET",
             "weight": 4,
             "minCount": 1,
             "maxCount": 7,
@@ -255,9 +223,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.IRON_NUGGET"
-            },
+            "item": "Items.IRON_NUGGET",
             "weight": 4,
             "minCount": 1,
             "maxCount": 7,
@@ -269,9 +235,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.WHEAT_SEEDS"
-            },
+            "item": "Items.WHEAT_SEEDS",
             "weight": 6,
             "minCount": 1,
             "maxCount": 16,
@@ -283,9 +247,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GLASS_BOTTLE"
-            },
+            "item": "Items.GLASS_BOTTLE",
             "weight": 2,
             "minCount": 1,
             "maxCount": 3,
@@ -297,9 +259,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.FEATHER"
-            },
+            "item": "Items.FEATHER",
             "weight": 6,
             "minCount": 1,
             "maxCount": 3,
@@ -311,9 +271,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.STICK"
-            },
+            "item": "Items.STICK",
             "weight": 6,
             "minCount": 1,
             "maxCount": 7,
@@ -325,9 +283,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MemoryBubble"
-            },
+            "item": "CUSTOM:MemoryBubble",
             "weight": 4,
             "minCount": 1,
             "maxCount": 7,
@@ -339,9 +295,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:MoltenMetal"
-            },
+            "item": "CUSTOM:MoltenMetal",
             "weight": 2,
             "minCount": 1,
             "maxCount": 7,
@@ -353,9 +307,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TreeBarkofErudition"
-            },
+            "item": "CUSTOM:TreeBarkofErudition",
             "weight": 2,
             "minCount": 1,
             "maxCount": 7,
@@ -367,9 +319,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:FreshSeedofDawn"
-            },
+            "item": "CUSTOM:FreshSeedofDawn",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

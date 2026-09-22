@@ -53,7 +53,7 @@ public class TankAddLvaTagProcedure {
 				}
 			} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu8 ? _menu8.getSlots().get(0).getItem() : ItemStack.EMPTY).getItem() == Blocks.MAGMA_BLOCK.asItem()
 					|| (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu10 ? _menu10.getSlots().get(0).getItem() : ItemStack.EMPTY).getItem() == Items.MAGMA_CREAM) {
-				for (int index0 = 0; index0 < getAmountInGUISlot(entity, 0) + 1; index0++) {
+				for (int _i1 = 0; _i1 < getAmountInGUISlot(entity, 0) + 1; _i1++) {
 					if (getFluidTankLevel(world, BlockPos.containing(x, y, z), 1, null) <= 9000 || 1 <= getAmountInGUISlot(entity, 1)) {
 						if (entity instanceof Player _player && _player.containerMenu instanceof OneiricconceptModMenus.MenuAccessor _menu) {
 							_menu.getSlots().get(0).remove(1);

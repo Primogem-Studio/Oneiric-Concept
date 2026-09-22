@@ -1,11 +1,9 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tab",
   "definition": {
     "name": "OneiricConcept",
-    "icon": {
-      "value": "CUSTOM:OneiricShard"
-    },
+    "icon": "CUSTOM:OneiricShard",
     "showSearch": false
   }
 }

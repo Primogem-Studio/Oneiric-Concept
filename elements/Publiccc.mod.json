@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:PublicClamor"
-            },
+            "item": "CUSTOM:PublicClamor",
             "weight": 9990,
             "minCount": 1,
             "maxCount": 1,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLD_NUGGET"
-            },
+            "item": "Items.GOLD_NUGGET",
             "weight": 4,
             "minCount": 1,
             "maxCount": 1,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ResurrectionPellet"
-            },
+            "item": "CUSTOM:ResurrectionPellet",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -55,9 +49,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.GOLD_INGOT"
-            },
+            "item": "Items.GOLD_INGOT",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

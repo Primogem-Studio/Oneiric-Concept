@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Newmo1"
-      },
-      {
-        "value": "CUSTOM:Redmo1"
-      },
-      {
-        "value": "CUSTOM:Fulmo1"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:Newmo1",
+      "CUSTOM:Redmo1",
+      "CUSTOM:Fulmo1",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Theanotherworldmooningot"
-    },
+    "recipeReturnStack": "CUSTOM:Theanotherworldmooningot",
     "name": "taw_moon_ingot_1",
     "namespace": "mod"
   }

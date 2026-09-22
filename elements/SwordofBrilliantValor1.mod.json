@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:XuanyuanSword"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:OyStuffing"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:DreamdiveCan"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:SwordOfBrilliantValor"
-    },
+    "smithingInputStack": "CUSTOM:XuanyuanSword",
+    "smithingInputAdditionStack": "CUSTOM:OyStuffing",
+    "smithingInputTemplateStack": "CUSTOM:DreamdiveCan",
+    "smithingReturnStack": "CUSTOM:SwordOfBrilliantValor",
     "name": "swordof_brilliant_valor_1",
     "namespace": "mod"
   }

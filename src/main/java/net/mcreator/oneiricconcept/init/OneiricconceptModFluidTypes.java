@@ -13,5 +13,5 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 public class OneiricconceptModFluidTypes {
 	public static final DeferredRegister<FluidType> REGISTRY = DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, OneiricconceptMod.MODID);
-	public static final DeferredHolder<FluidType, FluidType> MEMORIA_TYPE = REGISTRY.register("memoria", () -> new MemoriaFluidType());
+	public static final DeferredHolder<FluidType, FluidType> MEMORIA_TYPE = REGISTRY.register("memoria", MemoriaFluidType::new);
 }

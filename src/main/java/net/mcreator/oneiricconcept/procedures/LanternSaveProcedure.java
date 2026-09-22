@@ -49,7 +49,7 @@ public class LanternSaveProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
-		for (int index0 = 0; index0 < 3; index0++) {
+		for (int _i1 = 0; _i1 < 3; _i1++) {
 			str = "summon minecraft:text_display ~ ~ ~ {text: '{\"text\":\"" + "" + T3 + "\",\"bold\":true}',background:-2130774334,line_width:600,billboard:\"center\"}";
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(

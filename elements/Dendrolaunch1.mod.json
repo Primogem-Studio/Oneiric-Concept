@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Dendr1"
-      },
-      {
-        "value": "CUSTOM:DendroBoomyam"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DendroBoomyam"
-      },
-      {
-        "value": "CUSTOM:Dendrosealingwax"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborWood"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborWood"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborWood"
-      }
+      "CUSTOM:Dendr1",
+      "CUSTOM:DendroBoomyam",
+      "",
+      "CUSTOM:DendroBoomyam",
+      "CUSTOM:Dendrosealingwax",
+      "CUSTOM:AmbrosialArborWood",
+      "",
+      "CUSTOM:AmbrosialArborWood",
+      "CUSTOM:AmbrosialArborWood"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DendroLaunch"
-    },
+    "recipeReturnStack": "CUSTOM:DendroLaunch",
     "name": "dendrolaunch_1",
     "namespace": "mod"
   }

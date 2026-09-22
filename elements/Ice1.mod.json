@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:SolidWater"
-      },
-      {
-        "value": "CUSTOM:SolidWater"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SolidWater"
-      },
-      {
-        "value": "CUSTOM:SolidWater"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:SolidWater",
+      "CUSTOM:SolidWater",
+      "",
+      "CUSTOM:SolidWater",
+      "CUSTOM:SolidWater",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.ICE"
-    },
+    "recipeReturnStack": "Blocks.ICE",
     "name": "ice_1",
     "namespace": "mod"
   }

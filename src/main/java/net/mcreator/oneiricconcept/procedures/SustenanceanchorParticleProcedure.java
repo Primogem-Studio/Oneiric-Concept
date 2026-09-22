@@ -33,14 +33,14 @@ public class SustenanceanchorParticleProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
-			for (int index0 = 0; index0 < 10; index0++) {
+			for (int _i1 = 0; _i1 < 10; _i1++) {
 				a = a + 2;
 				OneiricconceptMod.queueServerWork((int) a, () -> {
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.45), (z + 0.5), 1, 0.05, 0.05, 0.05, 0.1);
 				});
 			}
-			for (int index1 = 0; index1 < 2; index1++) {
+			for (int _i1 = 0; _i1 < 2; _i1++) {
 				b = b + 10;
 				OneiricconceptMod.queueServerWork((int) b, () -> {
 					if (world instanceof ServerLevel _level)

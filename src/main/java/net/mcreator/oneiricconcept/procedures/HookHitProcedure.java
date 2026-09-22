@@ -25,9 +25,12 @@ public class HookHitProcedure {
 			if (Damageent instanceof ItemEntity) {
 				{
 					Entity _ent = Damageent;
-					_ent.teleportTo((entity.getX()), (entity.getY()), (entity.getZ()));
+					double _tx = (entity.getX());
+					double _ty = (entity.getY());
+					double _tz = (entity.getZ());
+					_ent.teleportTo(_tx, _ty, _tz);
 					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((entity.getX()), (entity.getY()), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
+						_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 				}
 				if (!HookEntity.level().isClientSide())
 					HookEntity.discard();

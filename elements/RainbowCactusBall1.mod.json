@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Ractus"
-      },
-      {
-        "value": "CUSTOM:Gactus"
-      },
-      {
-        "value": "CUSTOM:Bactus"
-      },
-      {
-        "value": "CUSTOM:CCactus"
-      },
-      {
-        "value": "CUSTOM:Mactus"
-      },
-      {
-        "value": "CUSTOM:Yactus"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Blocks.FLOWER_POT"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:Ractus",
+      "CUSTOM:Gactus",
+      "CUSTOM:Bactus",
+      "CUSTOM:CCactus",
+      "CUSTOM:Mactus",
+      "CUSTOM:Yactus",
+      "",
+      "Blocks.FLOWER_POT",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RainbowCactusBall"
-    },
+    "recipeReturnStack": "CUSTOM:RainbowCactusBall",
     "name": "rainbow_cactus_ball_1",
     "namespace": "mod"
   }

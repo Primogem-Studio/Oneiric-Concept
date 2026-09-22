@@ -19,9 +19,9 @@ public class BlockClearProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double sx = 0;
 		double sz = 0;
-		for (int index0 = 0; index0 < 16; index0++) {
+		for (int _i1 = 0; _i1 < 16; _i1++) {
 			sz = 0;
-			for (int index1 = 0; index1 < 16; index1++) {
+			for (int _i2 = 0; _i2 < 16; _i2++) {
 				if (-1 != world.getBlockState(BlockPos.containing(x + sx, y, z + sz)).getDestroySpeed(world, BlockPos.containing(x + sx, y, z + sz)) && !((world.getBlockState(BlockPos.containing(x + sx, y, z + sz))).getBlock() == Blocks.AIR)) {
 					world.setBlock(BlockPos.containing(x + sx, y, z + sz), Blocks.AIR.defaultBlockState(), 3);
 					if (world instanceof ServerLevel _level)

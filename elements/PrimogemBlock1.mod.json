@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      },
-      {
-        "value": "CUSTOM:PgcPg"
-      }
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg",
+      "CUSTOM:PgcPg"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PrimogemsSausage"
-    },
+    "recipeReturnStack": "CUSTOM:PrimogemsSausage",
     "name": "primogem_block_1",
     "namespace": "mod"
   }

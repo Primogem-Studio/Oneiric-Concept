@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "ATK Buff",
@@ -8,9 +8,7 @@
       "value": -13369345,
       "falpha": 0.0
     },
-    "onAddedSound": {
-      "value": ""
-    },
+    "onAddedSound": "",
     "isInstant": false,
     "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
@@ -18,9 +16,7 @@
     "isCuredbyHoney": false,
     "modifiers": [
       {
-        "attribute": {
-          "value": "ATTACK_DAMAGE"
-        },
+        "attribute": "ATTACK_DAMAGE",
         "amount": 0.01,
         "operation": "ADD_MULTIPLIED_BASE"
       }

@@ -46,7 +46,7 @@ public class WeaponclickProcedure {
 			}
 			DBtagnu = IsLeft ? 0 : 1;
 			DBtagname = "textures";
-			for (int index0 = 0; index0 < 2; index0++) {
+			for (int _i1 = 0; _i1 < 2; _i1++) {
 				testext = "\n" + testext + "\u5C06\u7269\u54C1\u6807\u7B7E\u00A7e" + DBtagname + "\u00A7r\u8BBE\u7F6E\u4E3A\u00A79" + DBtagnu + "\u00A7r";
 				{
 					final String _tagName = DBtagname;
@@ -56,10 +56,10 @@ public class WeaponclickProcedure {
 				DBtagnu = world.dayTime();
 				DBtagname = IsLeft ? "time_L" : "time_R";
 			}
-			for (int index1 = 0; index1 < (int) (2 + Refinement); index1++) {
+			for (int _i1 = 0; _i1 < (int) (2 + Refinement); _i1++) {
 				num = 160 + 20 * index1;
 				speed = 3 * index1;
-				for (int index2 = 0; index2 < (int) num; index2++) {
+				for (int _i2 = 0; _i2 < (int) num; _i2++) {
 					angle = (2 * Math.PI * index2) / num;
 					world.addParticle(ParticleTypes.ENCHANT, x, (y + entity.getBbHeight() * 0.5), z, (speed * Math.cos(angle)), 0, (speed * Math.sin(angle)));
 				}

@@ -12,7 +12,7 @@ public class TankGetphlogistonProcedure {
 		double nulav = 0;
 		double colornu = 0;
 		nulav = Math.floor(getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lavasnu") / 10);
-		for (int index0 = 0; index0 < (int) nulav; index0++) {
+		for (int _i1 = 0; _i1 < (int) nulav; _i1++) {
 			colornu = colornu + 1;
 			if (nulav - 0 <= colornu) {
 				timecolor = "\u00A7a|";
@@ -28,7 +28,7 @@ public class TankGetphlogistonProcedure {
 			txtstr = txtstr + "" + timecolor;
 		}
 		txtstr = txtstr + "\u00A78";
-		for (int index1 = 0; index1 < (int) (100 - nulav); index1++) {
+		for (int _i1 = 0; _i1 < (int) (100 - nulav); _i1++) {
 			txtstr = txtstr + "|";
 		}
 		txtstr = Component.translatable("item.oneiricconcept.phlogiston").getString() + "\uFF1A" + txtstr;

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -12,25 +12,23 @@
     "name": "Human-Height Auspicious Crops",
     "rarity": "UNCOMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
+      "CUSTOM:OneiricConcept"
     ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
+    "repairItems": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
         "The scholars who planted them hoped that people would never have to experience the feeling of hunger again."
@@ -41,34 +39,30 @@
       "fixedValue": false,
       "name": "AuspiciouscropsEnchantLight"
     },
+    "openGUIOnRightClick": {
+      "fixedValue": false
+    },
     "inventorySize": 9,
     "inventoryStackSize": 99,
-    "onRightClickedInAir": {
-      "name": "AuspiciouscropsStart"
-    },
+    "onRightClickedInAir": "AuspiciouscropsStart",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:XuanyuanSwordQ"
-    },
+    "projectile": "CUSTOM:XuanyuanSwordQ",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,
-    "providedBannerPatterns": []
+    "providedBannerPatterns": [],
+    "attributeModifiers": []
   }
 }

@@ -9,10 +9,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 
 import java.util.Comparator;
 
@@ -27,17 +24,13 @@ public class WeatherStatusUpdateProcedure {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(25 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					Entity _ent2 = entityiterator;
-					if (!_ent2.level().isClientSide() && _ent2.getServer() != null)
-						_ent2.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent2.position(), _ent2.getRotationVector(), _ent2.level() instanceof ServerLevel ? (ServerLevel) _ent2.level() : null, 2,
-								_ent2.getName().getString(), _ent2.getDisplayName(), _ent2.level().getServer(), _ent2), "effect give @s primogemcraft:yiji 0 10");
 				}
 			}
 			ExplosionIgnitesProcedure.execute(world, x, y, z, 0, 20);
 		} else if (world.getLevelData().isRaining()) {
-			wethermode = (world.getLevelData() instanceof ServerLevelData _levelData5 ? _levelData5.getRainTime() : 0) < 3600 ? 0 : 1;
-		} else if (world instanceof Level _lvl6 && _lvl6.isDay()) {
-			wethermode = (world.getLevelData() instanceof ServerLevelData _levelData7 ? _levelData7.getClearWeatherTime() : 0) < 3600 ? 1 : 0;
+			wethermode = (world.getLevelData() instanceof ServerLevelData _levelData4 ? _levelData4.getRainTime() : 0) < 3600 ? 0 : 1;
+		} else if (world instanceof Level _lvl5 && _lvl5.isDay()) {
+			wethermode = (world.getLevelData() instanceof ServerLevelData _levelData6 ? _levelData6.getClearWeatherTime() : 0) < 3600 ? 1 : 0;
 		}
 		StormGlassParticleProcedure.execute(world, x, y, z, 20);
 		{

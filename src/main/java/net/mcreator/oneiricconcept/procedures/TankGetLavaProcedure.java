@@ -14,11 +14,11 @@ public class TankGetLavaProcedure {
 		String txtstr = "";
 		double nulav = 0;
 		nulav = Math.floor(getFluidTankLevel(world, BlockPos.containing(x, y, z), 1, null) / 100);
-		for (int index0 = 0; index0 < (int) nulav; index0++) {
+		for (int _i1 = 0; _i1 < (int) nulav; _i1++) {
 			txtstr = txtstr + "|";
 		}
 		txtstr = txtstr + "\u00A78";
-		for (int index1 = 0; index1 < (int) (100 - nulav); index1++) {
+		for (int _i1 = 0; _i1 < (int) (100 - nulav); _i1++) {
 			txtstr = txtstr + "|";
 		}
 		txtstr = Component.translatable("block.minecraft.lava").getString() + "\uFF1A" + txtstr;

@@ -21,10 +21,10 @@ public class RarainbowDyeProcedure {
 			return;
 		ItemStack handItem = ItemStack.EMPTY;
 		ItemStack dyes = ItemStack.EMPTY;
-		handItem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		handItem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (handItem.is(ItemTags.create(ResourceLocation.parse("c:fertilizers")))) {
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink((int) (1 == handItem.getMaxStackSize() || handItem.getItem() == OneiricconceptModItems.HILTWOOD_FROM_THE_ARBOR.get() ? 0 : 1));
-			dyes = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:dyes"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()));
+			dyes = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:dyes"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
 			dyes.setCount(Mth.nextInt(RandomSource.create(), 1, 10));
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.9), (z + 0.5), dyes);

@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/ambrosialarborleaves",
-    "particle": "oneiricconcept:block/ambrosialarborleaves"
-  }
-}

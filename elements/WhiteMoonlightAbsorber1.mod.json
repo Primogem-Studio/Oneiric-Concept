@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "Blocks.DAYLIGHT_DETECTOR"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "CUSTOM:Testtool"
-      },
-      {
-        "value": "Blocks.AMETHYST_BLOCK"
-      },
-      {
-        "value": "Blocks.PURPUR_BLOCK"
-      },
-      {
-        "value": "Blocks.PURPUR_BLOCK"
-      },
-      {
-        "value": "Blocks.PURPUR_BLOCK"
-      }
+      "Blocks.AMETHYST_BLOCK",
+      "Blocks.DAYLIGHT_DETECTOR",
+      "Blocks.AMETHYST_BLOCK",
+      "Blocks.AMETHYST_BLOCK",
+      "CUSTOM:Testtool",
+      "Blocks.AMETHYST_BLOCK",
+      "Blocks.PURPUR_BLOCK",
+      "Blocks.PURPUR_BLOCK",
+      "Blocks.PURPUR_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WhiteMoonlightAbsorber"
-    },
+    "recipeReturnStack": "CUSTOM:WhiteMoonlightAbsorber",
     "name": "white_moonlight_absorber_1",
     "namespace": "mod"
   }

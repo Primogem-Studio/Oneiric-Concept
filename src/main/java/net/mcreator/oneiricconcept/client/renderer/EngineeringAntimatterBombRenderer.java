@@ -17,6 +17,8 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class EngineeringAntimatterBombRenderer extends MobRenderer<EngineeringAntimatterBombEntity, Modelblock<EngineeringAntimatterBombEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("oneiricconcept:textures/entities/antimatter_bomb.png");
+
 	public EngineeringAntimatterBombRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modelblock<EngineeringAntimatterBombEntity>(context.bakeLayer(Modelblock.LAYER_LOCATION)), 1f);
 		this.addLayer(new RenderLayer<EngineeringAntimatterBombEntity, Modelblock<EngineeringAntimatterBombEntity>>(this) {
@@ -38,6 +40,6 @@ public class EngineeringAntimatterBombRenderer extends MobRenderer<EngineeringAn
 
 	@Override
 	public ResourceLocation getTextureLocation(EngineeringAntimatterBombEntity entity) {
-		return ResourceLocation.parse("oneiricconcept:textures/entities/antimatter_bomb.png");
+		return entityTexture;
 	}
 }

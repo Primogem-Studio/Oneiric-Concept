@@ -1,11 +1,9 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tab",
   "definition": {
     "name": "Oneiric Concept Decoration",
-    "icon": {
-      "value": "CUSTOM:Hertabond"
-    },
+    "icon": "CUSTOM:Hertabond",
     "showSearch": false
   }
 }

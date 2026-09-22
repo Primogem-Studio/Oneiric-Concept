@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:ConquerorSWill"
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:ConquerorSWill"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      }
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:ConquerorSWill",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:ConquerorSWill",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:UsurperSScheme"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Engineeringantimatterbombblock"
-    },
+    "recipeReturnStack": "CUSTOM:Engineeringantimatterbombblock",
     "name": "antimatterbomb_1",
     "namespace": "mod"
   }

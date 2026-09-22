@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:Phlogiston"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborLog"
-      }
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:Phlogiston",
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLog",
+      "CUSTOM:AmbrosialArborLog"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AmbrosialArborWood"
-    },
+    "recipeReturnStack": "CUSTOM:AmbrosialArborWood",
     "name": "ambrosial_arbor_wood_1",
     "namespace": "mod"
   }

@@ -32,7 +32,7 @@ public class StardustbaseballerHurtProcedure {
 		ItemStack hitItem = ItemStack.EMPTY;
 		ItemStack sworditem = ItemStack.EMPTY;
 		String Changetxt = "";
-		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		hitItem = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		Refinement = WuqijinglianupProcedure.execute(entity, hitItem);
 		if (hitItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("Charged_L")) {
 			{

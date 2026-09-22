@@ -33,7 +33,7 @@ public class GoldenAppleSeedProcedure {
 		if (entity == null)
 			return;
 		ItemStack itmstk = ItemStack.EMPTY;
-		itmstk = itemstack;
+		itmstk = itemstack.copy();
 		if (RandomProcedure.execute(world, 0.3) && Items.GOLDEN_APPLE == itmstk.getItem() || Items.ENCHANTED_GOLDEN_APPLE == itmstk.getItem()) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(OneiricconceptModBlocks.FRESH_SEEDOF_DAWN.get()).copy();

@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -28,7 +26,7 @@ public class TheAnotherWorldSaplingBlock extends SaplingBlock {
 			Optional.of(getFeatureKey("oneiricconcept:the_another_world_tree")), Optional.of(getFeatureKey("oneiricconcept:taw_2")));
 
 	public TheAnotherWorldSaplingBlock() {
-		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 3).noCollission().pushReaction(PushReaction.DESTROY));
+		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.DIAMOND).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(state -> 3).noCollission().pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

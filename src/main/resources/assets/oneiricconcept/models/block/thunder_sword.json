@@ -1,9 +1,0 @@
-{
-  "parent": "oneiricconcept:custom/thundersword",
-  "textures": {
-    "all": "oneiricconcept:block/thundersword",
-    "particle": "oneiricconcept:block/thundersword",
-    "0": "oneiricconcept:block/thundersword"
-  },
-  "render_type": "cutout"
-}

@@ -24,6 +24,8 @@ public class CrystalgeneratorGUIScreen extends AbstractContainerScreen<Crystalge
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("oneiricconcept:textures/screens/crystalgenerator_gui.png");
+	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("oneiricconcept:textures/screens/energybar.png");
 
 	public CrystalgeneratorGUIScreen(CrystalgeneratorGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -41,8 +43,6 @@ public class CrystalgeneratorGUIScreen extends AbstractContainerScreen<Crystalge
 		menuStateUpdateActive = true;
 		menuStateUpdateActive = false;
 	}
-
-	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/crystalgenerator_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -78,8 +78,8 @@ public class CrystalgeneratorGUIScreen extends AbstractContainerScreen<Crystalge
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/energybar.png"), this.leftPos + 160, this.topPos + 14, Mth.clamp((int) EnergybarProcedure.execute(world, x, y, z) * 8, 0, 128), 0, 8, 64, 136, 64);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(SPRITE_0, this.leftPos + 160, this.topPos + 14, Mth.clamp((int) EnergybarProcedure.execute(world, x, y, z) * 8, 0, 128), 0, 8, 64, 136, 64);
 		RenderSystem.disableBlend();
 	}
 

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "enchantment",
   "definition": {
     "name": "Shuhu's Gift",
@@ -9,18 +9,15 @@
     "maxLevel": 5,
     "damageModifier": 0,
     "incompatibleEnchantments": [
-      {
-        "value": "#primogemcraft:hunt"
-      }
+      "#primogemcraft:hunt"
     ],
     "supportedItems": [
-      {
-        "value": "TAG:minecraft:enchantable/sword"
-      }
+      "TAG:minecraft:enchantable/sword"
     ],
     "isTreasureEnchantment": true,
     "isCurse": false,
     "canGenerateInLootTables": true,
-    "canVillagerTrade": false
+    "canVillagerTrade": false,
+    "effectsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"enchantment_effects_start\" deletable=\"false\" x=\"40\" y=\"80\"></block></xml>"
   }
 }

@@ -13,14 +13,13 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.core.BlockPos;
+import net.minecraft.core.SectionPos;
 
 import net.mcreator.oneiricconcept.procedures.JanusDataProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber
 public record JanusGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
-
 	public static final Type<JanusGUISlotMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(OneiricconceptMod.MODID, "janus_gui_slots"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, JanusGUISlotMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, JanusGUISlotMessage message) -> {
 		buffer.writeInt(message.slotID);
@@ -30,6 +29,7 @@ public record JanusGUISlotMessage(int slotID, int x, int y, int z, int changeTyp
 		buffer.writeInt(message.changeType);
 		buffer.writeInt(message.meta);
 	}, (RegistryFriendlyByteBuf buffer) -> new JanusGUISlotMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+
 	@Override
 	public Type<JanusGUISlotMessage> type() {
 		return TYPE;
@@ -47,7 +47,7 @@ public record JanusGUISlotMessage(int slotID, int x, int y, int z, int changeTyp
 	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
 		Level world = entity.level();
 		// security measure to prevent arbitrary chunk generation
-		if (!world.hasChunkAt(new BlockPos(x, y, z)))
+		if (!world.getChunkSource().hasChunk(SectionPos.blockToSectionCoord(x), SectionPos.blockToSectionCoord(z)))
 			return;
 		if (slot == 0 && changeType == 0) {
 

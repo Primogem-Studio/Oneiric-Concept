@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -12,25 +12,23 @@
     "name": "Heart of the fish",
     "rarity": "UNCOMMON",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
+      "CUSTOM:OneiricConcept"
     ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 1,
     "toolType": 1.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "isPiglinCurrency": false,
+    "repairItems": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [],
       "name": "Hyyxms"
@@ -38,37 +36,31 @@
     "glowCondition": {
       "fixedValue": false
     },
+    "openGUIOnRightClick": {
+      "fixedValue": false
+    },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onItemInInventoryTick": {
-      "name": "CurioHeartFish"
-    },
-    "onFinishUsingItem": {
-      "name": "FishHealth"
-    },
+    "onItemInInventoryTick": "CurioHeartFish",
+    "onFinishUsingItem": "FishHealth",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "CUSTOM:XuanyuanSwordQ"
-    },
+    "projectile": "CUSTOM:XuanyuanSwordQ",
     "projectileDisableAmmoCheck": false,
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "bow",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,
-    "providedBannerPatterns": []
+    "providedBannerPatterns": [],
+    "attributeModifiers": []
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -49,9 +49,7 @@
       ]
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
+      "CUSTOM:OneiricConcept"
     ],
     "hardness": 0.0,
     "resistance": 0.0,
@@ -63,29 +61,15 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
+    "soundOnStep": "PLANT",
     "isCustomSoundType": true,
-    "soundOnStep": {
-      "value": "PLANT"
-    },
-    "breakSound": {
-      "value": "CUSTOM:mmm"
-    },
-    "stepSound": {
-      "value": "CUSTOM:mmm"
-    },
-    "placeSound": {
-      "value": "block.grass.place"
-    },
-    "hitSound": {
-      "value": "block.grass.hit"
-    },
-    "fallSound": {
-      "value": "CUSTOM:mmm"
-    },
+    "breakSound": "CUSTOM:mmm",
+    "stepSound": "CUSTOM:mmm",
+    "placeSound": "block.grass.place",
+    "hitSound": "block.grass.hit",
+    "fallSound": "CUSTOM:mmm",
     "useLootTableForDrops": false,
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -94,9 +78,7 @@
     "hasTileEntity": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
     "ignitedByLava": false,
@@ -105,9 +87,7 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "placingCondition": {
-      "name": "Supportdown"
-    },
+    "placingCondition": "Supportdown",
     "isBonemealable": false,
     "frequencyOnChunks": 8,
     "generateFeature": true,
@@ -115,8 +95,6 @@
     "generationType": "Grass",
     "patchSize": 1,
     "generateAtAnyHeight": true,
-    "onDestroyedByPlayer": {
-      "name": "Mmhit"
-    }
+    "onDestroyedByPlayer": "Mmhit"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "sausage",
@@ -8,20 +8,14 @@
       "value": -1,
       "falpha": 0.0
     },
-    "onAddedSound": {
-      "value": ""
-    },
+    "onAddedSound": "",
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": true,
     "modifiers": [],
-    "onStarted": {
-      "name": "Bebuffplus"
-    },
-    "onActiveTick": {
-      "name": "B2effect"
-    }
+    "onStarted": "Bebuffplus",
+    "onActiveTick": "B2effect"
   }
 }

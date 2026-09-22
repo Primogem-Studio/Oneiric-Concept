@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:B2elobogSausage"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "CUSTOM:MemoriaPiece"
-      },
-      {
-        "value": "CUSTOM:XuanyuanSword"
-      },
-      {
-        "value": "CUSTOM:MemoriaPiece"
-      },
-      {
-        "value": "CUSTOM:MemoriaPiece"
-      },
-      {
-        "value": "CUSTOM:MemoriaPiece"
-      },
-      {
-        "value": "CUSTOM:MemoriaPiece"
-      }
+      "CUSTOM:OneiricShard",
+      "CUSTOM:B2elobogSausage",
+      "CUSTOM:OneiricShard",
+      "CUSTOM:MemoriaPiece",
+      "CUSTOM:XuanyuanSword",
+      "CUSTOM:MemoriaPiece",
+      "CUSTOM:MemoriaPiece",
+      "CUSTOM:MemoriaPiece",
+      "CUSTOM:MemoriaPiece"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DarkXuanyuanSword"
-    },
+    "recipeReturnStack": "CUSTOM:DarkXuanyuanSword",
     "name": "d_xuan_yuan_sword",
     "namespace": "mod"
   }

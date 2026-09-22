@@ -29,8 +29,8 @@ public class PrimogemSwordPlaceProcedure {
 		ItemStack qgdysj = ItemStack.EMPTY;
 		raintime = world.getLevelData() instanceof ServerLevelData _levelData0 ? _levelData0.getClearWeatherTime() : 0;
 		cleartime = world.getLevelData() instanceof ServerLevelData _levelData1 ? _levelData1.getRainTime() : 0;
-		handitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		qgdysj = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:qgdysj")));
+		handitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
+		qgdysj = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:qgdysj"))).copy();
 		isexplosion = getBlockNBTLogic(world, BlockPos.containing(x, y, z), "explosion");
 		if (handitem.getItem() == qgdysj.getItem() && !isexplosion) {
 			handitem.shrink(1);

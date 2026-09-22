@@ -58,7 +58,7 @@ public class EntityDeadProcedure {
 		e1 = entity;
 		gz = world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.FALLING_MEAT);
 		if (gz && e1 instanceof Player) {
-			i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get());
+			i1 = new ItemStack(OneiricconceptModItems.OY_STUFFING.get()).copy();
 			{
 				final String _tagName = "entitysname";
 				final String _tagValue = (entity.getDisplayName().getString());
@@ -84,9 +84,9 @@ public class EntityDeadProcedure {
 		}
 		if (RandomProcedure.execute(world, 0.1)) {
 			if (e1.getType().is(EntityTypeTags.UNDEAD)) {
-				i1 = (gz ? new ItemStack(OneiricconceptModItems.S_2TUFFING.get()) : new ItemStack(Blocks.AIR));
+				i1 = (gz ? new ItemStack(OneiricconceptModItems.S_2TUFFING.get()) : new ItemStack(Blocks.AIR)).copy();
 			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:human")))) {
-				i1 = (gz ? new ItemStack(OneiricconceptModItems.OY_STUFFING.get()) : new ItemStack(Blocks.AIR));
+				i1 = (gz ? new ItemStack(OneiricconceptModItems.OY_STUFFING.get()) : new ItemStack(Blocks.AIR)).copy();
 				{
 					final String _tagName = "entitysname";
 					final String _tagValue = (entity.getDisplayName().getString());
@@ -95,18 +95,18 @@ public class EntityDeadProcedure {
 			} else if (entity.getType().is(EntityTypeTags.AQUATIC) && !entity.getPersistentData().getBoolean("fishheart")) {
 				if (RandomProcedure.execute(world, 0.1) && (world.getLevelData().getGameRules().getInt(OneiricconceptModGameRules.OC_HEALTHMULTIPLIER))
 						* 30 <= (entity instanceof LivingEntity _livingEntity14 && _livingEntity14.getAttributes().hasAttribute(Attributes.MAX_HEALTH) ? _livingEntity14.getAttribute(Attributes.MAX_HEALTH).getValue() : 0)) {
-					i1 = new ItemStack(OneiricconceptModItems.HEARTOFTHEFISH.get());
+					i1 = new ItemStack(OneiricconceptModItems.HEARTOFTHEFISH.get()).copy();
 				} else {
-					i1 = new ItemStack(OneiricconceptModItems.FISH.get());
+					i1 = new ItemStack(OneiricconceptModItems.FISH.get()).copy();
 				}
 			} else if (entity instanceof EnderMan || entity instanceof Endermite || entity instanceof Shulker) {
-				i1 = new ItemStack(OneiricconceptModItems.VIRTUAL_PARTICLE.get());
+				i1 = new ItemStack(OneiricconceptModItems.VIRTUAL_PARTICLE.get()).copy();
 			} else if (entity instanceof Slime) {
-				i1 = new ItemStack(OneiricconceptModItems.SOLID_WATER.get());
+				i1 = new ItemStack(OneiricconceptModItems.SOLID_WATER.get()).copy();
 			} else if (entity instanceof MagmaCube) {
-				i1 = new ItemStack(OneiricconceptModItems.PHLOGISTON.get());
+				i1 = new ItemStack(OneiricconceptModItems.PHLOGISTON.get()).copy();
 			} else {
-				i1 = (gz ? new ItemStack(OneiricconceptModItems.STUFFING.get()) : new ItemStack(Blocks.AIR));
+				i1 = (gz ? new ItemStack(OneiricconceptModItems.STUFFING.get()) : new ItemStack(Blocks.AIR)).copy();
 			}
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, i1);

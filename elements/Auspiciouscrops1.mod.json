@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "CUSTOM:AmbrosialArborSapling"
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      },
-      {
-        "value": "Items.WHEAT_SEEDS"
-      }
+      "Items.WHEAT_SEEDS",
+      "Items.WHEAT_SEEDS",
+      "Items.WHEAT_SEEDS",
+      "Items.WHEAT_SEEDS",
+      "CUSTOM:AmbrosialArborSapling",
+      "Items.WHEAT_SEEDS",
+      "Items.WHEAT_SEEDS",
+      "Items.WHEAT_SEEDS",
+      "Items.WHEAT_SEEDS"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HumanHeightAuspiciousCrops"
-    },
+    "recipeReturnStack": "CUSTOM:HumanHeightAuspiciousCrops",
     "name": "auspiciouscrops_1",
     "namespace": "mod"
   }

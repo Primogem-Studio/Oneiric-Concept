@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HonkaiShard"
-      },
-      {
-        "value": "CUSTOM:HiltwoodFromTheArbor"
-      },
-      {
-        "value": "CUSTOM:Theanotherworldmooningot"
-      },
-      {
-        "value": "CUSTOM:HiltwoodFromTheArbor"
-      },
-      {
-        "value": "Blocks.CHERRY_LEAVES"
-      },
-      {
-        "value": "CUSTOM:HiltwoodFromTheArbor"
-      },
-      {
-        "value": "Blocks.PINK_PETALS"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:HonkaiShard",
+      "CUSTOM:HiltwoodFromTheArbor",
+      "CUSTOM:Theanotherworldmooningot",
+      "CUSTOM:HiltwoodFromTheArbor",
+      "Blocks.CHERRY_LEAVES",
+      "CUSTOM:HiltwoodFromTheArbor",
+      "Blocks.PINK_PETALS",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SpirtbranchofTureLaw"
-    },
+    "recipeReturnStack": "CUSTOM:SpirtbranchofTureLaw",
     "name": "spirtbranchof_ture_law",
     "namespace": "mod"
   }

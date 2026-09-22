@@ -1,9 +1,0 @@
-{
-  "parent": "oneiricconcept:custom/nest",
-  "textures": {
-    "all": "oneiricconcept:block/nest",
-    "particle": "oneiricconcept:block/nest",
-    "0": "oneiricconcept:block/nest"
-  },
-  "render_type": "cutout"
-}

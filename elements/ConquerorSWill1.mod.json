@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      },
-      {
-        "value": "CUSTOM:UsurperSScheme"
-      }
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme",
+      "CUSTOM:UsurperSScheme"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ConquerorSWill"
-    },
+    "recipeReturnStack": "CUSTOM:ConquerorSWill",
     "name": "conqueror_s_will_1",
     "namespace": "mod"
   }

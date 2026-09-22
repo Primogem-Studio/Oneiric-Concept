@@ -34,6 +34,7 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> implements
 	private Button button_empty;
 	private Button button_empty1;
 	private Button button_getuid;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("oneiricconcept:textures/screens/lib_gui.png");
 
 	public LibGuiScreen(LibGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -51,8 +52,6 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> implements
 		menuStateUpdateActive = true;
 		menuStateUpdateActive = false;
 	}
-
-	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/lib_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -119,7 +118,7 @@ public class LibGuiScreen extends AbstractContainerScreen<LibGuiMenu> implements
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 

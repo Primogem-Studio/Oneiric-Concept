@@ -20,9 +20,9 @@ public class ExtractStartProcedure {
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), (int) (getEntityGameType(entity) == GameType.CREATIVE || entity.hasPermissions(4) ? 10 : 100));
 		sx = -20;
-		for (int index0 = 0; index0 < 41; index0++) {
+		for (int _i1 = 0; _i1 < 41; _i1++) {
 			sz = -20;
-			for (int index1 = 0; index1 < 41; index1++) {
+			for (int _i2 = 0; _i2 < 41; _i2++) {
 				maxy = Math.max(world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + sx), (int) (z + sz)), maxy);
 				sz = sz + 1;
 			}

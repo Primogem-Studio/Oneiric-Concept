@@ -19,11 +19,11 @@ public class AleavegetlogProcedure {
 		xyz = Math.round(0 - (range - 1) / 2);
 		sx = xyz;
 		found = false;
-		for (int index0 = 0; index0 < (int) range; index0++) {
+		for (int _i1 = 0; _i1 < (int) range; _i1++) {
 			sy = xyz;
-			for (int index1 = 0; index1 < (int) range; index1++) {
+			for (int _i2 = 0; _i2 < (int) range; _i2++) {
 				sz = xyz;
-				for (int index2 = 0; index2 < (int) range; index2++) {
+				for (int _i3 = 0; _i3 < (int) range; _i3++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == OneiricconceptModBlocks.AMBROSIAL_ARBOR_LOG.get()) {
 						found = true;
 					}

@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "thesea_ihangupsidedownwillbeyoursky_0": {
+    "thesea_ihangupsidedownwillbeyoursky_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "oneiricconcept:heartoftheskysea"
-            ],
+            "items": "oneiricconcept:heartoftheskysea",
             "count": {
               "min": 1,
               "max": 64

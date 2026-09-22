@@ -13,9 +13,9 @@ public class BlockClearStartProcedure {
 		double zz = 0;
 		xx = Math.floor(x / 16) * 16;
 		zz = Math.floor(z / 16) * 16;
-		for (int index0 = 0; index0 < 16; index0++) {
+		for (int _i1 = 0; _i1 < 16; _i1++) {
 			sz = 0;
-			for (int index1 = 0; index1 < 16; index1++) {
+			for (int _i2 = 0; _i2 < 16; _i2++) {
 				maxy = Math.max(world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (xx + sx), (int) (zz + sz)), maxy);
 				sz = sz + 1;
 			}

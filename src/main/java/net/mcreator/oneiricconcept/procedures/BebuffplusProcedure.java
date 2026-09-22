@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import org.checkerframework.checker.units.qual.C;
-
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;

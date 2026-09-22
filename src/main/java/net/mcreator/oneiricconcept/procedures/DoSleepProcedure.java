@@ -21,7 +21,7 @@ import net.mcreator.oneiricconcept.OneiricconceptMod;
 public class DoSleepProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double tic = 0;
-		for (int index0 = 0; index0 < 50; index0++) {
+		for (int _i1 = 0; _i1 < 50; _i1++) {
 			OneiricconceptMod.queueServerWork((int) tic, () -> {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),

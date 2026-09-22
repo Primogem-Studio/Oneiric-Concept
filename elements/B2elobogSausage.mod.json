@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -11,25 +11,23 @@
     "name": "German style cumin smoked sausage",
     "rarity": "RARE",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConceptfood"
-      }
+      "CUSTOM:OneiricConceptfood"
     ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
-    "recipeRemainder": {
-      "value": ""
-    },
+    "recipeRemainder": "",
     "destroyAnyBlock": false,
     "immuneToFire": true,
     "isPiglinCurrency": false,
+    "repairItems": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
     "damageVsEntity": 8.0,
+    "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [
         "§7Do you have a strange smell... the scent of cumin?"
@@ -38,37 +36,31 @@
     "glowCondition": {
       "fixedValue": false
     },
+    "openGUIOnRightClick": {
+      "fixedValue": false
+    },
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onEntityHitWith": {
-      "name": "B2HeT"
-    },
-    "onFinishUsingItem": {
-      "name": "ZiRanLose"
-    },
+    "onEntityHitWith": "B2HeT",
+    "onFinishUsingItem": "ZiRanLose",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
-    "projectile": {
-      "value": "Arrow"
-    },
+    "projectile": "Arrow",
     "projectileDisableAmmoCheck": false,
     "isFood": true,
     "nutritionalValue": 8,
     "saturation": 0.8,
-    "eatResultItem": {
-      "value": ""
-    },
+    "eatResultItem": "",
     "isMeat": true,
     "isAlwaysEdible": true,
     "animation": "eat",
     "isMusicDisc": false,
-    "musicDiscMusic": {
-      "value": ""
-    },
+    "musicDiscMusic": "",
     "musicDiscDescription": "",
-    "musicDiscLengthInTicks": 0,
+    "musicDiscLengthInTicks": 100,
     "musicDiscAnalogOutput": 0,
-    "providedBannerPatterns": []
+    "providedBannerPatterns": [],
+    "attributeModifiers": []
   }
 }

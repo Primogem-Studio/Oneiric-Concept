@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -65,9 +65,7 @@
         }
       }
     ],
-    "onClosed": {
-      "name": "VastseaCheck"
-    },
+    "onClosed": "VastseaCheck",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

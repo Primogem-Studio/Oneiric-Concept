@@ -9,7 +9,7 @@ public class WuqijinglianupProcedure {
 			return 0;
 		ItemStack i1 = ItemStack.EMPTY;
 		Entity e1 = null;
-		i1 = itemstack;
+		i1 = itemstack.copy();
 		e1 = entity;
 		return net.mcreator.ceshi.procedures.HSjinglianupProcedure.execute(e1, i1);
 	}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -36,9 +36,8 @@
             "value": -8101827,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsTextBrown"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsTextBrown",
           "x": 248,
           "y": 71,
           "locked": false
@@ -56,9 +55,8 @@
             "value": -8101827,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsTextBrown"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsTextBrown",
           "x": 248,
           "y": 91,
           "locked": false
@@ -76,9 +74,8 @@
             "value": -8101827,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsTextBrown"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsTextBrown",
           "x": 248,
           "y": 110,
           "locked": false
@@ -96,9 +93,8 @@
             "value": -395036,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsTextWhite"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsTextWhite",
           "x": 180,
           "y": 91,
           "locked": false
@@ -116,9 +112,8 @@
             "value": -395036,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsTextWhite"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsTextWhite",
           "x": 181,
           "y": 110,
           "locked": false
@@ -136,9 +131,8 @@
             "value": -395036,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "IsTextWhite"
-          },
+          "hasShadow": false,
+          "displayCondition": "IsTextWhite",
           "x": 182,
           "y": 128,
           "locked": false
@@ -156,6 +150,7 @@
             "value": -395036,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 213,
           "y": 228,
           "locked": false

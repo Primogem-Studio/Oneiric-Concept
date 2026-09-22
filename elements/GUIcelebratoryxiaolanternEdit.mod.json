@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -66,9 +66,7 @@
           "name": "button_empty",
           "text": "<",
           "isUndecorated": false,
-          "onClick": {
-            "name": "MinusUIDLIstorder"
-          },
+          "onClick": "MinusUIDLIstorder",
           "width": 30,
           "height": 20,
           "x": 329,
@@ -82,9 +80,7 @@
           "name": "button_empty1",
           "text": ">",
           "isUndecorated": false,
-          "onClick": {
-            "name": "PlusLantrenListorder"
-          },
+          "onClick": "PlusLantrenListorder",
           "width": 30,
           "height": 20,
           "x": 361,
@@ -103,6 +99,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 204,
           "y": 31,
           "locked": false
@@ -114,9 +111,7 @@
           "name": "button_save",
           "text": "save",
           "isUndecorated": false,
-          "onClick": {
-            "name": "LanternSave"
-          },
+          "onClick": "LanternSave",
           "width": 46,
           "height": 20,
           "x": 345,
@@ -125,9 +120,7 @@
         }
       }
     ],
-    "onOpen": {
-      "name": "ResetListorder"
-    },
+    "onOpen": "ResetListorder",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

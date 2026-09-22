@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Heartoftheskysea"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Heartofthefrozensea"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.HEART_OF_THE_SEA"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Heartofthewarmsea"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Heartofthefish"
-      }
+      "CUSTOM:Heartoftheskysea",
+      "",
+      "CUSTOM:Heartofthefrozensea",
+      "",
+      "Items.HEART_OF_THE_SEA",
+      "",
+      "CUSTOM:Heartofthewarmsea",
+      "",
+      "CUSTOM:Heartofthefish"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Heartofthevastsea"
-    },
+    "recipeReturnStack": "CUSTOM:Heartofthevastsea",
     "name": "vastsea_1",
     "namespace": "mod"
   }

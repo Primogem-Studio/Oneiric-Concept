@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "fluid",
   "definition": {
     "name": "Memoria",
@@ -20,9 +20,7 @@
     "levelDecrease": 1,
     "slopeFindDistance": 3,
     "spawnParticles": false,
-    "dripParticle": {
-      "value": "EXPLOSION_NORMAL"
-    },
+    "dripParticle": "EXPLOSION_NORMAL",
     "flowStrength": 0.0,
     "luminosity": 15,
     "density": 1,
@@ -32,13 +30,9 @@
     "generateBucket": true,
     "textureBucket": "",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
+      "CUSTOM:OneiricConcept"
     ],
-    "emptySound": {
-      "value": "ambient.underwater.exit"
-    },
+    "emptySound": "ambient.underwater.exit",
     "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []

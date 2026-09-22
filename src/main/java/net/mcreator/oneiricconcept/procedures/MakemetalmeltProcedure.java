@@ -25,9 +25,9 @@ public class MakemetalmeltProcedure {
 		BlockState block = Blocks.AIR.defaultBlockState();
 		ItemStack blkitm = ItemStack.EMPTY;
 		block = (world.getBlockState(BlockPos.containing(x, y + 1, z)));
-		blkitm = (new ItemStack(block.getBlock()));
+		blkitm = (new ItemStack(block.getBlock())).copy();
 		if (block.getBlock() == OneiricconceptModBlocks.GEO_METAL.get()) {
-			for (int index0 = 0; index0 < 200; index0++) {
+			for (int _i1 = 0; _i1 < 200; _i1++) {
 				OneiricconceptMod.queueServerWork((int) index0, () -> {
 					if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == OneiricconceptModBlocks.GEO_METAL.get()) {
 						if (world instanceof ServerLevel _level)

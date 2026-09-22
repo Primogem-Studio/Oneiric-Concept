@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SaltDust"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SaltDust"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:SaltDust",
+      "",
+      "",
+      "CUSTOM:SaltDust",
+      "",
+      "",
+      "Items.GLASS_BOTTLE",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Salt"
-    },
+    "recipeReturnStack": "CUSTOM:Salt",
     "name": "salt_2",
     "namespace": "mod"
   }

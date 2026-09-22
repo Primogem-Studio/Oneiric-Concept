@@ -25,9 +25,9 @@ public class GeomarrowRadiatorProcessProcedure {
 		double repeat = 0;
 		ItemStack i1 = ItemStack.EMPTY;
 		ItemStack i2 = ItemStack.EMPTY;
-		i1 = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		i1 = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (i1.getItem() == OneiricconceptModItems.OY_DUMPLING.get()) {
-			i2 = new ItemStack(OneiricconceptModItems.GRILLED_OY_DUMPLING.get());
+			i2 = new ItemStack(OneiricconceptModItems.GRILLED_OY_DUMPLING.get()).copy();
 			{
 				final String _tagName = "die";
 				final String _tagValue = (i1.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("die"));

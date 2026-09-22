@@ -50,10 +50,10 @@ public class SustenanceanchorOnProcedure {
 			}
 			var sb = new StringBuilder();
 			a = on;
-			for (int index0 = 0; index0 < (int) a; index0++) {
+			for (int _i1 = 0; _i1 < (int) a; _i1++) {
 				sb.append('■');
 			}
-			for (int index1 = 0; index1 < (int) (20 - a); index1++) {
+			for (int _i1 = 0; _i1 < (int) (20 - a); _i1++) {
 				sb.append('□');
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())

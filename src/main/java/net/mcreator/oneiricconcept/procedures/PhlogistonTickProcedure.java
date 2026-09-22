@@ -81,7 +81,7 @@ public class PhlogistonTickProcedure {
 			}
 		}
 		snu = getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lavasnu");
-		itm0 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
+		itm0 = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).copy();
 		if ((BuiltInRegistries.ITEM.getKey(itm0.getItem()).toString()).contains("phlogiston") && itm0.isDamaged() && snu >= 10) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);

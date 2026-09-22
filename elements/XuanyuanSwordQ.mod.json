@@ -1,16 +1,13 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:XuanyuanSword"
-    },
+    "projectileItem": "CUSTOM:XuanyuanSword",
     "showParticles": true,
-    "actionSound": {
-      "value": "entity.firework.launch"
-    },
+    "actionSound": "entity.firework.launch",
     "igniteFire": true,
     "disableGravity": false,
+    "disableDiscarding": false,
     "power": 13.0,
     "damage": 100.0,
     "knockback": 5,
@@ -18,11 +15,7 @@
     "customModelTexture": "",
     "modelWidth": 0.1,
     "modelHeight": 0.1,
-    "onHitsBlock": {
-      "name": "XuanyuanBoom"
-    },
-    "onHitsEntity": {
-      "name": "XuanyuanSwordhit"
-    }
+    "onHitsBlock": "XuanyuanBoom",
+    "onHitsEntity": "XuanyuanSwordhit"
   }
 }

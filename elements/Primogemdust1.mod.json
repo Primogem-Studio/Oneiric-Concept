@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 20,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:Exhaustedprimogem"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:PgcPg"
-    },
+    "smeltingInputStack": "CUSTOM:Exhaustedprimogem",
+    "smeltingReturnStack": "CUSTOM:PgcPg",
     "name": "primogemdust_1",
     "namespace": "mod"
   }

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/boom_blossoms_electro",
-    "particle": "oneiricconcept:block/boom_blossoms_electro"
-  },
-  "render_type": "solid"
-}

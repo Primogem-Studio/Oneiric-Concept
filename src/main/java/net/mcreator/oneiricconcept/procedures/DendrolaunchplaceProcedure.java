@@ -28,7 +28,7 @@ public class DendrolaunchplaceProcedure {
 		if (entity == null)
 			return;
 		ItemStack item = ItemStack.EMPTY;
-		item = TraverseBackPacProcedure.execute(world, entity, new ItemStack(OneiricconceptModItems.PYRO_BOOMYAM.get()), "oneiricconcept:dendrolunch");
+		item = TraverseBackPacProcedure.execute(world, entity, new ItemStack(OneiricconceptModItems.PYRO_BOOMYAM.get()), "oneiricconcept:dendrolunch").copy();
 		if (BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:caoyuanhe")) == item.getItem()) {
 			{
 				Entity _shootFrom = entity;

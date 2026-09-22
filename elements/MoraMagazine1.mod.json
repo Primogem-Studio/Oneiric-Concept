@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": "CUSTOM:MoraSausage"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MoraSausage",
+      "CUSTOM:MoraSausage",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MoraMagazine"
-    },
+    "recipeReturnStack": "CUSTOM:MoraMagazine",
     "name": "mora_magazine_1",
     "namespace": "mod"
   }

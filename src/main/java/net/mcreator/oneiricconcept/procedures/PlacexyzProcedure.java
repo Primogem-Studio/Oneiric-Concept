@@ -18,11 +18,11 @@ public class PlacexyzProcedure {
 		double range = 0;
 		String debugtst = "";
 		sx = minx;
-		for (int index0 = 0; index0 < (int) (Math.abs(maxx - minx) + 1); index0++) {
+		for (int _i1 = 0; _i1 < (int) (Math.abs(maxx - minx) + 1); _i1++) {
 			sy = miny;
-			for (int index1 = 0; index1 < (int) (Math.abs(maxy - miny) + 1); index1++) {
+			for (int _i2 = 0; _i2 < (int) (Math.abs(maxy - miny) + 1); _i2++) {
 				sz = minz;
-				for (int index2 = 0; index2 < (int) (Math.abs(maxz - minz) + 1); index2++) {
+				for (int _i3 = 0; _i3 < (int) (Math.abs(maxz - minz) + 1); _i3++) {
 					if (!(sx == 0 && sy == 0 && sz == 0 || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.AIR)) {
 						found = true;
 						if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {

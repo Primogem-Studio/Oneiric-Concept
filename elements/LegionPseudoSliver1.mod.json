@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:HonkaiSliver"
-    },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:HonkaiSliver"
-    },
-    "smithingInputTemplateStack": {
-      "value": "CUSTOM:HonkaiShard"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:LegionPseudoSliver"
-    },
+    "smithingInputStack": "CUSTOM:HonkaiSliver",
+    "smithingInputAdditionStack": "CUSTOM:HonkaiSliver",
+    "smithingInputTemplateStack": "CUSTOM:HonkaiShard",
+    "smithingReturnStack": "CUSTOM:LegionPseudoSliver",
     "name": "legion_pseudo_sliver_1",
     "namespace": "mod"
   }

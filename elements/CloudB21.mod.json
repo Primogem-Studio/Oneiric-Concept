@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      },
-      {
-        "value": "CUSTOM:Cloud"
-      }
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud",
+      "Items.GLASS_BOTTLE",
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud",
+      "CUSTOM:Cloud"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:CloudBottle"
-    },
+    "recipeReturnStack": "CUSTOM:CloudBottle",
     "name": "cloud_b_21",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:Primogemfruitblock"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:Primogemfruitblock"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      }
+      "Items.IRON_INGOT",
+      "Items.GOLD_INGOT",
+      "Items.IRON_INGOT",
+      "CUSTOM:Primogemfruitblock",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:Primogemfruitblock",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Crystalgenerator"
-    },
+    "recipeReturnStack": "CUSTOM:Crystalgenerator",
     "name": "crystalgenerator_1",
     "namespace": "mod"
   }

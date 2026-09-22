@@ -31,7 +31,7 @@ public class WarmheartProcedure {
 			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
 		}
 		if (entity.isInWater() && RandomProcedure.execute(world, fis)) {
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, 3); index0++) {
+			for (int _i1 = 0; _i1 < Mth.nextInt(RandomSource.create(), 1, 3); _i1++) {
 				{
 					final String _tagName = "fish";
 					final double _tagValue = 0;

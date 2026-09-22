@@ -34,7 +34,7 @@ public class KillLanternProcedure {
 				}
 			}
 		}
-		itmstk = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:xiaodengwupin")));
+		itmstk = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:xiaodengwupin"))).copy();
 		itmstk.setCount((int) nui);
 		if (world instanceof ServerLevel _level) {
 			ItemEntity entityToSpawn = new ItemEntity(_level, x, (1 + y), z, itmstk);

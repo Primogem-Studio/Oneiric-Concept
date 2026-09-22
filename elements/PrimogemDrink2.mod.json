@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:VirtualParticle"
-      },
-      {
-        "value": "CUSTOM:Phlogiston"
-      },
-      {
-        "value": "CUSTOM:Phlogiston"
-      },
-      {
-        "value": "CUSTOM:Phlogiston"
-      },
-      {
-        "value": "CUSTOM:Phlogiston"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      }
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:VirtualParticle",
+      "CUSTOM:Phlogiston",
+      "CUSTOM:Phlogiston",
+      "CUSTOM:Phlogiston",
+      "CUSTOM:Phlogiston",
+      "Items.GLASS_BOTTLE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:EnergyDrink"
-    },
+    "recipeReturnStack": "CUSTOM:EnergyDrink",
     "name": "primogem_drink_2",
     "namespace": "mod"
   }

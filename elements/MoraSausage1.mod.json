@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": "TAG:c:sausage"
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:OneiricShard"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:OneiricShard",
+      "",
+      "CUSTOM:OneiricShard",
+      "TAG:c:sausage",
+      "CUSTOM:OneiricShard",
+      "",
+      "CUSTOM:OneiricShard",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MoraSausage"
-    },
+    "recipeReturnStack": "CUSTOM:MoraSausage",
     "name": "mora_sausage_1",
     "namespace": "mod"
   }

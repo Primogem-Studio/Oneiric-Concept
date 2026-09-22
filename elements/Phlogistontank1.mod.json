@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Agnid1"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      },
-      {
-        "value": "CUSTOM:Heartofthefish"
-      },
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      },
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      },
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      },
-      {
-        "value": "CUSTOM:IgnisAureliae"
-      }
+      "",
+      "CUSTOM:Agnid1",
+      "",
+      "CUSTOM:IgnisAureliae",
+      "CUSTOM:Heartofthefish",
+      "CUSTOM:IgnisAureliae",
+      "CUSTOM:IgnisAureliae",
+      "CUSTOM:IgnisAureliae",
+      "CUSTOM:IgnisAureliae"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Phlogistontank"
-    },
+    "recipeReturnStack": "CUSTOM:Phlogistontank",
     "name": "phlogistontank_1",
     "namespace": "mod"
   }

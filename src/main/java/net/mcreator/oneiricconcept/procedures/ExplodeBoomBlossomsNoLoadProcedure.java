@@ -38,7 +38,7 @@ public class ExplodeBoomBlossomsNoLoadProcedure {
 			RangeDamageProcedure.execute(world, x, y, z, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.DROWN)), true, false, true, false, 2, 1), 20, 21);
 		} else if (OneiricconceptModBlocks.BOOM_BLOSSOMS_ELECTRO.get() == blockstate.getBlock()) {
 			RangeDamageProcedure.execute(world, x, y, z, ElementDamageProcedure.execute(new DamageSource(world.holderOrThrow(DamageTypes.LIGHTNING_BOLT)), true, false, true, false, 3, 1), 20, 21);
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 5, 10); index0++) {
+			for (int _i1 = 0; _i1 < Mth.nextInt(RandomSource.create(), 5, 10); _i1++) {
 				rx = x + Mth.nextInt(RandomSource.create(), -10, 10);
 				rz = z + Mth.nextInt(RandomSource.create(), -10, 10);
 				if (world instanceof ServerLevel _level) {

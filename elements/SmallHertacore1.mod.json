@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.ENDER_PEARL"
-      },
-      {
-        "value": "Items.ENDER_EYE"
-      },
-      {
-        "value": "Items.ENDER_PEARL"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "CUSTOM:SmallHertaCore"
-      },
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      },
-      {
-        "value": "Items.ENDER_PEARL"
-      },
-      {
-        "value": "Items.ENDER_EYE"
-      },
-      {
-        "value": "Items.ENDER_PEARL"
-      }
+      "Items.ENDER_PEARL",
+      "Items.ENDER_EYE",
+      "Items.ENDER_PEARL",
+      "CUSTOM:HonkaiSliver",
+      "CUSTOM:SmallHertaCore",
+      "CUSTOM:HonkaiSliver",
+      "Items.ENDER_PEARL",
+      "Items.ENDER_EYE",
+      "Items.ENDER_PEARL"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SmallHertaCore"
-    },
+    "recipeReturnStack": "CUSTOM:SmallHertaCore",
     "name": "small_hertacore_1",
     "namespace": "mod"
   }

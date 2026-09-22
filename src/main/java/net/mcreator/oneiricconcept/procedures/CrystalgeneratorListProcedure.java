@@ -10,7 +10,7 @@ public class CrystalgeneratorListProcedure {
 		boolean iscrystals = false;
 		ItemStack crystal = ItemStack.EMPTY;
 		ItemStack listitem = ItemStack.EMPTY;
-		crystal = itemstack;
+		crystal = itemstack.copy();
 		if (crystal.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:crystals1")))) {
 			crystal_power = 16000;
 		} else if (crystal.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:crystals2")))) {

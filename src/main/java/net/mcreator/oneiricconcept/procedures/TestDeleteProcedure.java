@@ -24,9 +24,12 @@ public class TestDeleteProcedure {
 			entity.discard();
 		{
 			Entity _ent = entity;
-			_ent.teleportTo(x, (-66), z);
+			double _tx = x;
+			double _ty = (-66);
+			double _tz = z;
+			_ent.teleportTo(_tx, _ty, _tz);
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(x, (-66), z, _ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport(_tx, _ty, _tz, _ent.getYRot(), _ent.getXRot());
 		}
 		OneiricconceptMod.LOGGER.warn((sourceentity + "\u5728x:" + x + "y:" + y + "z:" + z + "\u79FB\u9664\u4E86" + entity));
 	}

@@ -24,7 +24,7 @@ public class JanusDataProcedure {
 		double xx = 0;
 		double yy = 0;
 		double zz = 0;
-		slate = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy());
+		slate = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).copy();
 		xx = slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STX");
 		yy = slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STY");
 		zz = slate.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("STZ");

@@ -1,16 +1,13 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "CUSTOM:XuanyuanSword"
-    },
+    "projectileItem": "CUSTOM:XuanyuanSword",
     "showParticles": true,
-    "actionSound": {
-      "value": ""
-    },
+    "actionSound": "",
     "igniteFire": true,
     "disableGravity": false,
+    "disableDiscarding": false,
     "power": 5.0,
     "damage": 13.0,
     "knockback": 5,
@@ -18,8 +15,6 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsEntity": {
-      "name": "IgnisAureliaeSword"
-    }
+    "onHitsEntity": "IgnisAureliaeSword"
   }
 }

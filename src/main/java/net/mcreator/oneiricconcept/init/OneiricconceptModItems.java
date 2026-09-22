@@ -29,6 +29,7 @@ import net.mcreator.oneiricconcept.procedures.BowPullProcedure;
 import net.mcreator.oneiricconcept.item.*;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
+@EventBusSubscriber
 public class OneiricconceptModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(OneiricconceptMod.MODID);
 	public static final DeferredItem<Item> SAUSAGE;

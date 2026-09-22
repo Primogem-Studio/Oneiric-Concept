@@ -29,14 +29,14 @@ public class AntimatterLegionLootProcedure {
 			lootingAndLuck = Math.min((sourceentity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.LUCK) ? _livingEntity1.getAttribute(Attributes.LUCK).getValue() : 0) * 0.2
 					+ (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)), 10);
 			if (0 < EquilibriumLevel) {
-				for (int index0 = 0; index0 < (int) Math.ceil(lootingAndLuck * (EquilibriumLevel + 1)); index0++) {
+				for (int _i1 = 0; _i1 < (int) Math.ceil(lootingAndLuck * (EquilibriumLevel + 1)); _i1++) {
 					if (RandomProcedure.execute(world, 0.2 * EquilibriumLevel)) {
-						itmsstk = (1 < EquilibriumLevel && RandomProcedure.execute(world, 0.1 * EquilibriumLevel) ? new ItemStack(OneiricconceptModItems.CONQUEROR_S_WILL.get()) : new ItemStack(OneiricconceptModItems.USURPER_S_SCHEME.get()));
+						itmsstk = (1 < EquilibriumLevel && RandomProcedure.execute(world, 0.1 * EquilibriumLevel) ? new ItemStack(OneiricconceptModItems.CONQUEROR_S_WILL.get()) : new ItemStack(OneiricconceptModItems.USURPER_S_SCHEME.get())).copy();
 					} else {
 						if (!world.isClientSide() && world.getServer() != null) {
 							for (ItemStack itemstackiterator : world.getServer().reloadableRegistries().getLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.parse("oneiricconcept:entities/baryon")))
 									.getRandomItems(new LootParams.Builder((ServerLevel) world).create(LootContextParamSets.EMPTY))) {
-								itmsstk = itemstackiterator;
+								itmsstk = itemstackiterator.copy();
 							}
 						}
 					}

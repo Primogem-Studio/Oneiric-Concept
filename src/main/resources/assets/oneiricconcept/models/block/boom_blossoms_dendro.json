@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oneiricconcept:block/boom_blossoms_dendro",
-    "particle": "oneiricconcept:block/boom_blossoms_dendro"
-  },
-  "render_type": "solid"
-}

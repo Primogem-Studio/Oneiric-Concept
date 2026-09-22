@@ -57,8 +57,8 @@ public class FishHealthProcedure {
 					}
 				}
 			}
-			fishitem = new ItemStack(
-					(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("minecraft:fishes"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()));
+			fishitem = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("minecraft:fishes"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()))
+					.copy();
 			if (!(OneiricconceptModItems.HEARTOFTHEFISH.get() == fishitem.getItem())) {
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = fishitem.copy();

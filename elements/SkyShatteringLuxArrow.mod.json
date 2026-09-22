@@ -1,16 +1,13 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "projectile",
   "definition": {
-    "projectileItem": {
-      "value": "Items.SPECTRAL_ARROW"
-    },
+    "projectileItem": "Items.SPECTRAL_ARROW",
     "showParticles": false,
-    "actionSound": {
-      "value": "entity.arrow.shoot"
-    },
+    "actionSound": "entity.arrow.shoot",
     "igniteFire": false,
     "disableGravity": false,
+    "disableDiscarding": false,
     "power": 1.0,
     "damage": 89.0,
     "knockback": 5,
@@ -18,11 +15,7 @@
     "customModelTexture": "skyshatteringluxarrow.png",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
-    "onHitsBlock": {
-      "name": "ShatteringCutAatree"
-    },
-    "onHitsEntity": {
-      "name": "ShatteringCutAatree"
-    }
+    "onHitsBlock": "ShatteringCutAatree",
+    "onHitsEntity": "ShatteringCutAatree"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smoking",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smokingInputStack": {
-      "value": "CUSTOM:Memoria.bucket"
-    },
-    "smokingReturnStack": {
-      "value": "CUSTOM:MemoriaPiece"
-    },
+    "smokingInputStack": "CUSTOM:Memoria.bucket",
+    "smokingReturnStack": "CUSTOM:MemoriaPiece",
     "name": "memoria_piece_2",
     "namespace": "mod"
   }

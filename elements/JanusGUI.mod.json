@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -25,9 +25,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "JanusData"
-          },
+          "onSlotChanged": "JanusData",
           "x": 138,
           "y": 50,
           "locked": false
@@ -45,6 +43,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 161,
           "y": 54,
           "locked": false
@@ -56,12 +55,8 @@
           "name": "button_quickly_traverse",
           "text": "quickly traverse",
           "isUndecorated": false,
-          "onClick": {
-            "name": "JanusHiddenPassage"
-          },
-          "displayCondition": {
-            "name": "IsJanusData"
-          },
+          "onClick": "JanusHiddenPassage",
+          "displayCondition": "IsJanusData",
           "width": 108,
           "height": 20,
           "x": 162,
@@ -99,9 +94,7 @@
           "text": {
             "fixedValue": "Use your phone to aim the crosshair at Janus within 160 meters to obtain coordinates"
           },
-          "displayCondition": {
-            "name": "AntiIsJanusData"
-          },
+          "displayCondition": "AntiIsJanusData",
           "width": 24,
           "height": 24,
           "x": 135,
@@ -120,9 +113,8 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "displayCondition": {
-            "name": "AntiIsJanusData"
-          },
+          "hasShadow": false,
+          "displayCondition": "AntiIsJanusData",
           "x": 144,
           "y": 96,
           "locked": false

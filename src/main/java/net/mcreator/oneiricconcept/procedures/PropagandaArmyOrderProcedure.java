@@ -4,15 +4,11 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.component.DataComponents;
 
 import net.mcreator.oneiricconcept.network.OneiricconceptModVariables;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
@@ -33,7 +29,7 @@ public class PropagandaArmyOrderProcedure {
 		ey = entity.getY();
 		ez = entity.getZ();
 		if (hasEntityInInventory(entity, new ItemStack(OneiricconceptModItems.PROPAGANDA_ARMY.get())) || hasEntityInInventory(entity, new ItemStack(OneiricconceptModBlocks.PROPAGANDA_ARMY_BLOCK.get()))) {
-			for (int index0 = 0; index0 < (int) (exp / 10); index0++) {
+			for (int _i1 = 0; _i1 < (int) (exp / 10); _i1++) {
 				if (entity instanceof Player _player)
 					_player.giveExperiencePoints((int) exp);
 				if (world instanceof ServerLevel _level) {
@@ -81,7 +77,7 @@ public class PropagandaArmyOrderProcedure {
 						if (world instanceof ServerLevel _level) {
 							_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u4F60\u8FC7\u5173").withColor(0x00ff33), false);
 						}
-						for (int index1 = 0; index1 < (int) NuE; index1++) {
+						for (int _i1 = 0; _i1 < (int) NuE; _i1++) {
 							if (entity instanceof Player _player)
 								_player.giveExperiencePoints((int) exp);
 							if (world instanceof ServerLevel _level) {
@@ -93,28 +89,6 @@ public class PropagandaArmyOrderProcedure {
 					} else {
 						if (world instanceof ServerLevel _level) {
 							_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u8BE5\u7F5A").withColor(0xff0000), false);
-						}
-						if (entity instanceof LivingEntity _entity) {
-							DamageSource _dmgsource = new DamageSource(world.holderOrThrow(DamageTypes.GENERIC));
-							_entity.hurt(new DamageSource(_dmgsource.typeHolder(), _dmgsource.getEntity(), _dmgsource.getDirectEntity()) {
-								@Override
-								public Component getLocalizedDeathMessage(LivingEntity _msgEntity) {
-									String _translatekey = "death.attack.propaganda";
-									if (this.getEntity() == null && this.getDirectEntity() == null) {
-										return _msgEntity.getKillCredit() != null
-												? Component.translatable(_translatekey + ".player", _msgEntity.getDisplayName(), _msgEntity.getKillCredit().getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName());
-									} else {
-										Component _component = this.getEntity() == null ? this.getDirectEntity().getDisplayName() : this.getEntity().getDisplayName();
-										ItemStack _itemstack = ItemStack.EMPTY;
-										if (this.getEntity() instanceof LivingEntity _livingentity)
-											_itemstack = _livingentity.getMainHandItem();
-										return !_itemstack.isEmpty() && _itemstack.get(DataComponents.CUSTOM_NAME) != null
-												? Component.translatable(_translatekey + ".item", _msgEntity.getDisplayName(), _component, _itemstack.getDisplayName())
-												: Component.translatable(_translatekey, _msgEntity.getDisplayName(), _component);
-									}
-								}
-							}, (float) ((exp / 50 - NuE) * 10));
 						}
 					}
 				}

@@ -1,7 +1,5 @@
 package net.mcreator.oneiricconcept.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
@@ -32,7 +30,7 @@ public class BananaMushroomBlock extends SaplingBlock {
 			Optional.empty(), Optional.empty());
 
 	public BananaMushroomBlock() {
-		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(s -> 3).noCollission().pushReaction(PushReaction.DESTROY));
+		super(TREE_GROWER, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).randomTicks().sound(SoundType.GRASS).instabreak().lightLevel(state -> 3).noCollission().pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

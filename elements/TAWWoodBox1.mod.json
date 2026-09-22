@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      },
-      {
-        "value": "TAG:c:glass_blocks"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      },
-      {
-        "value": "CUSTOM:TheAnotherWorldWood"
-      }
+      "CUSTOM:TheAnotherWorldWood",
+      "CUSTOM:TheAnotherWorldWood",
+      "CUSTOM:TheAnotherWorldWood",
+      "CUSTOM:TheAnotherWorldWood",
+      "TAG:c:glass_blocks",
+      "CUSTOM:TheAnotherWorldWood",
+      "CUSTOM:TheAnotherWorldWood",
+      "CUSTOM:TheAnotherWorldWood",
+      "CUSTOM:TheAnotherWorldWood"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:TAWWoodBox"
-    },
+    "recipeReturnStack": "CUSTOM:TAWWoodBox",
     "name": "taw_wood_box_1",
     "namespace": "mod"
   }

@@ -25,6 +25,9 @@ public class WhiteMoonlightAbsorberGUIScreen extends AbstractContainerScreen<Whi
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("oneiricconcept:textures/screens/white_moonlight_absorber_gui.png");
+	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("oneiricconcept:textures/screens/phase.png");
+	private static final ResourceLocation SPRITE_1 = ResourceLocation.parse("oneiricconcept:textures/screens/moonlight.png");
 
 	public WhiteMoonlightAbsorberGUIScreen(WhiteMoonlightAbsorberGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -42,8 +45,6 @@ public class WhiteMoonlightAbsorberGUIScreen extends AbstractContainerScreen<Whi
 		menuStateUpdateActive = true;
 		menuStateUpdateActive = false;
 	}
-
-	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/white_moonlight_absorber_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -65,9 +66,9 @@ public class WhiteMoonlightAbsorberGUIScreen extends AbstractContainerScreen<Whi
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/phase.png"), this.leftPos + 84, this.topPos + 17, Mth.clamp((int) GetPhaseProcedure.execute(world) * 8, 0, 32), 0, 8, 8, 40, 8);
-		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/moonlight.png"), this.leftPos + 84, this.topPos + 29, Mth.clamp((int) WhiteMoonlightAbsorbProcedure.execute(world, x, y, z) * 8, 0, 240), 0, 8, 30, 248, 30);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(SPRITE_0, this.leftPos + 84, this.topPos + 17, Mth.clamp((int) GetPhaseProcedure.execute(world) * 8, 0, 32), 0, 8, 8, 40, 8);
+		guiGraphics.blit(SPRITE_1, this.leftPos + 84, this.topPos + 29, Mth.clamp((int) WhiteMoonlightAbsorbProcedure.execute(world, x, y, z) * 8, 0, 240), 0, 8, 30, 248, 30);
 		RenderSystem.disableBlend();
 	}
 

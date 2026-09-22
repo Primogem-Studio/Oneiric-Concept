@@ -1,18 +1,14 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "itemextension",
   "definition": {
-    "item": {
-      "value": "CUSTOM:Engineeringantimatterbombblock"
-    },
+    "item": "CUSTOM:Engineeringantimatterbombblock",
     "enableFuel": false,
     "fuelPower": {
       "fixedValue": 1600.0
     },
     "hasDispenseBehavior": true,
-    "dispenseSuccessCondition": {
-      "name": "TntPlace"
-    },
+    "dispenseSuccessCondition": "TntPlace",
     "compostLayerChance": 0.0
   }
 }

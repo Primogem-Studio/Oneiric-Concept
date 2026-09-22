@@ -18,7 +18,7 @@ public class TankExplosionProcedure {
 		lvl = getFluidTankLevel(world, BlockPos.containing(x, y, z), 1, null) / 2000;
 		lvl = lvl + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "lavasnu") / 80;
 		Inventorynu = 2;
-		for (int index0 = 0; index0 < 9; index0++) {
+		for (int _i1 = 0; _i1 < 9; _i1++) {
 			lvl = lvl + itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) Inventorynu).getCount();
 			Inventorynu = Inventorynu + 1;
 		}

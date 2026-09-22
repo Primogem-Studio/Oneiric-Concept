@@ -32,6 +32,7 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 	private Button button_empty;
 	private Button button_empty1;
 	private Button button_save;
+	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("oneiricconcept:textures/screens/celebratory1.png");
 
 	public GUIcelebratoryxiaolanternEditScreen(GUIcelebratoryxiaolanternEditMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -72,8 +73,7 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(ResourceLocation.parse("oneiricconcept:textures/screens/celebratory1.png"), this.leftPos + 0, this.topPos + 0, Mth.clamp((int) GetLantarnBackGrandProcedure.execute(world, x, y, z, entity) * 400, 0, 2000), 0, 400, 216, 2400,
-				216);
+		guiGraphics.blit(SPRITE_0, this.leftPos + 0, this.topPos + 0, Mth.clamp((int) GetLantarnBackGrandProcedure.execute(world, x, y, z, entity) * 400, 0, 2000), 0, 400, 216, 2400, 216);
 		RenderSystem.disableBlend();
 	}
 
@@ -111,21 +111,21 @@ public class GUIcelebratoryxiaolanternEditScreen extends AbstractContainerScreen
 	@Override
 	public void init() {
 		super.init();
-		first = new EditBox(this.font, this.leftPos + 195, this.topPos + 46, 118, 18, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first"));
+		first = new EditBox(this.font, this.leftPos + 194, this.topPos + 45, 120, 20, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.first"));
 		first.setMaxLength(8192);
 		first.setResponder(content -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 0, "first", content, false);
 		});
 		this.addWidget(this.first);
-		second = new EditBox(this.font, this.leftPos + 195, this.topPos + 70, 118, 18, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second"));
+		second = new EditBox(this.font, this.leftPos + 194, this.topPos + 69, 120, 20, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.second"));
 		second.setMaxLength(8192);
 		second.setResponder(content -> {
 			if (!menuStateUpdateActive)
 				menu.sendMenuStateUpdate(entity, 0, "second", content, false);
 		});
 		this.addWidget(this.second);
-		third = new EditBox(this.font, this.leftPos + 195, this.topPos + 94, 118, 18, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third"));
+		third = new EditBox(this.font, this.leftPos + 194, this.topPos + 93, 120, 20, Component.translatable("gui.oneiricconcept.gu_icelebratoryxiaolantern_edit.third"));
 		third.setMaxLength(8192);
 		third.setResponder(content -> {
 			if (!menuStateUpdateActive)

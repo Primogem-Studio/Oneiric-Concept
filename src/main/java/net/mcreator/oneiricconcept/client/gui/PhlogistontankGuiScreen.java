@@ -20,6 +20,7 @@ public class PhlogistontankGuiScreen extends AbstractContainerScreen<Phlogistont
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("oneiricconcept:textures/screens/phlogistontank_gui.png");
 
 	public PhlogistontankGuiScreen(PhlogistontankGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -38,8 +39,6 @@ public class PhlogistontankGuiScreen extends AbstractContainerScreen<Phlogistont
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("oneiricconcept:textures/screens/phlogistontank_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
@@ -51,7 +50,7 @@ public class PhlogistontankGuiScreen extends AbstractContainerScreen<Phlogistont
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 

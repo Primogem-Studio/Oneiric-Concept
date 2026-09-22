@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -9,13 +9,12 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "XuanyuanSword",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:OneiricConcept"
-      }
+      "CUSTOM:OneiricConcept"
     ],
     "efficiency": 10.0,
     "attackSpeed": 3.0,
@@ -26,23 +25,16 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:HonkaiSliver"
-      }
+      "CUSTOM:HonkaiSliver"
     ],
     "immuneToFire": true,
     "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "IgnisAureliaeSword"
-    },
-    "onItemInInventoryTick": {
-      "name": "HonkaiParticle"
-    },
-    "onEntitySwing": {
-      "name": "XuanyuanLaunch"
-    }
+    "onEntityHitWith": "IgnisAureliaeSword",
+    "onItemInInventoryTick": "HonkaiParticle",
+    "onEntitySwing": "XuanyuanLaunch"
   }
 }
