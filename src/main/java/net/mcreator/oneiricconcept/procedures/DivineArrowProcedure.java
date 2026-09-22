@@ -64,7 +64,7 @@ public class DivineArrowProcedure {
 			for (int _i1 = 0; _i1 < (int) range; _i1++) {
 				sz = xyz;
 				for (int _i2 = 0; _i2 < (int) range; _i2++) {
-					if ((index3 + 1) % 3 == 0 && (index4 + 1) % 3 == 0) {
+					if ((_i1 + 1) % 3 == 0 && (_i2 + 1) % 3 == 0) {
 						if (world instanceof ServerLevel projectileLevel) {
 							Projectile _entityToSpawn = initArrowProjectile(new SkyShatteringLuxArrowEntity(OneiricconceptModEntities.SKY_SHATTERING_LUX_ARROW.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)),
 									entity, 5, true, false, false, AbstractArrow.Pickup.DISALLOWED);

@@ -14,19 +14,19 @@
   "experience": 20,
   "ingredients": [
     {
-      "item": "primogemcraft:jljsl"
+      "item": "primogemcraft:sturdy_metal_grain"
     },
     {
       "item": "minecraft:gold_ingot"
     },
     {
-      "item": "primogemcraft:jljsl"
+      "item": "primogemcraft:sturdy_metal_grain"
     },
     {
       "item": "minecraft:iron_nugget"
     },
     {
-      "item": "primogemcraft:molakuai_01"
+      "item": "primogemcraft:mora_block"
     },
     {
       "item": "minecraft:iron_nugget"
@@ -35,6 +35,6 @@
   "recipe_book_tab": "meals",
   "result": {
     "count": 1,
-    "id": "primogemcraft:dangaoliyue"
+    "id": "primogemcraft:a_cake_for_you"
   }
 }

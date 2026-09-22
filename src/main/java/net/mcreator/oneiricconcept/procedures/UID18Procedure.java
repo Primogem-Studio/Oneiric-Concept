@@ -44,7 +44,7 @@ public class UID18Procedure {
 			OneiricconceptModVariables.MapVariables.get(world).playername.addTag(OneiricconceptModVariables.MapVariables.get(world).playername.size(), StringTag.valueOf((entity.getDisplayName().getString())));
 			List<Integer> weighting = Arrays.asList(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);
 			for (int _i1 = 0; _i1 < 8; _i1++) {
-				UID151617 = UID151617 + "" + "0123456789abcdef".indexOf(((entity.getStringUUID()).substring((int) index0, (int) index0)), 0);
+				UID151617 = UID151617 + "" + "0123456789abcdef".indexOf(((entity.getStringUUID()).substring((int) _i1, (int) _i1)), 0);
 			}
 			modx = Math.abs(x) % 99;
 			mody = Math.abs(y) % 99;
@@ -69,7 +69,7 @@ public class UID18Procedure {
 						}
 						return 0;
 					}
-				}.convert((UUIDstr.substring((int) index1)).substring(0, 1)) * weighting.get((int) index1);
+				}.convert((UUIDstr.substring((int) _i1)).substring(0, 1)) * weighting.get((int) _i1);
 				checkk = checkk + checktest;
 			}
 			{

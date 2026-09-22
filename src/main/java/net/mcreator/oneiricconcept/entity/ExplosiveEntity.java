@@ -25,6 +25,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.oneiricconcept.init.OneiricconceptModItems;
 import net.mcreator.oneiricconcept.init.OneiricconceptModEntities;
 
+import net.mcreator.oneiricconcept.procedures.SetexplosiveProcedure;
 import javax.annotation.Nullable;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)

@@ -3,13 +3,13 @@
   "values": [
     "oneiricconcept:oneiric_shard",
     {
-      "id": "primogemcraft:chuangshijiejing",
+      "id": "primogemcraft:genesis_crystal",
       "required": false
     },
+    "oneiricconcept:electro_metal",
     {
-      "id": "primogemcraft:yhjs",
+      "id": "primogemcraft:eternal_metal",
       "required": false
-    },
-    "oneiricconcept:electro_metal"
+    }
   ]
 }

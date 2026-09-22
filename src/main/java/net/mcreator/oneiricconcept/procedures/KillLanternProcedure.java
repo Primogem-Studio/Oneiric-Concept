@@ -27,14 +27,14 @@ public class KillLanternProcedure {
 		{
 			final Vec3 _center = new Vec3(x, y, z);
 			for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(99 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-				if ((BuiltInRegistries.ENTITY_TYPE.getKey(entityiterator.getType()).toString()).equals("primogemcraft:xiaodeng")) {
+				if ((BuiltInRegistries.ENTITY_TYPE.getKey(entityiterator.getType()).toString()).equals("primogemcraft:xiao_lantern")) {
 					if (!entityiterator.level().isClientSide())
 						entityiterator.discard();
 					nui = 1 + nui;
 				}
 			}
 		}
-		itmstk = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:xiaodengwupin"))).copy();
+		itmstk = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:xiao_lantern"))).copy();
 		itmstk.setCount((int) nui);
 		if (world instanceof ServerLevel _level) {
 			ItemEntity entityToSpawn = new ItemEntity(_level, x, (1 + y), z, itmstk);

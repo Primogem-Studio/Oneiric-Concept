@@ -9,7 +9,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianransuixie",
+          "name": "primogemcraft:prithiva_topaz_sliver",
           "weight": 1,
           "conditions": [
             {
@@ -48,7 +48,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianlaokuaiwupin",
+          "name": "primogemcraft:prithiva_topaz_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -87,7 +87,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianlaoduanpian",
+          "name": "primogemcraft:prithiva_topaz_fragment",
           "weight": 20,
           "conditions": [
             {
@@ -126,7 +126,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianransuixie",
+          "name": "primogemcraft:prithiva_topaz_sliver",
           "weight": 500,
           "conditions": [
             {

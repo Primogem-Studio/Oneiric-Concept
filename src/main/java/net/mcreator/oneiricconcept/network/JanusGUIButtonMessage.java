@@ -15,6 +15,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
+import net.mcreator.oneiricconcept.procedures.JanusHiddenPassageProcedure;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber

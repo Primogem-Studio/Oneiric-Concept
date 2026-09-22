@@ -8,7 +8,7 @@
   "type": "farmersdelight:cooking",
   "container": {
     "count": 1,
-    "id": "primogemcraft:dangaoliyue"
+    "id": "primogemcraft:a_cake_for_you"
   },
   "cookingtime": 400,
   "experience": 20,
@@ -23,13 +23,13 @@
       "item": "oneiricconcept:resurrection_pellet"
     },
     {
-      "item": "primogemcraft:xiangdanganlao"
+      "item": "primogemcraft:ambergris_cheese"
     },
     {
       "tag": "c:foods/milk"
     },
     {
-      "item": "primogemcraft:qwsklj"
+      "item": "primogemcraft:space_time_prism"
     }
   ],
   "recipe_book_tab": "meals",

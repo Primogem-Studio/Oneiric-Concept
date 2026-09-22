@@ -82,7 +82,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:yssp",
+          "name": "primogemcraft:primogem_shard",
           "weight": 1,
           "conditions": [
             {
@@ -124,7 +124,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:yuanshif",
+          "name": "primogemcraft:primogem_dust",
           "weight": 3,
           "conditions": [
             {

@@ -1,2 +1,2 @@
 gamerule ocdebug true
-gamerule ocfly false
+# ocfly was removed from the workspace gamerules.

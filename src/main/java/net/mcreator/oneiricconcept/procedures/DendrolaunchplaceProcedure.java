@@ -29,7 +29,7 @@ public class DendrolaunchplaceProcedure {
 			return;
 		ItemStack item = ItemStack.EMPTY;
 		item = TraverseBackPacProcedure.execute(world, entity, new ItemStack(OneiricconceptModItems.PYRO_BOOMYAM.get()), "oneiricconcept:dendrolunch").copy();
-		if (BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:caoyuanhe")) == item.getItem()) {
+		if (BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:dendro_core")) == item.getItem()) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "oneiricconcept:block/jianmuyuanmu",
+    "up": "oneiricconcept:block/jianmuyuanmu",
+    "north": "oneiricconcept:block/ambrosialarborlog",
+    "east": "oneiricconcept:block/ambrosialarborlog",
+    "south": "oneiricconcept:block/ambrosialarborlog",
+    "west": "oneiricconcept:block/ambrosialarborlog",
+    "particle": "oneiricconcept:block/jianmuyuanmu"
+  },
+  "render_type": "solid"
+}

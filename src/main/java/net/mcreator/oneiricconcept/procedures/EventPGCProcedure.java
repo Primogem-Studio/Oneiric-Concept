@@ -1,39 +1,62 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.mcreator.ceshi.api.EventRegistry;
-import net.mcreator.ceshi.init.PrimogemcraftModItems;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
+import net.per.primogemcraft.enchantment.EnchantGrade;
+import net.per.primogemcraft.registry.PGCItems;
+import net.per.primogemcraft.system.event.*;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static net.mcreator.oneiricconcept.init.OneiricconceptModEntities.BARYON;
 
 public class EventPGCProcedure {
+    private static final Map<Integer, EventGroup> GROUPS = new HashMap<>();
+
     public static void execute() {
-        //事件
-        EventRegistry.registerEvent(2000, ctx -> {FallingMeatsetProcedure.execute(ctx.getWorld(), false);return true;});
-        EventRegistry.registerEvent(2001, ctx -> {FallingMeatsetProcedure.execute(ctx.getWorld(), true);return true;});
-        EventRegistry.registerEvent(2002, ctx -> {OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),1);return true;});
-        EventRegistry.registerEvent(2003, ctx -> {OccurrencesTheMarshmallowProcedure.execute(ctx.getWorld(),ctx.getPlayer(),2);return true;});
-        EventRegistry.registerEvent(2004, ctx -> ctx.TimelimitedCombat(BARYON.get(),3,2,8,2000,ctx.getRandomEvemtID(),"奖励"));
-        EventRegistry.registerEvent(2005, ctx -> {WhiteDiamondFakeProcedure.execute(ctx.getWorld(), ctx.x(), ctx.y(), ctx.z(), ctx.getPlayer());ctx.setGuiItem(new ItemStack(PrimogemcraftModItems.QWYZZM.get()), 1, 1, 4);return true;});
-        EventRegistry.registerEvent(2006, ctx -> {PropagandaArmyOrderProcedure.execute(ctx.getWorld(), ctx.getPlayer(),true,100,-1,60);return true;});
-        EventRegistry.registerEvent(2007, ctx -> {PropagandaArmyOrderProcedure.execute(ctx.getWorld(), ctx.getPlayer(),true,200,-1,90);return true;});
-        //事件组
-        EventRegistry.registerGroup(1000, ctx -> ctx.zu(2000, 2001, 7, "§e我不吃牛肉...吗？"));
-        EventRegistry.registerGroup(1001, ctx -> ctx.zu(2002, 2003, 0, "§c棉花糖号"));
-        EventRegistry.registerGroup(1002, ctx -> ctx.zu(7, 13, 0, "§a奖励"));
-        EventRegistry.registerGroup(1003, ctx -> ctx.zu(8, 14, 0, "§a奖励"));
-        EventRegistry.registerGroup(1004, ctx -> ctx.zu(2004, 2004, 2004, "§d与重子搏斗！！！"));
-        EventRegistry.registerGroup(1005, ctx -> ctx.zu(2005, 7, 13, "§c至高奖励！"));
-        EventRegistry.registerGroup(1006, ctx -> ctx.zu(2006, 2007, 0, "§c超级直播矩阵"));
-        //事件描述
-        EventRegistry.registerDescription(2000, () -> "§d梦华构想§e模组的肉馅§c将不再掉落");
-        EventRegistry.registerDescription(2001, () -> "§d梦华构想§e模组的肉馅§a将继续掉落");
-        EventRegistry.registerDescription(2002, () -> Component.translatable("translation.oneiricconcept.marshmallow").getString());
-        EventRegistry.registerDescription(2003, () -> Component.translatable("translation.oneiricconcept.marshmallow2").getString());
-        EventRegistry.registerDescription(2004, () -> "§d与3个重子战斗，击杀两只即可获得奖励");
-        EventRegistry.registerDescription(2005, () -> "§6你将获得非洲之心");
-        EventRegistry.registerDescription(2006, () -> "§6你将为火花花的直播间刷人气");
-        EventRegistry.registerDescription(2007, () -> "§6你将为火花花的直播间刷很多人气");
+        if (!GROUPS.isEmpty()) return;
+        var stopMeat = event("§e不再掉落肉馅", ctx -> { FallingMeatsetProcedure.execute(ctx.level(), false); return true; });
+        var startMeat = event("§e继续掉落肉馅", ctx -> { FallingMeatsetProcedure.execute(ctx.level(), true); return true; });
+        var marshmallow = EventRegistry.register(Component.translatable("translation.oneiricconcept.marshmallow"), Component.empty(),
+                ctx -> { OccurrencesTheMarshmallowProcedure.execute(ctx.level(), ctx.player(), 1); return true; });
+        var marshmallow2 = EventRegistry.register(Component.translatable("translation.oneiricconcept.marshmallow2"), Component.empty(),
+                ctx -> { OccurrencesTheMarshmallowProcedure.execute(ctx.level(), ctx.player(), 2); return true; });
+        var reward = event("§a奖励：附魔", ctx -> ctx.enchant(EnchantGrade.LOW));
+        var reward2 = event("§a奖励：附魔", ctx -> ctx.enchant(EnchantGrade.MEDIUM));
+        var baryons = event("§d与3个重子战斗，击杀两只即可获得奖励", ctx ->
+                EventCombat.challenge(ctx, BARYON.get(), 3, 2, null, completion -> completion.enchant(EnchantGrade.MEDIUM)));
+        var diamond = event("§6至高奖励：愚者面具", ctx -> {
+            var player = ctx.player();
+            WhiteDiamondFakeProcedure.execute(ctx.level(), player.getX(), player.getY(), player.getZ(), player);
+            return ctx.give(new ItemStack(PGCItems.FOOLS_MASK.get()));
+        });
+        var audience = event("§6为火花花的直播间刷人气", ctx -> { PropagandaArmyOrderProcedure.execute(ctx.level(), ctx.player(), true, 100, -1, 60); return true; });
+        var moreAudience = event("§6为火花花的直播间刷很多人气", ctx -> { PropagandaArmyOrderProcedure.execute(ctx.level(), ctx.player(), true, 200, -1, 90); return true; });
+        var leave = RandomEvents.leaveEvent();
+        group(1000, "§e我不吃牛肉...吗？", stopMeat, startMeat, reward);
+        group(1001, "§c棉花糖号", marshmallow, marshmallow2, leave);
+        group(1002, "§a奖励", reward, reward2, leave);
+        group(1003, "§a奖励", reward2, reward, leave);
+        group(1004, "§d与重子搏斗！！！", baryons, baryons, baryons);
+        group(1005, "§c至高奖励！", diamond, reward, reward2);
+        group(1006, "§c超级直播矩阵", audience, moreAudience, leave);
+    }
+
+    private static RandomEvent event(String title, EventAction action) {
+        return EventRegistry.register(Component.literal(title), Component.empty(), action);
+    }
+
+    private static void group(int legacyNumber, String title, RandomEvent... events) {
+        GROUPS.put(legacyNumber, EventRegistry.registerGroup(EventGroup.of(Component.literal(title), events)));
+    }
+
+    public static void trigger(Entity entity, int number) {
+        if (entity instanceof ServerPlayer player) {
+            execute();
+            EventRegistry.trigger(player, GROUPS.getOrDefault(number, EventRegistry.group(number)));
+        }
     }
 }

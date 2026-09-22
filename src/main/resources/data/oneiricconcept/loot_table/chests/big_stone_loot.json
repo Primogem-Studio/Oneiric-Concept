@@ -10,7 +10,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
+          "name": "primogemcraft:mora",
           "weight": 100,
           "functions": [
             {
@@ -38,7 +38,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:yuanshi",
+          "name": "primogemcraft:primogem",
           "weight": 10,
           "functions": [
             {
@@ -80,7 +80,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jijiuchanzhiyuan",
+          "name": "primogemcraft:intertwined_fate",
           "weight": 10,
           "functions": [
             {
@@ -94,7 +94,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:xixiangyuzhiyuan",
+          "name": "primogemcraft:acquaint_fate",
           "weight": 10,
           "functions": [
             {
@@ -108,7 +108,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ssanbamiantou",
+          "name": "primogemcraft:shining_trapezohedron_die",
           "weight": 5,
           "functions": [
             {
@@ -122,7 +122,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:chuangshijiejing",
+          "name": "primogemcraft:genesis_crystal",
           "weight": 5,
           "functions": [
             {
@@ -136,7 +136,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:yiyinhedaletou",
+          "name": "primogemcraft:cosmic_big_lotto",
           "weight": 5,
           "functions": [
             {
@@ -150,7 +150,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:xiangdanganlao",
+          "name": "primogemcraft:ambergris_cheese",
           "weight": 10,
           "functions": [
             {
@@ -164,7 +164,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:qiwuchongwang",
+          "name": "primogemcraft:bug_net",
           "weight": 5,
           "functions": [
             {
@@ -178,7 +178,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:taikongmanbuchangpian",
+          "name": "primogemcraft:space_walk",
           "weight": 5,
           "functions": [
             {
@@ -192,7 +192,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ccangruimilinjian_014",
+          "name": "primogemcraft:village_surrounded_by_green",
           "weight": 5,
           "functions": [
             {
@@ -206,7 +206,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
+          "name": "primogemcraft:mora",
           "weight": 70,
           "functions": [
             {
@@ -220,7 +220,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
+          "name": "primogemcraft:mora",
           "weight": 70,
           "functions": [
             {
@@ -234,7 +234,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
+          "name": "primogemcraft:mora",
           "weight": 100,
           "functions": [
             {
@@ -248,7 +248,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:mmola_01",
+          "name": "primogemcraft:mora",
           "weight": 50,
           "functions": [
             {
@@ -262,7 +262,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:wawanxiangwuchangtou",
+          "name": "primogemcraft:entropic_die",
           "weight": 5,
           "functions": [
             {
@@ -276,7 +276,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:cebuzhunxia",
+          "name": "primogemcraft:omniscient_box",
           "weight": 5,
           "functions": [
             {
@@ -290,7 +290,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:fulinjiao",
+          "name": "primogemcraft:fortune_glue",
           "weight": 5,
           "functions": [
             {
@@ -304,7 +304,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zhzhenyinhedaletou",
+          "name": "primogemcraft:true_galaxy_lotto",
           "weight": 5,
           "functions": [
             {
@@ -318,7 +318,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:lajitongzunyan",
+          "name": "primogemcraft:sanctity_of_the_trashcan",
           "weight": 30,
           "functions": [
             {
@@ -332,7 +332,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:wufengjian",
+          "name": "primogemcraft:dull_blade",
           "weight": 30,
           "functions": [
             {
@@ -346,7 +346,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:xiaodaimola",
+          "name": "primogemcraft:small_refined_mora",
           "weight": 30,
           "functions": [
             {
@@ -360,7 +360,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:pengkeluodejingshen",
+          "name": "primogemcraft:punklorde_mentality",
           "weight": 5,
           "functions": [
             {
@@ -374,7 +374,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shanbianzhichen",
+          "name": "primogemcraft:dust_of_azoth",
           "weight": 20,
           "functions": [
             {
@@ -388,7 +388,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:fenliejinbi",
+          "name": "primogemcraft:gold_coin_of_discord",
           "weight": 5,
           "functions": [
             {
@@ -402,7 +402,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:yuzhousuipian",
+          "name": "primogemcraft:cosmic_fragment",
           "weight": 10,
           "functions": [
             {
@@ -416,7 +416,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:suiji_1shijian",
+          "name": "primogemcraft:random_event_error_code",
           "weight": 5,
           "functions": [
             {
@@ -430,7 +430,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jiangliliulangzhejingyan",
+          "name": "primogemcraft:wanderers_advice_reward",
           "weight": 15,
           "functions": [
             {
@@ -444,7 +444,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianglimaoxianjiajingyan",
+          "name": "primogemcraft:adventurers_experience_reward",
           "weight": 10,
           "functions": [
             {
@@ -458,7 +458,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianglidayinxiongjingyan",
+          "name": "primogemcraft:heros_wit_reward",
           "weight": 3,
           "functions": [
             {
@@ -472,7 +472,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:yiyimuguoshi",
+          "name": "primogemcraft:fruit_of_the_alien_tree",
           "weight": 5,
           "functions": [
             {
@@ -486,7 +486,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:wanshinang",
+          "name": "primogemcraft:omniscient_capsule",
           "weight": 5,
           "functions": [
             {
@@ -500,7 +500,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:maoxianjiazhinang",
+          "name": "primogemcraft:adventurers_pouch",
           "weight": 20,
           "functions": [
             {
@@ -556,7 +556,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zhaiquan",
+          "name": "primogemcraft:enigmata_faction_bond",
           "weight": 5,
           "functions": [
             {
@@ -570,7 +570,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:laoshi",
+          "name": "primogemcraft:archaic_stone",
           "weight": 20,
           "functions": [
             {
@@ -584,7 +584,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:fengdandaibiao",
+          "name": "primogemcraft:ballad_of_many_waters",
           "weight": 10,
           "functions": [
             {
@@ -598,7 +598,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:qhmbml",
+          "name": "primogemcraft:mora_upgrade_smithing_template",
           "weight": 10,
           "functions": [
             {
@@ -612,7 +612,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jlza",
+          "name": "primogemcraft:enhancement_ore",
           "weight": 30,
           "functions": [
             {
@@ -626,7 +626,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jlliang",
+          "name": "primogemcraft:fine_enhancement_ore",
           "weight": 20,
           "functions": [
             {
@@ -640,7 +640,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jlmo",
+          "name": "primogemcraft:mystic_enhancement_ore",
           "weight": 3,
           "functions": [
             {
@@ -654,7 +654,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:xingchen",
+          "name": "primogemcraft:masterless_stardust",
           "weight": 30,
           "functions": [
             {
@@ -668,7 +668,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:xinghui",
+          "name": "primogemcraft:masterless_starglitter",
           "weight": 10,
           "functions": [
             {
@@ -682,7 +682,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shenmilihe",
+          "name": "primogemcraft:enigmata_gift_box",
           "weight": 10,
           "functions": [
             {
@@ -696,7 +696,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shenmiwanou",
+          "name": "primogemcraft:unidentified_doll",
           "weight": 10,
           "functions": [
             {

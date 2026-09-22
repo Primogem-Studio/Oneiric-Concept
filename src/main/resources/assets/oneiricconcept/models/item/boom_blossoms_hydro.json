@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "oneiricconcept:item/boom_blossoms_hydro_item"
+  },
+  "render_type": "translucent"
+}

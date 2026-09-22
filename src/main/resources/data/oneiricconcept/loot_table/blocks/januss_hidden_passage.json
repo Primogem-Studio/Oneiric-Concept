@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "oneiricconcept:blocks/januss_hidden_passage",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oneiricconcept:januss_hidden_passage"
+        }
+      ]
+    }
+  ]
+}

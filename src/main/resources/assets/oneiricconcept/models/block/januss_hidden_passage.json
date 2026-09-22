@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/janus_passage",
+  "textures": {
+    "all": "oneiricconcept:block/janus_passage",
+    "particle": "oneiricconcept:block/janus_passage",
+    "0": "oneiricconcept:block/janus_passage"
+  },
+  "render_type": "translucent"
+}

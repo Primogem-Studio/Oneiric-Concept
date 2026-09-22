@@ -2,15 +2,15 @@
   "replace": false,
   "values": [
     {
-      "id": "primogemcraft:qwxydsw",
+      "id": "primogemcraft:lucky_special_ticket",
       "required": false
     },
     {
-      "id": "primogemcraft:qwwzsw",
+      "id": "primogemcraft:charmony_lost_property",
       "required": false
     },
     {
-      "id": "primogemcraft:xyzp",
+      "id": "primogemcraft:unknown_lost_property",
       "required": false
     }
   ]

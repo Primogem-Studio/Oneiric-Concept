@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:tezhidieyingqi"
+    "item": "primogemcraft:custom_superimposer"
   },
   "result": {
     "id": "oneiricconcept:superimposer_custommade",

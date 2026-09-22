@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/sealing_wax",
+  "textures": {
+    "all": "oneiricconcept:block/qy_hq",
+    "particle": "oneiricconcept:block/qy_hq",
+    "0": "oneiricconcept:block/qy_hq"
+  },
+  "render_type": "cutout"
+}

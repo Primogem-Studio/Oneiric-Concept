@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "primogemcraft:yhjsl"
+    "item": "primogemcraft:eternal_metal_grain"
   },
   "base": {
     "tag": "c:stones"

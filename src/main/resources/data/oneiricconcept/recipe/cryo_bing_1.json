@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:lijs"
+    "item": "primogemcraft:compassion_metal"
   },
   "result": {
     "id": "oneiricconcept:cryo_metal",

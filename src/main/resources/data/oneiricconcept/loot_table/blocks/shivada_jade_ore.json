@@ -13,7 +13,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyusuixie",
+          "name": "primogemcraft:shivada_jade_sliver",
           "weight": 500,
           "conditions": [
             {
@@ -52,7 +52,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aaixubingyuduanpian",
+          "name": "primogemcraft:shivada_jade_fragment",
           "weight": 20,
           "conditions": [
             {
@@ -86,7 +86,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyukuai",
+          "name": "primogemcraft:shivada_jade_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -120,7 +120,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyu",
+          "name": "primogemcraft:shivada_jade_gemstone",
           "weight": 1,
           "conditions": [
             {

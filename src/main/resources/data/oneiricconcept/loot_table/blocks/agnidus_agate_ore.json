@@ -13,7 +13,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ranyuansuixie",
+          "name": "primogemcraft:agnidus_agate_sliver",
           "weight": 500,
           "conditions": [
             {
@@ -52,7 +52,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ranyuanduanpian",
+          "name": "primogemcraft:agnidus_agate_fragment",
           "weight": 20,
           "conditions": [
             {
@@ -91,7 +91,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ranyuankuai",
+          "name": "primogemcraft:agnidus_agate_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -130,7 +130,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:rranyuanmanao",
+          "name": "primogemcraft:agnidus_agate_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -174,7 +174,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ranyuanmanaokuangshi",
+          "name": "primogemcraft:agnidus_agate_ore",
           "weight": 1,
           "conditions": [
             {

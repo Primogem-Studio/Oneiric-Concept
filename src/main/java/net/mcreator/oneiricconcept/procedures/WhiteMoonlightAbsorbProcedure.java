@@ -46,13 +46,13 @@ public class WhiteMoonlightAbsorbProcedure {
 				} else if (OneiricconceptModItems.MILK.get() == input.getItem()) {
 					output = new ItemStack(OneiricconceptModItems.DREAMY_CONE.get()).copy();
 				} else if (Blocks.DEEPSLATE_REDSTONE_ORE.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:ranyuanduanpian"))) : new ItemStack(OneiricconceptModItems.MOLTEN_METAL.get())).copy();
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:agnidus_agate_fragment"))) : new ItemStack(OneiricconceptModItems.MOLTEN_METAL.get())).copy();
 				} else if (Blocks.DEEPSLATE_GOLD_ORE.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:jianlaoduanpian"))) : new ItemStack(Items.RAW_GOLD)).copy();
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:prithiva_topaz_fragment"))) : new ItemStack(Items.RAW_GOLD)).copy();
 				} else if (Blocks.AMETHYST_BLOCK.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:zuishengduanpian"))) : new ItemStack(OneiricconceptModItems.VIRTUAL_PARTICLE.get())).copy();
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:vajrada_amethyst_fragment"))) : new ItemStack(OneiricconceptModItems.VIRTUAL_PARTICLE.get())).copy();
 				} else if (Blocks.DEEPSLATE_LAPIS_ORE.asItem() == input.getItem()) {
-					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:dijingduanpian"))) : new ItemStack(OneiricconceptModItems.MEMORY_BUBBLE.get())).copy();
+					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("primogemcraft:varunada_lazurite_fragment"))) : new ItemStack(OneiricconceptModItems.MEMORY_BUBBLE.get())).copy();
 				} else if (OneiricconceptModBlocks.THE_ANOTHER_WORLD_SAPLING.get().asItem() == input.getItem()) {
 					output = (RandomProcedure.execute(world, 0.5) ? new ItemStack(OneiricconceptModItems.PRIMOGEMFRUIT.get()) : new ItemStack(OneiricconceptModItems.PRIMOGEM_WAFFLE.get())).copy();
 				} else if (OneiricconceptModItems.ENERGY_DRINK.get() == input.getItem()) {

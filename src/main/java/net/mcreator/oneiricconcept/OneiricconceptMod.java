@@ -59,7 +59,7 @@ public class OneiricconceptMod {
 		OneiricconceptModFluids.REGISTRY.register(modEventBus);
 		OneiricconceptModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
-		PGCApi.init();
+		// Neo wish integration is provided by data-driven loot modifiers.
 		EventPGCProcedure.execute();
 		// End of user code block mod init
 	}

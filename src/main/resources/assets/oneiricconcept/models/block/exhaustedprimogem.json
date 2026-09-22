@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "oneiricconcept:block/exhausted_primogem_block_top",
+    "up": "oneiricconcept:block/exhausted_primogem_block_top",
+    "north": "oneiricconcept:block/exhausted_primogem_block",
+    "east": "oneiricconcept:block/exhausted_primogem_block",
+    "south": "oneiricconcept:block/exhausted_primogem_block",
+    "west": "oneiricconcept:block/exhausted_primogem_block",
+    "particle": "oneiricconcept:block/exhausted_primogem_block_top"
+  },
+  "render_type": "translucent"
+}

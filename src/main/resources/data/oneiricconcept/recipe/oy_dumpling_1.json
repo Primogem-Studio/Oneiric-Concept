@@ -16,7 +16,7 @@
       "item": "oneiricconcept:oy_stuffing"
     }
   },
-  "source": "oneiricconcept:oy_stuffing",
+  "source": {"item": "oneiricconcept:oy_stuffing"},
   "result": {
     "id": "oneiricconcept:oy_dumpling",
     "count": 1

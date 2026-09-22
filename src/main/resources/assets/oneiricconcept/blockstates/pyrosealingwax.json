@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/pyrosealingwax"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/pyrosealingwax",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/pyrosealingwax",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/pyrosealingwax",
+      "y": 270
+    }
+  }
+}

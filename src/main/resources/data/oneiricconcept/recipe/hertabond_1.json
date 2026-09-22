@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:zhaiquan"
+    "item": "primogemcraft:enigmata_faction_bond"
   },
   "result": {
     "id": "oneiricconcept:hertabond",

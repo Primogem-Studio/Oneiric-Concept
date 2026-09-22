@@ -13,7 +13,7 @@ public class SummonzombieProcedure {
 		String summons = "";
 		if (RandomProcedure.execute(world, 0.01)) {
 			if (RandomProcedure.execute(world, 0.35)) {
-				summons = "summon primogemcraft:s_wfengraojiangshi";
+				summons = "summon primogemcraft:abundance_blight_zombie";
 			} else {
 				summons = "summon zombie";
 			}

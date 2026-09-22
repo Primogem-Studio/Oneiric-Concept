@@ -30,9 +30,9 @@ public class MagazinelevelProcedure {
 		bulletitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		bullename = BuiltInRegistries.ITEM.getKey(bulletitem.getItem()).toString();
 		Primogem = "primogemcraft:";
-		mora1 = Primogem + "mmola_01";
-		mora2 = Primogem + "jinzhimola";
-		mora3 = Primogem + "mljnb";
+		mora1 = Primogem + "mora";
+		mora2 = Primogem + "refined_mora";
+		mora3 = Primogem + "mora_commemorative_coin";
 		if ((bullename).equals(mora1) || (bullename).equals(mora2) || (bullename).equals(mora3)) {
 			if (!((level).equals(mora1) || (level).equals(mora2) || (level).equals(mora3))) {
 				level = bullename;

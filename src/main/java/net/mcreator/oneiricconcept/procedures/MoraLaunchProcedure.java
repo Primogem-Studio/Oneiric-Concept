@@ -32,11 +32,11 @@ public class MoraLaunchProcedure {
 		SecondaryHand = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		lvl = SecondaryHand.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("level");
 		primogem = "primogemcraft:";
-		if ((lvl).equals(primogem + "mmola_01")) {
+		if ((lvl).equals(primogem + "mora")) {
 			MoraDamageProcedure.execute(world, entity, 1, 5);
-		} else if ((lvl).equals(primogem + "jinzhimola")) {
+		} else if ((lvl).equals(primogem + "refined_mora")) {
 			MoraDamageProcedure.execute(world, entity, 2, 5);
-		} else if ((lvl).equals(primogem + "mljnb")) {
+		} else if ((lvl).equals(primogem + "mora_commemorative_coin")) {
 			MoraDamageProcedure.execute(world, entity, 4, 16);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {

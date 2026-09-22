@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/phlogiston_tank",
+  "textures": {
+    "all": "oneiricconcept:block/phlogiston_tank",
+    "particle": "oneiricconcept:block/phlogiston_tank",
+    "body": "oneiricconcept:block/phlogiston_tank"
+  },
+  "render_type": "solid"
+}

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:zhjs"
+    "item": "primogemcraft:wisdom_metal"
   },
   "result": {
     "id": "oneiricconcept:dendro_metal",

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "oneiricconcept:block/theanotherworldlogtop",
+    "up": "oneiricconcept:block/theanotherworldlogtop",
+    "north": "oneiricconcept:block/t2heanotherworldlog",
+    "east": "oneiricconcept:block/t2heanotherworldlog",
+    "south": "oneiricconcept:block/t2heanotherworldlog",
+    "west": "oneiricconcept:block/t2heanotherworldlog",
+    "particle": "oneiricconcept:block/theanotherworldlogtop"
+  },
+  "render_type": "solid"
+}

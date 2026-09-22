@@ -11,6 +11,6 @@ public class WuqijinglianupProcedure {
 		Entity e1 = null;
 		i1 = itemstack.copy();
 		e1 = entity;
-		return net.mcreator.ceshi.procedures.HSjinglianupProcedure.execute(e1, i1);
+		return net.mcreator.oneiricconcept.PGCApi.refinementBonus(e1, i1);
 	}
 }

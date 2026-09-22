@@ -4,10 +4,10 @@
     "item": "oneiricconcept:honkai_shard"
   },
   "base": {
-    "item": "primogemcraft:shenmiwanou"
+    "item": "primogemcraft:unidentified_doll"
   },
   "addition": {
-    "item": "primogemcraft:shenmiwanou"
+    "item": "primogemcraft:unidentified_doll"
   },
   "result": {
     "id": "oneiricconcept:legion_pseudo_sliver"

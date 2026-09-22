@@ -20,9 +20,9 @@ public class ItempgcboxProcedure {
 		s1 = getBlockNBTString(world, BlockPos.containing(x, y, z), "item");
 		s2 = "c:curio/normal/";
 		s3 = "primogemcraft:";
-		if ((s3 + "shenmilihe").equals(s1)) {
+		if ((s3 + "enigmata_gift_box").equals(s1)) {
 			if (!world.isClientSide()) {
-				i1 = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("pgc:lihe_1"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
+				i1 = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("primogemcraft:gift_box_common"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
 			}
 		} else if ((s3 + "qhzlh").equals(s1)) {
 			i1 = LiheshuxhsProcedure.execute(world, s3 + "blocks/zllh_01").copy();

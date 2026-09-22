@@ -15,9 +15,9 @@ public class PGCcounterProcedure {
 			z1 = zhi;
 			s1 = "oc_" + ss1;
 			if (zhi_xing) {
-				net.hackermdch.pgc.Timer.set(e1, s1, (int) z1);
+				net.per.primogemcraft.util.PGCTimer.set(e1, s1, (int) z1);
 			}
-			return net.hackermdch.pgc.Timer.isDone(e1, s1);
+			return net.per.primogemcraft.util.PGCTimer.isDone(e1, s1);
 		}
 		return false;
 	}

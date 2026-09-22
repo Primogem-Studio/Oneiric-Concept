@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:ryjs"
+    "item": "primogemcraft:burning_wish_metal"
   },
   "result": {
     "id": "oneiricconcept:pyro_metal",

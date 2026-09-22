@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:yhjs"
+    "item": "primogemcraft:eternal_metal"
   },
   "result": {
     "id": "oneiricconcept:electro_metal",

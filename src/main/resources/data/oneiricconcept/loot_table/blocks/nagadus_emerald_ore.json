@@ -13,7 +13,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangbifeisuixie",
+          "name": "primogemcraft:nagadus_emerald_sliver",
           "weight": 500,
           "conditions": [
             {
@@ -52,7 +52,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangduanpian",
+          "name": "primogemcraft:nagadus_emerald_fragment",
           "weight": 20,
           "conditions": [
             {
@@ -91,7 +91,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangkuai",
+          "name": "primogemcraft:nagadus_emerald_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -130,7 +130,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangbifei",
+          "name": "primogemcraft:nagadus_emerald_gemstone",
           "weight": 1,
           "conditions": [
             {

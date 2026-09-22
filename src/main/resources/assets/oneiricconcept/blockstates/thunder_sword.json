@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/thunder_sword"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/thunder_sword",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/thunder_sword",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/thunder_sword",
+      "y": 270
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:yuanshi"
+    "item": "primogemcraft:primogem"
   },
   "result": {
     "id": "oneiricconcept:primogem",

@@ -1,25 +1,22 @@
 package net.mcreator.oneiricconcept;
 
-import net.hackermdch.pgc.network.WishInfoConfiguration;
-import net.mcreator.ceshi.network.PrimogemcraftModVariables;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.per.primogemcraft.system.weapon.WeaponEnhancement;
+import net.per.primogemcraft.system.weapon.WeaponState;
 
-import static net.mcreator.oneiricconcept.OneiricconceptMod.MODID;
+/** PrimogemCraftNeo APIs used by the generated procedures. */
+public final class PGCApi {
+    private PGCApi() {}
 
-public class PGCApi {
-    public static PrimogemcraftModVariables.PlayerVariables getPlayerVariables(Entity entity) {
-        if (entity instanceof ServerPlayer player) return player.getData(PrimogemcraftModVariables.PLAYER_VARIABLES);
-        return new PrimogemcraftModVariables.PlayerVariables();
+    public static double refinementBonus(Entity entity, ItemStack stack) {
+        // OC uses zero-based refinements; Neo stores the first tier as 1.
+        return Math.max(0, WeaponEnhancement.refinementOf(entity instanceof Player player ? player : null, stack) - 1);
     }
 
-    static void init() {
-        try {
-            WishInfoConfiguration.addRare(ResourceLocation.fromNamespaceAndPath(MODID, "r"));
-            WishInfoConfiguration.addSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "sr"));
-            WishInfoConfiguration.addSuperSuperRare(ResourceLocation.fromNamespaceAndPath(MODID, "ssr"));
-        } catch (Throwable ignore) {
-        }
+    public static String weaponDescription(Entity entity, ItemStack stack, String description) {
+        return "§eLv." + WeaponState.of(stack).level() + " §6精炼 "
+                + (int) (refinementBonus(entity, stack) + 1) + "\n" + description;
     }
 }

@@ -3,7 +3,7 @@
   "conditions": [
     {
       "condition": "neoforge:loot_table_id",
-      "loot_table_id": "primogemcraft:qqyjin"
+      "loot_table_id": "primogemcraft:wish/gold"
     },
     {
       "condition": "minecraft:random_chance",

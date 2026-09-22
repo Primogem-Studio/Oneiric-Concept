@@ -24,12 +24,12 @@ public class SkiplifeProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.removeAllEffects();
 		for (int _i1 = 0; _i1 < 36; _i1++) {
-			zpitem = (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler3 ? _modHandler3.getStackInSlot((int) index0).copy() : ItemStack.EMPTY).copy();
+			zpitem = (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler3 ? _modHandler3.getStackInSlot((int) _i1).copy() : ItemStack.EMPTY).copy();
 			if (zpitem.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:canskip")))) {
 				if (zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("dai_kai_jiang")) {
-					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, index0, 24000, "k1");
+					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, _i1, 24000, "k1");
 				} else if (!zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("sun_huai")) {
-					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, index0, 6000, "wzsw");
+					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, _i1, 6000, "wzsw");
 				}
 			}
 		}

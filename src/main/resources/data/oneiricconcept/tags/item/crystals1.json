@@ -2,20 +2,20 @@
   "replace": false,
   "values": [
     {
-      "id": "primogemcraft:zuishengduanpian",
-      "required": false
-    },
-    {
-      "id": "primogemcraft:yuanshi",
+      "id": "primogemcraft:eternal_metal_grain",
       "required": false
     },
     "oneiricconcept:primogem",
     {
-      "id": "primogemcraft:disui",
+      "id": "primogemcraft:geomarrow",
       "required": false
     },
     {
-      "id": "primogemcraft:yhjsl",
+      "id": "primogemcraft:vajrada_amethyst_fragment",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:primogem",
       "required": false
     }
   ]

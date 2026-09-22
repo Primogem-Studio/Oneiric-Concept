@@ -13,6 +13,6 @@ public class PgcwuqiProcedure {
 		e1 = entity;
 		i1 = itemstack.copy();
 		s1 = miaoshu;
-		return net.mcreator.ceshi.procedures.MSHSwuqi00Procedure.execute(e1, i1, s1);
+		return net.mcreator.oneiricconcept.PGCApi.weaponDescription(e1, i1, s1);
 	}
 }

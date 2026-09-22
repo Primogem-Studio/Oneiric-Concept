@@ -18,7 +18,7 @@ public class MoraOnlineProcedure {
 		Litm = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 		lvl = Litm.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("level");
 		primogem = "primogemcraft:";
-		return (lvl).equals(primogem + "mmola_01") || (lvl).equals(primogem + "jinzhimola")
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == OneiricconceptModItems.BOSS_STONE_COIN_GUN_PLUS.get() && (lvl).equals(primogem + "mljnb");
+		return (lvl).equals(primogem + "mora") || (lvl).equals(primogem + "refined_mora")
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == OneiricconceptModItems.BOSS_STONE_COIN_GUN_PLUS.get() && (lvl).equals(primogem + "mora_commemorative_coin");
 	}
 }

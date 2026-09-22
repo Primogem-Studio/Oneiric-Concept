@@ -1,15 +1,11 @@
 package net.mcreator.oneiricconcept.procedures;
 
-import net.mcreator.ceshi.network.PrimogemcraftModVariables;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
+import net.per.primogemcraft.system.weapon.Equilibrium;
 
 public class JunHengDengJiProcedure {
     public static double execute(Entity entity) {
-        if (entity == null)
-            return 0;
-        Entity entity0 = null;
-        entity0 = entity;
-        var a = entity.getData(PrimogemcraftModVariables.PLAYER_VARIABLES).jun_heng / 10;
-        return a > 3 ? 3 : a;
+        return entity instanceof Player player ? Equilibrium.of(player).tier() : 0;
     }
 }

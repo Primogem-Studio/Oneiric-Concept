@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/cryosealingwax"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/cryosealingwax",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/cryosealingwax",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/cryosealingwax",
+      "y": 270
+    }
+  }
+}

@@ -39,7 +39,7 @@ public class LaserhurtProcedure {
 		total_distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
 		steps = total_distance / 0.1;
 		for (int _i1 = 0; _i1 < (int) steps; _i1++) {
-			ratio = (index0 * 0.1) / total_distance;
+			ratio = (_i1 * 0.1) / total_distance;
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.WAX_OFF, (x + ratio * dx), (y + ratio * dy), (z + ratio * dz), 1, 0, 0, 0, 0);
 		}

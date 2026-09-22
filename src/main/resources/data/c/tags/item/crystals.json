@@ -2,31 +2,31 @@
   "replace": false,
   "values": [
     "minecraft:prismarine_crystals",
-    "minecraft:emerald",
-    "minecraft:prismarine_shard",
-    "minecraft:diamond",
     {
-      "id": "primogemcraft:zuishengsuixie",
+      "id": "primogemcraft:enhancement_ore",
       "required": false
     },
+    "minecraft:emerald",
+    "minecraft:prismarine_shard",
+    {
+      "id": "primogemcraft:primogem_dust",
+      "required": false
+    },
+    "minecraft:diamond",
     "oneiricconcept:exhaustedprimogem",
     "minecraft:quartz",
     {
-      "id": "primogemcraft:yuanshif",
-      "required": false
-    },
-    {
       "id": "#c:gem",
-      "required": false
-    },
-    {
-      "id": "primogemcraft:jlza",
       "required": false
     },
     {
       "id": "#c:gems",
       "required": false
     },
-    "minecraft:amethyst_shard"
+    "minecraft:amethyst_shard",
+    {
+      "id": "primogemcraft:vajrada_amethyst_sliver",
+      "required": false
+    }
   ]
 }

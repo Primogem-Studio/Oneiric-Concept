@@ -13,7 +13,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ziziyousongshisuixie",
+          "name": "primogemcraft:vayuda_turquoise_sliver",
           "weight": 500,
           "conditions": [
             {
@@ -52,7 +52,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zziyousongshiduanpian",
+          "name": "primogemcraft:vayuda_turquoise_fragment",
           "weight": 20,
           "conditions": [
             {
@@ -91,7 +91,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zziyousongshikuai",
+          "name": "primogemcraft:vayuda_turquoise_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -125,7 +125,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zziyousongshi",
+          "name": "primogemcraft:vayuda_turquoise_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -164,7 +164,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ziyousongshikuangshi",
+          "name": "primogemcraft:vayuda_turquoise_ore",
           "weight": 1,
           "conditions": [
             {

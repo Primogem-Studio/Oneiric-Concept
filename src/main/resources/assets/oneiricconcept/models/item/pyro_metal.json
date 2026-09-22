@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "oneiricconcept:item/agnidus_metal_ingotitem"
+  },
+  "render_type": "translucent"
+}

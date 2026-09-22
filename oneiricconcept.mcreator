@@ -774,7 +774,7 @@
       "registry_name": "vayuda_turquoise_ore_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/vayuda_turquoise_ore_1.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/vayuda_turquoise_ore.json"
         ]
       },
       "path": "~/loot/OreLoot"
@@ -787,7 +787,7 @@
       "registry_name": "vajrada_amethyst_ore_2",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/vajrada_amethyst_ore_2.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/vajrada_amethyst_ore.json"
         ]
       },
       "path": "~/loot/OreLoot"
@@ -800,7 +800,7 @@
       "registry_name": "agnidus_agate_ore_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnidus_agate_ore_1.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/agnidus_agate_ore.json"
         ]
       },
       "path": "~/loot/OreLoot"
@@ -813,7 +813,7 @@
       "registry_name": "varunada_lazurite_ore_1",
       "metadata": {
         "files": [
-          "src/main/resources/data/oneiricconcept/loot_table/blocks/varunada_lazurite_ore_1.json"
+          "src/main/resources/data/oneiricconcept/loot_table/blocks/varunada_lazurite_ore.json"
         ]
       },
       "path": "~/loot/OreLoot"
@@ -3362,7 +3362,7 @@
       "name": "Pgcwuqi",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "pgcwuqi",
       "metadata": {
         "return_type": "string",
@@ -3642,7 +3642,7 @@
       "name": "MoraOnline",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "mora_online",
       "metadata": {
         "return_type": "logic",
@@ -3736,7 +3736,7 @@
       "name": "MoraLaunch",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "mora_launch",
       "metadata": {
         "files": [
@@ -4344,7 +4344,7 @@
       "name": "Itempgcbox",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "itempgcbox",
       "metadata": {
         "files": [
@@ -5309,7 +5309,7 @@
       "name": "MaraStruckClear",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "mara_struck_clear",
       "metadata": {
         "files": [
@@ -6215,7 +6215,7 @@
       "name": "Makemetalmelt",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "makemetalmelt",
       "metadata": {
         "files": [
@@ -8032,7 +8032,7 @@
       "name": "TurtleDamage",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "turtle_damage",
       "metadata": {
         "return_type": "logic",
@@ -8164,7 +8164,7 @@
       "name": "Summonzombie",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "summonzombie",
       "metadata": {
         "files": [
@@ -8761,7 +8761,7 @@
       "name": "DivineArrow",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "divine_arrow",
       "metadata": {
         "files": [
@@ -8942,7 +8942,7 @@
       "name": "KillLantern",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "kill_lantern",
       "metadata": {
         "files": [
@@ -9528,7 +9528,7 @@
       "name": "Explosive",
       "type": "projectile",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "explosive",
       "metadata": {
         "files": [
@@ -11685,7 +11685,7 @@
       "name": "Magazinelevel",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "magazinelevel",
       "metadata": {
         "return_type": "actionresulttype",
@@ -12270,7 +12270,7 @@
       "name": "Debug",
       "type": "function",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "debug",
       "metadata": {
         "files": [
@@ -12911,7 +12911,7 @@
       "name": "Skiplife",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "skiplife",
       "metadata": {
         "files": [
@@ -13030,7 +13030,7 @@
       "name": "UID18",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "uid_18",
       "metadata": {
         "files": [
@@ -13342,7 +13342,7 @@
       "name": "PrimogemExplosion",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "primogem_explosion",
       "metadata": {
         "files": [
@@ -13485,7 +13485,7 @@
       "name": "PrimogemSwordPlace",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "primogem_sword_place",
       "metadata": {
         "files": [
@@ -13673,7 +13673,7 @@
       "name": "Weaponclick",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "weaponclick",
       "metadata": {
         "files": [
@@ -14069,7 +14069,7 @@
       "name": "Crystalgeneratoritem",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "crystalgeneratoritem",
       "metadata": {
         "files": [
@@ -14845,7 +14845,7 @@
       "name": "Incubate",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "incubate",
       "metadata": {
         "files": [
@@ -14935,7 +14935,7 @@
       "name": "BigRed",
       "type": "function",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "big_red",
       "metadata": {
         "files": [
@@ -15307,7 +15307,7 @@
       "name": "WhiteMoonlightAbsorb",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "white_moonlight_absorb",
       "metadata": {
         "files": [
@@ -15444,7 +15444,7 @@
       "name": "Wuqijinglianup",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "wuqijinglianup",
       "metadata": {
         "dependencies": [
@@ -15468,7 +15468,7 @@
       "name": "PGCcounter",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "pg_ccounter",
       "metadata": {
         "dependencies": [
@@ -15504,7 +15504,7 @@
       "name": "Examplexs",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "examplexs",
       "metadata": {
         "dependencies": [
@@ -16215,7 +16215,7 @@
       "name": "OccurrencesTheMarshmallowIteration",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "occurrences_the_marshmallow_iteration",
       "metadata": {
         "dependencies": [
@@ -16786,7 +16786,7 @@
       "name": "LanternSave",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "lantern_save",
       "metadata": {
         "dependencies": [
@@ -16990,7 +16990,7 @@
       "name": "TraverseBackPac",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "traverse_back_pac",
       "metadata": {
         "dependencies": [
@@ -17022,7 +17022,7 @@
       "name": "Dendrolaunchplace",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "dendrolaunchplace",
       "metadata": {
         "dependencies": [
@@ -17332,7 +17332,7 @@
       "name": "ExplosiveCryo",
       "type": "projectile",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "explosive_cryo",
       "metadata": {
         "files": [
@@ -17346,7 +17346,7 @@
       "name": "ExplosiveDendro",
       "type": "projectile",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "explosive_dendro",
       "metadata": {
         "files": [
@@ -17360,7 +17360,7 @@
       "name": "ExplosiveElectro",
       "type": "projectile",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "explosive_electro",
       "metadata": {
         "files": [
@@ -17374,7 +17374,7 @@
       "name": "ExplosiveHydro",
       "type": "projectile",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "explosive_hydro",
       "metadata": {
         "files": [
@@ -18107,7 +18107,7 @@
       "name": "SakuraTree",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "sakura_tree",
       "metadata": {
         "dependencies": [
@@ -18190,7 +18190,7 @@
       "name": "Laserhurt",
       "type": "procedure",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "laserhurt",
       "metadata": {
         "dependencies": [
@@ -18232,8 +18232,8 @@
     {
       "name": "LYAAA",
       "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
+      "compiles": true,
+      "locked_code": true,
       "registry_name": "lyaaa",
       "metadata": {
         "dependencies": [
@@ -18530,7 +18530,7 @@
       "name": "JanusGUI",
       "type": "gui",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "janus_gui",
       "metadata": {
         "files": [
@@ -19189,7 +19189,7 @@
     ],
     "ITEMS:c:foods/cheese": [
       "CUSTOM:AmbergrisCheeseSliver",
-      "EXTERNAL:primogemcraft:xiangdanganlao"
+      "EXTERNAL:primogemcraft:ambergris_cheese"
     ],
     "ITEMS:mod:fish": [
       "TAG:mod:fruit_paste_bait_fish"
@@ -19572,9 +19572,9 @@
       "Items.PRISMARINE_SHARD",
       "Items.PRISMARINE_CRYSTALS",
       "Items.AMETHYST_SHARD",
-      "EXTERNAL:primogemcraft:jlza",
-      "EXTERNAL:primogemcraft:zuishengsuixie",
-      "EXTERNAL:primogemcraft:yuanshif",
+      "EXTERNAL:primogemcraft:enhancement_ore",
+      "EXTERNAL:primogemcraft:vajrada_amethyst_sliver",
+      "EXTERNAL:primogemcraft:primogem_dust",
       "TAG:c:gem",
       "TAG:c:gems"
     ],
@@ -19633,25 +19633,25 @@
       "CUSTOM:MoraBow"
     ],
     "ITEMS:mod:crystals1": [
-      "EXTERNAL:primogemcraft:yuanshi",
-      "EXTERNAL:primogemcraft:disui",
-      "EXTERNAL:primogemcraft:zuishengduanpian",
-      "EXTERNAL:primogemcraft:yhjsl",
+      "EXTERNAL:primogemcraft:primogem",
+      "EXTERNAL:primogemcraft:geomarrow",
+      "EXTERNAL:primogemcraft:vajrada_amethyst_fragment",
+      "EXTERNAL:primogemcraft:eternal_metal_grain",
       "CUSTOM:PgcPg"
     ],
     "ITEMS:mod:crystals2": [
       "CUSTOM:HonkaiSliver",
-      "EXTERNAL:primogemcraft:zuishengkuai",
-      "EXTERNAL:primogemcraft:laoshi"
+      "EXTERNAL:primogemcraft:vajrada_amethyst_chunk",
+      "EXTERNAL:primogemcraft:archaic_stone"
     ],
     "ITEMS:mod:crystals3": [
       "CUSTOM:OneiricShard",
-      "EXTERNAL:primogemcraft:chuangshijiejing",
-      "EXTERNAL:primogemcraft:yhjs",
+      "EXTERNAL:primogemcraft:genesis_crystal",
+      "EXTERNAL:primogemcraft:eternal_metal",
       "CUSTOM:Elect1"
     ],
     "ITEMS:mod:crystals4": [
-      "EXTERNAL:primogemcraft:zuishengzijing",
+      "EXTERNAL:primogemcraft:vajrada_amethyst_gemstone",
       "CUSTOM:HonkaiShard"
     ],
     "BLOCKS:mod:blockblocklist": [
@@ -19659,13 +19659,13 @@
       "CUSTOM:StrippedTheAnotherWorldLog"
     ],
     "ITEMS:mod:canskip": [
-      "EXTERNAL:primogemcraft:xyzp",
-      "EXTERNAL:primogemcraft:qwwzsw",
-      "EXTERNAL:primogemcraft:qwxydsw"
+      "EXTERNAL:primogemcraft:lucky_special_ticket",
+      "EXTERNAL:primogemcraft:unknown_lost_property",
+      "EXTERNAL:primogemcraft:charmony_lost_property"
     ],
     "ITEMS:mod:dendrolunch": [
       "CUSTOM:Boomyampyro",
-      "EXTERNAL:primogemcraft:caoyuanhe",
+      "EXTERNAL:primogemcraft:dendro_core",
       "CUSTOM:CryoBoomyam",
       "CUSTOM:DendroBoomyam",
       "CUSTOM:ElectroBoomyam",

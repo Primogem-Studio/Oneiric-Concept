@@ -3,11 +3,11 @@
   "values": [
     "oneiricconcept:honkai_sliver",
     {
-      "id": "primogemcraft:zuishengkuai",
+      "id": "primogemcraft:archaic_stone",
       "required": false
     },
     {
-      "id": "primogemcraft:laoshi",
+      "id": "primogemcraft:vajrada_amethyst_chunk",
       "required": false
     }
   ]

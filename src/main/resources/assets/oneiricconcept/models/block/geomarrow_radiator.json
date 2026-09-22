@@ -1,0 +1,9 @@
+{
+  "parent": "oneiricconcept:custom/geomarrowradiator",
+  "textures": {
+    "all": "oneiricconcept:block/geomarrowradiator",
+    "particle": "oneiricconcept:block/geomarrowradiator",
+    "0": "oneiricconcept:block/geomarrowradiator"
+  },
+  "render_type": "cutout_mipped"
+}

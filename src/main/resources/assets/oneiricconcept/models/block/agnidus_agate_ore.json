@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "oneiricconcept:block/agnidusagateore",
+    "particle": "oneiricconcept:block/agnidusagateore"
+  },
+  "render_type": "solid"
+}

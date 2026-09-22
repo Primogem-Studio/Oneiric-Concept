@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "oneiricconcept:block/dawnleaves",
+    "particle": "oneiricconcept:block/dawnleaves"
+  }
+}

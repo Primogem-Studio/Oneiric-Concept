@@ -22,3 +22,5 @@ runs/
 /*.mcreator.lock
 
 .vscode/
+
+/workspace-client.log

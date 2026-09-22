@@ -53,7 +53,7 @@ public class LanternSaveProcedure {
 			str = "summon minecraft:text_display ~ ~ ~ {text: '{\"text\":\"" + "" + T3 + "\",\"bold\":true}',background:-2130774334,line_width:600,billboard:\"center\"}";
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(
-						new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.7 + (index0 + 1) * 0.3), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), str);
+						new CommandSourceStack(CommandSource.NULL, new Vec3((x + 0.5), (y + 0.7 + (_i1 + 1) * 0.3), (z + 0.5)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), str);
 			T3 = T2;
 			T2 = T1;
 			if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:jlzs"
+    "item": "primogemcraft:sturdy_metal"
   },
   "result": {
     "id": "oneiricconcept:geo_metal",

@@ -16,7 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.oneiricconcept.block.entity.LY1BlockEntity;
+import net.mcreator.oneiricconcept.block.entity.*;
 import net.mcreator.oneiricconcept.OneiricconceptMod;
 
 @EventBusSubscriber

@@ -9,7 +9,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:dijingsuixie",
+          "name": "primogemcraft:varunada_lazurite_sliver",
           "weight": 500,
           "conditions": [
             {
@@ -48,7 +48,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:dijingduanpian",
+          "name": "primogemcraft:varunada_lazurite_fragment",
           "weight": 20,
           "conditions": [
             {
@@ -87,7 +87,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:dijingkuai",
+          "name": "primogemcraft:varunada_lazurite_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -126,7 +126,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:diijingqingjing",
+          "name": "primogemcraft:varunada_lazurite_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -170,7 +170,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:dijingqinjingkuangshi",
+          "name": "primogemcraft:varunada_lazurite_ore",
           "weight": 1,
           "conditions": [
             {

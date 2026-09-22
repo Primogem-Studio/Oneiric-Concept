@@ -33,14 +33,14 @@ public class CrystalgeneratoritemProcedure {
 		if (!getBlockNBTLogic(world, BlockPos.containing(x, y, z), "running")) {
 			pgc = "primogemcraft:";
 			for (int _i1 = 0; _i1 < 7; _i1++) {
-				crystal = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy()).copy();
+				crystal = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) _i1).copy()).copy();
 				if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 					if (world instanceof ServerLevel _level) {
-						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u7B2C" + index0 + "\u683C\u7684\u7269\u54C1\uFF1A" + crystal)), false);
+						_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u7B2C" + _i1 + "\u683C\u7684\u7269\u54C1\uFF1A" + crystal)), false);
 					}
 				}
 				if (!(crystal.getItem() == ItemStack.EMPTY.getItem())) {
-					copyindex0 = index0;
+					copyindex0 = _i1;
 					break;
 				}
 			}

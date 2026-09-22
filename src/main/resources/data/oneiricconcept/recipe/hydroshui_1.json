@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:zyjs"
+    "item": "primogemcraft:justice_metal"
   },
   "result": {
     "id": "oneiricconcept:hydro_metal",

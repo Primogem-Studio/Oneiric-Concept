@@ -14,7 +14,7 @@
       "item": "minecraft:stick"
     }
   },
-  "source": "minecraft:fishing_rod",
+  "source": {"item": "minecraft:fishing_rod"},
   "result": {
     "id": "oneiricconcept:wilderness_rod",
     "count": 1

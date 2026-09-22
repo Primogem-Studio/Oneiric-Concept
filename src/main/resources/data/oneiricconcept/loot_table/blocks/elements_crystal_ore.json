@@ -9,7 +9,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ziziyousongshisuixie",
+          "name": "primogemcraft:vayuda_turquoise_sliver",
           "weight": 20,
           "conditions": [
             {
@@ -48,7 +48,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zziyousongshiduanpian",
+          "name": "primogemcraft:vayuda_turquoise_fragment",
           "weight": 10,
           "conditions": [
             {
@@ -87,7 +87,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zziyousongshikuai",
+          "name": "primogemcraft:vayuda_turquoise_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -126,7 +126,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zziyousongshi",
+          "name": "primogemcraft:vayuda_turquoise_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -165,7 +165,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianransuixie",
+          "name": "primogemcraft:prithiva_topaz_sliver",
           "weight": 20,
           "conditions": [
             {
@@ -204,7 +204,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianlaoduanpian",
+          "name": "primogemcraft:prithiva_topaz_fragment",
           "weight": 10,
           "conditions": [
             {
@@ -243,7 +243,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianlaokuaiwupin",
+          "name": "primogemcraft:prithiva_topaz_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -282,7 +282,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:jianlaohuangyu",
+          "name": "primogemcraft:prithiva_topaz_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -321,7 +321,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengsuixie",
+          "name": "primogemcraft:vajrada_amethyst_sliver",
           "weight": 20,
           "conditions": [
             {
@@ -360,7 +360,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengduanpian",
+          "name": "primogemcraft:vajrada_amethyst_fragment",
           "weight": 10,
           "conditions": [
             {
@@ -399,7 +399,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengkuai",
+          "name": "primogemcraft:vajrada_amethyst_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -438,7 +438,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengzijing",
+          "name": "primogemcraft:vajrada_amethyst_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -477,7 +477,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangbifeisuixie",
+          "name": "primogemcraft:nagadus_emerald_sliver",
           "weight": 20,
           "conditions": [
             {
@@ -516,7 +516,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangduanpian",
+          "name": "primogemcraft:nagadus_emerald_fragment",
           "weight": 10,
           "conditions": [
             {
@@ -555,7 +555,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangkuai",
+          "name": "primogemcraft:nagadus_emerald_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -594,7 +594,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:shengzhangbifei",
+          "name": "primogemcraft:nagadus_emerald_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -633,7 +633,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:dijingsuixie",
+          "name": "primogemcraft:varunada_lazurite_sliver",
           "weight": 20,
           "conditions": [
             {
@@ -672,7 +672,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:dijingduanpian",
+          "name": "primogemcraft:varunada_lazurite_fragment",
           "weight": 10,
           "conditions": [
             {
@@ -711,7 +711,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:dijingkuai",
+          "name": "primogemcraft:varunada_lazurite_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -750,7 +750,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:diijingqingjing",
+          "name": "primogemcraft:varunada_lazurite_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -789,7 +789,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ranyuansuixie",
+          "name": "primogemcraft:agnidus_agate_sliver",
           "weight": 20,
           "conditions": [
             {
@@ -828,7 +828,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ranyuanduanpian",
+          "name": "primogemcraft:agnidus_agate_fragment",
           "weight": 10,
           "conditions": [
             {
@@ -867,7 +867,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:ranyuankuai",
+          "name": "primogemcraft:agnidus_agate_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -906,7 +906,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:rranyuanmanao",
+          "name": "primogemcraft:agnidus_agate_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -945,7 +945,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyusuixie",
+          "name": "primogemcraft:shivada_jade_sliver",
           "weight": 20,
           "conditions": [
             {
@@ -984,7 +984,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aaixubingyuduanpian",
+          "name": "primogemcraft:shivada_jade_fragment",
           "weight": 10,
           "conditions": [
             {
@@ -1023,7 +1023,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyukuai",
+          "name": "primogemcraft:shivada_jade_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -1062,7 +1062,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:aixubingyu",
+          "name": "primogemcraft:shivada_jade_gemstone",
           "weight": 1,
           "conditions": [
             {

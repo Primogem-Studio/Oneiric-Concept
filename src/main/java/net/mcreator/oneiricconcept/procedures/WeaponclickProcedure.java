@@ -57,10 +57,10 @@ public class WeaponclickProcedure {
 				DBtagname = IsLeft ? "time_L" : "time_R";
 			}
 			for (int _i1 = 0; _i1 < (int) (2 + Refinement); _i1++) {
-				num = 160 + 20 * index1;
-				speed = 3 * index1;
+				num = 160 + 20 * _i1;
+				speed = 3 * _i1;
 				for (int _i2 = 0; _i2 < (int) num; _i2++) {
-					angle = (2 * Math.PI * index2) / num;
+					angle = (2 * Math.PI * _i2) / num;
 					world.addParticle(ParticleTypes.ENCHANT, x, (y + entity.getBbHeight() * 0.5), z, (speed * Math.cos(angle)), 0, (speed * Math.sin(angle)));
 				}
 			}

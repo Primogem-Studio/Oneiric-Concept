@@ -9,7 +9,7 @@ base.archivesName = "modid"
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = "21.1.232"
+    version = "21.1.250"
 
     runs {
         client {
@@ -39,24 +39,8 @@ neoForge {
     }
 }
 
-repositories {
-    exclusiveContent {
-        forRepository {
-            maven {
-                url "https://api.modrinth.com/maven"
-            }
-        }
-        filter {
-            includeGroup "maven.modrinth"
-        }
-    }
-    maven { url "https://maven.shedaniel.me/" }
-}
-
 dependencies {
-    implementation "maven.modrinth:genshincraft:3.1.1"
-    implementation "maven.modrinth:2primogem-craft:26w30a"
-    api "me.shedaniel:RoughlyEnoughItems-neoforge:16.0.799"
+    // Custom dependencies are maintained in gradle/oneiricconcept.gradle.
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -64,3 +48,4 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 apply from: 'mcreator.gradle'
+apply from: 'gradle/oneiricconcept.gradle'

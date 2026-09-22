@@ -13,7 +13,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengsuixie",
+          "name": "primogemcraft:vajrada_amethyst_sliver",
           "weight": 500,
           "conditions": [
             {
@@ -52,7 +52,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengduanpian",
+          "name": "primogemcraft:vajrada_amethyst_fragment",
           "weight": 20,
           "conditions": [
             {
@@ -91,7 +91,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengkuai",
+          "name": "primogemcraft:vajrada_amethyst_chunk",
           "weight": 5,
           "conditions": [
             {
@@ -130,7 +130,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengzijing",
+          "name": "primogemcraft:vajrada_amethyst_gemstone",
           "weight": 1,
           "conditions": [
             {
@@ -174,7 +174,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "primogemcraft:zuishengkuangshi",
+          "name": "primogemcraft:vajrada_amethyst_ore",
           "weight": 1,
           "conditions": [
             {

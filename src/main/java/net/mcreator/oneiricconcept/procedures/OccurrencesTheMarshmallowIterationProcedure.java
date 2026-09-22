@@ -24,7 +24,7 @@ public class OccurrencesTheMarshmallowIterationProcedure {
 		eny = entity.getY();
 		enz = entity.getZ();
 		for (int _i1 = 0; _i1 < 10; _i1++) {
-			eny = eny + index0;
+			eny = eny + _i1;
 			if (-1 != world.getBlockState(BlockPos.containing(enx, eny, enz)).getDestroySpeed(world, BlockPos.containing(enx, eny, enz))) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, enx, eny, enz, (new ItemStack((world.getBlockState(BlockPos.containing(enx, eny, enz))).getBlock())));
@@ -46,7 +46,7 @@ public class OccurrencesTheMarshmallowIterationProcedure {
 	public static void imp(Entity entity, LevelAccessor world, int a) {
 		OneiricconceptMod.queueServerWork(2, () -> {
 			if (entity.isAlive()) {
-				net.mcreator.ceshi.procedures.EventGroupProcedure.execute(world, entity, (int) (1001 + a));
+				EventPGCProcedure.trigger(entity, (int) (1001 + a));
 			}
 		});
 	}

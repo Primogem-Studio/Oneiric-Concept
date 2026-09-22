@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
+    "oneiricconcept:honkai_shard",
     {
-      "id": "primogemcraft:zuishengzijing",
+      "id": "primogemcraft:vajrada_amethyst_gemstone",
       "required": false
-    },
-    "oneiricconcept:honkai_shard"
+    }
   ]
 }

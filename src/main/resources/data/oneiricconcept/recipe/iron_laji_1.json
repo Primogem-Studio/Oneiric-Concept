@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "primogemcraft:zhongkouweitieding"
+    "item": "primogemcraft:heavy_flavored_iron_ingot"
   },
   "result": {
     "id": "oneiricconcept:trashmetal",

@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "primogemcraft:lajitongsuipian"
+    "item": "primogemcraft:trash_can_fragment"
   },
   "base": {
-    "item": "primogemcraft:wufengjian"
+    "item": "primogemcraft:dull_blade"
   },
   "addition": {
-    "item": "primogemcraft:disui"
+    "item": "primogemcraft:geomarrow"
   },
   "result": {
     "id": "oneiricconcept:sword_of_brilliant_valor"

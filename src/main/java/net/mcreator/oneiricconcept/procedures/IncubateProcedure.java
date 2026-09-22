@@ -27,13 +27,13 @@ public class IncubateProcedure {
 		boolean stop = false;
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "mode") == 1) {
 			for (int _i1 = 0; _i1 < 16; _i1++) {
-				egg = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) index0).copy()).copy();
+				egg = (itemFromBlockInventory(world, BlockPos.containing(x, y, z), (int) _i1).copy()).copy();
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 						if (RandomProcedure.execute(world, entityiterator instanceof Chicken && !(entityiterator instanceof LivingEntity _livEnt3 && _livEnt3.isBaby()) ? 0.8 : 0.3) && egg.getItem() == Items.EGG) {
 							if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-								int _slotid = (int) index0;
+								int _slotid = (int) _i1;
 								ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
 								_stk.shrink(1);
 								_itemHandlerModifiable.setStackInSlot(_slotid, _stk);

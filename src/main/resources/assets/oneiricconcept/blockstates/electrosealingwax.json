@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oneiricconcept:block/electrosealingwax"
+    },
+    "facing=east": {
+      "model": "oneiricconcept:block/electrosealingwax",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "oneiricconcept:block/electrosealingwax",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oneiricconcept:block/electrosealingwax",
+      "y": 270
+    }
+  }
+}

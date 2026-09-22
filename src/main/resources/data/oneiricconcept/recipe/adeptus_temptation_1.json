@@ -17,24 +17,24 @@
       "item": "farmersdelight:ham"
     },
     {
-      "item": "primogemcraft:chuangshijiejing"
+      "item": "primogemcraft:genesis_crystal"
     },
     {
-      "item": "primogemcraft:yuanshi"
+      "item": "primogemcraft:primogem"
     },
     {
       "item": "minecraft:potato"
     },
     {
-      "item": "primogemcraft:hhaokandelaji"
+      "item": "primogemcraft:pleasant_looking_trash"
     },
     {
-      "item": "primogemcraft:jinzhimola"
+      "item": "primogemcraft:refined_mora"
     }
   ],
   "recipe_book_tab": "meals",
   "result": {
     "count": 1,
-    "id": "primogemcraft:xiantiaoqiang"
+    "id": "primogemcraft:adeptus_temptation"
   }
 }
