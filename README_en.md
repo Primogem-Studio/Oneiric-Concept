@@ -1,4 +1,13 @@
 [中文](README.md) | English
+
+## Development with MCreator
+
+Open `oneiricconcept.mcreator` in **MCreator 2026.2**, wait for workspace setup,
+then use its run-client or export-mod action. No terminal or IDE setup is needed.
+Keep the complete repository, including `libs` and `gradle`.
+PrimogemCraftNeo 1.0.3 is included; GenshinCraft 3.1.3 and REI 16.0.799 are
+downloaded automatically for the development environment.
+
 # Introduction
 Additional mods for Primogem Craft Found the early exotic world tree of the Primogem Craft
 

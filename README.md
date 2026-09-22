@@ -1,4 +1,18 @@
 中文 | [English](README_en.md)
+
+## 成员开发：直接使用 MCreator
+
+1. 拉取或下载完整仓库，使用 **MCreator 2026.2** 打开 `oneiricconcept.mcreator`。
+2. 等待首次工作区设置及依赖下载完成。
+3. 点击 MCreator 的运行客户端按钮进行调试，使用导出模组功能构建发布包。
+
+无需控制台、IDE、单独安装 JDK，或从其他成员的电脑复制依赖。
+原石重置版 **PrimogemCraftNeo 1.0.3** 已随仓库放在 `libs` 中；
+**GenshinCraft 3.1.3** 和 **REI 16.0.799** 会自动下载并加入开发运行环境。
+完整拉取仓库时请保留 `libs` 和 `gradle` 目录，不要只复制 `src`。
+
+维护配置与迁移记录见 [WORKSPACE_REPAIR.md](WORKSPACE_REPAIR.md)。
+
 # 介绍
 这是一个原石工艺的附属模组，找回了原石工艺早期的异世界树。
 
