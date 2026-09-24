@@ -6,11 +6,35 @@
       "required": false
     },
     {
+      "id": "primogemcraft:gold_coin_of_discord",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:space_time_coin",
+      "required": false
+    },
+    {
       "id": "primogemcraft:charmony_lost_property",
       "required": false
     },
     {
+      "id": "primogemcraft:fictional_gold_coin",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:splintered_galactic_mega_coin",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:radiant_gold_coin_of_discord",
+      "required": false
+    },
+    {
       "id": "primogemcraft:unknown_lost_property",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:split_split_crack_crack_coin_coin",
       "required": false
     }
   ]

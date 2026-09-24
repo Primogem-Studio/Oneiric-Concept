@@ -22,7 +22,8 @@ public class SkipingProcedure {
 		ktime = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble(tagname);
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 			if (world instanceof ServerLevel _level) {
-				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u683C\uFF1A" + index + "\u6709\u53EF\u8DF3\u8FC7\u7269\u54C1\u65F6\u95F4\u4E3A\uFF1A" + ktime)), false);
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("\u5728\u683C\uFF1A" + index + "\u6709\u53EF\u8DF3\u8FC7\u7269\u54C1\uFF0C\u6807\u7B7E[" + tagname + "]\u76EE\u6807\u65F6\u95F4\u4E3A\uFF1A" + ktime)),
+						false);
 			}
 		}
 		while (ktime < times) {
