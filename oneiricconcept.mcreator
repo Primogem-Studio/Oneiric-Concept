@@ -12911,7 +12911,7 @@
       "name": "Skiplife",
       "type": "procedure",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "skiplife",
       "metadata": {
         "files": [
@@ -19659,15 +19659,9 @@
       "CUSTOM:StrippedTheAnotherWorldLog"
     ],
     "ITEMS:mod:canskip": [
-      "EXTERNAL:primogemcraft:lucky_special_ticket",
-      "EXTERNAL:primogemcraft:unknown_lost_property",
-      "EXTERNAL:primogemcraft:charmony_lost_property",
-      "EXTERNAL:primogemcraft:gold_coin_of_discord",
-      "EXTERNAL:primogemcraft:splintered_galactic_mega_coin",
-      "EXTERNAL:primogemcraft:space_time_coin",
-      "EXTERNAL:primogemcraft:radiant_gold_coin_of_discord",
-      "EXTERNAL:primogemcraft:fictional_gold_coin",
-      "EXTERNAL:primogemcraft:split_split_crack_crack_coin_coin"
+      "TAG:oneiricconcept:canskip/ticket_progress",
+      "TAG:oneiricconcept:canskip/numerator",
+      "TAG:oneiricconcept:canskip/curio_counter"
     ],
     "ITEMS:mod:dendrolunch": [
       "CUSTOM:Boomyampyro",
@@ -19751,6 +19745,22 @@
     ],
     "ENCHANTMENTS:minecraft:treasure": [
       "~ShuhuGift@CUSTOM:ShuhuGift"
+    ],
+    "ITEMS:mod:canskip/numerator": [
+      "EXTERNAL:rimogemcraft:gold_coin_of_discord",
+      "EXTERNAL:primogemcraft:space_time_coin",
+      "EXTERNAL:primogemcraft:fictional_gold_coin",
+      "EXTERNAL:primogemcraft:splintered_galactic_mega_coin",
+      "EXTERNAL:primogemcraft:radiant_gold_coin_of_discord",
+      "EXTERNAL:primogemcraft:split_split_crack_crack_coin_coin",
+      "EXTERNAL:primogemcraft:gold_coin_of_discord"
+    ],
+    "ITEMS:mod:canskip/curio_counter": [
+      "EXTERNAL:primogemcraft:unknown_lost_property",
+      "EXTERNAL:primogemcraft:charmony_lost_property"
+    ],
+    "ITEMS:mod:canskip/ticket_progress": [
+      "EXTERNAL:primogemcraft:lucky_special_ticket"
     ]
   },
   "tab_element_order": {

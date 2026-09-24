@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "primogemcraft:lucky_special_ticket",
+      "required": false
+    }
+  ]
+}

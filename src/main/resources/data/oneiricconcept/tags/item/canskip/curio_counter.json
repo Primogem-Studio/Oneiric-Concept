@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "primogemcraft:charmony_lost_property",
+      "required": false
+    },
+    {
+      "id": "primogemcraft:unknown_lost_property",
+      "required": false
+    }
+  ]
+}

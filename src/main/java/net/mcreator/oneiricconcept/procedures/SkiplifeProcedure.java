@@ -26,10 +26,12 @@ public class SkiplifeProcedure {
 		for (int _i1 = 0; _i1 < 36; _i1++) {
 			zpitem = (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler3 ? _modHandler3.getStackInSlot((int) _i1).copy() : ItemStack.EMPTY).copy();
 			if (zpitem.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:canskip")))) {
-				if (zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("dai_kai_jiang")) {
-					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, _i1, 24000, "k1");
-				} else if (!zpitem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("sun_huai")) {
-					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, _i1, 6000, "wzsw");
+				if (zpitem.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:canskip/ticket_progress")))) {
+					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, _i1, 24000, "primogemcraft:ticket_progress");
+				} else if (zpitem.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:canskip/numerator")))) {
+					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, _i1, itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("denominator"), "numerator");
+				} else if (zpitem.is(ItemTags.create(ResourceLocation.parse("oneiricconcept:canskip/curio_counter")))) {
+					index1 = index1 + SkipingProcedure.execute(world, entity, zpitem, _i1, 99, "primogemcraft:curio_counter");
 				}
 			}
 		}
