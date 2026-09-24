@@ -60,3 +60,26 @@ CI 同样使用仓库自带 Gradle Wrapper 执行构建和客户端启动配置�
 旧 Patchouli 百科中找不到 Neo 等价物的已删除内容仍保留原文。旧礼盒分支、
 旧标签及全部武器强化交互尚未逐项验证。Neo 自身 `zipline.json` 的非法旋转角度、
 ExParticle 缺少 JavaCV 的可选视频功能提示不在本项目源码修复范围内。
+
+## 祈愿武器描述与渲染
+
+星尘球棒、真律之灵枝的物品类直接实现 PGC 的 `WishWeapon` 接口，
+使用 `WeaponDescription`、`WishWeaponTooltips` 和 `WishReports.number`。
+Shift 展开技能详情，Ctrl 展开强化教程；等级、精炼星级和额外精炼由 PGC
+自己的监听器和渲染器处理，不再保留本模组的星级渲染监听器。
+PGC 的强化台和等级属性系统也会识别这两把武器。背包 tick 调用原生
+`WeaponAttributes.refreshPassive`；技能仍由现有过程执行，`passives()` 返回空列表，
+避免重复添加技能效果。真律之灵枝的管理员说明仍仅对 OP4 显示。
+
+物品元素路径、模型、注册和 `elements` 定义保留。两把武器的接口实现需要代码锁定保护；
+解除锁定前，需保留或迁移接口方法及原生 API 调用。
+
+武器描述译文位于 `src/main/resources/assets/oneiricconcept_weapons/lang/`。
+这是同一模组内的独立资源命名空间，Minecraft 会按标准资源加载流程合并它的语言键；
+物品 ID 和描述键仍是 `oneiricconcept`，无需新增模组或自定义本地化代码。
+MCreator 会根据内存中的工作区重写 `assets/oneiricconcept/lang/` 和 `language_map`，
+因此这些手写描述不再依赖它们；不要将译文移回生成的语言文件中。
+
+`build` / `check` 会运行 `verifyWeaponLocalization`，使用 Minecraft 的
+`ClientLanguage` 从成品 JAR 自动发现资源命名空间，检查两把武器的全部描述、
+中文与英文以及日语环境的英文回退，并检查占位符和百分号。此检查不启动游戏窗口。

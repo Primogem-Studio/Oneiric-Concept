@@ -28,3 +28,27 @@ dependencies {
     implementation 'maven.modrinth:genshincraft:3.1.3'
     api 'me.shedaniel:RoughlyEnoughItems-neoforge:16.0.799'
 }
+
+// Exercise Minecraft's real language loader against the packaged resources,
+// including translations outside MCreator's regenerated mod namespace.
+sourceSets.test {
+    compileClasspath += sourceSets.main.compileClasspath
+    runtimeClasspath += sourceSets.main.runtimeClasspath
+}
+tasks.named('test') {
+    // This standalone resource integration check runs through JavaExec below.
+    exclude '**/WeaponLocalizationCheck.class'
+}
+def verifyWeaponLocalization = tasks.register('verifyWeaponLocalization', JavaExec) {
+    group = 'verification'
+    description = 'Verify PGC weapon descriptions using the client language resource loader.'
+    dependsOn tasks.named('testClasses'), tasks.named('jar')
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'net.mcreator.oneiricconcept.WeaponLocalizationCheck'
+    workingDir = layout.buildDirectory.dir('tmp/verifyWeaponLocalization').get().asFile
+    doFirst { workingDir.mkdirs() }
+    args tasks.named('jar').get().archiveFile.get().asFile.absolutePath, primogemcraftNeoJar.absolutePath
+}
+tasks.named('check') {
+    dependsOn verifyWeaponLocalization
+}

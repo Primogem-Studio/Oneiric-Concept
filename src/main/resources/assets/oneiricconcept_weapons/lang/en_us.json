@@ -1,0 +1,9 @@
+{
+  "item.oneiricconcept.stardust_baseballer.description.passive": "Attacks have a %s%% chance to inflict Wrong Target, giving the enemy a %s%% chance to attack other targets.",
+  "item.oneiricconcept.stardust_baseballer.description.sneak_use": "Increases the damage of the next attack by %s%%. Cooldown: %s seconds.",
+  "item.oneiricconcept.stardust_baseballer.description.sneak_swing": "The next attack deals 60%% damage to targets within a diameter of %s blocks around the target. Cooldown: %s seconds.",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.passive": "Hits pause the target and interrupt item use. Killing a creature grows a cherry blossom tree.",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.operator": "[opLV4] Player targets are temporarily kicked from the game.",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.right_click": "Launches %s sword waves in a forward fan. Damage scales with refinement. Cooldown: %s seconds.",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.sneak_use": "Grows cherry blossom trees within a diameter of 65 blocks, dealing %s damage to a single monster within 11 blocks of each growth position and automatically collecting drops. Cooldown: %s seconds."
+}

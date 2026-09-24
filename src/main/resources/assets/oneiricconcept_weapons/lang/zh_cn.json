@@ -1,0 +1,9 @@
+{
+  "item.oneiricconcept.stardust_baseballer.description.passive": "在攻击时有%s%%的概率使敌人获得错误目标DEBUFF，使其有%s%%的概率攻击其它单位。",
+  "item.oneiricconcept.stardust_baseballer.description.sneak_use": "使下次攻击造成的伤害提高%s%%，冷却%s秒。",
+  "item.oneiricconcept.stardust_baseballer.description.sneak_swing": "使下次攻击对目标周围直径%s格范围内的目标造成60%%的伤害，冷却%s秒。",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.passive": "攻击命中时使目标停顿，并停止使用物品，击杀生物时生长樱花树。",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.operator": "[opLV4]如果是玩家，则将其暂时踢出游戏。",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.right_click": "向前方扇形范围发射%s道剑气，造成伤害随精炼等级提升，冷却%s秒。",
+  "item.oneiricconcept.spirtbranchof_ture_law.description.sneak_use": "在直径65格范围内生长大量樱花树，对生长位置11格内的单个怪物造成%s伤害，自动吸取掉落物，冷却%s秒。"
+}
