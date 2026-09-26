@@ -38,11 +38,6 @@ public class SkipingProcedure {
 		}
 		while (ktime < times) {
 			ktime = ktime + 1200;
-			{
-				final String _tagName = tagname;
-				final double _tagValue = ktime;
-				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
-			}
 			index1 = index1 + itemstack.getCount();
 		}
 		{
