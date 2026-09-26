@@ -8,8 +8,11 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.core.component.DataComponentType;
 
 import net.mcreator.oneiricconcept.init.OneiricconceptModGameRules;
 
@@ -19,7 +22,13 @@ public class SkipingProcedure {
 			return 0;
 		double ktime = 0;
 		double index1 = 0;
-		ktime = itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble(tagname);
+		{
+			final ResourceLocation _id = ResourceLocation.tryParse(tagname);
+			final DataComponentType<?> _componentType = _id == null ? null : BuiltInRegistries.DATA_COMPONENT_TYPE.get(_id);
+			@SuppressWarnings("unchecked")
+			final DataComponentType<Integer> _intType = (DataComponentType<Integer>) _componentType;
+			ktime = _componentType != null ? itemstack.getOrDefault(_intType, 0) : itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble(tagname);
+		}
 		if (world.getLevelData().getGameRules().getBoolean(OneiricconceptModGameRules.OCDEBUG)) {
 			if (world instanceof ServerLevel _level) {
 				_level.getServer().getPlayerList().broadcastSystemMessage(
@@ -39,7 +48,17 @@ public class SkipingProcedure {
 		{
 			final String _tagName = tagname;
 			final double _tagValue = times;
-			CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			final ResourceLocation _id = ResourceLocation.tryParse(_tagName);
+			final DataComponentType<?> _componentType = _id == null ? null : BuiltInRegistries.DATA_COMPONENT_TYPE.get(_id);
+			if (_componentType != null) {
+				@SuppressWarnings("unchecked")
+				final DataComponentType<Integer> _intType = (DataComponentType<Integer>) _componentType;
+				itemstack.set(_intType, (int) _tagValue);
+				// 可选：清掉旧代码留在 minecraft:custom_data 里的同名字段
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.remove(_tagName));
+			} else {
+				CustomData.update(DataComponents.CUSTOM_DATA, itemstack, tag -> tag.putDouble(_tagName, _tagValue));
+			}
 		}
 		if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandler) {
 			ItemStack _setstack = itemstack.copy();
