@@ -47,5 +47,4 @@ jobs:
         with:
           name: OneiricConcept-${{ env.LAST_COMMIT_SHA }}
           path: |
-            build/libs/*.jar
-            !build/libs/*-sources.jar
+            build/libs/modid-1.0.jar

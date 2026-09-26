@@ -7,9 +7,25 @@
 3. 点击 MCreator 的运行客户端按钮进行调试，使用导出模组功能构建发布包。
 
 无需控制台、IDE、单独安装 JDK，或从其他成员的电脑复制依赖。
-原石重置版 **PrimogemCraftNeo 1.0.3** 已随仓库放在 `libs` 中；
-**GenshinCraft 3.1.3** 和 **REI 16.0.799** 会自动下载并加入开发运行环境。
+原石重置版 **PrimogemCraftNeo 1.0.5** 尚未通过 Modrinth 审核，已随仓库放在 `libs` 中；
+**GenshinCraft 3.1.3** 从 Modrinth 自动下载，**REI 16.0.799** 从其官方 Maven 仓库获取并加入开发环境。
 完整拉取仓库时请保留 `libs` 和 `gradle` 目录，不要只复制 `src`。
+也请保留 Git 中的 `.mcreator/setupInfo`：它保护仓库定制的构建配置，避免首次打开时
+被生成器默认文件覆盖。这个标记对应 MCreator 2026.2 的生成器版本 21.1.232，
+实际构建的 NeoForge 版本仍为 21.1.250。升级 MCreator 或重置构建脚本时需重新适配。
+
+MCreator 实际导出源文件固定为 `build/libs/modid-1.0.jar`，请勿修改此构建文件名；
+它的内部版本来自工作区设置（当前为 26.9），MCreator 导出时可选择发布文件名。
+`build` 会校验此文件的版本、Neo 依赖和旧 API 残留，防止导出历史包。
+已锁定的迁移元素请使用代码编辑；解除锁定会让旧的图形定义覆盖已迁移代码。
+
+## 游戏安装
+
+使用 Minecraft 1.21.1、NeoForge 21.1.250 或更新的 21.1 版本，同时安装本次导出的
+梦华构想和仓库 `libs/primogemcraftneo-1.0.5.jar`。原石工艺不会内嵌在梦华构想 JAR 中。
+移除旧梦华构想、PrimogemCraftNeo 1.0.2 和旧版原石工艺，避免重复 mod ID。
+当前只声明兼容已验证的 Neo 1.0.5；升级依赖时需同步构建包、Gradle 资源处理及导出检查。
+GenshinCraft 为可选联动，REI 为开发辅助，普通玩家不必为了本模组安装它们。
 
 维护配置与迁移记录见 [WORKSPACE_REPAIR.md](WORKSPACE_REPAIR.md)。
 

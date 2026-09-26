@@ -5,8 +5,21 @@
 Open `oneiricconcept.mcreator` in **MCreator 2026.2**, wait for workspace setup,
 then use its run-client or export-mod action. No terminal or IDE setup is needed.
 Keep the complete repository, including `libs` and `gradle`.
-PrimogemCraftNeo 1.0.3 is included; GenshinCraft 3.1.3 and REI 16.0.799 are
-downloaded automatically for the development environment.
+Keep the tracked `.mcreator/setupInfo` too: without it, first-open setup overwrites the
+custom build files. It identifies the MCreator 2026.2 generator (21.1.232), while the
+project builds against NeoForge 21.1.250. Generator upgrades/build-script resets need migration.
+PrimogemCraftNeo 1.0.5 is included in `libs` while its Modrinth approval is pending.
+GenshinCraft 3.1.3 is downloaded from Modrinth; REI 16.0.799 uses its official Maven repository.
+
+MCreator exports `build/libs/modid-1.0.jar`; do not change that build filename.
+The internal mod version follows the workspace settings (currently 26.9).
+The `build` task checks this exact artifact for version, dependencies, and legacy API references.
+Keep migrated elements code-locked and edit their Java code until their visual definitions are migrated.
+
+For a game installation, use Minecraft 1.21.1, NeoForge 21.1.250 or a newer 21.1 release,
+and install both the exported mod and `libs/primogemcraftneo-1.0.5.jar`.
+Remove older OneiricConcept and PrimogemCraft jars first. Only the tested Neo 1.0.5 is
+currently accepted. GenshinCraft and REI are optional for players.
 
 # Introduction
 Additional mods for Primogem Craft Found the early exotic world tree of the Primogem Craft

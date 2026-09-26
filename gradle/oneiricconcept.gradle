@@ -1,9 +1,32 @@
 // Project-owned build customizations. MCreator regenerates mcreator.gradle.
-version = '26.88'
-base.archivesName = 'oneiricconcept'
+version = new groovy.json.JsonSlurper().parseText(
+        providers.fileContents(layout.projectDirectory.file('oneiricconcept.mcreator')).asText.get()
+).workspaceSettings.version
+// MCreator's generator exports this exact path, regardless of the workspace version.
+// Changing it leaves MCreator exporting a stale JAR (or no JAR on a clean checkout).
+tasks.named('jar') {
+    archiveFileName = 'modid-1.0.jar'
+}
+
+// MCreator regenerates Required mods with [0,). Apply runtime constraints to
+// the packaged resource so workspace saves cannot undo them.
+tasks.named('processResources') {
+    filesMatching('META-INF/neoforge.mods.toml') {
+        def modId = ''
+        filter { String line ->
+            def id = line =~ /^\s*modId\s*=\s*"([^"]+)"\s*$/
+            if (id.matches()) modId = id.group(1)
+            if (line =~ /^\s*versionRange\s*=/) {
+                if (modId == 'primogemcraft') return 'versionRange="[1.0.5]"'
+                if (modId == 'neoforge') return 'versionRange="[21.1.250,)"'
+            }
+            return line
+        }
+    }
+}
 
 def primogemcraftNeoJar = file(providers.gradleProperty('primogemcraftNeoJar')
-        .getOrElse('libs/primogemcraftneo-1.0.3.jar'))
+        .getOrElse('libs/primogemcraftneo-1.0.5.jar'))
 if (!primogemcraftNeoJar.isFile()) {
     throw new GradleException("PrimogemCraftNeo jar not found: ${primogemcraftNeoJar}. See libs/README.md.")
 }
@@ -38,6 +61,7 @@ sourceSets.test {
 tasks.named('test') {
     // This standalone resource integration check runs through JavaExec below.
     exclude '**/WeaponLocalizationCheck.class'
+    exclude '**/ExportCheck.class'
 }
 def verifyWeaponLocalization = tasks.register('verifyWeaponLocalization', JavaExec) {
     group = 'verification'
@@ -51,4 +75,18 @@ def verifyWeaponLocalization = tasks.register('verifyWeaponLocalization', JavaEx
 }
 tasks.named('check') {
     dependsOn verifyWeaponLocalization
+}
+
+def verifyExport = tasks.register('verifyExport', JavaExec) {
+    group = 'verification'
+    description = 'Check the exact JAR exported by MCreator for stale code and dependency metadata.'
+    dependsOn tasks.named('testClasses'), tasks.named('jar')
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'net.mcreator.oneiricconcept.ExportCheck'
+    args layout.buildDirectory.file('libs/modid-1.0.jar').get().asFile.absolutePath,
+            tasks.named('jar').get().archiveFile.get().asFile.absolutePath, project.version.toString(),
+            layout.projectDirectory.file('.mcreator/setupInfo').asFile.absolutePath
+}
+tasks.named('check') {
+    dependsOn verifyExport
 }
