@@ -13,6 +13,8 @@
 也请保留 Git 中的 `.mcreator/setupInfo`：它保护仓库定制的构建配置，避免首次打开时
 被生成器默认文件覆盖。这个标记对应 MCreator 2026.2 的生成器版本 21.1.232，
 实际构建的 NeoForge 版本仍为 21.1.250。升级 MCreator 或重置构建脚本时需重新适配。
+拉取更新前先关闭 MCreator 中的工作区，拉取后重新打开，避免编辑器用旧内存状态覆盖文件。
+不要提交 MCreator 重置后的构建脚本；CI 会显式调用导出和语言检查，脚本入口丢失时直接失败。
 
 MCreator 实际导出源文件固定为 `build/libs/modid-1.0.jar`，请勿修改此构建文件名；
 它的内部版本来自工作区设置（当前为 26.9），MCreator 导出时可选择发布文件名。
@@ -24,7 +26,7 @@ MCreator 实际导出源文件固定为 `build/libs/modid-1.0.jar`，请勿修�
 使用 Minecraft 1.21.1、NeoForge 21.1.250 或更新的 21.1 版本，同时安装本次导出的
 梦华构想和仓库 `libs/primogemcraftneo-1.0.5.jar`。原石工艺不会内嵌在梦华构想 JAR 中。
 移除旧梦华构想、PrimogemCraftNeo 1.0.2 和旧版原石工艺，避免重复 mod ID。
-当前只声明兼容已验证的 Neo 1.0.5；升级依赖时需同步构建包、Gradle 资源处理及导出检查。
+Neo 仍为必装依赖，但不限制版本（`[0,)`）；默认构建使用仓库自带的 1.0.5，也可按 `libs/README.md` 指定其他包。其他版本的 API 与运行兼容性需另行验证。
 GenshinCraft 为可选联动，REI 为开发辅助，普通玩家不必为了本模组安装它们。
 
 维护配置与迁移记录见 [WORKSPACE_REPAIR.md](WORKSPACE_REPAIR.md)。

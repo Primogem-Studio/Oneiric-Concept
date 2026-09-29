@@ -1,5 +1,31 @@
 # 工作区修复与重置版迁移
 
+## 2026-09-29 MCreator 覆盖检查
+
+当前成品保留 PrimogemCraftNeo 必装声明，版本范围为 `[0,)`；下文历史记录中的
+精确版本限制已取消。默认编译包仍为仓库自带的 1.0.5。
+
+核对本机 MCreator 2026.2 的生成器模板及 `WorkspaceGeneratorSetup` 字节码：
+`shouldSetupBeRan` 在 `.mcreator/setupInfo` 的 `buildFileVersion` 与生成器完整版本
+一致时跳过基础设置；本仓库的 21.1.232 与该生成器匹配。缺失标记、版本不匹配
+或主动重置会重新写入基础文件，丢失自定义脚本入口并将 NeoForge 还原为 21.1.232。
+普通依赖生成通过 `WorkspaceSettings.getVersionRange` 获取范围，未由 Mod API 插件
+指定版本时使用 `[0,)`。自定义脚本不放在 MCreator 重写的 `mcreator.gradle` 中。
+
+CI 显式执行 `build prepareClientRun verifyExport verifyWeaponLocalization`，即使
+脚本入口及其挂载的检查同时丢失，也会因检查任务不存在失败，停止产物上传。
+使用本机生成器的原始 `build.gradle` 模板在临时副本模拟覆盖，确认该命令被拒绝。
+
+仅复制 Git 跟踪文件的当前内容（含待提交修改和 setupInfo）到全新临时目录，
+使用 MCreator 自带 JDK、禁用外部 JDK 探测和 Gradle 构建缓存执行
+`clean build prepareClientRun verifyExport verifyWeaponLocalization --no-build-cache`
+成功，导出检查覆盖 869 个类，三种语言加载检查通过。仍复用了全局依赖下载和
+NeoForm 缓存；未操作 MCreator 图形界面的首次打开、重新生成及导出按钮。
+
+成员拉取前应关闭工作区，拉取后重新打开；不要主动重置构建文件。
+此验证针对 MCreator 2026.2 的当前生成器，不保证其他版本或第三方插件组合。
+CI 能阻止失败产物上传，但不能阻止本地编辑器覆盖文件，也不能替代分支保护规则。
+
 ## 使用
 
 成员使用 **MCreator 2026.2** 打开仓库中的 `oneiricconcept.mcreator`，等待首次
@@ -40,8 +66,8 @@ MCreator 会重写 `mcreator.gradle`，依赖因此放在 `gradle/oneiricconcept
 `build.gradle` 使用 NeoForge **21.1.250** 并引入该脚本。维护者升级生成器或
 重新生成基础文件时，需保留这两项自定义配置并通过 CI 后再交付成员。
 重置版仍以 `primogemcraft` 注册，保留在 MCreator 的 Required mods 中。
-该字段会生成 `[0,)`，`gradle/oneiricconcept.gradle` 在 `processResources` 阶段将成品
-声明收紧为 `[1.0.5]`，并将 NeoForge 最低版本设为 21.1.250。不要在用户代码块重复声明。
+该字段会生成 `[0,)`，成品保留此范围，不限制重置版版本。
+`gradle/oneiricconcept.gradle` 仅在 `processResources` 阶段将 NeoForge 最低版本设为 21.1.250。不要在用户代码块重复声明。
 
 ## 验证和边界
 

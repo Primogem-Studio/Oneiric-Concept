@@ -33,8 +33,8 @@ public class ExportCheck {
             for (String dependency : dependencies) {
                 if (!dependency.contains("modId=\"primogemcraft\"")) continue;
                 requiredNeo++;
-                check(dependency.contains("type=\"required\"") && dependency.contains("versionRange=\"[1.0.5]\""),
-                        "Export must require the tested PrimogemCraftNeo 1.0.5");
+                check(dependency.contains("type=\"required\"") && dependency.contains("versionRange=\"[0,)\""),
+                        "Export must require PrimogemCraftNeo without restricting its version");
             }
             check(requiredNeo == 1, "Expected exactly one PrimogemCraftNeo dependency");
             int classes = 0;
@@ -52,7 +52,7 @@ public class ExportCheck {
             check(classes > 0, "Export contains no compiled classes");
             check(jar.getJarEntry("net/mcreator/oneiricconcept/procedures/EventPGCProcedure.class") != null,
                     "Export is missing the event integration");
-            System.out.println("MCreator export verified: " + args[2] + ", " + classes + " classes, Neo 1.0.5 required.");
+            System.out.println("MCreator export verified: " + args[2] + ", " + classes + " classes, Neo required without version restrictions.");
         }
     }
 }

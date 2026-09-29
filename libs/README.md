@@ -16,10 +16,10 @@
 临时指定其他包：
 
 ```powershell
-.\gradlew.bat build "-PprimogemcraftNeoJar=D:/path/to/primogemcraft-1.0.5.jar"
+.\gradlew.bat build "-PprimogemcraftNeoJar=D:/path/to/primogemcraftneo.jar"
 ```
 
-切换版本后需重新核对 API、注册 ID 与最低 NeoForge 版本。
+成品仍要求安装 PrimogemCraftNeo，但不限制其版本（`[0,)`）。切换版本后需重新核对 API、注册 ID 与最低 NeoForge 版本。
 
 仅 PrimogemCraftNeo 因 Modrinth 审核尚未通过而随仓库提供。
 GenshinCraft 3.1.3 由 Gradle 从 Modrinth 下载；REI 从其官方 Maven 仓库获取。

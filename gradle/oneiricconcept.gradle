@@ -8,16 +8,16 @@ tasks.named('jar') {
     archiveFileName = 'modid-1.0.jar'
 }
 
-// MCreator regenerates Required mods with [0,). Apply runtime constraints to
-// the packaged resource so workspace saves cannot undo them.
+// Keep MCreator's unrestricted Required mods ranges; only enforce the
+// minimum NeoForge version required by the bundled dependency.
 tasks.named('processResources') {
+    inputs.file('gradle/oneiricconcept.gradle')
     filesMatching('META-INF/neoforge.mods.toml') {
         def modId = ''
         filter { String line ->
             def id = line =~ /^\s*modId\s*=\s*"([^"]+)"\s*$/
             if (id.matches()) modId = id.group(1)
             if (line =~ /^\s*versionRange\s*=/) {
-                if (modId == 'primogemcraft') return 'versionRange="[1.0.5]"'
                 if (modId == 'neoforge') return 'versionRange="[21.1.250,)"'
             }
             return line
