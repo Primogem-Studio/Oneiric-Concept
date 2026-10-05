@@ -28,7 +28,7 @@ public class EventPGCProcedure {
         var reward2 = event("§a奖励：附魔", ctx -> ctx.enchant(EnchantGrade.MEDIUM));
         var baryons = event("§d与3个重子战斗，击杀两只即可获得奖励", ctx ->
                 EventCombat.challenge(ctx, BARYON.get(), 3, 2, null, completion -> completion.enchant(EnchantGrade.MEDIUM)));
-        var diamond = event("§6至高奖励：愚者面具", ctx -> {
+        var diamond = event("§6获得非洲之心", ctx -> {
             var player = ctx.player();
             WhiteDiamondFakeProcedure.execute(ctx.level(), player.getX(), player.getY(), player.getZ(), player);
             return ctx.give(new ItemStack(PGCItems.FOOLS_MASK.get()));
